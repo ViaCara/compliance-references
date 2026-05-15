@@ -1,0 +1,43 @@
+name: sync
+
+on:
+  schedule:
+    - cron: "0 6 1 * *"  # 1st of month, 06:00 UTC
+  workflow_dispatch: {}
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run pipeline
+        run: python3 build.py
+
+      - name: Open PR on drift
+        id: drift
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            DATE=$(date -u +%Y-%m-%d)
+            BRANCH="sync/$DATE"
+            git config user.name "compliance-references-bot"
+            git config user.email "actions@github.com"
+            git checkout -b "$BRANCH"
+            git add -A
+            git commit -m "chore: monthly sync $DATE"
+            git push --set-upstream origin "$BRANCH"
+            echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
+            gh pr create --title "chore: monthly sync $DATE" --body "Automated monthly drift sync. See CHANGELOG.md for the file-by-file diff." --head "$BRANCH" --base main
+          else
+            echo "no drift this cycle"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

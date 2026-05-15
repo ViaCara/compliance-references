@@ -1,0 +1,27 @@
+name: tag-release
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Tag if changed since last tag
+        run: |
+          DATE=$(date -u +%Y.%m.%d)
+          TAG="v$DATE"
+          if git rev-parse "$TAG" >/dev/null 2>&1; then
+            echo "tag $TAG already exists; skipping"
+            exit 0
+          fi
+          git config user.name "compliance-references-bot"
+          git config user.email "actions@github.com"
+          git tag "$TAG"
+          git push origin "$TAG"

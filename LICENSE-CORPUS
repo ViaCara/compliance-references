@@ -1,0 +1,52 @@
+# Corpus licence
+
+The markdown corpus under `corpus/` mixes content from several upstream sources, each under its own licence. Redistribution follows the upstream terms.
+
+## UK Crown corpus (statute + UK regulator guidance)
+
+Sources: legislation.gov.uk, ICO, NCSC, MHRA, CMA, FCA Handbook.
+
+Licensed under the **Open Government Licence v3.0**. Redistribution requires the attribution statement:
+
+> Contains public sector information licensed under the Open Government Licence v3.0.
+
+Full text: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+
+## EU corpus
+
+Sources: EUR-Lex (CELEX-numbered instruments including EU GDPR, EU AI Act, MDR, IVDR, NIS2, PSD2, EAA, Charter of Fundamental Rights).
+
+Redistributed under **Commission Decision 2011/833/EU** terms (free reuse with attribution). Each rendered markdown file carries the source URI in its frontmatter.
+
+Full text: https://eur-lex.europa.eu/eli/dec/2011/833/oj
+
+## W3C WCAG
+
+Source: w3.org/TR/WCAG22/.
+
+Redistributed under the **W3C Document License**. Verbatim quoting permitted with attribution and the W3C licence notice.
+
+Full text: https://www.w3.org/Consortium/Legal/2015/doc-license
+
+## Proprietary professional and technical standards (Tier C)
+
+Sources: BACP, UKCP, HCPC, BPS, ISO, BSI.
+
+**No verbatim text is redistributed.** Each Tier C file in `corpus/standards/` is a pointer record containing:
+
+- Title and canonical citation reference.
+- Source URI.
+- A neutral one-sentence description in the corpus author's own words.
+
+This falls within fair-dealing for criticism, review and reporting current events because no substantive copying occurs. Consumers must click through to the source URI to read the standard's text.
+
+## Consumer responsibilities
+
+Anyone forking, mirroring or otherwise redistributing this corpus must:
+
+1. Preserve the OGL3 attribution statement.
+2. Preserve EUR-Lex source URIs in frontmatter.
+3. Preserve the W3C Document License notice for WCAG content.
+4. Maintain the Tier C "external index only" posture for proprietary standards.
+
+The MIT-licensed Python pipeline in `build.py`, `lib/`, and `tests/` carries its own licence (`LICENSE-CODE`) and is reusable independently of the corpus.
