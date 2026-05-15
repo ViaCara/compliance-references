@@ -7,7 +7,7 @@ citation: DPA 2018 s. 21
 source_uri: "https://www.legislation.gov.uk/ukpga/2018/12/section/21/data.xht"
 source_format: xhtml
 revision_id: "Wed, 13 May 2026 15:07:58 GMT"
-content_sha256: 8859cfd30bd037d9fb21f08a1a1ba98b0dcd47a51c673fb7b3a130028c9f9b00
+content_sha256: b15045d3b86818917e13290436a9e06c1730368533a37d5a8fe6154c80981ffe
 last_fetched: 2026-05-15
 language: en-GB
 enforcement_status: in_force
@@ -16,13 +16,13 @@ enforcement_status: in_force
 
 _Definitions_
 
-(1) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+(1) _(repealed)_
 
-(2) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+(2) _(repealed)_
 
-(3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+(3) _(repealed)_
 
-(4) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+(4) _(repealed)_
 
 (5) In this Chapter, “FOI public authority” means—
 

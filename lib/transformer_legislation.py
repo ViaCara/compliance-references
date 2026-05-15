@@ -29,6 +29,12 @@ from xml.etree import ElementTree as ET
 
 _NS = "{http://www.w3.org/1999/xhtml}"
 
+# legislation.gov.uk renders repealed/omitted provisions as a run of full stops
+# separated by spaces in the body. Detect anything that's only dots, spaces and
+# unicode whitespace after collapsing.
+_REPEALED_DOTS_RE = re.compile(r"^[\s\.…]+$")
+_DOT_COUNT_THRESHOLD = 6  # ".  . . . . ." → 6+ dots = treat as repealed marker
+
 
 def _localname(tag: str) -> str:
     if tag.startswith(_NS):
@@ -134,28 +140,44 @@ class LegislationTransformer:
                 text = self._text(element, level=2)
                 if text:
                     emitted_any = True
-                    yield f"{number} {text}".strip()
+                    if _is_repealed_marker(text):
+                        yield f"{number} _(repealed)_".strip()
+                    else:
+                        yield f"{number} {text}".strip()
             elif "LegP3Container" in cls:
                 number = self._number(element, level=3)
                 text = self._text(element, level=3)
                 if text:
                     emitted_any = True
-                    yield f"    {number} {text}".strip()
+                    if _is_repealed_marker(text):
+                        yield f"    {number} _(repealed)_".strip()
+                    else:
+                        yield f"    {number} {text}".strip()
             elif "LegP4Container" in cls:
                 number = self._number(element, level=4)
                 text = self._text(element, level=4)
                 if text:
                     emitted_any = True
-                    yield f"        {number} {text}".strip()
+                    if _is_repealed_marker(text):
+                        yield f"        {number} _(repealed)_".strip()
+                    else:
+                        yield f"        {number} {text}".strip()
 
         if not emitted_any:
             # Fallback for snippets that use plain <p> elements rather than
             # the LegPN container vocabulary (e.g. small SI fragments).
+            saw_repealed_only = True
             for element in root.iter():
                 if _localname(element.tag) == "p":
                     text = _inline_text(element)
-                    if text:
-                        yield text
+                    if not text:
+                        continue
+                    if _is_repealed_marker(text):
+                        continue
+                    saw_repealed_only = False
+                    yield text
+            if saw_repealed_only:
+                yield "_Provision repealed — see source for amendment history._"
 
     def _number(self, element: ET.Element, *, level: int) -> str:
         for child in element.iter():
@@ -175,6 +197,22 @@ class LegislationTransformer:
         if number and full.startswith(number):
             return full[len(number) :].strip()
         return full
+
+
+def _is_repealed_marker(text: str) -> bool:
+    """Detect legislation.gov.uk repealed-text markers.
+
+    legislation.gov.uk renders omitted/repealed provisions as a run of full
+    stops separated by spaces (e.g. `. . . . . . . . . . . . . . . . . . . .`).
+    Returns True when the collapsed text is dots-and-whitespace only AND has
+    at least `_DOT_COUNT_THRESHOLD` dots — avoids false positives on legitimate
+    short text like "etc." or numeric ranges.
+    """
+    if not text:
+        return False
+    if not _REPEALED_DOTS_RE.fullmatch(text):
+        return False
+    return text.count(".") >= _DOT_COUNT_THRESHOLD
 
 
 class TransformerError(ValueError):

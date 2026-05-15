@@ -7,7 +7,7 @@ citation: UK GDPR Article 12
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/12/data.xht"
 source_format: xhtml
 revision_id: "Wed, 13 May 2026 15:07:58 GMT"
-content_sha256: 1a96ae2e9d29dfa988167adb5085b937370ec94f5863c15a5a486af4c2a05494
+content_sha256: 4cd1d229002adf5fe00ebbbd09673da90553089e3b76f71009042359d1a9e12c
 last_fetched: 2026-05-15
 language: en-GB
 enforcement_status: in_force
@@ -48,4 +48,4 @@ _Transparent information, communication and modalities for the exercise of the r
 
 7. If standardised icons are published as described in paragraph 6A (and not withdrawn), the information to be provided to data subjects pursuant to Articles 13 and 14 may be provided in combination with the icons. Where the icons are presented electronically they shall be machine-readable.
 
-8. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+8. _(repealed)_

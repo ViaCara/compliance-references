@@ -48,6 +48,41 @@ class LegislationTransformerTests(unittest.TestCase):
         self.assertIn("racial or ethnic origin", markdown)
         self.assertIn("explicit consent", markdown)
 
+    def test_collapses_repealed_dot_only_paragraphs_into_marker(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<h5 class="LegClearFix LegP1ContainerFirst">'
+            '<span class="LegDS LegP1No">14</span>'
+            '<span class="LegDS LegP1GroupTitleFirst">Automated decision-making</span>'
+            "</h5>"
+            '<p class="LegRHS LegP1Text">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>'
+            "</div>"
+        )
+        transformer = LegislationTransformer()
+        markdown = transformer.transform(source, citation="DPA 2018 s. 14")
+
+        self.assertIn("# DPA 2018 s. 14", markdown)
+        self.assertIn("_Provision repealed", markdown)
+        # Run of dots must NOT appear in the output.
+        self.assertNotIn(". . . . . . . . . .", markdown)
+
+    def test_collapses_repealed_dot_only_numbered_paragraphs(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<h5><span class="LegDS LegP1No">21</span><span class="LegDS LegP1GroupTitleFirst">Definitions</span></h5>'
+            '<p class="LegClearFix LegP2Container"><span class="LegDS LegLHS LegP2No">(1)</span><span class="LegDS LegRHS LegP2Text">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</span></p>'
+            '<p class="LegClearFix LegP2Container"><span class="LegDS LegLHS LegP2No">(2)</span><span class="LegDS LegRHS LegP2Text">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</span></p>'
+            '<p class="LegClearFix LegP2Container"><span class="LegDS LegLHS LegP2No">(3)</span><span class="LegDS LegRHS LegP2Text">Active text here.</span></p>'
+            "</div>"
+        )
+        transformer = LegislationTransformer()
+        markdown = transformer.transform(source, citation="DPA 2018 s. 21")
+
+        self.assertNotIn(". . . . . . . . . .", markdown)
+        self.assertIn("(1) _(repealed)_", markdown)
+        self.assertIn("(2) _(repealed)_", markdown)
+        self.assertIn("(3) Active text here.", markdown)
+
     def test_strips_change_delimiters_but_keeps_additions(self):
         source = (
             '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'

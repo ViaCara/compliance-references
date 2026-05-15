@@ -7,7 +7,7 @@ citation: UK GDPR Article 22
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/22/data.xht"
 source_format: xhtml
 revision_id: "Wed, 13 May 2026 15:07:58 GMT"
-content_sha256: 2092ce7a591aa3fa5db86c07f76d0a33cc7e8b8a2b2d671291c2d3c06532bb65
+content_sha256: 5ad43053b45abc00c03982f09d9be2dacf8aa139ac237468d64ef62941f25093
 last_fetched: 2026-05-15
 language: en-GB
 enforcement_status: in_force
@@ -17,8 +17,6 @@ enforcement_status: in_force
 _Automated individual decision-making, including profiling_
 
 **Chapter:** CHAPTER III - Rights of the data subject
-
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
 Textual Amendments
 

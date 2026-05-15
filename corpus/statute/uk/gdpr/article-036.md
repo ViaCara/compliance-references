@@ -7,7 +7,7 @@ citation: UK GDPR Article 36
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/36/data.xht"
 source_format: xhtml
 revision_id: "Wed, 13 May 2026 15:07:58 GMT"
-content_sha256: 1d61dd7dddcbe3b041f1fc6cd4ef55473a6f9c1becd0f166ab7967944c4da538
+content_sha256: a76daa78cab7bc062c03dff29169df00866dd2c9065538a60950143a6b81df71
 last_fetched: 2026-05-15
 language: en-GB
 enforcement_status: in_force
@@ -48,4 +48,4 @@ _Prior consultation_
 
 (d) in relation to a legislative measure adopted by the Northern Ireland Assembly, or a regulatory measure based on such a legislative measure, the relevant Northern Ireland department.
 
-5. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5. _(repealed)_

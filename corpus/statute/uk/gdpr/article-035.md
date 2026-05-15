@@ -7,7 +7,7 @@ citation: UK GDPR Article 35
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/35/data.xht"
 source_format: xhtml
 revision_id: "Wed, 13 May 2026 15:07:58 GMT"
-content_sha256: d9f9f04567acb5bf3958a9c58dece85283fe702498773e1262e550bcda452cf2
+content_sha256: aea40f9dce04cbe68e319d4a79f3921a280f4a4ab476ecdb3a8df35d1075cb05
 last_fetched: 2026-05-15
 language: en-GB
 enforcement_status: in_force
@@ -34,7 +34,7 @@ _Data protection impact assessment_
 
 5. The Commissioner may also establish and make public a list of the kind of processing operations for which no data protection impact assessment is required. ...
 
-6. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6. _(repealed)_
 
 7. The assessment shall contain at least:
 

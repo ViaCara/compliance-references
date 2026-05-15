@@ -7,7 +7,7 @@ citation: UK GDPR Article 14
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/14/data.xht"
 source_format: xhtml
 revision_id: "Wed, 13 May 2026 15:07:58 GMT"
-content_sha256: 0c948e0d1c7c6a6df4d91f286fec4a8f361fd27cb2bdc5f4ecef6deb58a399d8
+content_sha256: f54883c9c303c8df5fd9023100e257c4d36ba0cf605dcc7bd6b459924bf41688
 last_fetched: 2026-05-15
 language: en-GB
 enforcement_status: in_force
@@ -62,7 +62,7 @@ _Information to be provided where personal data have not been obtained from the 
 
 (a) the data subject already has the information;
 
-(b) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+(b) _(repealed)_
 
 (c) obtaining or disclosure is expressly laid down by a provision of domestic law which provides appropriate measures to protect the data subject's legitimate interests; ...
 

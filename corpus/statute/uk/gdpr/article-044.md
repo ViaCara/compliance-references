@@ -7,7 +7,7 @@ citation: UK GDPR Article 44
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/44/data.xht"
 source_format: xhtml
 revision_id: "Wed, 13 May 2026 15:07:58 GMT"
-content_sha256: 00ab93fd0f31d77a9fc2c5d95626ac6ac2758d0eb6b33b1a0d82ac03a75fad80
+content_sha256: c4d1dc39bc6302aececd7ea524b05e9cd980031b872565d81dc4476b31a6adea
 last_fetched: 2026-05-15
 language: en-GB
 enforcement_status: in_force
@@ -17,8 +17,6 @@ enforcement_status: in_force
 _General principle for transfers_
 
 **Chapter:** CHAPTER V - Transfers of personal data to third countries or international organisations
-
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
 Textual Amendments
 

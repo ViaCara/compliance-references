@@ -7,7 +7,7 @@ citation: UK GDPR Article 6
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/6/data.xht"
 source_format: xhtml
 revision_id: "Wed, 13 May 2026 15:07:58 GMT"
-content_sha256: a2d4d0d500139a291fc2f5caa8d4feae917af3df8304345e9fdf79277883dc53
+content_sha256: 04af53a2e8633399404983ce08aa879c2fa2ec5ea2baa1557ba042b5bc522b0b
 last_fetched: 2026-05-15
 language: en-GB
 enforcement_status: in_force
@@ -34,11 +34,11 @@ _Lawfulness of processing_
 
 (f) processing is necessary for the purposes of the legitimate interests pursued by the controller or by a third party, except where such interests are overridden by the interests or fundamental rights and freedoms of the data subject which require protection of personal data, in particular where the data subject is a child.
 
-2. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2. _(repealed)_
 
 3. The basis for the processing referred to in point (c) ... of paragraph 1 shall be laid down by domestic law.
 
-4. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4. _(repealed)_
 
 5. For the purposes of paragraph 1(ea), processing is necessary for the purposes of a recognised legitimate interest only if it meets a condition in Annex 1.
 

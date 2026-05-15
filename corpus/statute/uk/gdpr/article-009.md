@@ -7,7 +7,7 @@ citation: UK GDPR Article 9
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/9/data.xht"
 source_format: xhtml
 revision_id: "Wed, 13 May 2026 15:07:58 GMT"
-content_sha256: aaa4b37355767b685ffb10c58b307a7c0da52d5ec08c249bb24c55ec09d9a686
+content_sha256: e5d8404dfedb6b11c375f27a8e5fae453b0881fe659e4f9be0bd8fad61a01dc1
 last_fetched: 2026-05-15
 language: en-GB
 enforcement_status: in_force
@@ -46,7 +46,7 @@ _Processing of special categories of personal data_
 
 3A. In paragraph 3, ‘national competent bodies’ means competent bodies of the United Kingdom or a part of the United Kingdom.
 
-4. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4. _(repealed)_
 
 5. In the 2018 Act—
 

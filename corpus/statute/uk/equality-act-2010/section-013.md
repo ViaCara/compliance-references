@@ -7,7 +7,7 @@ citation: Equality Act 2010 s. 13
 source_uri: "https://www.legislation.gov.uk/ukpga/2010/15/section/13/data.xht"
 source_format: xhtml
 revision_id: "Wed, 13 May 2026 15:07:58 GMT"
-content_sha256: 95c222c12b35c8af702edb68d796c2953861b0b5cbf6fe7245b1ad87eafa5ed2
+content_sha256: e6695f6ad106a13ab2b981c76335a72877e58c9dc5d4beb05816a8217c8ab243
 last_fetched: 2026-05-15
 language: en-GB
 enforcement_status: in_force
@@ -32,6 +32,6 @@ _Direct discrimination_
 
 (b) in a case where B is a man, no account is to be taken of special treatment afforded to a woman in connection with pregnancy , childbirth or maternity.
 
-(7) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+(7) _(repealed)_
 
 (8) This section is subject to sections 17(6) and 18(7).
