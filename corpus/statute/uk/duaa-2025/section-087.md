@@ -8,9 +8,9 @@ source_uri: "https://www.legislation.gov.uk/ukpga/2025/18/section/87/data.xht"
 source_format: xhtml
 revision_id: "Wed, 13 May 2026 15:07:58 GMT"
 content_sha256: a792ad58b8c0cb1dcc23bc0882a6f4107eb5cbb4508b0b6523fcba672c5e101d
-last_fetched: 2026-05-15
+last_fetched: 2026-05-16
 language: en-GB
-enforcement_status: in_force
+enforcement_status: prospective
 ---
 # DUAA 2025 s. 87
 

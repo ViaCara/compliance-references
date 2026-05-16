@@ -6,16 +6,16 @@ Handles the `<div class="LegSnippet">` document body served at
 
 Class names used in selection (from the legislation.gov.uk DOM):
 
-- `LegSnippet` — the root container we accept.
-- `LegEUChapter`, `LegEUChapterNo`, `LegEUChapterTitle` — chapter heading.
-- `LegP1ContainerFirst` / `LegP1Container` — article / regulation / section heading.
-- `LegP1No`, `LegP1GroupTitleFirst`, `LegP1GroupTitle` — number + title spans.
-- `LegP2Container` — top-level numbered paragraph.
-- `LegP2No`, `LegP2Text` — number / text.
-- `LegP3Container` — sub-paragraph (e.g. "(a)").
-- `LegP3No`, `LegP3Text` — number / text.
-- `LegP4Container` etc. — deeper nesting.
-- `LegChangeDelimiter`, `LegAddition`, `LegRepealed`, `LegCommentaryLink` —
+- `LegSnippet`, the root container we accept.
+- `LegEUChapter`, `LegEUChapterNo`, `LegEUChapterTitle`, chapter heading.
+- `LegP1ContainerFirst` / `LegP1Container`, article / regulation / section heading.
+- `LegP1No`, `LegP1GroupTitleFirst`, `LegP1GroupTitle`, number + title spans.
+- `LegP2Container`, top-level numbered paragraph.
+- `LegP2No`, `LegP2Text`, number / text.
+- `LegP3Container`, sub-paragraph (e.g. "(a)").
+- `LegP3No`, `LegP3Text`, number / text.
+- `LegP4Container` etc., deeper nesting.
+- `LegChangeDelimiter`, `LegAddition`, `LegRepealed`, `LegCommentaryLink`:
   amendment annotations. We strip delimiters and commentary links, keep
   additions inline.
 """
@@ -59,13 +59,9 @@ def _is_skipped(element: ET.Element) -> bool:
 
 
 def _inline_text(element: ET.Element) -> str:
-    """Collect all visible text from `element`, skipping amendment chrome."""
     parts: list[str] = []
     _collect_inline(element, parts)
-    text = "".join(parts)
-    # Collapse runs of whitespace; preserve a single space.
-    text = re.sub(r"\s+", " ", text)
-    return text.strip()
+    return " ".join("".join(parts).split())
 
 
 def _collect_inline(element: ET.Element, parts: list[str]) -> None:
@@ -106,7 +102,6 @@ class LegislationTransformer:
             body_lines.append(paragraph)
             body_lines.append("")
 
-        # Trim trailing blank lines and ensure single trailing newline.
         while body_lines and body_lines[-1] == "":
             body_lines.pop()
         return "\n".join(body_lines) + "\n"
@@ -131,41 +126,23 @@ class LegislationTransformer:
                         return f"{number} - {title}" if number else title
         return None
 
+    _LEVELS = {2: "", 3: "    ", 4: "        "}
+
     def _iter_paragraphs(self, root: ET.Element) -> Iterable[str]:
         emitted_any = False
         for element in root.iter():
             cls = _classes(element)
-            if "LegP2Container" in cls:
-                number = self._number(element, level=2)
-                text = self._text(element, level=2)
-                if text:
-                    emitted_any = True
-                    if _is_repealed_marker(text):
-                        yield f"{number} _(repealed)_".strip()
-                    else:
-                        yield f"{number} {text}".strip()
-            elif "LegP3Container" in cls:
-                number = self._number(element, level=3)
-                text = self._text(element, level=3)
-                if text:
-                    emitted_any = True
-                    if _is_repealed_marker(text):
-                        yield f"    {number} _(repealed)_".strip()
-                    else:
-                        yield f"    {number} {text}".strip()
-            elif "LegP4Container" in cls:
-                number = self._number(element, level=4)
-                text = self._text(element, level=4)
-                if text:
-                    emitted_any = True
-                    if _is_repealed_marker(text):
-                        yield f"        {number} _(repealed)_".strip()
-                    else:
-                        yield f"        {number} {text}".strip()
+            for level, indent in self._LEVELS.items():
+                if f"LegP{level}Container" in cls:
+                    number = self._number(element, level=level)
+                    text = self._text(element, level=level)
+                    if text:
+                        emitted_any = True
+                        body = "_(repealed)_" if _is_repealed_marker(text) else text
+                        yield f"{indent}{number} {body}".strip()
+                    break
 
         if not emitted_any:
-            # Fallback for snippets that use plain <p> elements rather than
-            # the LegPN container vocabulary (e.g. small SI fragments).
             saw_repealed_only = True
             for element in root.iter():
                 if _localname(element.tag) == "p":
@@ -177,7 +154,7 @@ class LegislationTransformer:
                     saw_repealed_only = False
                     yield text
             if saw_repealed_only:
-                yield "_Provision repealed — see source for amendment history._"
+                yield "_Provision repealed. See source for amendment history._"
 
     def _number(self, element: ET.Element, *, level: int) -> str:
         for child in element.iter():
@@ -191,7 +168,6 @@ class LegislationTransformer:
             cls = _classes(child)
             if f"LegP{level}Text" in cls:
                 return _inline_text(child)
-        # Fallback: full element text minus the number span.
         full = _inline_text(element)
         number = self._number(element, level=level)
         if number and full.startswith(number):
@@ -205,7 +181,7 @@ def _is_repealed_marker(text: str) -> bool:
     legislation.gov.uk renders omitted/repealed provisions as a run of full
     stops separated by spaces (e.g. `. . . . . . . . . . . . . . . . . . . .`).
     Returns True when the collapsed text is dots-and-whitespace only AND has
-    at least `_DOT_COUNT_THRESHOLD` dots — avoids false positives on legitimate
+    at least `_DOT_COUNT_THRESHOLD` dots, avoids false positives on legitimate
     short text like "etc." or numeric ranges.
     """
     if not text:

@@ -12,6 +12,14 @@ class FetchError(RuntimeError):
     """Raised on any non-success HTTP response or transport failure."""
 
 
+class TransportError(FetchError):
+    """Raised on transport-level errors (SSL EOF, DNS, connection reset).
+
+    These are retried by `Fetcher.fetch`; HTTP errors raise plain `FetchError`
+    and are not retried.
+    """
+
+
 class NotModified(Exception):
     """Raised when the server returns 304 to a conditional GET."""
 
@@ -49,13 +57,11 @@ class Fetcher:
                 return self._fetch_once(url, if_none_match=if_none_match)
             except NotModified:
                 raise
-            except FetchError as exc:
+            except TransportError as exc:
                 last_error = exc
-                # Transport errors (SSL EOF, connection reset) recover on retry.
-                if "transport error" not in str(exc):
-                    raise
-                # Exponential backoff.
                 time.sleep(self.sleep_seconds * (2 ** attempt))
+            except FetchError:
+                raise
         assert last_error is not None
         raise last_error
 
@@ -79,7 +85,7 @@ class Fetcher:
             raise FetchError(f"HTTP {exc.code} for {url}: {exc.reason}") from exc
         except (URLError, OSError) as exc:
             reason = getattr(exc, "reason", exc)
-            raise FetchError(f"transport error for {url}: {reason}") from exc
+            raise TransportError(f"transport error for {url}: {reason}") from exc
         finally:
             self._last_request_at = time.monotonic()
 

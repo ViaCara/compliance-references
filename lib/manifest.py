@@ -12,7 +12,7 @@ class ManifestError(ValueError):
     """Raised when manifest.json is malformed or invalid."""
 
 
-VALID_KINDS = {
+LEGISLATION_KINDS = {
     "legislation_article",
     "legislation_recital",
     "legislation_section",
@@ -20,13 +20,14 @@ VALID_KINDS = {
     "legislation_schedule",
     "legislation_part",
     "legislation_chapter",
+}
+EUR_LEX_KINDS = {
     "eur_lex_article",
     "eur_lex_recital",
     "eur_lex_annex",
-    "curated_quotes",
-    "external_index",
-    "contents",
 }
+OTHER_KINDS = {"curated_quotes", "external_index", "contents"}
+VALID_KINDS = LEGISLATION_KINDS | EUR_LEX_KINDS | OTHER_KINDS
 
 VALID_FREQUENCIES = {"monthly", "quarterly", "yearly"}
 

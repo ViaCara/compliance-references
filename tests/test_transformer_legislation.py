@@ -62,7 +62,7 @@ class LegislationTransformerTests(unittest.TestCase):
         markdown = transformer.transform(source, citation="DPA 2018 s. 14")
 
         self.assertIn("# DPA 2018 s. 14", markdown)
-        self.assertIn("_Provision repealed", markdown)
+        self.assertIn("_Provision repealed.", markdown)
         # Run of dots must NOT appear in the output.
         self.assertNotIn(". . . . . . . . . .", markdown)
 

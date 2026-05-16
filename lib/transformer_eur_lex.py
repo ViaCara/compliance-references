@@ -3,10 +3,10 @@
 EUR-Lex serves HTML5 (not XHTML), so `html.parser.HTMLParser` is the right
 tool. The relevant DOM containers we look for:
 
-- `<div class="eli-container">` or `<div class="eli-main-title">` — main body.
-- `<p class="oj-doc-ti">` — article / regulation title (e.g. "Article 6").
-- `<p class="oj-sti-art">` — article subtitle.
-- `<p class="oj-normal">` — main paragraph text.
+- `<div class="eli-container">` or `<div class="eli-main-title">`, main body.
+- `<p class="oj-doc-ti">`, article / regulation title (e.g. "Article 6").
+- `<p class="oj-sti-art">`, article subtitle.
+- `<p class="oj-normal">`, main paragraph text.
 
 We treat any descendant of the eli container that's a `<p>` as a paragraph
 and strip inline tags (`<em>`, `<strong>`, `<span>`) to plain text.

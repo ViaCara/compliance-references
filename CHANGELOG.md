@@ -2,6 +2,21 @@
 
 Drift log. Newer entries first.
 
+## 2026-05-16
+- **corpus/statute/uk/duaa-2025/section-087.md** content changed
+  - source: https://www.legislation.gov.uk/ukpga/2025/18/section/87/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   a792ad58b8c0cb1dcc23bc0882a6f4107eb5cbb4508b0b6523fcba672c5e101d
+  - revision: Wed, 13 May 2026 15:07:58 GMT
+  - summary: new file
+
+- **corpus/statute/uk/duaa-2025/section-001.md** content changed
+  - source: https://www.legislation.gov.uk/ukpga/2025/18/section/1/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   a799bc0aeb3ace08f34e8582c612b9fd5da89efaad1754916151849840d5748e
+  - revision: Wed, 13 May 2026 15:07:58 GMT
+  - summary: new file
+
 ## 2026-05-15
 - **corpus/statute/uk/gdpr/article-014.md** content changed
   - source: https://www.legislation.gov.uk/eur/2016/679/article/14/data.xht
