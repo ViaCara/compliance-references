@@ -53,6 +53,7 @@ def build_index(sources: list[dict], corpus_root: Path) -> list[dict]:
             {
                 "id": source["id"],
                 "title": source.get("title", source.get("citation", source["id"])),
+                "path": source["target"],
                 "jurisdiction": _jurisdiction(source["target"]),
                 "authority": _authority(source["kind"]),
                 "source_uri": source["source_uri"],

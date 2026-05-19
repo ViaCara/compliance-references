@@ -69,6 +69,9 @@ class BuildIndexTests(unittest.TestCase):
                 "e5d8404dfedb6b11c375f27a8e5fae453b0881fe659e4f9be0bd8fad61a01dc1",
             )
             # The index is metadata only: no clause body may leak into it.
+            # The consumer needs the corpus-relative path to fetch the body
+            # on `install`; the index carries it, never the body itself.
+            self.assertEqual(record["path"], "statute/uk/gdpr/article-009.md")
             self.assertNotIn("body", record)
             self.assertNotIn("content", record)
             for value in record.values():
