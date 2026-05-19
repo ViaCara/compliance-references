@@ -18,6 +18,7 @@ from pathlib import Path
 from lib.changelog import Changelog, Entry
 from lib.fetcher import FetchError, Fetcher, NotModified, TransportError
 from lib.frontmatter import body_sha256, parse, render
+from lib.index import write_index
 from lib.manifest import EUR_LEX_KINDS, LEGISLATION_KINDS, load
 from lib.transformer_eur_lex import EurLexTransformer
 from lib.transformer_legislation import LegislationTransformer
@@ -90,6 +91,8 @@ def main(argv: list[str]) -> int:
             written += 1
         else:
             unchanged += 1
+
+    write_index(ROOT / "index.json", manifest.sources, CORPUS)
 
     print(f"summary: {written} written, {unchanged} unchanged, {len(errors)} errors")
     for err in errors:
