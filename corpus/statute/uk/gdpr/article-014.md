@@ -6,9 +6,9 @@ kind: legislation_article
 citation: UK GDPR Article 14
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/14/data.xht"
 source_format: xhtml
-revision_id: "Wed, 13 May 2026 15:07:58 GMT"
-content_sha256: f54883c9c303c8df5fd9023100e257c4d36ba0cf605dcc7bd6b459924bf41688
-last_fetched: 2026-05-15
+revision_id: "Mon, 22 Jun 2026 16:27:55 GMT"
+content_sha256: 84bda37d7529e73ac3d0ebfbdc27ad86fd875b8e724d8519a43555182088edef
+last_fetched: 2026-07-01
 language: en-GB
 enforcement_status: in_force
 ---
@@ -42,7 +42,9 @@ _Information to be provided where personal data have not been obtained from the 
 
 (d) where processing is based on point (a) of Article 6(1) or point (a) of Article 9(2), the existence of the right to withdraw consent at any time, without affecting the lawfulness of processing based on consent before its withdrawal;
 
-(e) the right to lodge a complaint with the Commissioner;
+(da) the right to make a complaint to the controller (see section 164A of the 2018 Act);
+
+(e) the right to make a complaint to the Commissioner under section 165 of the 2018 Act;
 
 (f) from which source the personal data originate, and if applicable, whether it came from publicly accessible sources;
 
