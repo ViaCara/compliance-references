@@ -1,0 +1,55 @@
+---
+id: dmcc-2024-s-225
+title: Digital Markets, Competition and Consumers Act 2024 section 225 - Prohibition of unfair commercial practices
+instrument: dmcc-2024
+kind: legislation_section
+citation: DMCC 2024 s. 225
+source_uri: "https://www.legislation.gov.uk/ukpga/2024/13/section/225/data.xht"
+source_format: xhtml
+revision_id: "Thu, 02 Jul 2026 16:21:07 GMT"
+content_sha256: e1c8dfe26fd20469765d28e29fcc3ca803ec543ae1dd05bdc1838fe0991ce6fa
+last_fetched: 2026-07-02
+language: en-GB
+enforcement_status: in_force
+---
+# DMCC 2024 s. 225
+
+_Prohibition of unfair commercial practices_
+
+(1) Unfair commercial practices are prohibited.
+
+(2) The promotion of unfair commercial practices in, or in connection with, a code of conduct by—
+
+(a) a person responsible for the content of a code of conduct, or
+
+(b) a person responsible for monitoring compliance with a code of conduct,
+
+(3) In this Chapter—
+
+(4) A commercial practice is unfair if—
+
+(a) it is likely to cause the average consumer to take a transactional decision that the consumer would not have taken otherwise as a result of the practice involving one or more of the following—
+
+(i) a misleading action (see section 226);
+
+(ii) a misleading omission (see section 227);
+
+(iii) an aggressive practice (see section 228);
+
+(iv) a contravention of the requirements of professional diligence (see section 229),
+
+(b) it omits material information from an invitation to purchase (see section 230), or
+
+(c) it is listed in Schedule 20 (commercial practices which are in all circumstances considered unfair).
+
+(5) It is immaterial for the purposes of the definition of “commercial practice” in subsection (3) whether the act or omission takes place—
+
+(a) at the time of the promotion or supply in question, or
+
+(b) before or after that time.
+
+(6) It is immaterial for the purposes of the definition of “trader” in subsection (3)—
+
+(a) in relation to paragraph (a) of that definition, whether P is acting personally or through another person acting in P’s name or on P’s behalf;
+
+(b) in relation to paragraph (b) of that definition, whether or not the purposes relating to P’s business are the only or main purposes for which the person is acting.

@@ -19,6 +19,7 @@ from lib.frontmatter import parse
 _AUTHORITY_BY_KIND = {
     "legislation_article": "statute",
     "legislation_section": "statute",
+    "legislation_schedule": "statute",
     "legislation_regulation": "statute",
     "eur_lex_article": "statute",
     "eur_lex_recital": "statute",

@@ -19,7 +19,7 @@ from lib.changelog import Changelog, Entry
 from lib.fetcher import FetchError, Fetcher, NotModified, TransportError
 from lib.frontmatter import body_sha256, parse, render
 from lib.index import write_index
-from lib.manifest import EUR_LEX_KINDS, LEGISLATION_KINDS, load
+from lib.manifest import EUR_LEX_KINDS, LEGISLATION_KINDS, OTHER_KINDS, load
 from lib.transformer_eur_lex import EurLexTransformer
 from lib.transformer_legislation import LegislationTransformer
 
@@ -101,6 +101,9 @@ def main(argv: list[str]) -> int:
 
 
 def _process_entry(entry, target_path: Path, ctx: BuildContext) -> str:
+    if entry["kind"] in OTHER_KINDS:
+        return _verify_curated(entry, target_path)
+
     prior_etag, prior_sha = _prior_metadata(target_path)
     try:
         result = ctx.fetcher.fetch(entry["source_uri"], if_none_match=prior_etag)
@@ -152,6 +155,20 @@ def _process_entry(entry, target_path: Path, ctx: BuildContext) -> str:
         )
     )
     return "written"
+
+
+def _verify_curated(entry, target_path: Path) -> str:
+    """Tier B/C entries (curated_quotes, external_index, contents) are
+    hand-curated: the pipeline never fetches or rewrites them. Verify the
+    file exists and that its recorded content hash still matches the body,
+    so a silent hand edit cannot drift past the index."""
+    if not target_path.exists():
+        raise BuildError(f"curated target missing for {entry['id']}: {target_path}")
+
+    fields, body = parse(target_path.read_text(encoding="utf-8"))
+    if fields.get("content_sha256") != body_sha256(body):
+        raise BuildError(f"curated content_sha256 stale for {entry['id']}")
+    return "unchanged"
 
 
 def _prior_metadata(path: Path) -> tuple[str | None, str | None]:
