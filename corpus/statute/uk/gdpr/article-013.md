@@ -6,9 +6,9 @@ kind: legislation_article
 citation: UK GDPR Article 13
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/13/data.xht"
 source_format: xhtml
-revision_id: "Wed, 13 May 2026 15:07:58 GMT"
-content_sha256: ee675fd22a2876e26be8f4f574ede90c5847f5334f3f84d409542a524226a0d3
-last_fetched: 2026-05-15
+revision_id: "Thu, 02 Jul 2026 16:21:07 GMT"
+content_sha256: a8708dfb83c1e9bdcbc10ff7398988050377b10c3069035e150b43524bd0037e
+last_fetched: 2026-07-03
 language: en-GB
 enforcement_status: in_force
 ---
@@ -40,7 +40,9 @@ _Information to be provided where personal data are collected from the data subj
 
 (c) where the processing is based on point (a) of Article 6(1) or point (a) of Article 9(2), the existence of the right to withdraw consent at any time, without affecting the lawfulness of processing based on consent before its withdrawal;
 
-(d) the right to lodge a complaint with the Commissioner;
+(ca) the right to make a complaint to the controller under section 164A of the 2018 Act;
+
+(d) the right to make a complaint to the Commissioner under section 165 of the 2018 Act;
 
 (e) whether the provision of personal data is a statutory or contractual requirement, or a requirement necessary to enter into a contract, as well as whether the data subject is obliged to provide the personal data and of the possible consequences of failure to provide such data;
 
