@@ -1,5 +1,17 @@
 [
   {
+    "authority": "guidance",
+    "domain_tags": [],
+    "id": "cma-fake-reviews-cma208",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/cma/fake-reviews-cma208.md",
+    "revision_id": "4 April 2025",
+    "sha": "2b40ac42f38abe059016336dbb752428be0b8d3daeebfefe6b92b48a0239f82a",
+    "source_uri": "https://www.gov.uk/government/publications/fake-reviews",
+    "summary": "",
+    "title": "CMA208 - Fake reviews: guidance on the prohibition under paragraph 13 of Schedule 20 to the DMCC Act 2024"
+  },
+  {
     "authority": "statute",
     "domain_tags": [],
     "id": "consumer-rights-act-2015-s-049",
@@ -10,6 +22,30 @@
     "source_uri": "https://www.legislation.gov.uk/ukpga/2015/15/section/49/data.xht",
     "summary": "",
     "title": "Consumer Rights Act 2015 section 49 - Service to be performed with reasonable care and skill"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [],
+    "id": "dmcc-2024-s-225",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dmcc-2024/section-225.md",
+    "revision_id": "Thu, 02 Jul 2026 16:21:07 GMT",
+    "sha": "e1c8dfe26fd20469765d28e29fcc3ca803ec543ae1dd05bdc1838fe0991ce6fa",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2024/13/section/225/data.xht",
+    "summary": "",
+    "title": "Digital Markets, Competition and Consumers Act 2024 section 225 - Prohibition of unfair commercial practices"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [],
+    "id": "dmcc-2024-sch-20",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dmcc-2024/schedule-020.md",
+    "revision_id": "Thu, 02 Jul 2026 16:21:07 GMT",
+    "sha": "ded01d3a9dc58fd5ab91df4b5564c29cbb1f5cf32a30c4019a9580a4ad1a35ad",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2024/13/schedule/20/data.xht",
+    "summary": "",
+    "title": "Digital Markets, Competition and Consumers Act 2024 Schedule 20 - Commercial practices which are in all circumstances considered unfair"
   },
   {
     "authority": "statute",
