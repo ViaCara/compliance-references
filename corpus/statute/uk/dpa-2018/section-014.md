@@ -3,16 +3,16 @@ id: dpa-2018-s-014
 title: DPA 2018 section 14 - Automated decision-making authorised by law
 instrument: dpa-2018
 kind: legislation_section
-citation: DPA 2018 section 14 - Automated decision-making authorised by law
+citation: DPA 2018 s. 14
 source_uri: "https://www.legislation.gov.uk/ukpga/2018/12/section/14/data.xht"
 source_format: xhtml
 revision_id: "Wed, 22 Jul 2026 18:56:31 GMT"
-content_sha256: e479da2f777c32a50b2123e699f97bf228143213b3e2031f023036a55a29a83b
+content_sha256: ba1bb262d8cae4c0a99828c4307eea0b3100c6b20e27d492ac943c6b7794a237
 last_fetched: 2026-07-24
 language: en-GB
 enforcement_status: repealed
 ---
-# DPA 2018 section 14 - Automated decision-making authorised by law
+# DPA 2018 s. 14
 
 _Automated decision-making authorised by law: safeguards_
 

@@ -5,6 +5,20 @@ Drift log. Newer entries first.
 ## 2026-07-24
 - **corpus/statute/uk/dpa-2018/section-014.md** content changed
   - source: https://www.legislation.gov.uk/ukpga/2018/12/section/14/data.xht
+  - prior_sha256: e479da2f777c32a50b2123e699f97bf228143213b3e2031f023036a55a29a83b
+  - new_sha256:   ba1bb262d8cae4c0a99828c4307eea0b3100c6b20e27d492ac943c6b7794a237
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+  - summary: hash e479da2 -> ba1bb26
+
+- **corpus/statute/uk/duaa-2025/uksi-082-regulation-005.md** content changed
+  - source: https://www.legislation.gov.uk/uksi/2026/82/regulation/5/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   a94e4a3507f240e82d18be17df7f54b4955b7fb9896f4e0e38d0bf534eb95974
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+  - summary: new file
+
+- **corpus/statute/uk/dpa-2018/section-014.md** content changed
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/section/14/data.xht
   - prior_sha256: ba1bb262d8cae4c0a99828c4307eea0b3100c6b20e27d492ac943c6b7794a237
   - new_sha256:   e479da2f777c32a50b2123e699f97bf228143213b3e2031f023036a55a29a83b
   - revision: Wed, 22 Jul 2026 18:56:31 GMT

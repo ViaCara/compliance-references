@@ -66,7 +66,7 @@
     "jurisdiction": "uk",
     "path": "statute/uk/dpa-2018/section-014.md",
     "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
-    "sha": "e479da2f777c32a50b2123e699f97bf228143213b3e2031f023036a55a29a83b",
+    "sha": "ba1bb262d8cae4c0a99828c4307eea0b3100c6b20e27d492ac943c6b7794a237",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/section/14/data.xht",
     "summary": "",
     "title": "DPA 2018 section 14 - Automated decision-making authorised by law"
@@ -106,6 +106,18 @@
     "source_uri": "https://www.legislation.gov.uk/ukpga/2025/18/section/87/data.xht",
     "summary": "",
     "title": "Data (Use and Access) Act 2025 section 87"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [],
+    "id": "duaa-2025-uksi-082-reg-005",
+    "jurisdiction": "uk",
+    "path": "statute/uk/duaa-2025/uksi-082-regulation-005.md",
+    "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
+    "sha": "a94e4a3507f240e82d18be17df7f54b4955b7fb9896f4e0e38d0bf534eb95974",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2026/82/regulation/5/data.xht",
+    "summary": "",
+    "title": "Data (Use and Access) Act 2025 Commencement No. 6 Regulations 2026 regulation 5 - Saving provision"
   },
   {
     "authority": "statute",

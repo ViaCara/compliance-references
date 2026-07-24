@@ -27,6 +27,7 @@ class IdentityLifecycleSourceTests(unittest.TestCase):
             "uk-gdpr-art-022d": "article/22D/data.xht",
             "uk-gdpr-art-044a": "article/44A/data.xht",
             "uk-gdpr-art-084b": "article/84B/data.xht",
+            "duaa-2025-uksi-082-reg-005": "uksi/2026/82/regulation/5/data.xht",
         }
 
         for source_id, path in expected_paths.items():
@@ -57,6 +58,21 @@ class IdentityLifecycleSourceTests(unittest.TestCase):
                 self.assertEqual("2026-07-24", fields["last_fetched"])
 
                 self.assertEqual(source["source_uri"], fields["source_uri"])
+
+    def test_transition_saving_provision_covers_automated_decisions(self):
+        saving = {
+            source["id"]: source
+            for source in json.loads(MANIFEST.read_text(encoding="utf-8"))["sources"]
+        }["duaa-2025-uksi-082-reg-005"]
+        _fields, body = parse(
+            (CORPUS / saving["target"]).read_text(encoding="utf-8")
+        )
+
+        self.assertIn("decision taken before 5th February 2026", body)
+
+        self.assertIn("Article 22(3)", body)
+
+        self.assertIn("section 14(1)", body)
 
 
 if __name__ == "__main__":
