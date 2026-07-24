@@ -17,7 +17,7 @@ from pathlib import Path
 
 from lib.changelog import Changelog, Entry
 from lib.fetcher import FetchError, Fetcher, NotModified, TransportError
-from lib.frontmatter import body_sha256, parse, render
+from lib.frontmatter import FrontmatterError, body_sha256, parse, render
 from lib.index import write_index
 from lib.manifest import EUR_LEX_KINDS, LEGISLATION_KINDS, OTHER_KINDS, load
 from lib.transformer_eur_lex import EurLexTransformer
@@ -180,8 +180,8 @@ def _prior_fields(path: Path) -> dict | None:
         return None
     try:
         fields, _ = parse(path.read_text(encoding="utf-8"))
-    except Exception:
-        return None
+    except (OSError, FrontmatterError) as exc:
+        raise BuildError(f"invalid prior corpus file {path}: {exc}") from exc
     return fields
 
 

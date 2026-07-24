@@ -110,6 +110,19 @@ class ManifestLoaderTests(unittest.TestCase):
             with self.assertRaises(ManifestError):
                 load(path)
 
+    def test_load_fails_on_unknown_enforcement_status(self):
+        with TemporaryDirectory() as td:
+            path = _write(
+                Path(td) / "manifest.json",
+                {
+                    "sources": [self._valid_entry(enforcement_status="repeald")],
+                    "contents_pages": [],
+                },
+            )
+
+            with self.assertRaises(ManifestError):
+                load(path)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -106,6 +106,14 @@ class ProcessEntryTest(unittest.TestCase):
             build._summary("old", "new", "in_force", "repealed"),
         )
 
+    def test_rejects_invalid_existing_frontmatter(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "article-022.md"
+            path.write_text("not frontmatter\n", encoding="utf-8")
+
+            with self.assertRaises(build.BuildError):
+                build._prior_fields(path)
+
 
 class _StaticFetcher:
     def __init__(self, result):

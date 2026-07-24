@@ -2,6 +2,7 @@
   {
     "authority": "guidance",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "cma-fake-reviews-cma208",
     "jurisdiction": "uk",
     "path": "guidance/uk/cma/fake-reviews-cma208.md",
@@ -14,6 +15,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "consumer-rights-act-2015-s-049",
     "jurisdiction": "uk",
     "path": "statute/uk/consumer-rights-act-2015/section-049.md",
@@ -26,6 +28,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "dmcc-2024-s-225",
     "jurisdiction": "uk",
     "path": "statute/uk/dmcc-2024/section-225.md",
@@ -38,6 +41,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "dmcc-2024-sch-20",
     "jurisdiction": "uk",
     "path": "statute/uk/dmcc-2024/schedule-020.md",
@@ -50,6 +54,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "dpa-2018-s-010",
     "jurisdiction": "uk",
     "path": "statute/uk/dpa-2018/section-010.md",
@@ -62,6 +67,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "repealed",
     "id": "dpa-2018-s-014",
     "jurisdiction": "uk",
     "path": "statute/uk/dpa-2018/section-014.md",
@@ -74,6 +80,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "dpa-2018-s-021",
     "jurisdiction": "uk",
     "path": "statute/uk/dpa-2018/section-021.md",
@@ -86,6 +93,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "prospective",
     "id": "duaa-2025-s-001",
     "jurisdiction": "uk",
     "path": "statute/uk/duaa-2025/section-001.md",
@@ -98,6 +106,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "prospective",
     "id": "duaa-2025-s-087",
     "jurisdiction": "uk",
     "path": "statute/uk/duaa-2025/section-087.md",
@@ -110,6 +119,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "duaa-2025-uksi-082-reg-005",
     "jurisdiction": "uk",
     "path": "statute/uk/duaa-2025/uksi-082-regulation-005.md",
@@ -122,6 +132,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "equality-act-2010-s-013",
     "jurisdiction": "uk",
     "path": "statute/uk/equality-act-2010/section-013.md",
@@ -134,6 +145,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "equality-act-2010-s-019",
     "jurisdiction": "uk",
     "path": "statute/uk/equality-act-2010/section-019.md",
@@ -146,6 +158,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "pecr-reg-006",
     "jurisdiction": "uk",
     "path": "statute/uk/pecr/regulation-006.md",
@@ -158,6 +171,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "pecr-reg-022",
     "jurisdiction": "uk",
     "path": "statute/uk/pecr/regulation-022.md",
@@ -170,6 +184,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "pecr-reg-023",
     "jurisdiction": "uk",
     "path": "statute/uk/pecr/regulation-023.md",
@@ -182,6 +197,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-005",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-005.md",
@@ -194,6 +210,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-006",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-006.md",
@@ -206,6 +223,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-007",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-007.md",
@@ -218,6 +236,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-009",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-009.md",
@@ -230,6 +249,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-012",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-012.md",
@@ -242,6 +262,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-013",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-013.md",
@@ -254,6 +275,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-014",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-014.md",
@@ -266,6 +288,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-015",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-015.md",
@@ -278,6 +301,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-016",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-016.md",
@@ -290,6 +314,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-017",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-017.md",
@@ -302,6 +327,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-018",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-018.md",
@@ -314,6 +340,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-019",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-019.md",
@@ -326,6 +353,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-020",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-020.md",
@@ -338,6 +366,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-021",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-021.md",
@@ -350,6 +379,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "repealed",
     "id": "uk-gdpr-art-022",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-022.md",
@@ -362,6 +392,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-022a",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-022a.md",
@@ -374,6 +405,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-022b",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-022b.md",
@@ -386,6 +418,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-022c",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-022c.md",
@@ -398,6 +431,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-022d",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-022d.md",
@@ -410,6 +444,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-025",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-025.md",
@@ -422,6 +457,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-026",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-026.md",
@@ -434,6 +470,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-030",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-030.md",
@@ -446,6 +483,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-032",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-032.md",
@@ -458,6 +496,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-033",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-033.md",
@@ -470,6 +509,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-034",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-034.md",
@@ -482,6 +522,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-035",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-035.md",
@@ -494,6 +535,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-036",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-036.md",
@@ -506,6 +548,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "repealed",
     "id": "uk-gdpr-art-044",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-044.md",
@@ -518,6 +561,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-044a",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-044a.md",
@@ -530,6 +574,7 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "uk-gdpr-art-084b",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-084b.md",
