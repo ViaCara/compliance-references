@@ -6,11 +6,11 @@ kind: legislation_article
 citation: UK GDPR Article 44
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/44/data.xht"
 source_format: xhtml
-revision_id: "Wed, 13 May 2026 15:07:58 GMT"
+revision_id: "Wed, 22 Jul 2026 18:56:31 GMT"
 content_sha256: c4d1dc39bc6302aececd7ea524b05e9cd980031b872565d81dc4476b31a6adea
-last_fetched: 2026-05-15
+last_fetched: 2026-07-24
 language: en-GB
-enforcement_status: in_force
+enforcement_status: repealed
 ---
 # UK GDPR Article 44
 

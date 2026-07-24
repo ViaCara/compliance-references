@@ -120,7 +120,8 @@ def _process_entry(entry, target_path: Path, ctx: BuildContext) -> str:
         raise BuildError(f"no transformer for kind={transformer_kind!r}")
 
     new_hash = body_sha256(body)
-    if prior_sha == new_hash:
+    enforcement_status = entry.get("enforcement_status", "in_force")
+    if prior_sha == new_hash and _prior_enforcement_status(target_path) == enforcement_status:
         return "unchanged"
 
     fields = {
@@ -135,7 +136,7 @@ def _process_entry(entry, target_path: Path, ctx: BuildContext) -> str:
         "content_sha256": new_hash,
         "last_fetched": ctx.today,
         "language": entry.get("language", "en-GB"),
-        "enforcement_status": entry.get("enforcement_status", "in_force"),
+        "enforcement_status": enforcement_status,
     }
     if result.etag:
         fields["etag"] = result.etag
@@ -179,6 +180,16 @@ def _prior_metadata(path: Path) -> tuple[str | None, str | None]:
     except Exception:
         return None, None
     return fields.get("etag"), fields.get("content_sha256")
+
+
+def _prior_enforcement_status(path: Path) -> str | None:
+    if not path.exists():
+        return None
+    try:
+        fields, _ = parse(path.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+    return fields.get("enforcement_status")
 
 
 def _summary(prior_sha: str | None, new_sha: str) -> str:

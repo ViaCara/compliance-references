@@ -2,6 +2,112 @@
 
 Drift log. Newer entries first.
 
+## 2026-07-24
+- **corpus/statute/uk/dpa-2018/section-014.md** content changed
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/section/14/data.xht
+  - prior_sha256: ba1bb262d8cae4c0a99828c4307eea0b3100c6b20e27d492ac943c6b7794a237
+  - new_sha256:   e479da2f777c32a50b2123e699f97bf228143213b3e2031f023036a55a29a83b
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+  - summary: hash ba1bb26 -> e479da2
+
+- **corpus/statute/uk/dpa-2018/section-014.md** content changed
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/section/14/data.xht
+  - prior_sha256: ba1bb262d8cae4c0a99828c4307eea0b3100c6b20e27d492ac943c6b7794a237
+  - new_sha256:   ba1bb262d8cae4c0a99828c4307eea0b3100c6b20e27d492ac943c6b7794a237
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+  - summary: hash ba1bb26 -> ba1bb26
+
+- **corpus/statute/uk/gdpr/article-044.md** content changed
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/44/data.xht
+  - prior_sha256: c4d1dc39bc6302aececd7ea524b05e9cd980031b872565d81dc4476b31a6adea
+  - new_sha256:   c4d1dc39bc6302aececd7ea524b05e9cd980031b872565d81dc4476b31a6adea
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+  - summary: hash c4d1dc3 -> c4d1dc3
+
+- **corpus/statute/uk/gdpr/article-022.md** content changed
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/22/data.xht
+  - prior_sha256: 5ad43053b45abc00c03982f09d9be2dacf8aa139ac237468d64ef62941f25093
+  - new_sha256:   5ad43053b45abc00c03982f09d9be2dacf8aa139ac237468d64ef62941f25093
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+  - summary: hash 5ad4305 -> 5ad4305
+
+- **corpus/statute/uk/gdpr/article-084b.md** content changed
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/84B/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   cd28a4c9bb0f6f0ff9ba24e76f4afaf0b65a5eda8951fffb2d6301cc4c386f8f
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+  - summary: new file
+
+- **corpus/statute/uk/gdpr/article-044a.md** content changed
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/44A/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   6ea11539a42e23a6f3a5f1994425ebef21e6de421122c3cde80ba05818634a44
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+  - summary: new file
+
+- **corpus/statute/uk/gdpr/article-022d.md** content changed
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/22D/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   438ab6d18b55480a4bd2570b6435a5a52207608eb432b4e55029e766269026db
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+  - summary: new file
+
+- **corpus/statute/uk/gdpr/article-022c.md** content changed
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/22C/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   bb206f06b1ac71aaadc975e3aae12d8381b239e9cd1efbbdcdbe8cc762a38e27
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+  - summary: new file
+
+- **corpus/statute/uk/gdpr/article-015.md** content changed
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/15/data.xht
+  - prior_sha256: 090b3235244f2389aa97d0622188c5cb8fc04776c1a6b29e0bd924e056a83389
+  - new_sha256:   37575e42b926ce1efd97356c0ad3b588f46d4e7edd4124f57d26ac14061ecfce
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+  - summary: hash 090b323 -> 37575e4
+
+- **corpus/statute/uk/gdpr/article-014.md** content changed
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/14/data.xht
+  - prior_sha256: f54883c9c303c8df5fd9023100e257c4d36ba0cf605dcc7bd6b459924bf41688
+  - new_sha256:   84bda37d7529e73ac3d0ebfbdc27ad86fd875b8e724d8519a43555182088edef
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+  - summary: hash f54883c -> 84bda37
+
+- **corpus/statute/uk/gdpr/article-013.md** content changed
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/13/data.xht
+  - prior_sha256: ee675fd22a2876e26be8f4f574ede90c5847f5334f3f84d409542a524226a0d3
+  - new_sha256:   a8708dfb83c1e9bdcbc10ff7398988050377b10c3069035e150b43524bd0037e
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+  - summary: hash ee675fd -> a8708df
+
+- **corpus/statute/uk/gdpr/article-012.md** content changed
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/12/data.xht
+  - prior_sha256: 4cd1d229002adf5fe00ebbbd09673da90553089e3b76f71009042359d1a9e12c
+  - new_sha256:   dd51c9ea85461582106967adf7966c118b9f32de910c78cf6f7f1f2b2601e0f0
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+  - summary: hash 4cd1d22 -> dd51c9e
+
+- **corpus/statute/uk/gdpr/article-022b.md** content changed
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/22B/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   ecc4fcba026541e54de40894195f10f175cd15d9b8d7cf47afb4c88e50a74a37
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+  - summary: new file
+
+- **corpus/statute/uk/gdpr/article-022a.md** content changed
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/22A/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   a827696ae12ef704f921cebe7472cf5615f69b457f9225f66e991a3049766e29
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+  - summary: new file
+
+- **corpus/statute/uk/gdpr/article-026.md** content changed
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/26/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   4a0ce0db78cac751df280eaebc5b38698be2c23eac365b443c1bf177e59856d0
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+  - summary: new file
+
 ## 2026-07-02
 - **corpus/statute/uk/dmcc-2024/schedule-020.md** content changed
   - source: https://www.legislation.gov.uk/ukpga/2024/13/schedule/20/data.xht
