@@ -63,12 +63,11 @@ class Changelog:
 
     def _render(self, entry: Entry) -> str:
         lines = [
-            f"- **{entry.target}** content changed",
+            f"- **{entry.target}** {entry.summary}",
             f"  - source: {entry.source_uri}",
             f"  - prior_sha256: {entry.prior_sha256}",
             f"  - new_sha256:   {entry.new_sha256}",
         ]
         if entry.revision:
             lines.append(f"  - revision: {entry.revision}")
-        lines.append(f"  - summary: {entry.summary}")
         return "\n".join(lines) + "\n"

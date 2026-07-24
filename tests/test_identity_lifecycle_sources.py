@@ -13,11 +13,14 @@ CORPUS = ROOT / "corpus"
 
 
 class IdentityLifecycleSourceTests(unittest.TestCase):
-    def test_manifest_carries_current_identity_lifecycle_sources(self):
-        sources = {
+    def setUp(self):
+        self.sources = {
             source["id"]: source
             for source in json.loads(MANIFEST.read_text(encoding="utf-8"))["sources"]
         }
+
+    def test_manifest_carries_current_identity_lifecycle_sources(self):
+        sources = self.sources
 
         expected_paths = {
             "uk-gdpr-art-026": "article/26/data.xht",
@@ -35,10 +38,7 @@ class IdentityLifecycleSourceTests(unittest.TestCase):
                 self.assertTrue(sources[source_id]["source_uri"].endswith(path))
 
     def test_superseded_identity_sources_are_rebuilt_as_repealed(self):
-        sources = {
-            source["id"]: source
-            for source in json.loads(MANIFEST.read_text(encoding="utf-8"))["sources"]
-        }
+        sources = self.sources
 
         for source_id in (
             "uk-gdpr-art-022",
@@ -60,10 +60,7 @@ class IdentityLifecycleSourceTests(unittest.TestCase):
                 self.assertEqual(source["source_uri"], fields["source_uri"])
 
     def test_transition_saving_provision_covers_automated_decisions(self):
-        saving = {
-            source["id"]: source
-            for source in json.loads(MANIFEST.read_text(encoding="utf-8"))["sources"]
-        }["duaa-2025-uksi-082-reg-005"]
+        saving = self.sources["duaa-2025-uksi-082-reg-005"]
         _fields, body = parse(
             (CORPUS / saving["target"]).read_text(encoding="utf-8")
         )

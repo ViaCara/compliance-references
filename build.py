@@ -104,7 +104,10 @@ def _process_entry(entry, target_path: Path, ctx: BuildContext) -> str:
     if entry["kind"] in OTHER_KINDS:
         return _verify_curated(entry, target_path)
 
-    prior_etag, prior_sha = _prior_metadata(target_path)
+    prior_fields = _prior_fields(target_path)
+    prior_etag = prior_fields.get("etag") if prior_fields else None
+    prior_sha = prior_fields.get("content_sha256") if prior_fields else None
+    prior_status = prior_fields.get("enforcement_status", "in_force") if prior_fields else None
     try:
         result = ctx.fetcher.fetch(entry["source_uri"], if_none_match=prior_etag)
     except NotModified:
@@ -121,7 +124,7 @@ def _process_entry(entry, target_path: Path, ctx: BuildContext) -> str:
 
     new_hash = body_sha256(body)
     enforcement_status = entry.get("enforcement_status", "in_force")
-    if prior_sha == new_hash and _prior_enforcement_status(target_path) == enforcement_status:
+    if prior_sha == new_hash and prior_status == enforcement_status:
         return "unchanged"
 
     fields = {
@@ -151,7 +154,7 @@ def _process_entry(entry, target_path: Path, ctx: BuildContext) -> str:
             source_uri=entry["source_uri"],
             prior_sha256=prior_sha or "(new file)",
             new_sha256=new_hash,
-            summary=_summary(prior_sha, new_hash),
+            summary=_summary(prior_sha, new_hash, prior_status, enforcement_status),
             revision=result.last_modified,
         )
     )
@@ -172,29 +175,26 @@ def _verify_curated(entry, target_path: Path) -> str:
     return "unchanged"
 
 
-def _prior_metadata(path: Path) -> tuple[str | None, str | None]:
-    if not path.exists():
-        return None, None
-    try:
-        fields, _ = parse(path.read_text(encoding="utf-8"))
-    except Exception:
-        return None, None
-    return fields.get("etag"), fields.get("content_sha256")
-
-
-def _prior_enforcement_status(path: Path) -> str | None:
+def _prior_fields(path: Path) -> dict | None:
     if not path.exists():
         return None
     try:
         fields, _ = parse(path.read_text(encoding="utf-8"))
     except Exception:
         return None
-    return fields.get("enforcement_status")
+    return fields
 
 
-def _summary(prior_sha: str | None, new_sha: str) -> str:
+def _summary(
+    prior_sha: str | None,
+    new_sha: str,
+    prior_status: str | None,
+    enforcement_status: str,
+) -> str:
     if not prior_sha:
         return "new file"
+    if prior_sha == new_sha and prior_status != enforcement_status:
+        return f"enforcement status {prior_status} -> {enforcement_status}"
     return f"hash {prior_sha[:7]} -> {new_sha[:7]}"
 
 

@@ -65,39 +65,49 @@ class ProcessEntryTest(unittest.TestCase):
             "enforcement_status": "repealed",
         }
         body = "# UK GDPR Article 22\n\n_(repealed)_\n"
-        relative_path = Path("tmp") / "article-022.md"
-        path = build.ROOT / relative_path
-        path.parent.mkdir(exist_ok=True)
-        fields = {
-            "id": entry["id"],
-            "content_sha256": body_sha256(body),
-            "enforcement_status": "in_force",
-        }
-        path.write_text(render(fields, body), encoding="utf-8")
-        result = FetchResult(body=body.encode(), etag=None, last_modified=None)
-        context = build.BuildContext(
-            fetcher=_StaticFetcher(result),
-            legislation=_StaticTransformer(body),
-            eur_lex=None,
-            changelog=_StaticChangelog(),
-            today="2026-07-24",
-        )
-        try:
-            self.assertEqual("written", build._process_entry(entry, path, context))
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            path = root / "article-022.md"
+            fields = {
+                "id": entry["id"],
+                "content_sha256": body_sha256(body),
+                "enforcement_status": "in_force",
+                "etag": '"prior"',
+            }
+            path.write_text(render(fields, body), encoding="utf-8")
+            result = FetchResult(body=body.encode(), etag=None, last_modified=None)
+            fetcher = _StaticFetcher(result)
+            changelog = _StaticChangelog()
+            context = build.BuildContext(
+                fetcher=fetcher,
+                legislation=_StaticTransformer(body),
+                eur_lex=None,
+                changelog=changelog,
+                today="2026-07-24",
+            )
+            prior_root = build.ROOT
+            build.ROOT = root
+            try:
+                self.assertEqual("written", build._process_entry(entry, path, context))
+            finally:
+                build.ROOT = prior_root
 
             actual, _body = build.parse(path.read_text(encoding="utf-8"))
 
             self.assertEqual("repealed", actual["enforcement_status"])
-        finally:
-            path.unlink(missing_ok=True)
-            path.parent.rmdir()
+
+            self.assertEqual("enforcement status in_force -> repealed", changelog.entry.summary)
+
+            self.assertEqual('"prior"', fetcher.if_none_match)
 
 
 class _StaticFetcher:
     def __init__(self, result):
         self.result = result
+        self.if_none_match = None
 
     def fetch(self, _url: str, *, if_none_match: str | None = None):
+        self.if_none_match = if_none_match
         return self.result
 
 
@@ -110,8 +120,8 @@ class _StaticTransformer:
 
 
 class _StaticChangelog:
-    def append(self, _entry) -> None:
-        pass
+    def append(self, entry) -> None:
+        self.entry = entry
 
 
 if __name__ == "__main__":
