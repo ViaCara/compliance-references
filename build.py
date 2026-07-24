@@ -193,9 +193,11 @@ def _summary(
 ) -> str:
     if not prior_sha:
         return "new file"
-    if prior_sha == new_sha and prior_status != enforcement_status:
-        return f"enforcement status {prior_status} -> {enforcement_status}"
-    return f"hash {prior_sha[:7]} -> {new_sha[:7]}"
+    hash_summary = f"hash {prior_sha[:7]} -> {new_sha[:7]}"
+    status_summary = f"enforcement status {prior_status} -> {enforcement_status}"
+    if prior_status != enforcement_status:
+        return status_summary if prior_sha == new_sha else f"{hash_summary}; {status_summary}"
+    return hash_summary
 
 
 if __name__ == "__main__":

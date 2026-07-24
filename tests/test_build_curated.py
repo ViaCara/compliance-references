@@ -100,6 +100,12 @@ class ProcessEntryTest(unittest.TestCase):
 
             self.assertEqual('"prior"', fetcher.if_none_match)
 
+    def test_records_status_change_with_content_drift(self):
+        self.assertEqual(
+            "hash old -> new; enforcement status in_force -> repealed",
+            build._summary("old", "new", "in_force", "repealed"),
+        )
+
 
 class _StaticFetcher:
     def __init__(self, result):
