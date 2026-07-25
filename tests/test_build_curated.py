@@ -75,7 +75,11 @@ class ProcessEntryTest(unittest.TestCase):
                 "etag": '"prior"',
             }
             path.write_text(render(fields, body), encoding="utf-8")
-            result = FetchResult(body=body.encode(), etag=None, last_modified=None)
+            result = FetchResult(
+                body=body.encode(),
+                etag=None,
+                last_modified="Fri, 24 Jul 2026 09:00:00 GMT",
+            )
             fetcher = _StaticFetcher(result)
             changelog = _StaticChangelog()
             context = build.BuildContext(
@@ -97,6 +101,10 @@ class ProcessEntryTest(unittest.TestCase):
             self.assertEqual("repealed", actual["enforcement_status"])
 
             self.assertEqual("enforcement status in_force -> repealed", changelog.entry.summary)
+
+            self.assertEqual("Fri, 24 Jul 2026 09:00:00 GMT", changelog.entry.revision)
+
+            self.assertEqual("2026-07-24", changelog.entry.date)
 
             self.assertEqual('"prior"', fetcher.if_none_match)
 
