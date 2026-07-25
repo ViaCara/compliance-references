@@ -7,8 +7,8 @@ citation: UK GDPR Article 22C
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/22C/data.xht"
 source_format: xhtml
 revision_id: "Wed, 22 Jul 2026 18:56:31 GMT"
-content_sha256: bb206f06b1ac71aaadc975e3aae12d8381b239e9cd1efbbdcdbe8cc762a38e27
-last_fetched: 2026-07-24
+content_sha256: 62dc6482ce21e2cf5f101456ef3875e6d4f3a3e5f7380012e42be1b06e2be0d3
+last_fetched: 2026-07-25
 language: en-GB
 enforcement_status: in_force
 ---
@@ -23,6 +23,8 @@ _Safeguards for automated decision-making_
 (a) based entirely or partly on personal data, and
 
 (b) based solely on automated processing,
+
+the controller must ensure that safeguards for the data subject’s rights, freedoms and legitimate interests are in place which comply with paragraph 2 and any regulations under Article 22D(3).
 
 2. The safeguards must consist of or include measures which—
 

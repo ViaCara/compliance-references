@@ -6,9 +6,9 @@ kind: legislation_article
 citation: UK GDPR Article 6
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/6/data.xht"
 source_format: xhtml
-revision_id: "Wed, 13 May 2026 15:07:58 GMT"
-content_sha256: 04af53a2e8633399404983ce08aa879c2fa2ec5ea2baa1557ba042b5bc522b0b
-last_fetched: 2026-05-15
+revision_id: "Wed, 22 Jul 2026 18:56:31 GMT"
+content_sha256: dc9eda064619c0642cecfc91cf9fc2958db944f1ea4ffa3e33a5b870063794ab
+last_fetched: 2026-07-25
 language: en-GB
 enforcement_status: in_force
 ---
@@ -34,9 +34,15 @@ _Lawfulness of processing_
 
 (f) processing is necessary for the purposes of the legitimate interests pursued by the controller or by a third party, except where such interests are overridden by the interests or fundamental rights and freedoms of the data subject which require protection of personal data, in particular where the data subject is a child.
 
+Points (ea) and (f) of the first subparagraph shall not apply to processing carried out by public authorities in the performance of their tasks.
+
 2. _(repealed)_
 
 3. The basis for the processing referred to in point (c) ... of paragraph 1 shall be laid down by domestic law.
+
+The basis for the processing referred to in point (e) of paragraph 1 must be laid down by domestic law or relevant international law (see section 9A of the 2018 Act).
+
+The purpose of the processing shall be determined in that legal basis or, as regards the processing referred to in point (e) of paragraph 1, shall be necessary for the performance of a task of the controller carried out in the public interest or a task carried out in the exercise of official authority vested in the controller. That legal basis may contain specific provisions to adapt the application of rules of this Regulation, inter alia: the general conditions governing the lawfulness of processing by the controller; the types of data which are subject to the processing; the data subjects concerned; the entities to, and the purposes for which, the personal data may be disclosed; the purpose limitation; storage periods; and processing operations and processing procedures, including measures to ensure lawful and fair processing such as those for other specific processing situations as provided for in Chapter IX. The domestic lawor relevant international law shall meet an objective of public interest and be proportionate to the legitimate aim pursued.
 
 4. _(repealed)_
 

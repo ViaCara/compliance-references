@@ -7,8 +7,8 @@ citation: UK GDPR Article 12
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/12/data.xht"
 source_format: xhtml
 revision_id: "Wed, 22 Jul 2026 18:56:31 GMT"
-content_sha256: dd51c9ea85461582106967adf7966c118b9f32de910c78cf6f7f1f2b2601e0f0
-last_fetched: 2026-07-24
+content_sha256: 49f4a47708d086c0e4d66d6527963b2f558a18d091d5a75c94e90b898a40982c
+last_fetched: 2026-07-25
 language: en-GB
 enforcement_status: in_force
 ---
@@ -31,6 +31,8 @@ _Transparent information, communication and modalities for the exercise of the r
 (a) charge a reasonable fee taking into account the administrative costs of providing the information or communication or taking the action requested; or
 
 (b) refuse to act on the request.
+
+The controller shall bear the burden of demonstrating the manifestly unfounded or excessive character of the request.
 
 6. Without prejudice to Article 11, where the controller has reasonable doubts concerning the identity of the natural person making the request made under or by virtue of Articles 15 to 22D, the controller may —
 

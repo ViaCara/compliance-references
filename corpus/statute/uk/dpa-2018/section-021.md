@@ -6,9 +6,9 @@ kind: legislation_section
 citation: DPA 2018 s. 21
 source_uri: "https://www.legislation.gov.uk/ukpga/2018/12/section/21/data.xht"
 source_format: xhtml
-revision_id: "Wed, 13 May 2026 15:07:58 GMT"
-content_sha256: b15045d3b86818917e13290436a9e06c1730368533a37d5a8fe6154c80981ffe
-last_fetched: 2026-05-15
+revision_id: "Wed, 22 Jul 2026 18:56:31 GMT"
+content_sha256: 92cc6d2ac585eb779136b85fbbb03ece98c5e0c169b3a4b0f6ed28938614adc7
+last_fetched: 2026-07-25
 language: en-GB
 enforcement_status: in_force
 ---
@@ -37,6 +37,8 @@ _Definitions_
 (a) in relation to England and Wales and Northern Ireland, in accordance with section 3(2) of the Freedom of Information Act 2000, and
 
 (b) in relation to Scotland, in accordance with section 3(2), (4) and (5) of the Freedom of Information (Scotland) Act 2002 (asp 13),
+
+but such references do not include information held by an intelligence service (as defined in section 82) on behalf of an FOI public authority.
 
 (7) But personal data is not to be treated as “held” by an FOI public authority for the purposes of this Chapter, where—
 

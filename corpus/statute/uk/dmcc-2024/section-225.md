@@ -6,9 +6,9 @@ kind: legislation_section
 citation: DMCC 2024 s. 225
 source_uri: "https://www.legislation.gov.uk/ukpga/2024/13/section/225/data.xht"
 source_format: xhtml
-revision_id: "Thu, 02 Jul 2026 16:21:07 GMT"
-content_sha256: e1c8dfe26fd20469765d28e29fcc3ca803ec543ae1dd05bdc1838fe0991ce6fa
-last_fetched: 2026-07-02
+revision_id: "Wed, 22 Jul 2026 18:56:31 GMT"
+content_sha256: ebde140647a54688cb9b5e2cd07f2201a8252695237b969164cd9620f52b58ec
+last_fetched: 2026-07-25
 language: en-GB
 enforcement_status: in_force
 ---
@@ -23,6 +23,8 @@ _Prohibition of unfair commercial practices_
 (a) a person responsible for the content of a code of conduct, or
 
 (b) a person responsible for monitoring compliance with a code of conduct,
+
+is prohibited.
 
 (3) In this Chapter—
 
