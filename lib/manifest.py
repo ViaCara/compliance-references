@@ -30,6 +30,7 @@ OTHER_KINDS = {"curated_quotes", "external_index", "contents"}
 VALID_KINDS = LEGISLATION_KINDS | EUR_LEX_KINDS | OTHER_KINDS
 
 VALID_FREQUENCIES = {"monthly", "quarterly", "yearly"}
+VALID_ENFORCEMENT_STATUSES = {"in_force", "prospective", "repealed"}
 
 
 @dataclass
@@ -91,6 +92,11 @@ def _validate_entry(entry, *, require_kind: bool) -> None:
         if frequency not in VALID_FREQUENCIES:
             raise ManifestError(
                 f"unknown frequency {frequency!r} in entry {entry['id']!r}"
+            )
+        enforcement_status = entry.get("enforcement_status", "in_force")
+        if enforcement_status not in VALID_ENFORCEMENT_STATUSES:
+            raise ManifestError(
+                f"unknown enforcement_status {enforcement_status!r} in entry {entry['id']!r}"
             )
 
 

@@ -88,6 +88,26 @@ class ChangelogTests(unittest.TestCase):
 
             self.assertLess(text.index("2026-05-15"), text.index("2026-04-01"))
 
+    def test_renders_status_change_without_claiming_content_drift(self):
+        with TemporaryDirectory() as td:
+            path = Path(td) / "CHANGELOG.md"
+            log = Changelog(path)
+            log.append(
+                Entry(
+                    date="2026-07-24",
+                    target="statute/uk/gdpr/article-022.md",
+                    source_uri="https://www.legislation.gov.uk/eur/2016/679/article/22/data.xht",
+                    prior_sha256="same",
+                    new_sha256="same",
+                    summary="enforcement status in_force -> repealed",
+                )
+            )
+            text = path.read_text(encoding="utf-8")
+
+            self.assertIn("enforcement status in_force -> repealed", text)
+
+            self.assertNotIn("content changed", text)
+
 
 if __name__ == "__main__":
     unittest.main()

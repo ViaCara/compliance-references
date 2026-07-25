@@ -7,6 +7,7 @@ import unittest
 from pathlib import Path
 
 import build
+from lib.fetcher import FetchResult
 from lib.frontmatter import body_sha256, render
 
 
@@ -51,6 +52,98 @@ class VerifyCuratedTest(unittest.TestCase):
 
             with self.assertRaises(build.BuildError):
                 build._verify_curated(_curated_entry(), path)
+
+
+class ProcessEntryTest(unittest.TestCase):
+    def test_writes_when_enforcement_status_changes_without_body_drift(self):
+        entry = {
+            "id": "uk-gdpr-art-022",
+            "citation": "UK GDPR Article 22",
+            "instrument": "uk-gdpr",
+            "kind": "legislation_article",
+            "source_uri": "https://example.gov.uk/article-022",
+            "enforcement_status": "repealed",
+        }
+        body = "# UK GDPR Article 22\n\n_(repealed)_\n"
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            path = root / "article-022.md"
+            fields = {
+                "id": entry["id"],
+                "content_sha256": body_sha256(body),
+                "enforcement_status": "in_force",
+                "etag": '"prior"',
+            }
+            path.write_text(render(fields, body), encoding="utf-8")
+            result = FetchResult(
+                body=body.encode(),
+                etag=None,
+                last_modified="Fri, 24 Jul 2026 09:00:00 GMT",
+            )
+            fetcher = _StaticFetcher(result)
+            changelog = _StaticChangelog()
+            context = build.BuildContext(
+                fetcher=fetcher,
+                legislation=_StaticTransformer(body),
+                eur_lex=None,
+                changelog=changelog,
+                today="2026-07-24",
+            )
+            prior_root = build.ROOT
+            build.ROOT = root
+            try:
+                self.assertEqual("written", build._process_entry(entry, path, context))
+            finally:
+                build.ROOT = prior_root
+
+            actual, _body = build.parse(path.read_text(encoding="utf-8"))
+
+            self.assertEqual("repealed", actual["enforcement_status"])
+
+            self.assertEqual("enforcement status in_force -> repealed", changelog.entry.summary)
+
+            self.assertEqual("Fri, 24 Jul 2026 09:00:00 GMT", changelog.entry.revision)
+
+            self.assertEqual("2026-07-24", changelog.entry.date)
+
+            self.assertEqual('"prior"', fetcher.if_none_match)
+
+    def test_records_status_change_with_content_drift(self):
+        self.assertEqual(
+            "hash old -> new; enforcement status in_force -> repealed",
+            build._summary("old", "new", "in_force", "repealed"),
+        )
+
+    def test_rejects_invalid_existing_frontmatter(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "article-022.md"
+            path.write_text("not frontmatter\n", encoding="utf-8")
+
+            with self.assertRaises(build.BuildError):
+                build._prior_fields(path)
+
+
+class _StaticFetcher:
+    def __init__(self, result):
+        self.result = result
+        self.if_none_match = None
+
+    def fetch(self, _url: str, *, if_none_match: str | None = None):
+        self.if_none_match = if_none_match
+        return self.result
+
+
+class _StaticTransformer:
+    def __init__(self, body: str):
+        self.body = body
+
+    def transform(self, _xhtml: str, *, citation: str) -> str:
+        return self.body
+
+
+class _StaticChangelog:
+    def append(self, entry) -> None:
+        self.entry = entry
 
 
 if __name__ == "__main__":

@@ -6,11 +6,11 @@ kind: legislation_section
 citation: DPA 2018 s. 14
 source_uri: "https://www.legislation.gov.uk/ukpga/2018/12/section/14/data.xht"
 source_format: xhtml
-revision_id: "Wed, 13 May 2026 15:07:58 GMT"
+revision_id: "Wed, 22 Jul 2026 18:56:31 GMT"
 content_sha256: ba1bb262d8cae4c0a99828c4307eea0b3100c6b20e27d492ac943c6b7794a237
-last_fetched: 2026-05-15
+last_fetched: 2026-07-24
 language: en-GB
-enforcement_status: in_force
+enforcement_status: repealed
 ---
 # DPA 2018 s. 14
 

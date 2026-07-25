@@ -62,6 +62,7 @@ def build_index(sources: list[dict], corpus_root: Path) -> list[dict]:
                 "summary": source.get("summary", ""),
                 "revision_id": fields.get("revision_id", ""),
                 "sha": fields.get("content_sha256", ""),
+                "enforcement_status": fields.get("enforcement_status", "in_force"),
             }
         )
     return records

@@ -6,11 +6,11 @@ kind: legislation_article
 citation: UK GDPR Article 22
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/22/data.xht"
 source_format: xhtml
-revision_id: "Wed, 13 May 2026 15:07:58 GMT"
+revision_id: "Wed, 22 Jul 2026 18:56:31 GMT"
 content_sha256: 5ad43053b45abc00c03982f09d9be2dacf8aa139ac237468d64ef62941f25093
-last_fetched: 2026-05-15
+last_fetched: 2026-07-24
 language: en-GB
-enforcement_status: in_force
+enforcement_status: repealed
 ---
 # UK GDPR Article 22
 

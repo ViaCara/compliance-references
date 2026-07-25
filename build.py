@@ -17,7 +17,7 @@ from pathlib import Path
 
 from lib.changelog import Changelog, Entry
 from lib.fetcher import FetchError, Fetcher, NotModified, TransportError
-from lib.frontmatter import body_sha256, parse, render
+from lib.frontmatter import FrontmatterError, body_sha256, parse, render
 from lib.index import write_index
 from lib.manifest import EUR_LEX_KINDS, LEGISLATION_KINDS, OTHER_KINDS, load
 from lib.transformer_eur_lex import EurLexTransformer
@@ -104,7 +104,10 @@ def _process_entry(entry, target_path: Path, ctx: BuildContext) -> str:
     if entry["kind"] in OTHER_KINDS:
         return _verify_curated(entry, target_path)
 
-    prior_etag, prior_sha = _prior_metadata(target_path)
+    prior_fields = _prior_fields(target_path)
+    prior_etag = prior_fields.get("etag") if prior_fields else None
+    prior_sha = prior_fields.get("content_sha256") if prior_fields else None
+    prior_status = prior_fields.get("enforcement_status", "in_force") if prior_fields else None
     try:
         result = ctx.fetcher.fetch(entry["source_uri"], if_none_match=prior_etag)
     except NotModified:
@@ -120,7 +123,8 @@ def _process_entry(entry, target_path: Path, ctx: BuildContext) -> str:
         raise BuildError(f"no transformer for kind={transformer_kind!r}")
 
     new_hash = body_sha256(body)
-    if prior_sha == new_hash:
+    enforcement_status = entry.get("enforcement_status", "in_force")
+    if prior_sha == new_hash and prior_status == enforcement_status:
         return "unchanged"
 
     fields = {
@@ -135,7 +139,7 @@ def _process_entry(entry, target_path: Path, ctx: BuildContext) -> str:
         "content_sha256": new_hash,
         "last_fetched": ctx.today,
         "language": entry.get("language", "en-GB"),
-        "enforcement_status": entry.get("enforcement_status", "in_force"),
+        "enforcement_status": enforcement_status,
     }
     if result.etag:
         fields["etag"] = result.etag
@@ -150,7 +154,7 @@ def _process_entry(entry, target_path: Path, ctx: BuildContext) -> str:
             source_uri=entry["source_uri"],
             prior_sha256=prior_sha or "(new file)",
             new_sha256=new_hash,
-            summary=_summary(prior_sha, new_hash),
+            summary=_summary(prior_sha, new_hash, prior_status, enforcement_status),
             revision=result.last_modified,
         )
     )
@@ -171,20 +175,29 @@ def _verify_curated(entry, target_path: Path) -> str:
     return "unchanged"
 
 
-def _prior_metadata(path: Path) -> tuple[str | None, str | None]:
+def _prior_fields(path: Path) -> dict | None:
     if not path.exists():
-        return None, None
+        return None
     try:
         fields, _ = parse(path.read_text(encoding="utf-8"))
-    except Exception:
-        return None, None
-    return fields.get("etag"), fields.get("content_sha256")
+    except (OSError, FrontmatterError) as exc:
+        raise BuildError(f"invalid prior corpus file {path}: {exc}") from exc
+    return fields
 
 
-def _summary(prior_sha: str | None, new_sha: str) -> str:
+def _summary(
+    prior_sha: str | None,
+    new_sha: str,
+    prior_status: str | None,
+    enforcement_status: str,
+) -> str:
     if not prior_sha:
         return "new file"
-    return f"hash {prior_sha[:7]} -> {new_sha[:7]}"
+    hash_summary = f"hash {prior_sha[:7]} -> {new_sha[:7]}"
+    status_summary = f"enforcement status {prior_status} -> {enforcement_status}"
+    if prior_status != enforcement_status:
+        return status_summary if prior_sha == new_sha else f"{hash_summary}; {status_summary}"
+    return hash_summary
 
 
 if __name__ == "__main__":
