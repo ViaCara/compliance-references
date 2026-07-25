@@ -2,6 +2,7 @@
 
 import unittest
 from pathlib import Path
+from xml.etree import ElementTree as ET
 
 from lib.transformer_legislation import LegislationTransformer
 
@@ -166,6 +167,52 @@ class LegislationTransformerTests(unittest.TestCase):
         self.assertIn("decision taken before 5th February 2026.", markdown)
         self.assertNotIn("Open Government Licence", markdown)
         self.assertNotIn("Back to top", markdown)
+
+
+class ContainedElementsTests(unittest.TestCase):
+    """`_contained_elements` decides which text is already covered by a
+    container walk. Get it wrong in one direction and closing words vanish; in
+    the other, every provision is emitted twice."""
+
+    SOURCE = (
+        '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+        '<p class="LegClearFix LegP2Container">'
+        '<span class="LegDS LegP2Text LegRHS">Inside a container.</span>'
+        "</p>"
+        '<p class="LegP2Text LegRHS">Outside every container.</p>'
+        "</div>"
+    )
+
+    def setUp(self):
+        self.root = ET.fromstring(self.SOURCE)
+        self.contained = LegislationTransformer()._contained_elements(self.root)
+
+    def _find(self, text):
+        for element in self.root.iter():
+            if (element.text or "").strip() == text:
+                return element
+        raise AssertionError(f"no element with text {text!r}")
+
+    def test_span_within_a_container_is_contained(self):
+        self.assertIn(id(self._find("Inside a container.")), self.contained)
+
+    def test_container_itself_is_contained(self):
+        container = self._find("Inside a container.")
+        parent = next(e for e in self.root.iter() if container in list(e))
+
+        self.assertIn(id(parent), self.contained)
+
+    def test_paragraph_outside_every_container_is_not_contained(self):
+        self.assertNotIn(id(self._find("Outside every container.")), self.contained)
+
+    def test_root_without_containers_yields_nothing_contained(self):
+        root = ET.fromstring(
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<p class="LegP1ParaText">Sole paragraph.</p>'
+            "</div>"
+        )
+
+        self.assertEqual(set(), LegislationTransformer()._contained_elements(root))
 
 
 if __name__ == "__main__":
