@@ -130,21 +130,32 @@ class LegislationTransformer:
 
     def _iter_paragraphs(self, root: ET.Element) -> Iterable[str]:
         emitted_any = False
+        contained = self._contained_elements(root)
         for element in root.iter():
             cls = _classes(element)
-            for level, indent in self._LEVELS.items():
-                if f"LegP{level}Container" in cls:
-                    number = self._number(element, level=level)
-                    text = self._text(element, level=level)
-                    if text:
-                        emitted_any = True
-                        body = "_(repealed)_" if _is_repealed_marker(text) else text
-                        yield f"{indent}{number} {body}".strip()
-                    break
+            container_level = next(
+                (lvl for lvl in self._LEVELS if f"LegP{lvl}Container" in cls), None
+            )
+            if container_level is not None:
+                number = self._number(element, level=container_level)
+                text = self._text(element, level=container_level)
+                if text:
+                    emitted_any = True
+                    body = "_(repealed)_" if _is_repealed_marker(text) else text
+                    yield f"{self._LEVELS[container_level]}{number} {body}".strip()
+                continue
+            if id(element) in contained or _localname(element.tag) != "p":
+                continue
+            if not any(f"LegP{level}Text" in cls for level in self._LEVELS):
+                continue
+            text = _inline_text(element)
+            if text and not _is_repealed_marker(text):
+                emitted_any = True
+                yield text
 
         if not emitted_any:
             saw_repealed_only = True
-            for element in root.iter():
+            for element in self._snippet(root).iter():
                 if _localname(element.tag) == "p":
                     text = _inline_text(element)
                     if not text:
@@ -155,6 +166,27 @@ class LegislationTransformer:
                     yield text
             if saw_repealed_only:
                 yield "_Provision repealed. See source for amendment history._"
+
+    def _snippet(self, root: ET.Element) -> ET.Element:
+        """The provision body. legislation.gov.uk wraps it in LegSnippet and
+        renders page furniture (licence text, navigation) as siblings, so the
+        untagged fallback must not walk outside it."""
+        for element in root.iter():
+            if "LegSnippet" in _classes(element):
+                return element
+        return root
+
+    def _contained_elements(self, root: ET.Element) -> set[int]:
+        """Ids of every element inside a LegP*Container. Closing words sit in a
+        bare LegP{n}Text outside any container; without this set they cannot be
+        told apart from the text spans within one, and get emitted twice."""
+        contained: set[int] = set()
+        for element in root.iter():
+            cls = _classes(element)
+            if any(f"LegP{level}Container" in cls for level in self._LEVELS):
+                for descendant in element.iter():
+                    contained.add(id(descendant))
+        return contained
 
     def _number(self, element: ET.Element, *, level: int) -> str:
         for child in element.iter():

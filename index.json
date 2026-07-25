@@ -32,8 +32,8 @@
     "id": "dmcc-2024-s-225",
     "jurisdiction": "uk",
     "path": "statute/uk/dmcc-2024/section-225.md",
-    "revision_id": "Thu, 02 Jul 2026 16:21:07 GMT",
-    "sha": "e1c8dfe26fd20469765d28e29fcc3ca803ec543ae1dd05bdc1838fe0991ce6fa",
+    "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
+    "sha": "ebde140647a54688cb9b5e2cd07f2201a8252695237b969164cd9620f52b58ec",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2024/13/section/225/data.xht",
     "summary": "",
     "title": "Digital Markets, Competition and Consumers Act 2024 section 225 - Prohibition of unfair commercial practices"
@@ -84,8 +84,8 @@
     "id": "dpa-2018-s-021",
     "jurisdiction": "uk",
     "path": "statute/uk/dpa-2018/section-021.md",
-    "revision_id": "Wed, 13 May 2026 15:07:58 GMT",
-    "sha": "b15045d3b86818917e13290436a9e06c1730368533a37d5a8fe6154c80981ffe",
+    "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
+    "sha": "92cc6d2ac585eb779136b85fbbb03ece98c5e0c169b3a4b0f6ed28938614adc7",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/section/21/data.xht",
     "summary": "",
     "title": "DPA 2018 section 21 - Definitions"
@@ -124,7 +124,7 @@
     "jurisdiction": "uk",
     "path": "statute/uk/duaa-2025/uksi-082-regulation-005.md",
     "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
-    "sha": "a94e4a3507f240e82d18be17df7f54b4955b7fb9896f4e0e38d0bf534eb95974",
+    "sha": "3d93b63e568c837cbf8d66a08621373337541d81a7d222d1c583cf8ed4988fa6",
     "source_uri": "https://www.legislation.gov.uk/uksi/2026/82/regulation/5/data.xht",
     "summary": "",
     "title": "Data (Use and Access) Act 2025 Commencement No. 6 Regulations 2026 regulation 5 - Saving provision"
@@ -175,8 +175,8 @@
     "id": "pecr-reg-022",
     "jurisdiction": "uk",
     "path": "statute/uk/pecr/regulation-022.md",
-    "revision_id": "Wed, 13 May 2026 15:07:58 GMT",
-    "sha": "2433243528eab4e138fefa6f493be2078ea0d82d681cc30bfc6abe7dc0410b1c",
+    "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
+    "sha": "ae82771558114f7bd44dd9edc9c45fa9dd93100095d697b1854a22382ae4f367",
     "source_uri": "https://www.legislation.gov.uk/uksi/2003/2426/regulation/22/data.xht",
     "summary": "",
     "title": "PECR regulation 22 - Use of electronic mail for direct marketing"
@@ -214,8 +214,8 @@
     "id": "uk-gdpr-art-006",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-006.md",
-    "revision_id": "Wed, 13 May 2026 15:07:58 GMT",
-    "sha": "04af53a2e8633399404983ce08aa879c2fa2ec5ea2baa1557ba042b5bc522b0b",
+    "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
+    "sha": "dc9eda064619c0642cecfc91cf9fc2958db944f1ea4ffa3e33a5b870063794ab",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/6/data.xht",
     "summary": "",
     "title": "UK GDPR Article 6 - Lawfulness of processing"
@@ -254,7 +254,7 @@
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-012.md",
     "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
-    "sha": "dd51c9ea85461582106967adf7966c118b9f32de910c78cf6f7f1f2b2601e0f0",
+    "sha": "49f4a47708d086c0e4d66d6527963b2f558a18d091d5a75c94e90b898a40982c",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/12/data.xht",
     "summary": "",
     "title": "UK GDPR Article 12 - Transparent information"
@@ -423,7 +423,7 @@
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-022c.md",
     "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
-    "sha": "bb206f06b1ac71aaadc975e3aae12d8381b239e9cd1efbbdcdbe8cc762a38e27",
+    "sha": "62dc6482ce21e2cf5f101456ef3875e6d4f3a3e5f7380012e42be1b06e2be0d3",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/22C/data.xht",
     "summary": "",
     "title": "UK GDPR Article 22C - Safeguards for automated decision-making"

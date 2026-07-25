@@ -2,6 +2,49 @@
 
 Drift log. Newer entries first.
 
+## 2026-07-25
+- **corpus/statute/uk/duaa-2025/uksi-082-regulation-005.md** hash a94e4a3 -> 3d93b63
+  - source: https://www.legislation.gov.uk/uksi/2026/82/regulation/5/data.xht
+  - prior_sha256: a94e4a3507f240e82d18be17df7f54b4955b7fb9896f4e0e38d0bf534eb95974
+  - new_sha256:   3d93b63e568c837cbf8d66a08621373337541d81a7d222d1c583cf8ed4988fa6
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+
+- **corpus/statute/uk/gdpr/article-022c.md** hash bb206f0 -> 62dc648
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/22C/data.xht
+  - prior_sha256: bb206f06b1ac71aaadc975e3aae12d8381b239e9cd1efbbdcdbe8cc762a38e27
+  - new_sha256:   62dc6482ce21e2cf5f101456ef3875e6d4f3a3e5f7380012e42be1b06e2be0d3
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+
+- **corpus/statute/uk/dmcc-2024/section-225.md** hash e1c8dfe -> ebde140
+  - source: https://www.legislation.gov.uk/ukpga/2024/13/section/225/data.xht
+  - prior_sha256: e1c8dfe26fd20469765d28e29fcc3ca803ec543ae1dd05bdc1838fe0991ce6fa
+  - new_sha256:   ebde140647a54688cb9b5e2cd07f2201a8252695237b969164cd9620f52b58ec
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+
+- **corpus/statute/uk/pecr/regulation-022.md** hash 2433243 -> ae82771
+  - source: https://www.legislation.gov.uk/uksi/2003/2426/regulation/22/data.xht
+  - prior_sha256: 2433243528eab4e138fefa6f493be2078ea0d82d681cc30bfc6abe7dc0410b1c
+  - new_sha256:   ae82771558114f7bd44dd9edc9c45fa9dd93100095d697b1854a22382ae4f367
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+
+- **corpus/statute/uk/dpa-2018/section-021.md** hash b15045d -> 92cc6d2
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/section/21/data.xht
+  - prior_sha256: b15045d3b86818917e13290436a9e06c1730368533a37d5a8fe6154c80981ffe
+  - new_sha256:   92cc6d2ac585eb779136b85fbbb03ece98c5e0c169b3a4b0f6ed28938614adc7
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+
+- **corpus/statute/uk/gdpr/article-012.md** hash dd51c9e -> 49f4a47
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/12/data.xht
+  - prior_sha256: dd51c9ea85461582106967adf7966c118b9f32de910c78cf6f7f1f2b2601e0f0
+  - new_sha256:   49f4a47708d086c0e4d66d6527963b2f558a18d091d5a75c94e90b898a40982c
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+
+- **corpus/statute/uk/gdpr/article-006.md** hash 04af53a -> dc9eda0
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/6/data.xht
+  - prior_sha256: 04af53a2e8633399404983ce08aa879c2fa2ec5ea2baa1557ba042b5bc522b0b
+  - new_sha256:   dc9eda064619c0642cecfc91cf9fc2958db944f1ea4ffa3e33a5b870063794ab
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+
 ## 2026-07-24
 - **corpus/statute/uk/duaa-2025/uksi-082-regulation-005.md** new file
   - source: https://www.legislation.gov.uk/uksi/2026/82/regulation/5/data.xht
