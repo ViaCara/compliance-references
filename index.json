@@ -156,6 +156,19 @@
     "title": "Equality Act 2010 section 19 - Indirect discrimination"
   },
   {
+    "authority": "guidance",
+    "domain_tags": [],
+    "enforcement_status": "guidance",
+    "id": "ico-personal-data-breaches-guide",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/ico/personal-data-breaches-guide.md",
+    "revision_id": "20 August 2025",
+    "sha": "11ef57786f6aa4abf4b2bb8d738985e1c91ba85ec7ce01c13793fda344eaa729",
+    "source_uri": "https://ico.org.uk/for-organisations/report-a-breach/personal-data-breach/personal-data-breaches-a-guide/",
+    "summary": "",
+    "title": "Personal data breaches: a guide"
+  },
+  {
     "authority": "statute",
     "domain_tags": [],
     "enforcement_status": "in_force",
@@ -193,6 +206,19 @@
     "source_uri": "https://www.legislation.gov.uk/uksi/2003/2426/regulation/23/data.xht",
     "summary": "",
     "title": "PECR regulation 23 - Restriction on use of automated calling systems"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [],
+    "enforcement_status": "in_force",
+    "id": "uk-gdpr-art-004",
+    "jurisdiction": "uk",
+    "path": "statute/uk/gdpr/article-004.md",
+    "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
+    "sha": "ced080298a9de4d12c00bd908f0e2a5d29b9605f8282d97a27b18144bb549019",
+    "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/4/data.xht",
+    "summary": "",
+    "title": "UK GDPR Article 4 - Definitions"
   },
   {
     "authority": "statute",
