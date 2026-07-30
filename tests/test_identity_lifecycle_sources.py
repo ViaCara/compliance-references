@@ -40,6 +40,33 @@ class IdentityLifecycleSourceTests(unittest.TestCase):
             with self.subTest(source_id=source_id):
                 self.assertTrue(sources[source_id]["source_uri"].endswith(path))
 
+    def test_new_identity_lifecycle_sources_carry_controlling_text(self):
+        expected = {
+            "uk-gdpr-art-012a": (
+                "in_force",
+                '“the applicable time period” means the period of one month',
+            ),
+            "dpa-2018-sch-001-p-018": (
+                "in_force",
+                "protecting an individual from neglect or physical, mental or emotional harm",
+            ),
+        }
+
+        for source_id, (status, provision) in expected.items():
+            with self.subTest(source_id=source_id):
+                source = self.sources[source_id]
+                fields, body = parse(
+                    (CORPUS / source["target"]).read_text(encoding="utf-8")
+                )
+
+                self.assertEqual(source_id, fields["id"])
+
+                self.assertEqual(source["source_uri"], fields["source_uri"])
+
+                self.assertEqual(status, fields["enforcement_status"])
+
+                self.assertIn(provision, body)
+
     def test_superseded_identity_sources_are_rebuilt_as_repealed(self):
         sources = self.sources
 
