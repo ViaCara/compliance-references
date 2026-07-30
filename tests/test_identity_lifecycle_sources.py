@@ -24,6 +24,7 @@ class IdentityLifecycleSourceTests(unittest.TestCase):
 
         expected_paths = {
             "uk-gdpr-art-026": "article/26/data.xht",
+            "uk-gdpr-art-028": "article/28/data.xht",
             "uk-gdpr-art-022a": "article/22A/data.xht",
             "uk-gdpr-art-022b": "article/22B/data.xht",
             "uk-gdpr-art-022c": "article/22C/data.xht",

@@ -2,6 +2,13 @@
 
 Drift log. Newer entries first.
 
+## 2026-07-30
+- **corpus/statute/uk/gdpr/article-028.md** new file
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/28/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   02539b9b55e1b5f3a0b6e89fa95111ae6b02fe1a4924bbef5be391ed35e030b1
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+
 ## 2026-07-28
 - **corpus/statute/uk/gdpr/article-004.md** new file
   - source: https://www.legislation.gov.uk/eur/2016/679/article/4/data.xht
