@@ -93,6 +93,19 @@
   {
     "authority": "statute",
     "domain_tags": [],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-sch-001-p-018",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/schedule-001-paragraph-018.md",
+    "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
+    "sha": "144a5a1daa3c74613915dbc16adc5089bcd402a801c6ca86ecee5670e0c73ad5",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/18/data.xht",
+    "summary": "",
+    "title": "DPA 2018 Schedule 1 paragraph 18 - Safeguarding of children and of individuals at risk"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [],
     "enforcement_status": "prospective",
     "id": "duaa-2025-s-001",
     "jurisdiction": "uk",
@@ -284,6 +297,19 @@
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/12/data.xht",
     "summary": "",
     "title": "UK GDPR Article 12 - Transparent information"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [],
+    "enforcement_status": "in_force",
+    "id": "uk-gdpr-art-012a",
+    "jurisdiction": "uk",
+    "path": "statute/uk/gdpr/article-012a.md",
+    "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
+    "sha": "dbb09cc52fd4227215cb07cc986b9618e954489df878089c6843b345f40be12d",
+    "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/12A./data.xht",
+    "summary": "",
+    "title": "UK GDPR Article 12A - Time limits for responding to requests by data subjects"
   },
   {
     "authority": "statute",

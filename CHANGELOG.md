@@ -3,6 +3,18 @@
 Drift log. Newer entries first.
 
 ## 2026-07-30
+- **corpus/statute/uk/gdpr/article-012a.md** new file
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/12A./data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   dbb09cc52fd4227215cb07cc986b9618e954489df878089c6843b345f40be12d
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-001-paragraph-018.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/18/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   144a5a1daa3c74613915dbc16adc5089bcd402a801c6ca86ecee5670e0c73ad5
+  - revision: Wed, 22 Jul 2026 18:56:31 GMT
+
 - **corpus/statute/uk/gdpr/article-028.md** new file
   - source: https://www.legislation.gov.uk/eur/2016/679/article/28/data.xht
   - prior_sha256: (new file)
