@@ -169,6 +169,45 @@
     "title": "Equality Act 2010 section 19 - Indirect discrimination"
   },
   {
+    "authority": "statute",
+    "domain_tags": [],
+    "enforcement_status": "in_force",
+    "id": "eu-ai-act-2024-art-003",
+    "jurisdiction": "eu",
+    "path": "statute/eu/ai-act-2024/article-003.md",
+    "revision_id": "",
+    "sha": "431adf737f7330ac316847b777eacc4d61a9ee3377e33c40380539de8b8deae4",
+    "source_uri": "https://eur-lex.europa.eu/eli/reg/2024/1689/art_3/oj/eng",
+    "summary": "",
+    "title": "EU AI Act Article 3 - Definitions"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [],
+    "enforcement_status": "in_force",
+    "id": "eu-ai-act-2024-art-005",
+    "jurisdiction": "eu",
+    "path": "statute/eu/ai-act-2024/article-005.md",
+    "revision_id": "",
+    "sha": "94667dd2046b54ad9c75f061a7e1b8c2644865e4b348959ca682def9035d0076",
+    "source_uri": "https://eur-lex.europa.eu/eli/reg/2024/1689/art_5/oj/eng",
+    "summary": "",
+    "title": "EU AI Act Article 5 - Prohibited AI practices"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [],
+    "enforcement_status": "in_force",
+    "id": "eu-ai-act-2024-art-050",
+    "jurisdiction": "eu",
+    "path": "statute/eu/ai-act-2024/article-050.md",
+    "revision_id": "",
+    "sha": "c9b57e30fdd857dbb5ab28be5cad6fce3e9c3a580af1c298de19f284700b7877",
+    "source_uri": "https://eur-lex.europa.eu/eli/reg/2024/1689/art_50/oj/eng",
+    "summary": "",
+    "title": "EU AI Act Article 50 - Transparency obligations for providers and deployers of certain AI systems"
+  },
+  {
     "authority": "guidance",
     "domain_tags": [],
     "enforcement_status": "guidance",

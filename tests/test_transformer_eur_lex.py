@@ -26,6 +26,30 @@ class EurLexTransformerTests(unittest.TestCase):
         self.assertIn("(a) the AI system is intended", markdown)
         self.assertIn("Annex III", markdown)
 
+    def test_extracts_only_requested_article_from_full_instrument(self):
+        source = """
+        <html><body><div class='eli-container'>
+          <div class='eli-subdivision' id='art_3'>
+            <p class='oj-ti-art'>Article 3</p>
+            <p class='oj-sti-art'>Definitions</p>
+            <p class='oj-normal'>Article three body.</p>
+          </div>
+          <div class='eli-subdivision' id='art_5'>
+            <p class='oj-ti-art'>Article 5</p>
+            <p class='oj-sti-art'>Prohibited AI practices</p>
+            <p class='oj-normal'>Article five body.</p>
+          </div>
+        </div></body></html>
+        """
+        transformer = EurLexTransformer()
+        markdown = transformer.transform(
+            source,
+            citation="Regulation (EU) 2024/1689 Article 3",
+        )
+
+        self.assertIn("Article three body.", markdown)
+        self.assertNotIn("Article five body.", markdown)
+
     def test_strips_html_tags(self):
         source = (
             "<html><body><div class='eli-container'>"

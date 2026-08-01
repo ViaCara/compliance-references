@@ -2,6 +2,22 @@
 
 Drift log. Newer entries first.
 
+## 2026-08-01
+- **corpus/statute/eu/ai-act-2024/article-050.md** new file
+  - source: https://eur-lex.europa.eu/eli/reg/2024/1689/art_50/oj/eng
+  - prior_sha256: (new file)
+  - new_sha256:   c9b57e30fdd857dbb5ab28be5cad6fce3e9c3a580af1c298de19f284700b7877
+
+- **corpus/statute/eu/ai-act-2024/article-005.md** new file
+  - source: https://eur-lex.europa.eu/eli/reg/2024/1689/art_5/oj/eng
+  - prior_sha256: (new file)
+  - new_sha256:   94667dd2046b54ad9c75f061a7e1b8c2644865e4b348959ca682def9035d0076
+
+- **corpus/statute/eu/ai-act-2024/article-003.md** new file
+  - source: https://eur-lex.europa.eu/eli/reg/2024/1689/art_3/oj/eng
+  - prior_sha256: (new file)
+  - new_sha256:   431adf737f7330ac316847b777eacc4d61a9ee3377e33c40380539de8b8deae4
+
 ## 2026-07-30
 - **corpus/statute/uk/gdpr/article-012a.md** new file
   - source: https://www.legislation.gov.uk/eur/2016/679/article/12A./data.xht
