@@ -15,6 +15,7 @@ and strip inline tags (`<em>`, `<strong>`, `<span>`) to plain text.
 from __future__ import annotations
 
 from html.parser import HTMLParser
+import re
 
 
 class EurLexTransformerError(ValueError):
@@ -22,8 +23,9 @@ class EurLexTransformerError(ValueError):
 
 
 class _EurLexExtractor(HTMLParser):
-    def __init__(self) -> None:
+    def __init__(self, *, article_number: str | None = None) -> None:
         super().__init__(convert_charrefs=True)
+        self._article_id = f"art_{article_number}" if article_number else None
         self._inside_main = False
         self._main_depth = 0
         self._current_p_classes: list[str] = []
@@ -35,9 +37,13 @@ class _EurLexExtractor(HTMLParser):
         attrs_dict = dict(attrs)
         classes = set((attrs_dict.get("class") or "").split())
 
-        if tag == "div" and (
-            classes & {"eli-container", "eli-main-title", "eli-subdivision"}
-        ):
+        is_target_article = tag == "div" and attrs_dict.get("id") == self._article_id
+        is_main_container = (
+            tag == "div"
+            and not self._article_id
+            and classes & {"eli-container", "eli-main-title", "eli-subdivision"}
+        )
+        if is_target_article or is_main_container:
             self._inside_main = True
             self._found_main = True
 
@@ -77,8 +83,13 @@ class EurLexTransformer:
     """EUR-Lex HTML → GFM."""
 
     def transform(self, html: str, *, citation: str) -> str:
-        extractor = _EurLexExtractor()
+        article_match = re.search(r"\bArticle (\d+)\b", citation)
+        article_number = article_match.group(1) if article_match else None
+        extractor = _EurLexExtractor(article_number=article_number)
         extractor.feed(html)
+        if not extractor._found_main and article_number:
+            extractor = _EurLexExtractor()
+            extractor.feed(html)
         if not extractor._found_main:
             raise EurLexTransformerError("no <div class='eli-container'> found")
 
