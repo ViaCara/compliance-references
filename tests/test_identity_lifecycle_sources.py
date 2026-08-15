@@ -23,6 +23,7 @@ class IdentityLifecycleSourceTests(unittest.TestCase):
         sources = self.sources
 
         expected_paths = {
+            "eu-gdpr-art-027": "eli/reg/2016/679/art_27/oj/eng",
             "uk-gdpr-art-012a": "article/12A./data.xht",
             "uk-gdpr-art-026": "article/26/data.xht",
             "uk-gdpr-art-028": "article/28/data.xht",
@@ -42,6 +43,10 @@ class IdentityLifecycleSourceTests(unittest.TestCase):
 
     def test_new_identity_lifecycle_sources_carry_controlling_text(self):
         expected = {
+            "eu-gdpr-art-027": (
+                "in_force",
+                "shall designate in writing a representative in the Union",
+            ),
             "uk-gdpr-art-012a": (
                 "in_force",
                 '“the applicable time period” means the period of one month',

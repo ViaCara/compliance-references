@@ -2,6 +2,12 @@
 
 Drift log. Newer entries first.
 
+## 2026-08-14
+- **corpus/statute/eu/gdpr/article-027.md** new file
+  - source: https://eur-lex.europa.eu/eli/reg/2016/679/art_27/oj/eng
+  - prior_sha256: (new file)
+  - new_sha256:   6652dfa78d70bddc4486d5e61683d09624ddb31672d3a4d802872a1352c6e97a
+
 ## 2026-08-01
 - **corpus/statute/eu/ai-act-2024/article-050.md** new file
   - source: https://eur-lex.europa.eu/eli/reg/2024/1689/art_50/oj/eng

@@ -208,6 +208,19 @@
     "title": "EU AI Act Article 50 - Transparency obligations for providers and deployers of certain AI systems"
   },
   {
+    "authority": "statute",
+    "domain_tags": [],
+    "enforcement_status": "in_force",
+    "id": "eu-gdpr-art-027",
+    "jurisdiction": "eu",
+    "path": "statute/eu/gdpr/article-027.md",
+    "revision_id": "",
+    "sha": "6652dfa78d70bddc4486d5e61683d09624ddb31672d3a4d802872a1352c6e97a",
+    "source_uri": "https://eur-lex.europa.eu/eli/reg/2016/679/art_27/oj/eng",
+    "summary": "",
+    "title": "EU GDPR Article 27 - Representatives of controllers or processors not established in the Union"
+  },
+  {
     "authority": "guidance",
     "domain_tags": [],
     "enforcement_status": "guidance",
