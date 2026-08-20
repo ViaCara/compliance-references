@@ -6,15 +6,17 @@ kind: legislation_regulation
 citation: PECR regulation 23
 source_uri: "https://www.legislation.gov.uk/uksi/2003/2426/regulation/23/data.xht"
 source_format: xhtml
-revision_id: "Wed, 13 May 2026 15:07:58 GMT"
-content_sha256: 10b9c9c444f7ab03beb92b9dda4fbf3c8147f7c3ee2de530143a6ea0d578b5fa
-last_fetched: 2026-05-15
+revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
+content_sha256: b311b99ce53ded87b226df0432b7f375e0f039f9607eeecb00707ad91819375c
+last_fetched: 2026-08-20
 language: en-GB
 enforcement_status: in_force
 ---
 # PECR regulation 23
 
 _Use of electronic mail for direct marketing purposes where the identity or address of the sender is concealed_
+
+A person shall neither transmit, nor instigate the transmission of, a communication for the purposes of direct marketing by means of electronic mail—
 
 (a) where the identity of the person on whose behalf the communication has been sent has been disguised or concealed; ...
 

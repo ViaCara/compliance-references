@@ -4,7 +4,7 @@ A community-of-practice mirror of UK and EU compliance instruments in machine-re
 
 Contains:
 
-- **Statute** (Tier A, automated): UK GDPR, DPA 2018, PECR, DUAA 2025, EU GDPR, EU AI Act, MDR, IVDR, NIS2, PSD2, EAA, Equality Act 2010, Consumer Rights Act 2015, UK PSR 2017, UK MDR 2002, UK NIS Regulations 2018, UK PSBAR 2018, Charter of Fundamental Rights.
+- **Statute** (Tier A, automated): UK GDPR, DPA 2018, PECR, DUAA 2025, EU GDPR, EU AI Act, MDR, IVDR, NIS2, PSD2, EAA, Equality Act 2010, Consumer Rights Act 2015, FSMA 2000, FPO 2005, RAO 2001, MLR 2017, UK PSR 2017, UK MDR 2002, UK NIS Regulations 2018, UK PSBAR 2018, Charter of Fundamental Rights.
 - **Guidance** (Tier B, curated quote anthology): ICO, EDPB, NCSC, MHRA, CMA, FCA Handbook, W3C WCAG 2.2.
 - **Standards** (Tier C, external index only): BACP, UKCP, HCPC, BPS ethics codes; ISO 27001/27701/42001; BSI.
 
