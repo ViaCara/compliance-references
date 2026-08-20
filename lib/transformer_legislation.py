@@ -18,6 +18,9 @@ Class names used in selection (from the legislation.gov.uk DOM):
 - `LegChangeDelimiter`, `LegAddition`, `LegRepealed`, `LegCommentaryLink`:
   amendment annotations. We strip delimiters and commentary links, keep
   additions inline.
+- `LegSP1Container` etc., the `LegSP`-prefixed twin of `LegP1Container` etc.
+  Some schedules (e.g. Equality Act 2010 Sch. 2) typeset their numbered
+  paragraphs under `LegSP*` rather than `LegP*`; treated identically.
 """
 
 from __future__ import annotations
@@ -34,6 +37,15 @@ _NS = "{http://www.w3.org/1999/xhtml}"
 # unicode whitespace after collapsing.
 _REPEALED_DOTS_RE = re.compile(r"^[\s\.…]+$")
 _DOT_COUNT_THRESHOLD = 6  # ".  . . . . ." → 6+ dots = treat as repealed marker
+
+# Paragraph-level markup comes under either prefix depending on the source
+# document; legislation.gov.uk does not use them interchangeably within one
+# document, so checking both is safe and never ambiguous.
+_CONTAINER_PREFIXES = ("LegP", "LegSP")
+
+
+def _has_class(cls: set[str], level: int, part: str) -> bool:
+    return any(f"{prefix}{level}{part}" in cls for prefix in _CONTAINER_PREFIXES)
 
 
 def _localname(tag: str) -> str:
@@ -134,7 +146,7 @@ class LegislationTransformer:
         for element in root.iter():
             cls = _classes(element)
             container_level = next(
-                (lvl for lvl in self._LEVELS if f"LegP{lvl}Container" in cls), None
+                (lvl for lvl in self._LEVELS if _has_class(cls, lvl, "Container")), None
             )
             if container_level is not None:
                 number = self._number(element, level=container_level)
@@ -146,7 +158,7 @@ class LegislationTransformer:
                 continue
             if id(element) in contained or _localname(element.tag) != "p":
                 continue
-            if not any(f"LegP{level}Text" in cls for level in self._LEVELS):
+            if not any(_has_class(cls, level, "Text") for level in self._LEVELS):
                 continue
             text = _inline_text(element)
             if text and not _is_repealed_marker(text):
@@ -183,7 +195,7 @@ class LegislationTransformer:
         contained: set[int] = set()
         for element in root.iter():
             cls = _classes(element)
-            if any(f"LegP{level}Container" in cls for level in self._LEVELS):
+            if any(_has_class(cls, level, "Container") for level in self._LEVELS):
                 for descendant in element.iter():
                     contained.add(id(descendant))
         return contained
@@ -191,14 +203,14 @@ class LegislationTransformer:
     def _number(self, element: ET.Element, *, level: int) -> str:
         for child in element.iter():
             cls = _classes(child)
-            if f"LegP{level}No" in cls:
+            if _has_class(cls, level, "No"):
                 return _inline_text(child)
         return ""
 
     def _text(self, element: ET.Element, *, level: int) -> str:
         for child in element.iter():
             cls = _classes(child)
-            if f"LegP{level}Text" in cls:
+            if _has_class(cls, level, "Text"):
                 return _inline_text(child)
         full = _inline_text(element)
         number = self._number(element, level=level)

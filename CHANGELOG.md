@@ -2,6 +2,43 @@
 
 Drift log. Newer entries first.
 
+## 2026-08-20
+- **corpus/statute/uk/equality-act-2010/schedule-002.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2010/15/schedule/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   1f60209e887e16f4cbf6029f936b84c8c34d7edd62a1c84ba17666d6bcfd4b49
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/equality-act-2010/section-029.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2010/15/section/29/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   97a89211606b6bbb7ac8758b45cffed4c7567573eb2d97e27b338e01d022f14b
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/equality-act-2010/section-021.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2010/15/section/21/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   fa764d1667d295b00b539737df31fb160846a1b312ce2113bdc6df4d8fe0b6e5
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/equality-act-2010/section-020.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2010/15/section/20/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   3d7ec157bef3b28688767c853ad8e304a6cc736fcaa8d56da5cd7b1317bec368
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/equality-act-2010/schedule-001.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2010/15/schedule/1/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   a440dd03092c876507a765e8fe3c1167545e283671ce268540f2cf8fc5e49d15
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/equality-act-2010/section-006.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2010/15/section/6/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   8c33f5db95136bafe678e6c0f570d77fe392157de584794213eabba102ef4b55
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
 ## 2026-08-14
 - **corpus/statute/eu/gdpr/article-027.md** new file
   - source: https://eur-lex.europa.eu/eli/reg/2016/679/art_27/oj/eng
