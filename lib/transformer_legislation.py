@@ -49,20 +49,30 @@ _NS = "{http://www.w3.org/1999/xhtml}"
 _REPEALED_DOTS_RE = re.compile(r"^[\s\.…]+$")
 _DOT_COUNT_THRESHOLD = 6  # ".  . . . . ." → 6+ dots = treat as repealed marker
 
-# Paragraph-level markup comes under either prefix depending on the source
-# document; legislation.gov.uk does not use them interchangeably within one
-# document, so checking both is safe and never ambiguous.
-_CONTAINER_PREFIXES = ("LegP", "LegSP")
+# No/Text spans use either prefix at any level; legislation.gov.uk does not
+# mix them within one document, so checking both is safe and never ambiguous.
+_NO_TEXT_PREFIXES = ("LegP", "LegSP")
+
+# Container prefixes are level-restricted: a level-1 LegP1Container is a
+# section/article heading that _find_title already owns, so only LegSP1
+# (a schedule paragraph's own content) counts as a level-1 container here.
+_CONTAINER_PREFIXES_BY_LEVEL = {
+    1: ("LegSP",),
+    2: ("LegP", "LegSP"),
+    3: ("LegP", "LegSP"),
+    4: ("LegP", "LegSP"),
+}
 
 
 def _has_class(cls: set[str], level: int, part: str) -> bool:
-    return any(f"{prefix}{level}{part}" in cls for prefix in _CONTAINER_PREFIXES)
+    return any(f"{prefix}{level}{part}" in cls for prefix in _NO_TEXT_PREFIXES)
 
 
 def _is_container(cls: set[str], level: int) -> bool:
-    if level == 1:
-        return "LegSP1Container" in cls
-    return _has_class(cls, level, "Container")
+    return any(
+        f"{prefix}{level}Container" in cls
+        for prefix in _CONTAINER_PREFIXES_BY_LEVEL[level]
+    )
 
 
 def _localname(tag: str) -> str:
@@ -224,10 +234,14 @@ class LegislationTransformer:
                 return _inline_text(child)
         return self._schedule_fragment_number(element)
 
+    # Deepest real fragment seen carries 2 (paragraph + first sub-item); this
+    # leaves headroom for a third level without letting a malformed or
+    # adversarial document spin the loop unbounded.
+    _MAX_SCHEDULE_FRAGMENT_DEPTH = 8
+
     def _schedule_fragment_number(self, element: ET.Element) -> str:
         numbers: list[str] = []
-        depth = 1
-        while True:
+        for depth in range(1, self._MAX_SCHEDULE_FRAGMENT_DEPTH + 1):
             found = next(
                 (
                     _inline_text(child)
@@ -236,10 +250,10 @@ class LegislationTransformer:
                 ),
                 None,
             )
-            if found is None:
-                return "".join(numbers)
+            if not found:
+                break
             numbers.append(found)
-            depth += 1
+        return "".join(numbers)
 
     def _text(self, element: ET.Element, *, level: int) -> str:
         for child in element.iter():

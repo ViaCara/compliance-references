@@ -244,6 +244,67 @@ class LegislationTransformerTests(unittest.TestCase):
 
         self.assertIn("18(1) This condition is met if—", markdown)
 
+    def test_leg_sn_fallback_concatenates_more_than_two_levels(self):
+        """The fallback is not hard-coded to paragraph+sub-item -- it walks
+        LegSN1No, LegSN2No, LegSN3No, ... until one is missing, so a
+        fragment nested three deep still carries its full number."""
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<p class="LegClearFix LegSP2Container">'
+            '<span class="LegDS LegSN1No">18</span>'
+            '<span class="LegDS LegSN2No">(1)</span>'
+            '<span class="LegDS LegSN3No">(a)</span>'
+            '<span class="LegDS LegRHS LegP2Text">the processing is necessary.</span>'
+            "</p>"
+            "</div>"
+        )
+        transformer = LegislationTransformer()
+        markdown = transformer.transform(source, citation="DPA 2018 Sch. 1 para. 18")
+
+        self.assertIn("18(1)(a) the processing is necessary.", markdown)
+
+    def test_leg_sn_fallback_stops_at_an_empty_span(self):
+        """An empty LegSN{n}No span (no text) must stop the walk rather
+        than being appended as a blank segment, and must not probe deeper
+        levels past it -- a gap in the middle is not a gap to skip over."""
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<p class="LegClearFix LegSP2Container">'
+            '<span class="LegDS LegSN1No">18</span>'
+            '<span class="LegDS LegSN2No"></span>'
+            '<span class="LegDS LegSN3No">(a)</span>'
+            '<span class="LegDS LegRHS LegP2Text">the processing is necessary.</span>'
+            "</p>"
+            "</div>"
+        )
+        transformer = LegislationTransformer()
+        markdown = transformer.transform(source, citation="DPA 2018 Sch. 1 para. 18")
+
+        self.assertIn("18 the processing is necessary.", markdown)
+        self.assertNotIn("(a)", markdown)
+
+    def test_leg_sn_fallback_is_bounded(self):
+        """A malformed or adversarial document cannot spin the LegSN walk
+        forever -- it stops at _MAX_SCHEDULE_FRAGMENT_DEPTH levels even if
+        every level up to and past it is actually present."""
+        max_depth = LegislationTransformer._MAX_SCHEDULE_FRAGMENT_DEPTH
+        spans = "".join(
+            f'<span class="LegDS LegSN{n}No">{n}</span>' for n in range(1, max_depth + 3)
+        )
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            f'<p class="LegClearFix LegSP2Container">{spans}'
+            '<span class="LegDS LegRHS LegP2Text">text.</span>'
+            "</p>"
+            "</div>"
+        )
+        transformer = LegislationTransformer()
+        markdown = transformer.transform(source, citation="Test")
+
+        expected_number = "".join(str(n) for n in range(1, max_depth + 1))
+        self.assertIn(f"{expected_number} text.", markdown)
+        self.assertNotIn(str(max_depth + 1), markdown)
+
 
 class ContainedElementsTests(unittest.TestCase):
     """`_contained_elements` decides which text is already covered by a
