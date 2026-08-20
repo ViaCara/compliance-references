@@ -168,6 +168,30 @@ class LegislationTransformerTests(unittest.TestCase):
         self.assertNotIn("Open Government Licence", markdown)
         self.assertNotIn("Back to top", markdown)
 
+    def test_transforms_leg_sp_schedule_paragraph_classes(self):
+        """Some schedules (e.g. Equality Act 2010 Sch. 2) typeset their
+        numbered paragraphs under LegSP*Container/No/Text rather than the
+        LegP* family every section uses. Without recognising both, only a
+        stray LegP-classed amendment quotation survives extraction and the
+        rest of the schedule silently disappears."""
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<p class="LegClearFix LegSP2Container">'
+            '<span class="LegDS LegLHS LegSP2No">(1)</span>'
+            '<span class="LegDS LegSP2Text LegRHS">A must comply with the first requirement.</span>'
+            "</p>"
+            '<p class="LegClearFix LegSP3Container">'
+            '<span class="LegDS LegLHS LegSP3No">(a)</span>'
+            '<span class="LegDS LegSP3Text LegRHS">to avoid the disadvantage.</span>'
+            "</p>"
+            "</div>"
+        )
+        transformer = LegislationTransformer()
+        markdown = transformer.transform(source, citation="Equality Act 2010 Sch. 2")
+
+        self.assertIn("(1) A must comply with the first requirement.", markdown)
+        self.assertIn("(a) to avoid the disadvantage.", markdown)
+
 
 class ContainedElementsTests(unittest.TestCase):
     """`_contained_elements` decides which text is already covered by a
