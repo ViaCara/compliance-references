@@ -3,6 +3,18 @@
 Drift log. Newer entries first.
 
 ## 2026-08-20
+- **corpus/statute/uk/equality-act-2010/schedule-002.md** hash 1f60209 -> 492782a
+  - source: https://www.legislation.gov.uk/ukpga/2010/15/schedule/2/data.xht
+  - prior_sha256: 1f60209e887e16f4cbf6029f936b84c8c34d7edd62a1c84ba17666d6bcfd4b49
+  - new_sha256:   492782a15002c9ccf1414a699e2a7610d819daed86234bb3e7a2a0e5a5f21845
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/equality-act-2010/schedule-001.md** hash a440dd0 -> caec18e
+  - source: https://www.legislation.gov.uk/ukpga/2010/15/schedule/1/data.xht
+  - prior_sha256: a440dd03092c876507a765e8fe3c1167545e283671ce268540f2cf8fc5e49d15
+  - new_sha256:   caec18e0fa7e0a83e2cdab09640090920dbf134abf8e69f7282db06cd2ee4091
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
 - **corpus/statute/uk/equality-act-2010/schedule-002.md** new file
   - source: https://www.legislation.gov.uk/ukpga/2010/15/schedule/2/data.xht
   - prior_sha256: (new file)

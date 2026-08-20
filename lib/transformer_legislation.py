@@ -20,7 +20,18 @@ Class names used in selection (from the legislation.gov.uk DOM):
   additions inline.
 - `LegSP1Container` etc., the `LegSP`-prefixed twin of `LegP1Container` etc.
   Some schedules (e.g. Equality Act 2010 Sch. 2) typeset their numbered
-  paragraphs under `LegSP*` rather than `LegP*`; treated identically.
+  paragraphs under `LegSP*` rather than `LegP*`; treated identically at
+  levels 2-4. At level 1 the two prefixes mean different things: `LegP1*`
+  is a section/article heading (title only, handled once by `_find_title`),
+  while `LegSP1*` is a schedule paragraph's own numbered content and must
+  be walked like any other level.
+- `LegSN1No`, `LegSN2No`, ... a schedule-paragraph fragment fetched at
+  paragraph granularity (`.../schedule/N/paragraph/M/data.xht`) has no
+  ancestor element to carry the outer paragraph number M, so
+  legislation.gov.uk folds it into sibling `LegSN1No` (M), `LegSN2No`
+  (the first sub-item's own number), ... on the same leaf that carries
+  `LegP{n}Text`, instead of a `LegP{n}No`/`LegSP{n}No` this transformer
+  otherwise looks for.
 """
 
 from __future__ import annotations
@@ -46,6 +57,12 @@ _CONTAINER_PREFIXES = ("LegP", "LegSP")
 
 def _has_class(cls: set[str], level: int, part: str) -> bool:
     return any(f"{prefix}{level}{part}" in cls for prefix in _CONTAINER_PREFIXES)
+
+
+def _is_container(cls: set[str], level: int) -> bool:
+    if level == 1:
+        return "LegSP1Container" in cls
+    return _has_class(cls, level, "Container")
 
 
 def _localname(tag: str) -> str:
@@ -138,7 +155,7 @@ class LegislationTransformer:
                         return f"{number} - {title}" if number else title
         return None
 
-    _LEVELS = {2: "", 3: "    ", 4: "        "}
+    _LEVELS = {1: "", 2: "", 3: "    ", 4: "        "}
 
     def _iter_paragraphs(self, root: ET.Element) -> Iterable[str]:
         emitted_any = False
@@ -146,7 +163,7 @@ class LegislationTransformer:
         for element in root.iter():
             cls = _classes(element)
             container_level = next(
-                (lvl for lvl in self._LEVELS if _has_class(cls, lvl, "Container")), None
+                (lvl for lvl in self._LEVELS if _is_container(cls, lvl)), None
             )
             if container_level is not None:
                 number = self._number(element, level=container_level)
@@ -195,7 +212,7 @@ class LegislationTransformer:
         contained: set[int] = set()
         for element in root.iter():
             cls = _classes(element)
-            if any(_has_class(cls, level, "Container") for level in self._LEVELS):
+            if any(_is_container(cls, level) for level in self._LEVELS):
                 for descendant in element.iter():
                     contained.add(id(descendant))
         return contained
@@ -205,7 +222,24 @@ class LegislationTransformer:
             cls = _classes(child)
             if _has_class(cls, level, "No"):
                 return _inline_text(child)
-        return ""
+        return self._schedule_fragment_number(element)
+
+    def _schedule_fragment_number(self, element: ET.Element) -> str:
+        numbers: list[str] = []
+        depth = 1
+        while True:
+            found = next(
+                (
+                    _inline_text(child)
+                    for child in element.iter()
+                    if f"LegSN{depth}No" in _classes(child)
+                ),
+                None,
+            )
+            if found is None:
+                return "".join(numbers)
+            numbers.append(found)
+            depth += 1
 
     def _text(self, element: ET.Element, *, level: int) -> str:
         for child in element.iter():
