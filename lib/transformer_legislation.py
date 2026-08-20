@@ -20,7 +20,18 @@ Class names used in selection (from the legislation.gov.uk DOM):
   additions inline.
 - `LegSP1Container` etc., the `LegSP`-prefixed twin of `LegP1Container` etc.
   Some schedules (e.g. Equality Act 2010 Sch. 2) typeset their numbered
-  paragraphs under `LegSP*` rather than `LegP*`; treated identically.
+  paragraphs under `LegSP*` rather than `LegP*`; treated identically at
+  levels 2-4. At level 1 the two prefixes mean different things: `LegP1*`
+  is a section/article heading (title only, handled once by `_find_title`),
+  while `LegSP1*` is a schedule paragraph's own numbered content and must
+  be walked like any other level.
+- `LegSN1No`, `LegSN2No`, ... a schedule-paragraph fragment fetched at
+  paragraph granularity (`.../schedule/N/paragraph/M/data.xht`) has no
+  ancestor element to carry the outer paragraph number M, so
+  legislation.gov.uk folds it into sibling `LegSN1No` (M), `LegSN2No`
+  (the first sub-item's own number), ... on the same leaf that carries
+  `LegP{n}Text`, instead of a `LegP{n}No`/`LegSP{n}No` this transformer
+  otherwise looks for.
 """
 
 from __future__ import annotations
@@ -38,14 +49,30 @@ _NS = "{http://www.w3.org/1999/xhtml}"
 _REPEALED_DOTS_RE = re.compile(r"^[\s\.…]+$")
 _DOT_COUNT_THRESHOLD = 6  # ".  . . . . ." → 6+ dots = treat as repealed marker
 
-# Paragraph-level markup comes under either prefix depending on the source
-# document; legislation.gov.uk does not use them interchangeably within one
-# document, so checking both is safe and never ambiguous.
-_CONTAINER_PREFIXES = ("LegP", "LegSP")
+# No/Text spans use either prefix at any level; legislation.gov.uk does not
+# mix them within one document, so checking both is safe and never ambiguous.
+_NO_TEXT_PREFIXES = ("LegP", "LegSP")
+
+# Container prefixes are level-restricted: a level-1 LegP1Container is a
+# section/article heading that _find_title already owns, so only LegSP1
+# (a schedule paragraph's own content) counts as a level-1 container here.
+_CONTAINER_PREFIXES_BY_LEVEL = {
+    1: ("LegSP",),
+    2: ("LegP", "LegSP"),
+    3: ("LegP", "LegSP"),
+    4: ("LegP", "LegSP"),
+}
 
 
 def _has_class(cls: set[str], level: int, part: str) -> bool:
-    return any(f"{prefix}{level}{part}" in cls for prefix in _CONTAINER_PREFIXES)
+    return any(f"{prefix}{level}{part}" in cls for prefix in _NO_TEXT_PREFIXES)
+
+
+def _is_container(cls: set[str], level: int) -> bool:
+    return any(
+        f"{prefix}{level}Container" in cls
+        for prefix in _CONTAINER_PREFIXES_BY_LEVEL[level]
+    )
 
 
 def _localname(tag: str) -> str:
@@ -138,7 +165,7 @@ class LegislationTransformer:
                         return f"{number} - {title}" if number else title
         return None
 
-    _LEVELS = {2: "", 3: "    ", 4: "        "}
+    _LEVELS = {1: "", 2: "", 3: "    ", 4: "        "}
 
     def _iter_paragraphs(self, root: ET.Element) -> Iterable[str]:
         emitted_any = False
@@ -146,7 +173,7 @@ class LegislationTransformer:
         for element in root.iter():
             cls = _classes(element)
             container_level = next(
-                (lvl for lvl in self._LEVELS if _has_class(cls, lvl, "Container")), None
+                (lvl for lvl in self._LEVELS if _is_container(cls, lvl)), None
             )
             if container_level is not None:
                 number = self._number(element, level=container_level)
@@ -195,7 +222,7 @@ class LegislationTransformer:
         contained: set[int] = set()
         for element in root.iter():
             cls = _classes(element)
-            if any(_has_class(cls, level, "Container") for level in self._LEVELS):
+            if any(_is_container(cls, level) for level in self._LEVELS):
                 for descendant in element.iter():
                     contained.add(id(descendant))
         return contained
@@ -205,7 +232,28 @@ class LegislationTransformer:
             cls = _classes(child)
             if _has_class(cls, level, "No"):
                 return _inline_text(child)
-        return ""
+        return self._schedule_fragment_number(element)
+
+    # Deepest real fragment seen carries 2 (paragraph + first sub-item); this
+    # leaves headroom for a third level without letting a malformed or
+    # adversarial document spin the loop unbounded.
+    _MAX_SCHEDULE_FRAGMENT_DEPTH = 8
+
+    def _schedule_fragment_number(self, element: ET.Element) -> str:
+        numbers: list[str] = []
+        for depth in range(1, self._MAX_SCHEDULE_FRAGMENT_DEPTH + 1):
+            found = next(
+                (
+                    _inline_text(child)
+                    for child in element.iter()
+                    if f"LegSN{depth}No" in _classes(child)
+                ),
+                None,
+            )
+            if not found:
+                break
+            numbers.append(found)
+        return "".join(numbers)
 
     def _text(self, element: ET.Element, *, level: int) -> str:
         for child in element.iter():

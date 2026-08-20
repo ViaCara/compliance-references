@@ -7,14 +7,16 @@ citation: Equality Act 2010 Sch. 2
 source_uri: "https://www.legislation.gov.uk/ukpga/2010/15/schedule/2/data.xht"
 source_format: xhtml
 revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
-content_sha256: 1f60209e887e16f4cbf6029f936b84c8c34d7edd62a1c84ba17666d6bcfd4b49
+content_sha256: 492782a15002c9ccf1414a699e2a7610d819daed86234bb3e7a2a0e5a5f21845
 last_fetched: 2026-08-20
 language: en-GB
 enforcement_status: in_force
 ---
 # Equality Act 2010 Sch. 2
 
-A must comply with the first, second and third requirements.
+1 This Schedule applies where a duty to make reasonable adjustments is imposed on A by this Part.
+
+2(1) A must comply with the first, second and third requirements.
 
 (2) For the purposes of this paragraph, the reference in section 20(3), (4) or (5) to a disabled person is to disabled persons generally.
 
@@ -42,7 +44,7 @@ A must comply with the first, second and third requirements.
 
 (8) If A exercises a public function, nothing in this paragraph requires A to take a step which A has no power to take.
 
-This paragraph applies where A is concerned with the provision of a service which involves transporting people by land, air or water.
+3(1) This paragraph applies where A is concerned with the provision of a service which involves transporting people by land, air or water.
 
 (2) It is never reasonable for A to have to take a step which would—
 
@@ -92,7 +94,7 @@ This paragraph applies where A is concerned with the provision of a service whic
 
 (10) Regulations may amend this paragraph so as to provide for sub-paragraph (2) not to apply, or to apply only so far as is prescribed, in relation to vehicles of a prescribed description.
 
-This paragraph applies for the purposes of paragraph 3.
+4(1) This paragraph applies for the purposes of paragraph 3.
 
 (2) A “hire-vehicle” is a vehicle hired (by way of a trade) under a hiring agreement to which section 66 of the Road Traffic Offenders Act 1988 applies.
 
