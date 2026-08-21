@@ -297,8 +297,8 @@ class LegislationTransformer:
             "",
         )
         if number and full.startswith(number):
-            full = full[len(number) :].lstrip()
-        return full.lstrip(_PARA_NUMBER_DASHES).lstrip()
+            full = full[len(number) :].lstrip(_PARA_NUMBER_DASHES + " ")
+        return full
 
     def _text(self, element: ET.Element, *, level: int) -> str:
         for child in element.iter():

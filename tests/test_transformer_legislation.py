@@ -241,6 +241,16 @@ class LegislationTransformerTests(unittest.TestCase):
         self.assertIn("\nThe following are supervisory authorities\u2014\n", markdown)
         self.assertNotIn("7.", markdown.split("\n", 1)[1])
 
+    def test_para_text_without_a_number_span_keeps_a_leading_dash(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<p class="LegP1ParaText">\u2014 subject to paragraph (2).</p>'
+            "</div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Test")
+
+        self.assertIn("\n\u2014 subject to paragraph (2).\n", markdown)
+
     def test_transforms_level_five_containers(self):
         """RAO 2001 art. 61(3)(a)(iii)(aa) nests five deep; the fifth level
         used to be dropped silently."""
