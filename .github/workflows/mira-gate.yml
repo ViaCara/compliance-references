@@ -6,26 +6,27 @@ on:
   issue_comment:
     types: [created, edited]
 
-permissions:
-  checks: write
-  pull-requests: read
-
 jobs:
   gate:
     if: >
       github.event_name == 'pull_request' ||
       (github.event.issue.pull_request != null && github.event.comment.user.login == 'viacara-mira[bot]')
     runs-on: ubuntu-latest
+    permissions:
+      checks: write
+      pull-requests: read
     steps:
-      - uses: actions/github-script@v7
+      - name: Translate Mira confidence into a check
+        uses: actions/github-script@v7
         with:
           script: |
             const CHECK_NAME = "mira-confidence";
+            const MARKER = "mira-walkthrough";
+            const CONFIDENCE_RE = /Confidence:\s*(\d)\/5/i;
 
             async function setCheck(sha, conclusion, title, summary) {
               await github.rest.checks.create({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
+                ...context.repo,
                 name: CHECK_NAME,
                 head_sha: sha,
                 status: "completed",
@@ -45,17 +46,25 @@ jobs:
               return;
             }
 
-            const body = context.payload.comment.body || "";
-            if (!body.includes("mira-walkthrough")) return;
+            if (!(context.payload.comment.body || "").includes(MARKER)) return;
 
-            const pr = await github.rest.pulls.get({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              pull_number: context.payload.issue.number,
-            });
-            const sha = pr.data.head.sha;
+            const prNumber = context.payload.issue.number;
+            const [{ data: pr }, { data: comments }] = await Promise.all([
+              github.rest.pulls.get({ ...context.repo, pull_number: prNumber }),
+              github.rest.issues.listComments({ ...context.repo, issue_number: prNumber, per_page: 100 }),
+            ]);
+            const sha = pr.head.sha;
 
-            const match = body.match(/Confidence:\s*(\d)\/5/i);
+            // Always resolve against the latest walkthrough, not the comment that
+            // happened to trigger this event: an edit to a stale comment must not
+            // override a newer review (or vice versa).
+            const walkthroughs = comments
+              .filter((c) => c.user.login === "viacara-mira[bot]" && (c.body || "").includes(MARKER))
+              .sort((a, b) => new Date(a.created_at) - new Date(b.created_at));
+            const latest = walkthroughs[walkthroughs.length - 1];
+            if (!latest) return;
+
+            const match = latest.body.match(CONFIDENCE_RE);
             if (!match) {
               await setCheck(
                 sha,
