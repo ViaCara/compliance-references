@@ -25,6 +25,12 @@ Class names used in selection (from the legislation.gov.uk DOM):
   is a section/article heading (title only, handled once by `_find_title`),
   while `LegSP1*` is a schedule paragraph's own numbered content and must
   be walked like any other level.
+- `LegP1ParaText`, `LegP2ParaText`, ... statutory instruments (and some
+  Act sections) typeset each numbered paragraph as a flat `<p>` whose text
+  carries its own "(1)" rather than as a `LegP{n}Container` with separate
+  No/Text spans. The level-1 variant also carries the provision number in a
+  `LegP1No` span ("4.—(1) ...") which is stripped because the heading
+  already names the provision.
 - `LegSN1No`, `LegSN2No`, ... a schedule-paragraph fragment fetched at
   paragraph granularity (`.../schedule/N/paragraph/M/data.xht`) has no
   ancestor element to carry the outer paragraph number M, so
@@ -61,7 +67,19 @@ _CONTAINER_PREFIXES_BY_LEVEL = {
     2: ("LegP", "LegSP"),
     3: ("LegP", "LegSP"),
     4: ("LegP", "LegSP"),
+    5: ("LegP", "LegSP"),
 }
+
+_PARA_TEXT_RE = re.compile(r"^LegP(\d)ParaText$")
+_PARA_NUMBER_DASHES = "\u2014\u2013-"
+
+
+def _para_text_level(cls: set[str]) -> int | None:
+    for name in cls:
+        match = _PARA_TEXT_RE.match(name)
+        if match:
+            return int(match.group(1))
+    return None
 
 
 def _has_class(cls: set[str], level: int, part: str) -> bool:
@@ -165,7 +183,7 @@ class LegislationTransformer:
                         return f"{number} - {title}" if number else title
         return None
 
-    _LEVELS = {1: "", 2: "", 3: "    ", 4: "        "}
+    _LEVELS = {1: "", 2: "", 3: "    ", 4: "        ", 5: "            "}
 
     def _iter_paragraphs(self, root: ET.Element) -> Iterable[str]:
         emitted_any = False
@@ -184,6 +202,13 @@ class LegislationTransformer:
                     yield f"{self._LEVELS[container_level]}{number} {body}".strip()
                 continue
             if id(element) in contained or _localname(element.tag) != "p":
+                continue
+            para_level = _para_text_level(cls)
+            if para_level is not None:
+                text = self._para_text(element, level=para_level)
+                if text and not _is_repealed_marker(text):
+                    emitted_any = True
+                    yield text
                 continue
             if not any(_has_class(cls, level, "Text") for level in self._LEVELS):
                 continue
@@ -254,6 +279,26 @@ class LegislationTransformer:
                 break
             numbers.append(found)
         return "".join(numbers)
+
+    def _para_text(self, element: ET.Element, *, level: int) -> str:
+        """Text of a flat LegP{n}ParaText paragraph. At level 1 the paragraph
+        opens with the provision number ("4.—(1) ..."); drop the number and
+        the dash that joins it so the line starts at "(1)" like every other
+        numbered paragraph."""
+        full = _inline_text(element)
+        if level != 1:
+            return full
+        number = next(
+            (
+                " ".join("".join(child.itertext()).split())
+                for child in element.iter()
+                if _has_class(_classes(child), 1, "No")
+            ),
+            "",
+        )
+        if number and full.startswith(number):
+            full = full[len(number) :].lstrip(_PARA_NUMBER_DASHES + " ")
+        return full
 
     def _text(self, element: ET.Element, *, level: int) -> str:
         for child in element.iter():

@@ -192,6 +192,85 @@ class LegislationTransformerTests(unittest.TestCase):
         self.assertIn("(1) A must comply with the first requirement.", markdown)
         self.assertIn("(a) to avoid the disadvantage.", markdown)
 
+    def test_transforms_flat_para_text_paragraphs(self):
+        """Statutory instruments (MLR 2017, PECR, the FPO and RAO) typeset
+        each numbered paragraph as a flat LegP{n}ParaText <p> carrying its
+        own "(1)" rather than as a LegP{n}Container. The first one also
+        opens with the provision number ("4.—(1) ..."). Without this, every
+        lead paragraph of every regulation vanished and only the (a)/(b)
+        sub-paragraph lists survived."""
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<h3 class="LegP1GroupTitleFirst">Meaning of business relationship</h3>'
+            '<p class="LegP1ParaText">'
+            '<span class="LegP1No" id="regulation-4">4.</span>'
+            "\u2014(1) For the purpose of these Regulations, \u201c"
+            '<span class="LegTerm">business relationship</span>'
+            "\u201d means a relationship which\u2014</p>"
+            '<p class="LegClearFix LegP3Container">'
+            '<span class="LegDS LegLHS LegP3No">(a)</span>'
+            '<span class="LegDS LegRHS LegP3Text">arises out of the business of the relevant person, and</span>'
+            "</p>"
+            '<p class="LegP2ParaText">(2) An estate agent is to be treated as entering into a business relationship with a purchaser.</p>'
+            "</div>"
+        )
+        transformer = LegislationTransformer()
+        markdown = transformer.transform(source, citation="MLR 2017 reg. 4")
+
+        self.assertIn(
+            "(1) For the purpose of these Regulations, \u201cbusiness relationship\u201d "
+            "means a relationship which\u2014",
+            markdown,
+        )
+        self.assertNotIn("4.\u2014", markdown)
+        self.assertIn("(a) arises out of the business of the relevant person, and", markdown)
+        self.assertIn("(2) An estate agent is to be treated", markdown)
+        self.assertLess(markdown.index("(1) For the purpose"), markdown.index("(a) arises"))
+        self.assertLess(markdown.index("(a) arises"), markdown.index("(2) An estate agent"))
+
+    def test_single_paragraph_para_text_drops_only_the_provision_number(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<p class="LegP1ParaText">'
+            '<span class="LegP1No">7.</span>'
+            "  The following are supervisory authorities\u2014</p>"
+            "</div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="MLR 2017 reg. 7")
+
+        self.assertIn("\nThe following are supervisory authorities\u2014\n", markdown)
+        self.assertNotIn("7.", markdown.split("\n", 1)[1])
+
+    def test_para_text_without_a_number_span_keeps_a_leading_dash(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<p class="LegP1ParaText">\u2014 subject to paragraph (2).</p>'
+            "</div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Test")
+
+        self.assertIn("\n\u2014 subject to paragraph (2).\n", markdown)
+
+    def test_transforms_level_five_containers(self):
+        """RAO 2001 art. 61(3)(a)(iii)(aa) nests five deep; the fifth level
+        used to be dropped silently."""
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<p class="LegClearFix LegP4Container">'
+            '<span class="LegDS LegLHS LegP4No">(iii)</span>'
+            '<span class="LegDS LegRHS LegP4Text">at least 40% of that land is used\u2014</span>'
+            "</p>"
+            '<p class="LegClearFix LegP5Container">'
+            '<span class="LegDS LegLHS LegP5No">(aa)</span>'
+            '<span class="LegDS LegRHS LegP5Text">as or in connection with a dwelling; or</span>'
+            "</p>"
+            "</div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="RAO 2001 art. 61")
+
+        self.assertIn("(iii) at least 40% of that land is used\u2014", markdown)
+        self.assertIn("(aa) as or in connection with a dwelling; or", markdown)
+
     def test_transforms_top_level_schedule_paragraph_number(self):
         """A schedule paragraph with no sub-items (e.g. Equality Act 2010
         Sch. 2 para. 1) carries its own number and text directly on a

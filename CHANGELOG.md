@@ -3,6 +3,288 @@
 Drift log. Newer entries first.
 
 ## 2026-08-20
+- **corpus/statute/uk/pecr/regulation-023.md** hash 10b9c9c -> b311b99
+  - source: https://www.legislation.gov.uk/uksi/2003/2426/regulation/23/data.xht
+  - prior_sha256: 10b9c9c444f7ab03beb92b9dda4fbf3c8147f7c3ee2de530143a6ea0d578b5fa
+  - new_sha256:   b311b99ce53ded87b226df0432b7f375e0f039f9607eeecb00707ad91819375c
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/pecr/regulation-022.md** hash ae82771 -> b15a96d
+  - source: https://www.legislation.gov.uk/uksi/2003/2426/regulation/22/data.xht
+  - prior_sha256: ae82771558114f7bd44dd9edc9c45fa9dd93100095d697b1854a22382ae4f367
+  - new_sha256:   b15a96d49f9f266195f6380b83c5ca32b0ecd8bfd145643c74310b856e34aef5
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/pecr/regulation-006.md** hash ac2c53f -> f3b2c39
+  - source: https://www.legislation.gov.uk/uksi/2003/2426/regulation/6/data.xht
+  - prior_sha256: ac2c53fd2b80180d5b625c2d39b6b439f101994a071df1c769ec8da548ab6edc
+  - new_sha256:   f3b2c39b3745ae38c0caee16240c6362f5db85a7c865330f3e25fbc69d9ceb42
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/rao-2001/article-061.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2001/544/article/61/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   98c678093d8a70c60b516c09807e44855bd2d37410e6433d61c55a1eabad251e
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/rao-2001/article-060c.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2001/544/article/60C/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   f522d472e6e5954cc23e1f555fafb73247cf7b313c915e9295b4222837ece483
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/rao-2001/article-060b.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2001/544/article/60B/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   02ba4c3d9f96a3d86a50b5730a12f4cf8164ef07dfb0b710c1a64376e7c09e36
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/rao-2001/article-005.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2001/544/article/5/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   fca6273b1a6b197ba48b363135590590c512a4952fc795cec249e5b8ec68a021
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/fpo-2005/article-051.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2005/1529/article/51/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   9faeef6058a5d9f056f45aa34863be0be6278362e57db9fd7e28418d1ccf0e28
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/fpo-2005/article-050a.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2005/1529/article/50A/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   8d958e622e5ed7364e1a19c007ba632fdf970b15c6a1cd01f6badbb0e2746df5
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/fpo-2005/article-050.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2005/1529/article/50/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   a30dd1e418784395122adb687174b6530834e9ee9914eafdffcb74f351095436
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/fpo-2005/article-049.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2005/1529/article/49/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   d33c45999e8c00175e5e48adb1158d9f92aeaa8847df90ed5f5b6594bbb22cbc
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/fpo-2005/article-048.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2005/1529/article/48/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   18870a42d0e401864659c34306700e85dba072c4321c7792f8d33d181731f4cf
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/fpo-2005/article-019.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2005/1529/article/19/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   299bbf731b82952127566e8abbe17c99b85b566c982228d9f8ce6c242a003b8f
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/fpo-2005/article-012.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2005/1529/article/12/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   5db7c6cf5f29cac62f11c03318329088bea7472eb502b830f183f57819ef8662
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/fsma-2000/section-025.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2000/8/section/25/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   4878397d40867576e64d0ab811ab5cd45fcfe008129a73b7f3f3b613fcdba964
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/fsma-2000/section-023.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2000/8/section/23/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   9354e8418d2dfe30e0bbb736c382313503ce5db00898730700c7b95ce79ed00a
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/fsma-2000/section-022.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2000/8/section/22/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   7f23b693854ac995a59eca333d97fde4fa836ac576b55b03613cee305b541606
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/fsma-2000/section-021.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2000/8/section/21/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   1a171c99f1f44a1eb56a817218f87efbccf2e88a038a31910e386ad4ab4fca85
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/fsma-2000/section-019.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2000/8/section/19/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   c310760cc45fcd1d794312d2ee72360b3b302ca352052cdd77e6e0562e54d23e
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-092.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/92/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   a8d3ab303885850c8f43df7edec70753bea94f4841d82807b5beeead95d9c78b
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-086.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/86/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   e4e2fa7885d2cf66da0d1727808fc99b08587aa7f887eb82044918fb6a6afdbc
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-076.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/76/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   4025d17ba70efe42bada227fcd3bae342ca0f31fc4d030cbe66939de87855285
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-059.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/59/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   b11823901f10315f943fee8a49be71658f10c073b475669b3e8c9d3506be70ab
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-058.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/58/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   2992529c6f4840b847c4fe37df793c3b0291a40be6cdfed9438e6c5b77a3c73c
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-057.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/57/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   9827b34e82ec5c1a4f15b44ac163b1895c821644bd176cc7b92d88966ac4b3f7
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-056.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/56/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   b70d236542359b3a06fd8142b54d8ec1dd300de20cbcb9e2471b12e8ffd9faf4
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-055.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/55/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   d56e438aff4ca93cd842ffbd8bb8152519163cc59f8cc788347ba0eda9d528ca
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-054.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/54/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   a41ec33efa10dd7265b3d3c57d9b247d5553716b0244b485517105343db84268
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-041.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/41/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   9d299a23ef9be628ee815fa692d5aa98af6f7ac91b506bb19c685a0b031e73b2
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-040.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/40/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   c8bdb1f28a2fdb5b9eb62a4773acb0ff53c31ad9ddc55bd2e12895228d145343
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-039.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/39/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   b3e763f5279776b9a44a2a2fb5e4bcd6cadef272aec4f3e4546db42482afe84f
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-037.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/37/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   15f90bbdb687dd601c572646efb0aa3be33c6a5483e41a7ac9e6225b7aeea686
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-035.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/35/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   7bc17ef68d0f7acd1f526d9b391ffce9fbd7a807d8cfc7338fd884aace066af0
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-033.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/33/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   1247fa6ebec5ad83baef3c8d810ac2c6109714b33b5bfac9319b6926195e8c3e
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-028.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/28/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   7c11a9674a003180622cc4b4b08f1f69909f946638479a7878223b7492daa8fa
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-027.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/27/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   e67c95b7550bac3ea79ac0f26da64b6ad2f43fe9fd82b6ea91d30ea4680fc623
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-026.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/26/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   56ac94d1d751f9000c77611a390f6abe6b353ab8955b21c14aad20abd19c2bd0
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-024.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/24/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   abd87f0f5921d8cec922ebe78940b7788e527ebe9ec1e9f723fdd53d40d5a978
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-021.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/21/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   de48c8f3cc48a22913c2f9d67dbe0da214fb9971cfc63e5f9448d798d989dea6
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-019.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/19/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   34a8520484064aca32993e942bab633d118688ce9e0b2d952f332a05afc306f8
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-018a.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/18A/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   4682629f3666557adbfb4ed1905305669e546c9d2c175a01baf887784be0069a
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-018.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/18/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   fc21d05adc5602f7e1986ae2d37d79965619ff1a795d06a7e947ac9c5c4f0361
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-008.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/8/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   a2741a41dae952d7343df49d12874afaec8e0509acdba6d39aedccec212af160
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-007.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/7/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   1e17ec17010a5a5c9b8724b8d506aaa32a995b1d930e74727fd353c314d1bb05
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-004.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/4/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   63af3fbe90d52134d9a0f3b6caec1913c35c81056fdf9a838d20d99d1e587466
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-003.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/3/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   3b114ccaf3cdfe82d48a0a00c7dfb8d79ebc846d4bc2204f4146420d8008bcb6
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/duaa-2025/uksi-082-regulation-005.md** hash 3d93b63 -> 5bb4b38
+  - source: https://www.legislation.gov.uk/uksi/2026/82/regulation/5/data.xht
+  - prior_sha256: 3d93b63e568c837cbf8d66a08621373337541d81a7d222d1c583cf8ed4988fa6
+  - new_sha256:   5bb4b386178dc748d5b2aa473d863eb7541ceb3710b1029ff9a16045d02b7c11
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
 - **corpus/statute/uk/equality-act-2010/schedule-002.md** hash 1f60209 -> 492782a
   - source: https://www.legislation.gov.uk/ukpga/2010/15/schedule/2/data.xht
   - prior_sha256: 1f60209e887e16f4cbf6029f936b84c8c34d7edd62a1c84ba17666d6bcfd4b49
