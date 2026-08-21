@@ -2,19 +2,6 @@
 
 Drift log. Newer entries first.
 
-## 2026-08-21
-- **corpus/statute/uk/dmcc-2024/schedule-020.md** hash ded01d3 -> 111d9d9
-  - source: https://www.legislation.gov.uk/ukpga/2024/13/schedule/20/data.xht
-  - prior_sha256: ded01d3a9dc58fd5ab91df4b5564c29cbb1f5cf32a30c4019a9580a4ad1a35ad
-  - new_sha256:   111d9d9fa6dc2cc2d29c25972232d48bfed57546cebb45039774ea9445edb661
-  - revision: Mon, 17 Aug 2026 16:40:13 GMT
-
-- **corpus/statute/uk/dpa-2018/schedule-001-paragraph-018.md** hash 144a5a1 -> a89b226
-  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/18/data.xht
-  - prior_sha256: 144a5a1daa3c74613915dbc16adc5089bcd402a801c6ca86ecee5670e0c73ad5
-  - new_sha256:   a89b226004881696d306f998563f6a00537349f961ab3628e701d9b1a3b00814
-  - revision: Mon, 17 Aug 2026 16:40:13 GMT
-
 ## 2026-08-20
 - **corpus/statute/uk/pecr/regulation-023.md** hash 10b9c9c -> b311b99
   - source: https://www.legislation.gov.uk/uksi/2003/2426/regulation/23/data.xht
