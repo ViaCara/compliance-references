@@ -7,8 +7,8 @@ citation: MLR 2017 reg. 28
 source_uri: "https://www.legislation.gov.uk/uksi/2017/692/regulation/28/data.xht"
 source_format: xhtml
 revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
-content_sha256: 7c11a9674a003180622cc4b4b08f1f69909f946638479a7878223b7492daa8fa
-last_fetched: 2026-08-20
+content_sha256: 79aba073ee30721399d8675a76ccbf8fe264a480f3696c8e658621c21280a4f6
+last_fetched: 2026-08-24
 language: en-GB
 enforcement_status: in_force
 ---
@@ -75,6 +75,18 @@ _Customer due diligence measures_
 (9) Relevant persons do not satisfy their requirements under paragraph (4) by relying solely on information delivered to the registrar under any enactment that requires information to be delivered to the registrar about registrable persons, registrable relevant legal entities or registrable beneficial owners.
 
 (9A) In paragraph (9)—
+
+“registrable beneficial owner” has the meaning given in section 4(5) (application for registration) of, and Schedule 2 (registrable beneficial owners) to, the Economic Crime (Transparency and Enforcement) Act 2022;
+
+“registrable person” has the meaning given in section 790C(4) (key terms) of the Companies Act 2006, including as that definition is applied under any enactment;
+
+“registrable relevant legal entity” has the meaning given in section 790C(8) of the Companies Act 2006, including as that definition is applied under any enactment;
+
+“registrar” means—
+
+(a) in relation to information delivered to the registrar under Part 1 (registration of overseas entities) of the Economic Crime (Transparency and Enforcement) Act 2022, the registrar of companies for England and Wales;
+
+(b) in relation to information delivered to the registrar under any other enactment, the registrar referred to in section 1060(3) (the registrar) of the Companies Act 2006.
 
 (10) Where a person (“A”) purports to act on behalf of the customer, the relevant person must—
 

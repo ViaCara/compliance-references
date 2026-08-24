@@ -7,8 +7,8 @@ citation: MLR 2017 reg. 41
 source_uri: "https://www.legislation.gov.uk/uksi/2017/692/regulation/41/data.xht"
 source_format: xhtml
 revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
-content_sha256: 9d299a23ef9be628ee815fa692d5aa98af6f7ac91b506bb19c685a0b031e73b2
-last_fetched: 2026-08-20
+content_sha256: a1a711c09c97eaeca133b7c1682ff3cbdcc03e26ae6ddecfdc9feb37dd370ac2
+last_fetched: 2026-08-24
 language: en-GB
 enforcement_status: in_force
 ---
@@ -41,3 +41,9 @@ _Data Protection_
 (8) In the case of sensitive processing of personal data for the purposes of the prevention of money laundering, terrorist financing or proliferation financing, section 10 of, and Schedule 1 to, the Data Protection Act 2018 make provision about when the processing meets a requirement in Article 9(2) or 10 of the UK GDPR for authorisation under the law of the United Kingdom (see, for example, paragraphs 10, 11 and 12 of that Schedule).
 
 (9) In this regulation—
+
+“data subject” has the same meaning as in the Data Protection Act 2018 (see section 3 of that Act);
+
+“personal data” and “processing” have the same meaning as in Parts 5 to 7 of that Act (see section 3(2), (4) and (14) of that Act);
+
+“sensitive processing” means the processing of personal data described in Article 9(1) or 10 of the UK GDPR (special categories of personal data and personal data relating to criminal convictions and offences etc).

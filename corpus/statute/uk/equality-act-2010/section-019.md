@@ -6,9 +6,9 @@ kind: legislation_section
 citation: Equality Act 2010 s. 19
 source_uri: "https://www.legislation.gov.uk/ukpga/2010/15/section/19/data.xht"
 source_format: xhtml
-revision_id: "Wed, 13 May 2026 15:07:58 GMT"
-content_sha256: 5bd3cb07edbc48de2c8d43f36955361a2560892637f37b3f3f5419fc725795d1
-last_fetched: 2026-05-15
+revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
+content_sha256: e4801c59d7d9fc4aaf8b459f0d221683cff6a7845c259646d069ff3539667605
+last_fetched: 2026-08-24
 language: en-GB
 enforcement_status: in_force
 ---
@@ -29,3 +29,19 @@ _Indirect discrimination_
 (d) A cannot show it to be a proportionate means of achieving a legitimate aim.
 
 (3) The relevant protected characteristics are—
+
+age;
+
+disability;
+
+gender reassignment;
+
+marriage and civil partnership;
+
+race;
+
+religion or belief;
+
+sex;
+
+sexual orientation.
