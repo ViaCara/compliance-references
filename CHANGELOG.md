@@ -3,6 +3,66 @@
 Drift log. Newer entries first.
 
 ## 2026-08-24
+- **corpus/statute/uk/dpa-2018/section-119a.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/section/119A/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   d6b4194486ac35f6f273701fa21caf04930d49d5260ba94a6f03c699250cbd4d
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/gdpr/article-049a.md** new file
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/49A/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   27bd865fb1ac84d56a9ec5aea11d78a8b19a96ff981a28a1f42ec02fb3c41934
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/gdpr/article-049.md** new file
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/49/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   56043a877518dadef63b6c500d29661f04528ab110cfabcf19f18ad67fccd208
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/gdpr/article-047a.md** new file
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/47A/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   2446fc7736885b1457214fc4510f34fc19d3cc1efa7ea0b52fb78a853e88ea19
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/gdpr/article-047.md** new file
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/47/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   856c166cabddca57f58c465ea582e9637a5c11c0b6dea2f173803a2f95402deb
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/gdpr/article-046.md** new file
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/46/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   febf3cd61732869e69f0fefe643cd30944cde07e8ac28b351634b3b4f0e7bed1
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/gdpr/article-045b.md** new file
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/45B/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   dd33d8105cfff6b4cde8a58c59ed60d70b110a50fbf051a3ca755cea4ca73cc4
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/gdpr/article-045a.md** new file
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/45A/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   98a1bb547f77880cb9e43bcf014a94d6f8072df4a6664c96cc97f9694ebc4141
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/gdpr/article-045.md** new file
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/45/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   057f14b98caecb1ed64c6b05f8bee52438ee2192b8b5f7302abc1beb236ddb77
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/gdpr/article-024.md** new file
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/24/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   03669b4d45eb35503eb56d9f13bcf95c4b0d5b57795326bd64b55f82cbe59b9e
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
 - **corpus/statute/uk/ecommerce-regs-2002/regulation-019.md** new file
   - source: https://www.legislation.gov.uk/uksi/2002/2013/regulation/19/data.xht
   - prior_sha256: (new file)
