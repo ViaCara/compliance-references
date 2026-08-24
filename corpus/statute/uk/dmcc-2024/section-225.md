@@ -6,9 +6,9 @@ kind: legislation_section
 citation: DMCC 2024 s. 225
 source_uri: "https://www.legislation.gov.uk/ukpga/2024/13/section/225/data.xht"
 source_format: xhtml
-revision_id: "Wed, 22 Jul 2026 18:56:31 GMT"
-content_sha256: ebde140647a54688cb9b5e2cd07f2201a8252695237b969164cd9620f52b58ec
-last_fetched: 2026-07-25
+revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
+content_sha256: 0aa8887fd8e41a4bf9bacf3857e06eb26d939354fab9f9cac00c1081d6e12d95
+last_fetched: 2026-08-24
 language: en-GB
 enforcement_status: in_force
 ---
@@ -27,6 +27,22 @@ _Prohibition of unfair commercial practices_
 is prohibited.
 
 (3) In this Chapter—
+
+“commercial practice” means an act or omission by a trader relating to the promotion or supply of—
+
+(a) the trader’s product to a consumer,
+
+(b) another trader’s product to a consumer, or
+
+(c) a consumer’s product to the trader or another person;
+
+“consumer” means an individual acting for purposes that are wholly or mainly outside the individual’s business;
+
+“trader” means—
+
+(a) a person (“P”) acting for purposes relating to P’s business, or
+
+(b) a person acting in the name of, or on behalf of, P for purposes relating to P’s business.
 
 (4) A commercial practice is unfair if—
 

@@ -2,6 +2,199 @@
 
 Drift log. Newer entries first.
 
+## 2026-08-24
+- **corpus/statute/uk/ecommerce-regs-2002/regulation-019.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2002/2013/regulation/19/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   8ab6f6d302ee9638508d4ca6267554d5b69f2aceb10567609ca4ca631fbb763f
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/ecommerce-regs-2002/regulation-018.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2002/2013/regulation/18/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   5c29be2bdcaf1461da7232f82e6df9f9a313aee23c0099d381c19278cb00c03c
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/ecommerce-regs-2002/regulation-017.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2002/2013/regulation/17/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   aeea5a9707f4b95b0b03a07c075724a166a8f447b80b5b1246d183849bb72250
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/ecommerce-regs-2002/regulation-006.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2002/2013/regulation/6/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   31eef765d730645ac1bae34ddd216d2262d52310c46a50e398b8a046467bead7
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/consumer-contracts-regs-2013/schedule-002.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2013/3134/schedule/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   857bc0116ce90af04066ba7f371dc1f983e836ac708540330ad5743349633fbf
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/consumer-contracts-regs-2013/schedule-001.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2013/3134/schedule/1/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   a9876783c2edc3d1f3ce72a5ffcd698c841563dcb19d0398d2ea9c36a07510e7
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/consumer-contracts-regs-2013/regulation-019.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2013/3134/regulation/19/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   a6bef42051cd1a714dde3cfaa4d69c53abb68bbe7204a9a180c397a322295c2b
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/consumer-contracts-regs-2013/regulation-013.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2013/3134/regulation/13/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   e29aeb4c784aba9c75d506e5bbe02a7a28903158e6a49e00268412b8bae21225
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/consumer-contracts-regs-2013/regulation-010.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2013/3134/regulation/10/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   728c08d29e0a42b9d9f565b756310f8ad147d647f173b0e6bd9b4de5dd13ba0f
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/consumer-contracts-regs-2013/regulation-009.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2013/3134/regulation/9/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   0b100e19f155e48a8122fe09543001dbe1f9e692354bd58c0036f8fd5e4b1356
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/consumer-rights-act-2015/schedule-002.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2015/15/schedule/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   ec6b1b49a925194ced4012abee118eb86b1c3174de9fb56b8803c3c32507ea96
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/consumer-rights-act-2015/section-068.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2015/15/section/68/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   5fff950ad18ea27d6e75d327af657995dfe7ecee4d4252fb84ffb1e117ce1521
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/consumer-rights-act-2015/section-064.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2015/15/section/64/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   9917a168bebae6075cf5b6ca31c250b6bf8b7c1a92e0cfa206e02347f69735cd
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/consumer-rights-act-2015/section-062.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2015/15/section/62/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   c621c3286fd4384db399d99ee69d7e04afdc4249c3cae9ee97bf95322b2fea98
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/dmcc-2024/section-248.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2024/13/section/248/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   3575497e121351abb6ad91f6ab321f9a84ca56d125b01881f8a2a9254c3cf384
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/dmcc-2024/section-246.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2024/13/section/246/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   5636664d54a4743a663a72f32893eb7138b95332e5024cbd375808cff38bd2e8
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/dmcc-2024/section-245.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2024/13/section/245/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   49e2ee756c5befcd34742af6284bc61ed76c466aea1c8a61926762644a48f8fc
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/dmcc-2024/section-230.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2024/13/section/230/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   d83f427eb493a7cc16258c219b074b9f1643e91a3b56ee55281924558224ff31
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/dmcc-2024/section-229.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2024/13/section/229/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   589c9051fe33cf08721509e1c03622e5f8f039918966df29e021f5f3c3f8faf9
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/dmcc-2024/section-228.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2024/13/section/228/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   785043b8e60e5172a2088edb5ce501ea7e96531280a3e2977c4a324fd9f5f57f
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/dmcc-2024/section-227.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2024/13/section/227/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   a8af89d8106c045975c5db9f2129cb50da25aef688384ee996f4a071e0dd1417
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/dmcc-2024/section-226.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2024/13/section/226/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   8e38c5e8355879779d329bb5e31259a9733f160d9ce89cebe9d5716af65b165d
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/rao-2001/article-060b.md** hash 02ba4c3 -> f8e1140
+  - source: https://www.legislation.gov.uk/uksi/2001/544/article/60B/data.xht
+  - prior_sha256: 02ba4c3d9f96a3d86a50b5730a12f4cf8164ef07dfb0b710c1a64376e7c09e36
+  - new_sha256:   f8e11408ca693c94bb04333bf8e43e5f2b0b5768063b4385fdef5d949cf617c2
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-041.md** hash 9d299a2 -> a1a711c
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/41/data.xht
+  - prior_sha256: 9d299a23ef9be628ee815fa692d5aa98af6f7ac91b506bb19c685a0b031e73b2
+  - new_sha256:   a1a711c09c97eaeca133b7c1682ff3cbdcc03e26ae6ddecfdc9feb37dd370ac2
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-028.md** hash 7c11a96 -> 79aba07
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/28/data.xht
+  - prior_sha256: 7c11a9674a003180622cc4b4b08f1f69909f946638479a7878223b7492daa8fa
+  - new_sha256:   79aba073ee30721399d8675a76ccbf8fe264a480f3696c8e658621c21280a4f6
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/mlr-2017/regulation-003.md** hash 3b114cc -> 5be2a3b
+  - source: https://www.legislation.gov.uk/uksi/2017/692/regulation/3/data.xht
+  - prior_sha256: 3b114ccaf3cdfe82d48a0a00c7dfb8d79ebc846d4bc2204f4146420d8008bcb6
+  - new_sha256:   5be2a3b42a7772a8b832e664eb74d6b56012e5ccef230dfcb006b3d4fbc6bc21
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/dmcc-2024/schedule-020.md** hash ded01d3 -> 111d9d9
+  - source: https://www.legislation.gov.uk/ukpga/2024/13/schedule/20/data.xht
+  - prior_sha256: ded01d3a9dc58fd5ab91df4b5564c29cbb1f5cf32a30c4019a9580a4ad1a35ad
+  - new_sha256:   111d9d9fa6dc2cc2d29c25972232d48bfed57546cebb45039774ea9445edb661
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/dmcc-2024/section-225.md** hash ebde140 -> 0aa8887
+  - source: https://www.legislation.gov.uk/ukpga/2024/13/section/225/data.xht
+  - prior_sha256: ebde140647a54688cb9b5e2cd07f2201a8252695237b969164cd9620f52b58ec
+  - new_sha256:   0aa8887fd8e41a4bf9bacf3857e06eb26d939354fab9f9cac00c1081d6e12d95
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/equality-act-2010/section-019.md** hash 5bd3cb0 -> e4801c5
+  - source: https://www.legislation.gov.uk/ukpga/2010/15/section/19/data.xht
+  - prior_sha256: 5bd3cb07edbc48de2c8d43f36955361a2560892637f37b3f3f5419fc725795d1
+  - new_sha256:   e4801c59d7d9fc4aaf8b459f0d221683cff6a7845c259646d069ff3539667605
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/duaa-2025/section-001.md** hash a799bc0 -> 1c013fb
+  - source: https://www.legislation.gov.uk/ukpga/2025/18/section/1/data.xht
+  - prior_sha256: a799bc0aeb3ace08f34e8582c612b9fd5da89efaad1754916151849840d5748e
+  - new_sha256:   1c013fb0f3d934c26b776174b00b28bc7d63fd82a550923d6225066075e54063
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-001-paragraph-018.md** hash 144a5a1 -> a89b226
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/18/data.xht
+  - prior_sha256: 144a5a1daa3c74613915dbc16adc5089bcd402a801c6ca86ecee5670e0c73ad5
+  - new_sha256:   a89b226004881696d306f998563f6a00537349f961ab3628e701d9b1a3b00814
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
+- **corpus/statute/uk/gdpr/article-006.md** hash dc9eda0 -> 307f6e9
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/6/data.xht
+  - prior_sha256: dc9eda064619c0642cecfc91cf9fc2958db944f1ea4ffa3e33a5b870063794ab
+  - new_sha256:   307f6e93ad29f5b92c1d5572b842ea2b2b496252b6cd87df9e03dd92ea6744fe
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
 ## 2026-08-20
 - **corpus/statute/uk/pecr/regulation-023.md** hash 10b9c9c -> b311b99
   - source: https://www.legislation.gov.uk/uksi/2003/2426/regulation/23/data.xht

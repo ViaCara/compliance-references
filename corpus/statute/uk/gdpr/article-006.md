@@ -6,9 +6,9 @@ kind: legislation_article
 citation: UK GDPR Article 6
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/6/data.xht"
 source_format: xhtml
-revision_id: "Wed, 22 Jul 2026 18:56:31 GMT"
-content_sha256: dc9eda064619c0642cecfc91cf9fc2958db944f1ea4ffa3e33a5b870063794ab
-last_fetched: 2026-07-25
+revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
+content_sha256: 307f6e93ad29f5b92c1d5572b842ea2b2b496252b6cd87df9e03dd92ea6744fe
+last_fetched: 2026-08-24
 language: en-GB
 enforcement_status: in_force
 ---
@@ -79,3 +79,7 @@ The purpose of the processing shall be determined in that legal basis or, as reg
 (c) processing that is necessary for the purposes of ensuring the security of network and information systems.
 
 12. In paragraph 11—
+
+“intra-group transmission” means transmission between members of a group of undertakings or between members of a group of institutions affiliated to a central body;
+
+“security of network and information systems” has the same meaning as in the Network and Information Systems Regulations 2018 () (see regulation 1(3)(g)).
