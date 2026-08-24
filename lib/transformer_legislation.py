@@ -31,6 +31,12 @@ Class names used in selection (from the legislation.gov.uk DOM):
   No/Text spans. The level-1 variant also carries the provision number in a
   `LegP1No` span ("4.—(1) ...") which is stripped because the heading
   already names the provision.
+- `LegTabbedDef`, `LegListTextStandard`, `LegLevel{n}`, `LegListItem`,
+  `LegListItemNo`: an interpretation subsection ("In this Chapter—") lists
+  its defined terms as a `<ul class="LegTabbedDef">` whose items carry no
+  `LegP{n}Text` class at all, and nests lettered limbs as `LegListItem`
+  divs whose number sits in a sibling `LegListItemNo` div rather than in a
+  `LegP{n}No` span.
 - `LegSN1No`, `LegSN2No`, ... a schedule-paragraph fragment fetched at
   paragraph granularity (`.../schedule/N/paragraph/M/data.xht`) has no
   ancestor element to carry the outer paragraph number M, so
@@ -71,12 +77,24 @@ _CONTAINER_PREFIXES_BY_LEVEL = {
 }
 
 _PARA_TEXT_RE = re.compile(r"^LegP(\d)ParaText$")
+_LIST_TEXT_CLASS = "LegListTextStandard"
+_LIST_ITEM_CLASS = "LegListItem"
+_LIST_ITEM_NO_CLASS = "LegListItemNo"
+_LIST_LEVEL_RE = re.compile(r"^LegLevel(\d)$")
 _PARA_NUMBER_DASHES = "\u2014\u2013-"
 
 
 def _para_text_level(cls: set[str]) -> int | None:
     for name in cls:
         match = _PARA_TEXT_RE.match(name)
+        if match:
+            return int(match.group(1))
+    return None
+
+
+def _list_level(cls: set[str]) -> int | None:
+    for name in cls:
+        match = _LIST_LEVEL_RE.match(name)
         if match:
             return int(match.group(1))
     return None
@@ -188,6 +206,7 @@ class LegislationTransformer:
     def _iter_paragraphs(self, root: ET.Element) -> Iterable[str]:
         emitted_any = False
         contained = self._contained_elements(root)
+        list_numbers = self._list_item_numbers(root)
         for element in root.iter():
             cls = _classes(element)
             container_level = next(
@@ -209,6 +228,14 @@ class LegislationTransformer:
                 if text and not _is_repealed_marker(text):
                     emitted_any = True
                     yield text
+                continue
+            if _LIST_TEXT_CLASS in cls:
+                text = _inline_text(element)
+                if text and not _is_repealed_marker(text):
+                    emitted_any = True
+                    indent = self._LEVELS.get(_list_level(cls) or 0, "")
+                    number = list_numbers.get(id(element), "")
+                    yield f"{indent}{number} {text}".strip()
                 continue
             if not any(_has_class(cls, level, "Text") for level in self._LEVELS):
                 continue
@@ -251,6 +278,41 @@ class LegislationTransformer:
                 for descendant in element.iter():
                     contained.add(id(descendant))
         return contained
+
+    def _list_item_numbers(self, root: ET.Element) -> dict[int, str]:
+        """Map each numbered list item's text paragraph to its number.
+
+        A `LegListItem` holds its number in a sibling `LegListItemNo` div
+        rather than in the `LegP{n}No` span `_number` looks for, and
+        ElementTree has no parent pointers, so the pairing is resolved once
+        up front. A nested item is walked in its own right, and its first
+        text paragraph is its own, so the outer item never claims it."""
+        numbers: dict[int, str] = {}
+        for element in root.iter():
+            if _LIST_ITEM_CLASS not in _classes(element):
+                continue
+            number = next(
+                (
+                    _inline_text(child)
+                    for child in element.iter()
+                    if _LIST_ITEM_NO_CLASS in _classes(child)
+                ),
+                "",
+            )
+            if not number:
+                continue
+            text_element = next(
+                (
+                    child
+                    for child in element.iter()
+                    if _localname(child.tag) == "p"
+                    and _LIST_TEXT_CLASS in _classes(child)
+                ),
+                None,
+            )
+            if text_element is not None:
+                numbers[id(text_element)] = number
+        return numbers
 
     def _number(self, element: ET.Element, *, level: int) -> str:
         for child in element.iter():

@@ -431,5 +431,68 @@ class ContainedElementsTests(unittest.TestCase):
         self.assertEqual(set(), LegislationTransformer()._contained_elements(root))
 
 
+class TabbedDefinitionListTests(unittest.TestCase):
+    """A `LegTabbedDef` list carries the interpretation subsection's defined
+    terms. Before the fix its items rendered as nothing, so a subsection that
+    reads "In this Chapter—" was followed by an empty line (DMCC 2024 s. 225(3))."""
+
+    SOURCE = (
+        '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+        '<p class="LegClearFix LegP2Container">'
+        '<span class="LegDS LegLHS LegP2No">(3)</span>'
+        '<span class="LegDS LegRHS LegP2Text">In this Chapter\u2014</span>'
+        "</p>"
+        '<ul class="LegTabbedDef LegUnorderedList">'
+        "<li>"
+        '<p class="LegListTextStandard LegLevel3">'
+        '\u201c<span class="LegTerm">commercial practice</span>\u201d means an act or '
+        "omission by a trader relating to the promotion or supply of\u2014"
+        "</p>"
+        "<div>"
+        '<div class="LegAlphaList">'
+        '<div class="LegListItem">'
+        '<div class="LegLevel4No LegListItemNo">(a)</div>'
+        '<p class="LegListTextStandard LegLevel4">'
+        "the trader\u2019s product to a consumer,"
+        "</p>"
+        "</div>"
+        "</div>"
+        "</div>"
+        "</li>"
+        "<li>"
+        '<p class="LegListTextStandard LegLevel3">'
+        '\u201c<span class="LegTerm">consumer</span>\u201d means an individual acting '
+        "for purposes that are wholly or mainly outside the individual\u2019s business;"
+        "</p>"
+        "</li>"
+        "</ul>"
+        "</div>"
+    )
+
+    def setUp(self):
+        self.markdown = LegislationTransformer().transform(
+            self.SOURCE, citation="DMCC 2024 s. 225"
+        )
+
+    def test_defined_terms_survive_extraction(self):
+        self.assertIn(
+            "\u201ccommercial practice\u201d means an act or omission by a trader",
+            self.markdown,
+        )
+        self.assertIn(
+            "\u201cconsumer\u201d means an individual acting for purposes", self.markdown
+        )
+
+    def test_lettered_items_within_a_definition_keep_their_number(self):
+        self.assertIn("(a) the trader\u2019s product to a consumer,", self.markdown)
+
+    def test_definitions_follow_the_subsection_that_introduces_them(self):
+        lines = [line for line in self.markdown.splitlines() if line.strip()]
+        introduction = next(
+            index for index, line in enumerate(lines) if "In this Chapter" in line
+        )
+
+        self.assertIn("commercial practice", lines[introduction + 1])
+
 if __name__ == "__main__":
     unittest.main()
