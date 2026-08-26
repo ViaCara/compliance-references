@@ -2,6 +2,13 @@
 
 Drift log. Newer entries first.
 
+## 2026-08-26
+- **corpus/statute/uk/pecr/schedule-a1-paragraph-004.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2003/2426/schedule/A1/paragraph/4/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   e9ffe9b3653a9aef38b5b64846d186a336fa9314a35fb044ea98e0599157555a
+  - revision: Mon, 17 Aug 2026 16:40:13 GMT
+
 ## 2026-08-24
 - **corpus/statute/uk/dpa-2018/section-119a.md** new file
   - source: https://www.legislation.gov.uk/ukpga/2018/12/section/119A/data.xht
