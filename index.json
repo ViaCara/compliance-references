@@ -1237,7 +1237,10 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "authentication",
+      "browser-storage"
+    ],
     "enforcement_status": "in_force",
     "id": "pecr-sch-a1-p-004",
     "jurisdiction": "uk",
@@ -1245,7 +1248,7 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "e9ffe9b3653a9aef38b5b64846d186a336fa9314a35fb044ea98e0599157555a",
     "source_uri": "https://www.legislation.gov.uk/uksi/2003/2426/schedule/A1/paragraph/4/data.xht",
-    "summary": "",
+    "summary": "The strict-necessity exception for cookies and other browser storage used for a requested online service, including automatic authentication and saved website choices.",
     "title": "PECR Schedule A1 paragraph 4 - Storage or access strictly necessary to provide an information society service"
   },
   {
