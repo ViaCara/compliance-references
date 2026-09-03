@@ -1,0 +1,47 @@
+---
+id: dpa-2018-s-042
+title: "DPA 2018 section 42 - Safeguards: sensitive processing (law enforcement purposes)"
+instrument: dpa-2018
+kind: legislation_section
+citation: DPA 2018 s. 42
+source_uri: "https://www.legislation.gov.uk/ukpga/2018/12/section/42/data.xht"
+source_format: xhtml
+revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
+content_sha256: c32acc5c951afde835a587022467f391c39c54ed1cca1176bc7ed083ba38ce0f
+last_fetched: 2026-09-03
+language: en-GB
+enforcement_status: in_force
+---
+# DPA 2018 s. 42
+
+_Safeguards: sensitive processing_
+
+(1) This section applies for the purposes of section 35(4) and (5) (which require a controller to have an appropriate policy document in place when carrying out sensitive processing in reliance on the consent of the data subject or, as the case may be, in reliance on a condition specified in Schedule 8).
+
+(2) The controller has an appropriate policy document in place in relation to the sensitive processing if the controller has produced a document which—
+
+(a) explains the controller's procedures for securing compliance with the data protection principles (see section 34(1)) in connection with sensitive processing in reliance on the consent of the data subject or (as the case may be) in reliance on the condition in question, and
+
+(b) explains the controller's policies as regards the retention and erasure of personal data processed in reliance on the consent of the data subject or (as the case may be) in reliance on the condition in question, giving an indication of how long such personal data is likely to be retained.
+
+(3) Where personal data is processed on the basis that an appropriate policy document is in place, the controller must during the relevant period—
+
+(a) retain the appropriate policy document,
+
+(b) review and (if appropriate) update it from time to time, and
+
+(c) make it available to the Commissioner, on request, without charge.
+
+(4) The record maintained by the controller under section 61(1) and, where the sensitive processing is carried out by a processor on behalf of the controller, the record maintained by the processor under section 61(3) must include the following information—
+
+(a) whether the sensitive processing is carried out in reliance on the consent of the data subject or, if not, which condition in Schedule 8 is relied on,
+
+(b) how the processing satisfies section 35 (lawfulness of processing), and
+
+(c) whether the personal data is retained and erased in accordance with the policies described in subsection (2)(b) and, if it is not, the reasons for not following those policies.
+
+(5) In this section, “relevant period”, in relation to sensitive processing in reliance on the consent of the data subject or in reliance on a condition specified in Schedule 8, means a period which—
+
+(a) begins when the controller starts to carry out the sensitive processing in reliance on the data subject's consent or (as the case may be) in reliance on that condition, and
+
+(b) ends at the end of the period of 6 months beginning when the controller ceases to carry out the processing.

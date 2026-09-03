@@ -1,0 +1,57 @@
+---
+id: dpa-2018-s-123
+title: DPA 2018 section 123 - Age-appropriate design code
+instrument: dpa-2018
+kind: legislation_section
+citation: DPA 2018 s. 123
+source_uri: "https://www.legislation.gov.uk/ukpga/2018/12/section/123/data.xht"
+source_format: xhtml
+revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
+content_sha256: 515ee37c2eb1ef1944b7175ada58ded560f66ccf60d8fe8ddb4419afe6be292c
+last_fetched: 2026-09-03
+language: en-GB
+enforcement_status: in_force
+---
+# DPA 2018 s. 123
+
+_Age-appropriate design code_
+
+(1) The Commissioner must prepare a code of practice which contains such guidance as the Commissioner considers appropriate on standards of age-appropriate design of relevant information society services which are likely to be accessed by children.
+
+(2) Where a code under this section is in force, the Commissioner may prepare amendments of the code or a replacement code.
+
+(3) Before preparing a code or amendments under this section, the Commissioner must consult the Secretary of State and such other persons as the Commissioner considers appropriate, including—
+
+(a) children,
+
+(b) parents,
+
+(c) persons who appear to the Commissioner to represent the interests of children,
+
+(d) child development experts, and
+
+(e) trade associations.
+
+(4) In preparing a code or amendments under this section, the Commissioner must have regard—
+
+(a) to the fact that children have different needs at different ages, and
+
+(b) to the United Kingdom's obligations under the United Nations Convention on the Rights of the Child.
+
+(5) A code under this section may include transitional provision or savings.
+
+(6) Any transitional provision included in the first code under this section must cease to have effect before the end of the period of 12 months beginning when the code comes into force.
+
+(7) In this section—
+
+“age-appropriate design” means the design of services so that they are appropriate for use by, and meet the development needs of, children;
+
+“information society services” has the same meaning as in the UK GDPR, but does not include preventive or counselling services;
+
+“relevant information society services” means information society services which involve the processing of personal data to which the UK GDPR applies;
+
+“standards of age-appropriate design of relevant information society services” means such standards of age-appropriate design of such services as appear to the Commissioner to be desirable having regard to the best interests of children;
+
+“trade association” includes a body representing controllers or processors;
+
+“the United Nations Convention on the Rights of the Child” means the Convention on the Rights of the Child adopted by the General Assembly of the United Nations on 20 November 1989 (including any Protocols to that Convention which are in force in relation to the United Kingdom), subject to any reservations, objections or interpretative declarations by the United Kingdom for the time being in force.
