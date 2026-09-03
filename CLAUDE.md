@@ -19,3 +19,19 @@ The gate works like this:
   reviews the new commit.
 
 Keep this note in sync with branch protection. Update both together.
+
+## Known gap: the PR that changes the gate itself
+
+GitHub only runs an `issue_comment`-triggered workflow from the copy on the
+default branch. It ignores the copy on the PR branch. This is a GitHub
+platform rule, not a bug here.
+
+`mira-confidence` reacts to Mira's comment through `issue_comment`. A PR that
+adds or edits `mira-gate.yml` cannot trigger that reaction for itself. Its own
+check stays on neutral, "Waiting for Mira review", no matter what Mira posts.
+The `pull_request` half still runs. It resets the check to neutral on every
+push.
+
+To merge such a PR, check Mira's comment by eye. Do not wait for
+`mira-confidence` to turn green on it. Every other PR is not affected. Once
+the workflow file is on `main`, `issue_comment` runs for them as normal.
