@@ -1,0 +1,51 @@
+---
+id: svga-2006-sch-003-p-008
+title: "Safeguarding Vulnerable Groups Act 2006 Schedule 3 paragraph 8 - Inclusion in the adults' barred list subject to representations"
+instrument: svga-2006
+kind: legislation_schedule
+citation: SVGA 2006, Sch. 3 para. 8
+source_uri: "https://www.legislation.gov.uk/ukpga/2006/47/schedule/3/paragraph/8/data.xht"
+source_format: xhtml
+revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
+content_sha256: 6cdfe5fa8b82485cb60d50cd12d8bf85a6a9a810389d6aac0d7eb305058ec254
+last_fetched: 2026-09-03
+language: en-GB
+enforcement_status: in_force
+---
+# SVGA 2006, Sch. 3 para. 8
+
+8(1) This paragraph applies to a person if any of the criteria prescribed for the purposes of this paragraph is satisfied in relation to the person.
+
+(2) Sub-paragraph (4) applies if it appears to DBS that—
+
+(a) this paragraph applies to a person, and
+
+(b) the person is or has been, or might in future be, engaged in regulated activity relating to vulnerable adults.
+
+(4) DBS must give the person the opportunity to make representations as to why the person should not be included in the adults' barred list.
+
+(5) Sub-paragraph (6) applies if—
+
+(a) the person does not make representations before the end of any time prescribed for the purpose, or
+
+(b) the duty in sub-paragraph (4) does not apply by virtue of paragraph 16(2).
+
+(6) If DBS —
+
+(a) is satisfied that this paragraph applies to the person, and
+
+(b) has reason to believe that the person is or has been, or might in future be, engaged in regulated activity relating to vulnerable adults,
+
+it must include the person in the list.
+
+(7) Sub-paragraph (8) applies if the person makes representations before the end of any time prescribed for the purpose.
+
+(8) If DBS —
+
+(a) is satisfied that this paragraph applies to the person,
+
+(b) has reason to believe that the person is or has been, or might in future be, engaged in regulated activity relating to vulnerable adults, and
+
+(c) is satisfied that it is appropriate to include the person in the adults' barred list,
+
+it must include the person in the list.

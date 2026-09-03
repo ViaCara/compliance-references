@@ -1,0 +1,51 @@
+---
+id: svga-2006-sch-003-p-002
+title: "Safeguarding Vulnerable Groups Act 2006 Schedule 3 paragraph 2 - Inclusion in the children's barred list subject to representations"
+instrument: svga-2006
+kind: legislation_schedule
+citation: SVGA 2006, Sch. 3 para. 2
+source_uri: "https://www.legislation.gov.uk/ukpga/2006/47/schedule/3/paragraph/2/data.xht"
+source_format: xhtml
+revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
+content_sha256: 65c01fd9b6ddfa3ba03da8683b1e56af0deb4abbad3968ef135752f682154b5d
+last_fetched: 2026-09-03
+language: en-GB
+enforcement_status: in_force
+---
+# SVGA 2006, Sch. 3 para. 2
+
+2(1) This paragraph applies to a person if any of the criteria prescribed for the purposes of this paragraph is satisfied in relation to the person.
+
+(2) Sub-paragraph (4) applies if it appears to DBS that—
+
+(a) this paragraph applies to a person, and
+
+(b) the person is or has been, or might in future be, engaged in regulated activity relating to children.
+
+(4) DBS must give the person the opportunity to make representations as to why the person should not be included in the children's barred list.
+
+(5) Sub-paragraph (6) applies if—
+
+(a) the person does not make representations before the end of any time prescribed for the purpose, or
+
+(b) the duty in sub-paragraph (4) does not apply by virtue of paragraph 16(2).
+
+(6) If DBS —
+
+(a) is satisfied that this paragraph applies to the person, and
+
+(b) has reason to believe that the person is or has been, or might in future be, engaged in regulated activity relating to children,
+
+it must include the person in the list.
+
+(7) Sub-paragraph (8) applies if the person makes representations before the end of any time prescribed for the purpose.
+
+(8) If DBS —
+
+(a) is satisfied that this paragraph applies to the person,
+
+(b) has reason to believe that the person is or has been, or might in future be, engaged in regulated activity relating to children, and
+
+(c) is satisfied that it is appropriate to include the person in the children's barred list,
+
+it must include the person in the list.
