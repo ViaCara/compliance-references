@@ -1,5 +1,87 @@
 [
   {
+    "authority": "statute",
+    "domain_tags": [
+      "children",
+      "parental-responsibility"
+    ],
+    "enforcement_status": "in_force",
+    "id": "children-act-1989-s-002",
+    "jurisdiction": "uk",
+    "path": "statute/uk/children-act-1989/section-002.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "152636123d8afdea581024f8d87fc3efa1afb5296af3987667e77ea03e590281",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1989/41/section/2/data.xht",
+    "summary": "Who automatically holds parental responsibility: married/civil-partnered parents jointly, or the mother alone (father/second parent can acquire it later). More than one person can hold it at once; it cannot be surrendered, only delegated in its exercise.",
+    "title": "Children Act 1989 section 2 - Parental responsibility for children"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "children",
+      "parental-responsibility"
+    ],
+    "enforcement_status": "in_force",
+    "id": "children-act-1989-s-003",
+    "jurisdiction": "uk",
+    "path": "statute/uk/children-act-1989/section-003.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "feb697c2beee99b60381f9891bf0550f5f713c2ea894f4967e5bb87e4d377cf9",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1989/41/section/3/data.xht",
+    "summary": "Defines parental responsibility as all rights, duties, powers, responsibilities and authority a parent has towards a child and their property. Subsection (5): someone without parental responsibility but with care of the child may do what is reasonable to safeguard/promote welfare.",
+    "title": "Children Act 1989 section 3 - Meaning of \"parental responsibility\""
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "children",
+      "safeguarding"
+    ],
+    "enforcement_status": "in_force",
+    "id": "children-act-2004-s-011",
+    "jurisdiction": "uk",
+    "path": "statute/uk/children-act-2004/section-011.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "5d052fcbc36ecdbb5435dc0120f73b14c2c3017cd05e00dce544111e29144551",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2004/31/section/11/data.xht",
+    "summary": "Requires NAMED PUBLIC BODIES (local authorities, NHS England, ICBs, NHS trusts, police, NCA, youth offending teams, prison/secure-centre governors etc) to have arrangements ensuring their functions have regard to safeguarding children's welfare. A private company like ViaCara is not on the named-bodies list.",
+    "title": "Children Act 2004 section 11 - Arrangements to safeguard and promote welfare"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "online-safety",
+      "children",
+      "age-verification"
+    ],
+    "enforcement_status": "in_force",
+    "id": "childrens-wellbeing-and-schools-act-2026-s-070",
+    "jurisdiction": "uk",
+    "path": "statute/uk/childrens-wellbeing-and-schools-act-2026/section-070.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "71f97f0d621eee087b6cc739a10b6f0acfa1d3b79e1cbace87c041b3cf94c745",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2026/21/section/70/data.xht",
+    "summary": "The amending provision (2026 c.21, Royal Assent 29 April 2026) that inserts OSA 2023 s.214A. See osa-2023-s-214a for the current live text of what it inserts.",
+    "title": "Children's Wellbeing and Schools Act 2026 section 70 - Power to require providers of internet services to prevent or restrict access by children to internet services"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "children",
+      "consent",
+      "age-verification"
+    ],
+    "enforcement_status": "in_force",
+    "id": "childrens-wellbeing-and-schools-act-2026-s-072",
+    "jurisdiction": "uk",
+    "path": "statute/uk/childrens-wellbeing-and-schools-act-2026/section-072.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "c633c52b492186374af9f110b0b96e24eb9348a11611710f2cc58d585b4f2e57",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2026/21/section/72/data.xht",
+    "summary": "The amending provision (2026 c.21, Royal Assent 29 April 2026) that inserts UK GDPR Articles 8(2A)-(2B) and 8ZA. See uk-gdpr-art-008 and uk-gdpr-art-008za for the current live text of what it inserts.",
+    "title": "Children's Wellbeing and Schools Act 2026 section 72 - Age of consent in relation to processing of a child's personal data: information society services"
+  },
+  {
     "authority": "guidance",
     "domain_tags": [],
     "enforcement_status": "in_force",
@@ -177,6 +259,38 @@
   },
   {
     "authority": "statute",
+    "domain_tags": [
+      "children",
+      "safeguarding"
+    ],
+    "enforcement_status": "prospective",
+    "id": "crime-and-policing-act-2026-s-085",
+    "jurisdiction": "uk",
+    "path": "statute/uk/crime-and-policing-act-2026/section-085.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "1b3a67bc05d53381be6b9e09fa93603076f128bdfe1b114529f007af8696c5bc",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2026/20/section/85/data.xht",
+    "summary": "Duty on adults (18+) carrying out a \"relevant activity\" involving children in England to notify police/local authority \"as soon as practicable\" on becoming aware of a suspected child sex offence. Implements an IICSA recommendation. Not yet commenced (s.255(1) default; not in either commencement SI made so far).",
+    "title": "Crime and Policing Act 2026 section 85 - Duty to report suspected child sex offences"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "children",
+      "safeguarding"
+    ],
+    "enforcement_status": "prospective",
+    "id": "crime-and-policing-act-2026-s-092",
+    "jurisdiction": "uk",
+    "path": "statute/uk/crime-and-policing-act-2026/section-092.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "300b5453a540e16d8680375dcc8912747af0e9088bdc17a5a4ce524af853ebf0",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2026/20/section/92/data.xht",
+    "summary": "Obstruction offence: intentionally preventing/deterring a person from complying with the s.85 duty. Triable either way, up to 7 years on indictment. Failure to report itself is deliberately not criminalised. Not yet commenced, same basis as s.85.",
+    "title": "Crime and Policing Act 2026 section 92 - Preventing or deterring a person from complying with duty to report suspected child sex offence"
+  },
+  {
+    "authority": "statute",
     "domain_tags": [],
     "enforcement_status": "in_force",
     "id": "dmcc-2024-s-225",
@@ -336,6 +450,21 @@
   },
   {
     "authority": "statute",
+    "domain_tags": [
+      "special-category"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-s-011",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/section-011.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "3de65b5f1014bf0f9a16da9cbac7985bb0f99d371d405fc1982b51bf07881a12",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/section/11/data.xht",
+    "summary": "Not children-specific. s.11(1): circumstances satisfying the Art.9(3) safeguard for Art.9(2)(h) health/social-care processing (by/under responsibility of a health professional, or another person under an equivalent confidentiality duty). s.11(2): defines personal data relating to criminal convictions/offences for DPA s.10/Art.10 purposes.",
+    "title": "DPA 2018 section 11 - Special categories of personal data etc: supplementary"
+  },
+  {
+    "authority": "statute",
     "domain_tags": [],
     "enforcement_status": "repealed",
     "id": "dpa-2018-s-014",
@@ -363,6 +492,21 @@
   {
     "authority": "statute",
     "domain_tags": [
+      "special-category"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-s-042",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/section-042.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "c32acc5c951afde835a587022467f391c39c54ed1cca1176bc7ed083ba38ce0f",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/section/42/data.xht",
+    "summary": "Part 3 (law-enforcement processing) safeguard for competent authorities only: requires an appropriate policy document (retained 6 months post-cessation, producible to the ICO) plus s.61 logging. ViaCara is not a competent authority, so this is not currently applicable - mirrored because the ticket named it explicitly.",
+    "title": "DPA 2018 section 42 - Safeguards: sensitive processing (law enforcement purposes)"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
       "cross-border-transfer"
     ],
     "enforcement_status": "in_force",
@@ -377,6 +521,53 @@
   },
   {
     "authority": "statute",
+    "domain_tags": [
+      "children",
+      "accountability"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-s-123",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/section-123.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "515ee37c2eb1ef1944b7175ada58ded560f66ccf60d8fe8ddb4419afe6be292c",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/section/123/data.xht",
+    "summary": "Statutory basis for the ICO Children's Code: requires the ICO to prepare an age-appropriate-design code of practice, with mandatory consultation and a duty to reflect children's differing needs by age, having regard to UNCRC obligations. Subsection (7) confirms 'information society services' excludes preventive/counselling services, cross-referencing the same carve-out as Art.8(4)/8ZA(5).",
+    "title": "DPA 2018 section 123 - Age-appropriate design code"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "children",
+      "accountability"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-s-127",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/section-127.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "a2aec17829cf26dad11652f5961a6d898498616b79a951dd361dfb221975c3e4",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/section/127/data.xht",
+    "summary": "Sets the legal effect of ICO codes made under ss.121-124 (including the s.123 Children's Code): breach is not directly actionable, but a code is admissible in evidence and a court/tribunal/the ICO must take a relevant in-force provision into account. The enforcement teeth behind the Children's Code.",
+    "title": "DPA 2018 section 127 - Effect of codes issued under section 125(4)"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "special-category"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-sch-001-p-002",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/schedule-001-paragraph-002.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "48a8cf30919fb0f9742a716af2b42ae3ce325aa60237c8518a08cc0576b25f53",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/2/data.xht",
+    "summary": "Schedule 1 Part 1 condition: processing necessary for health or social care purposes (preventive/occupational medicine, working-capacity assessment, medical diagnosis, health/social care provision or treatment, management of health/social care systems). Applies whenever ViaCara processes any client's, including a child client's, health/therapy-need data as special-category data.",
+    "title": "DPA 2018 Schedule 1 paragraph 2 - Health or social care purposes"
+  },
+  {
+    "authority": "statute",
     "domain_tags": [],
     "enforcement_status": "in_force",
     "id": "dpa-2018-sch-001-p-018",
@@ -387,6 +578,40 @@
     "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/18/data.xht",
     "summary": "",
     "title": "DPA 2018 Schedule 1 paragraph 18 - Safeguarding of children and of individuals at risk"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "children",
+      "safeguarding",
+      "accountability"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-sch-001-pt-002-p-005",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/schedule-001-part-002-paragraph-005.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "ca448071befc1028736a5702524c77b2e026f48475023bd93c2e3497e1a54e03",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/5/data.xht",
+    "summary": "Gateway provision for every Part 2 substantial-public-interest condition (paragraphs 6-28, including paragraph 18's children/vulnerable-individuals safeguarding condition, already mirrored): a Part 2 condition is only met if an appropriate policy document is in place when the processing happens. Points to Part 4 for detailed content requirements.",
+    "title": "DPA 2018 Schedule 1 Part 2 paragraph 5 - Requirement for an appropriate policy document (substantial public interest conditions)"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "children",
+      "safeguarding",
+      "accountability"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-sch-001-pt-004-p-039",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/schedule-001-part-004-paragraph-039.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "d5243347df4e5aa297cd8d3f9f1f9de0817c93baaaef9d081078118f2172f5ff",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/39/data.xht",
+    "summary": "The content requirement paragraph 5 points to: for any Part 2 condition (including paragraph 18's safeguarding condition), the policy document must describe Article 5 compliance procedures for that processing and set out retention/erasure policy including expected retention period.",
+    "title": "DPA 2018 Schedule 1 Part 4 paragraph 39 - Requirement to have an appropriate policy document in place"
   },
   {
     "authority": "statute",
@@ -662,6 +887,22 @@
   },
   {
     "authority": "statute",
+    "domain_tags": [
+      "children",
+      "consent"
+    ],
+    "enforcement_status": "in_force",
+    "id": "family-law-reform-act-1969-s-008",
+    "jurisdiction": "uk",
+    "path": "statute/uk/family-law-reform-act-1969/section-008.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "caf367d58693df91bf6ff7f3b055600740806361c2968c704748bc932d377610",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1969/46/section/8/data.xht",
+    "summary": "A 16/17 year old can give valid consent to their own surgical, medical or dental treatment as if an adult; a parent's consent is not additionally required. Sits alongside, not instead of, the separate Gillick-competence route for under-16s. Binds the treating clinician, not an introducer platform.",
+    "title": "Family Law Reform Act 1969 section 8 - Consent by persons over 16 to surgical, medical and dental treatment"
+  },
+  {
+    "authority": "statute",
     "domain_tags": [],
     "enforcement_status": "in_force",
     "id": "fpo-2005-art-012",
@@ -815,6 +1056,55 @@
     "source_uri": "https://www.legislation.gov.uk/ukpga/2000/8/section/25/data.xht",
     "summary": "",
     "title": "Financial Services and Markets Act 2000 section 25 - Contravention of section 21"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "children",
+      "age-verification",
+      "accountability"
+    ],
+    "enforcement_status": "in_force",
+    "id": "ico-age-appropriate-design-code",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/ico/age-appropriate-design-code.md",
+    "revision_id": "12 August 2020",
+    "sha": "bd17eb6e05a32775f5f968f049f230768f8e17c990154456a5b9e5f955b20f1e",
+    "source_uri": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/age-appropriate-design-a-code-of-practice-for-online-services/",
+    "summary": "The statutory Children's code (DPA 2018 s.123) and its 15 standards for online services likely to be accessed by children: best interests, DPIA, age-appropriate application, transparency, no detrimental use, policy adherence, high-privacy defaults, data minimisation, no unwarranted sharing, geolocation off by default, parental controls transparency, profiling off by default, no nudge techniques, connected-toy conformance, and accessible rights tools.",
+    "title": "Age appropriate design: a code of practice for online services (ICO Children's code)"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "children",
+      "age-verification"
+    ],
+    "enforcement_status": "in_force",
+    "id": "ico-age-assurance-childrens-code",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/ico/age-assurance-childrens-code.md",
+    "revision_id": "18 January 2024",
+    "sha": "93f9f367a683a5d4c5d432a977cd5d057dc7198ca74350e40cb30d81eef19f17",
+    "source_uri": "https://ico.org.uk/about-the-ico/what-we-do/information-commissioners-opinions/age-assurance-for-the-children-s-code/",
+    "summary": "Commissioner's Opinion (18 January 2024, replacing the October 2021 version) on acceptable age assurance methods: self-declaration is inadequate for high-risk processing but may suit low-risk or combined use; proportionality guidance against infeasible or disproportionate methods; and how the Children's code runs in parallel with, not as a substitute for, Online Safety Act age-assurance duties. ICO flags this opinion itself as under DUAA-driven review with no replacement text published yet.",
+    "title": "Age assurance for the Children's code"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "children",
+      "consent"
+    ],
+    "enforcement_status": "in_force",
+    "id": "ico-children-and-uk-gdpr",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/ico/children-and-uk-gdpr.md",
+    "revision_id": "15 May 2026",
+    "sha": "33a56983763af2e6d2aa2a84adfebbe6b5d2e49acb98d8ede1f98940a3a35215",
+    "source_uri": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/children-and-the-uk-gdpr/",
+    "summary": "ICO's operative guidance on Article 8 age-of-consent mechanics, the preventive/counselling exception, the 4-part 'offering an ISS directly to a child' test, Gillick competence for services not offered directly to children, a child's own capacity to exercise data protection rights, and the 'likely to be accessed by children' test. Last updated 15 May 2026 to reflect the Data (Use and Access) Act 2025.",
+    "title": "Children and the UK GDPR"
   },
   {
     "authority": "guidance",
@@ -1198,6 +1488,214 @@
   },
   {
     "authority": "statute",
+    "domain_tags": [
+      "online-safety"
+    ],
+    "enforcement_status": "in_force",
+    "id": "osa-2023-s-003",
+    "jurisdiction": "uk",
+    "path": "statute/uk/osa-2023/section-003.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "1dfec876f8651762cf279f261ac609c9d0294e4eff5359266d36bb4f7c97cefc",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/section/3/data.xht",
+    "summary": "Defines \"user-to-user service\" and \"search service\", the two categories Part 3 regulates, and the rule for classifying a combined service.",
+    "title": "Online Safety Act 2023 section 3 - Meaning of \"user-to-user service\" and \"search service\""
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "online-safety",
+      "children"
+    ],
+    "enforcement_status": "in_force",
+    "id": "osa-2023-s-011",
+    "jurisdiction": "uk",
+    "path": "statute/uk/osa-2023/section-011.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "faa0c4ad6103c3e47ca07f9b0f11aec6f400fd16c360503a402c4e82af8d949e",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/section/11/data.xht",
+    "summary": "Requires providers of user-to-user services likely to be accessed by children to keep a current children's risk assessment covering primary priority, priority and non-designated content harmful to children.",
+    "title": "Online Safety Act 2023 section 11 - Children's risk assessment duties"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "online-safety",
+      "children",
+      "age-verification"
+    ],
+    "enforcement_status": "in_force",
+    "id": "osa-2023-s-012",
+    "jurisdiction": "uk",
+    "path": "statute/uk/osa-2023/section-012.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "a04340c948cebfd971476a4b5c05027867ebe1b47cc0ca1d59a179c3dd3f988d",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/section/12/data.xht",
+    "summary": "Requires proportionate systems, including age verification or estimation, to keep all children away from primary priority content and protect at-risk age groups from priority and non-designated harmful content.",
+    "title": "Online Safety Act 2023 section 12 - Safety duties protecting children"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "online-safety",
+      "children"
+    ],
+    "enforcement_status": "in_force",
+    "id": "osa-2023-s-020",
+    "jurisdiction": "uk",
+    "path": "statute/uk/osa-2023/section-020.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "776f6c903884e581e96e0532817b0645541ddf245f7979e1eb61ea7761bb4e2d",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/section/20/data.xht",
+    "summary": "Requires accessible reporting systems for illegal content and, for services likely accessed by children, content harmful to children. \"Affected persons\" includes a parent or guardian of a child user. Subsections (1)-(6),(7)(a) in force; (7)(b) unconfirmed.",
+    "title": "Online Safety Act 2023 section 20 - Duty about content reporting"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "online-safety",
+      "children"
+    ],
+    "enforcement_status": "in_force",
+    "id": "osa-2023-s-021",
+    "jurisdiction": "uk",
+    "path": "statute/uk/osa-2023/section-021.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "d6bc20f2a7f05577aa1678c4434e61a3996200860d3953c93344dc23fde65d30",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/section/21/data.xht",
+    "summary": "Requires transparent complaints procedures covering illegal content and content harmful to children. Subsections (1)-(5),(6)(a)(b)(d)(e),(7),(8),(9)(a) in force; remainder unconfirmed.",
+    "title": "Online Safety Act 2023 section 21 - Duties about complaints procedures"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "online-safety",
+      "children",
+      "age-verification"
+    ],
+    "enforcement_status": "in_force",
+    "id": "osa-2023-s-035",
+    "jurisdiction": "uk",
+    "path": "statute/uk/osa-2023/section-035.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "2de928f4f50c38b9b150ed8862b962baab652e03b7cb06f03dd192c008ddf312",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/section/35/data.xht",
+    "summary": "Requires an evidence-based assessment of whether children access the service. Subsection (2): a provider may only conclude children cannot access a service if age verification or estimation is used to that effect - self-declaration does not qualify.",
+    "title": "Online Safety Act 2023 section 35 - Children's access assessments"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "online-safety",
+      "children"
+    ],
+    "enforcement_status": "in_force",
+    "id": "osa-2023-s-036",
+    "jurisdiction": "uk",
+    "path": "statute/uk/osa-2023/section-036.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "d00b939c2f3d54e3f188a976438f7f726ade034b8ef1e763db9359a541292151",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/section/36/data.xht",
+    "summary": "Requires an initial children's access assessment within the Schedule 3 timeframe, repeated at least yearly and after significant change.",
+    "title": "Online Safety Act 2023 section 36 - Duties about children's access assessments"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "online-safety",
+      "children"
+    ],
+    "enforcement_status": "in_force",
+    "id": "osa-2023-s-037",
+    "jurisdiction": "uk",
+    "path": "statute/uk/osa-2023/section-037.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "8e353ea77f3797c7982c2c4e534d1831294b7d6a75b97f559885f69932cb2a1e",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/section/37/data.xht",
+    "summary": "Defines the trigger for Part 3's children's duties: the provider's own s.35 assessment, a failed mandatory assessment, or an OFCOM determination.",
+    "title": "Online Safety Act 2023 section 37 - Meaning of \"likely to be accessed by children\""
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "online-safety"
+    ],
+    "enforcement_status": "in_force",
+    "id": "osa-2023-s-055",
+    "jurisdiction": "uk",
+    "path": "statute/uk/osa-2023/section-055.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "3e1826b7d9e10f73030ebc66664c4b84dc90488b704af38d1d311e568336f1de",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/section/55/data.xht",
+    "summary": "Core Part 3 interpretation section defining user-generated content (with email/SMS/one-to-one carve-outs) and news publisher content.",
+    "title": "Online Safety Act 2023 section 55 - Meaning of \"regulated user-generated content\", \"user-generated content\", \"news publisher content\""
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "online-safety",
+      "children"
+    ],
+    "enforcement_status": "in_force",
+    "id": "osa-2023-s-061",
+    "jurisdiction": "uk",
+    "path": "statute/uk/osa-2023/section-061.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "68f8eb981c82944a0a3e619e72525249d67b7017ddb464e21229682a8063e47b",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/section/61/data.xht",
+    "summary": "Sets the statutory primary-priority-content categories directly in the Act: pornographic content (text-only carve-out) and content promoting suicide, self-harm or eating disorders. This is what s.12 requires keeping all children away from.",
+    "title": "Online Safety Act 2023 section 61 - Primary priority content that is harmful to children"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "online-safety",
+      "safeguarding"
+    ],
+    "enforcement_status": "in_force",
+    "id": "osa-2023-s-066",
+    "jurisdiction": "uk",
+    "path": "statute/uk/osa-2023/section-066.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "0c100af773292083b53f589688a1135fb32395d656a20fa323984f3d6bca6d8e",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/section/66/data.xht",
+    "summary": "Requires providers to detect and report child sexual exploitation and abuse content to the National Crime Agency. User-to-user duty (1)-(2) and (7)-(10) in force since 7 April 2026; search-service duty (3)-(6) not yet in force.",
+    "title": "Online Safety Act 2023 section 66 - Requirement to report CSEA content to the NCA"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "online-safety",
+      "children",
+      "age-verification"
+    ],
+    "enforcement_status": "in_force",
+    "id": "osa-2023-s-214a",
+    "jurisdiction": "uk",
+    "path": "statute/uk/osa-2023/section-214a.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "224c09b4a387d843ab6164fc55df0665328473da05673e216eed524bb57c89e7",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/section/214A/data.xht",
+    "summary": "Delegated power (inserted 29 April 2026 by Children's Wellbeing and Schools Act 2026 ss.70(2)/78(1)(b)) letting the Secretary of State make future regulations restricting children's access (time limits, curfews, stranger-contact restrictions). The power itself is in force; no regulations have been made under it yet (expected ~Spring 2027), so it currently creates no operative provider duty.",
+    "title": "Online Safety Act 2023 section 214A - Power to require providers of internet services to prevent or restrict access by children to internet services"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "online-safety"
+    ],
+    "enforcement_status": "in_force",
+    "id": "osa-2023-sch-001",
+    "jurisdiction": "uk",
+    "path": "statute/uk/osa-2023/schedule-001.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "9b32ab88ecd8dfc19a64d058c2e76ca77938faa15454e4a6d5d0dca3a6252496",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/schedule/1/data.xht",
+    "summary": "Exemptions list (not a category list): email, SMS/MMS, one-to-one live communications, limited-functionality and internal business services, public bodies, and eligible education/childcare providers.",
+    "title": "Online Safety Act 2023 Schedule 1 - Exempt user-to-user and search services"
+  },
+  {
+    "authority": "statute",
     "domain_tags": [],
     "enforcement_status": "in_force",
     "id": "pecr-reg-006",
@@ -1305,6 +1803,23 @@
   },
   {
     "authority": "statute",
+    "domain_tags": [
+      "children",
+      "safeguarding",
+      "special-category"
+    ],
+    "enforcement_status": "in_force",
+    "id": "uk-gdpr-annex-001",
+    "jurisdiction": "uk",
+    "path": "statute/uk/gdpr/annex-001.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "39b4f908aa8f23ac95b7d9a60f5ac91feff0763072a2e080b7298defad32a581",
+    "source_uri": "https://www.legislation.gov.uk/eur/2016/679/annex/1/data.xht",
+    "summary": "New Annex in force since 5.2.2026 (Data (Use and Access) Act 2025 c.18 s.142(1) Sch.4; S.I. 2026/82 reg.2(z6) - NOT the Children's Wellbeing and Schools Act 2026). Recognised-legitimate-interest conditions for Art.6(1)(e). Paragraphs 6-8 cover safeguarding a vulnerable individual: para 6 the condition itself, para 7 defines 'safeguarding' (protecting from neglect/harm, or protecting wellbeing) and 'vulnerable individual' (under 18, OR at risk of harm and unable to self-protect because of it), para 8 individual-vs-categorical clarification.",
+    "title": "UK GDPR Annex 1 - Lawfulness of processing: recognised legitimate interests"
+  },
+  {
+    "authority": "statute",
     "domain_tags": [],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-004",
@@ -1354,6 +1869,39 @@
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/7/data.xht",
     "summary": "",
     "title": "UK GDPR Article 7 - Conditions for consent"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "children",
+      "consent"
+    ],
+    "enforcement_status": "in_force",
+    "id": "uk-gdpr-art-008",
+    "jurisdiction": "uk",
+    "path": "statute/uk/gdpr/article-008.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "effbe8d5c53254cdb6846e7fe3fde18c2510ed7cedf14b8b38824658043c6a19",
+    "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/8/data.xht",
+    "summary": "Paras 1-4 in force since 31.12.2020: child's own consent valid from age 13 (below 13 needs parental responsibility holder), controller verification duty, no disturbance to general contract law, preventive/counselling services excluded from scope. Paras 2A/2B (NEW, in force 29.4.2026): Secretary of State may move the age 13-16 by affirmative-procedure regulations.",
+    "title": "UK GDPR Article 8 - Conditions applicable to a child's consent in relation to information society services"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "children",
+      "consent",
+      "age-verification"
+    ],
+    "enforcement_status": "in_force",
+    "id": "uk-gdpr-art-008za",
+    "jurisdiction": "uk",
+    "path": "statute/uk/gdpr/article-008za.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "976867a50143c6f56a323602b453e43f6f947000fe4ff38fd6c7c7d3114973c2",
+    "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/8ZA/data.xht",
+    "summary": "New article in force since 29.4.2026 (inserted by Children's Wellbeing and Schools Act 2026 s.72). Empowers age-verification regulations for Article 8 consent; may amend data protection legislation, set exceptions/time limits, confer discretionary functions. Affirmative procedure required. Excludes preventive/counselling services (mirrors Art.8(4)). No regulations made under it yet.",
+    "title": "UK GDPR Article 8ZA - Child's consent in relation to information society services: age verification"
   },
   {
     "authority": "statute",

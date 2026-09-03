@@ -1,0 +1,39 @@
+---
+id: dpa-2018-s-127
+title: DPA 2018 section 127 - Effect of codes issued under section 125(4)
+instrument: dpa-2018
+kind: legislation_section
+citation: DPA 2018 s. 127
+source_uri: "https://www.legislation.gov.uk/ukpga/2018/12/section/127/data.xht"
+source_format: xhtml
+revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
+content_sha256: a2aec17829cf26dad11652f5961a6d898498616b79a951dd361dfb221975c3e4
+last_fetched: 2026-09-03
+language: en-GB
+enforcement_status: in_force
+---
+# DPA 2018 s. 127
+
+_Effect of codes issued under section 125(4)_
+
+(1) A failure by a person to act in accordance with a provision of a code issued under section 125(4) does not of itself make that person liable to legal proceedings in a court or tribunal.
+
+(2) A code issued under section 125(4), including an amendment or replacement code, is admissible in evidence in legal proceedings.
+
+(3) In any proceedings before a court or tribunal, the court or tribunal must take into account a provision of a code issued under section 125(4) in determining a question arising in the proceedings if—
+
+(a) the question relates to a time when the provision was in force, and
+
+(b) the provision appears to the court or tribunal to be relevant to the question.
+
+(4) Where the Commissioner is carrying out a function described in subsection (5), the Commissioner must take into account a provision of a code issued under section 125(4) in determining a question arising in connection with the carrying out of the function if—
+
+(a) the question relates to a time when the provision was in force, and
+
+(b) the provision appears to the Commissioner to be relevant to the question.
+
+(5) Those functions are functions under—
+
+(a) the data protection legislation, or
+
+(b) the Privacy and Electronic Communications (EC Directive) Regulations 2003 (S.I. 2003/2426).

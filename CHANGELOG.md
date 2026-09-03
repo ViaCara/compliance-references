@@ -2,6 +2,193 @@
 
 Drift log. Newer entries first.
 
+## 2026-09-03
+- **corpus/statute/uk/crime-and-policing-act-2026/section-092.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2026/20/section/92/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   300b5453a540e16d8680375dcc8912747af0e9088bdc17a5a4ce524af853ebf0
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/crime-and-policing-act-2026/section-085.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2026/20/section/85/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   1b3a67bc05d53381be6b9e09fa93603076f128bdfe1b114529f007af8696c5bc
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/childrens-wellbeing-and-schools-act-2026/section-072.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2026/21/section/72/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   c633c52b492186374af9f110b0b96e24eb9348a11611710f2cc58d585b4f2e57
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/childrens-wellbeing-and-schools-act-2026/section-070.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2026/21/section/70/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   71f97f0d621eee087b6cc739a10b6f0acfa1d3b79e1cbace87c041b3cf94c745
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/family-law-reform-act-1969/section-008.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1969/46/section/8/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   caf367d58693df91bf6ff7f3b055600740806361c2968c704748bc932d377610
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/children-act-2004/section-011.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2004/31/section/11/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   5d052fcbc36ecdbb5435dc0120f73b14c2c3017cd05e00dce544111e29144551
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/children-act-1989/section-003.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1989/41/section/3/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   feb697c2beee99b60381f9891bf0550f5f713c2ea894f4967e5bb87e4d377cf9
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/children-act-1989/section-002.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1989/41/section/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   152636123d8afdea581024f8d87fc3efa1afb5296af3987667e77ea03e590281
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/osa-2023/section-214a.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/214A/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   224c09b4a387d843ab6164fc55df0665328473da05673e216eed524bb57c89e7
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/osa-2023/schedule-001.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/schedule/1/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   9b32ab88ecd8dfc19a64d058c2e76ca77938faa15454e4a6d5d0dca3a6252496
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/osa-2023/section-066.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/66/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   0c100af773292083b53f589688a1135fb32395d656a20fa323984f3d6bca6d8e
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/osa-2023/section-061.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/61/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   68f8eb981c82944a0a3e619e72525249d67b7017ddb464e21229682a8063e47b
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/osa-2023/section-055.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/55/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   3e1826b7d9e10f73030ebc66664c4b84dc90488b704af38d1d311e568336f1de
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/osa-2023/section-037.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/37/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   8e353ea77f3797c7982c2c4e534d1831294b7d6a75b97f559885f69932cb2a1e
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/osa-2023/section-036.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/36/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   d00b939c2f3d54e3f188a976438f7f726ade034b8ef1e763db9359a541292151
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/osa-2023/section-035.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/35/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   2de928f4f50c38b9b150ed8862b962baab652e03b7cb06f03dd192c008ddf312
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/osa-2023/section-021.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/21/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   d6bc20f2a7f05577aa1678c4434e61a3996200860d3953c93344dc23fde65d30
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/osa-2023/section-020.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/20/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   776f6c903884e581e96e0532817b0645541ddf245f7979e1eb61ea7761bb4e2d
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/osa-2023/section-012.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/12/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   a04340c948cebfd971476a4b5c05027867ebe1b47cc0ca1d59a179c3dd3f988d
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/osa-2023/section-011.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/11/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   faa0c4ad6103c3e47ca07f9b0f11aec6f400fd16c360503a402c4e82af8d949e
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/osa-2023/section-003.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/3/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   1dfec876f8651762cf279f261ac609c9d0294e4eff5359266d36bb4f7c97cefc
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-001-part-004-paragraph-039.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/39/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   d5243347df4e5aa297cd8d3f9f1f9de0817c93baaaef9d081078118f2172f5ff
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-001-part-002-paragraph-005.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/5/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   ca448071befc1028736a5702524c77b2e026f48475023bd93c2e3497e1a54e03
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-001-paragraph-002.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   48a8cf30919fb0f9742a716af2b42ae3ce325aa60237c8518a08cc0576b25f53
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/dpa-2018/section-127.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/section/127/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   a2aec17829cf26dad11652f5961a6d898498616b79a951dd361dfb221975c3e4
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/dpa-2018/section-123.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/section/123/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   515ee37c2eb1ef1944b7175ada58ded560f66ccf60d8fe8ddb4419afe6be292c
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/dpa-2018/section-042.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/section/42/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   c32acc5c951afde835a587022467f391c39c54ed1cca1176bc7ed083ba38ce0f
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/dpa-2018/section-011.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/section/11/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   3de65b5f1014bf0f9a16da9cbac7985bb0f99d371d405fc1982b51bf07881a12
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/gdpr/annex-001.md** new file
+  - source: https://www.legislation.gov.uk/eur/2016/679/annex/1/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   39b4f908aa8f23ac95b7d9a60f5ac91feff0763072a2e080b7298defad32a581
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/gdpr/article-008za.md** new file
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/8ZA/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   976867a50143c6f56a323602b453e43f6f947000fe4ff38fd6c7c7d3114973c2
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
+- **corpus/statute/uk/gdpr/article-008.md** new file
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/8/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   effbe8d5c53254cdb6846e7fe3fde18c2510ed7cedf14b8b38824658043c6a19
+  - revision: Thu, 27 Aug 2026 16:10:40 GMT
+
 ## 2026-08-26
 - **corpus/statute/uk/pecr/schedule-a1-paragraph-004.md** new file
   - source: https://www.legislation.gov.uk/uksi/2003/2426/schedule/A1/paragraph/4/data.xht
