@@ -10,7 +10,7 @@ revision_id: 12 August 2020
 content_sha256: bd17eb6e05a32775f5f968f049f230768f8e17c990154456a5b9e5f955b20f1e
 last_fetched: 2026-09-03
 language: en-GB
-enforcement_status: in_force
+enforcement_status: guidance
 ---
 # Age appropriate design: a code of practice for online services (ICO Children's code, curated quotes)
 

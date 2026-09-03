@@ -10,7 +10,7 @@ revision_id: 18 January 2024
 content_sha256: 93f9f367a683a5d4c5d432a977cd5d057dc7198ca74350e40cb30d81eef19f17
 last_fetched: 2026-09-03
 language: en-GB
-enforcement_status: in_force
+enforcement_status: guidance
 ---
 # Age assurance for the Children's code (ICO Commissioner's Opinion, curated quotes)
 
