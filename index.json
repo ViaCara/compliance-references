@@ -97,6 +97,38 @@
   {
     "authority": "statute",
     "domain_tags": [
+      "employment-agency",
+      "fees"
+    ],
+    "enforcement_status": "in_force",
+    "id": "conduct-regs-2003-reg-026",
+    "jurisdiction": "uk",
+    "path": "statute/uk/conduct-regs-2003/regulation-026.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "3d86bb9f39166c6c22dba2538215ecc8725523c1c216c1a6e398ae632936620b",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2003/3319/regulation/26/data.xht",
+    "summary": "The only cases in which section 6(1)(a) of the 1973 Act does not apply: an agency finding a work-seeker employment in one of the occupations listed in Schedule 3, with the fee payable out of earnings, and not at all where the agency also charges the hirer for the same introduction. Confirms the fee ban applies everywhere outside those occupations.",
+    "title": "Conduct of Employment Agencies and Employment Businesses Regulations 2003 regulation 26 - Circumstances in which fees may be charged to work-seekers"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "employment-agency",
+      "fees"
+    ],
+    "enforcement_status": "in_force",
+    "id": "conduct-regs-2003-sch-003",
+    "jurisdiction": "uk",
+    "path": "statute/uk/conduct-regs-2003/schedule-003.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "38c53d9f0f404e2f7981bbad2122774a3a97cf88a5bc97bb7da58dcb64f65da2",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2003/3319/schedule/3/data.xht",
+    "summary": "The closed list of occupations regulation 26 exempts from the work-seeker fee ban: performers and production roles in the entertainment industry, photographic or fashion models and professional sports persons. Counselling and psychotherapy are not on it.",
+    "title": "Conduct of Employment Agencies and Employment Businesses Regulations 2003 Schedule 3 - Occupations in respect of which employment agencies may charge fees to work-seekers"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
       "consumer"
     ],
     "enforcement_status": "in_force",
@@ -655,6 +687,37 @@
   {
     "authority": "statute",
     "domain_tags": [
+      "employment-agency",
+      "fees"
+    ],
+    "enforcement_status": "in_force",
+    "id": "eaa-1973-s-006",
+    "jurisdiction": "uk",
+    "path": "statute/uk/eaa-1973/section-006.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "6b8373d4bf3c680bdb25579a940cbe90b25db1ef676de9424b1bc1d032a1383e",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1973/35/section/6/data.xht",
+    "summary": "A person carrying on an employment agency must not request or receive, directly or indirectly, any fee from a person for services for the purpose of finding that person employment, except in cases the Secretary of State prescribes. Contravention is an offence. Bears on any matching model that charges the supplied worker rather than the hirer.",
+    "title": "Employment Agencies Act 1973 section 6 - Restriction on charging persons seeking employment, etc."
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "employment-agency"
+    ],
+    "enforcement_status": "in_force",
+    "id": "eaa-1973-s-013",
+    "jurisdiction": "uk",
+    "path": "statute/uk/eaa-1973/section-013.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "45238c931f085b1b98a797db60f5c9e6ce1ab9d526ebfae77b8216a9e98e9696",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1973/35/section/13/data.xht",
+    "summary": "Definitions that decide whether the Act applies: employment includes engagement under a contract for services; an employment agency is the business of providing services, whether by information or otherwise, for finding persons employment with employers or supplying employers with persons; an employment business is the business of participating in employment arrangements. Subsection (4) excludes publishing and advertising display, and subsection (7) lists the bodies the Act does not apply to.",
+    "title": "Employment Agencies Act 1973 section 13 - Interpretation"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
       "consumer"
     ],
     "enforcement_status": "in_force",
@@ -1064,7 +1127,7 @@
       "age-verification",
       "accountability"
     ],
-    "enforcement_status": "in_force",
+    "enforcement_status": "guidance",
     "id": "ico-age-appropriate-design-code",
     "jurisdiction": "uk",
     "path": "guidance/uk/ico/age-appropriate-design-code.md",
@@ -1080,7 +1143,7 @@
       "children",
       "age-verification"
     ],
-    "enforcement_status": "in_force",
+    "enforcement_status": "guidance",
     "id": "ico-age-assurance-childrens-code",
     "jurisdiction": "uk",
     "path": "guidance/uk/ico/age-assurance-childrens-code.md",
@@ -1096,7 +1159,7 @@
       "children",
       "consent"
     ],
-    "enforcement_status": "in_force",
+    "enforcement_status": "guidance",
     "id": "ico-children-and-uk-gdpr",
     "jurisdiction": "uk",
     "path": "guidance/uk/ico/children-and-uk-gdpr.md",
@@ -1800,6 +1863,150 @@
     "source_uri": "https://www.legislation.gov.uk/uksi/2001/544/article/61/data.xht",
     "summary": "",
     "title": "Financial Services and Markets Act 2000 (Regulated Activities) Order 2001 article 61 - Regulated mortgage contracts"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "safeguarding",
+      "children",
+      "personnel-supplier"
+    ],
+    "enforcement_status": "in_force",
+    "id": "svga-2006-s-006",
+    "jurisdiction": "uk",
+    "path": "statute/uk/svga-2006/section-006.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "d6bdcbd8a6c83c3f49c56b067df00b850556468f84614407954af5c781d5fe85",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2006/47/section/6/data.xht",
+    "summary": "Who is a regulated activity provider: a person responsible for the management or control of regulated activity, not supervised in that responsibility, who makes or authorises arrangements for another person to engage in it. Private arrangements by an individual are excluded. Whether ViaCara, which introduces rather than treats, falls inside this section decides whether it carries the provider duties in Part 1.",
+    "title": "Safeguarding Vulnerable Groups Act 2006 section 6 - Regulated activity providers"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "safeguarding",
+      "children",
+      "personnel-supplier"
+    ],
+    "enforcement_status": "in_force",
+    "id": "svga-2006-s-036",
+    "jurisdiction": "uk",
+    "path": "statute/uk/svga-2006/section-036.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "75660742f1469deef995c97286b1df70c24a49baaa781adae4ecce2a6cb71347",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2006/47/section/36/data.xht",
+    "summary": "A personnel supplier that is an employment agency or employment business must give the DBS prescribed information about a person it acts for when it stops acting for them, or would have, because it thinks Schedule 3 paragraph 1, 2, 7 or 8 applies, they have engaged in relevant conduct under paragraph 4 or 10, or the harm test is met. Subsection (7) defines when an agency acts for a person: arrangements with a view to finding them employment or supplying them to employers.",
+    "title": "Safeguarding Vulnerable Groups Act 2006 section 36 - Personnel suppliers: duty to refer"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "safeguarding",
+      "children",
+      "personnel-supplier"
+    ],
+    "enforcement_status": "in_force",
+    "id": "svga-2006-s-060",
+    "jurisdiction": "uk",
+    "path": "statute/uk/svga-2006/section-060.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "9a058136ec5568325357065f70759394aa6fac166d10a9d6e4a7eaff1f44bae7",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2006/47/section/60/data.xht",
+    "summary": "Definitions for the Act, including child (under 18), vulnerable adult, DBS, and personnel supplier, which means a person carrying on an employment agency or employment business within the meaning of the Employment Agencies Act 1973, or an educational institution supplying students for experience of regulated activity.",
+    "title": "Safeguarding Vulnerable Groups Act 2006 section 60 - Interpretation"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "safeguarding",
+      "children"
+    ],
+    "enforcement_status": "in_force",
+    "id": "svga-2006-sch-003-p-001",
+    "jurisdiction": "uk",
+    "path": "statute/uk/svga-2006/schedule-003-paragraph-001.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "b6731771d09117ce9fd69c5f68300730096df832dacfbb90517a711bee49da0b",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2006/47/schedule/3/paragraph/1/data.xht",
+    "summary": "Automatic barring without representations: where a prescribed criterion is met, the DBS must include the person in the children's barred list. One of the four grounds section 36(4)(a) names for a personnel supplier's duty to refer.",
+    "title": "Safeguarding Vulnerable Groups Act 2006 Schedule 3 paragraph 1 - Automatic inclusion in the children's barred list"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "safeguarding",
+      "children"
+    ],
+    "enforcement_status": "in_force",
+    "id": "svga-2006-sch-003-p-002",
+    "jurisdiction": "uk",
+    "path": "statute/uk/svga-2006/schedule-003-paragraph-002.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "65c01fd9b6ddfa3ba03da8683b1e56af0deb4abbad3968ef135752f682154b5d",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2006/47/schedule/3/paragraph/2/data.xht",
+    "summary": "Automatic barring with representations: where a prescribed criterion is met and the person is, has been or might be engaged in regulated activity relating to children, the DBS must invite representations and then include the person in the children's barred list. One of the grounds section 36(4)(a) names.",
+    "title": "Safeguarding Vulnerable Groups Act 2006 Schedule 3 paragraph 2 - Inclusion in the children's barred list subject to representations"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "safeguarding",
+      "children"
+    ],
+    "enforcement_status": "in_force",
+    "id": "svga-2006-sch-003-p-004",
+    "jurisdiction": "uk",
+    "path": "statute/uk/svga-2006/schedule-003-paragraph-004.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "4778d6d07841eb5ecbcb4915c9bb1060512b93dfb4cac78a47dd4a35adf4c2f5",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2006/47/schedule/3/paragraph/4/data.xht",
+    "summary": "Defines relevant conduct for the children's barred list: conduct that endangers or is likely to endanger a child, conduct involving sexual material relating to children, sexually explicit violent images, and inappropriate conduct of a sexual nature involving a child. Section 36(4)(b) makes this one of the grounds for a personnel supplier's duty to refer.",
+    "title": "Safeguarding Vulnerable Groups Act 2006 Schedule 3 paragraph 4 - Relevant conduct in relation to children"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "safeguarding"
+    ],
+    "enforcement_status": "in_force",
+    "id": "svga-2006-sch-003-p-007",
+    "jurisdiction": "uk",
+    "path": "statute/uk/svga-2006/schedule-003-paragraph-007.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "3d237239fe89344f1ed34cc73372f02d45631376849c3a788e1a54f763e5f3eb",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2006/47/schedule/3/paragraph/7/data.xht",
+    "summary": "Automatic barring without representations for the adults' barred list, mirroring paragraph 1. One of the grounds section 36(4)(a) names for a personnel supplier's duty to refer.",
+    "title": "Safeguarding Vulnerable Groups Act 2006 Schedule 3 paragraph 7 - Automatic inclusion in the adults' barred list"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "safeguarding"
+    ],
+    "enforcement_status": "in_force",
+    "id": "svga-2006-sch-003-p-008",
+    "jurisdiction": "uk",
+    "path": "statute/uk/svga-2006/schedule-003-paragraph-008.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "6cdfe5fa8b82485cb60d50cd12d8bf85a6a9a810389d6aac0d7eb305058ec254",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2006/47/schedule/3/paragraph/8/data.xht",
+    "summary": "Automatic barring with representations for the adults' barred list, mirroring paragraph 2. One of the grounds section 36(4)(a) names.",
+    "title": "Safeguarding Vulnerable Groups Act 2006 Schedule 3 paragraph 8 - Inclusion in the adults' barred list subject to representations"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "safeguarding"
+    ],
+    "enforcement_status": "in_force",
+    "id": "svga-2006-sch-003-p-010",
+    "jurisdiction": "uk",
+    "path": "statute/uk/svga-2006/schedule-003-paragraph-010.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "853520e12e84188331b6e913d20a7e089a82f5dd1999c81007a8abc81978fa06",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2006/47/schedule/3/paragraph/10/data.xht",
+    "summary": "Defines relevant conduct for the adults' barred list, mirroring paragraph 4 for vulnerable adults. Section 36(4)(b) makes this one of the grounds for a personnel supplier's duty to refer.",
+    "title": "Safeguarding Vulnerable Groups Act 2006 Schedule 3 paragraph 10 - Relevant conduct in relation to vulnerable adults"
   },
   {
     "authority": "statute",
