@@ -10,7 +10,7 @@ revision_id: 15 May 2026
 content_sha256: 33a56983763af2e6d2aa2a84adfebbe6b5d2e49acb98d8ede1f98940a3a35215
 last_fetched: 2026-09-03
 language: en-GB
-enforcement_status: in_force
+enforcement_status: guidance
 ---
 # Children and the UK GDPR (ICO guidance, curated quotes)
 
