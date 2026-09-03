@@ -1,5 +1,41 @@
 [
   {
+    "authority": "guidance",
+    "domain_tags": [
+      "criminal-records",
+      "safeguarding",
+      "children",
+      "northern-ireland"
+    ],
+    "enforcement_status": "guidance",
+    "id": "accessni-code-of-practice",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/accessni/code-of-practice.md",
+    "revision_id": "October 2020",
+    "sha": "8cba71fdb68573579b9ecd8388fa81b371335b8ae41c584044c3bba4cf84f5c3",
+    "source_uri": "https://www.nidirect.gov.uk/publications/accessni-code-practice",
+    "summary": "The section 122 Police Act 1997 Code binding AccessNI Registered Bodies and other recipients of disclosure information in Northern Ireland. It settles that ViaCara, which is not a Registered Body, is outside the Code's formal scope but that section 124 makes onward disclosure of certificate content an offence for any recipient. It fixes the handling standard ViaCara mirrors: retain nothing longer than the suitability decision needs, keep a written secure-handling policy and a written ex-offender suitability policy, tell applicants in advance, discuss disclosed content before withdrawing an offer, and never reproduce a result as if it were a certificate. Annex A confirms criminal offence data needs a lawful basis plus an additional DPA 2018 condition.",
+    "title": "AccessNI Code of Practice"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "criminal-records",
+      "safeguarding",
+      "children",
+      "northern-ireland"
+    ],
+    "enforcement_status": "guidance",
+    "id": "accessni-self-employed-viewing-guidance",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/accessni/self-employed-and-personal-employees.md",
+    "revision_id": "13 February 2026",
+    "sha": "71de3a02cfcb9194540fbc89f1985c45ced6cd3ac30d472b5278ba09868a2e4f",
+    "source_uri": "https://www.nidirect.gov.uk/publications/guide-viewing-self-employed-workers-and-personal-employees-checks",
+    "summary": "AccessNI's guidance for anyone engaging a self-employed worker or personal employee in Northern Ireland. It settles that the worker applies for their own enhanced check through an AccessNI Umbrella Body, that the only acceptable evidence is the digital certificate shared from the worker's AccessNI account, and that copies or photographs must be rejected. The share link arrives by email, stays live for five calendar days and can be viewed once. The viewer checks identity, barred-list groups, disclosed content and issue date, uses the information for one suitability decision only, shares it with no third party and keeps no copy or representation of the contents.",
+    "title": "Guide for viewing self-employed workers and personal employees' checks"
+  },
+  {
     "authority": "statute",
     "domain_tags": [
       "children",
@@ -323,6 +359,112 @@
   },
   {
     "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children",
+      "criminal-records"
+    ],
+    "enforcement_status": "in_force",
+    "id": "criminal-records-regs-2002-reg-005a",
+    "jurisdiction": "uk",
+    "path": "statute/uk/criminal-records-regs-2002/regulation-005a.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "cd7a210a6af0830fc484bcabba8aa2f9929511489ad3b6bc63d4ce5e316468f8",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2002/233/regulation/5A/data.xht",
+    "summary": "Prescribes, for Police Act 1997 section 113B(2)(b), the purposes for which a registered person may state that an enhanced certificate is required, including considering an applicant's suitability for regulated activity relating to children and the other child-related circumstances the regulation cross-refers to. Together with the Exceptions Order this is what makes a self-employed counsellor who works with children eligible for an enhanced check with a children's barred-list check, and it is the same purpose test section 116A(11) applies to an Update Service recipient.",
+    "title": "Police Act 1997 (Criminal Records) Regulations 2002 regulation 5A - Enhanced criminal record certificates: prescribed purposes"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "criminal-records",
+      "safeguarding",
+      "children"
+    ],
+    "enforcement_status": "guidance",
+    "id": "dbs-code-of-practice",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/dbs/dbs-code-of-practice.md",
+    "revision_id": "16 November 2015",
+    "sha": "afbf105482bf83e7bd8a27641b2ba2024d45fbe63ae358812c36c47d313c5535",
+    "source_uri": "https://www.gov.uk/government/publications/dbs-code-of-practice",
+    "summary": "The statutory code issued under section 122 of the Police Act 1997 that binds every DBS registered body and every recipient of Update Service information under section 116A. It settles that ViaCara, if it receives Update Service information, must hold a written secure-handling policy and a written policy on the suitability of ex-offenders, must handle certificate information under data protection law, and commits an offence under section 124 if it discloses certificate content beyond entitled staff. It also fixes the legislative basis for enhanced checks with a barred list check and defines the umbrella function through which unregistered organisations obtain checks.",
+    "title": "Revised Code of Practice for Disclosure and Barring Service Registered Persons"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "criminal-records",
+      "safeguarding",
+      "children"
+    ],
+    "enforcement_status": "guidance",
+    "id": "dbs-eligibility-enhanced-barred-list-children",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/dbs/eligibility-enhanced-barred-list-children.md",
+    "revision_id": "1 September 2026",
+    "sha": "bc2b4e4367504cfc9e2933300e21dc8bf93ae4b614c24176312711d2cafbd7ec",
+    "source_uri": "https://www.gov.uk/government/publications/eligibility-for-enhanced-with-barred-list-dbs-checks-with-children/eligibility-for-enhanced-with-barred-list-dbs-checks-with-children",
+    "summary": "DBS guidance on which roles are regulated activity with children and so eligible for an Enhanced check with a Children's Barred List check. It settles that healthcare to a child, expressly including psychotherapy and counselling, is regulated activity on a single occasion with no period condition, and that advice or guidance on emotional wellbeing qualifies when the period condition is met. That places a practitioner treating under-18s in the child workforce at the level ViaCara plans to require. The guidance applies to paid and unpaid roles and is silent on self-employed applicants.",
+    "title": "Eligibility for Enhanced with Barred List DBS checks with children"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "criminal-records",
+      "safeguarding",
+      "children",
+      "retention"
+    ],
+    "enforcement_status": "guidance",
+    "id": "dbs-handling-certificate-information",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/dbs/handling-of-dbs-certificate-information.md",
+    "revision_id": "4 July 2018",
+    "sha": "2072ef9c5a0c599246ca92aff6ce64de63a7ce1f7621d8147b48fc40656062fb",
+    "source_uri": "https://www.gov.uk/government/publications/handling-of-dbs-certificate-information/handling-of-dbs-certificate-information",
+    "summary": "The DBS sample policy on storage, handling, use, retention and disposal of certificate information. It settles ViaCara's permitted record: no photocopy or image of a certificate, only the date of issue, subject name, type of certificate, position, unique reference number and the decision taken. Retention is no longer than necessary for disputes or safeguarding audits, with secure destruction afterwards; the earlier six-month figure was removed in the 4 July 2018 revision and survives only in the UK Government Web Archive. Certificate information passes only to those authorised under section 124 of the Police Act 1997 and only for the purpose the applicant consented to.",
+    "title": "Handling of DBS certificate information"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "criminal-records",
+      "safeguarding",
+      "children",
+      "update-service"
+    ],
+    "enforcement_status": "guidance",
+    "id": "dbs-update-service-employer-guide",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/dbs/update-service-employer-guide.md",
+    "revision_id": "28 August 2026",
+    "sha": "142ac593af03cd995758930da4ace3e5c15cdac519c354b5e453ce7a4b8e5ce9",
+    "source_uri": "https://www.gov.uk/government/publications/dbs-update-service-employer-guide/dbs-update-service-employer-guide",
+    "summary": "The DBS guide governing who may run a free online status check on a Standard or Enhanced certificate. It settles that a check requires the applicant's consent, a legal declaration under section 116A that the checker may ask an exempted question for the role, the same workforce and level, an identity check, and sight of the original paper certificate in person by the checker or the recruiting organisation (copies and video are not enough). It defines the four result strings, the 30 calendar day subscription window from the certificate issue date, the record an organisation may keep, and that any recruiting organisation accessing the information must follow the Code of Practice and hold an ex-offenders policy.",
+    "title": "DBS Update Service employer guide"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children",
+      "scotland"
+    ],
+    "enforcement_status": "in_force",
+    "id": "disclosure-scotland-act-2020-sch-003",
+    "jurisdiction": "uk",
+    "path": "statute/uk/disclosure-scotland-act-2020/schedule-003.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "2bd9ae97105ae51a8760f6dfc7d3a00dc2913265f3a85fcf3242ed948d509b53",
+    "source_uri": "https://www.legislation.gov.uk/asp/2020/13/schedule/3/data.xht",
+    "summary": "The new Schedule 2 to the PVG (Scotland) Act 2007, in force from 1 April 2025, defining a regulated role with children as one that involves an activity in Part 2 and meets the Part 1 conditions. Part 2 paragraph 24 lists the counselling, advice and guidance activity that brings a therapist working with children inside the Scheme. legislation.gov.uk has no per-paragraph address for this Schedule, so the whole Schedule is mirrored in one entry.",
+    "title": "Disclosure (Scotland) Act 2020 Schedule 3 - Schedule to be substituted for Schedule 2 of the PVG Act (regulated roles with children)"
+  },
+  {
+    "authority": "statute",
     "domain_tags": [],
     "enforcement_status": "in_force",
     "id": "dmcc-2024-s-225",
@@ -614,6 +756,24 @@
   {
     "authority": "statute",
     "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children",
+      "employment"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-sch-001-pt-001-p-001",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/schedule-001-part-001-paragraph-001.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "9b0b2dc522a56b7ef52a1781b20081ff76d2c3f3b4af62031e0843ead965bc11",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/1/data.xht",
+    "summary": "Part 1 condition: processing necessary to perform or exercise obligations or rights imposed or conferred by law on the controller or data subject in connection with employment, social security or social protection, with an appropriate policy document in place. Available for a criminal-record check only where a legal obligation attaches to the engagement; ViaCara's practitioners are self-employed introducees, so this condition is a fallback rather than the primary route.",
+    "title": "DPA 2018 Schedule 1 Part 1 paragraph 1 - Employment, social security and social protection"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
       "children",
       "safeguarding",
       "accountability"
@@ -631,6 +791,195 @@
   {
     "authority": "statute",
     "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-sch-001-pt-002-p-006",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/schedule-001-part-002-paragraph-006.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "f5feac8be8a2439b53cdd759abad7f50008d87bc7f38c042cb34995e6ce515bb",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/6/data.xht",
+    "summary": "Part 2 condition: processing necessary for the exercise of a function conferred on a person by an enactment or rule of law, or a function of the Crown, a Minister or a government department, and necessary for reasons of substantial public interest. Relevant to ViaCara only through paragraph 36, which removes the substantial-public-interest limb for criminal offence data, and only if a statutory function can be identified.",
+    "title": "DPA 2018 Schedule 1 Part 2 paragraph 6 - Statutory etc and government purposes"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-sch-001-pt-002-p-010",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/schedule-001-part-002-paragraph-010.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "c33a5cb4dbe167e68a0dc1c6898929ed7635e1d10bf26030bdcffc85b982ac3f",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/10/data.xht",
+    "summary": "Part 2 condition: processing necessary for the prevention, investigation or detection of an unlawful act, which must be carried out without the data subject's consent so as not to prejudice those purposes, and necessary for reasons of substantial public interest. The ICO's own DBS example names this condition; a barred person engaging in regulated activity with children commits an offence under SVGA 2006 section 7, so a practitioner barred-list check falls within it, read with paragraph 36.",
+    "title": "DPA 2018 Schedule 1 Part 2 paragraph 10 - Preventing etc unlawful acts"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-sch-001-pt-002-p-011",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/schedule-001-part-002-paragraph-011.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "8bbb11edc351e1f3c426164a206ec21ba422e2bad113929e8a57de8071815010",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/11/data.xht",
+    "summary": "Part 2 condition: processing necessary for the exercise of a protective function, carried out without consent so as not to prejudice that function, and necessary for reasons of substantial public interest. A protective function is one intended to protect the public against dishonesty, malpractice, incompetence, unfitness, mismanagement or failures in services. A candidate condition for practitioner suitability evidence, read with paragraph 36.",
+    "title": "DPA 2018 Schedule 1 Part 2 paragraph 11 - Protecting the public against dishonesty etc"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "children",
+      "special-category",
+      "counselling"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-sch-001-pt-002-p-017",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/schedule-001-part-002-paragraph-017.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "58907133722ee9dd3c5d02e79fce1aae83f28b99e6d19aaddbc61d15fe882aa5",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/17/data.xht",
+    "summary": "Part 2 condition: processing necessary for the provision of confidential counselling, advice or support or another similar confidential service, carried out without consent because consent cannot be given, cannot reasonably be obtained, or would prejudice the service, and necessary for reasons of substantial public interest. Bears on the under-18 map's preventive-or-counselling question and on holding a child's disclosure where guardian consent cannot be routed safely.",
+    "title": "DPA 2018 Schedule 1 Part 2 paragraph 17 - Counselling etc"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-sch-001-pt-003-p-029",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/schedule-001-part-003-paragraph-029.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "88f09b1ea0c6216cff821a97853682df6d961658b50fc55bc810aac0db72a231",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/29/data.xht",
+    "summary": "Part 3 condition: the data subject has given consent to the processing. The ICO's DBS guidance holds that consent an organisation requires before running a check is not freely given and cannot be withdrawn, so this condition is not available as ViaCara's Article 10 condition for practitioner criminal-record evidence; practitioner consent remains a Police Act 1997 section 116A precondition for the Update Service check, not the data-protection condition.",
+    "title": "DPA 2018 Schedule 1 Part 3 paragraph 29 - Consent"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-sch-001-pt-003-p-030",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/schedule-001-part-003-paragraph-030.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "e7a14a9c9a6ca30e6b19df14e64d5bec7179afde4fa8143d7d5bddc9dd01a994",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/30/data.xht",
+    "summary": "Part 3 condition: processing necessary to protect the vital interests of an individual where the data subject is physically or legally incapable of giving consent. Mirrored for completeness of the Part 3 criminal-offence-data conditions; not a route ViaCara relies on for practitioner vetting.",
+    "title": "DPA 2018 Schedule 1 Part 3 paragraph 30 - Protecting individual's vital interests"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-sch-001-pt-003-p-032",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/schedule-001-part-003-paragraph-032.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "54826063c94a84e0a6f3e0b74ba2f25f523ae1f429fc08ca0c39d9de28d23769",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/32/data.xht",
+    "summary": "Part 3 condition: the processing relates to personal data manifestly made public by the data subject. Mirrored for completeness of the Part 3 conditions; a DBS, PVG or AccessNI result is never manifestly public, so it does not apply to practitioner criminal-record evidence.",
+    "title": "DPA 2018 Schedule 1 Part 3 paragraph 32 - Personal data in the public domain"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-sch-001-pt-003-p-033",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/schedule-001-part-003-paragraph-033.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "fd925759e0d36a3c5abf30484b3bbbf8abe72f920fe75623cbb88b8c9cf1a691",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/33/data.xht",
+    "summary": "Part 3 condition: processing necessary for legal proceedings including prospective proceedings, for obtaining legal advice, or otherwise for establishing, exercising or defending legal rights. The fallback condition for retaining the record of a practitioner suitability decision and its access log after the check itself, and the anchor for a limitation-period retention clock.",
+    "title": "DPA 2018 Schedule 1 Part 3 paragraph 33 - Legal claims"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-sch-001-pt-003-p-036",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/schedule-001-part-003-paragraph-036.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "baa5ed1b611c572b4e1f7daaa0bd69a56b63ca0909d34374f7b5c3dbea659248",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/36/data.xht",
+    "summary": "Part 3 condition: the processing would meet a Part 2 condition but for that condition's express requirement that the processing be necessary for reasons of substantial public interest. This is the primary Article 10 condition for ViaCara's practitioner criminal-record evidence, read with paragraph 18 (safeguarding of children) or paragraph 10 (preventing unlawful acts), because it removes the substantial-public-interest limb for criminal offence data.",
+    "title": "DPA 2018 Schedule 1 Part 3 paragraph 36 - Extension of conditions in Part 2 referring to substantial public interest"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children",
+      "insurance"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-sch-001-pt-003-p-037",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/schedule-001-part-003-paragraph-037.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "4b493c0ec7ca09528fecf46d880d4c041115525e96e672aebd30162a83c71080",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/37/data.xht",
+    "summary": "Part 3 condition: processing that would meet the paragraph 20 insurance condition, or paragraph 36 by virtue of it, but for the requirement that the data be of the specified special categories. Mirrored because the practitioner under-18 allowance also verifies an insurance schedule; it applies to insurers' processing rather than to ViaCara's own evidence intake.",
+    "title": "DPA 2018 Schedule 1 Part 3 paragraph 37 - Extension of insurance conditions"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children",
+      "accountability"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-sch-001-pt-004-p-038",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/schedule-001-part-004-paragraph-038.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "776337136cde9524bcedb3b8fffc3e949adbd30b0bd21ff913665d5911366a73",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/38/data.xht",
+    "summary": "Scope provision for Part 4: the appropriate policy document and additional safeguards in paragraphs 39 to 41 apply to processing carried out in reliance on any Part 1, 2 or 3 condition that requires an appropriate policy document. Paragraphs 18, 10 and 36 all carry that requirement, so Part 4 binds ViaCara's practitioner criminal-record processing.",
+    "title": "DPA 2018 Schedule 1 Part 4 paragraph 38 - Application of this Part of this Schedule"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
       "children",
       "safeguarding",
       "accountability"
@@ -644,6 +993,43 @@
     "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/39/data.xht",
     "summary": "The content requirement paragraph 5 points to: for any Part 2 condition (including paragraph 18's safeguarding condition), the policy document must describe Article 5 compliance procedures for that processing and set out retention/erasure policy including expected retention period.",
     "title": "DPA 2018 Schedule 1 Part 4 paragraph 39 - Requirement to have an appropriate policy document in place"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children",
+      "accountability",
+      "retention"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-sch-001-pt-004-p-040",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/schedule-001-part-004-paragraph-040.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "998da997a34ca31f05c9a3bb1825c47d4f7179a7bac4f5934b11f9c1cc1ad964",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/40/data.xht",
+    "summary": "Where processing relies on a paragraph 38 condition, the controller must retain the appropriate policy document, review and update it, and make it available to the Commissioner on request, throughout the relevant period: from the start of the processing until six months after the processing ends. Sets the retention floor for ViaCara's safeguarding appropriate policy document.",
+    "title": "DPA 2018 Schedule 1 Part 4 paragraph 40 - Additional safeguard: retention of appropriate policy document"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children",
+      "accountability"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-sch-001-pt-004-p-041",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/schedule-001-part-004-paragraph-041.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "1779cb74a6e1a8331980e98273bf792e337d7a38d0489941c214fca63eddc1d7",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/41/data.xht",
+    "summary": "Where processing relies on a paragraph 38 condition, the Article 30 record of processing must state which condition is relied on, how the processing satisfies Article 6, and whether personal data is retained and erased in accordance with the policy document, with reasons for any departure. Read with UK GDPR Article 30(5), which removes the small-organisation exemption for Article 10 data, this makes a record-of-processing row for practitioner criminal-record evidence mandatory.",
+    "title": "DPA 2018 Schedule 1 Part 4 paragraph 41 - Additional safeguard: record of processing"
   },
   {
     "authority": "statute",
@@ -1187,6 +1573,26 @@
   },
   {
     "authority": "guidance",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "lawful-basis",
+      "dbs",
+      "appropriate-policy-document",
+      "dpia"
+    ],
+    "enforcement_status": "guidance",
+    "id": "ico-criminal-offence-data",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/ico/criminal-offence-data.md",
+    "revision_id": "undated, fetched 2026-09-03",
+    "sha": "11d034a4a8689f59425921b8e2a1f1146081c695f9935b811fb437fa2ee8594f",
+    "source_uri": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/criminal-offence-data/what-is-criminal-offence-data/",
+    "summary": "Curated from the three ICO pages 'What is criminal offence data?', 'What are the rules on criminal offence data?' and 'What are the conditions for processing?'. Settles that a DBS, PVG or AccessNI result held by ViaCara is Article 10 criminal offence data even when it shows no convictions, so ViaCara needs both an Article 6 lawful basis and a DPA 2018 Schedule 1 condition. The ICO's own delivery-company example says consent to carry out a DBS check is not a valid Schedule 1 condition for a self-employed workforce and points to condition 10 (preventing or detecting unlawful acts); condition 18 (safeguarding) is the other fit, and paragraph 36 removes the substantial public interest test for criminal offence data. Both conditions require an appropriate policy document, a justification for not using consent, and a DPIA because the data determines access to an opportunity.",
+    "title": "Criminal offence data"
+  },
+  {
+    "authority": "guidance",
     "domain_tags": [],
     "enforcement_status": "guidance",
     "id": "ico-personal-data-breaches-guide",
@@ -1197,6 +1603,26 @@
     "source_uri": "https://ico.org.uk/for-organisations/report-a-breach/personal-data-breach/personal-data-breaches-a-guide/",
     "summary": "",
     "title": "Personal data breaches: a guide"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "recruitment",
+      "dbs",
+      "retention",
+      "dpia"
+    ],
+    "enforcement_status": "guidance",
+    "id": "ico-pre-employment-vetting",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/ico/pre-employment-vetting.md",
+    "revision_id": "undated, fetched 2026-09-03",
+    "sha": "668e0db345e37395c807c53b7f010ff951c8a74b7623c0aae557101dad72beae",
+    "source_uri": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/employment/recruitment-and-selection/pre-employment-vetting-of-candidates/",
+    "summary": "Settles that criminal records vetting is only justified where the role carries an identified risk such as work with children, must be proportionate with no less intrusive alternative, and must never be applied routinely; this supports an opt-in under-18 gate rather than a platform-wide check. The ICO names DBS, AccessNI and Disclosure Scotland as the only routes for conviction data, requires a DPIA, forbids forcing a practitioner to make a subject access request to the DBS, and requires a lawful basis plus a Schedule 1 condition. Vetting material must be destroyed as soon as reasonably practicable, keeping only a record of the outcome and decision, which supports storing a verification result rather than a certificate image. Still draft guidance at the time of curation.",
+    "title": "Pre-employment vetting of candidates"
   },
   {
     "authority": "statute",
@@ -1814,6 +2240,188 @@
   },
   {
     "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children",
+      "criminal-records"
+    ],
+    "enforcement_status": "in_force",
+    "id": "police-act-1997-s-113a",
+    "jurisdiction": "uk",
+    "path": "statute/uk/police-act-1997/section-113a.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "0e109bdad857acc4121c27485bf594bb47e9c5ed37e8d8afab6c2f7ce694617a",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1997/50/section/113A/data.xht",
+    "summary": "The standard criminal record certificate: the DBS must issue one on an application countersigned by a registered person who states the certificate is required for the purposes of an exempted question, and the certificate gives prescribed details of every relevant matter on central records or states there is none. Establishes what a certificate is and that the Rehabilitation of Offenders Act 1974 exempted question is the gateway to it. Note: legislation.gov.uk serves the England and Wales and Northern Ireland extent versions on one page; Part V is repealed for Scotland from 1 April 2025.",
+    "title": "Police Act 1997 section 113A - Criminal record certificates"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children",
+      "criminal-records"
+    ],
+    "enforcement_status": "in_force",
+    "id": "police-act-1997-s-113b",
+    "jurisdiction": "uk",
+    "path": "statute/uk/police-act-1997/section-113b.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "a862a5e36eae74a398a74e9e03a22573c56d19dd481b6f831d62ef3cacfbb68c",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1997/50/section/113B/data.xht",
+    "summary": "The enhanced criminal record certificate: issued on an application countersigned by a registered person who states it is required for the purposes of an exempted question asked for a prescribed purpose, carrying central-record matters plus any information a chief officer reasonably believes relevant and ought to be included. Subsection (2)(b)'s prescribed purposes, set by regulation 5A of the 2002 Regulations, decide whether a practitioner's work with children is eligible for the check ViaCara asks for, and section 116A(11) borrows the same test for who may receive Update Service information.",
+    "title": "Police Act 1997 section 113B - Enhanced criminal record certificates"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children",
+      "criminal-records",
+      "update-service"
+    ],
+    "enforcement_status": "in_force",
+    "id": "police-act-1997-s-116a",
+    "jurisdiction": "uk",
+    "path": "statute/uk/police-act-1997/section-116a.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "212fd1f36eceec6a0b99b9c9621f0ba1e68270fbd72bcdc418f2500adfbf6e19",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1997/50/section/116A/data.xht",
+    "summary": "The statutory footing of the DBS Update Service: the DBS may make arrangements for a certificate holder to subscribe so that a relevant person, authorised by the individual and seeking the information for the purposes of an exempted question asked for a prescribed purpose, can be told whether the certificate remains current. Governs ViaCara's planned status check on practitioner-entered certificate details: practitioner authority is the precondition, and eligibility for the exempted question is the test for whether ViaCara may be the relevant person.",
+    "title": "Police Act 1997 section 116A - Up-date arrangements"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children",
+      "criminal-records"
+    ],
+    "enforcement_status": "in_force",
+    "id": "police-act-1997-s-124",
+    "jurisdiction": "uk",
+    "path": "statute/uk/police-act-1997/section-124.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "598b06e0d921fd877b9c8a1c5a414532adfdcdec303eb4519c4fe980918c8738",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1997/50/section/124/data.xht",
+    "summary": "A member, officer or employee of a registered body, or a person acting on their behalf, commits an offence by disclosing certificate or up-date information otherwise than in the course of their duties to another person entitled to it or with the applicant's consent; a fine on summary conviction. Drives the DBS handling guidance's access-controlled storage and its record of everyone to whom certificate information is revealed, which is the access log ViaCara must keep on practitioner evidence.",
+    "title": "Police Act 1997 section 124 - Offences: disclosure"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children",
+      "scotland"
+    ],
+    "enforcement_status": "in_force",
+    "id": "pvg-scotland-act-2007-s-045a",
+    "jurisdiction": "uk",
+    "path": "statute/uk/pvg-scotland-act-2007/section-045a.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "f093ef8635fcf7c4107807e8381e5241e2ca00ebbf3a67201ec49140127f0bd3",
+    "source_uri": "https://www.legislation.gov.uk/asp/2007/14/section/45A/data.xht",
+    "summary": "As substituted by the Disclosure (Scotland) Act 2020 from 1 April 2025: a scheme member participates in the Scheme for a type of regulated role for five years from joining, unless earlier removed, and membership may be renewed. Sets the recheck baseline for a Scottish practitioner's PVG evidence on ViaCara.",
+    "title": "PVG (Scotland) Act 2007 section 45A - Duration of Scheme membership"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children",
+      "scotland"
+    ],
+    "enforcement_status": "in_force",
+    "id": "pvg-scotland-act-2007-s-045c",
+    "jurisdiction": "uk",
+    "path": "statute/uk/pvg-scotland-act-2007/section-045c.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "023b47b9a72799d31c86e0efbd20385b4afdc8c032502283ced3c2d3eed632bf",
+    "source_uri": "https://www.legislation.gov.uk/asp/2007/14/section/45C/data.xht",
+    "summary": "From 1 April 2025 it is an offence for an individual to carry out, or agree to carry out, a regulated role with children or with adults without being a scheme member for that type of role. The Scottish counterpart to SVGA 2006 section 7 and the reason PVG membership is a mandatory condition for a counsellor working with children in Scotland.",
+    "title": "PVG (Scotland) Act 2007 section 45C - Individuals must be scheme members to carry out regulated roles"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children",
+      "scotland",
+      "personnel-supplier"
+    ],
+    "enforcement_status": "in_force",
+    "id": "pvg-scotland-act-2007-s-045d",
+    "jurisdiction": "uk",
+    "path": "statute/uk/pvg-scotland-act-2007/section-045d.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "dc6c7a73913093b3b3e8b27798abf98f0dcba2f201a73bc955021263b471b995",
+    "source_uri": "https://www.legislation.gov.uk/asp/2007/14/section/45D/data.xht",
+    "summary": "It is an offence for an organisation to offer a regulated role to, or use, an individual without first confirming that the individual is a scheme member for that type of role, with the confirmation routes the section describes. The Scottish counterpart to SVGA 2006 section 9; whether ViaCara 'uses' a practitioner for a regulated role is the question its section 54 third-party confirmation posture answers.",
+    "title": "PVG (Scotland) Act 2007 section 45D - Organisations not to use individuals for regulated roles without confirming scheme membership"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children",
+      "scotland"
+    ],
+    "enforcement_status": "in_force",
+    "id": "pvg-scotland-act-2007-s-045g",
+    "jurisdiction": "uk",
+    "path": "statute/uk/pvg-scotland-act-2007/section-045g.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "0f73fb89227196cc33650af39a0d065d00dae0679b4cc02984588d35f3bee238",
+    "source_uri": "https://www.legislation.gov.uk/asp/2007/14/section/45G/data.xht",
+    "summary": "The penalties for offences under sections 45C to 45F: on summary conviction a fine or imprisonment, and on conviction on indictment up to five years, a fine or both. Mirrored so the Scottish offence provisions ViaCara designs around are complete.",
+    "title": "PVG (Scotland) Act 2007 section 45G - Penalties for offences relating to regulated roles by individuals not in Scheme"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children",
+      "scotland"
+    ],
+    "enforcement_status": "in_force",
+    "id": "pvg-scotland-act-2007-s-046",
+    "jurisdiction": "uk",
+    "path": "statute/uk/pvg-scotland-act-2007/section-046.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "4c43398dd0d920fdca6df54c8d45a80e2e3ea6cb21f778b0b044638301fb76f8",
+    "source_uri": "https://www.legislation.gov.uk/asp/2007/14/section/46/data.xht",
+    "summary": "Ministers must provide a confirmation of scheme membership to each scheme member, stating the prescribed particulars of the membership and its type. The document a Scottish practitioner holds instead of a paper certificate, and the thing a section 54 third-party confirmation reproduces for ViaCara.",
+    "title": "PVG (Scotland) Act 2007 section 46 - Confirmation of scheme membership"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children",
+      "scotland"
+    ],
+    "enforcement_status": "in_force",
+    "id": "pvg-scotland-act-2007-s-054",
+    "jurisdiction": "uk",
+    "path": "statute/uk/pvg-scotland-act-2007/section-054.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "06b8d0cbf6b37b36ed9feb8f904f61113a5d9d4178dabeea08664d9b4679e743",
+    "source_uri": "https://www.legislation.gov.uk/asp/2007/14/section/54/data.xht",
+    "summary": "Where a scheme member asks Ministers to make a confirmation of scheme membership available to a third party the member specifies, Ministers must comply. ViaCara is a section 54 third party rather than an accredited body: it takes the member's shared confirmation as the Scottish criminal-record evidence for the under-18 allowance and never sees a disclosure record.",
+    "title": "PVG (Scotland) Act 2007 section 54 - Provision of confirmation of scheme membership to third parties"
+  },
+  {
+    "authority": "statute",
     "domain_tags": [],
     "enforcement_status": "in_force",
     "id": "rao-2001-art-005",
@@ -1867,6 +2475,42 @@
   {
     "authority": "statute",
     "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children",
+      "criminal-records"
+    ],
+    "enforcement_status": "in_force",
+    "id": "roa-exceptions-order-1975-art-003",
+    "jurisdiction": "uk",
+    "path": "statute/uk/roa-exceptions-order-1975/article-003.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "f3c932e75e0e24d1d0ac1621a8f39db00a2df49bd1817ef870b868ad10f046c9",
+    "source_uri": "https://www.legislation.gov.uk/uksi/1975/1023/article/3/data.xht",
+    "summary": "Disapplies section 4(2) of the Rehabilitation of Offenders Act 1974 so that a question about spent convictions may be asked, and must be answered, when assessing suitability for a profession, office, employment, work or occupation listed in Schedule 1. This is the 'exempted question' on which Police Act 1997 sections 113A, 113B and 116A all turn; whether ViaCara's practitioner suitability question is one decides whether it may seek certificate or Update Service information at all.",
+    "title": "Rehabilitation of Offenders Act 1974 (Exceptions) Order 1975 article 3 - Exceptions relating to questions and disclosure"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children",
+      "criminal-records"
+    ],
+    "enforcement_status": "in_force",
+    "id": "roa-exceptions-order-1975-sch-001",
+    "jurisdiction": "uk",
+    "path": "statute/uk/roa-exceptions-order-1975/schedule-001.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "85f21b8c6a0223a2046081e350e9bd4a635db67f6f2cb7395bbe4df334c69b5a",
+    "source_uri": "https://www.legislation.gov.uk/uksi/1975/1023/schedule/1/data.xht",
+    "summary": "The list of excepted professions, offices, employments, work and occupations for which article 3 lifts the protection of spent convictions, including regulated activity relating to children and vulnerable adults and work in health and social care. Determines whether a therapist working with under-18s sits inside the exception, which is the precondition for an enhanced DBS check. Note: legislation.gov.uk serves this Schedule with its many extent-specific amendments on one page, so the mirrored body is long.",
+    "title": "Rehabilitation of Offenders Act 1974 (Exceptions) Order 1975 Schedule 1 - Excepted professions, offices, employments, work and occupations"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
       "safeguarding",
       "children",
       "personnel-supplier"
@@ -1880,6 +2524,41 @@
     "source_uri": "https://www.legislation.gov.uk/ukpga/2006/47/section/6/data.xht",
     "summary": "Who is a regulated activity provider: a person responsible for the management or control of regulated activity, not supervised in that responsibility, who makes or authorises arrangements for another person to engage in it. Private arrangements by an individual are excluded. Whether ViaCara, which introduces rather than treats, falls inside this section decides whether it carries the provider duties in Part 1.",
     "title": "Safeguarding Vulnerable Groups Act 2006 section 6 - Regulated activity providers"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children"
+    ],
+    "enforcement_status": "in_force",
+    "id": "svga-2006-s-007",
+    "jurisdiction": "uk",
+    "path": "statute/uk/svga-2006/section-007.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "ba5bb5b184d53e740fec58c802843bfed98b9b68415b8899802060661b04afcb",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2006/47/section/7/data.xht",
+    "summary": "An individual commits an offence by seeking, offering or engaging in regulated activity from which they are barred, punishable by up to five years' imprisonment on indictment. The offence a children's barred-list check is designed to prevent, and the unlawful act that lets DPA 2018 Schedule 1 paragraph 10 (read with paragraph 36) support ViaCara's practitioner check.",
+    "title": "SVGA 2006 section 7 - Barred person not to engage in regulated activity"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children",
+      "personnel-supplier"
+    ],
+    "enforcement_status": "in_force",
+    "id": "svga-2006-s-009",
+    "jurisdiction": "uk",
+    "path": "statute/uk/svga-2006/section-009.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "b99514558b4555861eb96b9145542ec56c4a0cb9c07fdc8cc2282252ca8b45eb",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2006/47/section/9/data.xht",
+    "summary": "A person commits an offence by permitting a barred individual to engage in regulated activity knowing or having reason to believe they are barred, and a personnel supplier commits an offence by supplying a barred individual to another who will arrange regulated activity, with the same knowledge. Read with the personnel-supplier posture ViaCara adopted under section 36, this is the offence that a barred-list check on an under-18 practitioner guards ViaCara against.",
+    "title": "SVGA 2006 section 9 - Use of barred person for regulated activity"
   },
   {
     "authority": "statute",
@@ -2011,6 +2690,57 @@
   {
     "authority": "statute",
     "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children"
+    ],
+    "enforcement_status": "in_force",
+    "id": "svga-2006-sch-004-p-001",
+    "jurisdiction": "uk",
+    "path": "statute/uk/svga-2006/schedule-004-paragraph-001.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "c1898125e2a68b373bc3ce103a342e1098fdf808a62bbbd8704b9fc17d799fdf",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2006/47/schedule/4/paragraph/1/data.xht",
+    "summary": "The general test for regulated activity relating to children: an activity in paragraph 2(1) carried out frequently by the same person, or on more than a set number of days in a 30-day period, or overnight, subject to the supervision exclusions and the establishment limb in sub-paragraph (2). Decides whether a practitioner's ongoing therapy with a child is regulated activity, which in turn decides eligibility for an enhanced check with a children's barred-list check.",
+    "title": "Safeguarding Vulnerable Groups Act 2006 Schedule 4 paragraph 1 - Regulated activity: general"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children"
+    ],
+    "enforcement_status": "in_force",
+    "id": "svga-2006-sch-004-p-002",
+    "jurisdiction": "uk",
+    "path": "statute/uk/svga-2006/schedule-004-paragraph-002.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "8dd2a8aa0e84f4c765f8bd213c4c45acdf2c768b1a0b4effe14ced6700bd74ad",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2006/47/schedule/4/paragraph/2/data.xht",
+    "summary": "The list of activities that can be regulated activity relating to children, including any form of teaching, training or instruction, care or supervision, advice or guidance provided wholly or mainly for children relating to their physical, emotional or educational well-being, and health care. Counselling and psychotherapy for a child fall within the advice-or-guidance and health-care limbs.",
+    "title": "Safeguarding Vulnerable Groups Act 2006 Schedule 4 paragraph 2 - Activities"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children"
+    ],
+    "enforcement_status": "in_force",
+    "id": "svga-2006-sch-004-p-003",
+    "jurisdiction": "uk",
+    "path": "statute/uk/svga-2006/schedule-004-paragraph-003.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "684476beedb971a1bce476a5e9a149c0cd8e05c833004d83cd1fdfeede7fd703",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2006/47/schedule/4/paragraph/3/data.xht",
+    "summary": "The establishments in which work of any kind, done frequently or under the day-count test, is regulated activity relating to children: schools, children's homes, childcare premises and similar settings. Not the setting a ViaCara introduction leads to, but mirrored so the Part 1 definition is complete alongside paragraphs 1 and 2.",
+    "title": "Safeguarding Vulnerable Groups Act 2006 Schedule 4 paragraph 3 - Establishments"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
       "children",
       "safeguarding",
       "special-category"
@@ -2122,6 +2852,23 @@
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/9/data.xht",
     "summary": "",
     "title": "UK GDPR Article 9 - Processing of special categories of personal data"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "criminal-offence-data",
+      "safeguarding",
+      "children"
+    ],
+    "enforcement_status": "in_force",
+    "id": "uk-gdpr-art-010",
+    "jurisdiction": "uk",
+    "path": "statute/uk/gdpr/article-010.md",
+    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
+    "sha": "2e7152b72f8eda24199b454d418f607670d27a2f790e71ab4b8f2b42ff76e39e",
+    "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/10/data.xht",
+    "summary": "Personal data relating to criminal convictions and offences may be processed under Article 6(1) only under the control of official authority or where domestic law authorises it with appropriate safeguards; a comprehensive register of convictions may be kept only under official authority. A DBS, PVG or AccessNI result, including a clear one, is Article 10 data, so any practitioner criminal-record evidence ViaCara holds needs both an Article 6 basis and a DPA 2018 Schedule 1 Part 1, 2 or 3 condition through section 10(5).",
+    "title": "UK GDPR Article 10 - Processing of personal data relating to criminal convictions and offences"
   },
   {
     "authority": "statute",
