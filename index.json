@@ -696,6 +696,22 @@
   {
     "authority": "statute",
     "domain_tags": [
+      "direct-marketing",
+      "accountability"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-s-122",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/section-122.md",
+    "revision_id": "Thu, 03 Sep 2026 16:52:26 GMT",
+    "sha": "93a000c1d9df74375f563e5782639a8135575472739f1cc23417b16f7e8011d6",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/section/122/data.xht",
+    "summary": "Requires the Commissioner to prepare a direct marketing code of practice, and in subsection (5) supplies the statutory definition of 'direct marketing' that PECR regulation 2 now repeats: the communication (by whatever means) of advertising or marketing material which is directed to particular individuals. In force since 25 May 2018; DUAA 2025 did not amend it, and the pending S.I. 2026/386 substitutions are wording changes only.",
+    "title": "DPA 2018 section 122 - Direct marketing code"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
       "children",
       "accountability"
     ],
@@ -1593,6 +1609,58 @@
   },
   {
     "authority": "guidance",
+    "domain_tags": [
+      "direct-marketing",
+      "service-messages",
+      "consent"
+    ],
+    "enforcement_status": "guidance",
+    "id": "ico-direct-marketing-guidance-identify",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/ico/direct-marketing-identify.md",
+    "revision_id": "20 August 2025",
+    "sha": "419c3a8a92aafbf9cdf2f73c1962b76584cf988610ae2eca66d7d15706c3c7a6",
+    "source_uri": "https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/direct-marketing-guidance/identify-direct-marketing/",
+    "summary": "The ICO's step-one test for whether a communication is direct marketing. Breaks the statutory definition into its three limbs, defines 'direct marketing purposes' (including consent-seeking messages), and sets the service-message boundary: an administrative or customer-service message is not direct marketing, but a service message carrying any promotional element becomes direct marketing even where promotion is not its main purpose. Tone, phrasing and context decide borderline cases; general branding or logos do not.",
+    "title": "Direct marketing guidance: identify direct marketing"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "direct-marketing",
+      "electronic-mail",
+      "service-messages"
+    ],
+    "enforcement_status": "guidance",
+    "id": "ico-electronic-mail-marketing-key-concepts",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/ico/electronic-mail-marketing-key-concepts.md",
+    "revision_id": "28 April 2026",
+    "sha": "9ced54931fa0b581c1fe6ba50bc104bd5a6793a1823615e01d5aadb813c88f4f",
+    "source_uri": "https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-direct-marketing-using-electronic-mail/key-concepts-for-direct-marketing-using-electronic-mail/",
+    "summary": "The ICO's detailed electronic mail guidance, updated 28 April 2026 for DUAA 2025. Restates the direct marketing definition, confirms that purely administrative service messages fall outside it and that adding advertising or marketing material brings a message back inside, and defines 'electronic mail' to include email, SMS, in-app messages and social media direct messages but not display or feed adverts. Also distinguishes solicited from unsolicited marketing and individual from corporate subscribers.",
+    "title": "Guidance on direct marketing using electronic mail: key concepts"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "direct-marketing",
+      "electronic-mail",
+      "consent",
+      "soft-opt-in"
+    ],
+    "enforcement_status": "guidance",
+    "id": "ico-guide-to-pecr-electronic-mail-marketing",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/ico/guide-to-pecr-electronic-mail-marketing.md",
+    "revision_id": "December 2021",
+    "sha": "1db7bb12fa6dcc431e2ab74ca0a8f8fafcf485b046c1f0e7d39437b97aad35c8",
+    "source_uri": "https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/",
+    "summary": "The Guide to PECR's brief statement of the regulation 22 rules: no electronic mail marketing to individuals without specific consent, the existing-customer 'soft opt-in' and its opt-out conditions, the broad meaning of 'electronic mail', the identity and contact-address requirements, the viral marketing prohibition and the compliance checklist. Carries the ICO's notice that the Guide is under review following DUAA 2025.",
+    "title": "Guide to PECR: electronic mail marketing"
+  },
+  {
+    "authority": "guidance",
     "domain_tags": [],
     "enforcement_status": "guidance",
     "id": "ico-personal-data-breaches-guide",
@@ -2182,6 +2250,23 @@
     "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/schedule/1/data.xht",
     "summary": "Exemptions list (not a category list): email, SMS/MMS, one-to-one live communications, limited-functionality and internal business services, public bodies, and eligible education/childcare providers.",
     "title": "Online Safety Act 2023 Schedule 1 - Exempt user-to-user and search services"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "direct-marketing",
+      "consent",
+      "electronic-mail"
+    ],
+    "enforcement_status": "in_force",
+    "id": "pecr-reg-002",
+    "jurisdiction": "uk",
+    "path": "statute/uk/pecr/regulation-002.md",
+    "revision_id": "Thu, 03 Sep 2026 16:52:26 GMT",
+    "sha": "a529da45d6d7e5f2aa0e8f081344202e11b2639dc6232254dc9ccb5eeac63bd0",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2003/2426/regulation/2/data.xht",
+    "summary": "PECR's interpretation provision. Since 20 August 2025 it carries the operative definition of 'direct marketing': the communication (by whatever means) of advertising or marketing material which is directed to particular individuals, inserted by the Data (Use and Access) Act 2025 section 110(2)(c) and identical to DPA 2018 section 122(5). Also defines 'electronic mail', 'individual', 'corporate subscriber' and 'consent' (which tracks the UK GDPR meaning). The first stop for whether a client or practitioner message is direct marketing at all.",
+    "title": "PECR regulation 2 - Interpretation"
   },
   {
     "authority": "statute",

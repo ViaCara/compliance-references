@@ -2,6 +2,19 @@
 
 Drift log. Newer entries first.
 
+## 2026-09-04
+- **corpus/statute/uk/dpa-2018/section-122.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/section/122/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   93a000c1d9df74375f563e5782639a8135575472739f1cc23417b16f7e8011d6
+  - revision: Thu, 03 Sep 2026 16:52:26 GMT
+
+- **corpus/statute/uk/pecr/regulation-002.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2003/2426/regulation/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   a529da45d6d7e5f2aa0e8f081344202e11b2639dc6232254dc9ccb5eeac63bd0
+  - revision: Thu, 03 Sep 2026 16:52:26 GMT
+
 ## 2026-09-03
 - **corpus/statute/uk/disclosure-scotland-act-2020/schedule-003.md** new file
   - source: https://www.legislation.gov.uk/asp/2020/13/schedule/3/data.xht
