@@ -36,6 +36,74 @@
     "title": "Guide for viewing self-employed workers and personal employees' checks"
   },
   {
+    "authority": "guidance",
+    "domain_tags": [
+      "advertising",
+      "health-claims",
+      "marketing"
+    ],
+    "enforcement_status": "guidance",
+    "id": "cap-advice-health-therapies-medical-conditions",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/cap/health-therapies-references-to-medical-conditions.md",
+    "revision_id": "01 Sep 2022",
+    "sha": "18db02bae4f33ae3bb49fa5b19ac844de79b8cfe80e72fd97f6d61a9f1d8398c",
+    "source_uri": "https://www.asa.org.uk/advice-online/health-therapies-and-references-to-medical-conditions.html",
+    "summary": "CAP Executive AdviceOnline guidance on referencing medical conditions in therapy advertising: a claim that a therapy can diagnose, treat, help with or cure a medical condition needs suitable qualification and robust evidence under Rules 12.1 and 12.2, with worked before/after examples. Last updated 01 Sep 2022.",
+    "title": "Health: Therapies and references to Medical Conditions"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "advertising",
+      "health-claims",
+      "marketing"
+    ],
+    "enforcement_status": "guidance",
+    "id": "cap-advice-mental-health-treatment-claims",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/cap/mental-health-treatment-claims.md",
+    "revision_id": "15 Jul 2021",
+    "sha": "84376ce7b10c25f605981d809c21bd9123eb94591e2184d53749149be5ca3ba2",
+    "source_uri": "https://www.asa.org.uk/advice-online/mental-health-treatment-claims.html",
+    "summary": "CAP Executive AdviceOnline guidance on advertising mental-health treatment claims: objective claims must be substantiated under Rule 12.1, and treatment, diagnosis or advice for serious medical conditions may only be advertised under the supervision of a suitably qualified medical professional. Last updated 15 Jul 2021.",
+    "title": "Mental Health: Treatment claims"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "advertising",
+      "health-claims",
+      "marketing"
+    ],
+    "enforcement_status": "in_force",
+    "id": "cap-code-section-03-misleading-advertising",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/cap/code-section-03-misleading-advertising.md",
+    "revision_id": "live page, retrieved 2026-09-04",
+    "sha": "e012d306c50faa683353d5b5a4b07c3c7303d429ed11a53b35d6828f00f2b1a3",
+    "source_uri": "https://www.asa.org.uk/type/non_broadcast/code_section/03.html",
+    "summary": "CAP Code section 3 general rules against materially misleading marketing communications, omission of material information, the substantiation duty, qualification of claims, and prohibition on exaggerating a product's capability or performance.",
+    "title": "CAP Code Section 3: Misleading advertising"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "advertising",
+      "health-claims",
+      "marketing"
+    ],
+    "enforcement_status": "in_force",
+    "id": "cap-code-section-12-medicines-health-related-products",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/cap/code-section-12-medicines-health-related-products.md",
+    "revision_id": "live page, retrieved 2026-09-04",
+    "sha": "d8a8fa2a5edcd787e6426e2b4955c6363349bd38d56dab509827679c75f6430a",
+    "source_uri": "https://www.asa.org.uk/type/non_broadcast/code_section/12.html",
+    "summary": "CAP Code section 12 rules requiring objective health claims to be backed by evidence, barring discouragement of essential medically-supervised treatment, and prohibiting false claims to prevent or treat disease, plus the section's definition of disease.",
+    "title": "CAP Code Section 12: Medicines, medical devices, health-related products and beauty products"
+  },
+  {
     "authority": "statute",
     "domain_tags": [
       "children",
