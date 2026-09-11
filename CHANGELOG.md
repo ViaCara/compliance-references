@@ -3,6 +3,18 @@
 Drift log. Newer entries first.
 
 ## 2026-09-11
+- **corpus/statute/uk/dmcc-2024/section-247.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2024/13/section/247/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   3cac0c4f3287e85281d0240136835f296e829f778e449fefe382223bb4785857
+  - revision: Thu, 03 Sep 2026 16:52:26 GMT
+
+- **corpus/statute/uk/mdr-2002/regulation-002.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2002/618/regulation/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   fb3b5e47620b876f0ead3fb322a91927f3d05e54f99e7e35d034836ee3b46440
+  - revision: Thu, 03 Sep 2026 16:52:26 GMT
+
 - **corpus/statute/uk/rao-2001/article-039e.md** new file
   - source: https://www.legislation.gov.uk/uksi/2001/544/article/39E/data.xht
   - prior_sha256: (new file)
