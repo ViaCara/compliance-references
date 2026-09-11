@@ -30,6 +30,8 @@ class FinancialPerimeterSourceTests(unittest.TestCase):
             "fsma-2000-s-021": "ukpga/2000/8/section/21/data.xht",
             "fpo-2005-art-049": "uksi/2005/1529/article/49/data.xht",
             "fpo-2005-art-050a": "uksi/2005/1529/article/50A/data.xht",
+            "rao-2001-art-039d": "uksi/2001/544/article/39D/data.xht",
+            "rao-2001-art-039e": "uksi/2001/544/article/39E/data.xht",
             "rao-2001-art-060b": "uksi/2001/544/article/60B/data.xht",
             "rao-2001-art-061": "uksi/2001/544/article/61/data.xht",
         }
@@ -49,6 +51,11 @@ class FinancialPerimeterSourceTests(unittest.TestCase):
             "fsma-2000-s-019": "(1) No person may carry on a regulated activity in the United Kingdom",
             "fsma-2000-s-021": "communicate an invitation or inducement to",
             "fpo-2005-art-049": "(1) The financial promotion restriction does not apply",
+            "rao-2001-art-039d": "(c) any similar activity concerned with the liquidation of a debt,",
+            "rao-2001-art-039e": (
+                "(1) Giving advice to a borrower about the liquidation of a debt due "
+                "under a credit agreement is a specified kind of activity."
+            ),
             "rao-2001-art-061": "(1) Entering into a regulated mortgage contract as lender",
         }
 
