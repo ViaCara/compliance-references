@@ -38,7 +38,10 @@ class FinancialPerimeterSourceTests(unittest.TestCase):
 
         for source_id, path in expected_paths.items():
             with self.subTest(source_id=source_id):
-                self.assertTrue(self.sources[source_id]["source_uri"].endswith(path))
+                self.assertEqual(
+                    f"https://www.legislation.gov.uk/{path}",
+                    self.sources[source_id]["source_uri"],
+                )
 
     def test_financial_perimeter_sources_carry_controlling_text(self):
         expected = {
@@ -51,7 +54,13 @@ class FinancialPerimeterSourceTests(unittest.TestCase):
             "fsma-2000-s-019": "(1) No person may carry on a regulated activity in the United Kingdom",
             "fsma-2000-s-021": "communicate an invitation or inducement to",
             "fpo-2005-art-049": "(1) The financial promotion restriction does not apply",
-            "rao-2001-art-039d": "(c) any similar activity concerned with the liquidation of a debt,",
+            "rao-2001-art-039d": (
+                "(a) negotiating with the lender, on behalf of the borrower, terms "
+                "for the discharge of a debt,\n\n"
+                "(b) taking over, in return for payments by the borrower, that "
+                "person’s obligation to discharge a debt, or\n\n"
+                "(c) any similar activity concerned with the liquidation of a debt,"
+            ),
             "rao-2001-art-039e": (
                 "(1) Giving advice to a borrower about the liquidation of a debt due "
                 "under a credit agreement is a specified kind of activity."
