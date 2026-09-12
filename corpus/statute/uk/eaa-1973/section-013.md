@@ -6,15 +6,17 @@ kind: legislation_section
 citation: Employment Agencies Act 1973, s. 13
 source_uri: "https://www.legislation.gov.uk/ukpga/1973/35/section/13/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: 45238c931f085b1b98a797db60f5c9e6ce1ab9d526ebfae77b8216a9e98e9696
-last_fetched: 2026-09-03
+revision_id: "Thu, 03 Sep 2026 16:52:26 GMT"
+content_sha256: eae9dac7a557e9f91bd9165436f6288e5bb83e8977b68aeece9ee6cf701bab31
+last_fetched: 2026-09-12
 language: en-GB
 enforcement_status: in_force
 ---
 # Employment Agencies Act 1973, s. 13
 
 _Interpretation._
+
+**Extent:** England and Wales
 
 (1) In this Act—
 
@@ -139,6 +141,8 @@ and “worker” and “employer” shall be construed accordingly;
 (i) any prescribed business or service, or prescribed class of business or service or business or service carried on or provided by prescribed persons or classes of person.
 
 (8) Subsection (7)(c) of this section shall have effect in its application to Scotland as if at the end there were added the words “or mainly or substantially supported by voluntary subscriptions and providing patients with the services of a nurse whether or not the nurse takes up residence in the patient’s house”.
+
+**Extent:** Scotland
 
 (1) In this Act—
 

@@ -6,15 +6,17 @@ kind: legislation_section
 citation: Police Act 1997, s. 113A
 source_uri: "https://www.legislation.gov.uk/ukpga/1997/50/section/113A/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: 0e109bdad857acc4121c27485bf594bb47e9c5ed37e8d8afab6c2f7ce694617a
-last_fetched: 2026-09-03
+revision_id: "Thu, 03 Sep 2026 16:52:26 GMT"
+content_sha256: c46b89774d1854964818dd74eb59360bde5ec0eef81e5f09453434319d02efc2
+last_fetched: 2026-09-12
 language: en-GB
 enforcement_status: in_force
 ---
 # Police Act 1997, s. 113A
 
 _Criminal record certificates_
+
+**Extent:** England, Wales and Scotland
 
 (1) DBS must issue a criminal record certificate to any individual who—
 
@@ -157,6 +159,8 @@ or an offence under Part 2 of the Serious Crime Act 2007 (encouraging or assisti
 (b) transmits the application to DBS under subsection (2A).
 
 (10) _(repealed)_
+
+**Extent:** Northern Ireland
 
 (1) The Secretary of State must issue a criminal record certificate to any individual who—
 

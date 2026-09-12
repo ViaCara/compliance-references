@@ -6,15 +6,17 @@ kind: legislation_section
 citation: Police Act 1997, s. 113B
 source_uri: "https://www.legislation.gov.uk/ukpga/1997/50/section/113B/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: a862a5e36eae74a398a74e9e03a22573c56d19dd481b6f831d62ef3cacfbb68c
-last_fetched: 2026-09-03
+revision_id: "Thu, 03 Sep 2026 16:52:26 GMT"
+content_sha256: c1428eb04ab2fff0880116f7d7a47d65301d74b439da2736f9b32aa10e0405d7
+last_fetched: 2026-09-12
 language: en-GB
 enforcement_status: in_force
 ---
 # Police Act 1997, s. 113B
 
 _Enhanced criminal record certificates_
+
+**Extent:** England, Wales and Scotland
 
 (1) DBS must issue an enhanced criminal record certificate to any individual who—
 
@@ -111,6 +113,8 @@ and any reference to the chief officer of a police force includes the person res
 (b) transmits the application to DBS under subsection (2A).
 
 (13) _(repealed)_
+
+**Extent:** Northern Ireland
 
 (1) The Secretary of State must issue an enhanced criminal record certificate to any individual who—
 

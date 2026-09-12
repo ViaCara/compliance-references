@@ -7,14 +7,16 @@ citation: Medical Devices Regulations 2002 regulation 2
 source_uri: "https://www.legislation.gov.uk/uksi/2002/618/regulation/2/data.xht"
 source_format: xhtml
 revision_id: "Thu, 03 Sep 2026 16:52:26 GMT"
-content_sha256: fb3b5e47620b876f0ead3fb322a91927f3d05e54f99e7e35d034836ee3b46440
-last_fetched: 2026-09-11
+content_sha256: e930d18e930df9f6eeb80861a709b1a1720277c410d70feebab51220d2e0e6f3
+last_fetched: 2026-09-12
 language: en-GB
 enforcement_status: in_force
 ---
 # Medical Devices Regulations 2002 regulation 2
 
 _Interpretation_
+
+**Extent:** England, Wales and Scotland
 
 (1) ... In these Regulations ...—
 
@@ -221,6 +223,8 @@ and includes devices intended to administer a medicinal product or which incorpo
 (b) in a regulation to a numbered or lettered paragraph is to the paragraph of that regulation bearing that number or letter; and
 
 (c) in a paragraph to a numbered or lettered sub-paragraph is to the sub-paragraph in that paragraph bearing that number or letter.
+
+**Extent:** Northern Ireland
 
 (1) In these Regulations...—
 
