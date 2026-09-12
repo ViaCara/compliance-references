@@ -97,10 +97,10 @@
     "id": "cap-code-section-12-medicines-health-related-products",
     "jurisdiction": "uk",
     "path": "guidance/uk/cap/code-section-12-medicines-health-related-products.md",
-    "revision_id": "live page, retrieved 2026-09-04",
-    "sha": "d8a8fa2a5edcd787e6426e2b4955c6363349bd38d56dab509827679c75f6430a",
+    "revision_id": "live page, additions retrieved 2026-09-12; human review pending",
+    "sha": "920bdfbefc70468114b7d981a3c9fd0939d8579db7e155566a08cef52cbcf189",
     "source_uri": "https://www.asa.org.uk/type/non_broadcast/code_section/12.html",
-    "summary": "CAP Code section 12 rules requiring objective health claims to be backed by evidence, barring discouragement of essential medically-supervised treatment, and prohibiting false claims to prevent or treat disease, plus the section's definition of disease.",
+    "summary": "CAP Code section 12 rules requiring objective health claims to be backed by evidence, barring discouragement of essential medically-supervised treatment, and prohibiting false claims to prevent or treat disease, plus the section's definition of disease, the rule 12.12 prescription-only advertising restriction and the homeopathic scope of rule 12.20.",
     "title": "CAP Code Section 12: Medicines, medical devices, health-related products and beauty products"
   },
   {
@@ -1764,6 +1764,32 @@
     "authority": "statute",
     "domain_tags": [],
     "enforcement_status": "in_force",
+    "id": "misuse-drugs-1971-sch-002",
+    "jurisdiction": "uk",
+    "path": "statute/uk/misuse-drugs-1971/schedule-002.md",
+    "revision_id": "Thu, 03 Sep 2026 16:52:26 GMT",
+    "sha": "042cb7ae000c887ccccc6a3e455b000b685f30ea9cacfd9b6a3c04df1416493b",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1971/38/schedule/2/data.xht",
+    "summary": "",
+    "title": "Misuse of Drugs Act 1971 Schedule 2"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [],
+    "enforcement_status": "in_force",
+    "id": "misuse-drugs-regulations-2001-sch-001",
+    "jurisdiction": "uk",
+    "path": "statute/uk/misuse-drugs-regulations-2001/schedule-001.md",
+    "revision_id": "Thu, 03 Sep 2026 16:52:26 GMT",
+    "sha": "7cf73beb9201c87b4e49b4d3abc842f1de3c71751238282343644d362a664f91",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2001/3998/schedule/1/data.xht",
+    "summary": "",
+    "title": "Misuse of Drugs Regulations 2001 Schedule 1"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [],
+    "enforcement_status": "in_force",
     "id": "mlr-2017-reg-003",
     "jurisdiction": "uk",
     "path": "statute/uk/mlr-2017/regulation-003.md",
@@ -2686,6 +2712,19 @@
     "source_uri": "https://www.legislation.gov.uk/uksi/1975/1023/schedule/1/data.xht",
     "summary": "The list of excepted professions, offices, employments, work and occupations for which article 3 lifts the protection of spent convictions, including regulated activity relating to children and vulnerable adults and work in health and social care. Determines whether a therapist working with under-18s sits inside the exception, which is the precondition for an enhanced DBS check. Note: legislation.gov.uk serves this Schedule with its many extent-specific amendments on one page, so the mirrored body is long.",
     "title": "Rehabilitation of Offenders Act 1974 (Exceptions) Order 1975 Schedule 1 - Excepted professions, offices, employments, work and occupations"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [],
+    "enforcement_status": "in_force",
+    "id": "serious-crime-2007-s-044",
+    "jurisdiction": "uk",
+    "path": "statute/uk/serious-crime-2007/section-044.md",
+    "revision_id": "Thu, 03 Sep 2026 16:52:26 GMT",
+    "sha": "552839cf04c4456a8418cbf9cf66462c5983d1d52ff13ddd9fb72205d2dd2705",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2007/27/section/44/data.xht",
+    "summary": "",
+    "title": "Serious Crime Act 2007 section 44"
   },
   {
     "authority": "statute",

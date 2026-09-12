@@ -6,9 +6,9 @@ kind: curated_quotes
 citation: CAP Code s.12 Medicines, medical devices, health-related products and beauty products
 source_uri: "https://www.asa.org.uk/type/non_broadcast/code_section/12.html"
 source_format: html
-revision_id: "live page, retrieved 2026-09-04"
-content_sha256: d8a8fa2a5edcd787e6426e2b4955c6363349bd38d56dab509827679c75f6430a
-last_fetched: 2026-09-04
+revision_id: live page, additions retrieved 2026-09-12; human review pending
+content_sha256: 920bdfbefc70468114b7d981a3c9fd0939d8579db7e155566a08cef52cbcf189
+last_fetched: 2026-09-12
 language: en-GB
 enforcement_status: in_force
 ---
@@ -42,7 +42,24 @@ Rule 12.6:
 > Marketers should not falsely claim that a product is able to prevent or
 > treat disease or a malformation.
 
+Rule 12.12:
+
+> Prescription-only medicines or prescription-only medical treatments may not be advertised to the public.
+
+Rule 12.20, opening sentence:
+
+> Homeopathic medicinal products must be registered in the UK.
+
+Rule 12.20 concerns homeopathic products. It does not supply the general
+prescription-only advertising restriction. Rule 12.12 supplies that rule.
+Consult the full rule at the source URI for its remaining conditions.
+
+The two additions above were checked against the source by Codex on
+2026-09-12. Human review and merge remain pending. The earlier Kyle review
+covers only the original quotes.
+
 ## Provenance
 
-Quoted verbatim from the live ASA CAP Code page, retrieved 2026-09-04 from
-the source URI.
+Original quotes were retrieved from the live ASA CAP Code page on
+2026-09-04. The rule 12.12 and 12.20 excerpts were retrieved on 2026-09-12
+from the same source URI.
