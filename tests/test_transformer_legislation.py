@@ -228,6 +228,50 @@ class LegislationTransformerTests(unittest.TestCase):
         self.assertLess(markdown.index("(1) For the purpose"), markdown.index("(a) arises"))
         self.assertLess(markdown.index("(a) arises"), markdown.index("(2) An estate agent"))
 
+    def test_labels_each_concurrent_extent_version(self):
+        """Some provisions (MDR 2002 reg. 2, Police Act 1997 s. 113A) have a
+        separate version for each territorial extent, served back to back in
+        one snippet. Without a label the second version reads as a duplicate
+        of the first."""
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<h3 class="LegP1GroupTitleFirst"> Interpretation'
+            '<span class="LegConcurrent"><span class="LegExtentRestriction" '
+            'title="Applies to England, Wales and Scotland">E+W+S</span></span></h3>'
+            '<p class="LegP1ParaText"><span class="LegP1No">2.</span>'
+            "—(1) In these Regulations the GB terms apply.</p>"
+            '<h3 class="LegP1GroupTitleFirst"> Interpretation'
+            '<span class="LegConcurrent"><span class="LegExtentRestriction" '
+            'title="Applies to Northern Ireland">N.I.</span></span></h3>'
+            '<p class="LegP1ParaText"><span class="LegP1No">2.</span>'
+            "—(1) In these Regulations the NI terms apply.</p>"
+            "</div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="MDR 2002 reg. 2")
+
+        self.assertEqual(1, markdown.count("_Interpretation_"))
+        gb_label = markdown.index("**Extent:** England, Wales and Scotland\n")
+        gb_text = markdown.index("(1) In these Regulations the GB terms apply.")
+        ni_label = markdown.index("**Extent:** Northern Ireland\n")
+        ni_text = markdown.index("(1) In these Regulations the NI terms apply.")
+        self.assertLess(gb_label, gb_text)
+        self.assertLess(gb_text, ni_label)
+        self.assertLess(ni_label, ni_text)
+
+    def test_single_extent_version_carries_no_label(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<h3 class="LegP1GroupTitleFirst"> Interpretation'
+            '<span class="LegConcurrent"><span class="LegExtentRestriction" '
+            'title="Applies to England and Wales">E+W</span></span></h3>'
+            '<p class="LegP1ParaText"><span class="LegP1No">2.</span>'
+            "—(1) In these Regulations the terms apply.</p>"
+            "</div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Test")
+
+        self.assertNotIn("**Extent:**", markdown)
+
     def test_single_paragraph_para_text_drops_only_the_provision_number(self):
         source = (
             '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'

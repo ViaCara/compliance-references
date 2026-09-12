@@ -76,6 +76,23 @@
       "health-claims",
       "marketing"
     ],
+    "enforcement_status": "guidance",
+    "id": "cap-code-scope",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/cap/code-scope.md",
+    "revision_id": "12th edition",
+    "sha": "504953ee458d7f5889be3ffd3edd7970b7d141caf2ae653cad5cd4f50cc24804",
+    "source_uri": "https://www.asa.org.uk/type/non_broadcast/code_folder/scope-of-the-code.html",
+    "summary": "The CAP Code's remit: it covers marketing communications on a marketer's own website or other non-paid-for online space under its control that are directly connected with the supply of goods or services, and it excludes private correspondence with customers about existing relationships, editorial content and other website content outside that remit. The first stop for whether in-product copy is advertising at all.",
+    "title": "CAP Code: Scope of the Code"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "advertising",
+      "health-claims",
+      "marketing"
+    ],
     "enforcement_status": "in_force",
     "id": "cap-code-section-03-misleading-advertising",
     "jurisdiction": "uk",
@@ -652,6 +669,23 @@
   {
     "authority": "statute",
     "domain_tags": [
+      "consumer",
+      "vulnerable-consumers",
+      "health-claims"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dmcc-2024-s-247",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dmcc-2024/section-247.md",
+    "revision_id": "Thu, 03 Sep 2026 16:52:26 GMT",
+    "sha": "3cac0c4f3287e85281d0240136835f296e829f778e449fefe382223bb4785857",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2024/13/section/247/data.xht",
+    "summary": "The vulnerable-consumer adjustment to the average consumer benchmark: where a practice is likely to affect a group that is particularly vulnerable to it or to the product in a way the trader could reasonably foresee, including because of their physical or mental health, the average consumer is an average member of that group.",
+    "title": "Digital Markets, Competition and Consumers Act 2024 section 247 - Meaning of average consumer: vulnerable consumers"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
       "consumer"
     ],
     "enforcement_status": "in_force",
@@ -1179,8 +1213,8 @@
     "id": "eaa-1973-s-013",
     "jurisdiction": "uk",
     "path": "statute/uk/eaa-1973/section-013.md",
-    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
-    "sha": "45238c931f085b1b98a797db60f5c9e6ce1ab9d526ebfae77b8216a9e98e9696",
+    "revision_id": "Thu, 03 Sep 2026 16:52:26 GMT",
+    "sha": "eae9dac7a557e9f91bd9165436f6288e5bb83e8977b68aeece9ee6cf701bab31",
     "source_uri": "https://www.legislation.gov.uk/ukpga/1973/35/section/13/data.xht",
     "summary": "Definitions that decide whether the Act applies: employment includes engagement under a contract for services; an employment agency is the business of providing services, whether by information or otherwise, for finding persons employment with employers or supplying employers with persons; an employment business is the business of participating in employment arrangements. Subsection (4) excludes publishing and advertising display, and subsection (7) lists the bodies the Act does not apply to.",
     "title": "Employment Agencies Act 1973 section 13 - Interpretation"
@@ -1759,6 +1793,57 @@
     "source_uri": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/employment/recruitment-and-selection/pre-employment-vetting-of-candidates/",
     "summary": "Settles that criminal records vetting is only justified where the role carries an identified risk such as work with children, must be proportionate with no less intrusive alternative, and must never be applied routinely; this supports an opt-in under-18 gate rather than a platform-wide check. The ICO names DBS, AccessNI and Disclosure Scotland as the only routes for conviction data, requires a DPIA, forbids forcing a practitioner to make a subject access request to the DBS, and requires a lawful basis plus a Schedule 1 condition. Vetting material must be destroyed as soon as reasonably practicable, keeping only a record of the outcome and decision, which supports storing a verification result rather than a certificate image. Still draft guidance at the time of curation.",
     "title": "Pre-employment vetting of candidates"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "medical-devices",
+      "software",
+      "health-claims"
+    ],
+    "enforcement_status": "in_force",
+    "id": "mdr-2002-reg-002",
+    "jurisdiction": "uk",
+    "path": "statute/uk/mdr-2002/regulation-002.md",
+    "revision_id": "Thu, 03 Sep 2026 16:52:26 GMT",
+    "sha": "e930d18e930df9f6eeb80861a709b1a1720277c410d70feebab51220d2e0e6f3",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2002/618/regulation/2/data.xht",
+    "summary": "The medical devices interpretation provision, carried as separately labelled Great Britain and Northern Ireland versions. The Great Britain definition of 'medical device' turns on the purpose the manufacturer intends: an instrument, apparatus, appliance, software or other article intended for diagnosis, prevention, monitoring, treatment or alleviation of disease, among other medical purposes. The first stop for whether a software feature, such as a patient-specific suggestion, gives a product a medical purpose.",
+    "title": "Medical Devices Regulations 2002 regulation 2 - Interpretation"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "medical-devices",
+      "software",
+      "mental-health"
+    ],
+    "enforcement_status": "guidance",
+    "id": "mhra-dmht-qualification-classification",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/mhra/digital-mental-health-technology-qualification.md",
+    "revision_id": "Version 1.3, 29 Jul 2026",
+    "sha": "26ab8f6451e5c5861a9fc9a4f197538a7dec10736e91cf18f4db4c2f73b05d7d",
+    "source_uri": "https://www.gov.uk/government/publications/digital-mental-health-technology-qualification-and-classification",
+    "summary": "MHRA guidance for mental health software. A product has a medical purpose when it performs a clinical task, such as recommending therapeutic options, and targets conditions or symptoms at a diagnosable or clinically relevant level; healthcare administration support alone has none. A product with a medical purpose is software as a medical device when its functionality is high, which includes personalised output and AI processing. The first stop for whether a conversational feature that suggests therapy to one person has a medical purpose.",
+    "title": "MHRA: Digital mental health technology qualification and classification"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "medical-devices",
+      "software",
+      "mental-health"
+    ],
+    "enforcement_status": "guidance",
+    "id": "mhra-standalone-software-apps",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/mhra/medical-device-standalone-software-apps.md",
+    "revision_id": "v1.10f, 1 Jul 2023",
+    "sha": "61c9880607e1548f0d91227c42c59d66938ea73b4dba0c228bc9654b1502f537",
+    "source_uri": "https://www.gov.uk/government/publications/medical-devices-software-applications-apps",
+    "summary": "MHRA guidance on when stand-alone software and apps qualify as medical devices in Great Britain. Qualification follows the intended purpose read objectively from labelling, instructions and promotional material, and a general 'not a medical device' disclaimer does not cure a medical claim made elsewhere. Decision support is unlikely to be a device where options are explained but a professional decides, or where it offers only lifestyle choices or referral advice; it is likely to be one where it influences the actual treatment. Treatment recommendations for listed conditions may be a device; reference information and signposting are unlikely to be.",
+    "title": "MHRA: Medical device stand-alone software including apps"
   },
   {
     "authority": "statute",
@@ -2429,8 +2514,8 @@
     "id": "police-act-1997-s-113a",
     "jurisdiction": "uk",
     "path": "statute/uk/police-act-1997/section-113a.md",
-    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
-    "sha": "0e109bdad857acc4121c27485bf594bb47e9c5ed37e8d8afab6c2f7ce694617a",
+    "revision_id": "Thu, 03 Sep 2026 16:52:26 GMT",
+    "sha": "c46b89774d1854964818dd74eb59360bde5ec0eef81e5f09453434319d02efc2",
     "source_uri": "https://www.legislation.gov.uk/ukpga/1997/50/section/113A/data.xht",
     "summary": "The standard criminal record certificate: the DBS must issue one on an application countersigned by a registered person who states the certificate is required for the purposes of an exempted question, and the certificate gives prescribed details of every relevant matter on central records or states there is none. Establishes what a certificate is and that the Rehabilitation of Offenders Act 1974 exempted question is the gateway to it. Note: legislation.gov.uk serves the England and Wales and Northern Ireland extent versions on one page; Part V is repealed for Scotland from 1 April 2025.",
     "title": "Police Act 1997 section 113A - Criminal record certificates"
@@ -2447,8 +2532,8 @@
     "id": "police-act-1997-s-113b",
     "jurisdiction": "uk",
     "path": "statute/uk/police-act-1997/section-113b.md",
-    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
-    "sha": "a862a5e36eae74a398a74e9e03a22573c56d19dd481b6f831d62ef3cacfbb68c",
+    "revision_id": "Thu, 03 Sep 2026 16:52:26 GMT",
+    "sha": "c1428eb04ab2fff0880116f7d7a47d65301d74b439da2736f9b32aa10e0405d7",
     "source_uri": "https://www.legislation.gov.uk/ukpga/1997/50/section/113B/data.xht",
     "summary": "The enhanced criminal record certificate: issued on an application countersigned by a registered person who states it is required for the purposes of an exempted question asked for a prescribed purpose, carrying central-record matters plus any information a chief officer reasonably believes relevant and ought to be included. Subsection (2)(b)'s prescribed purposes, set by regulation 5A of the 2002 Regulations, decide whether a practitioner's work with children is eligible for the check ViaCara asks for, and section 116A(11) borrows the same test for who may receive Update Service information.",
     "title": "Police Act 1997 section 113B - Enhanced criminal record certificates"

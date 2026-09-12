@@ -3,6 +3,30 @@
 Drift log. Newer entries first.
 
 ## 2026-09-12
+- **corpus/statute/uk/police-act-1997/section-113b.md** hash a862a5e -> c1428eb
+  - source: https://www.legislation.gov.uk/ukpga/1997/50/section/113B/data.xht
+  - prior_sha256: a862a5e36eae74a398a74e9e03a22573c56d19dd481b6f831d62ef3cacfbb68c
+  - new_sha256:   c1428eb04ab2fff0880116f7d7a47d65301d74b439da2736f9b32aa10e0405d7
+  - revision: Thu, 03 Sep 2026 16:52:26 GMT
+
+- **corpus/statute/uk/police-act-1997/section-113a.md** hash 0e109bd -> c46b897
+  - source: https://www.legislation.gov.uk/ukpga/1997/50/section/113A/data.xht
+  - prior_sha256: 0e109bdad857acc4121c27485bf594bb47e9c5ed37e8d8afab6c2f7ce694617a
+  - new_sha256:   c46b89774d1854964818dd74eb59360bde5ec0eef81e5f09453434319d02efc2
+  - revision: Thu, 03 Sep 2026 16:52:26 GMT
+
+- **corpus/statute/uk/eaa-1973/section-013.md** hash 45238c9 -> eae9dac
+  - source: https://www.legislation.gov.uk/ukpga/1973/35/section/13/data.xht
+  - prior_sha256: 45238c931f085b1b98a797db60f5c9e6ce1ab9d526ebfae77b8216a9e98e9696
+  - new_sha256:   eae9dac7a557e9f91bd9165436f6288e5bb83e8977b68aeece9ee6cf701bab31
+  - revision: Thu, 03 Sep 2026 16:52:26 GMT
+
+- **corpus/statute/uk/mdr-2002/regulation-002.md** hash fb3b5e4 -> e930d18
+  - source: https://www.legislation.gov.uk/uksi/2002/618/regulation/2/data.xht
+  - prior_sha256: fb3b5e47620b876f0ead3fb322a91927f3d05e54f99e7e35d034836ee3b46440
+  - new_sha256:   e930d18e930df9f6eeb80861a709b1a1720277c410d70feebab51220d2e0e6f3
+  - revision: Thu, 03 Sep 2026 16:52:26 GMT
+
 - **corpus/guidance/uk/cap/code-section-12-medicines-health-related-products.md** adds rule 12.12 and the opening of rule 12.20; human review remains pending.
 
 - **corpus/statute/uk/serious-crime-2007/section-044.md** new file
@@ -24,6 +48,18 @@ Drift log. Newer entries first.
   - revision: Thu, 03 Sep 2026 16:52:26 GMT
 
 ## 2026-09-11
+- **corpus/statute/uk/dmcc-2024/section-247.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2024/13/section/247/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   3cac0c4f3287e85281d0240136835f296e829f778e449fefe382223bb4785857
+  - revision: Thu, 03 Sep 2026 16:52:26 GMT
+
+- **corpus/statute/uk/mdr-2002/regulation-002.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2002/618/regulation/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   fb3b5e47620b876f0ead3fb322a91927f3d05e54f99e7e35d034836ee3b46440
+  - revision: Thu, 03 Sep 2026 16:52:26 GMT
+
 - **corpus/statute/uk/rao-2001/article-039e.md** new file
   - source: https://www.legislation.gov.uk/uksi/2001/544/article/39E/data.xht
   - prior_sha256: (new file)

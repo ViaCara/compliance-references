@@ -18,6 +18,9 @@ Class names used in selection (from the legislation.gov.uk DOM):
 - `LegChangeDelimiter`, `LegAddition`, `LegRepealed`, `LegCommentaryLink`:
   amendment annotations. We strip delimiters and commentary links, keep
   additions inline.
+- `LegConcurrent`, a heading's extent badge when a provision has one version
+  per territorial extent. With two or more versions, each is labelled
+  `**Extent:**` so the versions do not read as duplicates.
 - `LegSP1Container` etc., the `LegSP`-prefixed twin of `LegP1Container` etc.
   Some schedules (e.g. Equality Act 2010 Sch. 2) typeset their numbered
   paragraphs under `LegSP*` rather than `LegP*`; treated identically at
@@ -207,8 +210,12 @@ class LegislationTransformer:
         emitted_any = False
         contained = self._contained_elements(root)
         list_numbers = self._list_item_numbers(root)
+        extents = self._concurrent_extents(root)
         for element in root.iter():
             cls = _classes(element)
+            if len(extents) > 1 and id(element) in extents:
+                yield f"**Extent:** {extents[id(element)]}"
+                continue
             container_level = next(
                 (lvl for lvl in self._LEVELS if _is_container(cls, lvl)), None
             )
@@ -266,6 +273,31 @@ class LegislationTransformer:
             if "LegSnippet" in _classes(element):
                 return element
         return root
+
+    def _concurrent_extents(self, root: ET.Element) -> dict[int, str]:
+        """Map each provision heading that opens a concurrent version to its
+        territorial extent. legislation.gov.uk serves every extent's version
+        of a provision back to back in one snippet, each under its own
+        heading whose `LegConcurrent` span names the extent."""
+        extents: dict[int, str] = {}
+        for element in root.iter():
+            if not _classes(element) & {"LegP1GroupTitleFirst", "LegP1GroupTitle"}:
+                continue
+            restriction = next(
+                (
+                    child
+                    for concurrent in element.iter()
+                    if "LegConcurrent" in _classes(concurrent)
+                    for child in concurrent.iter()
+                    if "LegExtentRestriction" in _classes(child)
+                ),
+                None,
+            )
+            if restriction is None:
+                continue
+            title = (restriction.get("title") or "").removeprefix("Applies to ").strip()
+            extents[id(element)] = title or " ".join("".join(restriction.itertext()).split())
+        return extents
 
     def _contained_elements(self, root: ET.Element) -> set[int]:
         """Ids of every element inside a LegP*Container. Closing words sit in a
