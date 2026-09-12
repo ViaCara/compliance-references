@@ -6,8 +6,8 @@ kind: curated_quotes
 citation: CAP Code s.12 Medicines, medical devices, health-related products and beauty products
 source_uri: "https://www.asa.org.uk/type/non_broadcast/code_section/12.html"
 source_format: html
-revision_id: live page, additions retrieved 2026-09-12; human review pending
-content_sha256: 920bdfbefc70468114b7d981a3c9fd0939d8579db7e155566a08cef52cbcf189
+revision_id: live page, additions retrieved and approved 2026-09-12
+content_sha256: 1241e85cacc7a1231a3a8064b3ad363314616fe69053a8d301db88c47573e9c6
 last_fetched: 2026-09-12
 language: en-GB
 enforcement_status: in_force
@@ -55,8 +55,10 @@ prescription-only advertising restriction. Rule 12.12 supplies that rule.
 Consult the full rule at the source URI for its remaining conditions.
 
 The two additions above were checked against the source by Codex on
-2026-09-12. Human review and merge remain pending. The earlier Kyle review
-covers only the original quotes.
+2026-09-12. Kyle approved these additions on the same date. The
+[approval record](https://github.com/ViaCara/compliance-references/pull/26#issuecomment-5644910371)
+covers these additions only. The earlier Kyle review covers only the
+original quotes.
 
 ## Provenance
 
