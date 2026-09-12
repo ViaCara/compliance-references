@@ -2,6 +2,27 @@
 
 Drift log. Newer entries first.
 
+## 2026-09-12
+- **corpus/guidance/uk/cap/code-section-12-medicines-health-related-products.md** adds rule 12.12 and the opening of rule 12.20; human review remains pending.
+
+- **corpus/statute/uk/serious-crime-2007/section-044.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2007/27/section/44/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   552839cf04c4456a8418cbf9cf66462c5983d1d52ff13ddd9fb72205d2dd2705
+  - revision: Thu, 03 Sep 2026 16:52:26 GMT
+
+- **corpus/statute/uk/misuse-drugs-regulations-2001/schedule-001.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2001/3998/schedule/1/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   7cf73beb9201c87b4e49b4d3abc842f1de3c71751238282343644d362a664f91
+  - revision: Thu, 03 Sep 2026 16:52:26 GMT
+
+- **corpus/statute/uk/misuse-drugs-1971/schedule-002.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1971/38/schedule/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   042cb7ae000c887ccccc6a3e455b000b685f30ea9cacfd9b6a3c04df1416493b
+  - revision: Thu, 03 Sep 2026 16:52:26 GMT
+
 ## 2026-09-11
 - **corpus/statute/uk/rao-2001/article-039e.md** new file
   - source: https://www.legislation.gov.uk/uksi/2001/544/article/39E/data.xht
