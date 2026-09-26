@@ -1686,6 +1686,44 @@
   {
     "authority": "guidance",
     "domain_tags": [
+      "artificial-intelligence",
+      "dpia",
+      "lawful-basis",
+      "special-category-data",
+      "inferences"
+    ],
+    "enforcement_status": "guidance",
+    "id": "ico-ai-and-data-protection",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/ico/ai-and-data-protection.md",
+    "revision_id": "28 October 2024 (lawfulness section latest update), fetched 2026-09-26",
+    "sha": "17235d1bff4c5097709381c0c25bada73e5085fceafc36fd1aec92e836abd896",
+    "source_uri": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/",
+    "summary": "Curated from 'What are the accountability and governance implications of AI?' and 'How do we ensure lawfulness in AI?'. Most AI use will need a DPIA; what an AI DPIA must describe, including human involvement and allocative and representational harms; necessity, proportionality and trade-offs; residual risk and prior consultation; controller decisions in AI supply chains; separate lawful bases for development and deployment; consent for AI; and when AI inferences are special category data.",
+    "title": "Guidance on AI and data protection"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "anonymisation",
+      "pseudonymisation",
+      "identifiability",
+      "motivated-intruder",
+      "research"
+    ],
+    "enforcement_status": "guidance",
+    "id": "ico-anonymisation",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/ico/anonymisation.md",
+    "revision_id": "DC.Date 10 October 2025, fetched 2026-09-26",
+    "sha": "c638eaef7a514ed72ad86daea7d0d77f91a962e5fb5870da6808fecdbf058404",
+    "source_uri": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-sharing/anonymisation/",
+    "summary": "Curated from 'Introduction to anonymisation', 'How do we ensure anonymisation is effective?' and 'Pseudonymisation'. Anonymisation reduces identification risk to a sufficiently remote level; identifiability is a spectrum judged by means reasonably likely to be used (Recital 26), assessed in whose hands the data sits; the motivated intruder test and its assumed capabilities and motivations; pseudonymised data stays personal data for anyone holding the additional information; DPA 2018 s.171 re-identification offences.",
+    "title": "Anonymisation"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
       "children",
       "consent"
     ],
@@ -1698,6 +1736,25 @@
     "source_uri": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/children-and-the-uk-gdpr/",
     "summary": "ICO's operative guidance on Article 8 age-of-consent mechanics, the preventive/counselling exception, the 4-part 'offering an ISS directly to a child' test, Gillick competence for services not offered directly to children, a child's own capacity to exercise data protection rights, and the 'likely to be accessed by children' test. Last updated 15 May 2026 to reflect the Data (Use and Access) Act 2025.",
     "title": "Children and the UK GDPR"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "consent",
+      "explicit-consent",
+      "special-category-data",
+      "research",
+      "withdrawal"
+    ],
+    "enforcement_status": "guidance",
+    "id": "ico-consent",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/ico/consent.md",
+    "revision_id": "DC.Date 04 August 2026, fetched 2026-09-26",
+    "sha": "9b2b97805fe885ad2add767f42228fb5957aa94aadb4d34f94d4dfda5612b76a",
+    "source_uri": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/consent/",
+    "summary": "Curated from 'What is valid consent?', 'When is consent appropriate?' and 'How should we obtain, record and manage consent?'. Covers the Article 4(11) definition, freely given (no bundling, imbalance of power), specific and informed, clear affirmative action, explicit consent in a clear statement naming the special category data, consent from people in vulnerable situations, research consent and withdrawal, the invalidity checklist, the four records that demonstrate consent, and withdrawal as easy as giving consent.",
+    "title": "Consent"
   },
   {
     "authority": "guidance",
@@ -1751,6 +1808,25 @@
     "source_uri": "https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/direct-marketing-guidance/identify-direct-marketing/",
     "summary": "The ICO's step-one test for whether a communication is direct marketing. Breaks the statutory definition into its three limbs, defines 'direct marketing purposes' (including consent-seeking messages), and sets the service-message boundary: an administrative or customer-service message is not direct marketing, but a service message carrying any promotional element becomes direct marketing even where promotion is not its main purpose. Tone, phrasing and context decide borderline cases; general branding or logos do not.",
     "title": "Direct marketing guidance: identify direct marketing"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "dpia",
+      "high-risk-processing",
+      "special-category-data",
+      "vulnerable-individuals",
+      "accountability"
+    ],
+    "enforcement_status": "guidance",
+    "id": "ico-dpia-guidance",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/ico/dpia-guidance.md",
+    "revision_id": "DC.Date 18 February 2026, fetched 2026-09-26",
+    "sha": "0b00368f81bd6ca33e4a2c4e78f7463364882ac9e0620c3ed5b4660d0ab67f35",
+    "source_uri": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/data-protection-impact-assessments-dpias/",
+    "summary": "Curated from 'What is a DPIA?', 'When do we need to do a DPIA?' and 'How do we do a DPIA?'. The Article 35(1) rule, the three Article 35(3) mandatory cases, the nine WP29 indicators (two usually trigger a DPIA), the ICO Article 35(4) list including innovative technology such as AI, vulnerable individuals, large scale (individual professionals processing client data are not large scale), exceptions, the seven-step process, and sign-off, residual risk and review.",
+    "title": "Data protection impact assessments (DPIAs)"
   },
   {
     "authority": "guidance",
@@ -1819,6 +1895,25 @@
     "source_uri": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/employment/recruitment-and-selection/pre-employment-vetting-of-candidates/",
     "summary": "Settles that criminal records vetting is only justified where the role carries an identified risk such as work with children, must be proportionate with no less intrusive alternative, and must never be applied routinely; this supports an opt-in under-18 gate rather than a platform-wide check. The ICO names DBS, AccessNI and Disclosure Scotland as the only routes for conviction data, requires a DPIA, forbids forcing a practitioner to make a subject access request to the DBS, and requires a lawful basis plus a Schedule 1 condition. Vetting material must be destroyed as soon as reasonably practicable, keeping only a record of the outcome and decision, which supports storing a verification result rather than a certificate image. Still draft guidance at the time of curation.",
     "title": "Pre-employment vetting of candidates"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "special-category-data",
+      "health-data",
+      "explicit-consent",
+      "inferences",
+      "dpia"
+    ],
+    "enforcement_status": "guidance",
+    "id": "ico-special-category-data",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/ico/special-category-data.md",
+    "revision_id": "DC.Date 09 October 2025, fetched 2026-09-26",
+    "sha": "bcc098c97eb741da46116c601aa8e137156c3c13de7addd7d6a6f70c4691c668",
+    "source_uri": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/special-category-data/",
+    "summary": "Curated from 'What is special category data?', 'What are the rules on special category data?' and 'What are the conditions for processing?'. Health data definition and scope, inferred special category data, the need for both an Article 6 basis and an Article 9 condition, the meaning of 'necessary', mandatory DPIA triggers, explicit consent, the Article 9(2)(h) health or social care condition with its confidentiality safeguard and the s.204 list of health professionals (which names child psychotherapists and arts therapists), and the Article 9(2)(j) research condition.",
+    "title": "Special category data"
   },
   {
     "authority": "statute",
@@ -3155,6 +3250,24 @@
   {
     "authority": "statute",
     "domain_tags": [
+      "purpose-limitation",
+      "further-processing",
+      "consent",
+      "research"
+    ],
+    "enforcement_status": "in_force",
+    "id": "uk-gdpr-art-008a",
+    "jurisdiction": "uk",
+    "path": "statute/uk/gdpr/article-008a.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "d01945ef0c0d0044a6c20a3f134dd346c3681d94ca98f9e6daee495b8053edb8",
+    "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/8A/data.xht",
+    "summary": "Inserted by DUAA 2025 s.71(5) (in force 19.6.2025 for specified purposes, 5.2.2026 otherwise). Sets the Article 5(1)(b) compatibility test for further processing: factors in para 2, deemed-compatible cases in para 3 (fresh specific consent, Article 84B research/archiving/statistics, compliance checks, Annex 2 conditions, Article 23(1) objectives), the narrower route where the original processing relied on consent (para 4), and the Secretary of State's affirmative-procedure power to amend Annex 2 (paras 5-8).",
+    "title": "UK GDPR Article 8A - Purpose limitation: further processing"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
       "children",
       "consent",
       "age-verification"
@@ -3198,6 +3311,24 @@
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/10/data.xht",
     "summary": "Personal data relating to criminal convictions and offences may be processed under Article 6(1) only under the control of official authority or where domestic law authorises it with appropriate safeguards; a comprehensive register of convictions may be kept only under official authority. A DBS, PVG or AccessNI result, including a clear one, is Article 10 data, so any practitioner criminal-record evidence ViaCara holds needs both an Article 6 basis and a DPA 2018 Schedule 1 Part 1, 2 or 3 condition through section 10(5).",
     "title": "UK GDPR Article 10 - Processing of personal data relating to criminal convictions and offences"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "anonymisation",
+      "pseudonymisation",
+      "data-subject-rights",
+      "data-minimisation"
+    ],
+    "enforcement_status": "in_force",
+    "id": "uk-gdpr-art-011",
+    "jurisdiction": "uk",
+    "path": "statute/uk/gdpr/article-011.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "05e309a99e47e96fb43a45cb652b8b60887a82a3a4dec12f19ffdaf39bcca9a3",
+    "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/11/data.xht",
+    "summary": "A controller whose purposes do not or no longer require identifying a data subject need not keep or acquire extra information only to comply with the Regulation. Where it can show it cannot identify the data subject, it informs them if possible, and Articles 15 to 20 do not apply unless the data subject supplies identifying information.",
+    "title": "UK GDPR Article 11 - Processing which does not require identification"
   },
   {
     "authority": "statute",
@@ -3689,6 +3820,23 @@
   },
   {
     "authority": "statute",
+    "domain_tags": [
+      "research",
+      "archiving",
+      "statistics"
+    ],
+    "enforcement_status": "in_force",
+    "id": "uk-gdpr-art-084a",
+    "jurisdiction": "uk",
+    "path": "statute/uk/gdpr/article-084a.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "79a37c52e303b81dccfb8d3b76f1a6f323e47b057e1d1e254154d1201e778866",
+    "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/84A/data.xht",
+    "summary": "Opens Chapter 8A (inserted by DUAA 2025 s.86(2), in force 19.6.2025 for specified purposes, 5.2.2026 otherwise), which replaces the omitted Article 89. Defines the RAS purposes the chapter governs.",
+    "title": "UK GDPR Article 84A - Research, archives and statistics"
+  },
+  {
+    "authority": "statute",
     "domain_tags": [],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-084b",
@@ -3699,5 +3847,58 @@
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/84B/data.xht",
     "summary": "",
     "title": "UK GDPR Article 84B - Additional requirements when processing for RAS purposes"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "research",
+      "archiving",
+      "statistics",
+      "pseudonymisation",
+      "data-minimisation"
+    ],
+    "enforcement_status": "in_force",
+    "id": "uk-gdpr-art-084c",
+    "jurisdiction": "uk",
+    "path": "statute/uk/gdpr/article-084c.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "06105602ac4ec44119362b0e3537aabcf27b7a11fc0249d2c93b3dad6b38a7fd",
+    "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/84C/data.xht",
+    "summary": "When the Article 84B(2) requirement for appropriate safeguards is met for research, archiving or statistical processing: technical and organisational measures respecting data minimisation (including pseudonymisation), no measures or decisions about particular data subjects outside approved medical research, and no substantial damage or distress. Successor to omitted Article 89(1).",
+    "title": "UK GDPR Article 84C - Appropriate safeguards"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "research",
+      "archiving",
+      "statistics"
+    ],
+    "enforcement_status": "in_force",
+    "id": "uk-gdpr-art-084d",
+    "jurisdiction": "uk",
+    "path": "statute/uk/gdpr/article-084d.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "474d4fb59438eae0fb0471b7834d90fbb9eb070700f04c80c82442c4b809fab6",
+    "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/84D/data.xht",
+    "summary": "Secretary of State power to make regulations adding to, varying or omitting the Article 84C safeguards for research, archiving or statistical processing.",
+    "title": "UK GDPR Article 84D - Appropriate safeguards: further provision"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "research",
+      "archiving",
+      "statistics"
+    ],
+    "enforcement_status": "repealed",
+    "id": "uk-gdpr-art-089",
+    "jurisdiction": "uk",
+    "path": "statute/uk/gdpr/article-089.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "65e262333b37024a505eb5534c80a073d523566dac63d6f8eb81cc7c86a98b7b",
+    "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/89/data.xht",
+    "summary": "Omitted on 5.2.2026 by DUAA 2025 s.86(4) (S.I. 2026/82 reg. 2(n)). The safeguards now sit in Chapter 8A, Articles 84A to 84D; cite those for current law. Kept so that citations of Article 89(1) in older guidance resolve to a record of the omission.",
+    "title": "UK GDPR Article 89 - Safeguards and derogations relating to processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes"
   }
 ]

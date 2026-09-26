@@ -3,6 +3,44 @@
 Drift log. Newer entries first.
 
 ## 2026-09-26
+- **corpus/guidance/uk/ico/** adds curated quotes for consent.md, anonymisation.md, special-category-data.md, ai-and-data-protection.md and dpia-guidance.md, fetched 2026-09-26; human review remains pending.
+
+- **corpus/statute/uk/gdpr/article-089.md** new file
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/89/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   65e262333b37024a505eb5534c80a073d523566dac63d6f8eb81cc7c86a98b7b
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/gdpr/article-084d.md** new file
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/84D/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   474d4fb59438eae0fb0471b7834d90fbb9eb070700f04c80c82442c4b809fab6
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/gdpr/article-084c.md** new file
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/84C/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   06105602ac4ec44119362b0e3537aabcf27b7a11fc0249d2c93b3dad6b38a7fd
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/gdpr/article-084a.md** new file
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/84A/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   79a37c52e303b81dccfb8d3b76f1a6f323e47b057e1d1e254154d1201e778866
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/gdpr/article-011.md** new file
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/11/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   05e309a99e47e96fb43a45cb652b8b60887a82a3a4dec12f19ffdaf39bcca9a3
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/gdpr/article-008a.md** new file
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/8A/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   d01945ef0c0d0044a6c20a3f134dd346c3681d94ca98f9e6daee495b8053edb8
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
 - **corpus/statute/eu/gdpr/article-077.md** new file
   - source: https://eur-lex.europa.eu/eli/reg/2016/679/art_77/oj/eng
   - prior_sha256: (new file)
