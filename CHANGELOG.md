@@ -2,6 +2,17 @@
 
 Drift log. Newer entries first.
 
+## 2026-09-26
+- **corpus/statute/eu/gdpr/article-077.md** new file
+  - source: https://eur-lex.europa.eu/eli/reg/2016/679/art_77/oj/eng
+  - prior_sha256: (new file)
+  - new_sha256:   bb7ac245b057a2b4f8059d900397c98e0d96c5740bbeb3eb517d9848827ee5a0
+
+- **corpus/statute/eu/gdpr/article-003.md** new file
+  - source: https://eur-lex.europa.eu/eli/reg/2016/679/art_3/oj/eng
+  - prior_sha256: (new file)
+  - new_sha256:   732d6b462b14389f9a448982c0fbaaaa5fb314b65d698109b5638f84065cf817
+
 ## 2026-09-12
 - **corpus/statute/uk/police-act-1997/section-113b.md** hash a862a5e -> c1428eb
   - source: https://www.legislation.gov.uk/ukpga/1997/50/section/113B/data.xht
