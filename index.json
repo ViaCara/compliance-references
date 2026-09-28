@@ -91,16 +91,17 @@
     "domain_tags": [
       "advertising",
       "health-claims",
-      "marketing"
+      "marketing",
+      "trust-mark"
     ],
     "enforcement_status": "in_force",
     "id": "cap-code-section-03-misleading-advertising",
     "jurisdiction": "uk",
     "path": "guidance/uk/cap/code-section-03-misleading-advertising.md",
-    "revision_id": "live page, retrieved 2026-09-04",
-    "sha": "e012d306c50faa683353d5b5a4b07c3c7303d429ed11a53b35d6828f00f2b1a3",
+    "revision_id": "live page, retrieved 2026-09-28",
+    "sha": "4bc5d056f6530fd62c88f8b95b7578ddd68791c317cb6dfe1d06aa73c978e073",
     "source_uri": "https://www.asa.org.uk/type/non_broadcast/code_section/03.html",
-    "summary": "CAP Code section 3 general rules against materially misleading marketing communications, omission of material information, the substantiation duty, qualification of claims, and prohibition on exaggerating a product's capability or performance.",
+    "summary": "CAP Code section 3 general rules against materially misleading marketing communications, omission of material information, the substantiation duty, qualification of claims and exaggeration, plus the endorsements and testimonials rules: no trust mark, quality mark or equivalent without authorisation and no false claim of approval, endorsement or authorisation by a public or private body (rule 3.52), no false code-of-conduct claims (3.53) and the asterisk that marks a rule as a practice unfair in all circumstances.",
     "title": "CAP Code Section 3: Misleading advertising"
   },
   {
@@ -119,6 +120,194 @@
     "source_uri": "https://www.asa.org.uk/type/non_broadcast/code_section/12.html",
     "summary": "CAP Code section 12 rules requiring objective health claims to be backed by evidence, barring discouragement of essential medically-supervised treatment, and prohibiting false claims to prevent or treat disease, plus the section's definition of disease, the rule 12.12 prescription-only advertising restriction and the homeopathic scope of rule 12.20.",
     "title": "CAP Code Section 12: Medicines, medical devices, health-related products and beauty products"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "charity",
+      "fundraising",
+      "commercial-participator"
+    ],
+    "enforcement_status": "in_force",
+    "id": "charities-act-1992-s-058",
+    "jurisdiction": "uk",
+    "path": "statute/uk/charities-act-1992/section-058.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "cfcc89401efd5343d4c256cf1eecfbd06cf6dd38874ac2341a8a437643e7511f",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1992/41/section/58/data.xht",
+    "summary": "Defines commercial participator and professional fundraiser. A business becomes a commercial participator when, in a promotional venture, it represents that charitable contributions will be given to or applied for a charitable institution.",
+    "title": "Charities Act 1992 section 58 - Interpretation of Part II"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "charity",
+      "fundraising",
+      "commercial-participator"
+    ],
+    "enforcement_status": "in_force",
+    "id": "charities-act-1992-s-059",
+    "jurisdiction": "uk",
+    "path": "statute/uk/charities-act-1992/section-059.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "560035c2390503db4549c5453d78b9f2fd6fae92ff7ca7e667f974a7d3c00e01",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1992/41/section/59/data.xht",
+    "summary": "A commercial participator must not represent that charitable contributions will go to a charitable institution unless it acts under an agreement with the institution that meets the prescribed requirements.",
+    "title": "Charities Act 1992 section 59 - Prohibition on professional fund-raiser etc. raising funds for charitable institutions without an agreement in prescribed form"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "charity",
+      "fundraising",
+      "commercial-participator"
+    ],
+    "enforcement_status": "in_force",
+    "id": "charities-act-1992-s-060",
+    "jurisdiction": "uk",
+    "path": "statute/uk/charities-act-1992/section-060.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "3f2e40a87340f020513f3caba28a0893b352cd5d35b32e3f9be98c6b68e621ea",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1992/41/section/60/data.xht",
+    "summary": "The statement a professional fundraiser or commercial participator must give with a representation: the institutions that benefit and the notifiable amount of what they will receive.",
+    "title": "Charities Act 1992 section 60 - Professional fund-raisers etc. required to indicate institutions benefiting and arrangements for remuneration"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "charity",
+      "public-benefit"
+    ],
+    "enforcement_status": "in_force",
+    "id": "charities-act-2011-s-002",
+    "jurisdiction": "uk",
+    "path": "statute/uk/charities-act-2011/section-002.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "19a7ebd59bc0dcca9d1cf10f0fc9600e8d4a1547f84768e3263046b6e5006130",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2011/25/section/2/data.xht",
+    "summary": "A charitable purpose must fall within a description in section 3(1) and be for the public benefit. England and Wales only.",
+    "title": "Charities Act 2011 section 2 - Meaning of charitable purpose"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "charity",
+      "public-benefit"
+    ],
+    "enforcement_status": "in_force",
+    "id": "charities-act-2011-s-003",
+    "jurisdiction": "uk",
+    "path": "statute/uk/charities-act-2011/section-003.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "4562f1b05fe55f4f3cf4f515d38d58401dcf95de3e9b46f2cc9d26f9d8d2756f",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2011/25/section/3/data.xht",
+    "summary": "The descriptions of charitable purposes, including the advancement of health (which includes the relief of human suffering) and the relief of those in need because of ill-health, financial hardship or other disadvantage.",
+    "title": "Charities Act 2011 section 3 - Descriptions of purposes"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "charity",
+      "public-benefit"
+    ],
+    "enforcement_status": "in_force",
+    "id": "charities-act-2011-s-004",
+    "jurisdiction": "uk",
+    "path": "statute/uk/charities-act-2011/section-004.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "56fdf6f7f033527a5a947ff1b891c0581a72678f4a2cc5b2189be8520a8c960e",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2011/25/section/4/data.xht",
+    "summary": "No purpose is presumed to be for the public benefit; public benefit has the meaning given by the law of charities in England and Wales.",
+    "title": "Charities Act 2011 section 4 - The public benefit requirement"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "charity",
+      "public-benefit",
+      "trustee-duties"
+    ],
+    "enforcement_status": "in_force",
+    "id": "charities-act-2011-s-017",
+    "jurisdiction": "uk",
+    "path": "statute/uk/charities-act-2011/section-017.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "b09c30dcb45d84d1d1bde0ad3985c60a35474426bea3eee3c229f95d55848a41",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2011/25/section/17/data.xht",
+    "summary": "The Charity Commission publishes public benefit guidance, and charity trustees must have regard to it when exercising any power or duty to which it is relevant. Gives PB1 and PB2 their weight.",
+    "title": "Charities Act 2011 section 17 - Guidance as to operation of public benefit requirement"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "charity",
+      "fundraising",
+      "commercial-participator",
+      "professional-fundraiser"
+    ],
+    "enforcement_status": "guidance",
+    "id": "charity-commission-cc20",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/charity-commission/cc20-charities-and-fundraising.md",
+    "revision_id": "Updated 3 February 2026, fetched 2026-09-28",
+    "sha": "6c3072affdcb0ffa8a40bbe2b8773cc9c1cd64aacb8365618ce6c7a24d5e0a1a",
+    "source_uri": "https://www.gov.uk/government/publications/charities-and-fundraising-cc20/charities-and-fundraising",
+    "summary": "Trustee duties when a charity fundraises. Covers the professional fundraiser and commercial participator definitions, checking how much the charity gets compared with the amount generated overall, the mandatory written agreement before fundraising begins, solicitation statements and fundraising by trustees or connected people.",
+    "title": "Charity fundraising: a guide to trustee duties (CC20)"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "charity",
+      "trustee-duties",
+      "conflicts-of-interest",
+      "public-benefit"
+    ],
+    "enforcement_status": "guidance",
+    "id": "charity-commission-cc3",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/charity-commission/cc3-essential-trustee.md",
+    "revision_id": "Updated 16 September 2026, fetched 2026-09-28",
+    "sha": "b881388680a4608004a3edc3a285d8507b022892abbe8fc6a75e54109b4546f5",
+    "source_uri": "https://www.gov.uk/government/publications/the-essential-trustee-what-you-need-to-know-cc3/the-essential-trustee-what-you-need-to-know-what-you-need-to-do",
+    "summary": "The main legal duties of charity trustees. Covers carrying out the charity's purposes for the public benefit, the risk of personal reimbursement for spending on the wrong purposes, balanced and informed best-interests decisions, trustee benefit and conflicts of interest, income generation and personal liability.",
+    "title": "The essential trustee: what you need to know, what you need to do (CC3)"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "charity",
+      "public-benefit",
+      "private-benefit"
+    ],
+    "enforcement_status": "guidance",
+    "id": "charity-commission-pb1",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/charity-commission/pb1-public-benefit-requirement.md",
+    "revision_id": "Published 16 September 2013, fetched 2026-09-28",
+    "sha": "6d62f07c5e5da9ef8220614cf37fc7f0dbe6353922b453557d85b4be6e699de4",
+    "source_uri": "https://www.gov.uk/government/publications/public-benefit-the-public-benefit-requirement-pb1/public-benefit-the-public-benefit-requirement",
+    "summary": "The Charities Act public benefit requirement and its benefit and public aspects. Covers the bar on purposes that exclude the poor, the rule against named beneficiaries and the rule that personal or private benefit to an individual or organisation must be incidental to the purpose.",
+    "title": "Public benefit: the public benefit requirement (PB1)"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "charity",
+      "public-benefit",
+      "trustee-duties",
+      "charging",
+      "private-benefit"
+    ],
+    "enforcement_status": "guidance",
+    "id": "charity-commission-pb2",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/charity-commission/pb2-running-a-charity.md",
+    "revision_id": "Published 16 September 2013, fetched 2026-09-28",
+    "sha": "6e8ab2edafe8de094d0fab026311e5b00216d89b49b11490c69037cf8e6fab50",
+    "source_uri": "https://www.gov.uk/government/publications/public-benefit-running-a-charity-pb2/public-benefit-running-a-charity",
+    "summary": "The trustees' duty to carry out their charity's purposes for the public benefit when running it. Covers the range of proper decisions, charging for services without excluding the poor, provision for the poor that is more than minimal or token and keeping personal benefit incidental.",
+    "title": "Public benefit: running a charity (PB2)"
   },
   {
     "authority": "statute",
@@ -214,6 +403,40 @@
     "source_uri": "https://www.gov.uk/government/publications/fake-reviews",
     "summary": "",
     "title": "CMA208 - Fake reviews: guidance on the prohibition under paragraph 13 of Schedule 20 to the DMCC Act 2024"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "advertising",
+      "marketing",
+      "trust-mark"
+    ],
+    "enforcement_status": "guidance",
+    "id": "cma-unfair-commercial-practices-cma207",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/cma/unfair-commercial-practices-cma207.md",
+    "revision_id": "18 November 2025",
+    "sha": "cbd0ee6847e0240fa7a1982fa48ec7e3e64684bd9491e84cb5e0057f392e556d",
+    "source_uri": "https://www.gov.uk/government/publications/unfair-commercial-practices-cma207/unfair-commercial-practices",
+    "summary": "CMA guidance on the unfair commercial practices provisions of the DMCC Act 2024. The Schedule 20 practices are unfair in all circumstances with no need to show an effect on consumers, including displaying a trust mark, quality mark or equivalent without authorisation (banned practice 3) and falsely claiming approval, endorsement or authorisation by a public or private body (banned practice 4). Also covers the section 226 misleading actions on sponsorship, approval, affiliations or connections and on confusion with another trader's name or mark.",
+    "title": "CMA207 - Unfair commercial practices: guidance on the unfair commercial practices provisions of the DMCC Act 2024"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "employment-agency",
+      "fees",
+      "client-money"
+    ],
+    "enforcement_status": "in_force",
+    "id": "conduct-regs-2003-reg-025",
+    "jurisdiction": "uk",
+    "path": "statute/uk/conduct-regs-2003/regulation-025.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "f0cf591e17132bc5be29c87d0d87793230e5b2e5c8ee599f39e416b8795f61c5",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2003/3319/regulation/25/data.xht",
+    "summary": "An employment agency must not receive money on a work-seeker's behalf unless the money is remuneration in a Schedule 3 occupation and the agency keeps a client account under Schedule 2. Money from a hirer or a person connected with a hirer counts as received on the work-seeker's behalf.",
+    "title": "Conduct of Employment Agencies and Employment Businesses Regulations 2003 regulation 25 - Client accounts"
   },
   {
     "authority": "statute",
@@ -798,6 +1021,22 @@
   {
     "authority": "statute",
     "domain_tags": [
+      "data-sharing",
+      "controller-roles"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-s-121",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/section-121.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "a76c9819403cda9d822f2309217a03bbf1d124db5e0d8d3f8cd6f71f659df46a",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/section/121/data.xht",
+    "summary": "The Commissioner must prepare a code of practice on the sharing of personal data. The statutory footing of the ICO data sharing code.",
+    "title": "DPA 2018 section 121 - Data-sharing code"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
       "direct-marketing",
       "accountability"
     ],
@@ -842,6 +1081,22 @@
     "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/section/127/data.xht",
     "summary": "Sets the legal effect of ICO codes made under ss.121-124 (including the s.123 Children's Code): breach is not directly actionable, but a code is admissible in evidence and a court/tribunal/the ICO must take a relevant in-force provision into account. The enforcement teeth behind the Children's Code.",
     "title": "DPA 2018 section 127 - Effect of codes issued under section 125(4)"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "special-category",
+      "health-professional"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-s-204",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/section-204.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "17e2e8a2daa6eca327658a3b2bc363a6328342bb863dfe7c9e93a6aeb0c03bbe",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/section/204/data.xht",
+    "summary": "The closed list of health professionals and social work professionals for the DPA 2018, which section 11(1)(a) relies on for the Article 9(3) safeguard. Counsellors and psychotherapists registered only with BACP, NCPS or UKCP are not on it.",
+    "title": "DPA 2018 section 204 - Meaning of health professional and social work professional"
   },
   {
     "authority": "statute",
@@ -1284,17 +1539,35 @@
     "domain_tags": [
       "processor-contract",
       "special-category",
-      "cross-border-transfer"
+      "cross-border-transfer",
+      "joint-controller"
     ],
     "enforcement_status": "guidance",
     "id": "edpb-guidelines-07-2020",
     "jurisdiction": "eu",
     "path": "guidance/eu/edpb/guidelines-07-2020-controller-processor.md",
     "revision_id": "Version 2.1, 20 September 2022",
-    "sha": "0d7c59e678525cc41fb6173d5286941d7f9e5e649d76ac2fcd860f98c6335a86",
+    "sha": "91493daa56aac79c7c4c79ffb1ff0e8e196be0e31edc74bb5138ed01822308d6",
     "source_uri": "https://www.edpb.europa.eu/system/files/2023-10/EDPB_guidelines_202007_controllerprocessor_final_en.pdf",
-    "summary": "How specific an Article 28(3) contract must be about the type of personal data and the categories of data subject, and the documented instructions boundary at which a processor becomes a controller. EU guidance, persuasive only in the United Kingdom.",
+    "summary": "How to tell a controller, a joint controller and a processor apart: joint participation through common or converging decisions, no joint control for transmission between separate controllers or a shared database where each entity sets its own purposes, the two conditions for a processor (a separate entity processing on the controller's behalf, never for its own purposes) and staff under the controller's direct authority are not processors. Also how specific an Article 28(3) contract must be and the documented instructions boundary at which a processor becomes a controller. EU guidance, persuasive only in the United Kingdom.",
     "title": "EDPB Guidelines 07/2020 on the concepts of controller and processor in the GDPR"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "payment-services",
+      "financial-perimeter",
+      "electronic-money"
+    ],
+    "enforcement_status": "in_force",
+    "id": "emr-2011-reg-002",
+    "jurisdiction": "uk",
+    "path": "statute/uk/emr-2011/regulation-002.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "c49bc4bb17d3df719453e9b5a6844c6acb0a71ef7fc9afe1ddc87c5a83a66862",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2011/99/regulation/2/data.xht",
+    "summary": "Definitions for the Electronic Money Regulations 2011. Electronic money must be accepted by a person other than its issuer, so a prepaid credit that only the issuing platform accepts is not electronic money.",
+    "title": "Electronic Money Regulations 2011 regulation 2 - Interpretation"
   },
   {
     "authority": "statute",
@@ -1495,6 +1768,25 @@
     "title": "Family Law Reform Act 1969 section 8 - Consent by persons over 16 to surgical, medical and dental treatment"
   },
   {
+    "authority": "guidance",
+    "domain_tags": [
+      "payment-services",
+      "commercial-agent",
+      "limited-network",
+      "charitable-donations",
+      "financial-perimeter"
+    ],
+    "enforcement_status": "guidance",
+    "id": "fca-perg-15-5",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/fca/perg-15-5-payment-services-scope.md",
+    "revision_id": "last updated 30/11/2021, fetched 2026-09-28",
+    "sha": "1ccdb673eb6448be5d3ad75ce9b0cf5e4d7693c50bf4a925502e5448dbd01934",
+    "source_uri": "https://www.handbook.fca.org.uk/handbook/PERG/15/5.html",
+    "summary": "FCA perimeter guidance on activities excluded from the Payment Services Regulations 2017. Covers platforms that collect and remit funds, the commercial agent exclusion and the authority it needs, escrow, online fundraising platforms passing on charitable donations and the limited network exclusion, including why online marketplaces are unlikely to qualify.",
+    "title": "PERG 15.5 Negative scope/exclusions"
+  },
+  {
     "authority": "statute",
     "domain_tags": [],
     "enforcement_status": "in_force",
@@ -1653,6 +1945,92 @@
   {
     "authority": "guidance",
     "domain_tags": [
+      "channel-islands",
+      "guernsey",
+      "territorial-scope"
+    ],
+    "enforcement_status": "in_force",
+    "id": "guernsey-dpl-2017-s-002",
+    "jurisdiction": "guernsey",
+    "path": "statute/guernsey/dpl-2017/section-002.md",
+    "revision_id": "consolidated text as at 2026-09-18",
+    "sha": "d98e0b6813ae59e70adfe3072a6954df9946c022e516976014fded95e7ca8be5",
+    "source_uri": "https://gov.gg/CHttpHandler.ashx?id=110559&p=0",
+    "summary": "",
+    "title": "Data Protection (Bailiwick of Guernsey) Law, 2017 section 2 - Application (Condition B, territorial scope)"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "channel-islands",
+      "guernsey",
+      "direct-marketing"
+    ],
+    "enforcement_status": "in_force",
+    "id": "guernsey-dpl-2017-s-017",
+    "jurisdiction": "guernsey",
+    "path": "statute/guernsey/dpl-2017/section-017.md",
+    "revision_id": "consolidated text as at 2026-09-18",
+    "sha": "5b71e614e2ca17ac65342043c02be9b27d3b41c5047036b40eb55ec48a08e4cd",
+    "source_uri": "https://gov.gg/CHttpHandler.ashx?id=110559&p=0",
+    "summary": "",
+    "title": "Data Protection (Bailiwick of Guernsey) Law, 2017 section 17 - Right to object to processing for direct marketing purposes"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "channel-islands",
+      "guernsey",
+      "registration"
+    ],
+    "enforcement_status": "in_force",
+    "id": "guernsey-dpl-2017-s-039",
+    "jurisdiction": "guernsey",
+    "path": "statute/guernsey/dpl-2017/section-039.md",
+    "revision_id": "consolidated text as at 2026-09-18",
+    "sha": "9183931804e5e0c90c2b3759392ea2cef6bae2b1df2aef8d824d2a0eb21bf396",
+    "source_uri": "https://gov.gg/CHttpHandler.ashx?id=110559&p=0",
+    "summary": "",
+    "title": "Data Protection (Bailiwick of Guernsey) Law, 2017 section 39 - Controllers and processors to be registered"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "channel-islands",
+      "guernsey",
+      "dpo"
+    ],
+    "enforcement_status": "in_force",
+    "id": "guernsey-dpl-2017-s-047",
+    "jurisdiction": "guernsey",
+    "path": "statute/guernsey/dpl-2017/section-047.md",
+    "revision_id": "consolidated text as at 2026-09-18",
+    "sha": "9502fc2bdff1987445da7375a9a4265385be8d13403f7eaf19fd642ecca4ae38",
+    "source_uri": "https://gov.gg/CHttpHandler.ashx?id=110559&p=0",
+    "summary": "",
+    "title": "Data Protection (Bailiwick of Guernsey) Law, 2017 section 47 - Mandatory designation of a data protection officer"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "channel-islands",
+      "guernsey",
+      "special-category",
+      "mental-health"
+    ],
+    "enforcement_status": "in_force",
+    "id": "guernsey-dpl-2017-sch-2-p3-18",
+    "jurisdiction": "guernsey",
+    "path": "statute/guernsey/dpl-2017/schedule-002-part-iii-para-018.md",
+    "revision_id": "consolidated text as at 2026-09-18",
+    "sha": "8a62494ada0065e632f528db29ad6ea13546bcf164cf3a81740543a2340082e7",
+    "source_uri": "https://gov.gg/CHttpHandler.ashx?id=110559&p=0",
+    "summary": "",
+    "title": "Data Protection (Bailiwick of Guernsey) Law, 2017 Schedule 2 Part III paragraph 18 - Explicit consent (special category data)"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
       "children",
       "age-verification",
       "accountability"
@@ -1775,6 +2153,24 @@
   {
     "authority": "guidance",
     "domain_tags": [
+      "controller-roles",
+      "processor-contract",
+      "joint-controller",
+      "role-determination"
+    ],
+    "enforcement_status": "guidance",
+    "id": "ico-controllers-and-processors",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/ico/controllers-and-processors.md",
+    "revision_id": "DC.Date 19 November 2024 (detailed pages) and 22 October 2024 (brief guide), fetched 2026-09-28",
+    "sha": "d52004e324060d9762853057c07798ecf6ffa401108be18dfa672a55da18d906",
+    "source_uri": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/controllers-and-processors/controllers-and-processors/",
+    "summary": "Curated from 'What are controllers and processors?', 'How do you determine whether you are a controller or processor?' and the brief guide's indicator checklists. Processors serve the controller's interests and cannot take overarching decisions such as what data to collect, providers acting under their own professional obligations are always controllers, a processor acting outside instructions becomes a controller and the checklists give indicators for controller, joint controller and processor.",
+    "title": "Controllers and processors"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
       "criminal-offence-data",
       "safeguarding",
       "lawful-basis",
@@ -1791,6 +2187,25 @@
     "source_uri": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/criminal-offence-data/what-is-criminal-offence-data/",
     "summary": "Curated from the three ICO pages 'What is criminal offence data?', 'What are the rules on criminal offence data?' and 'What are the conditions for processing?'. Settles that a DBS, PVG or AccessNI result held by ViaCara is Article 10 criminal offence data even when it shows no convictions, so ViaCara needs both an Article 6 lawful basis and a DPA 2018 Schedule 1 condition. The ICO's own delivery-company example says consent to carry out a DBS check is not a valid Schedule 1 condition for a self-employed workforce and points to condition 10 (preventing or detecting unlawful acts); condition 18 (safeguarding) is the other fit, and paragraph 36 removes the substantial public interest test for criminal offence data. Both conditions require an appropriate policy document, a justification for not using consent, and a DPIA because the data determines access to an opportunity.",
     "title": "Criminal offence data"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "data-sharing",
+      "controller-roles",
+      "joint-controller",
+      "data-sharing-agreement",
+      "accountability"
+    ],
+    "enforcement_status": "guidance",
+    "id": "ico-data-sharing-code",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/ico/data-sharing-code-of-practice.md",
+    "revision_id": "DC.Date 19 November 2024 (scope, agreements, transparency and lawful basis pages) and 10 September 2025 (About this code), fetched 2026-09-28",
+    "sha": "c54e1d5cadd088d8e22ee8e8fac6511f9e2d47e91171df6103724467e4754a22",
+    "source_uri": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-sharing/data-sharing-a-code-of-practice/",
+    "summary": "The ICO statutory code under DPA 2018 s.121, which the Commissioner and the courts must take into account (s.127). It covers sharing between separate or joint controllers but not access given to employees, contractors or processors, treats giving a third party access through your IT systems as sharing, and recommends a data sharing agreement that names the controllers, the lawful basis, special category conditions, individual rights, retention and termination.",
+    "title": "Data sharing: a code of practice"
   },
   {
     "authority": "guidance",
@@ -1865,6 +2280,25 @@
   },
   {
     "authority": "guidance",
+    "domain_tags": [
+      "joint-controller",
+      "controller-roles",
+      "transparency",
+      "individual-rights",
+      "liability"
+    ],
+    "enforcement_status": "guidance",
+    "id": "ico-joint-controllers",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/ico/joint-controllers.md",
+    "revision_id": "DC.Date 19 November 2024, fetched 2026-09-28",
+    "sha": "154cfda14cec96c1d4581418b27fdf81a4af89ddf0fee20155c719659d7e97f8",
+    "source_uri": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/controllers-and-processors/controllers-and-processors/what-does-it-mean-if-you-are-joint-controllers/",
+    "summary": "Joint controllers share the same purposes, so controllers processing the same data for different purposes are not joint controllers. Joint controllers need no contract but must have a transparent arrangement whose main points are made available to individuals, each remains liable for the whole damage and individuals can exercise their rights against each one.",
+    "title": "What does it mean if you are joint controllers?"
+  },
+  {
+    "authority": "guidance",
     "domain_tags": [],
     "enforcement_status": "guidance",
     "id": "ico-personal-data-breaches-guide",
@@ -1914,6 +2348,93 @@
     "source_uri": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/special-category-data/",
     "summary": "Curated from 'What is special category data?', 'What are the rules on special category data?' and 'What are the conditions for processing?'. Health data definition and scope, inferred special category data, the need for both an Article 6 basis and an Article 9 condition, the meaning of 'necessary', mandatory DPIA triggers, explicit consent, the Article 9(2)(h) health or social care condition with its confidentiality safeguard and the s.204 list of health professionals (which names child psychotherapists and arts therapists), and the Article 9(2)(j) research condition.",
     "title": "Special category data"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "channel-islands",
+      "jersey",
+      "registration"
+    ],
+    "enforcement_status": "in_force",
+    "id": "jersey-authority-law-2018-art-017",
+    "jurisdiction": "jersey",
+    "path": "statute/jersey/authority-law-2018/article-017.md",
+    "revision_id": "regulator guidance page, checked 2026-09-18",
+    "sha": "6fb5b4bfb7b9413ddecbeca00088fd7de4d40197ac92d822e03742d78e4c4619",
+    "source_uri": "https://jerseyoic.org/guidance/data-protection/registration/registration-1",
+    "summary": "",
+    "title": "Data Protection Authority (Jersey) Law 2018 Article 17 - Registration"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "channel-islands",
+      "jersey",
+      "territorial-scope",
+      "representative"
+    ],
+    "enforcement_status": "in_force",
+    "id": "jersey-dpjl-2018-art-004",
+    "jurisdiction": "jersey",
+    "path": "statute/jersey/dpjl-2018/article-004.md",
+    "revision_id": "Official Consolidated Version 25 November 2020 - 5 May 2023",
+    "sha": "b2dd2307004f7f6d51f3b5a40e83af73e46926306c927a580965b65e55ee1ddb",
+    "source_uri": "https://www.jerseylaw.je/laws/current/PDFs/L_3_2018_20230505.pdf",
+    "summary": "",
+    "title": "Data Protection (Jersey) Law 2018 Article 4 - Application (territorial scope and representative duty)"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "channel-islands",
+      "jersey",
+      "dpo"
+    ],
+    "enforcement_status": "in_force",
+    "id": "jersey-dpjl-2018-art-024",
+    "jurisdiction": "jersey",
+    "path": "statute/jersey/dpjl-2018/article-024.md",
+    "revision_id": "Official Consolidated Version 25 November 2020 - 5 May 2023",
+    "sha": "5322638bf9ea6c2691447bb6f09d50a4b42e50f77c897928efd542ebc3c3d6de",
+    "source_uri": "https://www.jerseylaw.je/laws/current/PDFs/L_3_2018_20230505.pdf",
+    "summary": "",
+    "title": "Data Protection (Jersey) Law 2018 Article 24 - Appointment of data protection officer"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "channel-islands",
+      "jersey",
+      "direct-marketing"
+    ],
+    "enforcement_status": "in_force",
+    "id": "jersey-dpjl-2018-art-036",
+    "jurisdiction": "jersey",
+    "path": "statute/jersey/dpjl-2018/article-036.md",
+    "revision_id": "Official Consolidated Version 25 November 2020 - 5 May 2023",
+    "sha": "a1852fa5e574e2e6396663afa0929bc5de9cf1a24c0cb9bece1403d3b7ba9326",
+    "source_uri": "https://www.jerseylaw.je/laws/current/PDFs/L_3_2018_20230505.pdf",
+    "summary": "",
+    "title": "Data Protection (Jersey) Law 2018 Article 36 - Right to object to processing for direct marketing purposes"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "channel-islands",
+      "jersey",
+      "special-category",
+      "mental-health"
+    ],
+    "enforcement_status": "in_force",
+    "id": "jersey-dpjl-2018-sch-2-p2-6",
+    "jurisdiction": "jersey",
+    "path": "statute/jersey/dpjl-2018/schedule-002-part-2-para-006.md",
+    "revision_id": "Official Consolidated Version 25 November 2020 - 5 May 2023",
+    "sha": "79394449beb05b68db02e1dd9318132a28f98255e0f5a2d24252e5e7ee440dc7",
+    "source_uri": "https://www.jerseylaw.je/laws/current/PDFs/L_3_2018_20230505.pdf",
+    "summary": "",
+    "title": "Data Protection (Jersey) Law 2018 Schedule 2 Part 2 paragraph 6 - Consent (special category data)"
   },
   {
     "authority": "statute",
@@ -2695,6 +3216,56 @@
     "source_uri": "https://www.legislation.gov.uk/ukpga/1997/50/section/124/data.xht",
     "summary": "A member, officer or employee of a registered body, or a person acting on their behalf, commits an offence by disclosing certificate or up-date information otherwise than in the course of their duties to another person entitled to it or with the applicant's consent; a fine on summary conviction. Drives the DBS handling guidance's access-controlled storage and its record of everyone to whom certificate information is revealed, which is the access log ViaCara must keep on practitioner evidence.",
     "title": "Police Act 1997 section 124 - Offences: disclosure"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "payment-services",
+      "financial-perimeter"
+    ],
+    "enforcement_status": "in_force",
+    "id": "psr-2017-reg-002",
+    "jurisdiction": "uk",
+    "path": "statute/uk/psr-2017/regulation-002.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "5a88731039b17376919b23fc6c54362a1807e78cc949604f1c92d000760a4a74",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2017/752/regulation/2/data.xht",
+    "summary": "Definitions for the Payment Services Regulations 2017, including payment service, money remittance, payment transaction, payer, payee, funds and payment instrument. The starting point for whether a platform that touches a client's or a funder's money is carrying on a payment service.",
+    "title": "Payment Services Regulations 2017 regulation 2 - Interpretation"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "payment-services",
+      "financial-perimeter",
+      "vouchers"
+    ],
+    "enforcement_status": "in_force",
+    "id": "psr-2017-reg-038",
+    "jurisdiction": "uk",
+    "path": "statute/uk/psr-2017/regulation-038.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "e8b956c26e278d1f26c19ccd0077b202c2c3a08f3123674e916f051091986ac4",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2017/752/regulation/38/data.xht",
+    "summary": "A provider relying on the limited network exclusion in Schedule 1 Part 2 paragraph 2(k) must notify the FCA once its payment transactions exceed 1 million euros over 12 months. Bears on any voucher or code that a network issues for use with its own practitioners.",
+    "title": "Payment Services Regulations 2017 regulation 38 - Notification of use of limited network exclusion"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "payment-services",
+      "financial-perimeter",
+      "vouchers"
+    ],
+    "enforcement_status": "in_force",
+    "id": "psr-2017-sch-001",
+    "jurisdiction": "uk",
+    "path": "statute/uk/psr-2017/schedule-001.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "bd8a07dfedd4327eca68d67277a12021f5ae991a5ae341f01df780acb92e382e",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2017/752/schedule/1/data.xht",
+    "summary": "Part 1 lists the activities that are payment services, including money remittance and issuing payment instruments. Part 2 lists the exclusions, including the commercial agent exclusion (paragraph 2(b)), technical service providers that never possess the funds (2(j)) and limited network instruments (2(k)).",
+    "title": "Payment Services Regulations 2017 Schedule 1 - Payment services"
   },
   {
     "authority": "statute",
@@ -3592,6 +4163,21 @@
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/28/data.xht",
     "summary": "",
     "title": "UK GDPR Article 28 - Processor"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "controller-roles"
+    ],
+    "enforcement_status": "in_force",
+    "id": "uk-gdpr-art-029",
+    "jurisdiction": "uk",
+    "path": "statute/uk/gdpr/article-029.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "77d8dd3331266196cf14580171f531457cfbdbc8532ec0749bd892c99ed322ae",
+    "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/29/data.xht",
+    "summary": "A processor, and any person acting under the authority of the controller or processor who has access to personal data, must process it only on the controller's instructions unless domestic law requires otherwise.",
+    "title": "UK GDPR Article 29 - Processing under the authority of the controller or processor"
   },
   {
     "authority": "statute",

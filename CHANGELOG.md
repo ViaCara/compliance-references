@@ -2,6 +2,99 @@
 
 Drift log. Newer entries first.
 
+## 2026-09-28
+- **corpus/guidance/** adds curated quotes for FCA PERG 15.5, Charity Commission PB1, PB2, CC3 and CC20, the ICO data sharing code, ICO joint controllers, ICO controllers and processors and CMA207, and extends EDPB Guidelines 07/2020 (joint control and processor conditions) and CAP Code section 3 (rules 3.47 to 3.54), fetched 2026-09-28; human review remains pending.
+
+- **corpus/statute/uk/gdpr/article-029.md** new file
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/29/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   77d8dd3331266196cf14580171f531457cfbdbc8532ec0749bd892c99ed322ae
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/dpa-2018/section-204.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/section/204/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   17e2e8a2daa6eca327658a3b2bc363a6328342bb863dfe7c9e93a6aeb0c03bbe
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/dpa-2018/section-121.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/section/121/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   a76c9819403cda9d822f2309217a03bbf1d124db5e0d8d3f8cd6f71f659df46a
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/charities-act-1992/section-060.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1992/41/section/60/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   3f2e40a87340f020513f3caba28a0893b352cd5d35b32e3f9be98c6b68e621ea
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/charities-act-1992/section-059.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1992/41/section/59/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   560035c2390503db4549c5453d78b9f2fd6fae92ff7ca7e667f974a7d3c00e01
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/charities-act-1992/section-058.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1992/41/section/58/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   cfcc89401efd5343d4c256cf1eecfbd06cf6dd38874ac2341a8a437643e7511f
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/charities-act-2011/section-017.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2011/25/section/17/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   b09c30dcb45d84d1d1bde0ad3985c60a35474426bea3eee3c229f95d55848a41
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/charities-act-2011/section-004.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2011/25/section/4/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   56fdf6f7f033527a5a947ff1b891c0581a72678f4a2cc5b2189be8520a8c960e
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/charities-act-2011/section-003.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2011/25/section/3/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   4562f1b05fe55f4f3cf4f515d38d58401dcf95de3e9b46f2cc9d26f9d8d2756f
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/charities-act-2011/section-002.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2011/25/section/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   19a7ebd59bc0dcca9d1cf10f0fc9600e8d4a1547f84768e3263046b6e5006130
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/conduct-regs-2003/regulation-025.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2003/3319/regulation/25/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   f0cf591e17132bc5be29c87d0d87793230e5b2e5c8ee599f39e416b8795f61c5
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/emr-2011/regulation-002.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2011/99/regulation/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   c49bc4bb17d3df719453e9b5a6844c6acb0a71ef7fc9afe1ddc87c5a83a66862
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/psr-2017/schedule-001.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/752/schedule/1/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   bd8a07dfedd4327eca68d67277a12021f5ae991a5ae341f01df780acb92e382e
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/psr-2017/regulation-038.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/752/regulation/38/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   e8b956c26e278d1f26c19ccd0077b202c2c3a08f3123674e916f051091986ac4
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/psr-2017/regulation-002.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2017/752/regulation/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   5a88731039b17376919b23fc6c54362a1807e78cc949604f1c92d000760a4a74
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
 ## 2026-09-26
 - **corpus/guidance/uk/ico/** adds curated quotes for consent.md, anonymisation.md, special-category-data.md, ai-and-data-protection.md and dpia-guidance.md, fetched 2026-09-26; human review remains pending.
 
