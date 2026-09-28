@@ -96,6 +96,8 @@ class DirectMarketingSourceTests(unittest.TestCase):
                 "ico-direct-marketing-guidance-identify",
                 "ico-electronic-mail-marketing-key-concepts",
                 "ico-guide-to-pecr-electronic-mail-marketing",
+                "guernsey-dpl-2017-s-017",
+                "jersey-dpjl-2018-art-036",
             },
             hits,
         )

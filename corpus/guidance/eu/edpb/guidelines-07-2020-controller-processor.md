@@ -7,8 +7,8 @@ citation: EDPB Guidelines 07/2020
 source_uri: "https://www.edpb.europa.eu/system/files/2023-10/EDPB_guidelines_202007_controllerprocessor_final_en.pdf"
 source_format: pdf
 revision_id: Version 2.1, 20 September 2022
-content_sha256: 0d7c59e678525cc41fb6173d5286941d7f9e5e649d76ac2fcd860f98c6335a86
-last_fetched: 2026-08-24
+content_sha256: 91493daa56aac79c7c4c79ffb1ff0e8e196be0e31edc74bb5138ed01822308d6
+last_fetched: 2026-09-28
 language: en-GB
 enforcement_status: guidance
 ---
@@ -16,7 +16,49 @@ enforcement_status: guidance
 
 _European Data Protection Board guidelines on the controller, joint controller and processor concepts, and on the content of an Article 28(3) processing agreement. Version 2.1, adopted 7 July 2021, minor corrections 20 September 2022. Curated quotes only; the complete guidelines are at the source URI._
 
-_United Kingdom status: these guidelines interpret Regulation (EU) 2016/679, not the UK GDPR. In the United Kingdom they are persuasive, not binding. Where they diverge from UK statute or from ICO guidance, the UK source controls. They are mirrored because the UK GDPR Article 28 text they interpret is materially identical, and because ViaCara sends personal data to processors established in the European Union. Reviewed 2026-08-24 by kylewelsby._
+_United Kingdom status: these guidelines interpret Regulation (EU) 2016/679, not the UK GDPR. In the United Kingdom they are persuasive, not binding. Where they diverge from UK statute or from ICO guidance, the UK source controls. They are mirrored because the UK GDPR Article 28 text they interpret is materially identical, and because ViaCara sends personal data to processors established in the European Union. Reviewed 2026-08-24 by kylewelsby. Joint-control and processor-condition passages added 2026-09-28; review by kylewelsby pending._
+
+## Assessment of joint participation
+
+> Joint participation in the determination of purposes and means implies that more than one entity have a decisive influence over whether and how the processing takes place. In practice, joint participation can take several different forms. For example, joint participation can take the form of a common decision taken by two or more entities or result from converging decisions by two or more entities regarding the purposes and essential means. (paragraph 54)
+
+> Joint participation through a common decision means deciding together and involves a common intention in accordance with the most common understanding of the term “jointly” referred to in Article 26 of the GDPR. (paragraph 55)
+
+> The situation of joint participation through converging decisions results more particularly from the case law of the CJEU on the concept of joint controllers. Decisions can be considered as converging on purposes and means if they complement each other and are necessary for the processing to take place in such manner that they have a tangible impact on the determination of the purposes and means of the processing. It should be highlighted that the notion of converging decisions needs to be considered in relation to the purposes and means of the processing but not other aspects of the commercial relationship between the parties. As such, an important criterion to identify converging decisions in this context is whether the processing would not be possible without both parties’ participation in the purposes and means in the sense that the processing by each party is inseparable, i.e. inextricably linked. The situation of joint controllers acting on the basis of converging decisions should however be distinguished from the case of a processor, since the latter – while participating in the performance of a processing – does not process the data for its own purposes but carries out the processing on behalf of the controller. (paragraph 55)
+
+> The fact that one of the parties does not have access to personal data processed is not sufficient to exclude joint controllership. For example, in Jehovah’s Witnesses, the CJEU considered that a religious community must be considered a controller, jointly with its members who engage in preaching, of the processing of personal data carried out by the latter in the context of door-to-door preaching. The CJEU considered that it was not necessary that the community had access to the data in question, or to establish that that community had given its members written guidelines or instructions in relation to the data processing. The community participated in the determination of purposes and means by organising and coordinating the activities of its members, which helped to achieve the objective of the Jehovah’s Witnesses community. In addition, the community had knowledge on a general level of the fact that such processing was carried out in order to spread its faith. (paragraph 56)
+
+## Situations where there is no joint controllership
+
+> For example, the exchange of the same data or set of data between two entities without jointly determined purposes or jointly determined means of processing should be considered as a transmission of data between separate controllers. (paragraph 70)
+
+> A company collects and processes personal data of its employees with the purpose of managing salaries, health insurances, etc. A law imposes an obligation on the company to send all data concerning salaries to the tax authorities, with a view to reinforce fiscal control. In this case, even though both the company and the tax authorities process the same data concerning salaries, the lack of jointly determined purposes and means with regard to this data processing will result in qualifying the two entities as two separate data controllers. (paragraph 70, example “Transmission of employee data to tax authorities”)
+
+> Joint controllership may also be excluded in a situation where several entities use a shared database or a common infrastructure, if each entity independently determines its own purposes. (paragraph 71)
+
+> A group of companies uses the same database for the management of clients and prospects. Such database is hosted on the servers of the mother company who is therefore a processor of the companies with respect to the storage of the data. Each entity of the group enters the data of its own clients and prospects and processes such data for its own purposes only. Also, each entity decides independently on the access, the retention periods, the correction or deletion of their clients and prospects’ data. They cannot access or use each other’s data. The mere fact that these companies use a shared group database does not as such entail joint controllership. Under these circumstances, each company is thus a separate controller. (paragraph 71, example “Marketing operations in a group of companies using a shared database”)
+
+> Company XYZ hosts a database and makes it available to other companies to process and host personal data about their employees. Company XYZ is a processor in relation to the processing and storage of other companies’ employees as these operations are performed on behalf and according to the instructions of these other companies. In addition, the other companies process the data without any involvement from Company XYZ and for purposes which are not in any way shared by Company XYZ. (paragraph 71, example “Independent controllers when using a shared infrastructure”)
+
+## Definition of processor
+
+> Two basic conditions for qualifying as processor are: a) being a separate entity in relation to the controller and b) processing personal data on the controller’s behalf. (paragraph 76)
+
+> A separate entity means that the controller decides to delegate all or part of the processing activities to an external organisation. Within a group of companies, one company can be a processor to another company acting as controller, as both companies are separate entities. On the other hand, a department within a company cannot be a processor to another department within the same entity. (paragraph 77)
+
+> If the controller decides to process data itself, using its own resources within its organisation, for example through its own staff, this is not a processor situation. Employees and other persons that are acting under the direct authority of the controller, such as temporarily employed staff, are not to be seen as processors since they will process personal data as a part of the controller’s entity. In accordance with Article 29, they are also bound by the controller’s instructions. (paragraph 78)
+
+> Processing personal data on the controller’s behalf firstly requires that the separate entity processes personal data for the benefit of the controller. In Article 4(2), processing is defined as a concept including a wide array of operations ranging from collection, storage and consultation to use, dissemination or otherwise making available and destruction.. The concept of “processing” is further described above under 2.1.5. (paragraph 79)
+
+> Secondly, the processing must be done on behalf of a controller but otherwise than under its direct authority or control. Acting “on behalf of” means serving someone else’s interest and recalls the legal concept of “delegation”. In the case of data protection law, a processor is called to implement the instructions given by the controller at least with regard to the purpose of the processing and the essential elements of the means. The lawfulness of the processing according to Article 6, and if relevant Article 9, of the Regulation will be derived from the controller’s activity and the processor must not process the data otherwise than according to the controller’s instructions. Even so, as described above, the controller’s instructions may still leave a certain degree of discretion about how to best serve the controller’s interests, allowing the processor to choose the most suitable technical and organisational means. (paragraph 80)
+
+> Acting “on behalf of” also means that the processor may not carry out processing for its own purpose(s). As provided in Article 28(10), a processor infringes the GDPR by going beyond the controller’s instructions and starting to determine its own purposes and means of processing. The processor will be considered a controller in respect of that processing and may be subject to sanctions for going beyond the controller’s instructions. (paragraph 81)
+
+## Persons under the direct authority of the controller or processor
+
+> The definition generally corresponds to the previous definition of “third party” in Directive 95/46/EC. (paragraph 87)
+
+> Whereas the terms “personal data”, “data subject”, “controller” and “processor” are defined in the Regulation, the concept of “persons who, under the direct authority of the controller or processor, are authorised to process personal data” is not. It is, however, generally understood as referring to persons that belong to the legal entity of the controller or processor (an employee or a role highly comparable to that of employees, e.g. interim staff provided via a temporary employment agency) but only insofar as they are authorized to process personal data. An employee etc. who obtains access to data that he or she is not authorised to access and for other purposes than that of the employer does not fall within this category. Instead, this employee should be considered as a third party vis-à-vis the processing undertaken by the employer. Insofar as the employee processes personal data for his or her own purposes, distinct from those of his or her employer, he or she will then be considered a controller and take on all the resulting consequences and liabilities in terms of personal data processing. (paragraph 88)
 
 ## Choice of the processor
 
