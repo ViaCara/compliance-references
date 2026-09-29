@@ -3,6 +3,48 @@
 Drift log. Newer entries first.
 
 ## 2026-09-29
+- **corpus/statute/eu/ai-omnibus-2026/article-004.md** new file
+  - source: https://publications.europa.eu/resource/cellar/b459c07f-86fb-11f1-bf5e-01aa75ed71a1.0006.03/DOC_1
+  - prior_sha256: (new file)
+  - new_sha256:   3dc8742cadaa0f7b51e8742a3b75182ff03e1f2cdcbe4aea774e9771f192152d
+  - revision: Fri, 24 Jul 2026 01:25:06 GMT
+
+- **corpus/statute/eu/ai-omnibus-2026/article-001.md** new file
+  - source: https://publications.europa.eu/resource/cellar/b459c07f-86fb-11f1-bf5e-01aa75ed71a1.0006.03/DOC_1
+  - prior_sha256: (new file)
+  - new_sha256:   dadb1da3348a53dd4613a5c595a122b1669eccd51c49d34a16cd66e6a258fefc
+  - revision: Fri, 24 Jul 2026 01:25:06 GMT
+
+- **corpus/statute/eu/ai-act-2024/annex-003.md** new file
+  - source: https://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1
+  - prior_sha256: (new file)
+  - new_sha256:   6d8c75d9e16707c5b200df6fddced97f4dc0e8431a490f7e2eb8bfcac4b7f4b3
+  - revision: Thu, 17 Oct 2024 11:39:20 GMT
+
+- **corpus/statute/eu/ai-act-2024/article-113.md** new file
+  - source: https://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1
+  - prior_sha256: (new file)
+  - new_sha256:   9d5e0ff502c0fd10f598aec7810465de062ffa3a3dddc2e950ce456b41634b29
+  - revision: Thu, 17 Oct 2024 11:39:20 GMT
+
+- **corpus/statute/eu/ai-act-2024/article-006.md** new file
+  - source: https://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1
+  - prior_sha256: (new file)
+  - new_sha256:   1458435252504e4f97a42f16a5cc2db25878fdbd873fd59b9e46ff54f27e153e
+  - revision: Thu, 17 Oct 2024 11:39:20 GMT
+
+- **corpus/statute/eu/ai-act-2024/article-004.md** new file
+  - source: https://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1
+  - prior_sha256: (new file)
+  - new_sha256:   85363f0bf518087972b1529fe45edad98ab5f60315071365cf77ff1217e13ea0
+  - revision: Thu, 17 Oct 2024 11:39:20 GMT
+
+- **corpus/statute/eu/ai-act-2024/article-002.md** new file
+  - source: https://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1
+  - prior_sha256: (new file)
+  - new_sha256:   f21e90ad259d236d412dd1424d5aeaa4f86679eabca12bf107415abdeca9174a
+  - revision: Thu, 17 Oct 2024 11:39:20 GMT
+
 - **corpus/statute/uk/conduct-regs-2003/regulation-002.md** new file
   - source: https://www.legislation.gov.uk/uksi/2003/3319/regulation/2/data.xht
   - prior_sha256: (new file)

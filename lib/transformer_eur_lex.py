@@ -23,9 +23,9 @@ class EurLexTransformerError(ValueError):
 
 
 class _EurLexExtractor(HTMLParser):
-    def __init__(self, *, article_number: str | None = None) -> None:
+    def __init__(self, *, subdivision_id: str | None = None) -> None:
         super().__init__(convert_charrefs=True)
-        self._article_id = f"art_{article_number}" if article_number else None
+        self._article_id = subdivision_id
         self._inside_main = False
         self._main_depth = 0
         self._current_p_classes: list[str] = []
@@ -84,10 +84,16 @@ class EurLexTransformer:
 
     def transform(self, html: str, *, citation: str) -> str:
         article_match = re.search(r"\bArticle (\d+)\b", citation)
-        article_number = article_match.group(1) if article_match else None
-        extractor = _EurLexExtractor(article_number=article_number)
+        annex_match = re.search(r"\bAnnex ([IVXLC]+)\b", citation)
+        if article_match:
+            subdivision_id = f"art_{article_match.group(1)}"
+        elif annex_match:
+            subdivision_id = f"anx_{annex_match.group(1)}"
+        else:
+            subdivision_id = None
+        extractor = _EurLexExtractor(subdivision_id=subdivision_id)
         extractor.feed(html)
-        if not extractor._found_main and article_number:
+        if not extractor._found_main and subdivision_id:
             extractor = _EurLexExtractor()
             extractor.feed(html)
         if not extractor._found_main:
@@ -100,6 +106,10 @@ class EurLexTransformer:
             (text for cls, text in extractor.paragraphs if cls == "oj-sti-art"),
             None,
         )
+        if annex_match and subtitle is None:
+            # An annex carries its label and then its title as oj-doc-ti.
+            doc_titles = [text for cls, text in extractor.paragraphs if cls == "oj-doc-ti"]
+            subtitle = doc_titles[1] if len(doc_titles) > 1 else None
         if subtitle:
             lines.append(f"_{subtitle}_")
             lines.append("")
