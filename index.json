@@ -425,6 +425,23 @@
     "authority": "statute",
     "domain_tags": [
       "employment-agency",
+      "vulnerable-persons",
+      "definitions"
+    ],
+    "enforcement_status": "in_force",
+    "id": "conduct-regs-2003-reg-002",
+    "jurisdiction": "uk",
+    "path": "statute/uk/conduct-regs-2003/regulation-002.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "dbfec6b91f539367cb931757e51988ac1c2ad4612eab9c83aaccd365c070be08",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2003/3319/regulation/2/data.xht",
+    "summary": "Definitions for the Conduct Regulations, including hirer, work-seeker, work-finding services and vulnerable person. A vulnerable person is any person who by reason of age, infirmity, illness, disability or any other circumstance is in need of care or attention, and includes any person under the age of eighteen; the definition controls when regulations 19(2) and 22 apply.",
+    "title": "Conduct of Employment Agencies and Employment Businesses Regulations 2003 regulation 2 - Interpretation"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "employment-agency",
       "terms-of-business",
       "fees"
     ],
