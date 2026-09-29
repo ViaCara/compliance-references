@@ -3,6 +3,12 @@
 Drift log. Newer entries first.
 
 ## 2026-09-29
+- **corpus/statute/uk/conduct-regs-2003/regulation-002.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2003/3319/regulation/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   dbfec6b91f539367cb931757e51988ac1c2ad4612eab9c83aaccd365c070be08
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
 - **corpus/statute/uk/conduct-regs-2003/schedule-005.md** new file
   - source: https://www.legislation.gov.uk/uksi/2003/3319/schedule/5/data.xht
   - prior_sha256: (new file)

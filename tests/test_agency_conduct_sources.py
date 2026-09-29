@@ -1,4 +1,4 @@
-"""Employment agency terms, introduction and record-keeping source tests (VIA-759)."""
+"""Employment agency terms, introduction and record-keeping source tests (VIA-759, VIA-1538)."""
 
 import json
 import unittest
@@ -12,6 +12,10 @@ MANIFEST = ROOT / "manifest.json"
 CORPUS = ROOT / "corpus"
 
 EXPECTED = {
+    "conduct-regs-2003-reg-002": (
+        "uksi/2003/3319/regulation/2/data.xht",
+        "in need of care or attention",
+    ),
     "conduct-regs-2003-reg-013": (
         "uksi/2003/3319/regulation/13/data.xht",
         "whether that service is a work-finding service for which the Act prohibits",
