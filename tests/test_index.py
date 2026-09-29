@@ -78,6 +78,14 @@ class BuildIndexTests(unittest.TestCase):
                 self.assertNotIn("Body text that must NOT enter the index", str(value))
 
 
+    def test_every_valid_kind_has_an_authority(self):
+        from lib.index import _authority
+        from lib.manifest import VALID_KINDS
+
+        for kind in VALID_KINDS - {"contents"}:
+            with self.subTest(kind=kind):
+                self.assertIn(_authority(kind), {"statute", "guidance", "standard"})
+
     def test_jurisdiction_and_authority_are_derived(self):
         with TemporaryDirectory() as td:
             corpus_root = Path(td)

@@ -50,6 +50,32 @@ class EurLexTransformerTests(unittest.TestCase):
         self.assertIn("Article three body.", markdown)
         self.assertNotIn("Article five body.", markdown)
 
+    def test_extracts_only_requested_annex_from_full_instrument(self):
+        source = """
+        <html><body>
+          <div class='eli-container' id='anx_II'>
+            <p class='oj-doc-ti'>ANNEX II</p>
+            <p class='oj-doc-ti'>List of criminal offences</p>
+            <p class='oj-normal'>Annex two body.</p>
+          </div>
+          <div class='eli-container' id='anx_III'>
+            <p class='oj-doc-ti'>ANNEX III</p>
+            <p class='oj-doc-ti'>High-risk AI systems referred to in Article 6(2)</p>
+            <p class='oj-normal'>Annex three body.</p>
+          </div>
+        </body></html>
+        """
+        markdown = EurLexTransformer().transform(
+            source,
+            citation="Regulation (EU) 2024/1689 Annex III",
+        )
+
+        self.assertIn("# Regulation (EU) 2024/1689 Annex III", markdown)
+        self.assertIn("_High-risk AI systems referred to in Article 6(2)_", markdown)
+        self.assertIn("Annex three body.", markdown)
+        self.assertNotIn("Annex two body.", markdown)
+        self.assertNotIn("ANNEX III", markdown.replace("# Regulation (EU) 2024/1689 Annex III", ""))
+
     def test_strips_html_tags(self):
         source = (
             "<html><body><div class='eli-container'>"

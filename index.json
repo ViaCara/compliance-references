@@ -1826,6 +1826,40 @@
   },
   {
     "authority": "statute",
+    "domain_tags": [
+      "ai-act",
+      "high-risk",
+      "biometrics",
+      "employment"
+    ],
+    "enforcement_status": "in_force",
+    "id": "eu-ai-act-2024-anx-003",
+    "jurisdiction": "eu",
+    "path": "statute/eu/ai-act-2024/annex-003.md",
+    "revision_id": "Thu, 17 Oct 2024 11:39:20 GMT",
+    "sha": "6d8c75d9e16707c5b200df6fddced97f4dc0e8431a490f7e2eb8bfcac4b7f4b3",
+    "source_uri": "https://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+    "summary": "The high-risk use-case list. Point 1(b) covers biometric categorisation by sensitive attributes; point 4(a) and 4(b) cover recruitment, selection and decisions on work relationships, which the draft Article 6(5) guidelines read onto ranking self-employed service providers.",
+    "title": "EU AI Act Annex III - High-risk AI systems referred to in Article 6(2)"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "ai-act",
+      "territorial-scope"
+    ],
+    "enforcement_status": "in_force",
+    "id": "eu-ai-act-2024-art-002",
+    "jurisdiction": "eu",
+    "path": "statute/eu/ai-act-2024/article-002.md",
+    "revision_id": "Thu, 17 Oct 2024 11:39:20 GMT",
+    "sha": "f21e90ad259d236d412dd1424d5aeaa4f86679eabca12bf107415abdeca9174a",
+    "source_uri": "https://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+    "summary": "Original text as published in the Official Journal; Regulation (EU) 2026/1744 Article 1 amends it. Covers third-country providers and deployers where the output produced by the AI system is used in the Union, the trigger that brings a UK platform with EU-located practitioners into scope.",
+    "title": "EU AI Act Article 2 - Scope"
+  },
+  {
+    "authority": "statute",
     "domain_tags": [],
     "enforcement_status": "in_force",
     "id": "eu-ai-act-2024-art-003",
@@ -1836,6 +1870,22 @@
     "source_uri": "https://eur-lex.europa.eu/eli/reg/2024/1689/art_3/oj/eng",
     "summary": "",
     "title": "EU AI Act Article 3 - Definitions"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "ai-act",
+      "ai-literacy"
+    ],
+    "enforcement_status": "in_force",
+    "id": "eu-ai-act-2024-art-004",
+    "jurisdiction": "eu",
+    "path": "statute/eu/ai-act-2024/article-004.md",
+    "revision_id": "Thu, 17 Oct 2024 11:39:20 GMT",
+    "sha": "85363f0bf518087972b1529fe45edad98ab5f60315071365cf77ff1217e13ea0",
+    "source_uri": "https://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+    "summary": "Original AI literacy duty for providers and deployers. Regulation (EU) 2026/1744 Article 1 replaces it with a duty to take measures supporting AI literacy; read the two together.",
+    "title": "EU AI Act Article 4 - AI literacy"
   },
   {
     "authority": "statute",
@@ -1852,6 +1902,22 @@
   },
   {
     "authority": "statute",
+    "domain_tags": [
+      "ai-act",
+      "high-risk"
+    ],
+    "enforcement_status": "in_force",
+    "id": "eu-ai-act-2024-art-006",
+    "jurisdiction": "eu",
+    "path": "statute/eu/ai-act-2024/article-006.md",
+    "revision_id": "Thu, 17 Oct 2024 11:39:20 GMT",
+    "sha": "1458435252504e4f97a42f16a5cc2db25878fdbd873fd59b9e46ff54f27e153e",
+    "source_uri": "https://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+    "summary": "An Annex III system is high-risk unless it poses no significant risk of harm under the paragraph 3 conditions; one that profiles natural persons is always high-risk. Decides whether ranking self-employed practitioners is a high-risk system.",
+    "title": "EU AI Act Article 6 - Classification rules for high-risk AI systems"
+  },
+  {
+    "authority": "statute",
     "domain_tags": [],
     "enforcement_status": "in_force",
     "id": "eu-ai-act-2024-art-050",
@@ -1862,6 +1928,56 @@
     "source_uri": "https://eur-lex.europa.eu/eli/reg/2024/1689/art_50/oj/eng",
     "summary": "",
     "title": "EU AI Act Article 50 - Transparency obligations for providers and deployers of certain AI systems"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "ai-act",
+      "application-dates"
+    ],
+    "enforcement_status": "in_force",
+    "id": "eu-ai-act-2024-art-113",
+    "jurisdiction": "eu",
+    "path": "statute/eu/ai-act-2024/article-113.md",
+    "revision_id": "Thu, 17 Oct 2024 11:39:20 GMT",
+    "sha": "9d5e0ff502c0fd10f598aec7810465de062ffa3a3dddc2e950ce456b41634b29",
+    "source_uri": "https://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+    "summary": "Original application dates, from 2 August 2026 with staggered exceptions. Regulation (EU) 2026/1744 changes the high-risk dates; read its Article 1 and Article 4 before citing any date.",
+    "title": "EU AI Act Article 113 - Entry into force and application"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "ai-act",
+      "amendment",
+      "application-dates"
+    ],
+    "enforcement_status": "in_force",
+    "id": "eu-ai-omnibus-2026-art-001",
+    "jurisdiction": "eu",
+    "path": "statute/eu/ai-omnibus-2026/article-001.md",
+    "revision_id": "Fri, 24 Jul 2026 01:25:06 GMT",
+    "sha": "dadb1da3348a53dd4613a5c595a122b1669eccd51c49d34a16cd66e6a258fefc",
+    "source_uri": "https://publications.europa.eu/resource/cellar/b459c07f-86fb-11f1-bf5e-01aa75ed71a1.0006.03/DOC_1",
+    "summary": "The point-by-point amendments to the AI Act, including Articles 2, 4, 50 and 113 and the high-risk timetable. No consolidated AI Act text exists yet, so the original articles must be read with this one.",
+    "title": "Digital Omnibus on AI Article 1 - Amendments to Regulation (EU) 2024/1689"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "ai-act",
+      "amendment",
+      "application-dates"
+    ],
+    "enforcement_status": "in_force",
+    "id": "eu-ai-omnibus-2026-art-004",
+    "jurisdiction": "eu",
+    "path": "statute/eu/ai-omnibus-2026/article-004.md",
+    "revision_id": "Fri, 24 Jul 2026 01:25:06 GMT",
+    "sha": "3dc8742cadaa0f7b51e8742a3b75182ff03e1f2cdcbe4aea774e9771f192152d",
+    "source_uri": "https://publications.europa.eu/resource/cellar/b459c07f-86fb-11f1-bf5e-01aa75ed71a1.0006.03/DOC_1",
+    "summary": "When the Digital Omnibus amendments take effect.",
+    "title": "Digital Omnibus on AI Article 4 - Entry into force and application"
   },
   {
     "authority": "statute",
