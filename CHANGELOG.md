@@ -2,6 +2,55 @@
 
 Drift log. Newer entries first.
 
+## 2026-09-29
+- **corpus/statute/uk/conduct-regs-2003/schedule-005.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2003/3319/schedule/5/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   7c6dccd0c3dfb5a181806f3102a7f2b563bd25c946c05ce1b3c1babf9eceef1a
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/conduct-regs-2003/schedule-004.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2003/3319/schedule/4/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   e5feb0030cb68a6a727a140f21bceb7bb244286c9845f9eeed182192b09f714d
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/conduct-regs-2003/regulation-029.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2003/3319/regulation/29/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   29d3210e1ab5be78dd224297c705650c67abb446cc35b9d3fd86cf0d8555ee16
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/conduct-regs-2003/regulation-022.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2003/3319/regulation/22/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   0d59772c1496f062d1a4f62abac334ffb415b5af308df4b86c5f8c265b6b577e
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/conduct-regs-2003/regulation-020.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2003/3319/regulation/20/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   3ee3352785a2dd4a9fae2e60eda53e0c28e715cbe4eeb361c4d8b171dd6bd801
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/conduct-regs-2003/regulation-019.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2003/3319/regulation/19/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   2c9e87df0edfa5f0c11544ae0096bf69beadc7b02cef461a6d404a608d99f690
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/conduct-regs-2003/regulation-016.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2003/3319/regulation/16/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   d7061b11aaf35586a349accce431b09b12a7920bb68f5c6324a2a3c32b6f8a07
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
+- **corpus/statute/uk/conduct-regs-2003/regulation-013.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2003/3319/regulation/13/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   d70fc38a6aa9d817176a716ced8168a0d618c6776fdeca12905d36f51839dd82
+  - revision: Mon, 14 Sep 2026 16:04:15 GMT
+
 ## 2026-09-28
 - **corpus/guidance/** adds curated quotes for FCA PERG 15.5, Charity Commission PB1, PB2, CC3 and CC20, the ICO data sharing code, ICO joint controllers, ICO controllers and processors and CMA207, and extends EDPB Guidelines 07/2020 (joint control and processor conditions) and CAP Code section 3 (rules 3.47 to 3.54), fetched 2026-09-28; human review remains pending.
 

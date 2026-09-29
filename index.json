@@ -425,6 +425,91 @@
     "authority": "statute",
     "domain_tags": [
       "employment-agency",
+      "terms-of-business",
+      "fees"
+    ],
+    "enforcement_status": "in_force",
+    "id": "conduct-regs-2003-reg-013",
+    "jurisdiction": "uk",
+    "path": "statute/uk/conduct-regs-2003/regulation-013.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "d70fc38a6aa9d817176a716ced8168a0d618c6776fdeca12905d36f51839dd82",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2003/3319/regulation/13/data.xht",
+    "summary": "On first offering a service to a work-seeker, an agency must state whether it is a work-finding service for which the Act prohibits a fee and, where other paid services or goods may be provided, the fee, payee, service, cancellation right and refund terms. A further notice is due when such fees are introduced or varied.",
+    "title": "Conduct of Employment Agencies and Employment Businesses Regulations 2003 regulation 13 - Notification of charges and the terms of offers"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "employment-agency",
+      "terms-of-business",
+      "fees"
+    ],
+    "enforcement_status": "in_force",
+    "id": "conduct-regs-2003-reg-016",
+    "jurisdiction": "uk",
+    "path": "statute/uk/conduct-regs-2003/regulation-016.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "d7061b11aaf35586a349accce431b09b12a7920bb68f5c6324a2a3c32b6f8a07",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2003/3319/regulation/16/data.xht",
+    "summary": "The agency terms-of-business duty since the 2010 renumbering (formerly regulation 14). Before first providing a work-finding service for which regulation 26(1) permits a fee, an agency must obtain the work-seeker's agreement to terms covering the services, its authority to act, client money, the fee and refunds, and notice to terminate. It is triggered only where a fee is permitted, so it does not attach to an occupation outside Schedule 3.",
+    "title": "Conduct of Employment Agencies and Employment Businesses Regulations 2003 regulation 16 - Requirement to obtain agreement to terms with work-seekers and content of terms with work-seekers: Agencies"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "employment-agency",
+      "vulnerable-persons",
+      "verification"
+    ],
+    "enforcement_status": "in_force",
+    "id": "conduct-regs-2003-reg-019",
+    "jurisdiction": "uk",
+    "path": "statute/uk/conduct-regs-2003/regulation-019.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "2c9e87df0edfa5f0c11544ae0096bf69beadc7b02cef461a6d404a608d99f690",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2003/3319/regulation/19/data.xht",
+    "summary": "An agency must not introduce a work-seeker to a position that involves working with, caring for or attending a vulnerable person without confirming the work-seeker's identity and the experience, training, qualifications and authorisation the hirer, the law or a professional body requires, and must confirm the work-seeker is willing to take the position.",
+    "title": "Conduct of Employment Agencies and Employment Businesses Regulations 2003 regulation 19 - Confirmation to be obtained about a work-seeker"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "employment-agency",
+      "vulnerable-persons",
+      "verification"
+    ],
+    "enforcement_status": "in_force",
+    "id": "conduct-regs-2003-reg-020",
+    "jurisdiction": "uk",
+    "path": "statute/uk/conduct-regs-2003/regulation-020.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "3ee3352785a2dd4a9fae2e60eda53e0c28e715cbe4eeb361c4d8b171dd6bd801",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2003/3319/regulation/20/data.xht",
+    "summary": "Before an introduction an agency must take reasonably practicable steps to make both parties aware of legal or professional-body requirements for the position and must make reasonably practicable enquiries that the engagement would not be detrimental to either. An agency that later learns a work-seeker is or may be unsuitable must tell the hirer.",
+    "title": "Conduct of Employment Agencies and Employment Businesses Regulations 2003 regulation 20 - Steps to be taken for the protection of the work-seeker and the hirer"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "employment-agency",
+      "vulnerable-persons",
+      "verification"
+    ],
+    "enforcement_status": "in_force",
+    "id": "conduct-regs-2003-reg-022",
+    "jurisdiction": "uk",
+    "path": "statute/uk/conduct-regs-2003/regulation-022.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "0d59772c1496f062d1a4f62abac334ffb415b5af308df4b86c5f8c265b6b577e",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2003/3319/regulation/22/data.xht",
+    "summary": "For a position working with, caring for or attending a vulnerable person, an agency must also obtain copies of relevant qualifications or authorisations and two non-relative references, offer copies to the hirer and take other reasonably practicable steps to confirm suitability, or tell the hirer what it could not obtain.",
+    "title": "Conduct of Employment Agencies and Employment Businesses Regulations 2003 regulation 22 - Additional requirements where professional qualifications or authorisation are required or where work-seekers are to work with vulnerable persons"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "employment-agency",
       "fees",
       "client-money"
     ],
@@ -458,6 +543,23 @@
     "authority": "statute",
     "domain_tags": [
       "employment-agency",
+      "record-keeping",
+      "retention"
+    ],
+    "enforcement_status": "in_force",
+    "id": "conduct-regs-2003-reg-029",
+    "jurisdiction": "uk",
+    "path": "statute/uk/conduct-regs-2003/regulation-029.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "29d3210e1ab5be78dd224297c705650c67abb446cc35b9d3fd86cf0d8555ee16",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2003/3319/regulation/29/data.xht",
+    "summary": "An agency must keep records sufficient to show compliance, including the Schedule 4 particulars for each work-seeker application and the Schedule 5 particulars for each hirer application, for at least one year from creation and at least one year after it last provides services to the applicant. Electronic records are permitted; applications on which no action is taken are exempt.",
+    "title": "Conduct of Employment Agencies and Employment Businesses Regulations 2003 regulation 29 - Records"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "employment-agency",
       "fees"
     ],
     "enforcement_status": "in_force",
@@ -469,6 +571,38 @@
     "source_uri": "https://www.legislation.gov.uk/uksi/2003/3319/schedule/3/data.xht",
     "summary": "The closed list of occupations regulation 26 exempts from the work-seeker fee ban: performers and production roles in the entertainment industry, photographic or fashion models and professional sports persons. Counselling and psychotherapy are not on it.",
     "title": "Conduct of Employment Agencies and Employment Businesses Regulations 2003 Schedule 3 - Occupations in respect of which employment agencies may charge fees to work-seekers"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "employment-agency",
+      "record-keeping"
+    ],
+    "enforcement_status": "in_force",
+    "id": "conduct-regs-2003-sch-004",
+    "jurisdiction": "uk",
+    "path": "statute/uk/conduct-regs-2003/schedule-004.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "e5feb0030cb68a6a727a140f21bceb7bb244286c9845f9eeed182192b09f714d",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2003/3319/schedule/4/data.xht",
+    "summary": "The work-seeker record: name and address, the terms and any variation, training, experience, qualifications and authorisations with copies of evidence, the hirers the work-seeker is introduced to, any resulting engagement, fee requests and receipts where fees are permitted, and details of enquiries under regulations 19, 20 and 22.",
+    "title": "Conduct of Employment Agencies and Employment Businesses Regulations 2003 Schedule 4 - Particulars to be included in an agency's or employment business's records relating to work-seekers"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "employment-agency",
+      "record-keeping"
+    ],
+    "enforcement_status": "in_force",
+    "id": "conduct-regs-2003-sch-005",
+    "jurisdiction": "uk",
+    "path": "statute/uk/conduct-regs-2003/schedule-005.md",
+    "revision_id": "Mon, 14 Sep 2026 16:04:15 GMT",
+    "sha": "7c6dccd0c3dfb5a181806f3102a7f2b563bd25c946c05ce1b3c1babf9eceef1a",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2003/3319/schedule/5/data.xht",
+    "summary": "The hirer record: the position sought, its likely duration, the experience, qualifications and authorisation it requires, details of enquiries under regulations 18 and 20, and dates of fee requests and receipts from the hirer with copies of statements or invoices.",
+    "title": "Conduct of Employment Agencies and Employment Businesses Regulations 2003 Schedule 5 - Particulars to be included in an agency's or employment business's records relating to hirers"
   },
   {
     "authority": "statute",
