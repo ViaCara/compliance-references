@@ -2,6 +2,9 @@
 
 Drift log. Newer entries first.
 
+## 2026-09-30
+- **corpus/guidance/uk/cma/price-reduction-claims-online.md** adds curated quotes from the CMA compliance advice on urgency and price reduction claims (29 March 2023): the definition of a price reduction claim, the evidence and record-keeping duty and examples 9, 10 and 12 on comparison prices that are not the usual selling price, fetched 2026-09-30; human review remains pending.
+
 ## 2026-09-29
 - **corpus/statute/eu/ai-omnibus-2026/article-004.md** new file
   - source: https://publications.europa.eu/resource/cellar/b459c07f-86fb-11f1-bf5e-01aa75ed71a1.0006.03/DOC_1
