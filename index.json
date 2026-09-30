@@ -408,6 +408,24 @@
     "authority": "guidance",
     "domain_tags": [
       "advertising",
+      "pricing",
+      "price-comparison",
+      "reference-price"
+    ],
+    "enforcement_status": "guidance",
+    "id": "cma-price-reduction-claims-online",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/cma/price-reduction-claims-online.md",
+    "revision_id": "29 March 2023",
+    "sha": "9b4039073d46bb64e5aa518ff4c6e6bb7bc889309af7e0a1c2c44fd6d9d7604a",
+    "source_uri": "https://www.gov.uk/government/publications/using-urgency-and-price-reduction-claims-online",
+    "summary": "CMA open letter and examples on price reduction claims, meaning any discount or special offer price that refers to a higher comparison price. The higher price must be a genuine and realistic selling price that the trader can demonstrate and keep records for; a comparison with a price that is no longer, or never was, the product's usual selling price is likely to mislead, even when the words are literally true.",
+    "title": "Urgency claims and price reduction claims: compliance advice for online businesses"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "advertising",
       "marketing",
       "trust-mark"
     ],
