@@ -3447,8 +3447,8 @@
     "id": "osa-2023-sch-001",
     "jurisdiction": "uk",
     "path": "statute/uk/osa-2023/schedule-001.md",
-    "revision_id": "Thu, 27 Aug 2026 16:10:40 GMT",
-    "sha": "9b32ab88ecd8dfc19a64d058c2e76ca77938faa15454e4a6d5d0dca3a6252496",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "80992d9cc22388075c93eea4afbf04dc79b8578450cce88f2783fb37f2a49ff1",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/schedule/1/data.xht",
     "summary": "Exemptions list (not a category list): email, SMS/MMS, one-to-one live communications, limited-functionality and internal business services, public bodies, and eligible education/childcare providers.",
     "title": "Online Safety Act 2023 Schedule 1 - Exempt user-to-user and search services"
@@ -3465,7 +3465,7 @@
     "jurisdiction": "uk",
     "path": "statute/uk/osa-2023/schedule-003.md",
     "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
-    "sha": "6285abcff0523d70e323778442b7190c59e865c38cf5dea63f25dab69bbd2285",
+    "sha": "76a39da0299c8c615890fe93d6c98b958899b01440faea5237cfac867e66aa48",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/schedule/3/data.xht",
     "summary": "Sets when providers' assessments must be done. The first illegal content risk assessment and children's access assessment are due within three months of the day a service becomes a Part 3 service, or of the relevant OFCOM guidance if that comes later. The children's risk assessment runs from a separate trigger: within three months of the day the service is first, or again, treated as likely to be accessed by children (paragraph 5).",
     "title": "Online Safety Act 2023 Schedule 3 - Timing of providers' assessments"

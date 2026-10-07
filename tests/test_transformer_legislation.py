@@ -80,6 +80,23 @@ class LegislationTransformerTests(unittest.TestCase):
         self.assertLess(markdown.index("(3) When deciding on"), category_1)
         self.assertLess(category_1, markdown.index("(4) A duty—"))
 
+    def test_real_osa_schedule_003_keeps_title_parts_and_group_headings(self):
+        source = (FIXTURES / "osa_2023_schedule_003.xhtml").read_text(encoding="utf-8")
+        markdown = LegislationTransformer().transform(source, citation="OSA 2023 Sch. 3")
+
+        self.assertIn("_Timing of providers’ assessments_", markdown)
+        part_1 = markdown.index(
+            "**PART 1 - Timing of illegal content risk assessments and children’s access assessments**"
+        )
+        group = markdown.index(
+            "**Part 3 services already in operation at the outset of the regime provided for by this Act**"
+        )
+        part_3 = markdown.index("**PART 3 - Pre-existing Part 4B services**")
+        self.assertLess(part_1, group)
+        self.assertLess(group, markdown.index("1(1) This paragraph applies"))
+        self.assertLess(part_3, markdown.index("\n7"))
+        self.assertNotIn("U.K.", markdown)
+
     def test_collapses_repealed_dot_only_paragraphs_into_marker(self):
         source = (
             '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
