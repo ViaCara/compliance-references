@@ -70,6 +70,16 @@ class LegislationTransformerTests(unittest.TestCase):
             markdown,
         )
 
+    def test_real_osa_section_022_scopes_category_1_duties(self):
+        source = (FIXTURES / "osa_2023_section_022.xhtml").read_text(encoding="utf-8")
+        markdown = LegislationTransformer().transform(source, citation="OSA 2023 s. 22")
+
+        all_services = markdown.index("**All services**")
+        category_1 = markdown.index("**Additional duties for Category 1 services**")
+        self.assertLess(all_services, markdown.index("(2) When deciding on, and implementing"))
+        self.assertLess(markdown.index("(3) When deciding on"), category_1)
+        self.assertLess(category_1, markdown.index("(4) A duty—"))
+
     def test_collapses_repealed_dot_only_paragraphs_into_marker(self):
         source = (
             '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
