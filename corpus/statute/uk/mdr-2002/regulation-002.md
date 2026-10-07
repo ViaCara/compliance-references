@@ -6,15 +6,17 @@ kind: legislation_regulation
 citation: Medical Devices Regulations 2002 regulation 2
 source_uri: "https://www.legislation.gov.uk/uksi/2002/618/regulation/2/data.xht"
 source_format: xhtml
-revision_id: "Thu, 03 Sep 2026 16:52:26 GMT"
-content_sha256: e930d18e930df9f6eeb80861a709b1a1720277c410d70feebab51220d2e0e6f3
-last_fetched: 2026-09-12
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: b7d023f56fcaca16e34c14ca5e8fb4679581989a6d3faf201a0eb81072289fc4
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # Medical Devices Regulations 2002 regulation 2
 
 _Interpretation_
+
+**Introductory Provisions Relating to all Medical Devices**
 
 **Extent:** England, Wales and Scotland
 

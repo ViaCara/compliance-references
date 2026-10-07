@@ -6,13 +6,17 @@ kind: legislation_schedule
 citation: Consumer Rights Act 2015 Sch. 2
 source_uri: "https://www.legislation.gov.uk/ukpga/2015/15/schedule/2/data.xht"
 source_format: xhtml
-revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
-content_sha256: ec6b1b49a925194ced4012abee118eb86b1c3174de9fb56b8803c3c32507ea96
-last_fetched: 2026-08-24
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: 25d87f8f622bd8760aced0a1ef662f840cf54c90d4a92797eeffcaa09f9260a5
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # Consumer Rights Act 2015 Sch. 2
+
+_Consumer contract terms which may be regarded as unfair_
+
+**PART 1 - List of terms**
 
 1 A term which has the object or effect of excluding or limiting the trader's liability in the event of the death of or personal injury to the consumer resulting from an act or omission of the trader.
 
@@ -59,6 +63,8 @@ enforcement_status: in_force
 (b) unduly restricting the evidence available to the consumer, or
 
 (c) imposing on the consumer a burden of proof which, according to the applicable law, should lie with another party to the contract.
+
+**PART 2 - Scope of Part 1**
 
 21 Paragraph 8 (cancellation without reasonable notice) does not include a term by which a supplier of financial services reserves the right to terminate unilaterally a contract of indeterminate duration without notice where there is a valid reason, if the supplier is required to inform the consumer of the cancellation immediately.
 

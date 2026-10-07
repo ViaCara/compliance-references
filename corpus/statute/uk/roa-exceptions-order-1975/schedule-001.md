@@ -6,13 +6,15 @@ kind: legislation_schedule
 citation: ROA 1974 (Exceptions) Order 1975, Sch. 1
 source_uri: "https://www.legislation.gov.uk/uksi/1975/1023/schedule/1/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: 85f21b8c6a0223a2046081e350e9bd4a635db67f6f2cb7395bbe4df334c69b5a
-last_fetched: 2026-09-03
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: de250ae9e39e6d127144209f97c46126d917330fabe56b504fc0f8a7cdc0e11d
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # ROA 1974 (Exceptions) Order 1975, Sch. 1
+
+_Excepted professions, offices, employments, work and occupations_
 
 1. Health care professional.
 

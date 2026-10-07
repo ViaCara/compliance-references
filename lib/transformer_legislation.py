@@ -11,7 +11,8 @@ Class names used in selection (from the legislation.gov.uk DOM):
 - `LegP1ContainerFirst` / `LegP1Container`, article / regulation / section heading.
 - `LegP1No`, `LegP1GroupTitleFirst`, `LegP1GroupTitle`, number + title spans.
 - `LegP2Container`, top-level numbered paragraph.
-- `LegTitleBlockTitle`, a schedule's own title, used as the title line.
+- `LegTitleBlockTitle`, a schedule's own title, used as the title line
+  only when the page has no `LegP1GroupTitle`.
 - `LegSchedulePart` / `LegSchedulePartFirst` with `LegPartNo` and
   `LegPartTitle`, a Part heading inside a schedule, kept as a bold
   "PART n - Title" line because paragraphs refer to "this Part".
@@ -195,11 +196,12 @@ class LegislationTransformer:
 
     def _find_title(self, root: ET.Element) -> str | None:
         for element in root.iter():
-            if "LegTitleBlockTitle" in _classes(element):
-                return _inline_text(element)
             if "LegP1GroupTitleFirst" in _classes(element):
                 return _inline_text(element)
             if "LegP1GroupTitle" in _classes(element):
+                return _inline_text(element)
+        for element in root.iter():
+            if "LegTitleBlockTitle" in _classes(element):
                 return _inline_text(element)
         return None
 

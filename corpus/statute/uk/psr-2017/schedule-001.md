@@ -6,13 +6,15 @@ kind: legislation_schedule
 citation: PSRs 2017 Sch. 1
 source_uri: "https://www.legislation.gov.uk/uksi/2017/752/schedule/1/data.xht"
 source_format: xhtml
-revision_id: "Mon, 14 Sep 2026 16:04:15 GMT"
-content_sha256: bd8a07dfedd4327eca68d67277a12021f5ae991a5ae341f01df780acb92e382e
-last_fetched: 2026-09-28
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: e69e389b01f330c2d2c393b4afdeb3e336b2f29655696f8391b22b7a11ad0f0d
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # PSRs 2017 Sch. 1
+
+_Payment Services_
 
 Subject to Part 2, the following, when carried out as a regular occupation or business activity, are payment services—
 

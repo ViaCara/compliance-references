@@ -6,13 +6,17 @@ kind: legislation_schedule
 citation: DPA 2018 Sch. 1 Part 2 para. 11
 source_uri: "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/11/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: 8bbb11edc351e1f3c426164a206ec21ba422e2bad113929e8a57de8071815010
-last_fetched: 2026-09-03
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: 0ea3d825c73f212268ee6d47c5bf9827b6de460363e4b7405d1f1ca8da9adb80
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # DPA 2018 Sch. 1 Part 2 para. 11
+
+_Special categories of personal data and criminal convictions etc data_
+
+**PART 2 - Substantial public interest conditions**
 
 11(1) This condition is met if the processing—
 

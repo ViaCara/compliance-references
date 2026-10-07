@@ -6,13 +6,17 @@ kind: legislation_schedule
 citation: SVGA 2006, Sch. 3 para. 8
 source_uri: "https://www.legislation.gov.uk/ukpga/2006/47/schedule/3/paragraph/8/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: 6cdfe5fa8b82485cb60d50cd12d8bf85a6a9a810389d6aac0d7eb305058ec254
-last_fetched: 2026-09-03
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: 92cab58ee45f4dba41e1df5f1411b5751184dc3c63d24762d6a46d7962b7a825
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # SVGA 2006, Sch. 3 para. 8
+
+_Barred lists_
+
+**Part 2 - Adults' barred list**
 
 8(1) This paragraph applies to a person if any of the criteria prescribed for the purposes of this paragraph is satisfied in relation to the person.
 
