@@ -3467,7 +3467,7 @@
     "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
     "sha": "76a39da0299c8c615890fe93d6c98b958899b01440faea5237cfac867e66aa48",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/schedule/3/data.xht",
-    "summary": "Sets when providers' assessments must be done. The first illegal content risk assessment and children's access assessment are due within three months of the day a service becomes a Part 3 service, or of the relevant OFCOM guidance if that comes later. The children's risk assessment runs from a separate trigger: within three months of the day the service is first, or again, treated as likely to be accessed by children (paragraph 5).",
+    "summary": "Sets when providers' assessments must be done. The first illegal content risk assessment and children's access assessment are due within three months of the day a service becomes a Part 3 service, or of the relevant OFCOM guidance if that comes later. The children's risk assessment runs from a separate trigger (paragraph 5): within three months of the day the service is first, or again, treated as likely to be accessed by children, or, if the first children's risk assessment guidance was not yet published that day, within three months of its publication, provided the service is still so treated just before it.",
     "title": "Online Safety Act 2023 Schedule 3 - Timing of providers' assessments"
   },
   {
