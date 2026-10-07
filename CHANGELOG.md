@@ -2,6 +2,49 @@
 
 Drift log. Newer entries first.
 
+## 2026-10-07
+- **corpus/statute/uk/osa-2023/schedule-003.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/schedule/3/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   6285abcff0523d70e323778442b7190c59e865c38cf5dea63f25dab69bbd2285
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/osa-2023/section-067.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/67/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   c3065f83dbb9c1333ad00bb3c3dfb113a656d09da6ae3eef18f11dfca28ed412
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/osa-2023/section-023.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/23/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   b0b279e914b6e2590afa2065caad85e9359f569fca3ed107cd54445de0f2a999
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/osa-2023/section-022.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/22/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   0f8a811d2cb4ee9783069214e8d1140447392e448974ac87d692186227f380d1
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/osa-2023/section-020a.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/20A/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   2238421195103a87ed7be45cefc5c3039f2137b098d06d5ad786a83018ae3e79
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/osa-2023/section-010.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/10/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   0575363318f9da8f7704019561cbf3e95e853d13fc1730b9de400fd0bb314f63
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/osa-2023/section-009.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/9/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   f3b9d4bfce722f99fb0eafc138e298f104ec3359e3dce70ba97033a7f4bffa3e
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
 ## 2026-09-30
 - **corpus/guidance/uk/cma/price-reduction-claims-online.md** adds curated quotes from the CMA compliance advice on urgency and price reduction claims (29 March 2023): the definition of a price reduction claim, the evidence and record-keeping duty and examples 9, 10 and 12 on comparison prices that are not the usual selling price, fetched 2026-09-30; human review remains pending.
 
