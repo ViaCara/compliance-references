@@ -11,6 +11,16 @@ Class names used in selection (from the legislation.gov.uk DOM):
 - `LegP1ContainerFirst` / `LegP1Container`, article / regulation / section heading.
 - `LegP1No`, `LegP1GroupTitleFirst`, `LegP1GroupTitle`, number + title spans.
 - `LegP2Container`, top-level numbered paragraph.
+- `LegTitleBlockTitle`, a schedule's own title, used as the title line
+  only when the page has no `LegP1GroupTitle`.
+- `LegSchedulePart` / `LegSchedulePartFirst` with `LegPartNo` and
+  `LegPartTitle`, a Part heading inside a schedule, kept as a bold
+  "PART n - Title" line because paragraphs refer to "this Part".
+- `LegSP1GroupTitle` / `LegSP1GroupTitleFirst`, a schedule's cross-heading,
+  kept as a bold line like `LegP2GroupTitle`.
+- `LegP2GroupTitle`, a cross-heading inside a section ("All services",
+  "Additional duties for Category 1 services"). It scopes the subsections
+  under it, so it is kept as a bold line.
 - `LegP2No`, `LegP2Text`, number / text.
 - `LegP3Container`, sub-paragraph (e.g. "(a)").
 - `LegP3No`, `LegP3Text`, number / text.
@@ -190,7 +200,19 @@ class LegislationTransformer:
                 return _inline_text(element)
             if "LegP1GroupTitle" in _classes(element):
                 return _inline_text(element)
+        for element in root.iter():
+            if "LegTitleBlockTitle" in _classes(element):
+                return _inline_text(element)
         return None
+
+    def _schedule_part_heading(self, element: ET.Element) -> str:
+        number = title = ""
+        for child in element.iter():
+            if "LegPartNo" in _classes(child):
+                number = _inline_text(child)
+            if "LegPartTitle" in _classes(child):
+                title = _inline_text(child)
+        return " - ".join(part for part in (number, title) if part)
 
     def _find_chapter(self, root: ET.Element) -> str | None:
         for element in root.iter():
@@ -215,6 +237,16 @@ class LegislationTransformer:
             cls = _classes(element)
             if len(extents) > 1 and id(element) in extents:
                 yield f"**Extent:** {extents[id(element)]}"
+                continue
+            if cls & {"LegSchedulePart", "LegSchedulePartFirst"}:
+                heading = self._schedule_part_heading(element)
+                if heading:
+                    yield f"**{heading}**"
+                continue
+            if cls & {"LegP2GroupTitle", "LegSP1GroupTitle", "LegSP1GroupTitleFirst"}:
+                heading = _inline_text(element)
+                if heading:
+                    yield f"**{heading}**"
                 continue
             container_level = next(
                 (lvl for lvl in self._LEVELS if _is_container(cls, lvl)), None

@@ -6,9 +6,9 @@ kind: legislation_section
 citation: OSA 2023 s. 20
 source_uri: "https://www.legislation.gov.uk/ukpga/2023/50/section/20/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: 776f6c903884e581e96e0532817b0645541ddf245f7979e1eb61ea7761bb4e2d
-last_fetched: 2026-09-03
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: a746e5bc9f80d28fa454e68a09c6e3c9409504576b1adac2411bf226342f9c84
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
@@ -20,9 +20,15 @@ _Duty about content reporting_
 
 (2) A duty to operate a service using systems and processes that allow users and affected persons to easily report content which they consider to be content of a kind specified below (with the duty extending to different kinds of content depending on the kind of service, as indicated by the headings).
 
+**All services**
+
 (3) Illegal content.
 
+**Services likely to be accessed by children**
+
 (4) Content that is harmful to children, present on a part of a service that it is possible for children to access.
+
+**Interpretation**
 
 (5) In this section “affected person” means a person, other than a user of the service in question, who is in the United Kingdom and who is—
 

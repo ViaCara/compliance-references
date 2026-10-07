@@ -6,13 +6,15 @@ kind: legislation_schedule
 citation: Conduct Regulations 2003 Sch. 5
 source_uri: "https://www.legislation.gov.uk/uksi/2003/3319/schedule/5/data.xht"
 source_format: xhtml
-revision_id: "Mon, 14 Sep 2026 16:04:15 GMT"
-content_sha256: 7c6dccd0c3dfb5a181806f3102a7f2b563bd25c946c05ce1b3c1babf9eceef1a
-last_fetched: 2026-09-29
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: 0f67d5563cbd94eab489b1fd22653e6dd01d2765850fcc1d8bb7d5b4f7e7493a
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # Conduct Regulations 2003 Sch. 5
+
+_PARTICULARS TO BE INCLUDED IN AN AGENCY'S OR EMPLOYMENT BUSINESS'S RECORDS RELATING TO HIRERS_
 
 1. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 

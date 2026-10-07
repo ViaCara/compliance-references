@@ -2,6 +2,289 @@
 
 Drift log. Newer entries first.
 
+## 2026-10-07
+- **corpus/statute/uk/osa-2023/schedule-001.md** hash 9b32ab8 -> 80992d9
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/schedule/1/data.xht
+  - prior_sha256: 9b32ab88ecd8dfc19a64d058c2e76ca77938faa15454e4a6d5d0dca3a6252496
+  - new_sha256:   80992d9cc22388075c93eea4afbf04dc79b8578450cce88f2783fb37f2a49ff1
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/osa-2023/section-021.md** hash d6bc20f -> f939014
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/21/data.xht
+  - prior_sha256: d6bc20f2a7f05577aa1678c4434e61a3996200860d3953c93344dc23fde65d30
+  - new_sha256:   f93901423dd4ef5940fc0e78be761f67abeed0e6a02005df29bd2a836088ffbe
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/osa-2023/section-020.md** hash 776f6c9 -> a746e5b
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/20/data.xht
+  - prior_sha256: 776f6c903884e581e96e0532817b0645541ddf245f7979e1eb61ea7761bb4e2d
+  - new_sha256:   a746e5bc9f80d28fa454e68a09c6e3c9409504576b1adac2411bf226342f9c84
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/osa-2023/section-012.md** hash a04340c -> 9646ba9
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/12/data.xht
+  - prior_sha256: a04340c948cebfd971476a4b5c05027867ebe1b47cc0ca1d59a179c3dd3f988d
+  - new_sha256:   9646ba9528a7fd2112e2ca8c3f82124c1dd3490803aa6a79b0acd7aeeade0540
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/conduct-regs-2003/schedule-005.md** hash 7c6dccd -> 0f67d55
+  - source: https://www.legislation.gov.uk/uksi/2003/3319/schedule/5/data.xht
+  - prior_sha256: 7c6dccd0c3dfb5a181806f3102a7f2b563bd25c946c05ce1b3c1babf9eceef1a
+  - new_sha256:   0f67d5563cbd94eab489b1fd22653e6dd01d2765850fcc1d8bb7d5b4f7e7493a
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/conduct-regs-2003/schedule-004.md** hash e5feb00 -> 8f49253
+  - source: https://www.legislation.gov.uk/uksi/2003/3319/schedule/4/data.xht
+  - prior_sha256: e5feb0030cb68a6a727a140f21bceb7bb244286c9845f9eeed182192b09f714d
+  - new_sha256:   8f49253b143d1b7add7961deb7dbae1387a58f56485676bd8372ac45f22cde4f
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/psr-2017/schedule-001.md** hash bd8a07d -> e69e389
+  - source: https://www.legislation.gov.uk/uksi/2017/752/schedule/1/data.xht
+  - prior_sha256: bd8a07dfedd4327eca68d67277a12021f5ae991a5ae341f01df780acb92e382e
+  - new_sha256:   e69e389b01f330c2d2c393b4afdeb3e336b2f29655696f8391b22b7a11ad0f0d
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/misuse-drugs-regulations-2001/schedule-001.md** hash 7cf73be -> 93cc457
+  - source: https://www.legislation.gov.uk/uksi/2001/3998/schedule/1/data.xht
+  - prior_sha256: 7cf73beb9201c87b4e49b4d3abc842f1de3c71751238282343644d362a664f91
+  - new_sha256:   93cc4570494a674d96624214f01b449f7017c4307d5f5045e92a500ec32defc6
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/misuse-drugs-1971/schedule-002.md** hash 042cb7a -> 55a3892
+  - source: https://www.legislation.gov.uk/ukpga/1971/38/schedule/2/data.xht
+  - prior_sha256: 042cb7ae000c887ccccc6a3e455b000b685f30ea9cacfd9b6a3c04df1416493b
+  - new_sha256:   55a3892e2c8bbd2e27670c189b11f947a39572fc3ffdd8e7185280a3931b54c1
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/mdr-2002/regulation-002.md** hash e930d18 -> b7d023f
+  - source: https://www.legislation.gov.uk/uksi/2002/618/regulation/2/data.xht
+  - prior_sha256: e930d18e930df9f6eeb80861a709b1a1720277c410d70feebab51220d2e0e6f3
+  - new_sha256:   b7d023f56fcaca16e34c14ca5e8fb4679581989a6d3faf201a0eb81072289fc4
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/disclosure-scotland-act-2020/schedule-003.md** hash 2bd9ae9 -> 0a5af4c
+  - source: https://www.legislation.gov.uk/asp/2020/13/schedule/3/data.xht
+  - prior_sha256: 2bd9ae97105ae51a8760f6dfc7d3a00dc2913265f3a85fcf3242ed948d509b53
+  - new_sha256:   0a5af4c28db6d22aaba2378977e41a0130e285e83c3062e64594a2bea1004c1b
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/svga-2006/schedule-004-paragraph-003.md** hash 684476b -> 6bc4d54
+  - source: https://www.legislation.gov.uk/ukpga/2006/47/schedule/4/paragraph/3/data.xht
+  - prior_sha256: 684476beedb971a1bce476a5e9a149c0cd8e05c833004d83cd1fdfeede7fd703
+  - new_sha256:   6bc4d54de030f0f7800f8344e04c498cd8a49526e83f1288ce5458da51de8699
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/roa-exceptions-order-1975/schedule-001.md** hash 85f21b8 -> de250ae
+  - source: https://www.legislation.gov.uk/uksi/1975/1023/schedule/1/data.xht
+  - prior_sha256: 85f21b8c6a0223a2046081e350e9bd4a635db67f6f2cb7395bbe4df334c69b5a
+  - new_sha256:   de250ae9e39e6d127144209f97c46126d917330fabe56b504fc0f8a7cdc0e11d
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-001-part-004-paragraph-041.md** hash 1779cb7 -> 580f176
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/41/data.xht
+  - prior_sha256: 1779cb74a6e1a8331980e98273bf792e337d7a38d0489941c214fca63eddc1d7
+  - new_sha256:   580f1767c3eb1948c26fa96ed3fa4ccde74561bdea466ab84f0e3ab40a99e191
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-001-part-004-paragraph-038.md** hash 7763371 -> fbeb141
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/38/data.xht
+  - prior_sha256: 776337136cde9524bcedb3b8fffc3e949adbd30b0bd21ff913665d5911366a73
+  - new_sha256:   fbeb141c62ed6eb36d9dee0264a3e6c4b9f727aba6ae64024360f2de842dd04e
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-001-part-003-paragraph-037.md** hash 4b493c0 -> b9508dc
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/37/data.xht
+  - prior_sha256: 4b493c0ec7ca09528fecf46d880d4c041115525e96e672aebd30162a83c71080
+  - new_sha256:   b9508dcac2510284a91ac3d2169a1fe4a8d0f2dac72634d9c2050265d0ce5991
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-001-part-003-paragraph-036.md** hash baa5ed1 -> 9799308
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/36/data.xht
+  - prior_sha256: baa5ed1b611c572b4e1f7daaa0bd69a56b63ca0909d34374f7b5c3dbea659248
+  - new_sha256:   979930873636bb88648354781ad125ec9de4b296ce496755e701d28416fa1ea3
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-001-part-003-paragraph-033.md** hash fd92575 -> da9284d
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/33/data.xht
+  - prior_sha256: fd925759e0d36a3c5abf30484b3bbbf8abe72f920fe75623cbb88b8c9cf1a691
+  - new_sha256:   da9284d2ac87f6e4ade9d2a36939f24d1aafce630f53cea458ec34656e4b5480
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-001-part-003-paragraph-032.md** hash 5482606 -> f323519
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/32/data.xht
+  - prior_sha256: 54826063c94a84e0a6f3e0b74ba2f25f523ae1f429fc08ca0c39d9de28d23769
+  - new_sha256:   f323519739d75637aff8ce6fc44f242448807a9c25b6380c38f9d881d623aa60
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-001-part-003-paragraph-030.md** hash e7a14a9 -> 84350fa
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/30/data.xht
+  - prior_sha256: e7a14a9c9a6ca30e6b19df14e64d5bec7179afde4fa8143d7d5bddc9dd01a994
+  - new_sha256:   84350fa061c26bf0ab372a149d56b62c7b401ecf44986967370b12bf28cdcc86
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-001-part-003-paragraph-029.md** hash 88f09b1 -> 926280e
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/29/data.xht
+  - prior_sha256: 88f09b1ea0c6216cff821a97853682df6d961658b50fc55bc810aac0db72a231
+  - new_sha256:   926280e9917957662235076f0ba5d9c1c7258795c6c6365916deb2908968b64f
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-001-part-002-paragraph-017.md** hash 5890713 -> cd9a2af
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/17/data.xht
+  - prior_sha256: 58907133722ee9dd3c5d02e79fce1aae83f28b99e6d19aaddbc61d15fe882aa5
+  - new_sha256:   cd9a2afdac18164a013467b7d8e61a09660d72c12200baf5dfd5d8bc665b6f61
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-001-part-002-paragraph-011.md** hash 8bbb11e -> 0ea3d82
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/11/data.xht
+  - prior_sha256: 8bbb11edc351e1f3c426164a206ec21ba422e2bad113929e8a57de8071815010
+  - new_sha256:   0ea3d825c73f212268ee6d47c5bf9827b6de460363e4b7405d1f1ca8da9adb80
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-001-part-002-paragraph-010.md** hash c33a5cb -> 142a0c7
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/10/data.xht
+  - prior_sha256: c33a5cb4dbe167e68a0dc1c6898929ed7635e1d10bf26030bdcffc85b982ac3f
+  - new_sha256:   142a0c7112da581cefcd39b1c79497d349bb635e6e69f2f1b7e5d332cad354ef
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-001-part-002-paragraph-006.md** hash f5feac8 -> ad46e3c
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/6/data.xht
+  - prior_sha256: f5feac8be8a2439b53cdd759abad7f50008d87bc7f38c042cb34995e6ce515bb
+  - new_sha256:   ad46e3cdc0ab43646cf3d930cb5554efa029bab712f3101cd5a7edf2849cd2e4
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-001-part-001-paragraph-001.md** hash 9b0b2dc -> d362c81
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/1/data.xht
+  - prior_sha256: 9b0b2dc522a56b7ef52a1781b20081ff76d2c3f3b4af62031e0843ead965bc11
+  - new_sha256:   d362c814a7f2605e16b2f79086f7ccffcdd32f53818adacccd9570e8d7d72ed2
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/svga-2006/schedule-003-paragraph-010.md** hash 853520e -> ae4f2c5
+  - source: https://www.legislation.gov.uk/ukpga/2006/47/schedule/3/paragraph/10/data.xht
+  - prior_sha256: 853520e12e84188331b6e913d20a7e089a82f5dd1999c81007a8abc81978fa06
+  - new_sha256:   ae4f2c50695148ec0afe1f0580fc68e6e38494f0a792ed8b386e13dc4786a0ad
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/svga-2006/schedule-003-paragraph-008.md** hash 6cdfe5f -> 92cab58
+  - source: https://www.legislation.gov.uk/ukpga/2006/47/schedule/3/paragraph/8/data.xht
+  - prior_sha256: 6cdfe5fa8b82485cb60d50cd12d8bf85a6a9a810389d6aac0d7eb305058ec254
+  - new_sha256:   92cab58ee45f4dba41e1df5f1411b5751184dc3c63d24762d6a46d7962b7a825
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/svga-2006/schedule-003-paragraph-007.md** hash 3d23723 -> 0d1ef53
+  - source: https://www.legislation.gov.uk/ukpga/2006/47/schedule/3/paragraph/7/data.xht
+  - prior_sha256: 3d237239fe89344f1ed34cc73372f02d45631376849c3a788e1a54f763e5f3eb
+  - new_sha256:   0d1ef532ec244b9789be9a7ebdf10dad0350aa2b6e8723279bd1e5d4fa7d9852
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/svga-2006/schedule-003-paragraph-004.md** hash 4778d6d -> b51554d
+  - source: https://www.legislation.gov.uk/ukpga/2006/47/schedule/3/paragraph/4/data.xht
+  - prior_sha256: 4778d6d07841eb5ecbcb4915c9bb1060512b93dfb4cac78a47dd4a35adf4c2f5
+  - new_sha256:   b51554d579e7b46f5c8cdf13c3688000016101b79a137e83fe2597b865556c31
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/svga-2006/schedule-003-paragraph-002.md** hash 65c01fd -> 250ee42
+  - source: https://www.legislation.gov.uk/ukpga/2006/47/schedule/3/paragraph/2/data.xht
+  - prior_sha256: 65c01fd9b6ddfa3ba03da8683b1e56af0deb4abbad3968ef135752f682154b5d
+  - new_sha256:   250ee428f25a68166f4dcd9e6ba6233da0692ddf8ada01d693f8d8ba6376fd56
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/svga-2006/schedule-003-paragraph-001.md** hash b673177 -> 6a39a09
+  - source: https://www.legislation.gov.uk/ukpga/2006/47/schedule/3/paragraph/1/data.xht
+  - prior_sha256: b6731771d09117ce9fd69c5f68300730096df832dacfbb90517a711bee49da0b
+  - new_sha256:   6a39a09c0939552d86d21097a7a091dd8558bc179b2f2e176fb8295461e40194
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-001-part-004-paragraph-039.md** hash d524334 -> fda1e71
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/39/data.xht
+  - prior_sha256: d5243347df4e5aa297cd8d3f9f1f9de0817c93baaaef9d081078118f2172f5ff
+  - new_sha256:   fda1e7197e9b6da5e7d0b51edc28a8124e6658534cc1e09da9bd0e1117de4d78
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-001-part-002-paragraph-005.md** hash ca44807 -> c10eb4c
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/5/data.xht
+  - prior_sha256: ca448071befc1028736a5702524c77b2e026f48475023bd93c2e3497e1a54e03
+  - new_sha256:   c10eb4c17fbc29450cb5521070ae604983ea6370315f0ec582d53f718fc20124
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-001-paragraph-002.md** hash 48a8cf3 -> a636a12
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/2/data.xht
+  - prior_sha256: 48a8cf30919fb0f9742a716af2b42ae3ce325aa60237c8518a08cc0576b25f53
+  - new_sha256:   a636a127312ec56f252235765d6999b9ef11c643c8bac5aa75c5af715666e5b3
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/consumer-rights-act-2015/schedule-002.md** hash ec6b1b4 -> 25d87f8
+  - source: https://www.legislation.gov.uk/ukpga/2015/15/schedule/2/data.xht
+  - prior_sha256: ec6b1b49a925194ced4012abee118eb86b1c3174de9fb56b8803c3c32507ea96
+  - new_sha256:   25d87f8f622bd8760aced0a1ef662f840cf54c90d4a92797eeffcaa09f9260a5
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/fpo-2005/article-051.md** hash 9faeef6 -> f9e3c01
+  - source: https://www.legislation.gov.uk/uksi/2005/1529/article/51/data.xht
+  - prior_sha256: 9faeef6058a5d9f056f45aa34863be0be6278362e57db9fd7e28418d1ccf0e28
+  - new_sha256:   f9e3c0177f0b2af5dde23429596fbf7bdb871f916b15ccfc0688cfea7e27cd26
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/fpo-2005/article-050a.md** hash 8d958e6 -> 294a745
+  - source: https://www.legislation.gov.uk/uksi/2005/1529/article/50A/data.xht
+  - prior_sha256: 8d958e622e5ed7364e1a19c007ba632fdf970b15c6a1cd01f6badbb0e2746df5
+  - new_sha256:   294a745669e894bb12d1d994ff0bac4cf941bd164270baa9972e9416b8b956bf
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/fpo-2005/article-050.md** hash a30dd1e -> 42abbf6
+  - source: https://www.legislation.gov.uk/uksi/2005/1529/article/50/data.xht
+  - prior_sha256: a30dd1e418784395122adb687174b6530834e9ee9914eafdffcb74f351095436
+  - new_sha256:   42abbf6873804c8e756a898fe0ad611c98584425b5f68a76cde8d80f64946f6f
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/fpo-2005/article-049.md** hash d33c459 -> 279a6b6
+  - source: https://www.legislation.gov.uk/uksi/2005/1529/article/49/data.xht
+  - prior_sha256: d33c45999e8c00175e5e48adb1158d9f92aeaa8847df90ed5f5b6594bbb22cbc
+  - new_sha256:   279a6b6f538e6e7f75e888f6af7ad523d02ffdfa482fb7b816859807f01e7176
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/fpo-2005/article-048.md** hash 18870a4 -> dfdf8b7
+  - source: https://www.legislation.gov.uk/uksi/2005/1529/article/48/data.xht
+  - prior_sha256: 18870a42d0e401864659c34306700e85dba072c4321c7792f8d33d181731f4cf
+  - new_sha256:   dfdf8b7ebfbe141945695127e572359c400ea93e2270991900e5a970880d2094
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/fpo-2005/article-019.md** hash 299bbf7 -> 853234e
+  - source: https://www.legislation.gov.uk/uksi/2005/1529/article/19/data.xht
+  - prior_sha256: 299bbf731b82952127566e8abbe17c99b85b566c982228d9f8ce6c242a003b8f
+  - new_sha256:   853234e2da882a4f3e0c73c40c3da992db53ba73d06ce3da5462ac2c63c67e36
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/fpo-2005/article-012.md** hash 5db7c6c -> 1cead28
+  - source: https://www.legislation.gov.uk/uksi/2005/1529/article/12/data.xht
+  - prior_sha256: 5db7c6cf5f29cac62f11c03318329088bea7472eb502b830f183f57819ef8662
+  - new_sha256:   1cead287f27758e04bfe4d5d2449bbfdba90c60952da9e6115296d72958f2e19
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/dmcc-2024/schedule-020.md** hash 111d9d9 -> 27e92cf
+  - source: https://www.legislation.gov.uk/ukpga/2024/13/schedule/20/data.xht
+  - prior_sha256: 111d9d9fa6dc2cc2d29c25972232d48bfed57546cebb45039774ea9445edb661
+  - new_sha256:   27e92cfa314951c2b21ad6d3c6faef2b959e3909885cee663b8f1c4a4b1eb255
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/equality-act-2010/schedule-002.md** hash 492782a -> fc923a3
+  - source: https://www.legislation.gov.uk/ukpga/2010/15/schedule/2/data.xht
+  - prior_sha256: 492782a15002c9ccf1414a699e2a7610d819daed86234bb3e7a2a0e5a5f21845
+  - new_sha256:   fc923a34abbd059378f4bf93faa074046507020e7f3b59eb513e3de25759e5de
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/equality-act-2010/schedule-001.md** hash caec18e -> 1ff3e53
+  - source: https://www.legislation.gov.uk/ukpga/2010/15/schedule/1/data.xht
+  - prior_sha256: caec18e0fa7e0a83e2cdab09640090920dbf134abf8e69f7282db06cd2ee4091
+  - new_sha256:   1ff3e5352cc2580dd4f560ff3242fe9a8fed9eb3602543332b1107c3cdc0e207
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-001-paragraph-018.md** hash a89b226 -> 94c36b5
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/18/data.xht
+  - prior_sha256: a89b226004881696d306f998563f6a00537349f961ab3628e701d9b1a3b00814
+  - new_sha256:   94c36b57c1c79964c5ae020a036152f1d3672522b6143434ceb49178934c9f91
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
 ## 2026-09-30
 - **corpus/guidance/uk/cma/price-reduction-claims-online.md** adds curated quotes from the CMA compliance advice on urgency and price reduction claims (29 March 2023): the definition of a price reduction claim, the evidence and record-keeping duty and examples 9, 10 and 12 on comparison prices that are not the usual selling price, fetched 2026-09-30; human review remains pending.
 
