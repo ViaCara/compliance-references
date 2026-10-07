@@ -5,12 +5,20 @@ import unittest
 from pathlib import Path
 
 from lib.frontmatter import body_sha256, parse
+from lib.transformer_legislation import LegislationTransformer
 
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "manifest.json"
 INDEX = ROOT / "index.json"
 CORPUS = ROOT / "corpus"
+FIXTURES = Path(__file__).parent / "fixtures"
+
+# Raw legislation.gov.uk XHTML captured 2026-10-07 (revision Wed, 30 Sep 2026 16:18:53 GMT).
+SOURCE_FIXTURES = {
+    "adequacy-usa-regs-2023-reg-003": "uksi_2023_1028_regulation_003.xhtml",
+    "dpa-2018-sch-021-p-004": "dpa_2018_schedule_021_paragraph_004.xhtml",
+}
 
 EXPECTED = {
     "adequacy-usa-regs-2023-reg-002": (
@@ -84,6 +92,15 @@ class AdequacyRegulationSourceTests(unittest.TestCase):
                 self.assertEqual(source["target"], index[source_id]["path"])
                 self.assertEqual(frontmatter["content_sha256"], index[source_id]["sha"])
                 self.assertEqual(body_sha256(text), frontmatter["content_sha256"])
+
+    def test_load_bearing_bodies_match_the_raw_source(self):
+        transformer = LegislationTransformer()
+        for source_id, fixture in SOURCE_FIXTURES.items():
+            with self.subTest(source_id=source_id):
+                source = self.sources[source_id]
+                raw = (FIXTURES / fixture).read_text(encoding="utf-8")
+                _, body = parse((CORPUS / source["target"]).read_text(encoding="utf-8"))
+                self.assertEqual(transformer.transform(raw, citation=source["citation"]), body)
 
 
 if __name__ == "__main__":
