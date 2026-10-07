@@ -11,6 +11,9 @@ Class names used in selection (from the legislation.gov.uk DOM):
 - `LegP1ContainerFirst` / `LegP1Container`, article / regulation / section heading.
 - `LegP1No`, `LegP1GroupTitleFirst`, `LegP1GroupTitle`, number + title spans.
 - `LegP2Container`, top-level numbered paragraph.
+- `LegP2GroupTitle`, a cross-heading inside a section ("All services",
+  "Additional duties for Category 1 services"). It scopes the subsections
+  under it, so it is kept as a bold line.
 - `LegP2No`, `LegP2Text`, number / text.
 - `LegP3Container`, sub-paragraph (e.g. "(a)").
 - `LegP3No`, `LegP3Text`, number / text.
@@ -215,6 +218,11 @@ class LegislationTransformer:
             cls = _classes(element)
             if len(extents) > 1 and id(element) in extents:
                 yield f"**Extent:** {extents[id(element)]}"
+                continue
+            if "LegP2GroupTitle" in cls:
+                heading = _inline_text(element)
+                if heading:
+                    yield f"**{heading}**"
                 continue
             container_level = next(
                 (lvl for lvl in self._LEVELS if _is_container(cls, lvl)), None

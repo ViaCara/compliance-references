@@ -7,7 +7,7 @@ citation: OSA 2023 s. 10
 source_uri: "https://www.legislation.gov.uk/ukpga/2023/50/section/10/data.xht"
 source_format: xhtml
 revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
-content_sha256: 0575363318f9da8f7704019561cbf3e95e853d13fc1730b9de400fd0bb314f63
+content_sha256: 0b0084f9cb9f620cba06b07cfbbeb1d3306f50dda7e69961d2b175a4d6dd661d
 last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
@@ -17,6 +17,8 @@ enforcement_status: in_force
 _Safety duties about illegal content_
 
 (1) This section sets out the duties about illegal content which apply in relation to regulated user-to-user services (as indicated by the headings).
+
+**All services**
 
 (2) A duty, in relation to a service, to take or use proportionate measures relating to the design or operation of the service to—
 
@@ -80,7 +82,11 @@ as soon as reasonably practicable, and no later than 48 hours, after the provide
 
 (8) A duty to ensure that the provisions of the terms of service referred to in subsections (5) and (7) are clear and accessible.
 
+**Additional duty for Category 1 services**
+
 (9) A duty to summarise in the terms of service the findings of the most recent illegal content risk assessment of a service (including as to levels of risk and as to nature, and severity, of potential harm to individuals).
+
+**Interpretation**
 
 (10) In determining what is proportionate for the purposes of this section, the following factors, in particular, are relevant—
 

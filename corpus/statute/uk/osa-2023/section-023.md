@@ -7,7 +7,7 @@ citation: OSA 2023 s. 23
 source_uri: "https://www.legislation.gov.uk/ukpga/2023/50/section/23/data.xht"
 source_format: xhtml
 revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
-content_sha256: b0b279e914b6e2590afa2065caad85e9359f569fca3ed107cd54445de0f2a999
+content_sha256: 769ae3b6955910817030b3efee9523564908d284692942d634146b2ad06b72e0
 last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
@@ -17,6 +17,8 @@ enforcement_status: in_force
 _Record-keeping and review duties_
 
 (1) This section sets out the record-keeping and review duties which apply in relation to regulated user-to-user services (as indicated by the headings).
+
+**All services**
 
 (2) A duty to make and keep a written record, in an easily understandable form, of all aspects of every risk assessment under section 9 or 11, including details about how the assessment was carried out and its findings.
 
@@ -50,9 +52,13 @@ In this section such measures are referred to as “applicable measures in a cod
 
 (8) OFCOM must publish details of any exemption or revocation under subsection (7), including reasons for the revocation of an exemption.
 
+**Additional duties for Category 1 services**
+
 (9) A duty to make and keep a written record, in an easily understandable form, of all aspects of every assessment under section 14 (assessments related to the adult user empowerment duty set out in section 15(2)), including details about how the assessment was carried out and its findings.
 
 (10) As soon as reasonably practicable after making a record of an assessment as required by subsection (2) or (9), or revising such a record, a duty to supply OFCOM with a copy of the record (in full).
+
+**Interpretation**
 
 (11) In this section—
 

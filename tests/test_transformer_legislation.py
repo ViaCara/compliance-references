@@ -49,6 +49,27 @@ class LegislationTransformerTests(unittest.TestCase):
         self.assertIn("racial or ethnic origin", markdown)
         self.assertIn("explicit consent", markdown)
 
+    def test_keeps_cross_headings_that_scope_subsections(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<h6 class="LegP2GroupTitle">All services</h6>'
+            '<p class="LegClearFix LegP2Container">'
+            '<span class="LegDS LegLHS LegP2No">(2)</span>'
+            '<span class="LegDS LegRHS LegP2Text">A duty for every service.</span></p>'
+            '<h6 class="LegP2GroupTitle">Additional duties for Category 1 services</h6>'
+            '<p class="LegClearFix LegP2Container">'
+            '<span class="LegDS LegLHS LegP2No">(4)</span>'
+            '<span class="LegDS LegRHS LegP2Text">A duty for Category 1 only.</span></p>'
+            "</div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="OSA 2023 s. 22")
+
+        self.assertIn(
+            "**All services**\n\n(2) A duty for every service.\n\n"
+            "**Additional duties for Category 1 services**\n\n(4) A duty for Category 1 only.",
+            markdown,
+        )
+
     def test_collapses_repealed_dot_only_paragraphs_into_marker(self):
         source = (
             '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'

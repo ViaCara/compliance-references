@@ -7,7 +7,7 @@ citation: OSA 2023 s. 22
 source_uri: "https://www.legislation.gov.uk/ukpga/2023/50/section/22/data.xht"
 source_format: xhtml
 revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
-content_sha256: 0f8a811d2cb4ee9783069214e8d1140447392e448974ac87d692186227f380d1
+content_sha256: 5aebe3969f8ca82a09c346a7327404e2f9c0ae47e8a72b4374dd2d6503e28443
 last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
@@ -18,9 +18,13 @@ _Duties about freedom of expression and privacy_
 
 (1) This section sets out the duties about freedom of expression and privacy which apply in relation to regulated user-to-user services (as indicated by the headings).
 
+**All services**
+
 (2) When deciding on, and implementing, safety measures and policies, a duty to have particular regard to the importance of protecting users’ right to freedom of expression within the law.
 
 (3) When deciding on, and implementing, safety measures and policies, a duty to have particular regard to the importance of protecting users from a breach of any statutory provision or rule of law concerning privacy that is relevant to the use or operation of a user-to-user service (including, but not limited to, any such provision or rule concerning the processing of personal data).
+
+**Additional duties for Category 1 services**
 
 (4) A duty—
 
@@ -45,6 +49,8 @@ _Duties about freedom of expression and privacy_
 (a) protect users’ right to freedom of expression within the law, and
 
 (b) protect the privacy of users.
+
+**Interpretation**
 
 (8) In this section—
 
