@@ -4,11 +4,12 @@ import json
 import unittest
 from pathlib import Path
 
-from lib.frontmatter import parse
+from lib.frontmatter import body_sha256, parse
 
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "manifest.json"
+INDEX = ROOT / "index.json"
 CORPUS = ROOT / "corpus"
 
 EXPECTED = {
@@ -73,6 +74,16 @@ class AdequacyRegulationSourceTests(unittest.TestCase):
                 frontmatter, text = parse(body)
                 self.assertEqual(source_id, frontmatter["id"])
                 self.assertIn(phrase, " ".join(text.split()))
+
+    def test_index_registers_each_source_with_its_body_hash(self):
+        index = {entry["id"]: entry for entry in json.loads(INDEX.read_text(encoding="utf-8"))}
+        for source_id in EXPECTED:
+            with self.subTest(source_id=source_id):
+                source = self.sources[source_id]
+                frontmatter, text = parse((CORPUS / source["target"]).read_text(encoding="utf-8"))
+                self.assertEqual(source["target"], index[source_id]["path"])
+                self.assertEqual(frontmatter["content_sha256"], index[source_id]["sha"])
+                self.assertEqual(body_sha256(text), frontmatter["content_sha256"])
 
 
 if __name__ == "__main__":
