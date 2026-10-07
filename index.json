@@ -36,6 +36,89 @@
     "title": "Guide for viewing self-employed workers and personal employees' checks"
   },
   {
+    "authority": "statute",
+    "domain_tags": [
+      "cross-border-transfer",
+      "adequacy"
+    ],
+    "enforcement_status": "in_force",
+    "id": "adequacy-korea-regs-2022-reg-002",
+    "jurisdiction": "uk",
+    "path": "statute/uk/adequacy-korea-regs-2022/regulation-002.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "e8d63d7012a88740061ef4e3dd3a8f8995c40134a8e18adf478df2ccc585f009",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2022/1213/regulation/2/data.xht",
+    "summary": "Specifies the Republic of Korea as adequate for a transfer to a person subject to Korea's Personal Information Protection Act.",
+    "title": "Data Protection (Adequacy) (Republic of Korea) Regulations 2022 regulation 2 - Adequate level of protection"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "cross-border-transfer",
+      "adequacy",
+      "supervisory-authority"
+    ],
+    "enforcement_status": "in_force",
+    "id": "adequacy-korea-regs-2022-reg-003",
+    "jurisdiction": "uk",
+    "path": "statute/uk/adequacy-korea-regs-2022/regulation-003.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "99fc5ffe7546f11d63e4bebde46aaa8da4bdf58d42c2359e659ef21d4a3e5277",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2022/1213/regulation/3/data.xht",
+    "summary": "Names the Personal Information Protection Commission and the Financial Services Commission as the independent supervisory authorities in the Republic of Korea.",
+    "title": "Data Protection (Adequacy) (Republic of Korea) Regulations 2022 regulation 3 - Independent supervisory authorities"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "cross-border-transfer",
+      "adequacy",
+      "definitions"
+    ],
+    "enforcement_status": "in_force",
+    "id": "adequacy-usa-regs-2023-reg-002",
+    "jurisdiction": "uk",
+    "path": "statute/uk/adequacy-usa-regs-2023/regulation-002.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "c2dd27a6e6650609aa5337af18f0df634e6a52c687a4eabe254d3aecca3ae5d3",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2023/1028/regulation/2/data.xht",
+    "summary": "Definitions for the UK-US Data Bridge: the Data Privacy Framework List that the US Department of Commerce maintains, the EU-US Data Privacy Framework and its Principles, and the UK Extension to the EU-US Data Privacy Framework.",
+    "title": "Data Protection (Adequacy) (United States of America) Regulations 2023 regulation 2 - Interpretation"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "cross-border-transfer",
+      "adequacy"
+    ],
+    "enforcement_status": "in_force",
+    "id": "adequacy-usa-regs-2023-reg-003",
+    "jurisdiction": "uk",
+    "path": "statute/uk/adequacy-usa-regs-2023/regulation-003.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "5a23c46de3a0289ca08435c285c662b798e40676ef9072dc56b47ba3d1ecb89d",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2023/1028/regulation/3/data.xht",
+    "summary": "The UK-US Data Bridge. Specifies the United States as adequate for a transfer to a person that the Data Privacy Framework List shows as participating in the UK Extension, where the data will be subject to the Framework Principles on receipt. Participation is a per-organisation fact to check at transfer time.",
+    "title": "Data Protection (Adequacy) (United States of America) Regulations 2023 regulation 3 - Adequate level of protection"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "cross-border-transfer",
+      "adequacy",
+      "supervisory-authority"
+    ],
+    "enforcement_status": "in_force",
+    "id": "adequacy-usa-regs-2023-reg-004",
+    "jurisdiction": "uk",
+    "path": "statute/uk/adequacy-usa-regs-2023/regulation-004.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "4ff40b638974355534c7409986b665b252dc9a56670b823fa1110db6e1dd3377",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2023/1028/regulation/4/data.xht",
+    "summary": "Names the United States Federal Trade Commission and Department of Transportation as the independent supervisory authorities for the UK Extension to the EU-US Data Privacy Framework.",
+    "title": "Data Protection (Adequacy) (United States of America) Regulations 2023 regulation 4 - Independent supervisory authorities"
+  },
+  {
     "authority": "guidance",
     "domain_tags": [
       "advertising",
@@ -1572,6 +1655,38 @@
     "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/41/data.xht",
     "summary": "Where processing relies on a paragraph 38 condition, the Article 30 record of processing must state which condition is relied on, how the processing satisfies Article 6, and whether personal data is retained and erased in accordance with the policy document, with reasons for any departure. Read with UK GDPR Article 30(5), which removes the small-organisation exemption for Article 10 data, this makes a record-of-processing row for practitioner criminal-record evidence mandatory.",
     "title": "DPA 2018 Schedule 1 Part 4 paragraph 41 - Additional safeguard: record of processing"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "cross-border-transfer",
+      "adequacy"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-sch-021-p-004",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/schedule-021-paragraph-004.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "5aefb7783beb1f059f22a64b9968671e5a29d6885d8baa46f6e4dbcf2df8fe26",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/21/paragraph/4/data.xht",
+    "summary": "Treats a transfer to a destination specified in paragraph 5 as approved by regulations made under UK GDPR Article 45A, and lets the Secretary of State narrow or repeal that list by regulations.",
+    "title": "DPA 2018 Schedule 21 paragraph 4 - UK GDPR: transfers approved by regulations"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "cross-border-transfer",
+      "adequacy"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-sch-021-p-005",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/schedule-021-paragraph-005.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "e7c30e0ade3ca9a6dddf4013e1cf9f9ab2b5a3ae6cfeac4c2b0c5aea6b39bb98",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/21/paragraph/5/data.xht",
+    "summary": "The transitional adequacy list: EEA states, Gibraltar, EU institutions, and the third countries, territories, sectors and organisations covered by EU adequacy decisions in force before IP completion day.",
+    "title": "DPA 2018 Schedule 21 paragraph 5 - Destinations treated as approved"
   },
   {
     "authority": "statute",

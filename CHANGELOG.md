@@ -2,6 +2,49 @@
 
 Drift log. Newer entries first.
 
+## 2026-10-07
+- **corpus/statute/uk/dpa-2018/schedule-021-paragraph-005.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/21/paragraph/5/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   e7c30e0ade3ca9a6dddf4013e1cf9f9ab2b5a3ae6cfeac4c2b0c5aea6b39bb98
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-021-paragraph-004.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/21/paragraph/4/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   5aefb7783beb1f059f22a64b9968671e5a29d6885d8baa46f6e4dbcf2df8fe26
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/adequacy-korea-regs-2022/regulation-003.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2022/1213/regulation/3/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   99fc5ffe7546f11d63e4bebde46aaa8da4bdf58d42c2359e659ef21d4a3e5277
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/adequacy-korea-regs-2022/regulation-002.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2022/1213/regulation/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   e8d63d7012a88740061ef4e3dd3a8f8995c40134a8e18adf478df2ccc585f009
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/adequacy-usa-regs-2023/regulation-004.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2023/1028/regulation/4/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   4ff40b638974355534c7409986b665b252dc9a56670b823fa1110db6e1dd3377
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/adequacy-usa-regs-2023/regulation-003.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2023/1028/regulation/3/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   5a23c46de3a0289ca08435c285c662b798e40676ef9072dc56b47ba3d1ecb89d
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/adequacy-usa-regs-2023/regulation-002.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2023/1028/regulation/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   c2dd27a6e6650609aa5337af18f0df634e6a52c687a4eabe254d3aecca3ae5d3
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
 ## 2026-09-30
 - **corpus/guidance/uk/cma/price-reduction-claims-online.md** adds curated quotes from the CMA compliance advice on urgency and price reduction claims (29 March 2023): the definition of a price reduction claim, the evidence and record-keeping duty and examples 9, 10 and 12 on comparison prices that are not the usual selling price, fetched 2026-09-30; human review remains pending.
 
