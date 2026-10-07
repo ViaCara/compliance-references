@@ -3,6 +3,48 @@
 Drift log. Newer entries first.
 
 ## 2026-10-07
+- **corpus/statute/uk/osa-2023/schedule-003.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/schedule/3/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   76a39da0299c8c615890fe93d6c98b958899b01440faea5237cfac867e66aa48
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/osa-2023/section-067.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/67/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   c3065f83dbb9c1333ad00bb3c3dfb113a656d09da6ae3eef18f11dfca28ed412
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/osa-2023/section-023.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/23/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   769ae3b6955910817030b3efee9523564908d284692942d634146b2ad06b72e0
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/osa-2023/section-022.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/22/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   5aebe3969f8ca82a09c346a7327404e2f9c0ae47e8a72b4374dd2d6503e28443
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/osa-2023/section-020a.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/20A/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   2238421195103a87ed7be45cefc5c3039f2137b098d06d5ad786a83018ae3e79
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/osa-2023/section-010.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/10/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   0b0084f9cb9f620cba06b07cfbbeb1d3306f50dda7e69961d2b175a4d6dd661d
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/osa-2023/section-009.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2023/50/section/9/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   f3b9d4bfce722f99fb0eafc138e298f104ec3359e3dce70ba97033a7f4bffa3e
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
 - **corpus/statute/uk/osa-2023/schedule-001.md** hash 9b32ab8 -> 80992d9
   - source: https://www.legislation.gov.uk/ukpga/2023/50/schedule/1/data.xht
   - prior_sha256: 9b32ab88ecd8dfc19a64d058c2e76ca77938faa15454e4a6d5d0dca3a6252496

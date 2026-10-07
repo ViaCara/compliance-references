@@ -3168,6 +3168,38 @@
     "authority": "statute",
     "domain_tags": [
       "online-safety",
+      "risk-assessment"
+    ],
+    "enforcement_status": "in_force",
+    "id": "osa-2023-s-009",
+    "jurisdiction": "uk",
+    "path": "statute/uk/osa-2023/section-009.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "f3b9d4bfce722f99fb0eafc138e298f104ec3359e3dce70ba97033a7f4bffa3e",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/section/9/data.xht",
+    "summary": "Requires every provider of a regulated user-to-user service to carry out a suitable and sufficient illegal content risk assessment within the Schedule 3 timeframe, keep it up to date and repeat it before any significant change to the design or operation of the service.",
+    "title": "Online Safety Act 2023 section 9 - Illegal content risk assessment duties"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "online-safety",
+      "terms-of-service"
+    ],
+    "enforcement_status": "in_force",
+    "id": "osa-2023-s-010",
+    "jurisdiction": "uk",
+    "path": "statute/uk/osa-2023/section-010.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "0b0084f9cb9f620cba06b07cfbbeb1d3306f50dda7e69961d2b175a4d6dd661d",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/section/10/data.xht",
+    "summary": "Requires proportionate measures to prevent users encountering priority illegal content, mitigate the risks identified in the illegal content risk assessment, swiftly take down illegal content and state in the terms of service how individuals are protected. Subsections (3A) and (3B) inserted from 29 June 2026 by the Crime and Policing Act 2026.",
+    "title": "Online Safety Act 2023 section 10 - Safety duties about illegal content"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "online-safety",
       "children"
     ],
     "enforcement_status": "in_force",
@@ -3216,6 +3248,21 @@
   {
     "authority": "statute",
     "domain_tags": [
+      "online-safety"
+    ],
+    "enforcement_status": "in_force",
+    "id": "osa-2023-s-020a",
+    "jurisdiction": "uk",
+    "path": "statute/uk/osa-2023/section-020a.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "2238421195103a87ed7be45cefc5c3039f2137b098d06d5ad786a83018ae3e79",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/section/20A/data.xht",
+    "summary": "Inserted from 29 June 2026 by the Crime and Policing Act 2026: the section 20(2) reporting duty includes systems that let users and affected persons easily make an intimate image content report, made by the subject of the content or someone acting for them.",
+    "title": "Online Safety Act 2023 section 20A - Duty about reporting intimate image content"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
       "online-safety",
       "children"
     ],
@@ -3228,6 +3275,39 @@
     "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/section/21/data.xht",
     "summary": "Requires transparent complaints procedures covering illegal content and content harmful to children. Subsections (1)-(5),(6)(a)(b)(d)(e),(7),(8),(9)(a) in force; remainder unconfirmed.",
     "title": "Online Safety Act 2023 section 21 - Duties about complaints procedures"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "online-safety",
+      "privacy"
+    ],
+    "enforcement_status": "in_force",
+    "id": "osa-2023-s-022",
+    "jurisdiction": "uk",
+    "path": "statute/uk/osa-2023/section-022.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "5aebe3969f8ca82a09c346a7327404e2f9c0ae47e8a72b4374dd2d6503e28443",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/section/22/data.xht",
+    "summary": "Requires a regulated user-to-user service, when deciding on and implementing safety measures and policies, to have particular regard to users' freedom of expression and to protecting users from a breach of privacy law. Subsections (4)-(7) add impact assessments and a public statement, for Category 1 services only.",
+    "title": "Online Safety Act 2023 section 22 - Duties about freedom of expression and privacy"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "online-safety",
+      "risk-assessment",
+      "record-keeping"
+    ],
+    "enforcement_status": "in_force",
+    "id": "osa-2023-s-023",
+    "jurisdiction": "uk",
+    "path": "statute/uk/osa-2023/section-023.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "769ae3b6955910817030b3efee9523564908d284692942d634146b2ad06b72e0",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/section/23/data.xht",
+    "summary": "Requires a written record, in an easily understandable form, of every risk assessment and of the measures taken to comply with the relevant duties, and a regular review of compliance. Subsections (1)-(10) in force; (11) in force for specified purposes only.",
+    "title": "Online Safety Act 2023 section 23 - Record-keeping and review duties"
   },
   {
     "authority": "statute",
@@ -3329,6 +3409,22 @@
     "authority": "statute",
     "domain_tags": [
       "online-safety",
+      "safeguarding"
+    ],
+    "enforcement_status": "in_force",
+    "id": "osa-2023-s-067",
+    "jurisdiction": "uk",
+    "path": "statute/uk/osa-2023/section-067.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "c3065f83dbb9c1333ad00bb3c3dfb113a656d09da6ae3eef18f11dfca28ed412",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/section/67/data.xht",
+    "summary": "Requires the Secretary of State to make regulations about the content, format, timing and record-keeping of the CSEA reports that section 66 requires providers to make to the National Crime Agency, and lets them require retention of associated user data.",
+    "title": "Online Safety Act 2023 section 67 - Regulations about reports to the NCA"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "online-safety",
       "children",
       "age-verification"
     ],
@@ -3356,6 +3452,23 @@
     "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/schedule/1/data.xht",
     "summary": "Exemptions list (not a category list): email, SMS/MMS, one-to-one live communications, limited-functionality and internal business services, public bodies, and eligible education/childcare providers.",
     "title": "Online Safety Act 2023 Schedule 1 - Exempt user-to-user and search services"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "online-safety",
+      "risk-assessment",
+      "children"
+    ],
+    "enforcement_status": "in_force",
+    "id": "osa-2023-sch-003",
+    "jurisdiction": "uk",
+    "path": "statute/uk/osa-2023/schedule-003.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "76a39da0299c8c615890fe93d6c98b958899b01440faea5237cfac867e66aa48",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2023/50/schedule/3/data.xht",
+    "summary": "Sets when providers' assessments must be done. The first illegal content risk assessment and children's access assessment are due within three months of the day a service becomes a Part 3 service, or of the relevant OFCOM guidance if that comes later. The children's risk assessment runs from a separate trigger (paragraph 5): within three months of the day the service is first, or again, treated as likely to be accessed by children, or, if the first children's risk assessment guidance was not yet published that day, within three months of its publication, provided the service is still so treated just before it.",
+    "title": "Online Safety Act 2023 Schedule 3 - Timing of providers' assessments"
   },
   {
     "authority": "statute",
