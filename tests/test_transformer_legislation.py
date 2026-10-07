@@ -49,6 +49,54 @@ class LegislationTransformerTests(unittest.TestCase):
         self.assertIn("racial or ethnic origin", markdown)
         self.assertIn("explicit consent", markdown)
 
+    def test_keeps_cross_headings_that_scope_subsections(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<h6 class="LegP2GroupTitle">All services</h6>'
+            '<p class="LegClearFix LegP2Container">'
+            '<span class="LegDS LegLHS LegP2No">(2)</span>'
+            '<span class="LegDS LegRHS LegP2Text">A duty for every service.</span></p>'
+            '<h6 class="LegP2GroupTitle">Additional duties for Category 1 services</h6>'
+            '<p class="LegClearFix LegP2Container">'
+            '<span class="LegDS LegLHS LegP2No">(4)</span>'
+            '<span class="LegDS LegRHS LegP2Text">A duty for Category 1 only.</span></p>'
+            "</div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="OSA 2023 s. 22")
+
+        self.assertIn(
+            "**All services**\n\n(2) A duty for every service.\n\n"
+            "**Additional duties for Category 1 services**\n\n(4) A duty for Category 1 only.",
+            markdown,
+        )
+
+    def test_real_osa_section_022_scopes_category_1_duties(self):
+        source = (FIXTURES / "osa_2023_section_022.xhtml").read_text(encoding="utf-8")
+        markdown = LegislationTransformer().transform(source, citation="OSA 2023 s. 22")
+
+        all_services = markdown.index("**All services**")
+        category_1 = markdown.index("**Additional duties for Category 1 services**")
+        self.assertLess(all_services, markdown.index("(2) When deciding on, and implementing"))
+        self.assertLess(markdown.index("(3) When deciding on"), category_1)
+        self.assertLess(category_1, markdown.index("(4) A duty—"))
+
+    def test_real_osa_schedule_003_keeps_title_parts_and_group_headings(self):
+        source = (FIXTURES / "osa_2023_schedule_003.xhtml").read_text(encoding="utf-8")
+        markdown = LegislationTransformer().transform(source, citation="OSA 2023 Sch. 3")
+
+        self.assertIn("_Timing of providers’ assessments_", markdown)
+        part_1 = markdown.index(
+            "**PART 1 - Timing of illegal content risk assessments and children’s access assessments**"
+        )
+        group = markdown.index(
+            "**Part 3 services already in operation at the outset of the regime provided for by this Act**"
+        )
+        part_3 = markdown.index("**PART 3 - Pre-existing Part 4B services**")
+        self.assertLess(part_1, group)
+        self.assertLess(group, markdown.index("1(1) This paragraph applies"))
+        self.assertLess(part_3, markdown.index("\n7"))
+        self.assertNotIn("U.K.", markdown)
+
     def test_collapses_repealed_dot_only_paragraphs_into_marker(self):
         source = (
             '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'

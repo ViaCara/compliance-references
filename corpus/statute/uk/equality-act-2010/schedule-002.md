@@ -6,13 +6,15 @@ kind: legislation_schedule
 citation: Equality Act 2010 Sch. 2
 source_uri: "https://www.legislation.gov.uk/ukpga/2010/15/schedule/2/data.xht"
 source_format: xhtml
-revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
-content_sha256: 492782a15002c9ccf1414a699e2a7610d819daed86234bb3e7a2a0e5a5f21845
-last_fetched: 2026-08-20
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: fc923a34abbd059378f4bf93faa074046507020e7f3b59eb513e3de25759e5de
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # Equality Act 2010 Sch. 2
+
+_Services and public functions: reasonable adjustments_
 
 1 This Schedule applies where a duty to make reasonable adjustments is imposed on A by this Part.
 

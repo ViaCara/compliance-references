@@ -6,15 +6,17 @@ kind: legislation_article
 citation: FPO 2005 art. 49
 source_uri: "https://www.legislation.gov.uk/uksi/2005/1529/article/49/data.xht"
 source_format: xhtml
-revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
-content_sha256: d33c45999e8c00175e5e48adb1158d9f92aeaa8847df90ed5f5b6594bbb22cbc
-last_fetched: 2026-08-20
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: 279a6b6f538e6e7f75e888f6af7ad523d02ffdfa482fb7b816859807f01e7176
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # FPO 2005 art. 49
 
 _High net worth companies, unincorporated associations etc._
+
+**Exempt Communications: Certain Controlled Activities**
 
 (1) The financial promotion restriction does not apply to any communication which—
 

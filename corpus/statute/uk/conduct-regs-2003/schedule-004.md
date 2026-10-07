@@ -6,13 +6,15 @@ kind: legislation_schedule
 citation: Conduct Regulations 2003 Sch. 4
 source_uri: "https://www.legislation.gov.uk/uksi/2003/3319/schedule/4/data.xht"
 source_format: xhtml
-revision_id: "Mon, 14 Sep 2026 16:04:15 GMT"
-content_sha256: e5feb0030cb68a6a727a140f21bceb7bb244286c9845f9eeed182192b09f714d
-last_fetched: 2026-09-29
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: 8f49253b143d1b7add7961deb7dbae1387a58f56485676bd8372ac45f22cde4f
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # Conduct Regulations 2003 Sch. 4
+
+_PARTICULARS TO BE INCLUDED IN AN AGENCY'S OR EMPLOYMENT BUSINESS'S RECORDS RELATING TO WORK-SEEKERS_
 
 1. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 

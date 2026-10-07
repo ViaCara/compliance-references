@@ -6,15 +6,17 @@ kind: legislation_article
 citation: FPO 2005 art. 48
 source_uri: "https://www.legislation.gov.uk/uksi/2005/1529/article/48/data.xht"
 source_format: xhtml
-revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
-content_sha256: 18870a42d0e401864659c34306700e85dba072c4321c7792f8d33d181731f4cf
-last_fetched: 2026-08-20
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: dfdf8b7ebfbe141945695127e572359c400ea93e2270991900e5a970880d2094
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # FPO 2005 art. 48
 
 _... High net worth individuals_
+
+**Exempt Communications: Certain Controlled Activities**
 
 (1) If the requirements of paragraphs (4) and (7) are met, the financial promotion restriction does not apply to any communication which—
 

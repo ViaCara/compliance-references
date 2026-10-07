@@ -6,13 +6,17 @@ kind: legislation_schedule
 citation: SVGA 2006, Sch. 3 para. 4
 source_uri: "https://www.legislation.gov.uk/ukpga/2006/47/schedule/3/paragraph/4/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: 4778d6d07841eb5ecbcb4915c9bb1060512b93dfb4cac78a47dd4a35adf4c2f5
-last_fetched: 2026-09-03
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: b51554d579e7b46f5c8cdf13c3688000016101b79a137e83fe2597b865556c31
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # SVGA 2006, Sch. 3 para. 4
+
+_Barred lists_
+
+**Part 1 - Children's barred list**
 
 4(1) For the purposes of paragraph 3 relevant conduct is—
 

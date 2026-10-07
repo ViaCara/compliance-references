@@ -6,9 +6,9 @@ kind: legislation_section
 citation: OSA 2023 s. 21
 source_uri: "https://www.legislation.gov.uk/ukpga/2023/50/section/21/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: d6bc20f2a7f05577aa1678c4434e61a3996200860d3953c93344dc23fde65d30
-last_fetched: 2026-09-03
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: f93901423dd4ef5940fc0e78be761f67abeed0e6a02005df29bd2a836088ffbe
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
@@ -34,6 +34,8 @@ _Duties about complaints procedures_
 
 (3) A duty to include in the terms of service provisions which are easily accessible (including to children) specifying the policies and processes that govern the handling and resolution of complaints of a relevant kind.
 
+**All services**
+
 (4) The following kinds of complaint are relevant for all services—
 
 (a) complaints by users and affected persons about content present on a service which they consider to be illegal content;
@@ -56,6 +58,8 @@ _Duties about complaints procedures_
 
 (ii) the user considers that the proactive technology has been used in a way not contemplated by, or in breach of, the terms of service (for example, by affecting content not of a kind specified in the terms of service as a kind of content in relation to which the technology would operate).
 
+**Services likely to be accessed by children**
+
 (5) The following kinds of complaint are relevant for services that are likely to be accessed by children—
 
 (a) complaints by users and affected persons about content, present on a part of a service that it is possible for children to access, which they consider to be content that is harmful to children;
@@ -68,6 +72,8 @@ _Duties about complaints procedures_
 
 (e) complaints by a user who is unable to access content because measures used to comply with a duty set out in section 12(2) or (3) have resulted in an incorrect assessment of the user’s age.
 
+**Category 1 services**
+
 (6) The relevant kind of complaint for Category 1 services is complaints by users and affected persons if they consider that the provider is not complying with a duty set out in—
 
 (a) section 15 (user empowerment),
@@ -79,6 +85,8 @@ _Duties about complaints procedures_
 (d) section 19 (journalistic content), or
 
 (e) section 22(4), (6) or (7) (freedom of expression and privacy).
+
+**Interpretation**
 
 (7) In this section “affected person” has the meaning given by section 20.
 

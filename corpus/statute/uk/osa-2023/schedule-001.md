@@ -6,15 +6,23 @@ kind: legislation_schedule
 citation: OSA 2023 Sch. 1
 source_uri: "https://www.legislation.gov.uk/ukpga/2023/50/schedule/1/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: 9b32ab88ecd8dfc19a64d058c2e76ca77938faa15454e4a6d5d0dca3a6252496
-last_fetched: 2026-09-03
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: 80992d9cc22388075c93eea4afbf04dc79b8578450cce88f2783fb37f2a49ff1
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # OSA 2023 Sch. 1
 
+_Exempt user-to-user and search services_
+
+**PART 1 - Descriptions of services which are exempt**
+
+**Email services**
+
 1 A user-to-user service is exempt if emails are the only user-generated content (other than identifying content) enabled by the service.
+
+**SMS and MMS services**
 
 2(1) A user-to-user service is exempt if SMS messages are the only user-generated content (other than identifying content) enabled by the service.
 
@@ -24,9 +32,13 @@ enforcement_status: in_force
 
 (4) “SMS message” and “MMS message” have the meaning given by section 55(12).
 
+**Services offering only one-to-one live aural communications**
+
 3(1) A user-to-user service is exempt if one-to-one live aural communications are the only user-generated content (other than identifying content) enabled by the service.
 
 (2) “One-to-one live aural communications” has the meaning given by section 55(5).
+
+**Limited functionality services**
 
 4(1) A user-to-user service is exempt if the functionalities of the service are limited, such that users are able to communicate by means of the service only in the following ways—
 
@@ -54,17 +66,23 @@ enforcement_status: in_force
 
 (3) For the purposes of this paragraph, content that is user-generated content in relation to a service is not to be regarded as provider content in relation to that service.
 
+**Services which enable combinations of user-generated content**
+
 5 A user-to-user service is exempt if the only user-generated content enabled by the service is content of the following kinds—
 
 (a) content mentioned in paragraph 1, 2 or 3 and related identifying content;
 
 (b) content arising in connection with any of the activities described in paragraph 4(1).
 
+**Exception to exemptions in paragraphs 1 to 5**
+
 6 But a a user-to-user service described in any of paragraphs 1 to 5 is not exempt if—
 
 (a) regulated provider pornographic content is published or displayed on the service, and
 
 (b) the service has links with the United Kingdom within the meaning of section 80(4).
+
+**Internal business services (entire user-to-user service or search service)**
 
 7(1) A user-to-user service or a search service is exempt if the conditions in sub-paragraph (2) are met in relation to the service.
 
@@ -89,6 +107,8 @@ enforcement_status: in_force
 “business” includes trade, profession, educational institution or other concern (whether or not carried on for profit);
 
 “officer” includes a director, manager, partner, associate, secretary, governor, trustee or other similar officer.
+
+**Internal business services (part of user-to-user service or search service)**
 
 8(1) A user-to-user service is exempt if—
 
@@ -124,6 +144,8 @@ enforcement_status: in_force
 
 “the rest of the service” means all parts of the user-to-user service or search service other than the part in relation to which the conditions in paragraph 7(2) are met.
 
+**Services provided by public bodies**
+
 9(1) A user-to-user service or a search service is exempt if—
 
 (a) both of the following conditions are met in relation to the service—
@@ -154,6 +176,8 @@ See paragraph 10 for an exemption for services provided by persons providing edu
 
 (4) In this paragraph, “public function” means a function that is a function of a public nature for the purposes of the Human Rights Act 1998.
 
+**Services provided by persons providing education or childcare**
+
 10(1) A user-to-user service or a search service is exempt if—
 
 (a) the provider of the service is—
@@ -167,6 +191,8 @@ See paragraph 10 for an exemption for services provided by persons providing edu
 (2) In sub-paragraph (1)(a)(ii), “safeguarding duties” means duties or requirements which are related to the safeguarding of children arising under enactments other than this Act, under guidance or requirements (however referred to) produced under enactments other than this Act, or as a result of contractual arrangements made by the responsible person.
 
 (3) For the purposes of this paragraph, the person with legal responsibility for education or childcare of a particular description is the person with legal responsibility for its day-to-day provision (for example, the person with legal responsibility for a particular school), rather than any other person who has a duty to ensure that, in general, education or childcare of that description (or education or childcare which includes education or childcare of that description) is provided.
+
+**Interpretation**
 
 11 In Part 1 of this Schedule—
 
@@ -183,6 +209,10 @@ See paragraph 10 for an exemption for services provided by persons providing edu
 “regulated provider pornographic content” and “published or displayed” have the same meaning as in Part 5 (see section 79);
 
 “user-generated content” has the meaning given by section 55 (see subsections (3) and (4) of that section).
+
+**PART 2 - Paragraph 10 exemption: descriptions of education and childcare**
+
+**England**
 
 12 Early years childminding by an early years childminder registered under Chapter 2 of Part 3 of the Childcare Act 2006.
 
@@ -252,6 +282,8 @@ See paragraph 10 for an exemption for services provided by persons providing edu
 
 “school” has the meaning given by section 4(1) of the Education Act 1996.
 
+**Scotland**
+
 25 Early learning and childcare, within the meaning of Part 6 of the Children and Young People (Scotland) Act 2014 (asp 8) (see section 46 of that Act).
 
 26 Child minding, within the meaning of Part 5 of the Public Services Reform (Scotland) Act 2010 (asp 8) (see paragraph 12 of Schedule 12 to that Act).
@@ -269,6 +301,8 @@ and in this paragraph “school” has the same meaning as in the Education (Sco
 29 Further education provided by a body listed under the heading “Institutions formerly eligible for funding by the Scottish Further Education Funding Council” or under the heading “Other institutions” in Schedule 2 to the Further and Higher Education (Scotland) Act 2005 (asp 6).
 
 30 Further education provided by a college of further education which is assigned to a regional strategic body by an order made under section 7C(1) of that Act.
+
+**Wales**
 
 31 Child minding by a person who is registered as a child minder under Part 2 of the Children and Families (Wales) Measure 2010 (nawm 1).
 
@@ -298,6 +332,8 @@ and in this paragraph “school” has the same meaning as in the Education (Sco
 
 37 In paragraphs 31 and 32, “child minding” and “day care for children” have the same meaning as in Part 2 of the Children and Families (Wales) Measure 2010 (see section 19 of that Measure).
 
+**Northern Ireland**
+
 38 Childcare by persons who act as child minders or provide day care for children within the meaning of the Children (Northern Ireland) Order 1995 (S.I. 1995/755 (N.I. 2)), and who are registered under Article 118 of that Order.
 
 39 Pre-school education, within the meaning of Part 5 of the Education (Northern Ireland) Order 1998 (S.I. 1998/1759 (N.I. 13)) (see Article 17(8) of that Order).
@@ -311,6 +347,8 @@ and in this paragraph “school” has the same meaning as in the Education (Sco
 43 Education in an institution of further education, within the meaning of the Further Education (Northern Ireland) Order 1997 (S.I. 1997/1772 (N.I. 15)) (see Article 2(2) of that Order).
 
 44 Education in agriculture and related subjects.
+
+**PART 3 - Interpretation**
 
 45 The following definitions apply for the purposes of this Schedule.
 
