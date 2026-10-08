@@ -2,6 +2,33 @@
 
 Drift log. Newer entries first.
 
+## 2026-10-08
+- **corpus/guidance/uk/cap/code-section-03-misleading-advertising.md** adds curated quotes of the prices background and definition and rules 3.17 to 3.26 (prices and "free"), fetched 2026-10-08; human review remains pending.
+
+- **corpus/statute/uk/bpmmr-2008/regulation-004.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2008/1276/regulation/4/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   299698b5d052551c8086f8a8150f73dec038c6816a2ea96a933226c04db25eb1
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/bpmmr-2008/regulation-003.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2008/1276/regulation/3/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   382cec135cd50fbd6c3bb45ccd07b1d603c7955f314e0ef2a90702e2ac30f61d
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/ucta-1977/section-011.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1977/50/section/11/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   fa0806db29220a6b984a5b4d59efbf660107bacea999961c4271ee81b9248540
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/ucta-1977/section-003.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1977/50/section/3/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   9bdacf4cd07855e3dbf5be341fcd99628edf9d46a600956a9b84348201d3dc63
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
 ## 2026-09-30
 - **corpus/guidance/uk/cma/price-reduction-claims-online.md** adds curated quotes from the CMA compliance advice on urgency and price reduction claims (29 March 2023): the definition of a price reduction claim, the evidence and record-keeping duty and examples 9, 10 and 12 on comparison prices that are not the usual selling price, fetched 2026-09-30; human review remains pending.
 
