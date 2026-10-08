@@ -6,9 +6,9 @@ kind: legislation_article
 citation: FPO 2005 art. 50A
 source_uri: "https://www.legislation.gov.uk/uksi/2005/1529/article/50A/data.xht"
 source_format: xhtml
-revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
-content_sha256: 8d958e622e5ed7364e1a19c007ba632fdf970b15c6a1cd01f6badbb0e2746df5
-last_fetched: 2026-08-20
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: 6f8f120fee909211d35b5767e98b6bca622781846eeab0cf5a672e54dbf04d75
+last_fetched: 2026-10-08
 language: en-GB
 enforcement_status: in_force
 ---
@@ -37,6 +37,8 @@ _Self-certified sophisticated investors_
 (b) a warning and information in accordance with paragraphs (5) , (5A) and (6) (d) to (h) is sent to the recipient of the communication within two business days of the day on which the communication is made.
 
 (5) The warning must be in the following terms—
+
+“The content of this promotion has not been approved by an authorised person within the meaning of the Financial Services and Markets Act 2000. Reliance on this promotion for the purpose of engaging in any investment activity may expose an individual to a significant risk of losing all of the property or other assets invested.”.
 
 (5A) In addition to the warning in paragraph (5), the requirements of this paragraph are that the communication is accompanied by the following information—
 

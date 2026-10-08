@@ -6,9 +6,9 @@ kind: curated_quotes
 citation: CAP Code s.3 Misleading advertising
 source_uri: "https://www.asa.org.uk/type/non_broadcast/code_section/03.html"
 source_format: html
-revision_id: "live page, retrieved 2026-09-28"
-content_sha256: 4bc5d056f6530fd62c88f8b95b7578ddd68791c317cb6dfe1d06aa73c978e073
-last_fetched: 2026-09-28
+revision_id: "live page, retrieved 2026-10-08"
+content_sha256: 8c52d450c9903b2cf67dcbb2d8c84fb67ee29a0830b7f8c483491f9d9bca2245
+last_fetched: 2026-10-08
 language: en-GB
 enforcement_status: in_force
 ---
@@ -19,7 +19,8 @@ _The UK Code of Non-broadcast Advertising and Direct & Promotional Marketing
 and enforced by the Advertising Standards Authority (ASA). Curated quotes
 only; the full section is at the source URI. Reviewed 2026-09-04 by
 kylewelsby. Rule 3.52 group added 2026-09-28; review by kylewelsby
-pending._
+pending. Prices group (rules 3.17 and 3.22) added 2026-10-08; review by
+kylewelsby pending._
 
 ## Background
 
@@ -69,6 +70,29 @@ Rule 3.11:
 
 > Marketing communications must not mislead consumers by exaggerating the
 > capability or performance of a product.
+
+## Prices
+
+From the Prices background and definition:
+
+> Price statements in marketing communications should take into account
+> the Chartered Trading Standards Institute’s Guidance for traders on
+> pricing practices.
+
+> Price statements include statements about the manner in which the
+> price will be calculated as well as definite prices.
+
+Rule 3.17:
+
+> Price statements must not mislead by omission, undue emphasis or
+> distortion. They must relate to the product featured in the marketing
+> communication.
+
+Rule 3.22:
+
+> Price claims such as "up to" and "from" must not mislead by
+> exaggerating the availability or amount of benefits likely to be
+> obtained by the consumer.
 
 ## Endorsements and testimonials
 
@@ -129,4 +153,7 @@ prohibited practice considered unfair in all circumstances.
 Quoted verbatim from the live ASA CAP Code page at the source URI. Rules
 3.1 to 3.11 were retrieved 2026-09-04; the background note and rules 3.47
 to 3.54 were retrieved 2026-09-28, when rules 3.1 to 3.11 were checked
-against the live page and found unchanged.
+against the live page and found unchanged. The Prices background,
+definition and rules 3.17 and 3.22 were retrieved 2026-10-08, when the
+other quoted rules were checked against the live page and found
+unchanged.
