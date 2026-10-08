@@ -1,9 +1,10 @@
 name: mira-gate
 
-# The gate passes when every Mira finding on the pull request is answered,
-# the same rule as ViaCara (VIA-1727, VIA-2128). The walkthrough score is
-# information only: since 7 October 2026 Mira scores statute mirrors 4/5
-# because it cannot check legal text against the live source.
+# The gate passes when Mira has reviewed the current head and every Mira
+# finding is answered, the same rule as ViaCara (VIA-1727, VIA-2128). The
+# walkthrough score is information only: since 7 October 2026 Mira scores
+# statute mirrors 4/5 because it cannot check legal text against the source.
+# .github/scripts/mira_gate.py holds the rule; tests/test_mira_gate.py tests it.
 
 on:
   pull_request:
@@ -20,151 +21,41 @@ jobs:
       github.event_name == 'pull_request_review_comment' ||
       (github.event.issue.pull_request != null && github.event.comment.user.login == 'viacara-mira[bot]')
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     permissions:
       checks: write
+      contents: read
       pull-requests: read
     steps:
-      - name: Translate Mira's review into a check
-        uses: actions/github-script@v9
+      # The first mira-confidence run on a head marks when GitHub saw the
+      # push. The script only accepts a walkthrough written after it.
+      - name: Reset the check for a new head
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          gh api -X POST "repos/$REPO/check-runs" \
+            -f name=mira-confidence -f head_sha="$HEAD_SHA" -f status=completed -f conclusion=neutral \
+            -f "output[title]=Waiting for Mira review" \
+            -f "output[summary]=Mira has not reviewed this commit yet. Merge is blocked until viacara-mira reviews it and every finding is answered." \
+            --silent
+
+      # Always the default branch's copy, so a pull request cannot change the
+      # rule that grades it.
+      - name: Check out the gate script
+        if: github.event_name != 'pull_request'
+        uses: actions/checkout@v7
         with:
-          script: |
-            const CHECK_NAME = "mira-confidence";
-            const MIRA = "viacara-mira";
-            const MARKER = "mira-walkthrough";
-            const CONFIDENCE_RE = /Confidence:\s*([0-5])\/5/i;
-            const STATS_RE = /(\d+) files? reviewed[^*\n]*/i;
-            const FIXED = /^fixed in [0-9a-f]{7,40}\b/i;
-            const REJECT = /^@viacara-mira reject\s+\S/i;
-            const MAINTAINER = new Set(["write", "maintain", "admin"]);
+          ref: ${{ github.event.repository.default_branch }}
+          sparse-checkout: .github/scripts
 
-            const bare = (login) => (login || "").replace(/\[bot\]$/, "");
-
-            async function setCheck(sha, conclusion, title, summary) {
-              try {
-                await github.rest.checks.create({
-                  ...context.repo,
-                  name: CHECK_NAME,
-                  head_sha: sha,
-                  status: "completed",
-                  conclusion,
-                  output: { title, summary },
-                });
-              } catch (error) {
-                core.setFailed(`Failed to create ${CHECK_NAME} check (conclusion=${conclusion}): ${error.message}`);
-              }
-            }
-
-            if (context.eventName === "pull_request") {
-              await setCheck(
-                context.payload.pull_request.head.sha,
-                "neutral",
-                "Waiting for Mira review",
-                "Mira has not reviewed this commit yet. Merge is blocked until viacara-mira posts a walkthrough and every finding is answered."
-              );
-              return;
-            }
-
-            if (context.eventName === "issue_comment" && !(context.payload.comment.body || "").includes(MARKER)) return;
-
-            const prNumber = context.eventName === "issue_comment"
-              ? context.payload.issue.number
-              : context.payload.pull_request.number;
-            const { data: pr } = await github.rest.pulls.get({ ...context.repo, pull_number: prNumber });
-            const sha = pr.head.sha;
-
-            const comments = await github.paginate(github.rest.issues.listComments, {
-              ...context.repo,
-              issue_number: prNumber,
-              per_page: 100,
-            });
-            const walkthroughs = comments
-              .filter((c) => c.user.login === `${MIRA}[bot]` && (c.body || "").includes(MARKER))
-              .sort((a, b) => new Date(a.created_at) - new Date(b.created_at));
-            const latest = walkthroughs[walkthroughs.length - 1];
-            if (!latest) return;
-
-            // Mira rewrites its one walkthrough comment per review. Only a
-            // walkthrough written after the head commit reviews this head.
-            const { data: head } = await github.rest.repos.getCommit({ ...context.repo, ref: sha });
-            const pushedAt = new Date(head.commit.committer.date);
-            if (new Date(latest.updated_at) < pushedAt) return;
-
-            const score = (latest.body.match(CONFIDENCE_RE) || [])[1];
-            const stats = (latest.body.match(STATS_RE) || [])[0];
-            if (score === undefined || !stats) {
-              await setCheck(sha, "neutral", "Waiting for Mira review", "The walkthrough is not finished yet.");
-              return;
-            }
-
-            // Mira posts the walkthrough before its inline findings, so wait
-            // until every finding it counted on this head is on the PR.
-            const expected = parseInt((stats.match(/(\d+) comments?/i) || [, "0"])[1], 10);
-            const inline = await github.paginate(github.rest.pulls.listReviewComments, {
-              ...context.repo,
-              pull_number: prNumber,
-              per_page: 100,
-            });
-            const posted = inline.filter(
-              (c) => c.user.login === `${MIRA}[bot]` && !c.in_reply_to_id && c.commit_id === sha
-            ).length;
-            if (posted < expected) {
-              await setCheck(sha, "neutral", "Waiting for Mira findings", `Mira has posted ${posted} of ${expected} findings for this commit.`);
-              return;
-            }
-
-            const query = `query($owner:String!,$repo:String!,$pr:Int!,$cursor:String){
-              repository(owner:$owner,name:$repo){pullRequest(number:$pr){
-                reviewThreads(first:100,after:$cursor){pageInfo{hasNextPage endCursor}
-                  nodes{isResolved resolvedBy{login} path line
-                    comments(first:100){nodes{author{login} body url}}}}}}}`;
-            const threads = [];
-            let cursor = null;
-            do {
-              const page = await github.graphql(query, { ...context.repo, pr: prNumber, cursor });
-              const connection = page.repository.pullRequest.reviewThreads;
-              threads.push(...connection.nodes);
-              cursor = connection.pageInfo.hasNextPage ? connection.pageInfo.endCursor : null;
-            } while (cursor);
-
-            const permissions = new Map();
-            async function isMaintainer(login) {
-              if (!permissions.has(login)) {
-                const { data } = await github.rest.repos.getCollaboratorPermissionLevel({ ...context.repo, username: login });
-                permissions.set(login, MAINTAINER.has(data.permission));
-              }
-              return permissions.get(login);
-            }
-
-            const open = [];
-            for (const thread of threads) {
-              const [root, ...replies] = thread.comments.nodes;
-              if (!root || bare(root.author?.login) !== MIRA) continue;
-              if (thread.isResolved && bare(thread.resolvedBy?.login) === MIRA) continue;
-              let answered = false;
-              for (const reply of replies) {
-                const author = reply.author?.login;
-                const body = (reply.body || "").trim();
-                if (!author || bare(author) === MIRA || !(FIXED.test(body) || REJECT.test(body))) continue;
-                if (await isMaintainer(author)) {
-                  answered = true;
-                  break;
-                }
-              }
-              if (!answered) open.push(`- ${thread.path}:${thread.line || "?"} ${root.url}`);
-            }
-
-            if (open.length > 0) {
-              await setCheck(
-                sha,
-                "failure",
-                `${open.length} Mira finding(s) unanswered`,
-                `A maintainer must reply \`fixed in <sha>\` or \`@viacara-mira reject <reason>\` on each finding. A reply re-runs this check.\n\n${open.join("\n")}\n\nWalkthrough score: ${score}/5 (information only).`
-              );
-              return;
-            }
-            await setCheck(
-              sha,
-              "success",
-              "Every Mira finding answered",
-              `Mira reviewed this commit (${stats.trim()}) and every finding is fixed or refuted. Walkthrough score: ${score}/5 (information only).`
-            );
+      - name: Decide the check
+        if: github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.issue.number || github.event.pull_request.number }}
+        run: python3 .github/scripts/mira_gate.py "$REPO" "$PR_NUMBER"
