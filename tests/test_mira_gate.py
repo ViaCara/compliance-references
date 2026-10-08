@@ -1,4 +1,4 @@
-"""Mira gate decision tests (VIA-2128)."""
+"""Mira gate decision tests."""
 
 import importlib.util
 import unittest

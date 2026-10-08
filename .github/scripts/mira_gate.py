@@ -1,4 +1,4 @@
-"""Decide the `mira-confidence` check for one pull request (VIA-2128).
+"""Decide the `mira-confidence` check for one pull request.
 
 The check passes when Mira has reviewed the current head and every Mira
 finding is answered: a maintainer replied `fixed in <sha>` or

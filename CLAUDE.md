@@ -3,9 +3,8 @@
 ## Merge gate: Mira
 
 This repo requires the `mira-confidence` check before merge. The check passes
-when every Mira finding on the pull request is answered. This is the same rule
-as ViaCara (VIA-1727), adopted here on 8 October 2026 (VIA-2128). It is an
-exception to the global rule. The global rule treats hosted reviewers as a
+when every Mira finding on the pull request is answered (since 8 October
+2026). It is an exception to the global rule. The global rule treats hosted reviewers as a
 bonus, never a gate.
 
 The gate works like this:

@@ -1,9 +1,9 @@
 name: mira-gate
 
 # The gate passes when Mira has reviewed the current head and every Mira
-# finding is answered, the same rule as ViaCara (VIA-1727, VIA-2128). The
-# walkthrough score is information only: since 7 October 2026 Mira scores
-# statute mirrors 4/5 because it cannot check legal text against the source.
+# finding is answered. The walkthrough score is information only: since
+# 7 October 2026 Mira scores statute mirrors 4/5 because it cannot check
+# legal text against the source.
 # .github/scripts/mira_gate.py holds the rule; tests/test_mira_gate.py tests it.
 
 on:
