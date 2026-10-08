@@ -1,4 +1,4 @@
-"""Business-to-business terms and marketing sources (VIA-1765): UCTA 1977
+"""Business-to-business terms and marketing sources: UCTA 1977
 ss. 3 and 11, BPMMR 2008 regs 3 and 4 and the CAP Code prices and "free"
 rules 3.17 to 3.26."""
 
