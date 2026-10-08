@@ -295,6 +295,35 @@ class LegislationTransformerTests(unittest.TestCase):
 
         self.assertIn("\n\u2014 subject to paragraph (2).\n", markdown)
 
+    def test_keeps_block_amendment_text(self):
+        """Conduct Regulations reg. 32(2) and (3) quote the inserted and
+        substituted words in LegP2TextAmend and LegTextAmend paragraphs,
+        which used to be dropped, leaving "insert—" with nothing after it."""
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<p class="LegP2ParaText">(2) In regulation 5(1) after'
+            " “upon the work-seeker” insert—</p>"
+            '<p class="LegP2TextAmend"><span class="LegAmendingText">'
+            '<span class="LegAmendQuote">“</span>, or the person supplied'
+            '<span class="LegAmendQuote">”</span></span>.</p>'
+            '<p class="LegP2ParaText">(3) For regulation 6(1), substitute the'
+            " following:</p>"
+            '<p class="LegTextAmend"><span class="LegAmendingText">'
+            '<span class="LegAmendQuote">“</span>An employment business may'
+            " not subject to any detriment— </span></p>"
+            "</div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Test")
+
+        self.assertIn(
+            "insert—\n\n“, or the person supplied”.\n", markdown
+        )
+        self.assertIn(
+            "following:\n\n“An employment business may not subject to any"
+            " detriment—\n",
+            markdown,
+        )
+
     def test_transforms_level_five_containers(self):
         """RAO 2001 art. 61(3)(a)(iii)(aa) nests five deep; the fifth level
         used to be dropped silently."""

@@ -7,7 +7,7 @@ citation: Conduct Regulations 2003 reg. 32
 source_uri: "https://www.legislation.gov.uk/uksi/2003/3319/regulation/32/data.xht"
 source_format: xhtml
 revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
-content_sha256: 536cadc7c59b41964d9ad4f63f727b59dfd0765d91a2d725af94bfd1a208b044
+content_sha256: e89fd0ce5a3f21f8bb9c6de48955e530d92411447d06b819e3790e304c6fd804
 last_fetched: 2026-10-08
 language: en-GB
 enforcement_status: in_force
@@ -24,11 +24,15 @@ _Application of the Regulations to work-seekers which are incorporated_
 
 (2) In regulation 5(1) after “upon the work-seeker” insert—
 
+“, or the person who is or would be supplied by the work-seeker to carry out the work”.
+
 (2A) In regulation 5(2) after “Where the work-seeker” insert “, or the person who is or would be supplied by the work-seeker to carry out the work”.
 
 (2B) In regulation 5(3) after “Where the work-seeker” insert “, or the person who is or would be supplied by the work-seeker to carry out the work”.
 
 (3) For regulation 6(1), substitute the following:
+
+“An employment business may not (whether by the inclusion of a term in a contract with a relevant work-seeker or otherwise) subject or threaten to subject to any detriment—
 
 (a)the relevant work-seeker, on the ground that the work-seeker has taken up or proposes to take up employment with any other person; or
 
