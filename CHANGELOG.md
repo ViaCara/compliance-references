@@ -2,6 +2,25 @@
 
 Drift log. Newer entries first.
 
+## 2026-10-08
+- **corpus/guidance/uk/fwa/tutoring-services-fwa-guidance.md** adds curated quotes from the FWA guidance for tutoring services (updated 7 April 2026): the intermediary scope test, the employment agency model and the statement that charging tutors for work-finding services is a criminal offence, fetched 2026-10-08; human review remains pending.
+- **corpus/guidance/uk/fwa/overview-of-the-conduct-regulations-2003.md** adds curated quotes from the FWA overview of the Conduct Regulations 2003 (updated 22 June 2026): the agency definition, "online platforms", fees, additional services and the regulation 32(9) limit for vulnerable people, fetched 2026-10-08; human review remains pending.
+- **corpus/guidance/uk/dbt/employment-agencies-and-businesses.md** adds curated quotes from the GOV.UK guide "Employment agencies and businesses": the prohibitions, websites aimed at work-finding and the limited-company opt-out, fetched 2026-10-08; human review remains pending.
+- **corpus/guidance/uk/cap/prices-general.md** adds curated quotes from CAP AdviceOnline "Prices: General" (dated 6 October 2026) on rules 3.17 and 3.22 and "from" and "up to" claims, fetched 2026-10-08; human review remains pending.
+- **corpus/guidance/uk/cap/code-section-03-misleading-advertising.md** adds the Prices background, definition and rules 3.17 and 3.22, fetched 2026-10-08; the rules already quoted were checked against the live page and are unchanged. Human review remains pending.
+
+- **corpus/statute/uk/conduct-regs-2003/regulation-032.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2003/3319/regulation/32/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   536cadc7c59b41964d9ad4f63f727b59dfd0765d91a2d725af94bfd1a208b044
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/conduct-regs-2003/regulation-006.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2003/3319/regulation/6/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   273bfd26f46356799bc5e62da5bec2cf7829e1b3248655f095231262aa178196
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
 ## 2026-10-07
 - **corpus/statute/uk/dpa-2018/schedule-021-paragraph-005.md** new file
   - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/21/paragraph/5/data.xht
