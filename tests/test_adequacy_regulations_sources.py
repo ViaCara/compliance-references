@@ -1,4 +1,4 @@
-"""UK GDPR Article 45A adequacy regulation sources (VIA-941)."""
+"""UK GDPR Article 45A adequacy regulation sources."""
 
 import json
 import unittest
