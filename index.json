@@ -36,6 +36,56 @@
     "title": "Guide for viewing self-employed workers and personal employees' checks"
   },
   {
+    "authority": "statute",
+    "domain_tags": [
+      "cross-border-transfer",
+      "adequacy",
+      "definitions"
+    ],
+    "enforcement_status": "in_force",
+    "id": "adequacy-usa-regs-2023-reg-002",
+    "jurisdiction": "uk",
+    "path": "statute/uk/adequacy-usa-regs-2023/regulation-002.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "c2dd27a6e6650609aa5337af18f0df634e6a52c687a4eabe254d3aecca3ae5d3",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2023/1028/regulation/2/data.xht",
+    "summary": "Definitions for the UK-US Data Bridge: the Data Privacy Framework List that the US Department of Commerce maintains, the EU-US Data Privacy Framework and its Principles, and the UK Extension to the EU-US Data Privacy Framework.",
+    "title": "Data Protection (Adequacy) (United States of America) Regulations 2023 regulation 2 - Interpretation"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "cross-border-transfer",
+      "adequacy"
+    ],
+    "enforcement_status": "in_force",
+    "id": "adequacy-usa-regs-2023-reg-003",
+    "jurisdiction": "uk",
+    "path": "statute/uk/adequacy-usa-regs-2023/regulation-003.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "5a23c46de3a0289ca08435c285c662b798e40676ef9072dc56b47ba3d1ecb89d",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2023/1028/regulation/3/data.xht",
+    "summary": "The UK-US Data Bridge. Specifies the United States as adequate for a transfer to a person that the Data Privacy Framework List shows as participating in the UK Extension, where the data will be subject to the Framework Principles on receipt. Participation is a per-organisation fact to check at transfer time.",
+    "title": "Data Protection (Adequacy) (United States of America) Regulations 2023 regulation 3 - Adequate level of protection"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "cross-border-transfer",
+      "adequacy",
+      "supervisory-authority"
+    ],
+    "enforcement_status": "in_force",
+    "id": "adequacy-usa-regs-2023-reg-004",
+    "jurisdiction": "uk",
+    "path": "statute/uk/adequacy-usa-regs-2023/regulation-004.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "4ff40b638974355534c7409986b665b252dc9a56670b823fa1110db6e1dd3377",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2023/1028/regulation/4/data.xht",
+    "summary": "Names the United States Federal Trade Commission and Department of Transportation as the independent supervisory authorities for the UK Extension to the EU-US Data Privacy Framework.",
+    "title": "Data Protection (Adequacy) (United States of America) Regulations 2023 regulation 4 - Independent supervisory authorities"
+  },
+  {
     "authority": "guidance",
     "domain_tags": [
       "advertising",

@@ -2,6 +2,25 @@
 
 Drift log. Newer entries first.
 
+## 2026-10-08
+- **corpus/statute/uk/adequacy-usa-regs-2023/regulation-004.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2023/1028/regulation/4/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   4ff40b638974355534c7409986b665b252dc9a56670b823fa1110db6e1dd3377
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/adequacy-usa-regs-2023/regulation-003.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2023/1028/regulation/3/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   5a23c46de3a0289ca08435c285c662b798e40676ef9072dc56b47ba3d1ecb89d
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/adequacy-usa-regs-2023/regulation-002.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2023/1028/regulation/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   c2dd27a6e6650609aa5337af18f0df634e6a52c687a4eabe254d3aecca3ae5d3
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
 ## 2026-09-30
 - **corpus/guidance/uk/cma/price-reduction-claims-online.md** adds curated quotes from the CMA compliance advice on urgency and price reduction claims (29 March 2023): the definition of a price reduction claim, the evidence and record-keeping duty and examples 9, 10 and 12 on comparison prices that are not the usual selling price, fetched 2026-09-30; human review remains pending.
 
