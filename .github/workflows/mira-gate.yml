@@ -1,92 +1,61 @@
 name: mira-gate
 
+# The gate passes when Mira has reviewed the current head and every Mira
+# finding is answered. The walkthrough score is information only: since
+# 7 October 2026 Mira scores statute mirrors 4/5 because it cannot check
+# legal text against the source.
+# .github/scripts/mira_gate.py holds the rule; tests/test_mira_gate.py tests it.
+
 on:
   pull_request:
     types: [opened, reopened, synchronize]
   issue_comment:
+    types: [created, edited]
+  pull_request_review_comment:
     types: [created, edited]
 
 jobs:
   gate:
     if: >
       github.event_name == 'pull_request' ||
+      github.event_name == 'pull_request_review_comment' ||
       (github.event.issue.pull_request != null && github.event.comment.user.login == 'viacara-mira[bot]')
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     permissions:
       checks: write
+      contents: read
       pull-requests: read
     steps:
-      - name: Translate Mira confidence into a check
-        uses: actions/github-script@v9
+      # The first mira-confidence run on a head marks when GitHub saw the
+      # push. The script only accepts a walkthrough written after it.
+      - name: Reset the check for a new head
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          gh api -X POST "repos/$REPO/check-runs" \
+            -f name=mira-confidence -f head_sha="$HEAD_SHA" -f status=completed -f conclusion=neutral \
+            -f "output[title]=Waiting for Mira review" \
+            -f "output[summary]=Mira has not reviewed this commit yet. Merge is blocked until viacara-mira reviews it and every finding is answered." \
+            --silent
+
+      # Always the default branch's copy, so a pull request cannot change the
+      # rule that grades it.
+      - name: Check out the gate script
+        if: github.event_name != 'pull_request'
+        uses: actions/checkout@v7
         with:
-          script: |
-            const CHECK_NAME = "mira-confidence";
-            const MARKER = "mira-walkthrough";
-            const CONFIDENCE_RE = /Confidence:\s*(\d)\/5/i;
+          ref: ${{ github.event.repository.default_branch }}
+          sparse-checkout: .github/scripts
 
-            async function setCheck(sha, conclusion, title, summary) {
-              try {
-                await github.rest.checks.create({
-                  ...context.repo,
-                  name: CHECK_NAME,
-                  head_sha: sha,
-                  status: "completed",
-                  conclusion,
-                  output: { title, summary },
-                });
-              } catch (error) {
-                core.setFailed(`Failed to create ${CHECK_NAME} check (conclusion=${conclusion}): ${error.message}`);
-              }
-            }
-
-            if (context.eventName === "pull_request") {
-              const sha = context.payload.pull_request.head.sha;
-              await setCheck(
-                sha,
-                "neutral",
-                "Waiting for Mira review",
-                "Mira has not reviewed this commit yet. Merge is blocked until viacara-mira posts a walkthrough with Confidence: 5/5."
-              );
-              return;
-            }
-
-            if (!(context.payload.comment.body || "").includes(MARKER)) return;
-
-            const prNumber = context.payload.issue.number;
-            const [{ data: pr }, { data: comments }] = await Promise.all([
-              github.rest.pulls.get({ ...context.repo, pull_number: prNumber }),
-              github.rest.issues.listComments({ ...context.repo, issue_number: prNumber, per_page: 100 }),
-            ]);
-            const sha = pr.head.sha;
-
-            // Always resolve against the latest walkthrough, not the comment that
-            // happened to trigger this event: an edit to a stale comment must not
-            // override a newer review (or vice versa).
-            const walkthroughs = comments
-              .filter((c) => c.user.login === "viacara-mira[bot]" && (c.body || "").includes(MARKER))
-              .sort((a, b) => new Date(a.created_at) - new Date(b.created_at));
-            const latest = walkthroughs[walkthroughs.length - 1];
-            if (!latest) return;
-
-            const match = latest.body.match(CONFIDENCE_RE);
-            if (!match) {
-              await setCheck(
-                sha,
-                "failure",
-                "Could not read Mira confidence",
-                "Mira posted a walkthrough but no `Confidence: n/5` score was found in it."
-              );
-              return;
-            }
-
-            const score = parseInt(match[1], 10);
-            if (score === 5) {
-              await setCheck(sha, "success", "Mira confidence 5/5", "Mira reports full confidence. Gate passed.");
-            } else {
-              await setCheck(
-                sha,
-                "failure",
-                `Mira confidence ${score}/5`,
-                "This repo requires Confidence: 5/5 from Mira before merge. Address Mira's feedback and push again to trigger re-review."
-              );
-            }
+      - name: Decide the check
+        if: github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.issue.number || github.event.pull_request.number }}
+        run: python3 .github/scripts/mira_gate.py "$REPO" "$PR_NUMBER"
