@@ -1,4 +1,4 @@
-"""EU AI Act scope, classification and Digital Omnibus source tests (VIA-1216)."""
+"""EU AI Act scope, classification and Digital Omnibus source tests."""
 
 import json
 import unittest

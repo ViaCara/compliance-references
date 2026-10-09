@@ -1,12 +1,10 @@
 """Payment, charity and data-sharing source tests.
 
-A planning map for practitioner networks (referral networks, group practices
-and charities acting for their practitioners) had to decide how a network can
-fund a client's sessions, when a platform becomes a commercial participator
-and which data protection role a network takes. The corpus lacked the payment
-services perimeter, the charity law, the data-sharing code and the controller
-guidance those decisions cite. These tests pin the sources that closed the
-gap."""
+These tests pin the payment services perimeter, the charity law, the
+data-sharing code and the controller guidance: the sources that decide when a
+third party funding a service carries on a payment service, when a business
+becomes a commercial participator and which data protection role each party
+takes."""
 
 import json
 import unittest
@@ -20,7 +18,7 @@ MANIFEST = ROOT / "manifest.json"
 CORPUS = ROOT / "corpus"
 
 
-class PractitionerNetworkSourceTests(unittest.TestCase):
+class PaymentCharityDataSharingSourceTests(unittest.TestCase):
     def setUp(self):
         self.sources = {
             source["id"]: source

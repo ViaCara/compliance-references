@@ -30,7 +30,7 @@ Re-running `build.py` against an unchanged source set produces zero file diffs (
 
 Pin a tag (`v<YYYY.MM.DD>`), not `main`. Tags are the contract surface. Additions are free; renames/removals ship as a major-prefix tag (`v2.0.0-<date>`).
 
-A reference Python consumer lives in the ViaCara skill at `.claude/skills/compliance-references/consume.py`.
+A consumer reads `index.json` for search and the files under `corpus/` for the text, and checks each body against its `content_sha256`.
 
 ## Schema-evolution policy
 
