@@ -528,7 +528,12 @@
   },
   {
     "authority": "guidance",
-    "domain_tags": [],
+    "domain_tags": [
+      "consumer",
+      "consumer-reviews",
+      "unfair-commercial-practices",
+      "advertising"
+    ],
     "enforcement_status": "in_force",
     "id": "cma-fake-reviews-cma208",
     "jurisdiction": "uk",
@@ -536,7 +541,7 @@
     "revision_id": "4 April 2025",
     "sha": "2b40ac42f38abe059016336dbb752428be0b8d3daeebfefe6b92b48a0239f82a",
     "source_uri": "https://www.gov.uk/government/publications/fake-reviews",
-    "summary": "",
+    "summary": "CMA guidance on paragraph 13 of Schedule 20 to the DMCC Act 2024 states that publishing consumer reviews or review information in a misleading way is prohibited. Traders should not suppress genuine negative reviews, cherry-pick positive ones or display ratings that ignore removed fake reviews or that are influenced by commissions.",
     "title": "CMA208 - Fake reviews: guidance on the prohibition under paragraph 13 of Schedule 20 to the DMCC Act 2024"
   },
   {
@@ -901,7 +906,11 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "consumer",
+      "contract-terms",
+      "service-standards"
+    ],
     "enforcement_status": "in_force",
     "id": "consumer-rights-act-2015-s-049",
     "jurisdiction": "uk",
@@ -909,7 +918,7 @@
     "revision_id": "Wed, 13 May 2026 15:07:58 GMT",
     "sha": "099d63054dae30781c3e2750f1cdb8dda95b06cdcf40aa1f056e7b1e0a8a770b",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2015/15/section/49/data.xht",
-    "summary": "",
+    "summary": "Every contract to supply a service is treated as including a term that the trader must perform the service with reasonable care and skill. Section 54 sets out the consumer's rights if the trader breaches that term.",
     "title": "Consumer Rights Act 2015 section 49 - Service to be performed with reasonable care and skill"
   },
   {
@@ -1112,7 +1121,11 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "consumer",
+      "unfair-commercial-practices",
+      "definitions"
+    ],
     "enforcement_status": "in_force",
     "id": "dmcc-2024-s-225",
     "jurisdiction": "uk",
@@ -1120,7 +1133,7 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "0aa8887fd8e41a4bf9bacf3857e06eb26d939354fab9f9cac00c1081d6e12d95",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2024/13/section/225/data.xht",
-    "summary": "",
+    "summary": "Unfair commercial practices are prohibited, including their promotion through a code of conduct. A practice is unfair if it involves a misleading action or omission, an aggressive practice or a breach of professional diligence likely to change the average consumer's transactional decision; it is also unfair if it omits material information from an invitation to purchase or is listed in Schedule 20.",
     "title": "Digital Markets, Competition and Consumers Act 2024 section 225 - Prohibition of unfair commercial practices"
   },
   {
@@ -1262,7 +1275,13 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "consumer",
+      "unfair-commercial-practices",
+      "consumer-reviews",
+      "trust-mark",
+      "health-claims"
+    ],
     "enforcement_status": "in_force",
     "id": "dmcc-2024-sch-20",
     "jurisdiction": "uk",
@@ -1270,12 +1289,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "111d9d9fa6dc2cc2d29c25972232d48bfed57546cebb45039774ea9445edb661",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2024/13/schedule/20/data.xht",
-    "summary": "",
+    "summary": "Schedule 20 lists 32 commercial practices that are unfair in all circumstances. They include displaying a trust mark without authorisation, submitting or commissioning fake or concealed incentivised reviews, publishing reviews misleadingly, falsely claiming a product can treat disease and describing a product as free when the consumer must pay.",
     "title": "Digital Markets, Competition and Consumers Act 2024 Schedule 20 - Commercial practices which are in all circumstances considered unfair"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "special-category",
+      "criminal-offence-data",
+      "lawful-basis"
+    ],
     "enforcement_status": "in_force",
     "id": "dpa-2018-s-010",
     "jurisdiction": "uk",
@@ -1283,7 +1306,7 @@
     "revision_id": "Wed, 13 May 2026 15:07:58 GMT",
     "sha": "15dbfd5181129bb03996d338a9ea37e215f9eb28efe7ce1c8c1af75f5fd2b3a5",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/section/10/data.xht",
-    "summary": "",
+    "summary": "Processing of special category data relying on Article 9(2)(b), (h), (i) or (j) must meet a condition in Part 1 of Schedule 1, and processing relying on Article 9(2)(g) must meet a condition in Part 2. Criminal offence data processing must meet a condition in Part 1, 2 or 3.",
     "title": "DPA 2018 section 10 - Special categories of personal data"
   },
   {
@@ -1303,7 +1326,10 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "automated-decision",
+      "repealed"
+    ],
     "enforcement_status": "repealed",
     "id": "dpa-2018-s-014",
     "jurisdiction": "uk",
@@ -1311,12 +1337,15 @@
     "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
     "sha": "ba1bb262d8cae4c0a99828c4307eea0b3100c6b20e27d492ac943c6b7794a237",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/section/14/data.xht",
-    "summary": "",
+    "summary": "Section 14, which set safeguards for automated decision-making authorised by law, was omitted from 5 February 2026 by the Data (Use and Access) Act 2025. The corpus text holds only the amendment notes.",
     "title": "DPA 2018 section 14 - Automated decision-making authorised by law"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "definitions",
+      "public-authorities"
+    ],
     "enforcement_status": "in_force",
     "id": "dpa-2018-s-021",
     "jurisdiction": "uk",
@@ -1324,7 +1353,7 @@
     "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
     "sha": "92cc6d2ac585eb779136b85fbbb03ece98c5e0c169b3a4b0f6ed28938614adc7",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/section/21/data.xht",
-    "summary": "",
+    "summary": "Defines terms for Part 2 Chapter 3 of the Act, including FOI public authority, and sets when personal data count as held by such an authority by reference to the Freedom of Information Act 2000 and the Freedom of Information (Scotland) Act 2002.",
     "title": "DPA 2018 section 21 - Definitions"
   },
   {
@@ -1454,7 +1483,12 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "safeguarding",
+      "children",
+      "vulnerable-persons",
+      "special-category"
+    ],
     "enforcement_status": "in_force",
     "id": "dpa-2018-sch-001-p-018",
     "jurisdiction": "uk",
@@ -1462,7 +1496,7 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "a89b226004881696d306f998563f6a00537349f961ab3628e701d9b1a3b00814",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/18/data.xht",
-    "summary": "",
+    "summary": "Sets a substantial public interest condition for processing to protect a child or an adult at risk from neglect or physical, mental or emotional harm, where consent cannot be given, cannot reasonably be obtained or would prejudice that protection.",
     "title": "DPA 2018 Schedule 1 paragraph 18 - Safeguarding of children and of individuals at risk"
   },
   {
@@ -1777,7 +1811,12 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "definitions",
+      "smart-data",
+      "consumer",
+      "data-sharing"
+    ],
     "enforcement_status": "prospective",
     "id": "duaa-2025-s-001",
     "jurisdiction": "uk",
@@ -1785,12 +1824,17 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "1c013fb0f3d934c26b776174b00b28bc7d63fd82a550923d6225066075e54063",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2025/18/section/1/data.xht",
-    "summary": "",
+    "summary": "Part 1 of the Act gives the Secretary of State and the Treasury powers to make regulations about access to customer data and business data. The section defines business data, customer data, data holder, trader and customer for that Part.",
     "title": "Data (Use and Access) Act 2025 section 1"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "amendment",
+      "research",
+      "archiving",
+      "statistics"
+    ],
     "enforcement_status": "prospective",
     "id": "duaa-2025-s-087",
     "jurisdiction": "uk",
@@ -1798,12 +1842,16 @@
     "revision_id": "Wed, 13 May 2026 15:07:58 GMT",
     "sha": "a792ad58b8c0cb1dcc23bc0882a6f4107eb5cbb4508b0b6523fcba672c5e101d",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2025/18/section/87/data.xht",
-    "summary": "",
+    "summary": "This section makes consequential amendments that replace references to Article 89(1) of the UK GDPR with Article 84B in the UK GDPR, the Data Protection Act 2018 and Scottish mental health legislation, aligning research, archiving and statistics safeguards with the new Chapter 8A.",
     "title": "Data (Use and Access) Act 2025 section 87"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "automated-decision",
+      "application-dates",
+      "amendment"
+    ],
     "enforcement_status": "in_force",
     "id": "duaa-2025-uksi-082-reg-005",
     "jurisdiction": "uk",
@@ -1811,7 +1859,7 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "5bb4b386178dc748d5b2aa473d863eb7541ceb3710b1029ff9a16045d02b7c11",
     "source_uri": "https://www.legislation.gov.uk/uksi/2026/82/regulation/5/data.xht",
-    "summary": "",
+    "summary": "The automated decision-making amendments made by section 80 of and Schedule 6 to the Data (Use and Access) Act 2025 do not apply to decisions taken before 5 February 2026 to which the previous Article 22(3) UK GDPR or sections 14(1) or 50(2) of the Data Protection Act 2018 applied.",
     "title": "Data (Use and Access) Act 2025 Commencement No. 6 Regulations 2026 regulation 5 - Saving provision"
   },
   {
@@ -1942,7 +1990,12 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "equality",
+      "disability",
+      "definitions",
+      "mental-health"
+    ],
     "enforcement_status": "in_force",
     "id": "equality-act-2010-s-006",
     "jurisdiction": "uk",
@@ -1950,12 +2003,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "8c33f5db95136bafe678e6c0f570d77fe392157de584794213eabba102ef4b55",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2010/15/section/6/data.xht",
-    "summary": "",
+    "summary": "A person has a disability if they have a physical or mental impairment with a substantial and long-term adverse effect on their ability to carry out normal day-to-day activities. The Act also applies to people who have had a disability, and Schedule 1 supplements the definition.",
     "title": "Equality Act 2010 section 6 - Disability"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "equality",
+      "discrimination",
+      "definitions"
+    ],
     "enforcement_status": "in_force",
     "id": "equality-act-2010-s-013",
     "jurisdiction": "uk",
@@ -1963,12 +2020,16 @@
     "revision_id": "Wed, 13 May 2026 15:07:58 GMT",
     "sha": "e6695f6ad106a13ab2b981c76335a72877e58c9dc5d4beb05816a8217c8ab243",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2010/15/section/13/data.xht",
-    "summary": "",
+    "summary": "A person directly discriminates against another if, because of a protected characteristic, they treat that person less favourably than they treat or would treat others. Age discrimination can be justified as a proportionate means of achieving a legitimate aim, and more favourable treatment of disabled persons is not discrimination against a non-disabled person.",
     "title": "Equality Act 2010 section 13 - Direct discrimination"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "equality",
+      "discrimination",
+      "definitions"
+    ],
     "enforcement_status": "in_force",
     "id": "equality-act-2010-s-019",
     "jurisdiction": "uk",
@@ -1976,12 +2037,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "e4801c59d7d9fc4aaf8b459f0d221683cff6a7845c259646d069ff3539667605",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2010/15/section/19/data.xht",
-    "summary": "",
+    "summary": "Indirect discrimination occurs when a provision, criterion or practice applied to everyone puts people sharing a protected characteristic at a particular disadvantage, puts the individual at that disadvantage and cannot be shown to be a proportionate means of achieving a legitimate aim.",
     "title": "Equality Act 2010 section 19 - Indirect discrimination"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "equality",
+      "disability",
+      "reasonable-adjustments"
+    ],
     "enforcement_status": "in_force",
     "id": "equality-act-2010-s-020",
     "jurisdiction": "uk",
@@ -1989,12 +2054,17 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "3d7ec157bef3b28688767c853ad8e304a6cc736fcaa8d56da5cd7b1317bec368",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2010/15/section/20/data.xht",
-    "summary": "",
+    "summary": "The duty to make reasonable adjustments has three requirements: to take reasonable steps to avoid substantial disadvantage to disabled persons caused by a provision, criterion or practice, by a physical feature or by the absence of an auxiliary aid. Information must be provided in an accessible format where reasonable, and the disabled person cannot be charged for the adjustments.",
     "title": "Equality Act 2010 section 20 - Duty to make adjustments"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "equality",
+      "disability",
+      "reasonable-adjustments",
+      "discrimination"
+    ],
     "enforcement_status": "in_force",
     "id": "equality-act-2010-s-021",
     "jurisdiction": "uk",
@@ -2002,12 +2072,17 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "fa764d1667d295b00b539737df31fb160846a1b312ce2113bdc6df4d8fe0b6e5",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2010/15/section/21/data.xht",
-    "summary": "",
+    "summary": "Failing to comply with any of the three requirements of the duty to make reasonable adjustments is a failure to comply with that duty, and a person who fails to comply with it in relation to a disabled person discriminates against that person.",
     "title": "Equality Act 2010 section 21 - Failure to comply with duty"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "equality",
+      "discrimination",
+      "reasonable-adjustments",
+      "consumer"
+    ],
     "enforcement_status": "in_force",
     "id": "equality-act-2010-s-029",
     "jurisdiction": "uk",
@@ -2015,12 +2090,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "97a89211606b6bbb7ac8758b45cffed4c7567573eb2d97e27b338e01d022f14b",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2010/15/section/29/data.xht",
-    "summary": "",
+    "summary": "A service-provider must not discriminate against, harass or victimise a person by refusing the service, in its terms, by ending it or by any other detriment. Service-providers and persons exercising public functions are subject to the duty to make reasonable adjustments.",
     "title": "Equality Act 2010 section 29 - Provision of services, etc."
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "equality",
+      "disability",
+      "definitions"
+    ],
     "enforcement_status": "in_force",
     "id": "equality-act-2010-sch-001",
     "jurisdiction": "uk",
@@ -2028,12 +2107,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "caec18e0fa7e0a83e2cdab09640090920dbf134abf8e69f7282db06cd2ee4091",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2010/15/schedule/1/data.xht",
-    "summary": "",
+    "summary": "Schedule 1 supplements the definition of disability: an effect is long-term if it has lasted or is likely to last 12 months or for life, treated impairments are assessed as if untreated, and cancer, HIV infection and multiple sclerosis are each a disability. It also sets the procedure for statutory guidance on the definition.",
     "title": "Equality Act 2010 Schedule 1 - Disability: supplementary provision"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "equality",
+      "disability",
+      "reasonable-adjustments"
+    ],
     "enforcement_status": "in_force",
     "id": "equality-act-2010-sch-002",
     "jurisdiction": "uk",
@@ -2041,7 +2124,7 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "492782a15002c9ccf1414a699e2a7610d819daed86234bb3e7a2a0e5a5f21845",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2010/15/schedule/2/data.xht",
-    "summary": "",
+    "summary": "Where a service-provider has the duty to make reasonable adjustments, it must comply with all three requirements in relation to disabled persons generally, and may adopt a reasonable alternative method of providing the service. It need not take a step that would fundamentally alter the nature of the service or its trade, and special rules apply to transport vehicles.",
     "title": "Equality Act 2010 Schedule 2 - Services and public functions: reasonable adjustments"
   },
   {
@@ -2080,7 +2163,11 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "ai-act",
+      "definitions",
+      "artificial-intelligence"
+    ],
     "enforcement_status": "in_force",
     "id": "eu-ai-act-2024-art-003",
     "jurisdiction": "eu",
@@ -2088,7 +2175,7 @@
     "revision_id": "",
     "sha": "431adf737f7330ac316847b777eacc4d61a9ee3377e33c40380539de8b8deae4",
     "source_uri": "https://eur-lex.europa.eu/eli/reg/2024/1689/art_3/oj/eng",
-    "summary": "",
+    "summary": "Article 3 sets out the definitions used throughout the EU AI Act, including AI system, risk, provider, deployer, authorised representative, importer, distributor, operator and placing on the market.",
     "title": "EU AI Act Article 3 - Definitions"
   },
   {
@@ -2109,7 +2196,12 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "ai-act",
+      "artificial-intelligence",
+      "vulnerable-persons",
+      "biometrics"
+    ],
     "enforcement_status": "in_force",
     "id": "eu-ai-act-2024-art-005",
     "jurisdiction": "eu",
@@ -2117,7 +2209,7 @@
     "revision_id": "",
     "sha": "94667dd2046b54ad9c75f061a7e1b8c2644865e4b348959ca682def9035d0076",
     "source_uri": "https://eur-lex.europa.eu/eli/reg/2024/1689/art_5/oj/eng",
-    "summary": "",
+    "summary": "Prohibits placing on the market or using AI systems for listed practices, including manipulative or subliminal techniques, exploiting vulnerabilities due to age, disability or social situation, social scoring, emotion recognition at work or school and certain biometric categorisation and identification uses.",
     "title": "EU AI Act Article 5 - Prohibited AI practices"
   },
   {
@@ -2138,7 +2230,11 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "ai-act",
+      "transparency",
+      "artificial-intelligence"
+    ],
     "enforcement_status": "in_force",
     "id": "eu-ai-act-2024-art-050",
     "jurisdiction": "eu",
@@ -2146,7 +2242,7 @@
     "revision_id": "",
     "sha": "c9b57e30fdd857dbb5ab28be5cad6fce3e9c3a580af1c298de19f284700b7877",
     "source_uri": "https://eur-lex.europa.eu/eli/reg/2024/1689/art_50/oj/eng",
-    "summary": "",
+    "summary": "Requires providers to inform people when they interact with an AI system and to mark synthetic audio, image, video or text output as artificially generated. Deployers must disclose emotion recognition, biometric categorisation and deep fake content.",
     "title": "EU AI Act Article 50 - Transparency obligations for providers and deployers of certain AI systems"
   },
   {
@@ -2201,7 +2297,11 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "territorial-scope",
+      "scope",
+      "cross-border-transfer"
+    ],
     "enforcement_status": "in_force",
     "id": "eu-gdpr-art-003",
     "jurisdiction": "eu",
@@ -2209,12 +2309,16 @@
     "revision_id": "",
     "sha": "732d6b462b14389f9a448982c0fbaaaa5fb314b65d698109b5638f84065cf817",
     "source_uri": "https://eur-lex.europa.eu/eli/reg/2016/679/art_3/oj/eng",
-    "summary": "",
+    "summary": "The EU GDPR applies to processing in the context of an EU establishment wherever it takes place, and to processing by controllers or processors outside the EU of personal data of people in the EU where it relates to offering them goods or services or monitoring their behaviour in the EU.",
     "title": "EU GDPR Article 3 - Territorial scope"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "representative",
+      "territorial-scope",
+      "supervisory-authority"
+    ],
     "enforcement_status": "in_force",
     "id": "eu-gdpr-art-027",
     "jurisdiction": "eu",
@@ -2222,12 +2326,16 @@
     "revision_id": "",
     "sha": "6652dfa78d70bddc4486d5e61683d09624ddb31672d3a4d802872a1352c6e97a",
     "source_uri": "https://eur-lex.europa.eu/eli/reg/2016/679/art_27/oj/eng",
-    "summary": "",
+    "summary": "A controller or processor outside the EU that is caught by Article 3(2) must designate in writing a representative established in a Member State where relevant data subjects are. The duty does not apply to occasional low-risk processing without large-scale special category or criminal offence data, or to public bodies.",
     "title": "EU GDPR Article 27 - Representatives of controllers or processors not established in the Union"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "supervisory-authority",
+      "data-subject-rights",
+      "complaints"
+    ],
     "enforcement_status": "in_force",
     "id": "eu-gdpr-art-077",
     "jurisdiction": "eu",
@@ -2235,7 +2343,7 @@
     "revision_id": "",
     "sha": "bb7ac245b057a2b4f8059d900397c98e0d96c5740bbeb3eb517d9848827ee5a0",
     "source_uri": "https://eur-lex.europa.eu/eli/reg/2016/679/art_77/oj/eng",
-    "summary": "",
+    "summary": "Every data subject has the right to lodge a complaint with a supervisory authority, in particular in the Member State of their habitual residence, place of work or the alleged infringement. The authority must inform the complainant of the progress and outcome, including the possibility of a judicial remedy.",
     "title": "EU GDPR Article 77 - Right to lodge a complaint with a supervisory authority"
   },
   {
@@ -2275,7 +2383,12 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "financial-perimeter",
+      "financial-promotion",
+      "exemptions",
+      "territorial-scope"
+    ],
     "enforcement_status": "in_force",
     "id": "fpo-2005-art-012",
     "jurisdiction": "uk",
@@ -2283,12 +2396,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "5db7c6cf5f29cac62f11c03318329088bea7472eb502b830f183f57819ef8662",
     "source_uri": "https://www.legislation.gov.uk/uksi/2005/1529/article/12/data.xht",
-    "summary": "",
+    "summary": "Exempts from the financial promotion restriction a communication made to a person who receives it outside the United Kingdom, or directed only at persons outside the United Kingdom. Unsolicited real time communications qualify only when made from abroad for a business carried on only outside the United Kingdom.",
     "title": "Financial Services and Markets Act 2000 (Financial Promotion) Order 2005 article 12 - Communications to overseas recipients"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "financial-perimeter",
+      "financial-promotion",
+      "exemptions"
+    ],
     "enforcement_status": "in_force",
     "id": "fpo-2005-art-019",
     "jurisdiction": "uk",
@@ -2296,12 +2413,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "299bbf731b82952127566e8abbe17c99b85b566c982228d9f8ce6c242a003b8f",
     "source_uri": "https://www.legislation.gov.uk/uksi/2005/1529/article/19/data.xht",
-    "summary": "",
+    "summary": "Exempts from the financial promotion restriction a communication made only to, or directed only at, investment professionals. It sets indicators, such as warnings and systems that stop other recipients engaging, that show a communication is directed only at investment professionals.",
     "title": "Financial Services and Markets Act 2000 (Financial Promotion) Order 2005 article 19 - Investment professionals"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "financial-perimeter",
+      "financial-promotion",
+      "exemptions"
+    ],
     "enforcement_status": "in_force",
     "id": "fpo-2005-art-048",
     "jurisdiction": "uk",
@@ -2309,12 +2430,16 @@
     "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
     "sha": "418f0d656c4885093d710c9b094be4734028a553f5b14122848418cd97a49d38",
     "source_uri": "https://www.legislation.gov.uk/uksi/2005/1529/article/48/data.xht",
-    "summary": "",
+    "summary": "Exempts certain non-real time or solicited real time communications made to an individual reasonably believed to be a certified high net worth individual, who has signed a Schedule 5 statement in the last twelve months. The communication must carry the prescribed warning and information and relate only to specified investments.",
     "title": "Financial Services and Markets Act 2000 (Financial Promotion) Order 2005 article 48 - Certified high net worth individuals"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "financial-perimeter",
+      "financial-promotion",
+      "exemptions"
+    ],
     "enforcement_status": "in_force",
     "id": "fpo-2005-art-049",
     "jurisdiction": "uk",
@@ -2322,12 +2447,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "d33c45999e8c00175e5e48adb1158d9f92aeaa8847df90ed5f5b6594bbb22cbc",
     "source_uri": "https://www.legislation.gov.uk/uksi/2005/1529/article/49/data.xht",
-    "summary": "",
+    "summary": "Exempts from the financial promotion restriction a communication made only to, or directed only at, high net worth bodies corporate, unincorporated associations, partnerships, trustees of high value trusts and their relevant directors, officers or employees, above set net asset or share capital thresholds.",
     "title": "Financial Services and Markets Act 2000 (Financial Promotion) Order 2005 article 49 - High net worth companies, unincorporated associations etc."
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "financial-perimeter",
+      "financial-promotion",
+      "exemptions"
+    ],
     "enforcement_status": "in_force",
     "id": "fpo-2005-art-050",
     "jurisdiction": "uk",
@@ -2335,12 +2464,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "a30dd1e418784395122adb687174b6530834e9ee9914eafdffcb74f351095436",
     "source_uri": "https://www.legislation.gov.uk/uksi/2005/1529/article/50/data.xht",
-    "summary": "",
+    "summary": "Exempts a communication made to a certified sophisticated investor, who holds a current certificate signed by an authorised person and has signed a statement in the last twelve months. The communication must relate only to the certified investment type and carry the prescribed indications.",
     "title": "Financial Services and Markets Act 2000 (Financial Promotion) Order 2005 article 50 - Sophisticated investors"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "financial-perimeter",
+      "financial-promotion",
+      "exemptions"
+    ],
     "enforcement_status": "in_force",
     "id": "fpo-2005-art-050a",
     "jurisdiction": "uk",
@@ -2348,12 +2481,16 @@
     "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
     "sha": "6f8f120fee909211d35b5767e98b6bca622781846eeab0cf5a672e54dbf04d75",
     "source_uri": "https://www.legislation.gov.uk/uksi/2005/1529/article/50A/data.xht",
-    "summary": "",
+    "summary": "Exempts a communication made to an individual reasonably believed to be a self-certified sophisticated investor, who has signed a Schedule 5 Part 2 statement in the last twelve months. The communication must carry the prescribed warning and information and relate only to specified investments.",
     "title": "Financial Services and Markets Act 2000 (Financial Promotion) Order 2005 article 50A - Self-certified sophisticated investors"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "financial-perimeter",
+      "financial-promotion",
+      "exemptions"
+    ],
     "enforcement_status": "in_force",
     "id": "fpo-2005-art-051",
     "jurisdiction": "uk",
@@ -2361,12 +2498,15 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "9faeef6058a5d9f056f45aa34863be0be6278362e57db9fd7e28418d1ccf0e28",
     "source_uri": "https://www.legislation.gov.uk/uksi/2005/1529/article/51/data.xht",
-    "summary": "",
+    "summary": "Exempts non-real time or solicited real time communications made to an association, or its members, made up wholly or mainly of high net worth or sophisticated investors, where the investment cannot create a liability beyond the amount committed. The exemption does not cover qualifying cryptoassets.",
     "title": "Financial Services and Markets Act 2000 (Financial Promotion) Order 2005 article 51 - Associations of high net worth or sophisticated investors"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "financial-perimeter",
+      "registration"
+    ],
     "enforcement_status": "in_force",
     "id": "fsma-2000-s-019",
     "jurisdiction": "uk",
@@ -2374,12 +2514,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "c310760cc45fcd1d794312d2ee72360b3b302ca352052cdd77e6e0562e54d23e",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2000/8/section/19/data.xht",
-    "summary": "",
+    "summary": "Prohibits any person from carrying on, or purporting to carry on, a regulated activity in the United Kingdom unless they are an authorised person or an exempt person. This is called the general prohibition.",
     "title": "Financial Services and Markets Act 2000 section 19 - The general prohibition"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "financial-perimeter",
+      "financial-promotion",
+      "territorial-scope"
+    ],
     "enforcement_status": "in_force",
     "id": "fsma-2000-s-021",
     "jurisdiction": "uk",
@@ -2387,12 +2531,15 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "1a171c99f1f44a1eb56a817218f87efbccf2e88a038a31910e386ad4ab4fca85",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2000/8/section/21/data.xht",
-    "summary": "",
+    "summary": "A person must not, in the course of business, communicate an invitation or inducement to engage in investment or claims management activity unless they are an authorised person or an authorised person approves the content. A communication from outside the United Kingdom is caught only if it can have an effect in the United Kingdom.",
     "title": "Financial Services and Markets Act 2000 section 21 - Restrictions on financial promotion"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "financial-perimeter",
+      "definitions"
+    ],
     "enforcement_status": "in_force",
     "id": "fsma-2000-s-022",
     "jurisdiction": "uk",
@@ -2400,12 +2547,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "7f23b693854ac995a59eca333d97fde4fa836ac576b55b03613cee305b541606",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2000/8/section/22/data.xht",
-    "summary": "",
+    "summary": "Defines a regulated activity as an activity of a kind specified by Treasury order, carried on by way of business, that relates to a specified investment, to information about a person's financial standing, to administering a benchmark or to claims management services in Great Britain.",
     "title": "Financial Services and Markets Act 2000 section 22 - Regulated activities"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "financial-perimeter",
+      "offences",
+      "credit"
+    ],
     "enforcement_status": "in_force",
     "id": "fsma-2000-s-023",
     "jurisdiction": "uk",
@@ -2413,12 +2564,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "9354e8418d2dfe30e0bbb736c382313503ce5db00898730700c7b95ce79ed00a",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2000/8/section/23/data.xht",
-    "summary": "",
+    "summary": "Makes contravention of the general prohibition a criminal offence punishable by a fine, imprisonment or both. It also makes it an offence for an authorised person to carry on a credit-related regulated activity without the relevant permission.",
     "title": "Financial Services and Markets Act 2000 section 23 - Contravention of the general prohibition or section 20(1) or (1A)"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "financial-perimeter",
+      "financial-promotion",
+      "offences"
+    ],
     "enforcement_status": "in_force",
     "id": "fsma-2000-s-025",
     "jurisdiction": "uk",
@@ -2426,7 +2581,7 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "4878397d40867576e64d0ab811ab5cd45fcfe008129a73b7f3f3b613fcdba964",
     "source_uri": "https://www.legislation.gov.uk/ukpga/2000/8/section/25/data.xht",
-    "summary": "",
+    "summary": "Makes contravention of the financial promotion restriction in section 21(1) a criminal offence punishable by a fine, imprisonment or both. It is a defence to show a reasonable belief that an authorised person prepared or approved the content, or that all reasonable precautions and due diligence were taken.",
     "title": "Financial Services and Markets Act 2000 section 25 - Contravention of section 21"
   },
   {
@@ -2498,7 +2653,7 @@
     "revision_id": "consolidated text as at 2026-09-18",
     "sha": "d98e0b6813ae59e70adfe3072a6954df9946c022e516976014fded95e7ca8be5",
     "source_uri": "https://gov.gg/CHttpHandler.ashx?id=110559&p=0",
-    "summary": "",
+    "summary": "The Guernsey Law applies to processing by a controller or processor established in the Bailiwick, or to processing of a Bailiwick resident's personal data in the context of offering them goods or services or monitoring their behaviour in the Bailiwick.",
     "title": "Data Protection (Bailiwick of Guernsey) Law, 2017 section 2 - Application (Condition B, territorial scope)"
   },
   {
@@ -2515,7 +2670,7 @@
     "revision_id": "consolidated text as at 2026-09-18",
     "sha": "5b71e614e2ca17ac65342043c02be9b27d3b41c5047036b40eb55ec48a08e4cd",
     "source_uri": "https://gov.gg/CHttpHandler.ashx?id=110559&p=0",
-    "summary": "",
+    "summary": "Where personal data is processed for direct marketing, the data subject may require the controller to stop. The controller must give notice of the processing and this right explicitly and separately, at or before its first communication, and must stop on a written objection.",
     "title": "Data Protection (Bailiwick of Guernsey) Law, 2017 section 17 - Right to object to processing for direct marketing purposes"
   },
   {
@@ -2532,7 +2687,7 @@
     "revision_id": "consolidated text as at 2026-09-18",
     "sha": "9183931804e5e0c90c2b3759392ea2cef6bae2b1df2aef8d824d2a0eb21bf396",
     "source_uri": "https://gov.gg/CHttpHandler.ashx?id=110559&p=0",
-    "summary": "",
+    "summary": "A controller or processor established in the Bailiwick must not process personal data unless it is registered under Schedule 4 or exempt by regulations. Failure to comply is an offence.",
     "title": "Data Protection (Bailiwick of Guernsey) Law, 2017 section 39 - Controllers and processors to be registered"
   },
   {
@@ -2549,7 +2704,7 @@
     "revision_id": "consolidated text as at 2026-09-18",
     "sha": "9502fc2bdff1987445da7375a9a4265385be8d13403f7eaf19fd642ecca4ae38",
     "source_uri": "https://gov.gg/CHttpHandler.ashx?id=110559&p=0",
-    "summary": "",
+    "summary": "A controller and processor must jointly designate a data protection officer where processing is carried out by a public authority, or where core activities involve large-scale systematic monitoring of data subjects or large-scale processing of special category data.",
     "title": "Data Protection (Bailiwick of Guernsey) Law, 2017 section 47 - Mandatory designation of a data protection officer"
   },
   {
@@ -2567,7 +2722,7 @@
     "revision_id": "consolidated text as at 2026-09-18",
     "sha": "c5a02cd084663b0136c7fa0f3b51276f7a798c748ff7f8a4080188fca9bbc51f",
     "source_uri": "https://gov.gg/CHttpHandler.ashx?id=110559&p=0",
-    "summary": "",
+    "summary": "Sets explicit consent as a condition for processing special category data: the data subject has given explicit consent to processing for the purpose for which it is processed.",
     "title": "Data Protection (Bailiwick of Guernsey) Law, 2017 Schedule 2 Part III paragraph 18 - Explicit consent (special category data)"
   },
   {
@@ -2841,7 +2996,12 @@
   },
   {
     "authority": "guidance",
-    "domain_tags": [],
+    "domain_tags": [
+      "breach-notification",
+      "security",
+      "accountability",
+      "record-keeping"
+    ],
     "enforcement_status": "guidance",
     "id": "ico-personal-data-breaches-guide",
     "jurisdiction": "uk",
@@ -2849,7 +3009,7 @@
     "revision_id": "20 August 2025",
     "sha": "11ef57786f6aa4abf4b2bb8d738985e1c91ba85ec7ce01c13793fda344eaa729",
     "source_uri": "https://ico.org.uk/for-organisations/report-a-breach/personal-data-breach/personal-data-breaches-a-guide/",
-    "summary": "",
+    "summary": "ICO guidance explains that a notifiable personal data breach must be reported to the ICO without undue delay and within 72 hours of becoming aware of it, and that individuals must be told without undue delay where the breach is likely to result in a high risk to them. All breaches must be documented, whether or not they are reported.",
     "title": "Personal data breaches: a guide"
   },
   {
@@ -2905,7 +3065,7 @@
     "revision_id": "regulator guidance page, checked 2026-09-18",
     "sha": "6fb5b4bfb7b9413ddecbeca00088fd7de4d40197ac92d822e03742d78e4c4619",
     "source_uri": "https://jerseyoic.org/guidance/data-protection/registration/registration-1",
-    "summary": "",
+    "summary": "A controller or processor established in Jersey must not cause or permit personal data to be processed unless it is registered under Article 17 of the Data Protection Authority (Jersey) Law 2018.",
     "title": "Data Protection Authority (Jersey) Law 2018 Article 17 - Registration"
   },
   {
@@ -2923,7 +3083,7 @@
     "revision_id": "Official Consolidated Version 25 November 2020 - 5 May 2023",
     "sha": "b2dd2307004f7f6d51f3b5a40e83af73e46926306c927a580965b65e55ee1ddb",
     "source_uri": "https://www.jerseylaw.je/laws/current/PDFs/L_3_2018_20230505.pdf",
-    "summary": "",
+    "summary": "The Jersey Law applies to processing by controllers or processors established in Jersey, those using equipment in Jersey, and those outside Jersey offering goods or services to, or monitoring, persons in Jersey. A controller using equipment in Jersey must nominate a representative established in Jersey.",
     "title": "Data Protection (Jersey) Law 2018 Article 4 - Application (territorial scope and representative duty)"
   },
   {
@@ -2940,7 +3100,7 @@
     "revision_id": "Official Consolidated Version 25 November 2020 - 5 May 2023",
     "sha": "5322638bf9ea6c2691447bb6f09d50a4b42e50f77c897928efd542ebc3c3d6de",
     "source_uri": "https://www.jerseylaw.je/laws/current/PDFs/L_3_2018_20230505.pdf",
-    "summary": "",
+    "summary": "A controller and processor must appoint a data protection officer where processing is by a public authority, where core activities need regular and systematic large-scale monitoring of data subjects or large-scale processing of special category data, or where the relevant law requires it.",
     "title": "Data Protection (Jersey) Law 2018 Article 24 - Appointment of data protection officer"
   },
   {
@@ -2957,7 +3117,7 @@
     "revision_id": "Official Consolidated Version 25 November 2020 - 5 May 2023",
     "sha": "a1852fa5e574e2e6396663afa0929bc5de9cf1a24c0cb9bece1403d3b7ba9326",
     "source_uri": "https://www.jerseylaw.je/laws/current/PDFs/L_3_2018_20230505.pdf",
-    "summary": "",
+    "summary": "A data subject may object to processing for direct marketing. The controller must notify them of the processing and the right explicitly and separately, at or before its first communication, and must stop processing on written notice of objection, including by automated means for information society services.",
     "title": "Data Protection (Jersey) Law 2018 Article 36 - Right to object to processing for direct marketing purposes"
   },
   {
@@ -2975,7 +3135,7 @@
     "revision_id": "Official Consolidated Version 25 November 2020 - 5 May 2023",
     "sha": "62ecfef3071eca6d6b3abece7796f8497dfc697d37725705a17abec8ab842470",
     "source_uri": "https://www.jerseylaw.je/laws/current/PDFs/L_3_2018_20230505.pdf",
-    "summary": "",
+    "summary": "Sets consent as a condition for processing personal data and special category data: the data subject has given explicit consent to the processing for one or more specific purposes.",
     "title": "Data Protection (Jersey) Law 2018 Schedule 2 Part 2 paragraph 6 - Consent (special category data)"
   },
   {
@@ -3031,7 +3191,10 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "controlled-drugs",
+      "definitions"
+    ],
     "enforcement_status": "in_force",
     "id": "misuse-drugs-1971-sch-002",
     "jurisdiction": "uk",
@@ -3044,7 +3207,10 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "controlled-drugs",
+      "definitions"
+    ],
     "enforcement_status": "in_force",
     "id": "misuse-drugs-regulations-2001-sch-001",
     "jurisdiction": "uk",
@@ -3057,7 +3223,10 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "definitions"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-003",
     "jurisdiction": "uk",
@@ -3065,12 +3234,15 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "5be2a3b42a7772a8b832e664eb74d6b56012e5ccef230dfcb006b3d4fbc6bc21",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/3/data.xht",
-    "summary": "",
+    "summary": "Sets out the general definitions used throughout the Money Laundering Regulations 2017, such as authorised person, beneficial owner, the FCA and other key terms, often by reference to other regulations.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 3 - General interpretation"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "definitions"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-004",
     "jurisdiction": "uk",
@@ -3078,12 +3250,15 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "63af3fbe90d52134d9a0f3b6caec1913c35c81056fdf9a838d20d99d1e587466",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/4/data.xht",
-    "summary": "",
+    "summary": "Defines a business relationship as a business, professional or commercial relationship arising from the relevant person's business that is expected to have an element of duration, with specific rules for certain services and estate agents.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 4 - Meaning of business relationship"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "supervisory-authority"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-007",
     "jurisdiction": "uk",
@@ -3091,12 +3266,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "1e17ec17010a5a5c9b8724b8d506aaa32a995b1d930e74727fd353c314d1bb05",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/7/data.xht",
-    "summary": "",
+    "summary": "Names the supervisory authorities for relevant persons, including the FCA for credit and financial institutions and cryptoasset businesses, the listed professional bodies for their members and HMRC for high value dealers and other businesses.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 7 - Supervisory authorities"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "scope",
+      "financial-perimeter"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-008",
     "jurisdiction": "uk",
@@ -3104,12 +3283,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "a2741a41dae952d7343df49d12874afaec8e0509acdba6d39aedccec212af160",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/8/data.xht",
-    "summary": "",
+    "summary": "Applies the Regulations to relevant persons acting in the course of business in the United Kingdom, listing credit and financial institutions, accountants, legal professionals, estate agents, high value dealers, casinos, art market participants and cryptoasset businesses.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 8 - Application"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "accountability",
+      "record-keeping"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-018",
     "jurisdiction": "uk",
@@ -3117,12 +3300,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "fc21d05adc5602f7e1986ae2d37d79965619ff1a795d06a7e947ac9c5c4f0361",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/18/data.xht",
-    "summary": "",
+    "summary": "Requires a relevant person to identify and assess the money laundering and terrorist financing risks to its business, taking account of customers, geography, products, transactions and delivery channels, and to keep a written record of the steps taken.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 18 - Risk assessment by relevant persons"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "accountability",
+      "record-keeping"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-018a",
     "jurisdiction": "uk",
@@ -3130,12 +3317,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "4682629f3666557adbfb4ed1905305669e546c9d2c175a01baf887784be0069a",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/18A/data.xht",
-    "summary": "",
+    "summary": "Requires a relevant person to identify and assess the proliferation financing risks to its business, considering the Treasury risk assessment and listed risk factors, and to keep an up-to-date written record of the steps taken.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 18A - Risk assessment by relevant persons in relation to proliferation financing"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "accountability",
+      "record-keeping"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-019",
     "jurisdiction": "uk",
@@ -3143,12 +3334,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "34a8520484064aca32993e942bab633d118688ce9e0b2d952f332a05afc306f8",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/19/data.xht",
-    "summary": "",
+    "summary": "Requires a relevant person to establish, review and record proportionate policies, controls and procedures approved by senior management to mitigate the money laundering and terrorist financing risks identified in its risk assessment.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 19 - Policies, controls and procedures"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "accountability",
+      "employment"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-021",
     "jurisdiction": "uk",
@@ -3156,12 +3351,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "de48c8f3cc48a22913c2f9d67dbe0da214fb9971cfc63e5f9448d798d989dea6",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/21/data.xht",
-    "summary": "",
+    "summary": "Requires a relevant person, where appropriate to its size and nature, to appoint a senior officer responsible for compliance, screen relevant employees and establish an independent audit function to evaluate its policies and controls.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 21 - Internal controls"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "accountability",
+      "record-keeping"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-024",
     "jurisdiction": "uk",
@@ -3169,12 +3368,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "abd87f0f5921d8cec922ebe78940b7788e527ebe9ec1e9f723fdd53d40d5a978",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/24/data.xht",
-    "summary": "",
+    "summary": "Requires a relevant person to make relevant employees and agents aware of the law on money laundering, terrorist financing, proliferation financing and data protection, give them regular training and keep a written record of the measures taken.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 24 - Training"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "verification",
+      "criminal-records"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-026",
     "jurisdiction": "uk",
@@ -3182,12 +3385,15 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "56ac94d1d751f9000c77611a390f6abe6b353ab8955b21c14aad20abd19c2bd0",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/26/data.xht",
-    "summary": "",
+    "summary": "Prohibits a person from being a beneficial owner, officer or manager of certain firms, such as accountants, legal professionals, estate agents and high value dealers, without approval from the firm's supervisory authority.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 26 - Prohibitions and approvals"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "verification"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-027",
     "jurisdiction": "uk",
@@ -3195,12 +3401,15 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "e67c95b7550bac3ea79ac0f26da64b6ad2f43fe9fd82b6ea91d30ea4680fc623",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/27/data.xht",
-    "summary": "",
+    "summary": "Requires a relevant person to apply customer due diligence when establishing a business relationship, carrying out certain occasional transactions above set thresholds, suspecting money laundering or terrorist financing, or doubting earlier identification information.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 27 - Customer due diligence"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "verification"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-028",
     "jurisdiction": "uk",
@@ -3208,12 +3417,15 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "79aba073ee30721399d8675a76ccbf8fe264a480f3696c8e658621c21280a4f6",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/28/data.xht",
-    "summary": "",
+    "summary": "Sets out the customer due diligence measures, requiring a relevant person to identify and verify the customer and any beneficial owner and to assess the purpose and intended nature of the business relationship or transaction.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 28 - Customer due diligence measures"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "verification"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-033",
     "jurisdiction": "uk",
@@ -3221,12 +3433,15 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "1247fa6ebec5ad83baef3c8d810ac2c6109714b33b5bfac9319b6926195e8c3e",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/33/data.xht",
-    "summary": "",
+    "summary": "Requires a relevant person to apply enhanced customer due diligence and enhanced ongoing monitoring in high-risk cases, including relationships with high-risk third countries, correspondent relationships and politically exposed persons.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 33 - Obligation to apply enhanced customer due diligence"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "verification"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-035",
     "jurisdiction": "uk",
@@ -3234,12 +3449,15 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "7bc17ef68d0f7acd1f526d9b391ffce9fbd7a807d8cfc7338fd884aace066af0",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/35/data.xht",
-    "summary": "",
+    "summary": "Requires a relevant person to have risk-management systems to identify politically exposed persons, their family members and known close associates, and to apply enhanced measures such as senior approval and establishing the source of wealth and funds.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 35 - Enhanced customer due diligence: politically exposed persons"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "verification"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-037",
     "jurisdiction": "uk",
@@ -3247,12 +3465,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "15f90bbdb687dd601c572646efb0aa3be33c6a5483e41a7ac9e6225b7aeea686",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/37/data.xht",
-    "summary": "",
+    "summary": "Permits a relevant person to apply simplified customer due diligence where it determines that a business relationship or transaction presents a low risk, while it continues to meet core requirements and monitors for unusual or suspicious transactions.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 37 - Application of simplified customer due diligence"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "verification",
+      "liability"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-039",
     "jurisdiction": "uk",
@@ -3260,12 +3482,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "b3e763f5279776b9a44a2a2fb5e4bcd6cadef272aec4f3e4546db42482afe84f",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/39/data.xht",
-    "summary": "",
+    "summary": "Permits a relevant person to rely on specified third parties to apply customer due diligence measures, but the relevant person remains liable for any failure and must obtain the information and arrange access to copies of the documents.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 39 - Reliance"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "record-keeping",
+      "retention"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-040",
     "jurisdiction": "uk",
@@ -3273,12 +3499,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "c8bdb1f28a2fdb5b9eb62a4773acb0ff53c31ad9ddc55bd2e12895228d145343",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/40/data.xht",
-    "summary": "",
+    "summary": "Requires a relevant person to keep copies of customer due diligence documents and supporting transaction records for a specified period, after which personal data must be deleted unless an exception applies.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 40 - Record-keeping"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "purpose-limitation",
+      "transparency"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-041",
     "jurisdiction": "uk",
@@ -3286,12 +3516,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "a1a711c09c97eaeca133b7c1682ff3cbdcc03e26ae6ddecfdc9feb37dd370ac2",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/41/data.xht",
-    "summary": "",
+    "summary": "Restricts personal data obtained under the Regulations to the purposes of preventing money laundering, terrorist financing or proliferation financing unless another enactment permits other use or the data subject consents, and requires a statement to new customers.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 41 - Data protection"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "registration",
+      "supervisory-authority"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-054",
     "jurisdiction": "uk",
@@ -3299,12 +3533,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "a41ec33efa10dd7265b3d3c57d9b247d5553716b0244b485517105343db84268",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/54/data.xht",
-    "summary": "",
+    "summary": "Requires the FCA and HMRC to maintain registers of certain relevant persons, including money service businesses, trust or company service providers, cryptoasset businesses, high value dealers and certain payment service providers.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 54 - Duty to maintain registers of certain relevant persons"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "registration",
+      "supervisory-authority"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-055",
     "jurisdiction": "uk",
@@ -3312,12 +3550,15 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "d56e438aff4ca93cd842ffbd8bb8152519163cc59f8cc788347ba0eda9d528ca",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/55/data.xht",
-    "summary": "",
+    "summary": "Allows the FCA to maintain a register of Annex 1 financial institutions and HMRC to maintain registers of certain unsupervised relevant persons, such as estate agents, accountants and tax advisers, and sets how such registers are kept.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 55 - Power to maintain registers"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "registration"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-056",
     "jurisdiction": "uk",
@@ -3325,12 +3566,15 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "b70d236542359b3a06fd8142b54d8ec1dd300de20cbcb9e2471b12e8ffd9faf4",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/56/data.xht",
-    "summary": "",
+    "summary": "Requires a person who must appear in a register maintained under regulation 54 to be registered before acting as a high value dealer, money service business, trust or company service provider, payment service provider or cryptoasset business, subject to transitional exceptions.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 56 - Requirement to be registered"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "registration"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-057",
     "jurisdiction": "uk",
@@ -3338,12 +3582,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "9827b34e82ec5c1a4f15b44ac163b1895c821644bd176cc7b92d88966ac4b3f7",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/57/data.xht",
-    "summary": "",
+    "summary": "Requires an applicant for registration to apply in the manner the registering authority specifies, providing information such as business details, the nominated officer, a risk assessment and how the business meets its anti-money laundering obligations.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 57 - Applications for registration in a register maintained under regulation 54 or 55"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "registration",
+      "criminal-records"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-058",
     "jurisdiction": "uk",
@@ -3351,12 +3599,15 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "2992529c6f4840b847c4fe37df793c3b0291a40be6cdfed9438e6c5b77a3c73c",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/58/data.xht",
-    "summary": "",
+    "summary": "Requires the registering authority to refuse registration of a money service business or trust or company service provider if the applicant or its officers, managers, beneficial owners or agents are not fit and proper persons, including those convicted of listed offences.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 58 - Fit and proper test"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "registration"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-059",
     "jurisdiction": "uk",
@@ -3364,12 +3615,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "b11823901f10315f943fee8a49be71658f10c073b475669b3e8c9d3506be70ab",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/59/data.xht",
-    "summary": "",
+    "summary": "Allows the registering authority to refuse registration where requirements are unmet, information is false or misleading, penalties or charges are unpaid, the supervisory authority objects or it suspects the applicant will fail to comply, and sets notification duties.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 59 - Determination of applications for registration under regulations 54 and 55"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "supervisory-authority",
+      "liability"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-076",
     "jurisdiction": "uk",
@@ -3377,12 +3632,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "4025d17ba70efe42bada227fcd3bae342ca0f31fc4d030cbe66939de87855285",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/76/data.xht",
-    "summary": "",
+    "summary": "Allows a designated supervisory authority to impose a penalty or publish a statement of censure on a person who contravenes a relevant requirement, and to penalise an officer knowingly concerned, unless all reasonable steps were taken.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 76 - Power to impose civil penalties: fines and statements"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "liability",
+      "criminal-offence-data"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-086",
     "jurisdiction": "uk",
@@ -3390,12 +3649,15 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "e4e2fa7885d2cf66da0d1727808fc99b08587aa7f887eb82044918fb6a6afdbc",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/86/data.xht",
-    "summary": "",
+    "summary": "Makes contravention of a relevant requirement a criminal offence punishable by imprisonment of up to two years, a fine or both, with a defence for a person who took all reasonable steps and exercised due diligence.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 86 - Criminal offence"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "anti-money-laundering",
+      "liability"
+    ],
     "enforcement_status": "in_force",
     "id": "mlr-2017-reg-092",
     "jurisdiction": "uk",
@@ -3403,7 +3665,7 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "a8d3ab303885850c8f43df7edec70753bea94f4841d82807b5beeead95d9c78b",
     "source_uri": "https://www.legislation.gov.uk/uksi/2017/692/regulation/92/data.xht",
-    "summary": "",
+    "summary": "Makes an officer of a body corporate, partnership or unincorporated association personally guilty of an offence under this Part committed with their consent or connivance or attributable to their neglect.",
     "title": "Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017 regulation 92 - Offence by bodies corporate, partnership or unincorporated association"
   },
   {
@@ -3633,7 +3895,10 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "browser-storage",
+      "consent"
+    ],
     "enforcement_status": "in_force",
     "id": "pecr-reg-006",
     "jurisdiction": "uk",
@@ -3641,12 +3906,18 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "f3b2c39b3745ae38c0caee16240c6362f5db85a7c865330f3e25fbc69d9ceb42",
     "source_uri": "https://www.legislation.gov.uk/uksi/2003/2426/regulation/6/data.xht",
-    "summary": "",
+    "summary": "A person must not store information, or gain access to information stored, in a subscriber's or user's terminal equipment, including by instigating it or collecting information the device emits automatically, except as Schedule A1 allows.",
     "title": "PECR regulation 6 - Confidentiality of communications"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "direct-marketing",
+      "electronic-mail",
+      "consent",
+      "soft-opt-in",
+      "charity"
+    ],
     "enforcement_status": "in_force",
     "id": "pecr-reg-022",
     "jurisdiction": "uk",
@@ -3654,12 +3925,17 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "b15a96d49f9f266195f6380b83c5ca32b0ecd8bfd145643c74310b856e34aef5",
     "source_uri": "https://www.legislation.gov.uk/uksi/2003/2426/regulation/22/data.xht",
-    "summary": "",
+    "summary": "A person may only send or instigate unsolicited direct marketing email to individual subscribers with the recipient's prior consent. Exceptions cover similar products and services to existing customers and charities furthering their charitable purposes, where a simple free means of refusal was given at collection and in each message.",
     "title": "PECR regulation 22 - Use of electronic mail for direct marketing"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "direct-marketing",
+      "electronic-mail",
+      "transparency",
+      "opt-out"
+    ],
     "enforcement_status": "in_force",
     "id": "pecr-reg-023",
     "jurisdiction": "uk",
@@ -3667,7 +3943,7 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "b311b99ce53ded87b226df0432b7f375e0f039f9607eeecb00707ad91819375c",
     "source_uri": "https://www.legislation.gov.uk/uksi/2003/2426/regulation/23/data.xht",
-    "summary": "",
+    "summary": "Direct marketing by electronic mail is prohibited where the sender's identity is disguised or concealed, where no valid address is given for the recipient to ask for such messages to stop and where the message breaches or promotes websites that breach regulation 7 of the Electronic Commerce Regulations 2002.",
     "title": "PECR regulation 23 - Restriction on use of automated calling systems"
   },
   {
@@ -3920,7 +4196,11 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "financial-perimeter",
+      "deposits",
+      "definitions"
+    ],
     "enforcement_status": "in_force",
     "id": "rao-2001-art-005",
     "jurisdiction": "uk",
@@ -3928,12 +4208,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "fca6273b1a6b197ba48b363135590590c512a4952fc795cec249e5b8ec68a021",
     "source_uri": "https://www.legislation.gov.uk/uksi/2001/544/article/5/data.xht",
-    "summary": "",
+    "summary": "Specifies accepting deposits as a regulated activity where deposit money is lent to others or finances the business. It defines a deposit as a repayable sum not referable to the provision of property, services or security, such as an advance payment or security deposit under a contract.",
     "title": "Financial Services and Markets Act 2000 (Regulated Activities) Order 2001 article 5 - Accepting deposits"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "financial-perimeter",
+      "credit",
+      "debt"
+    ],
     "enforcement_status": "in_force",
     "id": "rao-2001-art-039d",
     "jurisdiction": "uk",
@@ -3941,12 +4225,16 @@
     "revision_id": "Thu, 03 Sep 2026 16:52:26 GMT",
     "sha": "5dd8987d1b77f2460f51c9d0359442431a7538f2c5ddc66c88009d95ba0d1f98",
     "source_uri": "https://www.legislation.gov.uk/uksi/2001/544/article/39D/data.xht",
-    "summary": "",
+    "summary": "Specifies debt adjusting as a regulated activity: negotiating terms for discharging a debt with a lender or owner on a borrower's or hirer's behalf, taking over their obligation to discharge a debt in return for payments, or similar debt liquidation activity under a credit or consumer hire agreement.",
     "title": "Financial Services and Markets Act 2000 (Regulated Activities) Order 2001 article 39D - Debt adjusting"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "financial-perimeter",
+      "credit",
+      "debt"
+    ],
     "enforcement_status": "in_force",
     "id": "rao-2001-art-039e",
     "jurisdiction": "uk",
@@ -3954,12 +4242,16 @@
     "revision_id": "Thu, 03 Sep 2026 16:52:26 GMT",
     "sha": "a54b0a3c166d50080103efec23ccf16e2bb55ea5c9fc9e4d246652a828260e1d",
     "source_uri": "https://www.legislation.gov.uk/uksi/2001/544/article/39E/data.xht",
-    "summary": "",
+    "summary": "Specifies debt-counselling as a regulated activity: giving advice to a borrower or hirer about the liquidation of a debt due under a credit agreement or a consumer hire agreement.",
     "title": "Financial Services and Markets Act 2000 (Regulated Activities) Order 2001 article 39E - Debt-counselling"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "financial-perimeter",
+      "credit",
+      "definitions"
+    ],
     "enforcement_status": "in_force",
     "id": "rao-2001-art-060b",
     "jurisdiction": "uk",
@@ -3967,12 +4259,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "f8e11408ca693c94bb04333bf8e43e5f2b0b5768063b4385fdef5d949cf617c2",
     "source_uri": "https://www.legislation.gov.uk/uksi/2001/544/article/60B/data.xht",
-    "summary": "",
+    "summary": "Specifies entering into a regulated credit agreement as lender, and exercising the lender's rights and duties under one, as regulated activities. It defines a credit agreement and treats any credit agreement that is not an exempt agreement under articles 60C to 60H as regulated.",
     "title": "Financial Services and Markets Act 2000 (Regulated Activities) Order 2001 article 60B - Regulated credit agreements"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "financial-perimeter",
+      "credit",
+      "exemptions"
+    ],
     "enforcement_status": "in_force",
     "id": "rao-2001-art-060c",
     "jurisdiction": "uk",
@@ -3980,12 +4276,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "f522d472e6e5954cc23e1f555fafb73247cf7b313c915e9295b4222837ece483",
     "source_uri": "https://www.legislation.gov.uk/uksi/2001/544/article/60C/data.xht",
-    "summary": "",
+    "summary": "Sets out credit agreements that are exempt because of their nature, including agreements that are regulated mortgage contracts or home purchase plans, business lending over 25,000 pounds and certain business green deal plans.",
     "title": "Financial Services and Markets Act 2000 (Regulated Activities) Order 2001 article 60C - Exempt agreements: exemptions relating to the nature of the agreement"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "financial-perimeter",
+      "credit",
+      "definitions"
+    ],
     "enforcement_status": "in_force",
     "id": "rao-2001-art-061",
     "jurisdiction": "uk",
@@ -3993,7 +4293,7 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "98c678093d8a70c60b516c09807e44855bd2d37410e6433d61c55a1eabad251e",
     "source_uri": "https://www.legislation.gov.uk/uksi/2001/544/article/61/data.xht",
-    "summary": "",
+    "summary": "Specifies entering into and administering a regulated mortgage contract as regulated activities. A regulated mortgage contract is credit to an individual or trustees secured by a mortgage on land of which at least 40% is used as or in connection with a dwelling.",
     "title": "Financial Services and Markets Act 2000 (Regulated Activities) Order 2001 article 61 - Regulated mortgage contracts"
   },
   {
@@ -4034,7 +4334,9 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "offences"
+    ],
     "enforcement_status": "in_force",
     "id": "serious-crime-2007-s-044",
     "jurisdiction": "uk",
@@ -4328,7 +4630,11 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "definitions",
+      "personal-data",
+      "health-data"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-004",
     "jurisdiction": "uk",
@@ -4336,12 +4642,18 @@
     "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
     "sha": "ced080298a9de4d12c00bd908f0e2a5d29b9605f8282d97a27b18144bb549019",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/4/data.xht",
-    "summary": "",
+    "summary": "Defines the core terms of the UK GDPR, including personal data, processing, controller, processor, consent, personal data breach and data concerning health, together with references to the 2018 Act, domestic law and the Commissioner.",
     "title": "UK GDPR Article 4 - Definitions"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "accountability",
+      "purpose-limitation",
+      "data-minimisation",
+      "retention",
+      "security"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-005",
     "jurisdiction": "uk",
@@ -4349,12 +4661,17 @@
     "revision_id": "Wed, 13 May 2026 15:07:58 GMT",
     "sha": "10dfb8b447bd54f0b3953c6f0c7261d1b78bd40f838dcaf58de75c43a0b5f6aa",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/5/data.xht",
-    "summary": "",
+    "summary": "Sets the principles for processing personal data: lawfulness, fairness and transparency, purpose limitation, data minimisation, accuracy, storage limitation and integrity and confidentiality. The controller is responsible for compliance with these principles and must be able to demonstrate it.",
     "title": "UK GDPR Article 5 - Principles relating to processing of personal data"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "lawful-basis",
+      "consent",
+      "legitimate-interests",
+      "children"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-006",
     "jurisdiction": "uk",
@@ -4362,12 +4679,16 @@
     "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
     "sha": "307f6e93ad29f5b92c1d5572b842ea2b2b496252b6cd87df9e03dd92ea6744fe",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/6/data.xht",
-    "summary": "",
+    "summary": "Processing is lawful only where at least one listed basis applies, including consent, contract, legal obligation, vital interests, public task, a recognised legitimate interest under Annex 1 or legitimate interests not overridden by the data subject's rights, particularly where the data subject is a child.",
     "title": "UK GDPR Article 6 - Lawfulness of processing"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "consent",
+      "lawful-basis",
+      "accountability"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-007",
     "jurisdiction": "uk",
@@ -4375,7 +4696,7 @@
     "revision_id": "Wed, 13 May 2026 15:07:58 GMT",
     "sha": "a200ccf2890e4d7974d5f48c872c0469e11918740516547c473f4cac58e28c57",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/7/data.xht",
-    "summary": "",
+    "summary": "Where processing relies on consent, the controller must be able to demonstrate it, a written request must be clearly distinguishable and in plain language, and withdrawal must be as easy as giving consent. Making a service conditional on unnecessary consent counts against consent being freely given.",
     "title": "UK GDPR Article 7 - Conditions for consent"
   },
   {
@@ -4431,7 +4752,12 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "special-category",
+      "health-data",
+      "explicit-consent",
+      "lawful-basis"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-009",
     "jurisdiction": "uk",
@@ -4439,7 +4765,7 @@
     "revision_id": "Wed, 13 May 2026 15:07:58 GMT",
     "sha": "e5d8404dfedb6b11c375f27a8e5fae453b0881fe659e4f9be0bd8fad61a01dc1",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/9/data.xht",
-    "summary": "",
+    "summary": "Prohibits processing of special category data, such as health, ethnic origin, sex life or sexual orientation and biometric data, unless the processing has an Article 6 basis and one of the listed conditions applies, such as explicit consent, health or social care purposes or substantial public interest.",
     "title": "UK GDPR Article 9 - Processing of special categories of personal data"
   },
   {
@@ -4479,7 +4805,11 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "transparency",
+      "data-subject-rights",
+      "children"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-012",
     "jurisdiction": "uk",
@@ -4487,12 +4817,15 @@
     "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
     "sha": "49f4a47708d086c0e4d66d6527963b2f558a18d091d5a75c94e90b898a40982c",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/12/data.xht",
-    "summary": "",
+    "summary": "The controller must give privacy information and communications about data subject rights in a concise, transparent, intelligible and easily accessible form using clear and plain language, especially for children, and must facilitate the exercise of those rights, act within the applicable time period and generally do so free of charge.",
     "title": "UK GDPR Article 12 - Transparent information"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "data-subject-rights",
+      "response-time"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-012a",
     "jurisdiction": "uk",
@@ -4500,12 +4833,16 @@
     "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
     "sha": "dbb09cc52fd4227215cb07cc986b9618e954489df878089c6843b345f40be12d",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/12A./data.xht",
-    "summary": "",
+    "summary": "The time for responding to a data subject request is one month from the latest of receipt of the request, of any requested identifying information or of any fee. The controller may extend it by two further months for complex or numerous requests by giving reasoned notice within the first month.",
     "title": "UK GDPR Article 12A - Time limits for responding to requests by data subjects"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "transparency",
+      "data-subject-rights",
+      "lawful-basis"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-013",
     "jurisdiction": "uk",
@@ -4513,12 +4850,16 @@
     "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
     "sha": "a8708dfb83c1e9bdcbc10ff7398988050377b10c3069035e150b43524bd0037e",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/13/data.xht",
-    "summary": "",
+    "summary": "When personal data are collected from the data subject, the controller must provide at that time its identity and contact details, the purposes and legal basis, the recipients, any transfers, the retention period, the data subject's rights and other information listed in the article.",
     "title": "UK GDPR Article 13 - Information when personal data are collected from the data subject"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "transparency",
+      "data-subject-rights",
+      "lawful-basis"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-014",
     "jurisdiction": "uk",
@@ -4526,12 +4867,15 @@
     "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
     "sha": "84bda37d7529e73ac3d0ebfbdc27ad86fd875b8e724d8519a43555182088edef",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/14/data.xht",
-    "summary": "",
+    "summary": "When personal data are obtained from someone other than the data subject, the controller must give the data subject the listed information, including the purposes, legal basis, categories of data, recipients, retention period, rights and the source of the data, within the time limits the article sets, subject to stated exceptions.",
     "title": "UK GDPR Article 14 - Information when personal data have not been obtained from the data subject"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "data-subject-rights",
+      "subject-access"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-015",
     "jurisdiction": "uk",
@@ -4539,12 +4883,15 @@
     "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
     "sha": "37575e42b926ce1efd97356c0ad3b588f46d4e7edd4124f57d26ac14061ecfce",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/15/data.xht",
-    "summary": "",
+    "summary": "Gives the data subject the right to confirmation of whether their personal data are processed and, if so, access to the data and information such as the purposes, recipients, retention period and source. The controller must supply a copy, and the search need only be reasonable and proportionate.",
     "title": "UK GDPR Article 15 - Right of access by the data subject"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "data-subject-rights",
+      "accuracy"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-016",
     "jurisdiction": "uk",
@@ -4552,12 +4899,16 @@
     "revision_id": "Wed, 13 May 2026 15:07:58 GMT",
     "sha": "57a6b5608719dba8610c0cb3b42969ad598864bb75f4128e08c86272821e7544",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/16/data.xht",
-    "summary": "",
+    "summary": "Gives the data subject the right to have inaccurate personal data about them rectified without undue delay and to have incomplete personal data completed, including by a supplementary statement.",
     "title": "UK GDPR Article 16 - Right to rectification"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "data-subject-rights",
+      "erasure",
+      "retention"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-017",
     "jurisdiction": "uk",
@@ -4565,12 +4916,15 @@
     "revision_id": "Wed, 13 May 2026 15:07:58 GMT",
     "sha": "681c68955d14cf84bc0d6a12ecc7ba16792c19c866c73d1c308ea1fda52bda88",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/17/data.xht",
-    "summary": "",
+    "summary": "Gives the data subject the right to erasure of their personal data without undue delay on listed grounds, such as the data no longer being necessary, withdrawal of consent or a successful objection, subject to exceptions such as legal obligations and legal claims.",
     "title": "UK GDPR Article 17 - Right to erasure"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "data-subject-rights",
+      "restriction"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-018",
     "jurisdiction": "uk",
@@ -4578,12 +4932,15 @@
     "revision_id": "Wed, 13 May 2026 15:07:58 GMT",
     "sha": "8c7e14e6a3d9730793cd2ee7de6cee44095277112a5ca2ca8fad7dbb2ef8b875",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/18/data.xht",
-    "summary": "",
+    "summary": "Gives the data subject the right to restrict processing where accuracy is contested, the processing is unlawful, the data are needed for legal claims or an objection is pending. Restricted data may then be processed only on limited grounds, and the data subject must be told before a restriction is lifted.",
     "title": "UK GDPR Article 18 - Right to restriction of processing"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "data-subject-rights",
+      "data-sharing"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-019",
     "jurisdiction": "uk",
@@ -4591,12 +4948,15 @@
     "revision_id": "Wed, 13 May 2026 15:07:58 GMT",
     "sha": "7d2254a3d27b6ce9205e4f52929ed191d097261558f2177f6d9032fe5b02ca3f",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/19/data.xht",
-    "summary": "",
+    "summary": "The controller must tell each recipient of the personal data about any rectification, erasure or restriction, unless this proves impossible or involves disproportionate effort, and must tell the data subject about those recipients on request.",
     "title": "UK GDPR Article 19 - Notification obligation"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "data-subject-rights",
+      "portability"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-020",
     "jurisdiction": "uk",
@@ -4604,12 +4964,16 @@
     "revision_id": "Wed, 13 May 2026 15:07:58 GMT",
     "sha": "aeb5b3813919c648cd5e6a2c2e95e1ab516583414519bcdbac64cf71b125eef7",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/20/data.xht",
-    "summary": "",
+    "summary": "Where processing is automated and based on consent or contract, the data subject may receive the personal data they provided in a structured, commonly used and machine-readable format and have it transmitted to another controller, directly where technically feasible.",
     "title": "UK GDPR Article 20 - Right to data portability"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "data-subject-rights",
+      "direct-marketing",
+      "legitimate-interests"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-021",
     "jurisdiction": "uk",
@@ -4617,12 +4981,16 @@
     "revision_id": "Wed, 13 May 2026 15:07:58 GMT",
     "sha": "304a8c880a08265ae5c6e4315bff6268bb59e8a57e4243926f86f10b57767f1a",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/21/data.xht",
-    "summary": "",
+    "summary": "Gives the data subject the right to object to processing based on public task or legitimate interests, which must then stop unless the controller shows compelling legitimate grounds. An objection to direct marketing, including related profiling, is absolute and the data must no longer be processed for that purpose.",
     "title": "UK GDPR Article 21 - Right to object"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "automated-decision",
+      "data-subject-rights",
+      "repealed"
+    ],
     "enforcement_status": "repealed",
     "id": "uk-gdpr-art-022",
     "jurisdiction": "uk",
@@ -4630,12 +4998,16 @@
     "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
     "sha": "5ad43053b45abc00c03982f09d9be2dacf8aa139ac237468d64ef62941f25093",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/22/data.xht",
-    "summary": "",
+    "summary": "Article 22 on automated individual decision-making, including profiling, was replaced by Articles 22A to 22D by the Data (Use and Access) Act 2025, fully in force from 5 February 2026. The corpus text holds only the amendment notes.",
     "title": "UK GDPR Article 22 - Automated individual decision-making"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "automated-decision",
+      "definitions",
+      "data-subject-rights"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-022a",
     "jurisdiction": "uk",
@@ -4643,12 +5015,17 @@
     "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
     "sha": "a827696ae12ef704f921cebe7472cf5615f69b457f9225f66e991a3049766e29",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/22A/data.xht",
-    "summary": "",
+    "summary": "A decision is based solely on automated processing if there is no meaningful human involvement in taking it, and it is a significant decision if it produces a legal or similarly significant effect for the data subject. Assessing meaningful human involvement must consider the extent to which the decision relies on profiling.",
     "title": "UK GDPR Article 22A - Automated processing and significant decisions"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "automated-decision",
+      "special-category",
+      "explicit-consent",
+      "data-subject-rights"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-022b",
     "jurisdiction": "uk",
@@ -4656,12 +5033,16 @@
     "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
     "sha": "ecc4fcba026541e54de40894195f10f175cd15d9b8d7cf47afb4c88e50a74a37",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/22B/data.xht",
-    "summary": "",
+    "summary": "A significant decision based solely on automated processing may not rely on special category data unless the data subject gave explicit consent or the decision is necessary for a contract or required or authorised by law and Article 9(2)(g) applies. Such decisions also may not rely on processing under the recognised legitimate interests basis in Article 6(1)(ea).",
     "title": "UK GDPR Article 22B - Restrictions on automated decision-making"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "automated-decision",
+      "data-subject-rights",
+      "transparency"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-022c",
     "jurisdiction": "uk",
@@ -4669,12 +5050,15 @@
     "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
     "sha": "62dc6482ce21e2cf5f101456ef3875e6d4f3a3e5f7380012e42be1b06e2be0d3",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/22C/data.xht",
-    "summary": "",
+    "summary": "Where a controller takes a significant decision based solely on automated processing of personal data, it must put safeguards in place that give the data subject information about the decision and let them make representations, obtain human intervention and contest the decision.",
     "title": "UK GDPR Article 22C - Safeguards for automated decision-making"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "automated-decision",
+      "definitions"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-022d",
     "jurisdiction": "uk",
@@ -4682,7 +5066,7 @@
     "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
     "sha": "438ab6d18b55480a4bd2570b6435a5a52207608eb432b4e55029e766269026db",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/22D/data.xht",
-    "summary": "",
+    "summary": "The Secretary of State may by regulations specify when there is or is not meaningful human involvement in a decision, which decisions have a similarly significant effect, and additional or supplementary requirements for automated decision-making safeguards. Such regulations may not amend Article 22C and follow the affirmative resolution procedure.",
     "title": "UK GDPR Article 22D - Further provision about automated decision-making"
   },
   {
@@ -4703,7 +5087,12 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "accountability",
+      "privacy-by-design",
+      "data-minimisation",
+      "children"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-025",
     "jurisdiction": "uk",
@@ -4711,12 +5100,17 @@
     "revision_id": "Wed, 13 May 2026 15:07:58 GMT",
     "sha": "ed2a8662fc9417fe11214889d9fc1b79ada8bfc651933c9ce9ec150eb5c3cc51",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/25/data.xht",
-    "summary": "",
+    "summary": "The controller must implement appropriate technical and organisational measures, such as pseudonymisation, to apply the data protection principles effectively, and must by default process only the personal data necessary for each purpose. Online services likely to be accessed by children must take account of children's higher protection matters.",
     "title": "UK GDPR Article 25 - Data protection by design and by default"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "joint-controller",
+      "controller-roles",
+      "transparency",
+      "data-subject-rights"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-026",
     "jurisdiction": "uk",
@@ -4724,12 +5118,17 @@
     "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
     "sha": "4a0ce0db78cac751df280eaebc5b38698be2c23eac365b443c1bf177e59856d0",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/26/data.xht",
-    "summary": "",
+    "summary": "Where two or more controllers jointly determine the purposes and means of processing, they are joint controllers and must set out their respective responsibilities in a transparent arrangement. The essence of the arrangement must be available to data subjects, who may exercise their rights against each controller.",
     "title": "UK GDPR Article 26 - Joint controllers"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "processor-contract",
+      "controller-roles",
+      "security",
+      "accountability"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-028",
     "jurisdiction": "uk",
@@ -4737,7 +5136,7 @@
     "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
     "sha": "02539b9b55e1b5f3a0b6e89fa95111ae6b02fe1a4924bbef5be391ed35e030b1",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/28/data.xht",
-    "summary": "",
+    "summary": "A controller may only use processors that give sufficient guarantees of appropriate measures, under a written contract setting out the processing and requiring the processor to act on documented instructions, keep data confidential and secure, assist the controller, delete or return data at the end and allow audits. Sub-processors need the controller's authorisation and the same obligations.",
     "title": "UK GDPR Article 28 - Processor"
   },
   {
@@ -4757,7 +5156,10 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "accountability",
+      "record-keeping"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-030",
     "jurisdiction": "uk",
@@ -4765,12 +5167,15 @@
     "revision_id": "Wed, 13 May 2026 15:07:58 GMT",
     "sha": "c8d17dc345d65dc21aa42d1f679bc51b7deae0571650376c6d33bb130bd390e3",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/30/data.xht",
-    "summary": "",
+    "summary": "Each controller and processor must keep a written record of its processing activities, covering items such as purposes, categories of data subjects and data, recipients, transfers, retention periods and security measures, and make it available to the Commissioner on request, with a limited exemption for organisations with fewer than 250 employees.",
     "title": "UK GDPR Article 30 - Records of processing activities"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "security",
+      "pseudonymisation"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-032",
     "jurisdiction": "uk",
@@ -4778,12 +5183,16 @@
     "revision_id": "Wed, 13 May 2026 15:07:58 GMT",
     "sha": "0029530b04b1f88141ec8d66bccc6055e26f21de05dd6092c595eb5ab243c98d",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/32/data.xht",
-    "summary": "",
+    "summary": "The controller and processor must implement technical and organisational measures that ensure security appropriate to the risk, including as appropriate pseudonymisation and encryption, ongoing confidentiality, integrity, availability and resilience, timely restoration after an incident and regular testing of those measures.",
     "title": "UK GDPR Article 32 - Security of processing"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "breach-notification",
+      "security",
+      "supervisory-authority"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-033",
     "jurisdiction": "uk",
@@ -4791,12 +5200,16 @@
     "revision_id": "Wed, 13 May 2026 15:07:58 GMT",
     "sha": "32ba06ec781236e6b54f5dd54c8f81d00a14aa128b9e0125f862a01ad3790707",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/33/data.xht",
-    "summary": "",
+    "summary": "The controller must notify a personal data breach to the Commissioner without undue delay and where feasible within 72 hours, unless it is unlikely to result in a risk to individuals. Processors must notify the controller, and the controller must document every breach.",
     "title": "UK GDPR Article 33 - Notification of a personal data breach to the supervisory authority"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "breach-notification",
+      "security",
+      "transparency"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-034",
     "jurisdiction": "uk",
@@ -4804,12 +5217,16 @@
     "revision_id": "Wed, 13 May 2026 15:07:58 GMT",
     "sha": "3bd13242b1c4ca28ab9c4a35cdbed43931c442f84cc793fdd68cacad50577aa4",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/34/data.xht",
-    "summary": "",
+    "summary": "Where a personal data breach is likely to result in a high risk to individuals, the controller must tell the affected data subjects without undue delay in clear and plain language, unless a listed condition applies, such as the data being made unintelligible by encryption.",
     "title": "UK GDPR Article 34 - Communication of a personal data breach to the data subject"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "dpia",
+      "high-risk",
+      "accountability"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-035",
     "jurisdiction": "uk",
@@ -4817,12 +5234,16 @@
     "revision_id": "Wed, 13 May 2026 15:07:58 GMT",
     "sha": "aea40f9dce04cbe68e319d4a79f3921a280f4a4ab476ecdb3a8df35d1075cb05",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/35/data.xht",
-    "summary": "",
+    "summary": "Before processing that is likely to result in a high risk to individuals, particularly using new technologies, the controller must carry out a data protection impact assessment describing the processing, its necessity and proportionality, the risks and the measures to address them.",
     "title": "UK GDPR Article 35 - Data protection impact assessment"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "dpia",
+      "high-risk",
+      "supervisory-authority"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-036",
     "jurisdiction": "uk",
@@ -4830,12 +5251,15 @@
     "revision_id": "Wed, 13 May 2026 15:07:58 GMT",
     "sha": "a76daa78cab7bc062c03dff29169df00866dd2c9065538a60950143a6b81df71",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/36/data.xht",
-    "summary": "",
+    "summary": "The controller must consult the Commissioner before processing where a data protection impact assessment shows a high risk that the controller has not mitigated. The Commissioner gives written advice within up to eight weeks, which may be extended by six weeks.",
     "title": "UK GDPR Article 36 - Prior consultation"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "cross-border-transfer",
+      "repealed"
+    ],
     "enforcement_status": "repealed",
     "id": "uk-gdpr-art-044",
     "jurisdiction": "uk",
@@ -4843,12 +5267,15 @@
     "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
     "sha": "c4d1dc39bc6302aececd7ea524b05e9cd980031b872565d81dc4476b31a6adea",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/44/data.xht",
-    "summary": "",
+    "summary": "Article 44, the general principle for transfers of personal data to third countries or international organisations, was omitted from 5 February 2026 by the Data (Use and Access) Act 2025. The corpus text holds only the amendment note.",
     "title": "UK GDPR Article 44 - General principle for transfers"
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "cross-border-transfer",
+      "adequacy"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-044a",
     "jurisdiction": "uk",
@@ -4856,7 +5283,7 @@
     "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
     "sha": "6ea11539a42e23a6f3a5f1994425ebef21e6de421122c3cde80ba05818634a44",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/44A/data.xht",
-    "summary": "",
+    "summary": "A controller or processor may transfer personal data to a third country or international organisation only if the transfer is approved by regulations under Article 45A, is subject to appropriate safeguards under Article 46 or relies on an Article 49 derogation, and otherwise complies with the Regulation.",
     "title": "UK GDPR Article 44A - General principles for transfers"
   },
   {
@@ -4999,7 +5426,12 @@
   },
   {
     "authority": "statute",
-    "domain_tags": [],
+    "domain_tags": [
+      "research",
+      "archiving",
+      "statistics",
+      "anonymisation"
+    ],
     "enforcement_status": "in_force",
     "id": "uk-gdpr-art-084b",
     "jurisdiction": "uk",
@@ -5007,7 +5439,7 @@
     "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
     "sha": "cd28a4c9bb0f6f0ff9ba24e76f4afaf0b65a5eda8951fffb2d6301cc4c386f8f",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/84B/data.xht",
-    "summary": "",
+    "summary": "Personal data may be processed for research, archiving or statistical purposes only if the processing is collection, converts the data into a form that does not identify the data subject or is needed to fulfil those purposes. Such processing must be subject to appropriate safeguards for the data subject's rights and freedoms.",
     "title": "UK GDPR Article 84B - Additional requirements when processing for RAS purposes"
   },
   {
