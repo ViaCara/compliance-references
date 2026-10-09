@@ -92,6 +92,9 @@ class DirectMarketingSourceTests(unittest.TestCase):
         self.assertEqual(
             {
                 "pecr-reg-002",
+                "pecr-reg-022",
+                "pecr-reg-023",
+                "uk-gdpr-art-021",
                 "dpa-2018-s-122",
                 "ico-direct-marketing-guidance-identify",
                 "ico-electronic-mail-marketing-key-concepts",
