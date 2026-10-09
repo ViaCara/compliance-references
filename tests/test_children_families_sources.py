@@ -1,4 +1,4 @@
-"""Children and families source coverage tests (VIA-686)."""
+"""Children and families source coverage tests."""
 
 import json
 import unittest

@@ -1,4 +1,4 @@
-"""Safeguarding and employment-agency source coverage tests (VIA-711)."""
+"""Safeguarding and employment-agency source coverage tests."""
 
 import json
 import unittest

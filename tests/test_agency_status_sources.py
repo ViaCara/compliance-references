@@ -1,6 +1,6 @@
 """Agency-status and price-claim sources: Conduct Regulations regs 6 and 32,
 the FWA and GOV.UK guidance on agency scope and fees, and the CAP rules and
-advice on "from" prices (VIA-2133)."""
+advice on "from" prices."""
 
 import json
 import re

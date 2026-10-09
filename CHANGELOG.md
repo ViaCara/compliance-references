@@ -2,6 +2,25 @@
 
 Drift log. Newer entries first.
 
+## 2026-10-09
+- **corpus/statute/guernsey/dpl-2017/schedule-002-part-iii-para-018.md** hash 8a62494 -> c5a02cd
+  - source: https://gov.gg/CHttpHandler.ashx?id=110559&p=0
+  - prior_sha256: 8a62494ada0065e632f528db29ad6ea13546bcf164cf3a81740543a2340082e7
+  - note: the editorial note now states the legal meaning only; the quoted text is unchanged
+  - new_sha256:   c5a02cd084663b0136c7fa0f3b51276f7a798c748ff7f8a4080188fca9bbc51f
+
+- **corpus/statute/jersey/dpjl-2018/schedule-002-part-2-para-006.md** hash 7939444 -> 62ecfef
+  - source: https://www.jerseylaw.je/laws/current/PDFs/L_3_2018_20230505.pdf
+  - prior_sha256: 79394449beb05b68db02e1dd9318132a28f98255e0f5a2d24252e5e7ee440dc7
+  - note: the editorial note now states the legal meaning only; the quoted text is unchanged
+  - new_sha256:   62ecfef3071eca6d6b3abece7796f8497dfc697d37725705a17abec8ab842470
+
+- **corpus/guidance/eu/edpb/guidelines-07-2020-controller-processor.md** hash 91493da -> 308a291
+  - source: https://www.edpb.europa.eu/system/files/2023-10/EDPB_guidelines_202007_controllerprocessor_final_en.pdf
+  - prior_sha256: 91493daa56aac79c7c4c79ffb1ff0e8e196be0e31edc74bb5138ed01822308d6
+  - note: the editorial note now states the legal meaning only; the quoted text is unchanged
+  - new_sha256:   308a291605e7ec18c42b80ae77ceeedb8858efc46a04c2652c6a4e3574131b05
+
 ## 2026-10-08
 - **corpus/statute/uk/fpo-2005/article-048.md** hash 18870a4 -> 418f0d6
   - source: https://www.legislation.gov.uk/uksi/2005/1529/article/48/data.xht

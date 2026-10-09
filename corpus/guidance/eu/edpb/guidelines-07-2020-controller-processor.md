@@ -7,7 +7,7 @@ citation: EDPB Guidelines 07/2020
 source_uri: "https://www.edpb.europa.eu/system/files/2023-10/EDPB_guidelines_202007_controllerprocessor_final_en.pdf"
 source_format: pdf
 revision_id: Version 2.1, 20 September 2022
-content_sha256: 91493daa56aac79c7c4c79ffb1ff0e8e196be0e31edc74bb5138ed01822308d6
+content_sha256: 308a291605e7ec18c42b80ae77ceeedb8858efc46a04c2652c6a4e3574131b05
 last_fetched: 2026-09-28
 language: en-GB
 enforcement_status: guidance
@@ -16,7 +16,7 @@ enforcement_status: guidance
 
 _European Data Protection Board guidelines on the controller, joint controller and processor concepts, and on the content of an Article 28(3) processing agreement. Version 2.1, adopted 7 July 2021, minor corrections 20 September 2022. Curated quotes only; the complete guidelines are at the source URI._
 
-_United Kingdom status: these guidelines interpret Regulation (EU) 2016/679, not the UK GDPR. In the United Kingdom they are persuasive, not binding. Where they diverge from UK statute or from ICO guidance, the UK source controls. They are mirrored because the UK GDPR Article 28 text they interpret is materially identical, and because ViaCara sends personal data to processors established in the European Union. Reviewed 2026-08-24 by kylewelsby. Joint-control and processor-condition passages added 2026-09-28; review by kylewelsby pending._
+_United Kingdom status: these guidelines interpret Regulation (EU) 2016/679, not the UK GDPR. In the United Kingdom they are persuasive, not binding. Where they diverge from UK statute or from ICO guidance, the UK source controls. They are mirrored because the UK GDPR Article 28 text they interpret is materially identical, and because UK controllers often use processors established in the European Union. Reviewed 2026-08-24 by kylewelsby. Joint-control and processor-condition passages added 2026-09-28; review by kylewelsby pending._
 
 ## Assessment of joint participation
 

@@ -1,4 +1,4 @@
-"""Criminal-record vetting source coverage tests (VIA-716)."""
+"""Criminal-record vetting source coverage tests."""
 
 import json
 import unittest

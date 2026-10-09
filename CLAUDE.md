@@ -42,3 +42,25 @@ runs do, so its `mira-confidence` result proves nothing.
 To merge a PR that edits `mira-gate.yml` or `mira_gate.py`, read the diff and
 Mira's comments by eye. Do not rely on `mira-confidence` for it. Every other
 PR is not affected.
+
+## Public repository: keep the text neutral
+
+This repository is public. Every file, commit message, branch name and pull
+request describes the law, not a consumer's product.
+
+- A summary, intro, `Application` note or test docstring states what the
+  source means in law. It does not name a consumer, describe a consumer's
+  feature, or say how a consumer relies on the source.
+- Do not write an issue-tracker id (such as a Linear ticket number) or a link
+  to a private tracker anywhere in the repository, a commit or a pull request.
+- Name a test file after the sources it pins, not after the project that asked
+  for them.
+- A consumer keeps its own reasons for a source in its own repository.
+
+Before you push, run:
+
+```
+git grep -nE "\b[A-Z]{2,5}-[0-9]+\b|linear\.app" -- . ':!CHANGELOG.md' ':!tests/fixtures'
+```
+
+and read each hit.

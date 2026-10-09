@@ -1,4 +1,4 @@
-"""Employment agency terms, introduction and record-keeping source tests (VIA-759, VIA-1538)."""
+"""Employment agency terms, introduction and record-keeping source tests."""
 
 import json
 import unittest
