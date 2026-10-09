@@ -119,6 +119,40 @@
     "title": "Data Protection (Adequacy) (United States of America) Regulations 2023 regulation 4 - Independent supervisory authorities"
   },
   {
+    "authority": "statute",
+    "domain_tags": [
+      "advertising",
+      "business-marketing",
+      "pricing"
+    ],
+    "enforcement_status": "in_force",
+    "id": "bpmmr-2008-reg-003",
+    "jurisdiction": "uk",
+    "path": "statute/uk/bpmmr-2008/regulation-003.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "382cec135cd50fbd6c3bb45ccd07b1d603c7955f314e0ef2a90702e2ac30f61d",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2008/1276/regulation/3/data.xht",
+    "summary": "Advertising which is misleading is prohibited. Advertising is misleading if it deceives or is likely to deceive the traders it is addressed to or reaches and is likely to affect their economic behaviour, or injures a competitor; account is taken of its features, in particular the price or the manner in which the price is calculated and the conditions of supply. The business-to-business counterpart of the consumer misleading-action rules, so it governs marketing of paid services to traders.",
+    "title": "Business Protection from Misleading Marketing Regulations 2008 regulation 3 - Prohibition of advertising which misleads traders"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "advertising",
+      "business-marketing",
+      "price-comparison"
+    ],
+    "enforcement_status": "in_force",
+    "id": "bpmmr-2008-reg-004",
+    "jurisdiction": "uk",
+    "path": "statute/uk/bpmmr-2008/regulation-004.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "299698b5d052551c8086f8a8150f73dec038c6816a2ea96a933226c04db25eb1",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2008/1276/regulation/4/data.xht",
+    "summary": "Comparative advertising is permitted only when it is not misleading under regulation 3 or a misleading action or omission under the DMCC Act 2024, compares products meeting the same needs, objectively compares material, relevant, verifiable and representative features, which may include price, and does not confuse, denigrate, take unfair advantage of a competitor's mark or present products as imitations.",
+    "title": "Business Protection from Misleading Marketing Regulations 2008 regulation 4 - Comparative advertising"
+  },
+  {
     "authority": "guidance",
     "domain_tags": [
       "advertising",
@@ -192,16 +226,17 @@
       "advertising",
       "health-claims",
       "marketing",
-      "trust-mark"
+      "trust-mark",
+      "pricing"
     ],
     "enforcement_status": "in_force",
     "id": "cap-code-section-03-misleading-advertising",
     "jurisdiction": "uk",
     "path": "guidance/uk/cap/code-section-03-misleading-advertising.md",
     "revision_id": "live page, retrieved 2026-10-08",
-    "sha": "8c52d450c9903b2cf67dcbb2d8c84fb67ee29a0830b7f8c483491f9d9bca2245",
+    "sha": "f358d04f62c3a1be894a1e2e2fc9863dd8a80b61a5f5237a00aa3795fa35c10c",
     "source_uri": "https://www.asa.org.uk/type/non_broadcast/code_section/03.html",
-    "summary": "CAP Code section 3 general rules against materially misleading marketing communications, omission of material information, the substantiation duty, qualification of claims and exaggeration, plus the endorsements and testimonials rules: no trust mark, quality mark or equivalent without authorisation and no false claim of approval, endorsement or authorisation by a public or private body (rule 3.52), no false code-of-conduct claims (3.53) and the asterisk that marks a rule as a practice unfair in all circumstances.",
+    "summary": "CAP Code section 3 general rules against materially misleading marketing communications, omission of material information, the substantiation duty, qualification of claims and exaggeration, the prices rules (3.17 to 3.22: no misleading price statements, non-optional charges included, the extent of a linked commitment stated) and the \"free\" rules (3.23 to 3.26: nothing to pay beyond the unavoidable cost of responding, the commitment made clear, no free element already in the package price, no \"free trial\" needing a non-refundable purchase), plus the endorsements and testimonials rules: no trust mark, quality mark or equivalent without authorisation and no false claim of approval, endorsement or authorisation by a public or private body (rule 3.52), no false code-of-conduct claims (3.53) and the asterisk that marks a rule as a practice unfair in all circumstances.",
     "title": "CAP Code Section 3: Misleading advertising"
   },
   {
@@ -4239,6 +4274,40 @@
     "source_uri": "https://www.legislation.gov.uk/ukpga/2006/47/schedule/4/paragraph/3/data.xht",
     "summary": "The establishments in which work of any kind, done frequently or under the day-count test, is regulated activity relating to children: schools, children's homes, childcare premises and similar settings. Not the setting a ViaCara introduction leads to, but mirrored so the Part 1 definition is complete alongside paragraphs 1 and 2.",
     "title": "Safeguarding Vulnerable Groups Act 2006 Schedule 4 paragraph 3 - Establishments"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "contract-terms",
+      "business-terms",
+      "liability"
+    ],
+    "enforcement_status": "in_force",
+    "id": "ucta-1977-s-003",
+    "jurisdiction": "uk",
+    "path": "statute/uk/ucta-1977/section-003.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "9bdacf4cd07855e3dbf5be341fcd99628edf9d46a600956a9b84348201d3dc63",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1977/50/section/3/data.xht",
+    "summary": "Where one party deals on the other's written standard terms of business, the other cannot by a contract term exclude or restrict its liability for its own breach, or claim to render a substantially different performance or none at all, except so far as the term satisfies the requirement of reasonableness. Subsection (3) excludes consumer contracts, which section 62 of the Consumer Rights Act 2015 governs instead. Controls the liability and variation terms a platform offers to business users on its standard terms.",
+    "title": "Unfair Contract Terms Act 1977 section 3 - Liability arising in contract"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "contract-terms",
+      "business-terms",
+      "liability"
+    ],
+    "enforcement_status": "in_force",
+    "id": "ucta-1977-s-011",
+    "jurisdiction": "uk",
+    "path": "statute/uk/ucta-1977/section-011.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "fa0806db29220a6b984a5b4d59efbf660107bacea999961c4271ee81b9248540",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1977/50/section/11/data.xht",
+    "summary": "The requirement of reasonableness: a term must have been fair and reasonable to include, having regard to the circumstances known to or in the contemplation of the parties when the contract was made. Where a term limits liability to a specified sum, regard is had to the resources available to meet the liability and how far insurance could cover it, and the party relying on the term must show that it is reasonable.",
+    "title": "Unfair Contract Terms Act 1977 section 11 - The 'reasonableness' test"
   },
   {
     "authority": "statute",

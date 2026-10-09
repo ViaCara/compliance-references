@@ -21,7 +21,7 @@ Drift log. Newer entries first.
 - **corpus/guidance/uk/fwa/overview-of-the-conduct-regulations-2003.md** adds curated quotes from the FWA overview of the Conduct Regulations 2003 (updated 22 June 2026): the agency definition, "online platforms", fees, additional services and the regulation 32(9) limit for vulnerable people, fetched 2026-10-08; human review remains pending.
 - **corpus/guidance/uk/dbt/employment-agencies-and-businesses.md** adds curated quotes from the GOV.UK guide "Employment agencies and businesses": the prohibitions, websites aimed at work-finding and the limited-company opt-out, fetched 2026-10-08; human review remains pending.
 - **corpus/guidance/uk/cap/prices-general.md** adds curated quotes from CAP AdviceOnline "Prices: General" (dated 6 October 2026) on rules 3.17 and 3.22 and "from" and "up to" claims, fetched 2026-10-08; human review remains pending.
-- **corpus/guidance/uk/cap/code-section-03-misleading-advertising.md** adds the Prices background, definition and rules 3.17 and 3.22, fetched 2026-10-08; the rules already quoted were checked against the live page and are unchanged. Human review remains pending.
+- **corpus/guidance/uk/cap/code-section-03-misleading-advertising.md** adds curated quotes of the prices background and definition and rules 3.17 to 3.26 (prices and "free"), fetched 2026-10-08; the rules already quoted were checked against the live page and are unchanged. Human review remains pending.
 
 - **corpus/statute/uk/conduct-regs-2003/regulation-032.md** new file
   - source: https://www.legislation.gov.uk/uksi/2003/3319/regulation/32/data.xht
@@ -33,6 +33,30 @@ Drift log. Newer entries first.
   - source: https://www.legislation.gov.uk/uksi/2003/3319/regulation/6/data.xht
   - prior_sha256: (new file)
   - new_sha256:   273bfd26f46356799bc5e62da5bec2cf7829e1b3248655f095231262aa178196
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/bpmmr-2008/regulation-004.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2008/1276/regulation/4/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   299698b5d052551c8086f8a8150f73dec038c6816a2ea96a933226c04db25eb1
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/bpmmr-2008/regulation-003.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2008/1276/regulation/3/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   382cec135cd50fbd6c3bb45ccd07b1d603c7955f314e0ef2a90702e2ac30f61d
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/ucta-1977/section-011.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1977/50/section/11/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   fa0806db29220a6b984a5b4d59efbf660107bacea999961c4271ee81b9248540
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/ucta-1977/section-003.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1977/50/section/3/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   9bdacf4cd07855e3dbf5be341fcd99628edf9d46a600956a9b84348201d3dc63
   - revision: Wed, 30 Sep 2026 16:18:53 GMT
 
 ## 2026-10-07
