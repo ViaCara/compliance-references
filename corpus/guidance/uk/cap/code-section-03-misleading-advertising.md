@@ -7,7 +7,7 @@ citation: CAP Code s.3 Misleading advertising
 source_uri: "https://www.asa.org.uk/type/non_broadcast/code_section/03.html"
 source_format: html
 revision_id: "live page, retrieved 2026-10-08"
-content_sha256: 2b4e6a726ee86df698308d6c4aada936a62f99aa26d4a0de59008197d2c953d6
+content_sha256: f358d04f62c3a1be894a1e2e2fc9863dd8a80b61a5f5237a00aa3795fa35c10c
 last_fetched: 2026-10-08
 language: en-GB
 enforcement_status: in_force
@@ -224,4 +224,6 @@ Quoted verbatim from the live ASA CAP Code page at the source URI. Rules
 3.1 to 3.11 were retrieved 2026-09-04; the background note and rules 3.47
 to 3.54 were retrieved 2026-09-28, when rules 3.1 to 3.11 were checked
 against the live page and found unchanged. The prices background,
-definition and rules 3.17 to 3.26 were retrieved 2026-10-08.
+definition and rules 3.17 to 3.26 were retrieved 2026-10-08, when the
+other quoted rules were checked against the live page and found
+unchanged.

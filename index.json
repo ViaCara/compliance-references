@@ -38,6 +38,89 @@
   {
     "authority": "statute",
     "domain_tags": [
+      "cross-border-transfer",
+      "adequacy"
+    ],
+    "enforcement_status": "in_force",
+    "id": "adequacy-korea-regs-2022-reg-002",
+    "jurisdiction": "uk",
+    "path": "statute/uk/adequacy-korea-regs-2022/regulation-002.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "e8d63d7012a88740061ef4e3dd3a8f8995c40134a8e18adf478df2ccc585f009",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2022/1213/regulation/2/data.xht",
+    "summary": "Specifies the Republic of Korea as adequate for a transfer to a person subject to Korea's Personal Information Protection Act.",
+    "title": "Data Protection (Adequacy) (Republic of Korea) Regulations 2022 regulation 2 - Adequate level of protection"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "cross-border-transfer",
+      "adequacy",
+      "supervisory-authority"
+    ],
+    "enforcement_status": "in_force",
+    "id": "adequacy-korea-regs-2022-reg-003",
+    "jurisdiction": "uk",
+    "path": "statute/uk/adequacy-korea-regs-2022/regulation-003.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "99fc5ffe7546f11d63e4bebde46aaa8da4bdf58d42c2359e659ef21d4a3e5277",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2022/1213/regulation/3/data.xht",
+    "summary": "Names the Personal Information Protection Commission and the Financial Services Commission as the independent supervisory authorities in the Republic of Korea.",
+    "title": "Data Protection (Adequacy) (Republic of Korea) Regulations 2022 regulation 3 - Independent supervisory authorities"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "cross-border-transfer",
+      "adequacy",
+      "definitions"
+    ],
+    "enforcement_status": "in_force",
+    "id": "adequacy-usa-regs-2023-reg-002",
+    "jurisdiction": "uk",
+    "path": "statute/uk/adequacy-usa-regs-2023/regulation-002.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "c2dd27a6e6650609aa5337af18f0df634e6a52c687a4eabe254d3aecca3ae5d3",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2023/1028/regulation/2/data.xht",
+    "summary": "Definitions for the UK-US Data Bridge: the Data Privacy Framework List that the US Department of Commerce maintains, the EU-US Data Privacy Framework and its Principles, and the UK Extension to the EU-US Data Privacy Framework.",
+    "title": "Data Protection (Adequacy) (United States of America) Regulations 2023 regulation 2 - Interpretation"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "cross-border-transfer",
+      "adequacy"
+    ],
+    "enforcement_status": "in_force",
+    "id": "adequacy-usa-regs-2023-reg-003",
+    "jurisdiction": "uk",
+    "path": "statute/uk/adequacy-usa-regs-2023/regulation-003.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "5a23c46de3a0289ca08435c285c662b798e40676ef9072dc56b47ba3d1ecb89d",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2023/1028/regulation/3/data.xht",
+    "summary": "The UK-US Data Bridge. Specifies the United States as adequate for a transfer to a person that the Data Privacy Framework List shows as participating in the UK Extension, where the data will be subject to the Framework Principles on receipt. Participation is a per-organisation fact to check at transfer time.",
+    "title": "Data Protection (Adequacy) (United States of America) Regulations 2023 regulation 3 - Adequate level of protection"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "cross-border-transfer",
+      "adequacy",
+      "supervisory-authority"
+    ],
+    "enforcement_status": "in_force",
+    "id": "adequacy-usa-regs-2023-reg-004",
+    "jurisdiction": "uk",
+    "path": "statute/uk/adequacy-usa-regs-2023/regulation-004.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "4ff40b638974355534c7409986b665b252dc9a56670b823fa1110db6e1dd3377",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2023/1028/regulation/4/data.xht",
+    "summary": "Names the United States Federal Trade Commission and Department of Transportation as the independent supervisory authorities for the UK Extension to the EU-US Data Privacy Framework.",
+    "title": "Data Protection (Adequacy) (United States of America) Regulations 2023 regulation 4 - Independent supervisory authorities"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
       "advertising",
       "business-marketing",
       "pricing"
@@ -107,6 +190,23 @@
     "authority": "guidance",
     "domain_tags": [
       "advertising",
+      "pricing",
+      "from-price"
+    ],
+    "enforcement_status": "guidance",
+    "id": "cap-advice-prices-general",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/cap/prices-general.md",
+    "revision_id": "live page dated 06 Oct 2026, retrieved 2026-10-08",
+    "sha": "a6b2ab390b8904604425a6877f972298a2663bdaaab600a638fc9ffb417f94c1",
+    "source_uri": "https://www.asa.org.uk/advice-online/prices-general.html",
+    "summary": "CAP Executive advice on CAP Code rules 3.17 to 3.22. A \"from\" or \"up to\" price must not exaggerate availability: the ASA has regard to the CTSI pricing guidance, expects a significant proportion of items at the advertised price and judges what is significant case by case, and finds an unevidenced claim misleading. A \"from £20/night\" claim was substantiated by availability on 70% of days.",
+    "title": "Prices: General"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "advertising",
       "health-claims",
       "marketing"
     ],
@@ -134,7 +234,7 @@
     "jurisdiction": "uk",
     "path": "guidance/uk/cap/code-section-03-misleading-advertising.md",
     "revision_id": "live page, retrieved 2026-10-08",
-    "sha": "2b4e6a726ee86df698308d6c4aada936a62f99aa26d4a0de59008197d2c953d6",
+    "sha": "f358d04f62c3a1be894a1e2e2fc9863dd8a80b61a5f5237a00aa3795fa35c10c",
     "source_uri": "https://www.asa.org.uk/type/non_broadcast/code_section/03.html",
     "summary": "CAP Code section 3 general rules against materially misleading marketing communications, omission of material information, the substantiation duty, qualification of claims and exaggeration, the prices rules (3.17 to 3.22: no misleading price statements, non-optional charges included, the extent of a linked commitment stated) and the \"free\" rules (3.23 to 3.26: nothing to pay beyond the unavoidable cost of responding, the commitment made clear, no free element already in the package price, no \"free trial\" needing a non-refundable purchase), plus the endorsements and testimonials rules: no trust mark, quality mark or equivalent without authorisation and no false claim of approval, endorsement or authorisation by a public or private body (rule 3.52), no false code-of-conduct claims (3.53) and the asterisk that marks a rule as a practice unfair in all circumstances.",
     "title": "CAP Code Section 3: Misleading advertising"
@@ -495,6 +595,23 @@
     "authority": "statute",
     "domain_tags": [
       "employment-agency",
+      "work-seeker-freedom",
+      "terms-of-business"
+    ],
+    "enforcement_status": "in_force",
+    "id": "conduct-regs-2003-reg-006",
+    "jurisdiction": "uk",
+    "path": "statute/uk/conduct-regs-2003/regulation-006.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "273bfd26f46356799bc5e62da5bec2cf7829e1b3248655f095231262aa178196",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2003/3319/regulation/6/data.xht",
+    "summary": "An agency or employment business must not, by a contract term or otherwise, subject or threaten a work-seeker with any detriment because they terminated or gave notice to terminate their contract with it (6(1)(a)), and must not require the work-seeker to tell it, or a connected person, who their future employer is (6(1)(b)). Losing benefits under the ended contract, recovering losses from work agreed and not done, and a reasonable notice period are not a detriment (6(2)).",
+    "title": "Conduct of Employment Agencies and Employment Businesses Regulations 2003 regulation 6 - Restriction on detrimental action relating to work-seekers working elsewhere"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "employment-agency",
       "terms-of-business",
       "fees"
     ],
@@ -625,6 +742,24 @@
     "source_uri": "https://www.legislation.gov.uk/uksi/2003/3319/regulation/29/data.xht",
     "summary": "An agency must keep records sufficient to show compliance, including the Schedule 4 particulars for each work-seeker application and the Schedule 5 particulars for each hirer application, for at least one year from creation and at least one year after it last provides services to the applicant. Electronic records are permitted; applications on which no action is taken are exempt.",
     "title": "Conduct of Employment Agencies and Employment Businesses Regulations 2003 regulation 29 - Records"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "employment-agency",
+      "limited-company",
+      "opt-out",
+      "vulnerable-persons"
+    ],
+    "enforcement_status": "in_force",
+    "id": "conduct-regs-2003-reg-032",
+    "jurisdiction": "uk",
+    "path": "statute/uk/conduct-regs-2003/regulation-032.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "e89fd0ce5a3f21f8bb9c6de48955e530d92411447d06b819e3790e304c6fd804",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2003/3319/regulation/32/data.xht",
+    "summary": "Applies the Regulations to a work-seeker that is a company and to the person it supplies to do the work. Under 32(9) the company and that person may agree to disapply paragraphs (1) to (8) by notice before introduction or supply, and the agency must tell the hirer. The opt-out does not apply where the work involves any vulnerable person (32(12)), and work-finding services must not be made conditional on it (32(13)). It reaches only the Regulations, not section 6 of the Employment Agencies Act 1973.",
+    "title": "Conduct of Employment Agencies and Employment Businesses Regulations 2003 regulation 32 - Application of the Regulations to work-seekers who are incorporated"
   },
   {
     "authority": "statute",
@@ -1610,6 +1745,38 @@
   },
   {
     "authority": "statute",
+    "domain_tags": [
+      "cross-border-transfer",
+      "adequacy"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-sch-021-p-004",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/schedule-021-paragraph-004.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "5aefb7783beb1f059f22a64b9968671e5a29d6885d8baa46f6e4dbcf2df8fe26",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/21/paragraph/4/data.xht",
+    "summary": "Treats a transfer to a destination specified in paragraph 5 as approved by regulations made under UK GDPR Article 45A, and lets the Secretary of State narrow or repeal that list by regulations.",
+    "title": "DPA 2018 Schedule 21 paragraph 4 - UK GDPR: transfers approved by regulations"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "cross-border-transfer",
+      "adequacy"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-sch-021-p-005",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/schedule-021-paragraph-005.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "e7c30e0ade3ca9a6dddf4013e1cf9f9ab2b5a3ae6cfeac4c2b0c5aea6b39bb98",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/schedule/21/paragraph/5/data.xht",
+    "summary": "The transitional adequacy list: EEA states, Gibraltar, EU institutions, and the third countries, territories, sectors and organisations covered by EU adequacy decisions in force before IP completion day.",
+    "title": "DPA 2018 Schedule 21 paragraph 5 - Destinations treated as approved"
+  },
+  {
+    "authority": "statute",
     "domain_tags": [],
     "enforcement_status": "prospective",
     "id": "duaa-2025-s-001",
@@ -2139,8 +2306,8 @@
     "id": "fpo-2005-art-048",
     "jurisdiction": "uk",
     "path": "statute/uk/fpo-2005/article-048.md",
-    "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
-    "sha": "18870a42d0e401864659c34306700e85dba072c4321c7792f8d33d181731f4cf",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "418f0d656c4885093d710c9b094be4734028a553f5b14122848418cd97a49d38",
     "source_uri": "https://www.legislation.gov.uk/uksi/2005/1529/article/48/data.xht",
     "summary": "",
     "title": "Financial Services and Markets Act 2000 (Financial Promotion) Order 2005 article 48 - Certified high net worth individuals"
@@ -2178,8 +2345,8 @@
     "id": "fpo-2005-art-050a",
     "jurisdiction": "uk",
     "path": "statute/uk/fpo-2005/article-050a.md",
-    "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
-    "sha": "8d958e622e5ed7364e1a19c007ba632fdf970b15c6a1cd01f6badbb0e2746df5",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "6f8f120fee909211d35b5767e98b6bca622781846eeab0cf5a672e54dbf04d75",
     "source_uri": "https://www.legislation.gov.uk/uksi/2005/1529/article/50A/data.xht",
     "summary": "",
     "title": "Financial Services and Markets Act 2000 (Financial Promotion) Order 2005 article 50A - Self-certified sophisticated investors"
@@ -2261,6 +2428,61 @@
     "source_uri": "https://www.legislation.gov.uk/ukpga/2000/8/section/25/data.xht",
     "summary": "",
     "title": "Financial Services and Markets Act 2000 section 25 - Contravention of section 21"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "employment-agency",
+      "fees",
+      "scope",
+      "definitions",
+      "limited-company"
+    ],
+    "enforcement_status": "guidance",
+    "id": "fwa-conduct-regulations-overview",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/fwa/overview-of-the-conduct-regulations-2003.md",
+    "revision_id": "2026-06-22T15:32:42+01:00",
+    "sha": "061843e5c8e35521eefee995e08732b81846d20fe6089c761b3ffafc22806d56",
+    "source_uri": "https://www.gov.uk/government/publications/conduct-regulations-2003-guidance-for-employment-agencies-and-employment-businesses/overview-of-the-conduct-regulations-2003",
+    "summary": "FWA overview of the Act and the Conduct Regulations. The Act applies to a wide range of agencies, including online platforms; agencies must not charge workers fees for finding them work, but the Act does not regulate fees charged to hirers; other services unrelated to work-finding may be charged for; and a work-seeker cannot use the regulation 32(9) opt-out where the role involves working with vulnerable people.",
+    "title": "Overview of the Conduct Regulations 2003"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "employment-agency",
+      "fees",
+      "intermediary",
+      "scope"
+    ],
+    "enforcement_status": "guidance",
+    "id": "fwa-tutoring-services-guidance",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/fwa/tutoring-services-fwa-guidance.md",
+    "revision_id": "2026-04-07T08:00:00+01:00",
+    "sha": "72fb6afb9f1a08fb3d2599dec481c3a3e56c92c5d4dd4dc884ca2f2af3077de1",
+    "source_uri": "https://www.gov.uk/guidance/tutoring-services-guidance-for-complying-with-fair-work-agency-fwa-legislation",
+    "summary": "FWA guidance for tutoring services. A service acting as an intermediary between people looking for work and a person or business looking for someone to do it is likely to be in scope of the Employment Agencies Act 1973 and the Conduct Regulations, whether private, public or not-for-profit. An agency introduces the worker to a hirer who contracts with them directly, and charging the worker a fee for work-finding services is a criminal offence.",
+    "title": "Tutoring services: guidance for complying with Fair Work Agency (FWA) legislation"
+  },
+  {
+    "authority": "guidance",
+    "domain_tags": [
+      "employment-agency",
+      "fees",
+      "scope",
+      "limited-company"
+    ],
+    "enforcement_status": "guidance",
+    "id": "gov-uk-employment-agencies-and-businesses",
+    "jurisdiction": "uk",
+    "path": "guidance/uk/dbt/employment-agencies-and-businesses.md",
+    "revision_id": "2015-01-05T00:01:10+00:00",
+    "sha": "b7db669b5611e50a16cfb3c2243619f199a29641662c1818925185f4cff336d4",
+    "source_uri": "https://www.gov.uk/employment-agencies-and-businesses",
+    "summary": "GOV.UK guide for agencies and employment businesses. They cannot charge a work-seeker a fee for work-finding services, stop someone working elsewhere or make someone name a future employer. A publication or website totally or mostly aimed at providing a work-finding service will normally have to follow the rules, and limited-company workers cannot opt out where they will work with vulnerable people.",
+    "title": "Employment agencies and businesses"
   },
   {
     "authority": "guidance",

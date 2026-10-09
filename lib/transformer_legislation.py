@@ -15,6 +15,9 @@ Class names used in selection (from the legislation.gov.uk DOM):
 - `LegP3Container`, sub-paragraph (e.g. "(a)").
 - `LegP3No`, `LegP3Text`, number / text.
 - `LegP4Container` etc., deeper nesting.
+- `LegP{n}TextAmend`, `LegTextAmend`: the quoted words an amending
+  provision inserts or substitutes, a paragraph of their own after the
+  "insert—" or "substitute" line.
 - `LegChangeDelimiter`, `LegAddition`, `LegRepealed`, `LegCommentaryLink`:
   amendment annotations. We strip delimiters and commentary links, keep
   additions inline.
@@ -80,6 +83,7 @@ _CONTAINER_PREFIXES_BY_LEVEL = {
 }
 
 _PARA_TEXT_RE = re.compile(r"^LegP(\d)ParaText$")
+_AMEND_TEXT_RE = re.compile(r"^Leg(?:P\d)?TextAmend$")
 _LIST_TEXT_CLASS = "LegListTextStandard"
 _LIST_ITEM_CLASS = "LegListItem"
 _LIST_ITEM_NO_CLASS = "LegListItemNo"
@@ -233,6 +237,12 @@ class LegislationTransformer:
             if para_level is not None:
                 text = self._para_text(element, level=para_level)
                 if text and not _is_repealed_marker(text):
+                    emitted_any = True
+                    yield text
+                continue
+            if any(_AMEND_TEXT_RE.match(name) for name in cls):
+                text = _inline_text(element)
+                if text:
                     emitted_any = True
                     yield text
                 continue

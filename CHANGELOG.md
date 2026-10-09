@@ -3,7 +3,37 @@
 Drift log. Newer entries first.
 
 ## 2026-10-08
-- **corpus/guidance/uk/cap/code-section-03-misleading-advertising.md** adds curated quotes of the prices background and definition and rules 3.17 to 3.26 (prices and "free"), fetched 2026-10-08; human review remains pending.
+- **corpus/statute/uk/fpo-2005/article-048.md** hash 18870a4 -> 418f0d6
+  - source: https://www.legislation.gov.uk/uksi/2005/1529/article/48/data.xht
+  - prior_sha256: 18870a42d0e401864659c34306700e85dba072c4321c7792f8d33d181731f4cf
+  - note: restores the quoted risk warning that the transformer dropped from a `LegTextAmend` paragraph
+  - new_sha256:   418f0d656c4885093d710c9b094be4734028a553f5b14122848418cd97a49d38
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/fpo-2005/article-050a.md** hash 8d958e6 -> 6f8f120
+  - source: https://www.legislation.gov.uk/uksi/2005/1529/article/50A/data.xht
+  - prior_sha256: 8d958e622e5ed7364e1a19c007ba632fdf970b15c6a1cd01f6badbb0e2746df5
+  - note: restores the quoted risk warning that the transformer dropped from a `LegTextAmend` paragraph
+  - new_sha256:   6f8f120fee909211d35b5767e98b6bca622781846eeab0cf5a672e54dbf04d75
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/guidance/uk/fwa/tutoring-services-fwa-guidance.md** adds curated quotes from the FWA guidance for tutoring services (updated 7 April 2026): the intermediary scope test, the employment agency model and the statement that charging tutors for work-finding services is a criminal offence, fetched 2026-10-08; human review remains pending.
+- **corpus/guidance/uk/fwa/overview-of-the-conduct-regulations-2003.md** adds curated quotes from the FWA overview of the Conduct Regulations 2003 (updated 22 June 2026): the agency definition, "online platforms", fees, additional services and the regulation 32(9) limit for vulnerable people, fetched 2026-10-08; human review remains pending.
+- **corpus/guidance/uk/dbt/employment-agencies-and-businesses.md** adds curated quotes from the GOV.UK guide "Employment agencies and businesses": the prohibitions, websites aimed at work-finding and the limited-company opt-out, fetched 2026-10-08; human review remains pending.
+- **corpus/guidance/uk/cap/prices-general.md** adds curated quotes from CAP AdviceOnline "Prices: General" (dated 6 October 2026) on rules 3.17 and 3.22 and "from" and "up to" claims, fetched 2026-10-08; human review remains pending.
+- **corpus/guidance/uk/cap/code-section-03-misleading-advertising.md** adds curated quotes of the prices background and definition and rules 3.17 to 3.26 (prices and "free"), fetched 2026-10-08; the rules already quoted were checked against the live page and are unchanged. Human review remains pending.
+
+- **corpus/statute/uk/conduct-regs-2003/regulation-032.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2003/3319/regulation/32/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   e89fd0ce5a3f21f8bb9c6de48955e530d92411447d06b819e3790e304c6fd804
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/conduct-regs-2003/regulation-006.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2003/3319/regulation/6/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   273bfd26f46356799bc5e62da5bec2cf7829e1b3248655f095231262aa178196
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
 
 - **corpus/statute/uk/bpmmr-2008/regulation-004.md** new file
   - source: https://www.legislation.gov.uk/uksi/2008/1276/regulation/4/data.xht
@@ -27,6 +57,49 @@ Drift log. Newer entries first.
   - source: https://www.legislation.gov.uk/ukpga/1977/50/section/3/data.xht
   - prior_sha256: (new file)
   - new_sha256:   9bdacf4cd07855e3dbf5be341fcd99628edf9d46a600956a9b84348201d3dc63
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+## 2026-10-07
+- **corpus/statute/uk/dpa-2018/schedule-021-paragraph-005.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/21/paragraph/5/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   e7c30e0ade3ca9a6dddf4013e1cf9f9ab2b5a3ae6cfeac4c2b0c5aea6b39bb98
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-021-paragraph-004.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/21/paragraph/4/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   5aefb7783beb1f059f22a64b9968671e5a29d6885d8baa46f6e4dbcf2df8fe26
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/adequacy-korea-regs-2022/regulation-003.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2022/1213/regulation/3/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   99fc5ffe7546f11d63e4bebde46aaa8da4bdf58d42c2359e659ef21d4a3e5277
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/adequacy-korea-regs-2022/regulation-002.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2022/1213/regulation/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   e8d63d7012a88740061ef4e3dd3a8f8995c40134a8e18adf478df2ccc585f009
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/adequacy-usa-regs-2023/regulation-004.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2023/1028/regulation/4/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   4ff40b638974355534c7409986b665b252dc9a56670b823fa1110db6e1dd3377
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/adequacy-usa-regs-2023/regulation-003.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2023/1028/regulation/3/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   5a23c46de3a0289ca08435c285c662b798e40676ef9072dc56b47ba3d1ecb89d
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/adequacy-usa-regs-2023/regulation-002.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2023/1028/regulation/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   c2dd27a6e6650609aa5337af18f0df634e6a52c687a4eabe254d3aecca3ae5d3
   - revision: Wed, 30 Sep 2026 16:18:53 GMT
 
 ## 2026-09-30
