@@ -12,6 +12,17 @@ from lib.frontmatter import parse
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "manifest.json"
 CORPUS = ROOT / "corpus"
+BASE_URI = "https://www.legislation.gov.uk/"
+
+SUBSECTIONS = {
+    "cdpa-1988-s-016": 4,
+    "cdpa-1988-s-077": 9,
+    "cdpa-1988-s-078": 5,
+    "cdpa-1988-s-080": 8,
+    "cdpa-1988-s-087": 4,
+    "cdpa-1988-s-090": 4,
+    "cdpa-1988-s-296zg": 9,
+}
 
 STATUTE = {
     "cdpa-1988-s-016": (
@@ -101,19 +112,39 @@ class CopyrightMoralRightsSourceTests(unittest.TestCase):
         for source_id, (path, _) in STATUTE.items():
             with self.subTest(source_id=source_id):
                 source = self.sources[source_id]
-                self.assertTrue(source["source_uri"].endswith(path))
+                self.assertEqual(BASE_URI + path, source["source_uri"])
                 self.assertEqual("cdpa-1988", source["instrument"])
+                self.assertEqual("legislation_section", source["kind"])
+
+    def test_statute_files_carry_source_identity(self):
+        for source_id, (path, _) in STATUTE.items():
+            source = self.sources[source_id]
+            fields, _ = parse((CORPUS / source["target"]).read_text(encoding="utf-8"))
+            with self.subTest(source_id=source_id):
+                self.assertEqual(source_id, fields["id"])
+                self.assertEqual(BASE_URI + path, fields["source_uri"])
+                self.assertEqual("cdpa-1988", fields["instrument"])
+                self.assertEqual("legislation_section", fields["kind"])
+                self.assertEqual(source["citation"], fields["citation"])
+                self.assertEqual("in_force", fields["enforcement_status"])
+
+    def test_statute_files_keep_each_subsection_as_its_own_paragraph(self):
+        for source_id, count in SUBSECTIONS.items():
+            _, body = parse((CORPUS / self.sources[source_id]["target"]).read_text(encoding="utf-8"))
+            for number in range(1, count + 1):
+                with self.subTest(source_id=source_id, subsection=number):
+                    self.assertRegex(body, rf"(?m)^\({number}\) \S")
 
     def test_statute_files_carry_controlling_text(self):
         for source_id, (_, passages) in STATUTE.items():
-            fields, text = parse((CORPUS / self.sources[source_id]["target"]).read_text(encoding="utf-8"))
-            text = re.sub(r"\s+", " ", text)
-            with self.subTest(source_id=source_id):
-                self.assertEqual(source_id, fields["id"])
-                self.assertEqual("in_force", fields["enforcement_status"])
+            _, body = parse((CORPUS / self.sources[source_id]["target"]).read_text(encoding="utf-8"))
+            paragraphs = [re.sub(r"\s+", " ", p) for p in re.split(r"\n\s*\n", body)]
             for passage in passages:
                 with self.subTest(source_id=source_id, passage=passage):
-                    self.assertIn(passage, text)
+                    self.assertTrue(
+                        any(passage in paragraph for paragraph in paragraphs),
+                        f"{passage!r} is not within one paragraph",
+                    )
 
 
 if __name__ == "__main__":
