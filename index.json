@@ -3287,9 +3287,9 @@
     "jurisdiction": "uk",
     "path": "guidance/uk/mhra/digital-mental-health-technology-qualification.md",
     "revision_id": "Version 1.3, 29 Jul 2026",
-    "sha": "26ab8f6451e5c5861a9fc9a4f197538a7dec10736e91cf18f4db4c2f73b05d7d",
+    "sha": "d2aaf43ca192c0b87fa65d6e5e729a27c39402ec3fad4352783cf4e7ac1c5245",
     "source_uri": "https://www.gov.uk/government/publications/digital-mental-health-technology-qualification-and-classification",
-    "summary": "MHRA guidance for mental health software. A product has a medical purpose when it performs a clinical task, such as recommending therapeutic options, and targets conditions or symptoms at a diagnosable or clinically relevant level; healthcare administration support alone has none. A product with a medical purpose is software as a medical device when its functionality is high, which includes personalised output and AI processing. The first stop for whether a conversational feature that suggests therapy to one person has a medical purpose.",
+    "summary": "MHRA guidance for mental health software. A product has a medical purpose when it performs a clinical task, such as recommending therapeutic options, and targets conditions or symptoms at a diagnosable or clinically relevant level; healthcare administration support alone has none. Risk assessing, profiling, triaging and screening are clinical tasks under diagnosis. Intended purpose is read from labelling, instructions and promotional material, including websites and social media. A product with a medical purpose is software as a medical device when its functionality is high, which includes personalised output and AI processing. Output that reports the probability of mental health conditions, or of symptoms highly correlated with them, and that healthcare professionals rely on as decisive information for clinical management, including triaging and allocating treatment pathways, may be direct diagnosis and class IIa. The first stop for whether a conversational feature that suggests therapy to one person has a medical purpose.",
     "title": "MHRA: Digital mental health technology qualification and classification"
   },
   {
