@@ -3,6 +3,12 @@
 Drift log. Newer entries first.
 
 ## 2026-10-10
+- **corpus/guidance/uk/mhra/digital-mental-health-technology-qualification.md** hash 26ab8f6 -> d2aaf43
+  - source: https://www.gov.uk/government/publications/digital-mental-health-technology-qualification-and-classification
+  - prior_sha256: 26ab8f6451e5c5861a9fc9a4f197538a7dec10736e91cf18f4db4c2f73b05d7d
+  - note: adds verbatim quotes from Version 1.3: section 6 on promotional material, the Table 1 'Diagnosis' row, Example 6 and section 8.1 with Example 14; the earlier quotes are unchanged
+  - new_sha256:   d2aaf43ca192c0b87fa65d6e5e729a27c39402ec3fad4352783cf4e7ac1c5245
+
 - **corpus/statute/uk/cdpa-1988/section-296zg.md** new file
   - source: https://www.legislation.gov.uk/ukpga/1988/48/section/296ZG/data.xht
   - prior_sha256: (new file)
