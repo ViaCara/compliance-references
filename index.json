@@ -259,6 +259,126 @@
   {
     "authority": "statute",
     "domain_tags": [
+      "copyright",
+      "restricted-acts",
+      "infringement"
+    ],
+    "enforcement_status": "in_force",
+    "id": "cdpa-1988-s-016",
+    "jurisdiction": "uk",
+    "path": "statute/uk/cdpa-1988/section-016.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "b7257183e48d318e9e84022b9959ce9b41beec815de1db694f888d991e892746",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1988/48/section/16/data.xht",
+    "summary": "The owner of copyright in a work has the exclusive right to copy it, issue copies to the public, rent or lend it, perform, show or play it in public, communicate it to the public and make an adaptation of it. Copyright is infringed by a person who, without the licence of the copyright owner, does or authorises another to do any of those acts in relation to the whole or any substantial part of the work.",
+    "title": "Copyright, Designs and Patents Act 1988 section 16 - The acts restricted by copyright in a work"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "copyright",
+      "moral-rights",
+      "attribution"
+    ],
+    "enforcement_status": "in_force",
+    "id": "cdpa-1988-s-077",
+    "jurisdiction": "uk",
+    "path": "statute/uk/cdpa-1988/section-077.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "631830206c34bd0d6f30c04ec7fbe99e3f2fc1656a06ce597dd3cbd39756c0cd",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1988/48/section/77/data.xht",
+    "summary": "The author of a copyright literary, dramatic, musical or artistic work, and the director of a copyright film, has the right to be identified as such when the work is published commercially, performed, shown or communicated to the public, and in the further cases the section lists. The identification must be clear and reasonably prominent. The right is not infringed unless it has been asserted under section 78.",
+    "title": "Copyright, Designs and Patents Act 1988 section 77 - Right to be identified as author or director"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "copyright",
+      "moral-rights",
+      "attribution"
+    ],
+    "enforcement_status": "in_force",
+    "id": "cdpa-1988-s-078",
+    "jurisdiction": "uk",
+    "path": "statute/uk/cdpa-1988/section-078.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "35d92d014639f660df15ad504fe42f4d1fcab09cf32aee9755281c263cd58c6a",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1988/48/section/78/data.xht",
+    "summary": "The section 77 right is not infringed unless it has been asserted, generally or in relation to a specified act, by an instrument in writing signed by the author or director, or on an assignment of copyright. A person to whom the assertion is made, or who has notice of it, is bound by it. In proceedings for infringement the court takes any delay in asserting the right into account.",
+    "title": "Copyright, Designs and Patents Act 1988 section 78 - Requirement that right be asserted"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "copyright",
+      "moral-rights",
+      "derogatory-treatment"
+    ],
+    "enforcement_status": "in_force",
+    "id": "cdpa-1988-s-080",
+    "jurisdiction": "uk",
+    "path": "statute/uk/cdpa-1988/section-080.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "99d9a2645099791d01bf65b975fd8074d45fca9ee3916a1aea4993122168846d",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1988/48/section/80/data.xht",
+    "summary": "The author of a copyright literary, dramatic, musical or artistic work, and the director of a copyright film, has the right not to have the work subjected to derogatory treatment. A treatment is any addition to, deletion from, alteration to or adaptation of the work, and it is derogatory if it amounts to distortion or mutilation of the work or is otherwise prejudicial to the honour or reputation of the author or director. The section lists the acts that infringe the right for each kind of work.",
+    "title": "Copyright, Designs and Patents Act 1988 section 80 - Right to object to derogatory treatment of work"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "copyright",
+      "moral-rights",
+      "waiver",
+      "consent"
+    ],
+    "enforcement_status": "in_force",
+    "id": "cdpa-1988-s-087",
+    "jurisdiction": "uk",
+    "path": "statute/uk/cdpa-1988/section-087.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "3947025840d44705db2f043af136bfdb077a468096c9c3b955dd343943907b37",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1988/48/section/87/data.xht",
+    "summary": "It is not an infringement of the moral rights in Chapter IV to do any act to which the person entitled to the right has consented. Any of those rights may be waived by an instrument in writing signed by the person giving up the right. A waiver may relate to a specific work, works of a specified description or works generally, may be conditional or unconditional, and may be expressed to be subject to revocation.",
+    "title": "Copyright, Designs and Patents Act 1988 section 87 - Consent and waiver of rights"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "copyright",
+      "licensing",
+      "assignment"
+    ],
+    "enforcement_status": "in_force",
+    "id": "cdpa-1988-s-090",
+    "jurisdiction": "uk",
+    "path": "statute/uk/cdpa-1988/section-090.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "9f24907f5d0eeb2c5ba3d511f58bd80bf11e089f268f878dc6bb437fff49d8c5",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1988/48/section/90/data.xht",
+    "summary": "Copyright is transmissible as personal or moveable property by assignment, by testamentary disposition or by operation of law. An assignment may be partial, limited to some of the acts the owner has the exclusive right to do or to part of the copyright period, and is not effective unless it is in writing signed by or on behalf of the assignor. A licence granted by a copyright owner binds every successor in title to the owner's interest, except a purchaser in good faith for valuable consideration without notice of the licence.",
+    "title": "Copyright, Designs and Patents Act 1988 section 90 - Assignment and licences"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "copyright",
+      "rights-management-information",
+      "metadata"
+    ],
+    "enforcement_status": "in_force",
+    "id": "cdpa-1988-s-296zg",
+    "jurisdiction": "uk",
+    "path": "statute/uk/cdpa-1988/section-296zg.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "a9d9e6f53c8e8e0fd5cb5620892e30960a5fa1d2a6daed1527c24dbb7ba59eba",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1988/48/section/296ZG/data.xht",
+    "summary": "Where a person knowingly and without authority removes or alters electronic rights management information associated with a copy of a copyright work, or distributes or communicates to the public copies from which it has been removed or altered, knowing or having reason to believe that this induces, enables, facilitates or conceals an infringement, the person issuing or communicating the work and the copyright owner or exclusive licensee have the same rights against that person as for an infringement of copyright. Rights management information is information that identifies the work, the author, the copyright owner or a right holder, or the terms and conditions of use of the work.",
+    "title": "Copyright, Designs and Patents Act 1988 section 296ZG - Electronic rights management information"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
       "charity",
       "fundraising",
       "commercial-participator"
