@@ -2,6 +2,49 @@
 
 Drift log. Newer entries first.
 
+## 2026-10-10
+- **corpus/statute/uk/cdpa-1988/section-296zg.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1988/48/section/296ZG/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   a9d9e6f53c8e8e0fd5cb5620892e30960a5fa1d2a6daed1527c24dbb7ba59eba
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/cdpa-1988/section-090.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1988/48/section/90/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   9f24907f5d0eeb2c5ba3d511f58bd80bf11e089f268f878dc6bb437fff49d8c5
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/cdpa-1988/section-087.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1988/48/section/87/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   3947025840d44705db2f043af136bfdb077a468096c9c3b955dd343943907b37
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/cdpa-1988/section-080.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1988/48/section/80/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   99d9a2645099791d01bf65b975fd8074d45fca9ee3916a1aea4993122168846d
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/cdpa-1988/section-078.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1988/48/section/78/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   35d92d014639f660df15ad504fe42f4d1fcab09cf32aee9755281c263cd58c6a
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/cdpa-1988/section-077.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1988/48/section/77/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   631830206c34bd0d6f30c04ec7fbe99e3f2fc1656a06ce597dd3cbd39756c0cd
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/cdpa-1988/section-016.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1988/48/section/16/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   b7257183e48d318e9e84022b9959ce9b41beec815de1db694f888d991e892746
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
 ## 2026-10-09
 - **corpus/statute/guernsey/dpl-2017/schedule-002-part-iii-para-018.md** hash 8a62494 -> c5a02cd
   - source: https://gov.gg/CHttpHandler.ashx?id=110559&p=0
