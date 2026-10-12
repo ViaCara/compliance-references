@@ -2,6 +2,13 @@
 
 Drift log. Newer entries first.
 
+## 2026-10-12
+- **corpus/statute/uk/dpa-2018/section-164a.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/section/164A/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   ed0947660205b8428c88970541b8bd3df8c6e783eeacdfef4f1a81a05812c86d
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
 ## 2026-10-10
 - **corpus/guidance/uk/mhra/digital-mental-health-technology-qualification.md** hash 26ab8f6 -> d2aaf43
   - source: https://www.gov.uk/government/publications/digital-mental-health-technology-qualification-and-classification
