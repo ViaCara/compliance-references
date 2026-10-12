@@ -1573,6 +1573,23 @@
   {
     "authority": "statute",
     "domain_tags": [
+      "data-subject-rights",
+      "complaints",
+      "transparency"
+    ],
+    "enforcement_status": "in_force",
+    "id": "dpa-2018-s-164a",
+    "jurisdiction": "uk",
+    "path": "statute/uk/dpa-2018/section-164a.md",
+    "revision_id": "Wed, 30 Sep 2026 16:18:53 GMT",
+    "sha": "ed0947660205b8428c88970541b8bd3df8c6e783eeacdfef4f1a81a05812c86d",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2018/12/section/164A/data.xht",
+    "summary": "A data subject may complain to the controller about an infringement of the UK GDPR or Part 3 of the Act relating to their personal data. The controller must make complaints easy to make, for example with a form that can be completed electronically and by other means, acknowledge a complaint within 30 days of receipt, and without undue delay make appropriate enquiries, keep the complainant informed of progress and tell them the outcome.",
+    "title": "DPA 2018 section 164A - Complaints by data subjects to controllers"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
       "special-category",
       "health-professional"
     ],
