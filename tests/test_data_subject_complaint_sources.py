@@ -28,8 +28,14 @@ class DataSubjectComplaintSourceTests(unittest.TestCase):
         fields, body = parse((CORPUS / self.source["target"]).read_text(encoding="utf-8"))
 
         self.assertEqual("in_force", fields["enforcement_status"])
+        self.assertEqual("dpa-2018-s-164a", fields["id"])
+        self.assertEqual("DPA 2018 s. 164A", fields["citation"])
+        self.assertEqual(self.source["source_uri"], fields["source_uri"])
+        self.assertEqual("legislation_section", fields["kind"])
         for phrase in (
-            "(1) A data subject may make a complaint to the controller",
+            "(1) A data subject may make a complaint to the controller if the data subject considers that, "
+            "in connection with personal data relating to the data subject, there is an infringement of the "
+            "UK GDPR or Part 3 of this Act.",
             "providing a complaint form which can be completed electronically and by other means",
             "acknowledge receipt of the complaint within the period of 30 days beginning when the complaint is received",
             "(b) inform the complainant of the outcome of the complaint.",
