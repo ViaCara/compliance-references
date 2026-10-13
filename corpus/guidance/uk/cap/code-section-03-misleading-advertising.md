@@ -6,9 +6,9 @@ kind: curated_quotes
 citation: CAP Code s.3 Misleading advertising
 source_uri: "https://www.asa.org.uk/type/non_broadcast/code_section/03.html"
 source_format: html
-revision_id: "live page, retrieved 2026-10-08"
-content_sha256: f358d04f62c3a1be894a1e2e2fc9863dd8a80b61a5f5237a00aa3795fa35c10c
-last_fetched: 2026-10-08
+revision_id: live page, retrieved 2026-10-13
+content_sha256: 2f65046a1bc5021708448c2d8f53ce748e618246e78aa768db1998d0196e2193
+last_fetched: 2026-10-13
 language: en-GB
 enforcement_status: in_force
 ---
@@ -19,7 +19,8 @@ _The UK Code of Non-broadcast Advertising and Direct & Promotional Marketing
 and enforced by the Advertising Standards Authority (ASA). Curated quotes
 only; the full section is at the source URI. Reviewed 2026-09-04 by
 kylewelsby. Rule 3.52 group added 2026-09-28; prices and "free" rules
-3.17 to 3.26 added 2026-10-08; review of both by kylewelsby pending._
+3.17 to 3.26 added 2026-10-08; availability rules 3.27 to 3.31 added
+2026-10-13; review of all three by kylewelsby pending._
 
 ## Background
 
@@ -164,6 +165,43 @@ Rule 3.26:
 > or your money back" offers or offers for which a non-refundable purchase
 > is required.
 
+## Availability
+
+Rule 3.27:
+
+> Marketers must make a reasonable estimate of demand for advertised
+> products.
+
+Rule 3.28:
+
+> Marketing communications that quote a price for a featured product
+> must disclose if the marketer has any reasonable grounds for believing
+> that it will not be possible to supply the advertised (or an
+> equivalent) product at the advertised price within a reasonable period
+> and in reasonable quantities.*
+
+Rule 3.29:
+
+> Marketers must not use the technique of switch selling, in which their
+> sales staff decline to show the advertised product, refuse to take
+> orders for it or to deliver it within a reasonable time or demonstrate
+> a defective sample of it to promote a different product.*
+
+Rule 3.30:
+
+> Marketing communications must not falsely claim that the marketer is
+> about to cease trading or move premises. They must not falsely state
+> that a product, or the terms on which it is offered, will be available
+> only for a limited time to deprive consumers of the time or opportunity
+> to make an informed choice.*
+
+Rule 3.31:
+
+> Marketing communications must not provide materially inaccurate
+> information on market conditions or the availability of the product
+> with the intention of inducing the consumer to acquire the product at
+> conditions less favourable than normal market conditions.*
+
 ## Endorsements and testimonials
 
 Rule 3.47:
@@ -214,7 +252,8 @@ Rule 3.54:
 > References to a Royal Warrant should be checked with the Royal Warrant
 > Holders' Association.
 
-The asterisk on rules 3.23, 3.52 and 3.53 is the source's own mark. Under the
+The asterisk on rules 3.23, 3.28 to 3.31, 3.52 and 3.53 is the source's
+own mark. Under the
 section background quoted above, it identifies a rule that reflects a
 prohibited practice considered unfair in all circumstances.
 
@@ -226,4 +265,6 @@ to 3.54 were retrieved 2026-09-28, when rules 3.1 to 3.11 were checked
 against the live page and found unchanged. The prices background,
 definition and rules 3.17 to 3.26 were retrieved 2026-10-08, when the
 other quoted rules were checked against the live page and found
+unchanged. The availability rules 3.27 to 3.31 were retrieved 2026-10-13,
+when rules 3.17 to 3.26 were checked against the live page and found
 unchanged.
