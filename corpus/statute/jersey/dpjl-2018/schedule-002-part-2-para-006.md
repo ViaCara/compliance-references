@@ -10,7 +10,7 @@ revision_id: Official Consolidated Version 25 November 2020 - 5 May 2023
 last_fetched: 2026-09-18
 language: en-GB
 enforcement_status: in_force
-content_sha256: 79394449beb05b68db02e1dd9318132a28f98255e0f5a2d24252e5e7ee440dc7
+content_sha256: 62ecfef3071eca6d6b3abece7796f8497dfc697d37725705a17abec8ab842470
 ---
 # Jersey DPJL 2018 Schedule 2 Part 2 para 6 - Consent (curated quotes)
 
@@ -28,5 +28,5 @@ Official text at the source URI. Reviewed 2026-09-18 by kylewelsby._
 ## Application
 
 Article 9(2) requires at least one Part 2 condition for special category
-processing. Paragraph 6 is the basis ViaCara's triage consent flow relies on
-for Jersey-resident mental-health data.
+processing. Paragraph 6 is the consent basis for processing health data,
+including mental-health data, about a Jersey resident.

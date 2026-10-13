@@ -4,13 +4,17 @@ The markdown corpus under `corpus/` mixes content from several upstream sources,
 
 ## UK Crown corpus (statute + UK regulator guidance)
 
-Sources: legislation.gov.uk, ICO, NCSC, MHRA, CMA, FCA Handbook.
+Sources: legislation.gov.uk, ICO, NCSC, MHRA, CMA, FCA Handbook, NHS England web pages.
 
 Licensed under the **Open Government Licence v3.0**. Redistribution requires the attribution statement:
 
 > Contains public sector information licensed under the Open Government Licence v3.0.
 
 Full text: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+
+## Short extracts from non-OGL guidance
+
+Some Tier B files quote guidance that is not published under the Open Government Licence: the ASA CAP Code, and the NHS Talking Therapies manual, which states "Copyright National Collaborating Centre for Mental Health, 2024". These files carry short verbatim extracts with the source URI and copyright holder, not the full text. Consumers must click through to the source URI for the complete document.
 
 ## EU corpus
 

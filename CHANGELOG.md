@@ -2,7 +2,224 @@
 
 Drift log. Newer entries first.
 
+## 2026-10-13
+- **corpus/statute/uk/dpa-2018/schedule-021-paragraph-004.md** hash 5aefb77 -> 9eb7246
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/21/paragraph/4/data.xht
+  - prior_sha256: 5aefb7783beb1f059f22a64b9968671e5a29d6885d8baa46f6e4dbcf2df8fe26
+  - new_sha256:   9eb72465cab9516c8f7c6dd46a3d39c7540ca73446ea73597c232a82256b0d67
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/guidance/uk/cap/code-section-03-misleading-advertising.md** hash f358d04 -> 2f65046
+  - source: https://www.asa.org.uk/type/non_broadcast/code_section/03.html
+  - prior_sha256: f358d04f62c3a1be894a1e2e2fc9863dd8a80b61a5f5237a00aa3795fa35c10c
+  - note: adds verbatim quotes of the availability rules 3.27 to 3.31; rules 3.17 to 3.26 were checked against the live page and are unchanged
+  - new_sha256:   2f65046a1bc5021708448c2d8f53ce748e618246e78aa768db1998d0196e2193
+
+- **corpus/guidance/uk/nhs-england/managing-conflicts-of-interest.md** new file
+  - source: https://www.england.nhs.uk/long-read/managing-conflicts-of-interest-in-the-nhs/
+  - prior_sha256: (new file)
+  - new_sha256:   a9fbc0cba2ce4fe90a41e212285c276d7a5aa706fd70627a7e9646bcd5203c0d
+  - revision: Published 17 September 2024, fetched 2026-10-13
+
+- **corpus/guidance/uk/nhs-england/talking-therapies-manual.md** new file
+  - source: https://www.england.nhs.uk/publication/the-improving-access-to-psychological-therapies-manual/
+  - prior_sha256: (new file)
+  - new_sha256:   32215e282a9ba0b660f874856ca3f7840b99f999743d18cfef99fd7998bf7f8b
+  - revision: Version 7, updated March 2024, fetched 2026-10-13
+
+- **corpus/statute/uk/crtpa-1999/section-002.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1999/31/section/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   22b977d2511cfb74d72d9deec759b09b245774790ee149d3b42de4589b4d3e15
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/crtpa-1999/section-001.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1999/31/section/1/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   28cbe1835ebc3ab4324b1dbd39c10e7f7b43aa8676aab99193baa978bfd8d935
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/psva-2012/section-001.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2012/3/section/1/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   f0f9b24916cfd0f94296b36c1c07fbdecc7f3494482476704c0eaf218f8ea190
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+## 2026-10-12
+- **corpus/statute/uk/dpa-2018/section-164a.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/section/164A/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   ed0947660205b8428c88970541b8bd3df8c6e783eeacdfef4f1a81a05812c86d
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+## 2026-10-10
+- **corpus/guidance/uk/mhra/digital-mental-health-technology-qualification.md** hash 26ab8f6 -> d2aaf43
+  - source: https://www.gov.uk/government/publications/digital-mental-health-technology-qualification-and-classification
+  - prior_sha256: 26ab8f6451e5c5861a9fc9a4f197538a7dec10736e91cf18f4db4c2f73b05d7d
+  - note: adds verbatim quotes from Version 1.3: section 6 on promotional material, the Table 1 'Diagnosis' row, Example 6 and section 8.1 with Example 14; the earlier quotes are unchanged
+  - new_sha256:   d2aaf43ca192c0b87fa65d6e5e729a27c39402ec3fad4352783cf4e7ac1c5245
+
+- **corpus/statute/uk/cdpa-1988/section-296zg.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1988/48/section/296ZG/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   a9d9e6f53c8e8e0fd5cb5620892e30960a5fa1d2a6daed1527c24dbb7ba59eba
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/cdpa-1988/section-090.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1988/48/section/90/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   9f24907f5d0eeb2c5ba3d511f58bd80bf11e089f268f878dc6bb437fff49d8c5
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/cdpa-1988/section-087.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1988/48/section/87/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   3947025840d44705db2f043af136bfdb077a468096c9c3b955dd343943907b37
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/cdpa-1988/section-080.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1988/48/section/80/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   99d9a2645099791d01bf65b975fd8074d45fca9ee3916a1aea4993122168846d
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/cdpa-1988/section-078.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1988/48/section/78/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   35d92d014639f660df15ad504fe42f4d1fcab09cf32aee9755281c263cd58c6a
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/cdpa-1988/section-077.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1988/48/section/77/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   631830206c34bd0d6f30c04ec7fbe99e3f2fc1656a06ce597dd3cbd39756c0cd
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/cdpa-1988/section-016.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1988/48/section/16/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   b7257183e48d318e9e84022b9959ce9b41beec815de1db694f888d991e892746
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+## 2026-10-09
+- **corpus/statute/guernsey/dpl-2017/schedule-002-part-iii-para-018.md** hash 8a62494 -> c5a02cd
+  - source: https://gov.gg/CHttpHandler.ashx?id=110559&p=0
+  - prior_sha256: 8a62494ada0065e632f528db29ad6ea13546bcf164cf3a81740543a2340082e7
+  - note: the editorial note now states the legal meaning only; the quoted text is unchanged
+  - new_sha256:   c5a02cd084663b0136c7fa0f3b51276f7a798c748ff7f8a4080188fca9bbc51f
+
+- **corpus/statute/jersey/dpjl-2018/schedule-002-part-2-para-006.md** hash 7939444 -> 62ecfef
+  - source: https://www.jerseylaw.je/laws/current/PDFs/L_3_2018_20230505.pdf
+  - prior_sha256: 79394449beb05b68db02e1dd9318132a28f98255e0f5a2d24252e5e7ee440dc7
+  - note: the editorial note now states the legal meaning only; the quoted text is unchanged
+  - new_sha256:   62ecfef3071eca6d6b3abece7796f8497dfc697d37725705a17abec8ab842470
+
+- **corpus/guidance/eu/edpb/guidelines-07-2020-controller-processor.md** hash 91493da -> 308a291
+  - source: https://www.edpb.europa.eu/system/files/2023-10/EDPB_guidelines_202007_controllerprocessor_final_en.pdf
+  - prior_sha256: 91493daa56aac79c7c4c79ffb1ff0e8e196be0e31edc74bb5138ed01822308d6
+  - note: the editorial note now states the legal meaning only; the quoted text is unchanged
+  - new_sha256:   308a291605e7ec18c42b80ae77ceeedb8858efc46a04c2652c6a4e3574131b05
+
+## 2026-10-08
+- **corpus/statute/uk/fpo-2005/article-048.md** hash 18870a4 -> 418f0d6
+  - source: https://www.legislation.gov.uk/uksi/2005/1529/article/48/data.xht
+  - prior_sha256: 18870a42d0e401864659c34306700e85dba072c4321c7792f8d33d181731f4cf
+  - note: restores the quoted risk warning that the transformer dropped from a `LegTextAmend` paragraph
+  - new_sha256:   418f0d656c4885093d710c9b094be4734028a553f5b14122848418cd97a49d38
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/fpo-2005/article-050a.md** hash 8d958e6 -> 6f8f120
+  - source: https://www.legislation.gov.uk/uksi/2005/1529/article/50A/data.xht
+  - prior_sha256: 8d958e622e5ed7364e1a19c007ba632fdf970b15c6a1cd01f6badbb0e2746df5
+  - note: restores the quoted risk warning that the transformer dropped from a `LegTextAmend` paragraph
+  - new_sha256:   6f8f120fee909211d35b5767e98b6bca622781846eeab0cf5a672e54dbf04d75
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/guidance/uk/fwa/tutoring-services-fwa-guidance.md** adds curated quotes from the FWA guidance for tutoring services (updated 7 April 2026): the intermediary scope test, the employment agency model and the statement that charging tutors for work-finding services is a criminal offence, fetched 2026-10-08; human review remains pending.
+- **corpus/guidance/uk/fwa/overview-of-the-conduct-regulations-2003.md** adds curated quotes from the FWA overview of the Conduct Regulations 2003 (updated 22 June 2026): the agency definition, "online platforms", fees, additional services and the regulation 32(9) limit for vulnerable people, fetched 2026-10-08; human review remains pending.
+- **corpus/guidance/uk/dbt/employment-agencies-and-businesses.md** adds curated quotes from the GOV.UK guide "Employment agencies and businesses": the prohibitions, websites aimed at work-finding and the limited-company opt-out, fetched 2026-10-08; human review remains pending.
+- **corpus/guidance/uk/cap/prices-general.md** adds curated quotes from CAP AdviceOnline "Prices: General" (dated 6 October 2026) on rules 3.17 and 3.22 and "from" and "up to" claims, fetched 2026-10-08; human review remains pending.
+- **corpus/guidance/uk/cap/code-section-03-misleading-advertising.md** adds curated quotes of the prices background and definition and rules 3.17 to 3.26 (prices and "free"), fetched 2026-10-08; the rules already quoted were checked against the live page and are unchanged. Human review remains pending.
+
+- **corpus/statute/uk/conduct-regs-2003/regulation-032.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2003/3319/regulation/32/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   e89fd0ce5a3f21f8bb9c6de48955e530d92411447d06b819e3790e304c6fd804
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/conduct-regs-2003/regulation-006.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2003/3319/regulation/6/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   273bfd26f46356799bc5e62da5bec2cf7829e1b3248655f095231262aa178196
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/bpmmr-2008/regulation-004.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2008/1276/regulation/4/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   299698b5d052551c8086f8a8150f73dec038c6816a2ea96a933226c04db25eb1
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/bpmmr-2008/regulation-003.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2008/1276/regulation/3/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   382cec135cd50fbd6c3bb45ccd07b1d603c7955f314e0ef2a90702e2ac30f61d
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/ucta-1977/section-011.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1977/50/section/11/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   fa0806db29220a6b984a5b4d59efbf660107bacea999961c4271ee81b9248540
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/ucta-1977/section-003.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1977/50/section/3/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   9bdacf4cd07855e3dbf5be341fcd99628edf9d46a600956a9b84348201d3dc63
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
 ## 2026-10-07
+- **corpus/statute/uk/dpa-2018/schedule-021-paragraph-005.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/21/paragraph/5/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   e7c30e0ade3ca9a6dddf4013e1cf9f9ab2b5a3ae6cfeac4c2b0c5aea6b39bb98
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-021-paragraph-004.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/21/paragraph/4/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   5aefb7783beb1f059f22a64b9968671e5a29d6885d8baa46f6e4dbcf2df8fe26
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/adequacy-korea-regs-2022/regulation-003.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2022/1213/regulation/3/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   99fc5ffe7546f11d63e4bebde46aaa8da4bdf58d42c2359e659ef21d4a3e5277
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/adequacy-korea-regs-2022/regulation-002.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2022/1213/regulation/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   e8d63d7012a88740061ef4e3dd3a8f8995c40134a8e18adf478df2ccc585f009
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/adequacy-usa-regs-2023/regulation-004.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2023/1028/regulation/4/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   4ff40b638974355534c7409986b665b252dc9a56670b823fa1110db6e1dd3377
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/adequacy-usa-regs-2023/regulation-003.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2023/1028/regulation/3/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   5a23c46de3a0289ca08435c285c662b798e40676ef9072dc56b47ba3d1ecb89d
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/adequacy-usa-regs-2023/regulation-002.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2023/1028/regulation/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   c2dd27a6e6650609aa5337af18f0df634e6a52c687a4eabe254d3aecca3ae5d3
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
 - **corpus/statute/uk/osa-2023/schedule-001.md** hash 9b32ab8 -> 80992d9
   - source: https://www.legislation.gov.uk/ukpga/2023/50/schedule/1/data.xht
   - prior_sha256: 9b32ab88ecd8dfc19a64d058c2e76ca77938faa15454e4a6d5d0dca3a6252496
@@ -225,10 +442,10 @@ Drift log. Newer entries first.
   - new_sha256:   f9e3c0177f0b2af5dde23429596fbf7bdb871f916b15ccfc0688cfea7e27cd26
   - revision: Wed, 30 Sep 2026 16:18:53 GMT
 
-- **corpus/statute/uk/fpo-2005/article-050a.md** hash 8d958e6 -> 294a745
+- **corpus/statute/uk/fpo-2005/article-050a.md** hash 6f8f120 -> d61d05c
   - source: https://www.legislation.gov.uk/uksi/2005/1529/article/50A/data.xht
-  - prior_sha256: 8d958e622e5ed7364e1a19c007ba632fdf970b15c6a1cd01f6badbb0e2746df5
-  - new_sha256:   294a745669e894bb12d1d994ff0bac4cf941bd164270baa9972e9416b8b956bf
+  - prior_sha256: 6f8f120fee909211d35b5767e98b6bca622781846eeab0cf5a672e54dbf04d75
+  - new_sha256:   d61d05c8c01500867fd244626725076e2a8f11cc9dc2e680c581432bd565ccc2
   - revision: Wed, 30 Sep 2026 16:18:53 GMT
 
 - **corpus/statute/uk/fpo-2005/article-050.md** hash a30dd1e -> 42abbf6
@@ -243,10 +460,10 @@ Drift log. Newer entries first.
   - new_sha256:   279a6b6f538e6e7f75e888f6af7ad523d02ffdfa482fb7b816859807f01e7176
   - revision: Wed, 30 Sep 2026 16:18:53 GMT
 
-- **corpus/statute/uk/fpo-2005/article-048.md** hash 18870a4 -> dfdf8b7
+- **corpus/statute/uk/fpo-2005/article-048.md** hash 418f0d6 -> 65073d8
   - source: https://www.legislation.gov.uk/uksi/2005/1529/article/48/data.xht
-  - prior_sha256: 18870a42d0e401864659c34306700e85dba072c4321c7792f8d33d181731f4cf
-  - new_sha256:   dfdf8b7ebfbe141945695127e572359c400ea93e2270991900e5a970880d2094
+  - prior_sha256: 418f0d656c4885093d710c9b094be4734028a553f5b14122848418cd97a49d38
+  - new_sha256:   65073d830f9a697619897f109422d9c98bed939c08bd7eac9252e8a89ff9aaf5
   - revision: Wed, 30 Sep 2026 16:18:53 GMT
 
 - **corpus/statute/uk/fpo-2005/article-019.md** hash 299bbf7 -> 853234e

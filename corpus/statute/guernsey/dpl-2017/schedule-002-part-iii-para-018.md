@@ -10,7 +10,7 @@ revision_id: consolidated text as at 2026-09-18
 last_fetched: 2026-09-18
 language: en-GB
 enforcement_status: in_force
-content_sha256: 8a62494ada0065e632f528db29ad6ea13546bcf164cf3a81740543a2340082e7
+content_sha256: c5a02cd084663b0136c7fa0f3b51276f7a798c748ff7f8a4080188fca9bbc51f
 ---
 # Guernsey DPL 2017 Schedule 2 Part III para 18 - Explicit consent (curated quotes)
 
@@ -28,5 +28,5 @@ Reviewed 2026-09-18 by kylewelsby._
 
 Part III sets out the conditions for processing special category data
 (mirroring GDPR Article 9(2)); paragraph 18 is the explicit-consent limb,
-paralleling Article 9(2)(a). This is the basis ViaCara's triage consent flow
-relies on for Guernsey-resident mental-health data.
+paralleling Article 9(2)(a). It is the consent basis for processing health
+data, including mental-health data, about a Guernsey resident.

@@ -4,9 +4,11 @@ A community-of-practice mirror of UK and EU compliance instruments in machine-re
 
 Contains:
 
-- **Statute** (Tier A, automated): UK GDPR, DPA 2018, PECR, DUAA 2025, EU GDPR, EU AI Act, Digital Omnibus on AI (Regulation (EU) 2026/1744), MDR, IVDR, NIS2, PSD2, EAA, Equality Act 2010, Consumer Rights Act 2015, FSMA 2000, FPO 2005, RAO 2001, MLR 2017, UK PSR 2017, UK MDR 2002, UK NIS Regulations 2018, UK PSBAR 2018, Charter of Fundamental Rights, Online Safety Act 2023, Children Act 1989, Children Act 2004, Family Law Reform Act 1969, Children's Wellbeing and Schools Act 2026, Crime and Policing Act 2026, Safeguarding Vulnerable Groups Act 2006, Employment Agencies Act 1973, Conduct of Employment Agencies and Employment Businesses Regulations 2003, Electronic Money Regulations 2011, Charities Act 1992, Charities Act 2011, Police Act 1997, Police Act 1997 (Criminal Records) Regulations 2002, Rehabilitation of Offenders Act 1974 (Exceptions) Order 1975, Protection of Vulnerable Groups (Scotland) Act 2007, Disclosure (Scotland) Act 2020.
-- **Guidance** (Tier B, curated quote anthology): ICO, EDPB, NCSC, MHRA, CMA, DBS, AccessNI, FCA Handbook, Charity Commission, W3C WCAG 2.2, ASA/CAP Code.
+- **Statute** (Tier A, automated): UK GDPR, DPA 2018, PECR, DUAA 2025, EU GDPR, EU AI Act, Digital Omnibus on AI (Regulation (EU) 2026/1744), MDR, IVDR, NIS2, PSD2, EAA, Equality Act 2010, Consumer Rights Act 2015, FSMA 2000, FPO 2005, RAO 2001, MLR 2017, UK PSR 2017, UK MDR 2002, UK NIS Regulations 2018, UK PSBAR 2018, Charter of Fundamental Rights, Online Safety Act 2023, Children Act 1989, Children Act 2004, Family Law Reform Act 1969, Children's Wellbeing and Schools Act 2026, Crime and Policing Act 2026, Safeguarding Vulnerable Groups Act 2006, Employment Agencies Act 1973, Conduct of Employment Agencies and Employment Businesses Regulations 2003, Copyright, Designs and Patents Act 1988, Contracts (Rights of Third Parties) Act 1999, Unfair Contract Terms Act 1977, Public Services (Social Value) Act 2012, Business Protection from Misleading Marketing Regulations 2008, Electronic Money Regulations 2011, Charities Act 1992, Charities Act 2011, Police Act 1997, Police Act 1997 (Criminal Records) Regulations 2002, Rehabilitation of Offenders Act 1974 (Exceptions) Order 1975, Data Protection (Adequacy) (United States of America) Regulations 2023, Data Protection (Adequacy) (Republic of Korea) Regulations 2022, Protection of Vulnerable Groups (Scotland) Act 2007, Disclosure (Scotland) Act 2020.
+- **Guidance** (Tier B, curated quote anthology): ICO, EDPB, NCSC, MHRA, CMA, DBS, AccessNI, FCA Handbook, Charity Commission, Fair Work Agency, NHS England, W3C WCAG 2.2, ASA/CAP Code.
 - **Standards** (Tier C, external index only): BACP, UKCP, HCPC, BPS ethics codes; ISO 27001/27701/42001; BSI.
+
+Case law is not mirrored. Judgments on Find Case Law are licensed under the [Open Justice Licence](https://caselaw.nationalarchives.gov.uk/open-justice-licence), which excludes "computational analysis of the Information (including indexing by search engines)" without a separate licence, and this corpus is indexed and searched. Cite a judgment by its neutral citation and its Find Case Law URL.
 
 ## Attribution
 
@@ -28,7 +30,7 @@ Re-running `build.py` against an unchanged source set produces zero file diffs (
 
 Pin a tag (`v<YYYY.MM.DD>`), not `main`. Tags are the contract surface. Additions are free; renames/removals ship as a major-prefix tag (`v2.0.0-<date>`).
 
-A reference Python consumer lives in the ViaCara skill at `.claude/skills/compliance-references/consume.py`.
+A consumer reads `index.json` for search and the files under `corpus/` for the text, and checks each body against its `content_sha256`.
 
 ## Schema-evolution policy
 
