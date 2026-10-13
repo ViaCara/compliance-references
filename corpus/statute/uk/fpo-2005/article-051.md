@@ -6,15 +6,17 @@ kind: legislation_article
 citation: FPO 2005 art. 51
 source_uri: "https://www.legislation.gov.uk/uksi/2005/1529/article/51/data.xht"
 source_format: xhtml
-revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
-content_sha256: 9faeef6058a5d9f056f45aa34863be0be6278362e57db9fd7e28418d1ccf0e28
-last_fetched: 2026-08-20
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: f9e3c0177f0b2af5dde23429596fbf7bdb871f916b15ccfc0688cfea7e27cd26
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # FPO 2005 art. 51
 
 _Associations of high net worth or sophisticated investors_
+
+**Exempt Communications: Certain Controlled Activities**
 
 (1) The financial promotion restriction does not apply to any non-real time communication or solicited real time communication which—
 

@@ -6,13 +6,17 @@ kind: legislation_schedule
 citation: DPA 2018 Sch. 1 para. 2
 source_uri: "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/2/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: 48a8cf30919fb0f9742a716af2b42ae3ce325aa60237c8518a08cc0576b25f53
-last_fetched: 2026-09-03
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: a636a127312ec56f252235765d6999b9ef11c643c8bac5aa75c5af715666e5b3
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # DPA 2018 Sch. 1 para. 2
+
+_Special categories of personal data and criminal convictions etc data_
+
+**PART 1 - Conditions relating to employment, health and research etc**
 
 2(1) This condition is met if the processing is necessary for health or social care purposes.
 

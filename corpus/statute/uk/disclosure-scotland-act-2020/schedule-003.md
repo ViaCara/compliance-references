@@ -6,13 +6,15 @@ kind: legislation_schedule
 citation: Disclosure (Scotland) Act 2020, Sch. 3
 source_uri: "https://www.legislation.gov.uk/asp/2020/13/schedule/3/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: 2bd9ae97105ae51a8760f6dfc7d3a00dc2913265f3a85fcf3242ed948d509b53
-last_fetched: 2026-09-03
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: 0a5af4c28db6d22aaba2378977e41a0130e285e83c3062e64594a2bea1004c1b
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # Disclosure (Scotland) Act 2020, Sch. 3
+
+_Schedule to be substituted for Schedule 2 of the PVG Act_
 
 1(1)A regulated role with children is a role of any description which—
 

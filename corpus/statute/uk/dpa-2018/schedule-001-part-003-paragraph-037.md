@@ -6,13 +6,17 @@ kind: legislation_schedule
 citation: DPA 2018 Sch. 1 Part 3 para. 37
 source_uri: "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/37/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: 4b493c0ec7ca09528fecf46d880d4c041115525e96e672aebd30162a83c71080
-last_fetched: 2026-09-03
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: b9508dcac2510284a91ac3d2169a1fe4a8d0f2dac72634d9c2050265d0ce5991
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # DPA 2018 Sch. 1 Part 3 para. 37
+
+_Special categories of personal data and criminal convictions etc data_
+
+**PART 3 - Additional conditions relating to criminal convictions etc**
 
 37 This condition is met if the processing—
 

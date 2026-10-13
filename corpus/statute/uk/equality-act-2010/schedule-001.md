@@ -6,13 +6,17 @@ kind: legislation_schedule
 citation: Equality Act 2010 Sch. 1
 source_uri: "https://www.legislation.gov.uk/ukpga/2010/15/schedule/1/data.xht"
 source_format: xhtml
-revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
-content_sha256: caec18e0fa7e0a83e2cdab09640090920dbf134abf8e69f7282db06cd2ee4091
-last_fetched: 2026-08-20
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: 1ff3e5352cc2580dd4f560ff3242fe9a8fed9eb3602543332b1107c3cdc0e207
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # Equality Act 2010 Sch. 1
+
+_Disability: supplementary provision_
+
+**Part 1 - Determination of disability**
 
 1 Regulations may make provision for a condition of a prescribed description to be, or not to be, an impairment.
 
@@ -97,6 +101,8 @@ enforcement_status: in_force
 9(1) A question as to whether a person had a disability at a particular time (“the relevant time”) is to be determined, for the purposes of section 6, as if the provisions of, or made under, this Act were in force when the act complained of was done had been in force at the relevant time.
 
 (2) The relevant time may be a time before the coming into force of the provision of this Act to which the question relates.
+
+**Part 2 - Guidance**
 
 10 This Part of this Schedule applies in relation to guidance referred to in section 6(5).
 

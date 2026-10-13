@@ -6,13 +6,17 @@ kind: legislation_schedule
 citation: SVGA 2006, Sch. 3 para. 2
 source_uri: "https://www.legislation.gov.uk/ukpga/2006/47/schedule/3/paragraph/2/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: 65c01fd9b6ddfa3ba03da8683b1e56af0deb4abbad3968ef135752f682154b5d
-last_fetched: 2026-09-03
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: 250ee428f25a68166f4dcd9e6ba6233da0692ddf8ada01d693f8d8ba6376fd56
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # SVGA 2006, Sch. 3 para. 2
+
+_Barred lists_
+
+**Part 1 - Children's barred list**
 
 2(1) This paragraph applies to a person if any of the criteria prescribed for the purposes of this paragraph is satisfied in relation to the person.
 

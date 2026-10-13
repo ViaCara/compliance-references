@@ -6,13 +6,17 @@ kind: legislation_schedule
 citation: DPA 2018 Sch. 1 Part 4 para. 41
 source_uri: "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/41/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: 1779cb74a6e1a8331980e98273bf792e337d7a38d0489941c214fca63eddc1d7
-last_fetched: 2026-09-03
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: 580f1767c3eb1948c26fa96ed3fa4ccde74561bdea466ab84f0e3ab40a99e191
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # DPA 2018 Sch. 1 Part 4 para. 41
+
+_Special categories of personal data and criminal convictions etc data_
+
+**PART 4 - Appropriate policy document and additional safeguards**
 
 41 A record maintained by the controller, or the controller's representative, under Article 30 of the UK GDPR in respect of the processing of personal data in reliance on a condition described in paragraph 38 must include the following information—
 

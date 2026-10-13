@@ -6,13 +6,15 @@ kind: legislation_schedule
 citation: DMCC 2024 Sch. 20
 source_uri: "https://www.legislation.gov.uk/ukpga/2024/13/schedule/20/data.xht"
 source_format: xhtml
-revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
-content_sha256: 111d9d9fa6dc2cc2d29c25972232d48bfed57546cebb45039774ea9445edb661
-last_fetched: 2026-08-24
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: 27e92cfa314951c2b21ad6d3c6faef2b959e3909885cee663b8f1c4a4b1eb255
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # DMCC 2024 Sch. 20
+
+_Commercial practices which are in all circumstances considered unfair_
 
 1 Claiming to be a signatory to a code of conduct when the trader is not.
 

@@ -6,13 +6,17 @@ kind: legislation_schedule
 citation: Misuse of Drugs Act 1971 Schedule 2
 source_uri: "https://www.legislation.gov.uk/ukpga/1971/38/schedule/2/data.xht"
 source_format: xhtml
-revision_id: "Thu, 03 Sep 2026 16:52:26 GMT"
-content_sha256: 042cb7ae000c887ccccc6a3e455b000b685f30ea9cacfd9b6a3c04df1416493b
-last_fetched: 2026-09-12
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: 55a3892e2c8bbd2e27670c189b11f947a39572fc3ffdd8e7185280a3931b54c1
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # Misuse of Drugs Act 1971 Schedule 2
+
+_Controlled Drugs_
+
+**Part I - Class A Drugs**
 
 1 The following substances and products, namely:—
 
@@ -450,6 +454,8 @@ b,2,5-Trimethoxy-4-methylphenethylamine;
 
 6 Any preparation designed for administration by injection which includes a substance or product for the time being specified in any of paragraphs 1 to 3 of Part II of this Schedule.
 
+**Part II - Class B Drugs**
+
 1 The following substances and products, namely:—
 
 Acetyldihydrocodeine.
@@ -635,6 +641,8 @@ Any compound structurally derived from 3-(2,2,3,3-tetramethylcyclopropylcarbonyl
 3 Any salt of a substance for the time being specified in paragraph 1 , 2 or 2A of this Part of this Schedule.
 
 4 Any preparation or other product containing a substance or product for the time being specified in any of paragraphs 1 to 3 of this Part of this Schedule, not being a preparation falling within paragraph 6 of Part I of this Schedule.
+
+**Part III - Class C Drugs**
 
 1 The following substances, namely:—
 
@@ -1055,6 +1063,8 @@ Zilpaterol.
 3 Any salt of a substance for the time being specified in paragraph 1 or 2 of this Part of this Schedule.
 
 4 Any preparation or other product containing a substance for the time being specified in any of paragraphs 1 to 3 of this Part of this Schedule.
+
+**Part IV - Meaning of certain Expressions used in this Schedule**
 
 “cannabinol derivatives” means the following substances, except where contained in cannabis or cannabis resin, namely tetrahydro derivatives of cannabinol and 3-alkyl homologues of cannabinol or of its tetrahydro derivatives;
 

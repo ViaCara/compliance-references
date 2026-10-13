@@ -6,13 +6,15 @@ kind: legislation_schedule
 citation: Misuse of Drugs Regulations 2001 Schedule 1
 source_uri: "https://www.legislation.gov.uk/uksi/2001/3998/schedule/1/data.xht"
 source_format: xhtml
-revision_id: "Thu, 03 Sep 2026 16:52:26 GMT"
-content_sha256: 7cf73beb9201c87b4e49b4d3abc842f1de3c71751238282343644d362a664f91
-last_fetched: 2026-09-12
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: 93cc4570494a674d96624214f01b449f7017c4307d5f5045e92a500ec32defc6
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # Misuse of Drugs Regulations 2001 Schedule 1
+
+_CONTROLLED DRUGS SUBJECT TO THE REQUIREMENTS OF REGULATIONS 14, 15, 16, 18, 19, 20, 23, 26 AND 27_
 
 The following substances and products, namely -
 

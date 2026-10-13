@@ -7,12 +7,18 @@ citation: DPA 2018 Sch. 21 para. 4
 source_uri: "https://www.legislation.gov.uk/ukpga/2018/12/schedule/21/paragraph/4/data.xht"
 source_format: xhtml
 revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
-content_sha256: 5aefb7783beb1f059f22a64b9968671e5a29d6885d8baa46f6e4dbcf2df8fe26
+content_sha256: 9eb72465cab9516c8f7c6dd46a3d39c7540ca73446ea73597c232a82256b0d67
 last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # DPA 2018 Sch. 21 para. 4
+
+_Further transitional provision etc_
+
+**Part 3 - Transfers to third countries and international organisations**
+
+**UK GDPR: transfers approved by regulations**
 
 4(1) On and after IP completion day, for the purposes of the UK GDPR and Part 2 of this Act, a transfer of personal data to a third country or an international organisation is to be treated as approved by regulations made under Article 45A of the UK GDPR if, at the time of the transfer, paragraph 5 specifies, or specifies a description which includes—
 

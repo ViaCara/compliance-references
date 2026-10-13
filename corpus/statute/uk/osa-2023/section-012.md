@@ -6,9 +6,9 @@ kind: legislation_section
 citation: OSA 2023 s. 12
 source_uri: "https://www.legislation.gov.uk/ukpga/2023/50/section/12/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: a04340c948cebfd971476a4b5c05027867ebe1b47cc0ca1d59a179c3dd3f988d
-last_fetched: 2026-09-03
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: 9646ba9528a7fd2112e2ca8c3f82124c1dd3490803aa6a79b0acd7aeeade0540
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
@@ -17,6 +17,8 @@ enforcement_status: in_force
 _Safety duties protecting children_
 
 (1) This section sets out the duties to protect children’s online safety which apply in relation to regulated user-to-user services that are likely to be accessed by children (as indicated by the headings).
+
+**All services**
 
 (2) A duty, in relation to a service, to take or use proportionate measures relating to the design or operation of the service to effectively—
 
@@ -79,5 +81,7 @@ _Safety duties protecting children_
 (12) A duty to include provisions in the terms of service giving information about any proactive technology used by a service for the purpose of compliance with a duty set out in subsection (2) or (3) (including the kind of technology, when it is used, and how it works).
 
 (13) A duty to ensure that the provisions of the terms of service referred to in subsections (9), (11) and (12) are clear and accessible.
+
+**Additional duty for Category 1 services**
 
 (14) A duty to summarise in the terms of service the findings of the most recent children’s risk assessment of a service (including as to levels of risk and as to nature, and severity, of potential harm to children).

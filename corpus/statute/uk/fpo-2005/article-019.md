@@ -6,15 +6,17 @@ kind: legislation_article
 citation: FPO 2005 art. 19
 source_uri: "https://www.legislation.gov.uk/uksi/2005/1529/article/19/data.xht"
 source_format: xhtml
-revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
-content_sha256: 299bbf731b82952127566e8abbe17c99b85b566c982228d9f8ce6c242a003b8f
-last_fetched: 2026-08-20
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: 853234e2da882a4f3e0c73c40c3da992db53ba73d06ce3da5462ac2c63c67e36
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # FPO 2005 art. 19
 
 _Investment professionals_
+
+**Exempt Communications: All Controlled Activities**
 
 (1) The financial promotion restriction does not apply to any communication which—
 

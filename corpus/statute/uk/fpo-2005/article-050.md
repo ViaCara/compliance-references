@@ -6,15 +6,17 @@ kind: legislation_article
 citation: FPO 2005 art. 50
 source_uri: "https://www.legislation.gov.uk/uksi/2005/1529/article/50/data.xht"
 source_format: xhtml
-revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
-content_sha256: a30dd1e418784395122adb687174b6530834e9ee9914eafdffcb74f351095436
-last_fetched: 2026-08-20
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: 42abbf6873804c8e756a898fe0ad611c98584425b5f68a76cde8d80f64946f6f
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # FPO 2005 art. 50
 
 _Sophisticated investors_
+
+**Exempt Communications: Certain Controlled Activities**
 
 (1) “Certified sophisticated investor”, in relation to any description of investment, means a person—
 

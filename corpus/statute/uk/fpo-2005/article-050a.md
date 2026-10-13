@@ -7,7 +7,7 @@ citation: FPO 2005 art. 50A
 source_uri: "https://www.legislation.gov.uk/uksi/2005/1529/article/50A/data.xht"
 source_format: xhtml
 revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
-content_sha256: 6f8f120fee909211d35b5767e98b6bca622781846eeab0cf5a672e54dbf04d75
+content_sha256: d61d05c8c01500867fd244626725076e2a8f11cc9dc2e680c581432bd565ccc2
 last_fetched: 2026-10-08
 language: en-GB
 enforcement_status: in_force
@@ -15,6 +15,8 @@ enforcement_status: in_force
 # FPO 2005 art. 50A
 
 _Self-certified sophisticated investors_
+
+**Exempt Communications: Certain Controlled Activities**
 
 (1) “Self-certified sophisticated investor” means an individual—
 

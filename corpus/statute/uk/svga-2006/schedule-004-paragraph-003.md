@@ -6,13 +6,17 @@ kind: legislation_schedule
 citation: SVGA 2006, Sch. 4 para. 3
 source_uri: "https://www.legislation.gov.uk/ukpga/2006/47/schedule/4/paragraph/3/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: 684476beedb971a1bce476a5e9a149c0cd8e05c833004d83cd1fdfeede7fd703
-last_fetched: 2026-09-03
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: 6bc4d54de030f0f7800f8344e04c498cd8a49526e83f1288ce5458da51de8699
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # SVGA 2006, Sch. 4 para. 3
+
+_Regulated Activity_
+
+**Part 1 - Regulated activity relating to children**
 
 3(1) The establishments referred to in paragraph 1(2) and (9C) are—
 

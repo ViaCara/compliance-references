@@ -6,15 +6,17 @@ kind: legislation_article
 citation: FPO 2005 art. 12
 source_uri: "https://www.legislation.gov.uk/uksi/2005/1529/article/12/data.xht"
 source_format: xhtml
-revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
-content_sha256: 5db7c6cf5f29cac62f11c03318329088bea7472eb502b830f183f57819ef8662
-last_fetched: 2026-08-20
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: 1cead287f27758e04bfe4d5d2449bbfdba90c60952da9e6115296d72958f2e19
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # FPO 2005 art. 12
 
 _Communications to overseas recipients_
+
+**Exempt Communications: All Controlled Activities**
 
 (1) Subject to paragraphs (2) and (7) paragraphs (2), (7) and (8), the financial promotion restriction does not apply to any communication—
 

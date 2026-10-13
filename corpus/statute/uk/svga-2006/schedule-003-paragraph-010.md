@@ -6,13 +6,17 @@ kind: legislation_schedule
 citation: SVGA 2006, Sch. 3 para. 10
 source_uri: "https://www.legislation.gov.uk/ukpga/2006/47/schedule/3/paragraph/10/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: 853520e12e84188331b6e913d20a7e089a82f5dd1999c81007a8abc81978fa06
-last_fetched: 2026-09-03
+revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
+content_sha256: ae4f2c50695148ec0afe1f0580fc68e6e38494f0a792ed8b386e13dc4786a0ad
+last_fetched: 2026-10-07
 language: en-GB
 enforcement_status: in_force
 ---
 # SVGA 2006, Sch. 3 para. 10
+
+_Barred lists_
+
+**Part 2 - Adults' barred list**
 
 10(1) For the purposes of paragraph 9 relevant conduct is—
 
