@@ -75,6 +75,11 @@ CAP_PASSAGES = [
     'the extent of the commitment the consumer must make to take advantage of a "free" offer',
     'Marketers must not describe an element of a package as "free"',
     'Marketers must not use the term "free trial"',
+    "Marketers must make a reasonable estimate of demand for advertised products.",
+    "it will not be possible to supply the advertised (or an equivalent) product at the advertised price",
+    "Marketers must not use the technique of switch selling",
+    "must not falsely claim that the marketer is about to cease trading or move premises",
+    "materially inaccurate information on market conditions or the availability of the product",
 ]
 
 
@@ -103,10 +108,10 @@ class BusinessTermsMarketingSourceTests(unittest.TestCase):
                 with self.subTest(source_id=source_id, passage=passage):
                     self.assertIn(passage, text)
 
-    def test_cap_section_three_carries_prices_and_free_rules(self):
+    def test_cap_section_three_carries_prices_free_and_availability_rules(self):
         _, body = parse((CORPUS / self.sources[CAP_ID]["target"]).read_text(encoding="utf-8"))
         text = re.sub(r"\s+", " ", re.sub(r"^> ?", "", body, flags=re.M))
-        for rule in range(17, 27):
+        for rule in range(17, 32):
             with self.subTest(rule=rule):
                 self.assertIn(f"Rule 3.{rule}:", body)
         for passage in CAP_PASSAGES:

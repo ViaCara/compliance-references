@@ -2,6 +2,43 @@
 
 Drift log. Newer entries first.
 
+## 2026-10-13
+- **corpus/guidance/uk/cap/code-section-03-misleading-advertising.md** hash f358d04 -> 2f65046
+  - source: https://www.asa.org.uk/type/non_broadcast/code_section/03.html
+  - prior_sha256: f358d04f62c3a1be894a1e2e2fc9863dd8a80b61a5f5237a00aa3795fa35c10c
+  - note: adds verbatim quotes of the availability rules 3.27 to 3.31; rules 3.17 to 3.26 were checked against the live page and are unchanged
+  - new_sha256:   2f65046a1bc5021708448c2d8f53ce748e618246e78aa768db1998d0196e2193
+
+- **corpus/guidance/uk/nhs-england/managing-conflicts-of-interest.md** new file
+  - source: https://www.england.nhs.uk/long-read/managing-conflicts-of-interest-in-the-nhs/
+  - prior_sha256: (new file)
+  - new_sha256:   a9fbc0cba2ce4fe90a41e212285c276d7a5aa706fd70627a7e9646bcd5203c0d
+  - revision: Published 17 September 2024, fetched 2026-10-13
+
+- **corpus/guidance/uk/nhs-england/talking-therapies-manual.md** new file
+  - source: https://www.england.nhs.uk/publication/the-improving-access-to-psychological-therapies-manual/
+  - prior_sha256: (new file)
+  - new_sha256:   32215e282a9ba0b660f874856ca3f7840b99f999743d18cfef99fd7998bf7f8b
+  - revision: Version 7, updated March 2024, fetched 2026-10-13
+
+- **corpus/statute/uk/crtpa-1999/section-002.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1999/31/section/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   22b977d2511cfb74d72d9deec759b09b245774790ee149d3b42de4589b4d3e15
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/crtpa-1999/section-001.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1999/31/section/1/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   28cbe1835ebc3ab4324b1dbd39c10e7f7b43aa8676aab99193baa978bfd8d935
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
+- **corpus/statute/uk/psva-2012/section-001.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2012/3/section/1/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   f0f9b24916cfd0f94296b36c1c07fbdecc7f3494482476704c0eaf218f8ea190
+  - revision: Wed, 30 Sep 2026 16:18:53 GMT
+
 ## 2026-10-12
 - **corpus/statute/uk/dpa-2018/section-164a.md** new file
   - source: https://www.legislation.gov.uk/ukpga/2018/12/section/164A/data.xht
