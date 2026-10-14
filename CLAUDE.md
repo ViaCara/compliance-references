@@ -22,11 +22,16 @@ The gate works like this:
 - The walkthrough's `Confidence: n/5` score is information only. Since 7
   October 2026 Mira scores statute mirrors 4/5 because it cannot check legal
   text against the live source, so a score rule blocked every PR.
-- Branch protection on `main` requires the `mira-confidence` check.
-- A new push resets the check to neutral. Merge stays blocked until Mira
+- When the check passes, the gate squash-merges the pull request and starts
+  `tag-release`. It leaves the pull request for a human when it is a draft,
+  carries `do-not-merge`, comes from a fork or changes `.github/`.
+- A new push resets the check to neutral. The gate does not merge until Mira
   reviews the new commit.
+- `main` has no branch protection. The gate is the only merge path that
+  checks Mira; a maintainer can still merge by hand.
 
-Keep this note in sync with branch protection. Update both together.
+Keep this note in sync with `.github/scripts/mira_gate.py`. Update both
+together.
 
 ## Known gap: the PR that changes the gate itself
 

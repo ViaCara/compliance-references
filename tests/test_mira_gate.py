@@ -111,5 +111,36 @@ class MiraGateTests(unittest.TestCase):
         self.assertEqual({"kylewelsby"}, mira_gate.reply_authors(threads))
 
 
+def pull(draft=False, labels=(), head_repo="ViaCara/compliance-references", state="open"):
+    return {
+        "state": state,
+        "draft": draft,
+        "labels": [{"name": name} for name in labels],
+        "head": {"repo": {"full_name": head_repo}},
+        "base": {"repo": {"full_name": "ViaCara/compliance-references"}},
+    }
+
+
+class MergeBlockerTests(unittest.TestCase):
+    def test_passing_pull_request_merges(self):
+        self.assertIsNone(mira_gate.merge_blocker(pull(), ["corpus/statute/uk/x/section-001.md"]))
+
+    def test_draft_waits(self):
+        self.assertIn("draft", mira_gate.merge_blocker(pull(draft=True), ["README.md"]))
+
+    def test_hold_label_waits(self):
+        self.assertIn("do-not-merge", mira_gate.merge_blocker(pull(labels=["do-not-merge"]), ["README.md"]))
+
+    def test_fork_waits(self):
+        self.assertIn("fork", mira_gate.merge_blocker(pull(head_repo="someone/compliance-references"), ["README.md"]))
+
+    def test_closed_pull_request_is_left(self):
+        self.assertIn("open", mira_gate.merge_blocker(pull(state="closed"), ["README.md"]))
+
+    def test_change_to_the_workflows_needs_a_human(self):
+        blocker = mira_gate.merge_blocker(pull(), ["README.md", ".github/scripts/mira_gate.py"])
+        self.assertIn(".github/", blocker)
+
+
 if __name__ == "__main__":
     unittest.main()

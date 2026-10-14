@@ -5,8 +5,11 @@ finding is answered: a maintainer replied `fixed in <sha>` or
 `@viacara-mira reject <reason>`, or Mira resolved the thread itself. The
 walkthrough's `Confidence: n/5` score is information only.
 
+When the check passes, the script squash-merges the pull request and starts
+tag-release, unless `merge_blocker` names a reason to leave it for a human.
+
 Usage: python3 .github/scripts/mira_gate.py <owner/repo> <pr-number>
-Reads GitHub through `gh api` and writes the check run.
+Reads GitHub through `gh api`, writes the check run and merges.
 """
 
 from __future__ import annotations
@@ -27,6 +30,7 @@ COMMENT_COUNT = re.compile(r"(\d+) comments?", re.IGNORECASE)
 FIXED = re.compile(r"\Afixed in [0-9a-f]{7,40}\b", re.IGNORECASE)
 REJECT = re.compile(r"\A@viacara-mira reject\s+\S", re.IGNORECASE)
 MAINTAINER = {"write", "maintain", "admin"}
+HOLD = "do-not-merge"
 
 THREADS_QUERY = """query($owner:String!,$repo:String!,$pr:Int!,$cursor:String){
   repository(owner:$owner,name:$repo){pullRequest(number:$pr){
@@ -141,6 +145,35 @@ def decide(
     )
 
 
+def merge_blocker(pull: dict, files: list[str]) -> str | None:
+    """Return why a passing pull request must wait for a human, or None to merge it."""
+    if pull["state"] != "open":
+        return "the pull request is not open"
+    if pull["draft"]:
+        return "the pull request is a draft"
+    if any(label["name"] == HOLD for label in pull["labels"]):
+        return f"the pull request carries {HOLD}"
+    if (pull["head"]["repo"] or {}).get("full_name") != pull["base"]["repo"]["full_name"]:
+        return "the pull request comes from a fork"
+    if any(path.startswith(".github/") for path in files):
+        return "the pull request changes .github/, which the gate cannot grade"
+    return None
+
+
+def merge(repository: str, number: int, pull: dict) -> None:
+    files = [f["filename"] for f in gh_pages(f"repos/{repository}/pulls/{number}/files?per_page=100")]
+    blocker = merge_blocker(pull, files)
+    if blocker:
+        print(f"Not merging #{number}: {blocker}.")
+        return
+    gh(
+        "-X", "PUT", f"repos/{repository}/pulls/{number}/merge",
+        "-f", "merge_method=squash", "-f", f"sha={pull['head']['sha']}",
+    )
+    subprocess.run(["gh", "workflow", "run", "tag-release.yml", "--repo", repository], check=True, timeout=60)
+    print(f"Merged #{number} and started tag-release.")
+
+
 def gh(*arguments: str) -> object:
     result = subprocess.run(["gh", "api", *arguments], check=True, capture_output=True, text=True, timeout=60)
     return json.loads(result.stdout)
@@ -171,7 +204,8 @@ def fetch_threads(repository: str, number: int) -> list[dict]:
 
 
 def main(repository: str, number: int) -> int:
-    sha = gh(f"repos/{repository}/pulls/{number}")["head"]["sha"]
+    pull = gh(f"repos/{repository}/pulls/{number}")
+    sha = pull["head"]["sha"]
     walkthroughs = gh_pages(f"repos/{repository}/issues/{number}/comments?per_page=100")
     runs = gh(f"repos/{repository}/commits/{sha}/check-runs?check_name={CHECK_NAME}&filter=all&per_page=100")["check_runs"]
     head_seen_at = min((run["started_at"] for run in runs), default=None)
@@ -195,6 +229,8 @@ def main(repository: str, number: int) -> int:
         "-f", f"output[title]={verdict.title}", "-f", f"output[summary]={verdict.summary}",
     )
     print(f"{CHECK_NAME}: {verdict.conclusion} ({verdict.title}) on {sha}")
+    if verdict.conclusion == "success":
+        merge(repository, number, pull)
     return 0
 
 

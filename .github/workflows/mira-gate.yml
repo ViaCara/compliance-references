@@ -23,9 +23,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     permissions:
+      actions: write
       checks: write
-      contents: read
-      pull-requests: read
+      contents: write
+      pull-requests: write
     steps:
       # The first mira-confidence run on a head marks when GitHub saw the
       # push. The script only accepts a walkthrough written after it.

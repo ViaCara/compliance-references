@@ -1,8 +1,11 @@
 name: tag-release
 
+# The gate merges with the workflow token, and a push made with that token
+# starts no workflow, so the gate starts this one by dispatch.
 on:
   push:
     branches: [main]
+  workflow_dispatch: {}
 
 jobs:
   tag:
