@@ -159,5 +159,31 @@ class MergeBlockerTests(unittest.TestCase):
         self.assertIn(".github/", self.blocker(pull(), mira_gate.changed_paths(files)))
 
 
+
+def run(run_id=1, status="completed", conclusion="success", started="2026-10-14T07:00:00Z"):
+    return {"id": run_id, "status": status, "conclusion": conclusion, "started_at": started}
+
+
+class TestsBlockerTests(unittest.TestCase):
+    def test_passing_tests_allow_the_merge(self):
+        self.assertIsNone(mira_gate.tests_blocker([run()]))
+
+    def test_missing_test_run_waits(self):
+        self.assertIn("no test run", mira_gate.tests_blocker([]))
+
+    def test_running_tests_wait(self):
+        self.assertIn("running", mira_gate.tests_blocker([run(status="in_progress", conclusion=None)]))
+
+    def test_failed_tests_wait(self):
+        self.assertIn("failure", mira_gate.tests_blocker([run(conclusion="failure")]))
+
+    def test_only_the_latest_run_counts(self):
+        self.assertIsNone(mira_gate.tests_blocker([run(2), run(1, conclusion="failure")]))
+
+    def test_queued_rerun_blocks_an_earlier_success(self):
+        runs = [run(1), run(2, status="queued", conclusion=None, started=None)]
+        self.assertIn("running", mira_gate.tests_blocker(runs))
+
+
 if __name__ == "__main__":
     unittest.main()

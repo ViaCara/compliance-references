@@ -22,8 +22,9 @@ The gate works like this:
 - The walkthrough's `Confidence: n/5` score is information only. Since 7
   October 2026 Mira scores statute mirrors 4/5 because it cannot check legal
   text against the live source, so a score rule blocked every PR.
-- When the check passes, the gate squash-merges the pull request and starts
-  `tag-release`. It leaves the pull request for a human when it is a draft,
+- When the check passes and the `tests` workflow passed on the same commit,
+  the gate squash-merges the pull request and starts `tag-release`. A
+  finished `tests` run starts the gate again, so the order does not matter. It leaves the pull request for a human when it is a draft,
   carries `do-not-merge` (any case), comes from a fork, targets another
   branch or changes `.github/`. The reason is in the job log.
 - To hold a pull request, open it as a draft or add `do-not-merge`. Releasing

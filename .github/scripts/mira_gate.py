@@ -5,8 +5,9 @@ finding is answered: a maintainer replied `fixed in <sha>` or
 `@viacara-mira reject <reason>`, or Mira resolved the thread itself. The
 walkthrough's `Confidence: n/5` score is information only.
 
-When the check passes, the script squash-merges the pull request and starts
-tag-release, unless `merge_blocker` names a reason to leave it for a human.
+When the check passes and the `tests` run on the same commit passed, the
+script squash-merges the pull request and starts tag-release, unless
+`merge_blocker` names a reason to leave it for a human.
 
 Usage: python3 .github/scripts/mira_gate.py <owner/repo> <pr-number>
 Reads GitHub through `gh api`, writes the check run and merges.
@@ -31,6 +32,7 @@ FIXED = re.compile(r"\Afixed in [0-9a-f]{7,40}\b", re.IGNORECASE)
 REJECT = re.compile(r"\A@viacara-mira reject\s+\S", re.IGNORECASE)
 MAINTAINER = {"write", "maintain", "admin"}
 HOLD = "do-not-merge"
+TESTS = "tests"
 
 THREADS_QUERY = """query($owner:String!,$repo:String!,$pr:Int!,$cursor:String){
   repository(owner:$owner,name:$repo){pullRequest(number:$pr){
@@ -198,13 +200,26 @@ def merge_blocker(pull: dict, paths: list[str], listed_files: int) -> str | None
     return None
 
 
+def tests_blocker(runs: list[dict]) -> str | None:
+    """Return why the test run does not allow a merge, or None when the latest run passed."""
+    if not runs:
+        return "no test run exists for this commit"
+    latest = max(runs, key=lambda r: r["id"])
+    if latest["status"] != "completed":
+        return "the tests are still running"
+    if latest["conclusion"] != "success":
+        return f"the tests ended in {latest['conclusion']}"
+    return None
+
+
 def merge(repository: str, number: int, graded_sha: str) -> None:
     files = gh_pages(f"repos/{repository}/pulls/{number}/files?per_page=100")
     pull = gh(f"repos/{repository}/pulls/{number}")
     if pull["head"]["sha"] != graded_sha:
         print(f"Not merging #{number}: the head moved after the check.")
         return
-    blocker = merge_blocker(pull, changed_paths(files), len(files))
+    runs = gh(f"repos/{repository}/commits/{graded_sha}/check-runs?check_name={TESTS}&filter=all&per_page=100")
+    blocker = merge_blocker(pull, changed_paths(files), len(files)) or tests_blocker(runs["check_runs"])
     if blocker:
         print(f"Not merging #{number}: {blocker}.")
         return
