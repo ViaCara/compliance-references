@@ -2,6 +2,14 @@
 
 Drift log. Newer entries first.
 
+## 2026-10-14
+- **corpus/statute/jersey/authority-law-2018/article-017.md** hash 6fb5b4b -> 9bbbc36
+  - source: https://www.jerseylaw.je/laws/current/PDFs/L_4_2018.pdf
+  - prior_sha256: 6fb5b4bfb7b9413ddecbeca00088fd7de4d40197ac92d822e03742d78e4c4619
+  - note: quotes Article 17(1), (2) and (6) from the official consolidated statute instead of the regulator's guidance page
+  - new_sha256:   9bbbc36207f251600d8e04c92863b0db5a1791b742a3db6a91db7cc7ff5e2162
+  - revision: Official Consolidated Version 1 January 2019 - Current
+
 ## 2026-10-13
 - **corpus/statute/uk/dpa-2018/schedule-021-paragraph-004.md** hash 5aefb77 -> 9eb7246
   - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/21/paragraph/4/data.xht
