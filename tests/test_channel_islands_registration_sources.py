@@ -27,7 +27,9 @@ class ChannelIslandsRegistrationSourceTests(unittest.TestCase):
         source = _source("guernsey-dpl-2017-s-039")
         fields, body = parse((CORPUS / source["target"]).read_text(encoding="utf-8"))
 
+        self.assertEqual("https://gov.gg/CHttpHandler.ashx?id=110559&p=0", source["source_uri"])
         self.assertEqual(source["source_uri"], fields["source_uri"])
+        self.assertEqual("in_force", fields["enforcement_status"])
         self.assertEqual(body_sha256(body), fields["content_sha256"])
         for phrase in (
             "39. (1) A controller or processor established in the Bailiwick must not cause or permit "
