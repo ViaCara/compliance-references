@@ -204,7 +204,7 @@ def tests_blocker(runs: list[dict]) -> str | None:
     """Return why the test run does not allow a merge, or None when the latest run passed."""
     if not runs:
         return "no test run exists for this commit"
-    latest = max(runs, key=lambda r: r["started_at"])
+    latest = max(runs, key=lambda r: r["id"])
     if latest["status"] != "completed":
         return "the tests are still running"
     if latest["conclusion"] != "success":

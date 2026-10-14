@@ -160,8 +160,8 @@ class MergeBlockerTests(unittest.TestCase):
 
 
 
-def run(status="completed", conclusion="success", started="2026-10-14T07:00:00Z"):
-    return {"status": status, "conclusion": conclusion, "started_at": started}
+def run(run_id=1, status="completed", conclusion="success", started="2026-10-14T07:00:00Z"):
+    return {"id": run_id, "status": status, "conclusion": conclusion, "started_at": started}
 
 
 class TestsBlockerTests(unittest.TestCase):
@@ -178,8 +178,11 @@ class TestsBlockerTests(unittest.TestCase):
         self.assertIn("failure", mira_gate.tests_blocker([run(conclusion="failure")]))
 
     def test_only_the_latest_run_counts(self):
-        runs = [run(conclusion="failure", started="2026-10-14T07:00:00Z"), run(started="2026-10-14T07:05:00Z")]
-        self.assertIsNone(mira_gate.tests_blocker(runs))
+        self.assertIsNone(mira_gate.tests_blocker([run(2), run(1, conclusion="failure")]))
+
+    def test_queued_rerun_blocks_an_earlier_success(self):
+        runs = [run(1), run(2, status="queued", conclusion=None, started=None)]
+        self.assertIn("running", mira_gate.tests_blocker(runs))
 
 
 if __name__ == "__main__":
