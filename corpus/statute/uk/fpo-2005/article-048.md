@@ -7,8 +7,8 @@ citation: FPO 2005 art. 48
 source_uri: "https://www.legislation.gov.uk/uksi/2005/1529/article/48/data.xht"
 source_format: xhtml
 revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
-content_sha256: dfdf8b7ebfbe141945695127e572359c400ea93e2270991900e5a970880d2094
-last_fetched: 2026-10-07
+content_sha256: 65073d830f9a697619897f109422d9c98bed939c08bd7eac9252e8a89ff9aaf5
+last_fetched: 2026-10-08
 language: en-GB
 enforcement_status: in_force
 ---
@@ -41,6 +41,8 @@ _... High net worth individuals_
 (b) a warning and information in accordance with paragraphs (5) , (5A) and (6) (d) to (h) is sent to the recipient of the communication within two business days of the day on which the communication is made.
 
 (5) The warning must be in the following terms—
+
+“The content of this promotion has not been approved by an authorised person within the meaning of the Financial Services and Markets Act 2000. Reliance on this promotion for the purpose of engaging in any investment activity may expose an individual to a significant risk of losing all of the property or other assets invested.”.
 
 (5A) The warning must be accompanied by the following information—
 

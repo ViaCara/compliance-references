@@ -1,10 +1,7 @@
 """Processor-contract and restricted-transfer source coverage tests.
 
-A live compliance question (the Mistral data processing addendum against
-ViaCara's Article 9 triage data) found the corpus had no guidance on what an
-Article 28(3) contract must set out, and no citable instrument at the end of
-the Chapter V transfer route. These tests pin the sources that closed both
-gaps."""
+These tests pin the guidance on what an Article 28(3) contract must set out
+and the citable instruments at the end of the Chapter V transfer route."""
 
 import json
 import unittest

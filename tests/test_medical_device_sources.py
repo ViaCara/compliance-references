@@ -84,6 +84,16 @@ class MedicalDeviceSourceTests(unittest.TestCase):
         self.assertIn("Recommends therapeutic options, clinical decision support", body)
         self.assertIn("Processes data / information using AI", body)
 
+    def test_mhra_mental_health_guidance_names_triage_and_direct_diagnosis(self):
+        _, body = self._read("mhra-dmht-qualification-classification")
+
+        self.assertIn("Risk assesses, profiles, triages, screens", body)
+        self.assertIn("promotional materials (e.g. websites, social media and adverts)", body)
+        self.assertIn("Example 6 (inferred medical purpose)", body)
+        self.assertIn("healthcare administration support only (e.g.", body)
+        self.assertIn("including triaging and allocating\n> treatment pathways.", body)
+        self.assertIn("regulated as a class IIa medical device.", body)
+
     def test_dmcc_section_247_names_mental_health_vulnerability(self):
         source = self.sources["dmcc-2024-s-247"]
         self.assertTrue(source["source_uri"].endswith("ukpga/2024/13/section/247/data.xht"))
