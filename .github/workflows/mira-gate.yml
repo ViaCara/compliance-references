@@ -1,9 +1,10 @@
 name: mira-gate
 
 # The gate passes when Mira has reviewed the current head and every Mira
-# finding is answered, then merges the pull request unless a hold applies. The walkthrough score is information only: since
-# 7 October 2026 Mira scores statute mirrors 4/5 because it cannot check
-# legal text against the source.
+# finding is answered. It then merges the pull request when the tests run on
+# the same commit passed and no hold applies. The walkthrough score is
+# information only: since 7 October 2026 Mira scores statute mirrors 4/5
+# because it cannot check legal text against the source.
 # .github/scripts/mira_gate.py holds the rule; tests/test_mira_gate.py tests it.
 
 on:
@@ -13,9 +14,12 @@ on:
     types: [created, edited]
   pull_request_review_comment:
     types: [created, edited]
+  workflow_run:
+    workflows: [tests]
+    types: [completed]
 
 concurrency:
-  group: mira-gate-${{ github.event.issue.number || github.event.pull_request.number }}
+  group: mira-gate-${{ github.event.issue.number || github.event.pull_request.number || github.event.workflow_run.pull_requests[0].number }}
   cancel-in-progress: false
 
 jobs:
@@ -23,6 +27,7 @@ jobs:
     if: >
       github.event_name == 'pull_request' ||
       github.event_name == 'pull_request_review_comment' ||
+      (github.event_name == 'workflow_run' && github.event.workflow_run.pull_requests[0] != null) ||
       (github.event.issue.pull_request != null && github.event.comment.user.login == 'viacara-mira[bot]')
     runs-on: ubuntu-latest
     timeout-minutes: 5
@@ -63,5 +68,5 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
-          PR_NUMBER: ${{ github.event.issue.number || github.event.pull_request.number }}
+          PR_NUMBER: ${{ github.event.issue.number || github.event.pull_request.number || github.event.workflow_run.pull_requests[0].number }}
         run: python3 .github/scripts/mira_gate.py "$REPO" "$PR_NUMBER"
