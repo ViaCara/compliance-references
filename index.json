@@ -3234,10 +3234,10 @@
     "id": "jersey-authority-law-2018-art-017",
     "jurisdiction": "jersey",
     "path": "statute/jersey/authority-law-2018/article-017.md",
-    "revision_id": "regulator guidance page, checked 2026-09-18",
-    "sha": "6fb5b4bfb7b9413ddecbeca00088fd7de4d40197ac92d822e03742d78e4c4619",
-    "source_uri": "https://jerseyoic.org/guidance/data-protection/registration/registration-1",
-    "summary": "A controller or processor established in Jersey must not cause or permit personal data to be processed unless it is registered under Article 17 of the Data Protection Authority (Jersey) Law 2018.",
+    "revision_id": "Official Consolidated Version 1 January 2019 - Current",
+    "sha": "9bbbc36207f251600d8e04c92863b0db5a1791b742a3db6a91db7cc7ff5e2162",
+    "source_uri": "https://www.jerseylaw.je/laws/current/PDFs/L_4_2018.pdf",
+    "summary": "A controller or processor established in Jersey must not cause or permit personal data to be processed without being registered under Article 17 of the Data Protection Authority (Jersey) Law 2018, unless Regulations exempt it. Contravention is an offence.",
     "title": "Data Protection Authority (Jersey) Law 2018 Article 17 - Registration"
   },
   {
