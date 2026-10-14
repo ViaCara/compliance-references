@@ -43,7 +43,7 @@ A consumer reads `index.json` for search and the files under `corpus/` for the t
 | Tier | Authority | How | Licence |
 |---|---|---|---|
 | A | Statute, binding | Automated fetch from legislation.gov.uk + EUR-Lex | OGL3 / EU 2011/833 |
-| B | Guidance, persuasive | Quarterly curated verbatim quotes via Mira-gated PR | OGL3 / W3C Document License |
+| B | Guidance, persuasive | Quarterly curated verbatim quotes via PR, merged by an automated review gate | OGL3 / W3C Document License |
 | C | Standards, proprietary | External index only (title + URI + one-sentence neutral description) | Third-party, fair-dealing |
 
 ## Schedule

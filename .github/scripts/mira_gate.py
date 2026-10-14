@@ -145,35 +145,6 @@ def decide(
     )
 
 
-def merge_blocker(pull: dict, files: list[str]) -> str | None:
-    """Return why a passing pull request must wait for a human, or None to merge it."""
-    if pull["state"] != "open":
-        return "the pull request is not open"
-    if pull["draft"]:
-        return "the pull request is a draft"
-    if any(label["name"] == HOLD for label in pull["labels"]):
-        return f"the pull request carries {HOLD}"
-    if (pull["head"]["repo"] or {}).get("full_name") != pull["base"]["repo"]["full_name"]:
-        return "the pull request comes from a fork"
-    if any(path.startswith(".github/") for path in files):
-        return "the pull request changes .github/, which the gate cannot grade"
-    return None
-
-
-def merge(repository: str, number: int, pull: dict) -> None:
-    files = [f["filename"] for f in gh_pages(f"repos/{repository}/pulls/{number}/files?per_page=100")]
-    blocker = merge_blocker(pull, files)
-    if blocker:
-        print(f"Not merging #{number}: {blocker}.")
-        return
-    gh(
-        "-X", "PUT", f"repos/{repository}/pulls/{number}/merge",
-        "-f", "merge_method=squash", "-f", f"sha={pull['head']['sha']}",
-    )
-    subprocess.run(["gh", "workflow", "run", "tag-release.yml", "--repo", repository], check=True, timeout=60)
-    print(f"Merged #{number} and started tag-release.")
-
-
 def gh(*arguments: str) -> object:
     result = subprocess.run(["gh", "api", *arguments], check=True, capture_output=True, text=True, timeout=60)
     return json.loads(result.stdout)
@@ -203,9 +174,58 @@ def fetch_threads(repository: str, number: int) -> list[dict]:
         cursor = connection["pageInfo"]["endCursor"]
 
 
-def main(repository: str, number: int) -> int:
+def changed_paths(files: list[dict]) -> list[str]:
+    """Both names of every file, so a move out of .github/ still counts."""
+    return [path for f in files for path in (f["filename"], f.get("previous_filename")) if path]
+
+
+def merge_blocker(pull: dict, paths: list[str], listed_files: int) -> str | None:
+    """Return why a passing pull request must wait for a human, or None to merge it."""
+    if pull["state"] != "open":
+        return "the pull request is not open"
+    if pull["draft"]:
+        return "the pull request is a draft"
+    if any(label["name"].lower() == HOLD for label in pull["labels"]):
+        return f"the pull request carries {HOLD}"
+    if (pull["head"]["repo"] or {}).get("full_name") != pull["base"]["repo"]["full_name"]:
+        return "the pull request comes from a fork"
+    if pull["base"]["ref"] != pull["base"]["repo"]["default_branch"]:
+        return "the pull request does not target the default branch"
+    if pull["changed_files"] > listed_files:
+        return "GitHub listed only part of the changed files"
+    if any(path.startswith(".github/") for path in paths):
+        return "the pull request changes .github/, which the gate cannot grade"
+    return None
+
+
+def merge(repository: str, number: int, graded_sha: str) -> None:
+    files = gh_pages(f"repos/{repository}/pulls/{number}/files?per_page=100")
     pull = gh(f"repos/{repository}/pulls/{number}")
-    sha = pull["head"]["sha"]
+    if pull["head"]["sha"] != graded_sha:
+        print(f"Not merging #{number}: the head moved after the check.")
+        return
+    blocker = merge_blocker(pull, changed_paths(files), len(files))
+    if blocker:
+        print(f"Not merging #{number}: {blocker}.")
+        return
+    try:
+        gh("-X", "PUT", f"repos/{repository}/pulls/{number}/merge", "-f", "merge_method=squash", "-f", f"sha={graded_sha}")
+    except subprocess.CalledProcessError as error:
+        reason = (error.stderr or error.stdout or "").strip()
+        print(f"::error::GitHub refused the merge of #{number}: {reason}")
+        if "HTTP 409" in reason:
+            return
+        raise
+    print(f"Merged #{number}.")
+    try:
+        subprocess.run(["gh", "workflow", "run", "tag-release.yml", "--repo", repository], check=True, timeout=60)
+    except subprocess.CalledProcessError:
+        print(f"::error::#{number} is merged, but tag-release did not start. Run it by hand.")
+        raise
+
+
+def main(repository: str, number: int) -> int:
+    sha = gh(f"repos/{repository}/pulls/{number}")["head"]["sha"]
     walkthroughs = gh_pages(f"repos/{repository}/issues/{number}/comments?per_page=100")
     runs = gh(f"repos/{repository}/commits/{sha}/check-runs?check_name={CHECK_NAME}&filter=all&per_page=100")["check_runs"]
     head_seen_at = min((run["started_at"] for run in runs), default=None)
@@ -230,7 +250,7 @@ def main(repository: str, number: int) -> int:
     )
     print(f"{CHECK_NAME}: {verdict.conclusion} ({verdict.title}) on {sha}")
     if verdict.conclusion == "success":
-        merge(repository, number, pull)
+        merge(repository, number, sha)
     return 0
 
 
