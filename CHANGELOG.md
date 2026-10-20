@@ -2,6 +2,19 @@
 
 Drift log. Newer entries first.
 
+## 2026-10-20
+- **corpus/guidance/uk/mhra/medical-device-standalone-software-apps.md** hash 61c9880 -> c6f35c0
+  - source: https://www.gov.uk/government/publications/medical-devices-software-applications-apps
+  - prior_sha256: 61c9880607e1548f0d91227c42c59d66938ea73b4dba0c228bc9654b1502f537
+  - note: adds verbatim quotes from Appendix 1 (symptom checkers, v1.10f): the indication of seriousness output, the red flag filter device example and the class I or IIa rule; the earlier quotes are unchanged
+  - new_sha256:   c6f35c0f4b1b5533e7f5bed17ba808ede8914a1ac0ecad78fb63872932165eb9
+
+- **corpus/statute/uk/consumer-rights-act-2015/section-065.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2015/15/section/65/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   d0d5848f18897d43a6f91fce43b19d31a68f2965b017475c7e815bdf48ad5911
+  - revision: Thu, 15 Oct 2026 16:10:36 GMT
+
 ## 2026-10-14
 - **corpus/statute/jersey/authority-law-2018/article-017.md** hash 6fb5b4b -> 9bbbc36
   - source: https://www.jerseylaw.je/laws/current/PDFs/L_4_2018.pdf

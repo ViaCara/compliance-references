@@ -32,6 +32,7 @@ class ConsumerLawSourceTests(unittest.TestCase):
             "dmcc-2024-s-248": "ukpga/2024/13/section/248/data.xht",
             "consumer-rights-act-2015-s-062": "ukpga/2015/15/section/62/data.xht",
             "consumer-rights-act-2015-s-064": "ukpga/2015/15/section/64/data.xht",
+            "consumer-rights-act-2015-s-065": "ukpga/2015/15/section/65/data.xht",
             "consumer-rights-act-2015-s-068": "ukpga/2015/15/section/68/data.xht",
             "consumer-rights-act-2015-sch-002": "ukpga/2015/15/schedule/2/data.xht",
             "consumer-contracts-regs-2013-reg-009": "uksi/2013/3134/regulation/9/data.xht",
@@ -65,6 +66,11 @@ class ConsumerLawSourceTests(unittest.TestCase):
             "dmcc-2024-s-246": "average consumer",
             "consumer-rights-act-2015-s-062": (
                 "(4) A term is unfair if, contrary to the requirement of good faith"
+            ),
+            "consumer-rights-act-2015-s-065": (
+                "(1) A trader cannot by a term of a consumer contract or by a consumer "
+                "notice exclude or restrict liability for death or personal injury "
+                "resulting from negligence."
             ),
             "consumer-rights-act-2015-s-068": (
                 "(1) A trader must ensure that a written term of a consumer contract, or a "
