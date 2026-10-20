@@ -1078,6 +1078,21 @@
       "consumer"
     ],
     "enforcement_status": "in_force",
+    "id": "consumer-rights-act-2015-s-065",
+    "jurisdiction": "uk",
+    "path": "statute/uk/consumer-rights-act-2015/section-065.md",
+    "revision_id": "Thu, 15 Oct 2026 16:10:36 GMT",
+    "sha": "d0d5848f18897d43a6f91fce43b19d31a68f2965b017475c7e815bdf48ad5911",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2015/15/section/65/data.xht",
+    "summary": "A trader cannot by a term of a consumer contract or by a consumer notice exclude or restrict liability for death or personal injury resulting from negligence, and a person's agreement to or awareness of such a term or notice is not of itself evidence that they voluntarily accepted the risk.",
+    "title": "Consumer Rights Act 2015 section 65 - Bar on exclusion or restriction of negligence liability"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "consumer"
+    ],
+    "enforcement_status": "in_force",
     "id": "consumer-rights-act-2015-s-068",
     "jurisdiction": "uk",
     "path": "statute/uk/consumer-rights-act-2015/section-068.md",
@@ -3356,9 +3371,9 @@
     "jurisdiction": "uk",
     "path": "guidance/uk/mhra/medical-device-standalone-software-apps.md",
     "revision_id": "v1.10f, 1 Jul 2023",
-    "sha": "61c9880607e1548f0d91227c42c59d66938ea73b4dba0c228bc9654b1502f537",
+    "sha": "c6f35c0f4b1b5533e7f5bed17ba808ede8914a1ac0ecad78fb63872932165eb9",
     "source_uri": "https://www.gov.uk/government/publications/medical-devices-software-applications-apps",
-    "summary": "MHRA guidance on when stand-alone software and apps qualify as medical devices in Great Britain. Qualification follows the intended purpose read objectively from labelling, instructions and promotional material, and a general 'not a medical device' disclaimer does not cure a medical claim made elsewhere. Decision support is unlikely to be a device where options are explained but a professional decides, or where it offers only lifestyle choices or referral advice; it is likely to be one where it influences the actual treatment. Treatment recommendations for listed conditions may be a device; reference information and signposting are unlikely to be.",
+    "summary": "MHRA guidance on when stand-alone software and apps qualify as medical devices in Great Britain. Qualification follows the intended purpose read objectively from labelling, instructions and promotional material, and a general 'not a medical device' disclaimer does not cure a medical claim made elsewhere. Decision support is unlikely to be a device where options are explained but a professional decides, or where it offers only lifestyle choices or referral advice; it is likely to be one where it influences the actual treatment. Treatment recommendations for listed conditions may be a device; reference information and signposting are unlikely to be. Appendix 1 on symptom checkers lists an indication of seriousness, such as a red flag, among their outputs, and names software that offers filters by red flag, severity or probability of a match as a possible device.",
     "title": "MHRA: Medical device stand-alone software including apps"
   },
   {

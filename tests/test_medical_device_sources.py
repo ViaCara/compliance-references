@@ -77,6 +77,14 @@ class MedicalDeviceSourceTests(unittest.TestCase):
         self.assertIn("options may be explained but the health care\n> professional decides which path to take", body)
         self.assertIn("Software that provides treatment recommendations for listed conditions", body)
 
+    def test_mhra_software_guidance_quotes_the_symptom_checker_severity_label(self):
+        _, body = self._read("mhra-standalone-software-apps")
+
+        self.assertIn("## Appendix 1 – Symptom checkers", body)
+        self.assertIn("An indication of seriousness – e.g. ‘Red flag’.", body)
+        self.assertIn("Software that offers filters by red flag/severity/probability of a match.", body)
+        self.assertIn("in which case they will be class IIa.", body)
+
     def test_mhra_mental_health_guidance_names_recommending_therapeutic_options(self):
         fields, body = self._read("mhra-dmht-qualification-classification")
 
