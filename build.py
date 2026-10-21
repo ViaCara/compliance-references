@@ -111,7 +111,7 @@ def _process_entry(entry, target_path: Path, ctx: BuildContext) -> str:
     try:
         result = ctx.fetcher.fetch(entry["source_uri"], if_none_match=prior_etag)
     except NotModified:
-        return "no-op"
+        return _retitle(entry, target_path, prior_fields) or "no-op"
 
     transformer_kind = entry["kind"]
     citation = entry.get("citation") or entry.get("title") or entry["id"]
@@ -125,7 +125,7 @@ def _process_entry(entry, target_path: Path, ctx: BuildContext) -> str:
     new_hash = body_sha256(body)
     enforcement_status = entry.get("enforcement_status", "in_force")
     if prior_sha == new_hash and prior_status == enforcement_status:
-        return "unchanged"
+        return _retitle(entry, target_path, prior_fields) or "unchanged"
 
     fields = {
         "id": entry["id"],
@@ -158,6 +158,15 @@ def _process_entry(entry, target_path: Path, ctx: BuildContext) -> str:
             revision=result.last_modified,
         )
     )
+    return "written"
+
+
+def _retitle(entry, target_path: Path, prior_fields: dict | None) -> str | None:
+    title = entry.get("title") or entry.get("citation") or entry["id"]
+    if not prior_fields or prior_fields.get("title") == title:
+        return None
+    _fields, body = parse(target_path.read_text(encoding="utf-8"))
+    target_path.write_text(render({**prior_fields, "title": title}, body), encoding="utf-8")
     return "written"
 
 
