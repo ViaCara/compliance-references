@@ -1,6 +1,6 @@
 ---
 id: pecr-reg-023
-title: PECR regulation 23 - Restriction on use of automated calling systems
+title: PECR regulation 23 - Use of electronic mail for direct marketing purposes where the identity or address of the sender is concealed
 instrument: pecr
 kind: legislation_regulation
 citation: PECR regulation 23

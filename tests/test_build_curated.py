@@ -108,6 +108,79 @@ class ProcessEntryTest(unittest.TestCase):
 
             self.assertEqual('"prior"', fetcher.if_none_match)
 
+    def test_rewrites_title_when_manifest_title_changes_without_body_drift(self):
+        entry = {
+            "id": "pecr-reg-023",
+            "citation": "PECR regulation 23",
+            "title": "PECR regulation 23 - Corrected title",
+            "instrument": "pecr",
+            "kind": "legislation_regulation",
+            "source_uri": "https://example.gov.uk/regulation-023",
+        }
+        body = "# PECR regulation 23\n\nText.\n"
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "regulation-023.md"
+            fields = {
+                "id": entry["id"],
+                "title": "PECR regulation 23 - Wrong title",
+                "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
+                "content_sha256": body_sha256(body),
+                "last_fetched": "2026-08-20",
+                "enforcement_status": "in_force",
+            }
+            path.write_text(render(fields, body), encoding="utf-8")
+            changelog = _StaticChangelog()
+            context = build.BuildContext(
+                fetcher=_StaticFetcher(FetchResult(body=body.encode(), etag=None, last_modified=None)),
+                legislation=_StaticTransformer(body),
+                eur_lex=None,
+                changelog=changelog,
+                today="2026-10-21",
+            )
+
+            self.assertEqual("written", build._process_entry(entry, path, context))
+
+            actual, actual_body = build.parse(path.read_text(encoding="utf-8"))
+
+            self.assertEqual("PECR regulation 23 - Corrected title", actual["title"])
+
+            self.assertEqual({**fields, "title": actual["title"]}, actual)
+
+            self.assertEqual(body, actual_body)
+
+            self.assertFalse(hasattr(changelog, "entry"))
+
+    def test_rewrites_title_when_source_is_not_modified(self):
+        entry = {
+            "id": "pecr-reg-023",
+            "title": "PECR regulation 23 - Corrected title",
+            "kind": "legislation_regulation",
+            "source_uri": "https://example.gov.uk/regulation-023",
+        }
+        body = "# PECR regulation 23\n\nText.\n"
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "regulation-023.md"
+            fields = {
+                "id": entry["id"],
+                "title": "PECR regulation 23 - Wrong title",
+                "content_sha256": body_sha256(body),
+                "etag": '"prior"',
+            }
+            path.write_text(render(fields, body), encoding="utf-8")
+            context = build.BuildContext(
+                fetcher=_NotModifiedFetcher(),
+                legislation=None,
+                eur_lex=None,
+                changelog=_StaticChangelog(),
+                today="2026-10-21",
+            )
+
+            self.assertEqual("written", build._process_entry(entry, path, context))
+
+            actual, _body = build.parse(path.read_text(encoding="utf-8"))
+
+            self.assertEqual("PECR regulation 23 - Corrected title", actual["title"])
+
     def test_records_status_change_with_content_drift(self):
         self.assertEqual(
             "hash old -> new; enforcement status in_force -> repealed",
@@ -131,6 +204,11 @@ class _StaticFetcher:
     def fetch(self, _url: str, *, if_none_match: str | None = None):
         self.if_none_match = if_none_match
         return self.result
+
+
+class _NotModifiedFetcher:
+    def fetch(self, _url: str, *, if_none_match: str | None = None):
+        raise build.NotModified()
 
 
 class _StaticTransformer:
