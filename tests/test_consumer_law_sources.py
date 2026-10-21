@@ -39,6 +39,14 @@ class ConsumerLawSourceTests(unittest.TestCase):
             "consumer-contracts-regs-2013-reg-010": "uksi/2013/3134/regulation/10/data.xht",
             "consumer-contracts-regs-2013-reg-013": "uksi/2013/3134/regulation/13/data.xht",
             "consumer-contracts-regs-2013-reg-019": "uksi/2013/3134/regulation/19/data.xht",
+            "consumer-contracts-regs-2013-reg-029": "uksi/2013/3134/regulation/29/data.xht",
+            "consumer-contracts-regs-2013-reg-030": "uksi/2013/3134/regulation/30/data.xht",
+            "consumer-contracts-regs-2013-reg-031": "uksi/2013/3134/regulation/31/data.xht",
+            "consumer-contracts-regs-2013-reg-032": "uksi/2013/3134/regulation/32/data.xht",
+            "consumer-contracts-regs-2013-reg-033": "uksi/2013/3134/regulation/33/data.xht",
+            "consumer-contracts-regs-2013-reg-034": "uksi/2013/3134/regulation/34/data.xht",
+            "consumer-contracts-regs-2013-reg-035": "uksi/2013/3134/regulation/35/data.xht",
+            "consumer-contracts-regs-2013-reg-036": "uksi/2013/3134/regulation/36/data.xht",
             "consumer-contracts-regs-2013-sch-001": "uksi/2013/3134/schedule/1/data.xht",
             "consumer-contracts-regs-2013-sch-002": "uksi/2013/3134/schedule/2/data.xht",
             "ecommerce-regs-2002-reg-006": "uksi/2002/2013/regulation/6/data.xht",
@@ -79,6 +87,30 @@ class ConsumerLawSourceTests(unittest.TestCase):
             "consumer-contracts-regs-2013-reg-013": (
                 "must give or make available to the consumer the information listed in "
                 "Schedule 2"
+            ),
+            "consumer-contracts-regs-2013-reg-029": (
+                "(1) The consumer may cancel a distance or off-premises contract at any time in the cancellation period without giving any reason"
+            ),
+            "consumer-contracts-regs-2013-reg-030": (
+                "the cancellation period ends at the end of 14 days after the day on which the contract is entered into."
+            ),
+            "consumer-contracts-regs-2013-reg-031": (
+                "(3) Otherwise the cancellation period ends at the end of 12 months after the day on which it would have ended under regulation 30."
+            ),
+            "consumer-contracts-regs-2013-reg-032": (
+                "(b) make any other clear statement setting out the decision to cancel the contract."
+            ),
+            "consumer-contracts-regs-2013-reg-033": (
+                "(a) the cancellation ends the obligations of the parties to perform the contract, and"
+            ),
+            "consumer-contracts-regs-2013-reg-034": (
+                "(1) The trader must reimburse all payments, other than payments for delivery, received from the consumer, subject to paragraph (10)."
+            ),
+            "consumer-contracts-regs-2013-reg-035": (
+                "(5) The consumer must bear the direct cost of returning goods under paragraph (2), unless—"
+            ),
+            "consumer-contracts-regs-2013-reg-036": (
+                "(1) The trader must not begin the supply of a service before the end of the cancellation period provided for in regulation 30(1) unless the consumer—"
             ),
             "ecommerce-regs-2002-reg-006": (
                 "shall make available to the recipient of the service"

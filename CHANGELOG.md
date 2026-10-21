@@ -2,6 +2,55 @@
 
 Drift log. Newer entries first.
 
+## 2026-10-21
+- **corpus/statute/uk/consumer-contracts-regs-2013/regulation-036.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2013/3134/regulation/36/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   2cb2df391e4aa7cf7969e74897d823599c72e823d67e38105e02156bf1765abc
+  - revision: Thu, 15 Oct 2026 16:10:36 GMT
+
+- **corpus/statute/uk/consumer-contracts-regs-2013/regulation-035.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2013/3134/regulation/35/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   e4a914b5301c8005cbf9d6e742b3753040c4b11a8ec7ee0371bab95f614e51e5
+  - revision: Thu, 15 Oct 2026 16:10:36 GMT
+
+- **corpus/statute/uk/consumer-contracts-regs-2013/regulation-034.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2013/3134/regulation/34/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   eea847ccd8858549b33a40cc7e826f380be01fa7fe7e5febe31e1d52f524f06d
+  - revision: Thu, 15 Oct 2026 16:10:36 GMT
+
+- **corpus/statute/uk/consumer-contracts-regs-2013/regulation-033.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2013/3134/regulation/33/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   994318e9eda76ccd3d5b3afd909de21ae0af9c03e9b566c036a1dc2f58dbe2b2
+  - revision: Thu, 15 Oct 2026 16:10:36 GMT
+
+- **corpus/statute/uk/consumer-contracts-regs-2013/regulation-032.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2013/3134/regulation/32/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   4d065ab93237fa802c7830a8f6c03c6456442b076d26685a577fad1dbce5bd08
+  - revision: Thu, 15 Oct 2026 16:10:36 GMT
+
+- **corpus/statute/uk/consumer-contracts-regs-2013/regulation-031.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2013/3134/regulation/31/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   554882867b2a9a2db40dd5e7ec6f2a142a4f1e76edf4a1116c4e4d56edfa4837
+  - revision: Thu, 15 Oct 2026 16:10:36 GMT
+
+- **corpus/statute/uk/consumer-contracts-regs-2013/regulation-030.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2013/3134/regulation/30/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   c629fa4c9e3633391fe1f8af9240c3a9cd9dd5387ce423783a2573a4cbbb318b
+  - revision: Thu, 15 Oct 2026 16:10:36 GMT
+
+- **corpus/statute/uk/consumer-contracts-regs-2013/regulation-029.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2013/3134/regulation/29/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   1a590470735562dd4a1730d15f352174c0ecdf974e7cc39ec8ce64fb85aab153
+  - revision: Thu, 15 Oct 2026 16:10:36 GMT
+
 ## 2026-10-20
 - **corpus/guidance/uk/mhra/medical-device-standalone-software-apps.md** hash 61c9880 -> c6f35c0
   - source: https://www.gov.uk/government/publications/medical-devices-software-applications-apps

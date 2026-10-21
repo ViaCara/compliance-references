@@ -1001,6 +1001,126 @@
       "consumer"
     ],
     "enforcement_status": "in_force",
+    "id": "consumer-contracts-regs-2013-reg-029",
+    "jurisdiction": "uk",
+    "path": "statute/uk/consumer-contracts-regs-2013/regulation-029.md",
+    "revision_id": "Thu, 15 Oct 2026 16:10:36 GMT",
+    "sha": "1a590470735562dd4a1730d15f352174c0ecdf974e7cc39ec8ce64fb85aab153",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2013/3134/regulation/29/data.xht",
+    "summary": "The consumer's right to cancel a distance or off-premises contract in the cancellation period without giving a reason and without liability other than under regulations 34(3), 34(9), 35(5) and 36(4), and the right to withdraw an offer before the contract is made.",
+    "title": "Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013 regulation 29 - Right to cancel"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "consumer"
+    ],
+    "enforcement_status": "in_force",
+    "id": "consumer-contracts-regs-2013-reg-030",
+    "jurisdiction": "uk",
+    "path": "statute/uk/consumer-contracts-regs-2013/regulation-030.md",
+    "revision_id": "Thu, 15 Oct 2026 16:10:36 GMT",
+    "sha": "c629fa4c9e3633391fe1f8af9240c3a9cd9dd5387ce423783a2573a4cbbb318b",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2013/3134/regulation/30/data.xht",
+    "summary": "When the cancellation period begins and ends: 14 days after the day the contract is entered into for a service contract, and later dates for sales and digital content contracts.",
+    "title": "Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013 regulation 30 - Normal cancellation period"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "consumer"
+    ],
+    "enforcement_status": "in_force",
+    "id": "consumer-contracts-regs-2013-reg-031",
+    "jurisdiction": "uk",
+    "path": "statute/uk/consumer-contracts-regs-2013/regulation-031.md",
+    "revision_id": "Thu, 15 Oct 2026 16:10:36 GMT",
+    "sha": "554882867b2a9a2db40dd5e7ec6f2a142a4f1e76edf4a1116c4e4d56edfa4837",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2013/3134/regulation/31/data.xht",
+    "summary": "If the trader does not give the information on the right to cancel, the cancellation period ends 14 days after the consumer receives it, and at most 12 months after the normal period would have ended.",
+    "title": "Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013 regulation 31 - Cancellation period extended for breach of information requirement"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "consumer"
+    ],
+    "enforcement_status": "in_force",
+    "id": "consumer-contracts-regs-2013-reg-032",
+    "jurisdiction": "uk",
+    "path": "statute/uk/consumer-contracts-regs-2013/regulation-032.md",
+    "revision_id": "Thu, 15 Oct 2026 16:10:36 GMT",
+    "sha": "4d065ab93237fa802c7830a8f6c03c6456442b076d26685a577fad1dbce5bd08",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2013/3134/regulation/32/data.xht",
+    "summary": "How a consumer withdraws an offer or cancels a contract, by the model cancellation form or another clear statement, and when a cancellation sent within the period counts as made in time.",
+    "title": "Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013 regulation 32 - Exercise of the right to withdraw or cancel"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "consumer"
+    ],
+    "enforcement_status": "in_force",
+    "id": "consumer-contracts-regs-2013-reg-033",
+    "jurisdiction": "uk",
+    "path": "statute/uk/consumer-contracts-regs-2013/regulation-033.md",
+    "revision_id": "Thu, 15 Oct 2026 16:10:36 GMT",
+    "sha": "994318e9eda76ccd3d5b3afd909de21ae0af9c03e9b566c036a1dc2f58dbe2b2",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2013/3134/regulation/33/data.xht",
+    "summary": "Withdrawal or cancellation ends the obligations of the parties to perform the contract, subject to the rest of Part 3.",
+    "title": "Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013 regulation 33 - Effect of withdrawal or cancellation"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "consumer"
+    ],
+    "enforcement_status": "in_force",
+    "id": "consumer-contracts-regs-2013-reg-034",
+    "jurisdiction": "uk",
+    "path": "statute/uk/consumer-contracts-regs-2013/regulation-034.md",
+    "revision_id": "Thu, 15 Oct 2026 16:10:36 GMT",
+    "sha": "eea847ccd8858549b33a40cc7e826f380be01fa7fe7e5febe31e1d52f524f06d",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2013/3134/regulation/34/data.xht",
+    "summary": "The trader's duty to reimburse every payment, including standard delivery, without undue delay and within 14 days, by the same means of payment and without a fee, and the deduction allowed for goods diminished by handling.",
+    "title": "Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013 regulation 34 - Reimbursement by trader in the event of withdrawal or cancellation"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "consumer"
+    ],
+    "enforcement_status": "in_force",
+    "id": "consumer-contracts-regs-2013-reg-035",
+    "jurisdiction": "uk",
+    "path": "statute/uk/consumer-contracts-regs-2013/regulation-035.md",
+    "revision_id": "Thu, 15 Oct 2026 16:10:36 GMT",
+    "sha": "e4a914b5301c8005cbf9d6e742b3753040c4b11a8ec7ee0371bab95f614e51e5",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2013/3134/regulation/35/data.xht",
+    "summary": "The consumer's duty to return or hand back goods after cancellation, the 14-day period, and who bears the cost of return.",
+    "title": "Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013 regulation 35 - Return of goods in the event of cancellation"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "consumer"
+    ],
+    "enforcement_status": "in_force",
+    "id": "consumer-contracts-regs-2013-reg-036",
+    "jurisdiction": "uk",
+    "path": "statute/uk/consumer-contracts-regs-2013/regulation-036.md",
+    "revision_id": "Thu, 15 Oct 2026 16:10:36 GMT",
+    "sha": "2cb2df391e4aa7cf7969e74897d823599c72e823d67e38105e02156bf1765abc",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2013/3134/regulation/36/data.xht",
+    "summary": "A trader must not begin a service before the cancellation period ends unless the consumer expressly requests it, on a durable medium for an off-premises contract. A consumer who cancels after such a request pays a proportionate amount for the service supplied, and nothing if the trader did not give the required cancellation or cost information. The right to cancel ends once the service is fully performed, where the consumer acknowledged that loss.",
+    "title": "Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013 regulation 36 - Supply of service in cancellation period"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "consumer"
+    ],
+    "enforcement_status": "in_force",
     "id": "consumer-contracts-regs-2013-sch-001",
     "jurisdiction": "uk",
     "path": "statute/uk/consumer-contracts-regs-2013/schedule-001.md",
