@@ -2,9 +2,9 @@
 
 ## Merge gate: Mira
 
-This repo requires the `mira-confidence` check before merge. The check passes
-when every Mira finding on the pull request is answered (since 8 October
-2026). It is an exception to the global rule. The global rule treats hosted reviewers as a
+The `mira-confidence` check merges a pull request. The check passes when
+every Mira finding on the pull request is answered (since 8 October 2026),
+and the gate then squash-merges it with no human step. It is an exception to the global rule. The global rule treats hosted reviewers as a
 bonus, never a gate.
 
 The gate works like this:
@@ -22,11 +22,19 @@ The gate works like this:
 - The walkthrough's `Confidence: n/5` score is information only. Since 7
   October 2026 Mira scores statute mirrors 4/5 because it cannot check legal
   text against the live source, so a score rule blocked every PR.
-- Branch protection on `main` requires the `mira-confidence` check.
-- A new push resets the check to neutral. Merge stays blocked until Mira
+- When the check passes, the gate squash-merges the pull request and starts
+  `tag-release`. It leaves the pull request for a human when it is a draft,
+  carries `do-not-merge` (any case), comes from a fork, targets another
+  branch or changes `.github/`. The reason is in the job log.
+- To hold a pull request, open it as a draft or add `do-not-merge`. Releasing
+  a hold starts no run: re-run the latest `mira-gate` run to merge it.
+- A new push resets the check to neutral. The gate does not merge until Mira
   reviews the new commit.
+- `main` has no branch protection. The gate is the only merge path that
+  checks Mira; a maintainer can still merge by hand.
 
-Keep this note in sync with branch protection. Update both together.
+Keep this note in sync with `.github/scripts/mira_gate.py`. Update both
+together.
 
 ## Known gap: the PR that changes the gate itself
 
@@ -42,6 +50,10 @@ runs do, so its `mira-confidence` result proves nothing.
 To merge a PR that edits `mira-gate.yml` or `mira_gate.py`, read the diff and
 Mira's comments by eye. Do not rely on `mira-confidence` for it. Every other
 PR is not affected.
+
+The `.github/` hold does not bind such a PR either: its own copy of
+`mira-gate.yml` runs on review comments and could merge it. Only a maintainer
+with write access can open one.
 
 ## Public repository: keep the text neutral
 

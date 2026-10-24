@@ -5,8 +5,11 @@ finding is answered: a maintainer replied `fixed in <sha>` or
 `@viacara-mira reject <reason>`, or Mira resolved the thread itself. The
 walkthrough's `Confidence: n/5` score is information only.
 
+When the check passes, the script squash-merges the pull request and starts
+tag-release, unless `merge_blocker` names a reason to leave it for a human.
+
 Usage: python3 .github/scripts/mira_gate.py <owner/repo> <pr-number>
-Reads GitHub through `gh api` and writes the check run.
+Reads GitHub through `gh api`, writes the check run and merges.
 """
 
 from __future__ import annotations
@@ -27,6 +30,7 @@ COMMENT_COUNT = re.compile(r"(\d+) comments?", re.IGNORECASE)
 FIXED = re.compile(r"\Afixed in [0-9a-f]{7,40}\b", re.IGNORECASE)
 REJECT = re.compile(r"\A@viacara-mira reject\s+\S", re.IGNORECASE)
 MAINTAINER = {"write", "maintain", "admin"}
+HOLD = "do-not-merge"
 
 THREADS_QUERY = """query($owner:String!,$repo:String!,$pr:Int!,$cursor:String){
   repository(owner:$owner,name:$repo){pullRequest(number:$pr){
@@ -170,6 +174,56 @@ def fetch_threads(repository: str, number: int) -> list[dict]:
         cursor = connection["pageInfo"]["endCursor"]
 
 
+def changed_paths(files: list[dict]) -> list[str]:
+    """Both names of every file, so a move out of .github/ still counts."""
+    return [path for f in files for path in (f["filename"], f.get("previous_filename")) if path]
+
+
+def merge_blocker(pull: dict, paths: list[str], listed_files: int) -> str | None:
+    """Return why a passing pull request must wait for a human, or None to merge it."""
+    if pull["state"] != "open":
+        return "the pull request is not open"
+    if pull["draft"]:
+        return "the pull request is a draft"
+    if any(label["name"].lower() == HOLD for label in pull["labels"]):
+        return f"the pull request carries {HOLD}"
+    if (pull["head"]["repo"] or {}).get("full_name") != pull["base"]["repo"]["full_name"]:
+        return "the pull request comes from a fork"
+    if pull["base"]["ref"] != pull["base"]["repo"]["default_branch"]:
+        return "the pull request does not target the default branch"
+    if pull["changed_files"] > listed_files:
+        return "GitHub listed only part of the changed files"
+    if any(path.startswith(".github/") for path in paths):
+        return "the pull request changes .github/, which the gate cannot grade"
+    return None
+
+
+def merge(repository: str, number: int, graded_sha: str) -> None:
+    files = gh_pages(f"repos/{repository}/pulls/{number}/files?per_page=100")
+    pull = gh(f"repos/{repository}/pulls/{number}")
+    if pull["head"]["sha"] != graded_sha:
+        print(f"Not merging #{number}: the head moved after the check.")
+        return
+    blocker = merge_blocker(pull, changed_paths(files), len(files))
+    if blocker:
+        print(f"Not merging #{number}: {blocker}.")
+        return
+    try:
+        gh("-X", "PUT", f"repos/{repository}/pulls/{number}/merge", "-f", "merge_method=squash", "-f", f"sha={graded_sha}")
+    except subprocess.CalledProcessError as error:
+        reason = (error.stderr or error.stdout or "").strip()
+        print(f"::error::GitHub refused the merge of #{number}: {reason}")
+        if "HTTP 409" in reason:
+            return
+        raise
+    print(f"Merged #{number}.")
+    try:
+        subprocess.run(["gh", "workflow", "run", "tag-release.yml", "--repo", repository], check=True, timeout=60)
+    except subprocess.CalledProcessError:
+        print(f"::error::#{number} is merged, but tag-release did not start. Run it by hand.")
+        raise
+
+
 def main(repository: str, number: int) -> int:
     sha = gh(f"repos/{repository}/pulls/{number}")["head"]["sha"]
     walkthroughs = gh_pages(f"repos/{repository}/issues/{number}/comments?per_page=100")
@@ -195,6 +249,8 @@ def main(repository: str, number: int) -> int:
         "-f", f"output[title]={verdict.title}", "-f", f"output[summary]={verdict.summary}",
     )
     print(f"{CHECK_NAME}: {verdict.conclusion} ({verdict.title}) on {sha}")
+    if verdict.conclusion == "success":
+        merge(repository, number, sha)
     return 0
 
 

@@ -1,7 +1,7 @@
 name: mira-gate
 
 # The gate passes when Mira has reviewed the current head and every Mira
-# finding is answered. The walkthrough score is information only: since
+# finding is answered, then merges the pull request unless a hold applies. The walkthrough score is information only: since
 # 7 October 2026 Mira scores statute mirrors 4/5 because it cannot check
 # legal text against the source.
 # .github/scripts/mira_gate.py holds the rule; tests/test_mira_gate.py tests it.
@@ -14,6 +14,10 @@ on:
   pull_request_review_comment:
     types: [created, edited]
 
+concurrency:
+  group: mira-gate-${{ github.event.issue.number || github.event.pull_request.number }}
+  cancel-in-progress: false
+
 jobs:
   gate:
     if: >
@@ -23,8 +27,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     permissions:
+      actions: write
       checks: write
-      contents: read
+      contents: write
       pull-requests: read
     steps:
       # The first mira-confidence run on a head marks when GitHub saw the
@@ -40,7 +45,7 @@ jobs:
           gh api -X POST "repos/$REPO/check-runs" \
             -f name=mira-confidence -f head_sha="$HEAD_SHA" -f status=completed -f conclusion=neutral \
             -f "output[title]=Waiting for Mira review" \
-            -f "output[summary]=Mira has not reviewed this commit yet. Merge is blocked until viacara-mira reviews it and every finding is answered." \
+            -f "output[summary]=Mira has not reviewed this commit yet. The gate merges only after viacara-mira reviews this commit and every finding is answered." \
             --silent
 
       # Always the default branch's copy, so a pull request cannot change the
@@ -51,6 +56,7 @@ jobs:
         with:
           ref: ${{ github.event.repository.default_branch }}
           sparse-checkout: .github/scripts
+          persist-credentials: false
 
       - name: Decide the check
         if: github.event_name != 'pull_request'

@@ -111,5 +111,53 @@ class MiraGateTests(unittest.TestCase):
         self.assertEqual({"kylewelsby"}, mira_gate.reply_authors(threads))
 
 
+def pull(draft=False, labels=(), head_repo="ViaCara/compliance-references", state="open", base_ref="main", changed=1):
+    base_repo = {"full_name": "ViaCara/compliance-references", "default_branch": "main"}
+    return {
+        "state": state,
+        "draft": draft,
+        "labels": [{"name": name} for name in labels],
+        "head": {"repo": {"full_name": head_repo} if head_repo else None},
+        "base": {"ref": base_ref, "repo": base_repo},
+        "changed_files": changed,
+    }
+
+
+class MergeBlockerTests(unittest.TestCase):
+    def blocker(self, pull_request, paths=("corpus/statute/uk/x/section-001.md",), listed=None):
+        return mira_gate.merge_blocker(pull_request, list(paths), len(paths) if listed is None else listed)
+
+    def test_passing_pull_request_merges(self):
+        self.assertIsNone(self.blocker(pull()))
+
+    def test_draft_waits(self):
+        self.assertIn("draft", self.blocker(pull(draft=True)))
+
+    def test_hold_label_waits_in_any_case(self):
+        self.assertIn("do-not-merge", self.blocker(pull(labels=["Do-Not-Merge"])))
+
+    def test_fork_waits(self):
+        self.assertIn("fork", self.blocker(pull(head_repo="someone/compliance-references")))
+
+    def test_deleted_fork_waits(self):
+        self.assertIn("fork", self.blocker(pull(head_repo=None)))
+
+    def test_closed_pull_request_is_left(self):
+        self.assertIn("open", self.blocker(pull(state="closed")))
+
+    def test_other_base_waits(self):
+        self.assertIn("default branch", self.blocker(pull(base_ref="feature")))
+
+    def test_partial_file_list_waits(self):
+        self.assertIn("part", self.blocker(pull(changed=3500), listed=3000))
+
+    def test_change_to_the_workflows_needs_a_human(self):
+        self.assertIn(".github/", self.blocker(pull(changed=2), ["README.md", ".github/scripts/mira_gate.py"]))
+
+    def test_move_out_of_github_counts_as_a_change_to_it(self):
+        files = [{"filename": "docs/mira-gate.yml", "previous_filename": ".github/workflows/mira-gate.yml"}]
+        self.assertIn(".github/", self.blocker(pull(), mira_gate.changed_paths(files)))
+
+
 if __name__ == "__main__":
     unittest.main()
