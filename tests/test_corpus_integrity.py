@@ -27,7 +27,7 @@ class CorpusIntegrityTest(unittest.TestCase):
         for source in self.sources:
             text = (CORPUS / source["target"]).read_text(encoding="utf-8")
             recorded = parse(text)[0].get("content_sha256")
-            if recorded and recorded != body_sha256(text):
+            if recorded != body_sha256(text):
                 mismatches.append(source["target"])
         self.assertEqual(mismatches, [], "corpus bodies changed without a rebuild")
 
