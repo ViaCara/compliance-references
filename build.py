@@ -16,7 +16,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from lib.changelog import Changelog, Entry
-from lib.fetcher import FetchError, Fetcher, NotModified, TransportError
+from lib.fetcher import FetchError, Fetcher, NotModified
 from lib.frontmatter import FrontmatterError, body_sha256, parse, render
 from lib.index import write_index
 from lib.manifest import EUR_LEX_KINDS, LEGISLATION_KINDS, OTHER_KINDS, load

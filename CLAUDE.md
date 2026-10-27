@@ -31,8 +31,12 @@ The gate works like this:
   a hold starts no run: re-run the latest `mira-gate` run to merge it.
 - A new push resets the check to neutral. The gate does not merge until Mira
   reviews the new commit.
-- `main` has no branch protection. The gate is the only merge path that
-  checks Mira; a maintainer can still merge by hand.
+- The `main: reviewed and tested` ruleset (27 October 2026) requires a pull
+  request and the `tests` and `mira-confidence` checks from GitHub Actions,
+  and blocks force-pushes and deletion. A repository admin can bypass it.
+- `tests` runs `ruff check .` (`ruff.toml`) and the unit tests.
+  `tests/test_corpus_integrity.py` fails when a corpus body no longer matches
+  its `content_sha256`, or when `index.json` is stale.
 
 Keep this note in sync with `.github/scripts/mira_gate.py`. Update both
 together.
