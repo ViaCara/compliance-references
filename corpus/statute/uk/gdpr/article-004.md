@@ -6,9 +6,9 @@ kind: legislation_article
 citation: UK GDPR Article 4
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/4/data.xht"
 source_format: xhtml
-revision_id: "Wed, 22 Jul 2026 18:56:31 GMT"
-content_sha256: ced080298a9de4d12c00bd908f0e2a5d29b9605f8282d97a27b18144bb549019
-last_fetched: 2026-07-28
+revision_id: "Thu, 15 Oct 2026 17:10:36 GMT"
+content_sha256: 8ddb1f6f15948dd9a041377812736d7f6cb59f75b1e4e1fc57e8db0d7f4b70bc
+last_fetched: 2026-11-03
 language: en-GB
 enforcement_status: in_force
 ---
@@ -24,7 +24,9 @@ _Definitions_
 
 (A2) ‘domestic law’ means the law of the United Kingdom or of a part of the United Kingdom;
 
-(A3) ‘the Commissioner’ means the Information Commissioner (see section 114 of the 2018 Act);
+(A2A) ‘the Commission’ means the Information Commission (see section 114A of the 2018 Act);
+
+(A3) _(repealed)_
 
 (1) ‘personal data’ means any information relating to an identified or identifiable natural person (‘data subject’); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person;
 

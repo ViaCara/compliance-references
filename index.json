@@ -2155,6 +2155,40 @@
   {
     "authority": "statute",
     "domain_tags": [
+      "regulator",
+      "information-commission",
+      "amendment"
+    ],
+    "enforcement_status": "in_force",
+    "id": "duaa-2025-s-118",
+    "jurisdiction": "uk",
+    "path": "statute/uk/duaa-2025/section-118.md",
+    "revision_id": "Thu, 15 Oct 2026 17:10:36 GMT",
+    "sha": "7dd439f241609ae346811c2e01dc1664ce191a7ece615b2d5281beeb40257ff6",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2025/18/section/118/data.xht",
+    "summary": "Abolishes the office of the Information Commissioner and amends the Data Protection Act 2018 to match, omitting section 114 and Schedule 12, which constituted that office.",
+    "title": "Data (Use and Access) Act 2025 section 118"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "regulator",
+      "information-commission",
+      "transfer-of-functions"
+    ],
+    "enforcement_status": "in_force",
+    "id": "duaa-2025-s-119",
+    "jurisdiction": "uk",
+    "path": "statute/uk/duaa-2025/section-119.md",
+    "revision_id": "Thu, 15 Oct 2026 17:10:36 GMT",
+    "sha": "578194332644a10394253228064be8787f9075aa94f815ad6780bdd218801675",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/2025/18/section/119/data.xht",
+    "summary": "Transfers the functions of the Information Commissioner to the Information Commission, and treats a reference to the Information Commissioner in any enactment or other document as a reference to the Information Commission.",
+    "title": "Data (Use and Access) Act 2025 section 119"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
       "automated-decision",
       "application-dates",
       "amendment"
@@ -2168,6 +2202,23 @@
     "source_uri": "https://www.legislation.gov.uk/uksi/2026/82/regulation/5/data.xht",
     "summary": "The automated decision-making amendments made by section 80 of and Schedule 6 to the Data (Use and Access) Act 2025 do not apply to decisions taken before 5 February 2026 to which the previous Article 22(3) UK GDPR or sections 14(1) or 50(2) of the Data Protection Act 2018 applied.",
     "title": "Data (Use and Access) Act 2025 Commencement No. 6 Regulations 2026 regulation 5 - Saving provision"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "regulator",
+      "information-commission",
+      "application-dates"
+    ],
+    "enforcement_status": "in_force",
+    "id": "duaa-2025-uksi-1015-reg-002",
+    "jurisdiction": "uk",
+    "path": "statute/uk/duaa-2025/uksi-1015-regulation-002.md",
+    "revision_id": "Thu, 15 Oct 2026 17:10:36 GMT",
+    "sha": "7fed2cc6d83ffc5220db65e3bd78323c79960937240748d449180594bca66296",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2026/1015/regulation/2/data.xht",
+    "summary": "Brings sections 117(4)(a), 118 and 119 of the Data (Use and Access) Act 2025 into force on 30 September 2026, which replaces the Information Commissioner with the Information Commission.",
+    "title": "Data (Use and Access) Act 2025 (Commencement No. 9 and Transitional and Saving Provisions) Regulations 2026 regulation 2 - Provisions coming into force on 30th September 2026"
   },
   {
     "authority": "statute",
@@ -3352,10 +3403,10 @@
     "id": "ico-special-category-data",
     "jurisdiction": "uk",
     "path": "guidance/uk/ico/special-category-data.md",
-    "revision_id": "DC.Date 09 October 2025, fetched 2026-09-26",
-    "sha": "bcc098c97eb741da46116c601aa8e137156c3c13de7addd7d6a6f70c4691c668",
+    "revision_id": "DC.Date 29 October 2026, fetched 2026-11-03",
+    "sha": "4899f4554d397a42710bd99e638decb3a6349bb7eca4bf843ed7a975284288b6",
     "source_uri": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/special-category-data/",
-    "summary": "Curated from 'What is special category data?', 'What are the rules on special category data?' and 'What are the conditions for processing?'. Health data definition and scope, inferred special category data, the need for both an Article 6 basis and an Article 9 condition, the meaning of 'necessary', mandatory DPIA triggers, explicit consent, the Article 9(2)(h) health or social care condition with its confidentiality safeguard and the s.204 list of health professionals (which names child psychotherapists and arts therapists), and the Article 9(2)(j) research condition.",
+    "summary": "Curated from 'What is special category data?', 'What are the rules on special category data?', 'What are the conditions for processing?' and 'What are the substantial public interest conditions?', as updated in October 2026 for the Data (Use and Access) Act 2025. Health data definition and scope, inferred special category data, the need for both an Article 6 basis and an Article 9 condition, the meaning of 'necessary', mandatory DPIA triggers, explicit consent, the Article 9(2)(h) health or social care condition with its confidentiality safeguard and the s.204 list of health professionals (which names child psychotherapists and arts therapists), the Article 9(2)(j) research condition with the Article 84B and 84C safeguards, the table of when each Schedule 1 substantial public interest condition needs a substantial public interest, a reason for not seeking consent and an appropriate policy document, and what an appropriate policy document must contain.",
     "title": "Special category data"
   },
   {
@@ -5113,8 +5164,8 @@
     "id": "uk-gdpr-art-004",
     "jurisdiction": "uk",
     "path": "statute/uk/gdpr/article-004.md",
-    "revision_id": "Wed, 22 Jul 2026 18:56:31 GMT",
-    "sha": "ced080298a9de4d12c00bd908f0e2a5d29b9605f8282d97a27b18144bb549019",
+    "revision_id": "Thu, 15 Oct 2026 17:10:36 GMT",
+    "sha": "8ddb1f6f15948dd9a041377812736d7f6cb59f75b1e4e1fc57e8db0d7f4b70bc",
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/4/data.xht",
     "summary": "Defines the core terms of the UK GDPR, including personal data, processing, controller, processor, consent, personal data breach and data concerning health, together with references to the 2018 Act, domestic law and the Commissioner.",
     "title": "UK GDPR Article 4 - Definitions"

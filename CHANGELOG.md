@@ -2,6 +2,33 @@
 
 Drift log. Newer entries first.
 
+## 2026-11-03
+- **corpus/guidance/uk/ico/special-category-data.md** re-curated from the October 2026 update of the guidance (DC.Date 29 October 2026), fetched 2026-11-03, and widened to the substantial public interest conditions page; human review remains pending.
+
+- **corpus/statute/uk/gdpr/article-004.md** hash ced0802 -> 8ddb1f6
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/4/data.xht
+  - prior_sha256: ced080298a9de4d12c00bd908f0e2a5d29b9605f8282d97a27b18144bb549019
+  - new_sha256:   8ddb1f6f15948dd9a041377812736d7f6cb59f75b1e4e1fc57e8db0d7f4b70bc
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/duaa-2025/uksi-1015-regulation-002.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2026/1015/regulation/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   7fed2cc6d83ffc5220db65e3bd78323c79960937240748d449180594bca66296
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/duaa-2025/section-119.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2025/18/section/119/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   578194332644a10394253228064be8787f9075aa94f815ad6780bdd218801675
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/duaa-2025/section-118.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/2025/18/section/118/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   7dd439f241609ae346811c2e01dc1664ce191a7ece615b2d5281beeb40257ff6
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
 ## 2026-10-21
 - **corpus/statute/uk/consumer-contracts-regs-2013/regulation-036.md** new file
   - source: https://www.legislation.gov.uk/uksi/2013/3134/regulation/36/data.xht
