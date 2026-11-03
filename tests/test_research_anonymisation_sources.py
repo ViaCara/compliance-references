@@ -67,7 +67,7 @@ class ResearchAnonymisationSourceTests(unittest.TestCase):
             ],
             "ico-special-category-data": [
                 "child psychotherapists; and",
-                "you are processing special category data regardless of how confident you are that the inference is correct",
+                "the inferred data is special category data regardless of how confident you are that the inference is correct",
             ],
             "ico-ai-and-data-protection": [
                 "In the vast majority of cases, the use of AI will involve a type of processing likely to result in a high risk",
