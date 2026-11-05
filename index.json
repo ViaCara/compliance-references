@@ -5106,6 +5106,40 @@
   {
     "authority": "statute",
     "domain_tags": [
+      "trade-marks",
+      "advertising",
+      "comparative-advertising"
+    ],
+    "enforcement_status": "in_force",
+    "id": "tma-1994-s-010",
+    "jurisdiction": "uk",
+    "path": "statute/uk/tma-1994/section-010.md",
+    "revision_id": "Thu, 15 Oct 2026 17:10:36 GMT",
+    "sha": "3e4bb45747c48f514304dcd19a8a2fefbfc30e3e04475599eb2677085226116a",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1994/26/section/10/data.xht",
+    "summary": "A person infringes a registered trade mark by using in the course of trade an identical sign for identical goods or services; an identical or similar sign for identical or similar goods or services where there is a likelihood of confusion; or an identical or similar sign, for any goods or services, that without due cause takes unfair advantage of or harms a mark with a reputation in the United Kingdom. Using a sign in comparative advertising in a way contrary to the Business Protection from Misleading Marketing Regulations 2008 is a use of the sign for this purpose.",
+    "title": "Trade Marks Act 1994 section 10 - Infringement of registered trade mark"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "trade-marks",
+      "advertising",
+      "comparative-advertising"
+    ],
+    "enforcement_status": "in_force",
+    "id": "tma-1994-s-011",
+    "jurisdiction": "uk",
+    "path": "statute/uk/tma-1994/section-011.md",
+    "revision_id": "Thu, 15 Oct 2026 17:10:36 GMT",
+    "sha": "347e332df61b72972fe54cc34c6be51838ac9a06d8b98c34e6c0c94269768da5",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1994/26/section/11/data.xht",
+    "summary": "A registered trade mark is not infringed by use of the mark to identify or refer to goods or services as those of the proprietor, or to indicate the intended purpose of a product or service, provided the use is in accordance with honest practices in industrial or commercial matters.",
+    "title": "Trade Marks Act 1994 section 11 - Limits on effect of registered trade mark"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
       "contract-terms",
       "business-terms",
       "liability"
