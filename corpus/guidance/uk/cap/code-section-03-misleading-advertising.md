@@ -6,9 +6,9 @@ kind: curated_quotes
 citation: CAP Code s.3 Misleading advertising
 source_uri: "https://www.asa.org.uk/type/non_broadcast/code_section/03.html"
 source_format: html
-revision_id: live page, retrieved 2026-10-13
-content_sha256: 2f65046a1bc5021708448c2d8f53ce748e618246e78aa768db1998d0196e2193
-last_fetched: 2026-10-13
+revision_id: live page, retrieved 2026-11-05
+content_sha256: 55b4daf27f953ac2fa0e18a7bf98768fb11d002b557a6261908e2069262a69de
+last_fetched: 2026-11-05
 language: en-GB
 enforcement_status: in_force
 ---
@@ -20,7 +20,8 @@ and enforced by the Advertising Standards Authority (ASA). Curated quotes
 only; the full section is at the source URI. Reviewed 2026-09-04 by
 kylewelsby. Rule 3.52 group added 2026-09-28; prices and "free" rules
 3.17 to 3.26 added 2026-10-08; availability rules 3.27 to 3.31 added
-2026-10-13; review of all three by kylewelsby pending._
+2026-10-13; comparison rules 3.32 to 3.43 and the fake review rule 3.44
+added 2026-11-05; review of all four by kylewelsby pending._
 
 ## Background
 
@@ -202,7 +203,97 @@ Rule 3.31:
 > with the intention of inducing the consumer to acquire the product at
 > conditions less favourable than normal market conditions.*
 
+## Comparisons with identifiable competitors
+
+Rule 3.32:
+
+> Marketing communications that include a comparison with an
+> identifiable competitor must not mislead, or be likely to mislead, the
+> consumer about either the advertised product or the competing product.
+
+Rule 3.33:
+
+> They must compare products meeting the same needs or intended for the
+> same purpose.
+
+Rule 3.34:
+
+> They must objectively compare one or more material, relevant,
+> verifiable and representative feature of those products, which may
+> include price.
+
+Rule 3.35:
+
+> They must not create confusion between the marketer and its
+> competitors or between the marketer's product, trade mark, trade name
+> or other distinguishing mark and that of a competitor.
+
+Rule 3.36:
+
+> Certain EU agricultural products and foods are, because of their
+> unique geographical area and method of production, given special
+> protection by being registered as having a "designation of origin".
+> Products with a designation of origin must be compared only with other
+> products with the same designation.
+
+## Other comparisons
+
+Rule 3.37:
+
+> Marketing communications that include a comparison with an
+> unidentifiable competitor must not mislead, or be likely to mislead,
+> the consumer. The elements of the comparison must not be selected to
+> give the marketer an unrepresentative advantage.
+
+## Price comparisons
+
+Rule 3.38:
+
+> Marketing communications that include a price comparison must not
+> mislead by failing to make the basis of the comparison clear.
+
+Rule 3.39:
+
+> Price comparisons must not mislead by falsely claiming a price
+> advantage. Comparisons with recommended retail prices (RRPs) are
+> likely to mislead if the RRP differs significantly from the price at
+> which the product or service is generally sold.
+
+## Imitation and denigration
+
+Rule 3.40:
+
+> Marketing communications must not mislead the consumer about who
+> manufactures the product.*
+
+Rule 3.41:
+
+> Marketing communications that include a comparison with an
+> identifiable competitor must not discredit or denigrate another
+> product, marketer, trade mark, trade name or other distinguishing
+> mark.
+
+Rule 3.42:
+
+> Marketing communications must not take unfair advantage of the
+> reputation of a competitor's trade mark, trade name or other
+> distinguishing mark or of the designation of origin of a competing
+> product.
+
+Rule 3.43:
+
+> Marketing communications must not present a product as an imitation or
+> replica of a product with a protected trade mark or trade name.
+
 ## Endorsements and testimonials
+
+Rule 3.44:
+
+> Marketing communications must not contain fake consumer reviews.
+> “Consumer review” means a review of a product, a trader or any other
+> matter relevant to a transactional decision.
+> A fake consumer review is a consumer review that purports to be, but
+> is not, based on a person’s genuine experience*.
 
 Rule 3.47:
 
@@ -252,7 +343,7 @@ Rule 3.54:
 > References to a Royal Warrant should be checked with the Royal Warrant
 > Holders' Association.
 
-The asterisk on rules 3.23, 3.28 to 3.31, 3.52 and 3.53 is the source's
+The asterisk on rules 3.23, 3.28 to 3.31, 3.40, 3.44, 3.52 and 3.53 is the source's
 own mark. Under the
 section background quoted above, it identifies a rule that reflects a
 prohibited practice considered unfair in all circumstances.
@@ -267,4 +358,6 @@ definition and rules 3.17 to 3.26 were retrieved 2026-10-08, when the
 other quoted rules were checked against the live page and found
 unchanged. The availability rules 3.27 to 3.31 were retrieved 2026-10-13,
 when rules 3.17 to 3.26 were checked against the live page and found
-unchanged.
+unchanged. The comparison rules 3.32 to 3.43 and rule 3.44 were retrieved
+2026-11-05, when rules 3.27 to 3.31 were checked against the live page
+and found unchanged.
