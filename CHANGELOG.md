@@ -3,6 +3,18 @@
 Drift log. Newer entries first.
 
 ## 2026-11-05
+- **corpus/statute/uk/tma-1994/section-010.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1994/26/section/10/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   3e4bb45747c48f514304dcd19a8a2fefbfc30e3e04475599eb2677085226116a
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/tma-1994/section-011.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1994/26/section/11/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   347e332df61b72972fe54cc34c6be51838ac9a06d8b98c34e6c0c94269768da5
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
 - **corpus/guidance/uk/cap/code-section-03-misleading-advertising.md** hash 2f65046 -> 55b4daf
   - source: https://www.asa.org.uk/type/non_broadcast/code_section/03.html
   - prior_sha256: 2f65046a1bc5021708448c2d8f53ce748e618246e78aa768db1998d0196e2193
