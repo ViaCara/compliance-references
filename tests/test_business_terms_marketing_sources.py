@@ -80,6 +80,13 @@ CAP_PASSAGES = [
     "Marketers must not use the technique of switch selling",
     "must not falsely claim that the marketer is about to cease trading or move premises",
     "materially inaccurate information on market conditions or the availability of the product",
+    "a comparison with an identifiable competitor must not mislead",
+    "objectively compare one or more material, relevant, verifiable and representative feature",
+    "must not create confusion between the marketer and its competitors",
+    "must not mislead by failing to make the basis of the comparison clear",
+    "must not discredit or denigrate another product, marketer, trade mark",
+    "must not take unfair advantage of the reputation of a competitor's trade mark",
+    "Marketing communications must not contain fake consumer reviews.",
 ]
 
 

@@ -228,16 +228,17 @@
       "marketing",
       "trust-mark",
       "pricing",
-      "availability"
+      "availability",
+      "comparative-advertising"
     ],
     "enforcement_status": "in_force",
     "id": "cap-code-section-03-misleading-advertising",
     "jurisdiction": "uk",
     "path": "guidance/uk/cap/code-section-03-misleading-advertising.md",
-    "revision_id": "live page, retrieved 2026-10-13",
-    "sha": "2f65046a1bc5021708448c2d8f53ce748e618246e78aa768db1998d0196e2193",
+    "revision_id": "live page, retrieved 2026-11-05",
+    "sha": "55b4daf27f953ac2fa0e18a7bf98768fb11d002b557a6261908e2069262a69de",
     "source_uri": "https://www.asa.org.uk/type/non_broadcast/code_section/03.html",
-    "summary": "CAP Code section 3 general rules against materially misleading marketing communications, omission of material information, the substantiation duty, qualification of claims and exaggeration, the prices rules (3.17 to 3.22: no misleading price statements, non-optional charges included, the extent of a linked commitment stated) and the \"free\" rules (3.23 to 3.26: nothing to pay beyond the unavoidable cost of responding, the commitment made clear, no free element already in the package price, no \"free trial\" needing a non-refundable purchase), the availability rules (3.27 to 3.31: a reasonable estimate of demand, disclosure when the advertised product may not be supplied at the advertised price, no switch selling, no false closing-down or limited-time claims, no materially inaccurate market or availability information), plus the endorsements and testimonials rules: no trust mark, quality mark or equivalent without authorisation and no false claim of approval, endorsement or authorisation by a public or private body (rule 3.52), no false code-of-conduct claims (3.53) and the asterisk that marks a rule as a practice unfair in all circumstances.",
+    "summary": "CAP Code section 3 general rules against materially misleading marketing communications, omission of material information, the substantiation duty, qualification of claims and exaggeration, the prices rules (3.17 to 3.22: no misleading price statements, non-optional charges included, the extent of a linked commitment stated) and the \"free\" rules (3.23 to 3.26: nothing to pay beyond the unavoidable cost of responding, the commitment made clear, no free element already in the package price, no \"free trial\" needing a non-refundable purchase), the availability rules (3.27 to 3.31: a reasonable estimate of demand, disclosure when the advertised product may not be supplied at the advertised price, no switch selling, no false closing-down or limited-time claims, no materially inaccurate market or availability information), the comparison rules (3.32 to 3.43: a comparison with an identifiable competitor must not mislead, compares products meeting the same needs on material, relevant, verifiable and representative features, which may include price, creates no confusion with the competitor or its marks, states the basis of a price comparison, claims no false price advantage, does not discredit or denigrate a competitor or its marks, takes no unfair advantage of a competitor's mark and presents no product as an imitation), the fake consumer review rule (3.44), plus the endorsements and testimonials rules: no trust mark, quality mark or equivalent without authorisation and no false claim of approval, endorsement or authorisation by a public or private body (rule 3.52), no false code-of-conduct claims (3.53) and the asterisk that marks a rule as a practice unfair in all circumstances.",
     "title": "CAP Code Section 3: Misleading advertising"
   },
   {

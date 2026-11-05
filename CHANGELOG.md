@@ -2,6 +2,13 @@
 
 Drift log. Newer entries first.
 
+## 2026-11-05
+- **corpus/guidance/uk/cap/code-section-03-misleading-advertising.md** hash 2f65046 -> 55b4daf
+  - source: https://www.asa.org.uk/type/non_broadcast/code_section/03.html
+  - prior_sha256: 2f65046a1bc5021708448c2d8f53ce748e618246e78aa768db1998d0196e2193
+  - note: adds verbatim quotes of the comparison rules 3.32 to 3.43 and the fake consumer review rule 3.44; rules 3.27 to 3.31 were checked against the live page and are unchanged
+  - new_sha256:   55b4daf27f953ac2fa0e18a7bf98768fb11d002b557a6261908e2069262a69de
+
 ## 2026-11-03
 - **corpus/guidance/uk/ico/special-category-data.md** re-curated from the October 2026 update of the guidance (DC.Date 29 October 2026), fetched 2026-11-03, and widened to the substantial public interest conditions page; human review remains pending.
 
