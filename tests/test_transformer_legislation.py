@@ -176,6 +176,29 @@ class LegislationTransformerTests(unittest.TestCase):
 
         self.assertIn("the controller must ensure safeguards are in place.", markdown)
 
+    def test_keeps_block_text_that_introduces_a_list(self):
+        """A block of text after a note can open a list with a bare LegLevel{n}
+        paragraph ("Here "Act" means-"). Dropping it leaves the list with no
+        words that say what it defines."""
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<p class="LegP2ParaText">In this Group "state-regulated" means '
+            "registered under a public general Act.</p>"
+            '<div class="LegBlockText">'
+            '<p class="LegLevel3"><span class="LegAddition">Here "Act" means-</span></p>'
+            '<div class="LegAlphaList"><div class="LegListItem">'
+            '<div class="LegLevel4No LegListItemNo">(a)</div>'
+            '<p class="LegListTextStandard LegLevel4">an Act of Parliament;</p>'
+            "</div></div>"
+            "</div>"
+            "</div>"
+        )
+        transformer = LegislationTransformer()
+        markdown = transformer.transform(source, citation="Test Sch. 9 Group 7")
+
+        self.assertIn('Here "Act" means-', markdown)
+        self.assertLess(markdown.index('Here "Act" means-'), markdown.index("an Act of Parliament;"))
+
     def test_closing_words_are_not_duplicated_into_their_container(self):
         """Closing words are emitted once, in source order, and a provision
         whose text sits inside a container is not emitted twice."""

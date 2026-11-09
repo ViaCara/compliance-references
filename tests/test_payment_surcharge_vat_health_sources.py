@@ -58,6 +58,7 @@ PASSAGES = {
         "the register kept under the Health Professions Order 2001",
         "where the services are wholly performed or directly supervised by a person who is so registered or enrolled",
         "designed to promote the physical or mental welfare of elderly, sick, distressed or disabled persons",
+        "Here “Act” means—",
     ],
 }
 

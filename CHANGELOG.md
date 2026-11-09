@@ -6,7 +6,7 @@ Drift log. Newer entries first.
 - **corpus/statute/uk/vata-1994/schedule-009-group-007.md** new file
   - source: https://www.legislation.gov.uk/ukpga/1994/23/schedule/9/part/II/chapter/7/data.xht
   - prior_sha256: (new file)
-  - new_sha256:   b060a64e28f095b9dc5312f48d9f5402929dd435bd01bbf13329ff1d9dd412d7
+  - new_sha256:   d54d35b7aa8011208a5f32ffe81c5223c5f6939010727f1f7f274d8d975ae443
   - revision: Thu, 15 Oct 2026 17:10:36 GMT
 
 - **corpus/statute/uk/payment-surcharges-regs-2012/regulation-010.md** new file

@@ -7,7 +7,7 @@ citation: VATA 1994 Sch. 9 Group 7
 source_uri: "https://www.legislation.gov.uk/ukpga/1994/23/schedule/9/part/II/chapter/7/data.xht"
 source_format: xhtml
 revision_id: "Thu, 15 Oct 2026 17:10:36 GMT"
-content_sha256: b060a64e28f095b9dc5312f48d9f5402929dd435bd01bbf13329ff1d9dd412d7
+content_sha256: d54d35b7aa8011208a5f32ffe81c5223c5f6939010727f1f7f274d8d975ae443
 last_fetched: 2026-11-09
 language: en-GB
 enforcement_status: in_force
@@ -107,6 +107,8 @@ and, in the case of services supplied by a state-regulated private welfare insti
 (7) Item 9 does not include the supply of accommodation or catering except where it is ancillary to the provision of care, treatment or instruction.
 
 (8) In this Group “state-regulated” means approved, licensed, registered or exempted from registration by any Minister or other authority pursuant to a provision of a public general Act, other than a provision that is capable of being brought into effect at different times in relation to different local authority areas.
+
+Here “Act” means—
 
 (a) an Act of Parliament;
 

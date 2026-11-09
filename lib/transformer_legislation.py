@@ -52,7 +52,9 @@ Class names used in selection (from the legislation.gov.uk DOM):
   its defined terms as a `<ul class="LegTabbedDef">` whose items carry no
   `LegP{n}Text` class at all, and nests lettered limbs as `LegListItem`
   divs whose number sits in a sibling `LegListItemNo` div rather than in a
-  `LegP{n}No` span.
+  `LegP{n}No` span. A `LegBlockText` block can also open such a list with a
+  bare `<p class="LegLevel{n}">` ("Here "Act" means—") that carries no text
+  class; it is emitted as a paragraph so the list keeps its lead-in.
 - `LegSN1No`, `LegSN2No`, ... a schedule-paragraph fragment fetched at
   paragraph granularity (`.../schedule/N/paragraph/M/data.xht`) has no
   ancestor element to carry the outer paragraph number M, so
@@ -285,6 +287,12 @@ class LegislationTransformer:
                     indent = self._LEVELS.get(_list_level(cls) or 0, "")
                     number = list_numbers.get(id(element), "")
                     yield f"{indent}{number} {text}".strip()
+                continue
+            if _list_level(cls) is not None:
+                text = _inline_text(element)
+                if text and not _is_repealed_marker(text):
+                    emitted_any = True
+                    yield text
                 continue
             if not any(_has_class(cls, level, "Text") for level in self._LEVELS):
                 continue
