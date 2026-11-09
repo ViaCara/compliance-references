@@ -2,6 +2,55 @@
 
 Drift log. Newer entries first.
 
+## 2026-11-09
+- **corpus/statute/uk/vata-1994/schedule-009-group-007.md** new file
+  - source: https://www.legislation.gov.uk/ukpga/1994/23/schedule/9/part/II/chapter/7/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   b060a64e28f095b9dc5312f48d9f5402929dd435bd01bbf13329ff1d9dd412d7
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/payment-surcharges-regs-2012/regulation-010.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2012/3110/regulation/10/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   ee76a1aafbf396ae8f76f9016d8f96fcc82db7cac0190909d07e9fa2b5407fce
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/payment-surcharges-regs-2012/regulation-006b.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2012/3110/regulation/6B/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   68262f6eb71204df323d519820174ec8286d5b011f6332373af18d2d9eb3dde4
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/payment-surcharges-regs-2012/regulation-006a.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2012/3110/regulation/6A/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   e84ffe530552c0a3d6c21fb74e25ac10f6fcc3058a69c92411db7ece9f95c27b
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/payment-surcharges-regs-2012/regulation-005.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2012/3110/regulation/5/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   fa66447fb51b6b519ffd6d3f7562ee199c1b5f09d7dc42d9b124ebeb068851c6
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/payment-surcharges-regs-2012/regulation-004.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2012/3110/regulation/4/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   b79ddc2eae16c7bfede8f4c8e6db8af5a01f5b501a34434f3f0e8feb8518200a
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/payment-surcharges-regs-2012/regulation-003.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2012/3110/regulation/3/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   8a2cd95d2d50f48a68485cee416aec20ef464a9cbad0fe52461a543ac165c20c
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/payment-surcharges-regs-2012/regulation-002.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2012/3110/regulation/2/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   3b6d5280847721b7cd6aca9ca60aff5791ae770816727925fe437ed4d25fdffe
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
 ## 2026-11-05
 - **corpus/statute/uk/tma-1994/section-010.md** new file
   - source: https://www.legislation.gov.uk/ukpga/1994/26/section/10/data.xht
