@@ -4388,6 +4388,128 @@
   {
     "authority": "statute",
     "domain_tags": [
+      "consumer",
+      "payments",
+      "definitions"
+    ],
+    "enforcement_status": "in_force",
+    "id": "payment-surcharges-regs-2012-reg-002",
+    "jurisdiction": "uk",
+    "path": "statute/uk/payment-surcharges-regs-2012/regulation-002.md",
+    "revision_id": "Thu, 15 Oct 2026 17:10:36 GMT",
+    "sha": "3b6d5280847721b7cd6aca9ca60aff5791ae770816727925fe437ed4d25fdffe",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2012/3110/regulation/2/data.xht",
+    "summary": "A consumer is an individual acting for purposes wholly or mainly outside that individual's trade, business, craft or profession. A trader is a person acting for purposes relating to that person's trade, business, craft or profession, whether personally or through another person acting in the trader's name or on the trader's behalf.",
+    "title": "Consumer Rights (Payment Surcharges) Regulations 2012 regulation 2 - Consumer and trader"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "payments",
+      "definitions"
+    ],
+    "enforcement_status": "in_force",
+    "id": "payment-surcharges-regs-2012-reg-003",
+    "jurisdiction": "uk",
+    "path": "statute/uk/payment-surcharges-regs-2012/regulation-003.md",
+    "revision_id": "Thu, 15 Oct 2026 17:10:36 GMT",
+    "sha": "8a2cd95d2d50f48a68485cee416aec20ef464a9cbad0fe52461a543ac165c20c",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2012/3110/regulation/3/data.xht",
+    "summary": "Defines terms used in the Regulations, including sales contract and service contract, and gives payee, payer, payment instrument, payment service and payment service provider the meanings in regulation 2(1) of the Payment Services Regulations 2017.",
+    "title": "Consumer Rights (Payment Surcharges) Regulations 2012 regulation 3 - Other definitions"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "consumer",
+      "payments",
+      "surcharges",
+      "pricing"
+    ],
+    "enforcement_status": "in_force",
+    "id": "payment-surcharges-regs-2012-reg-004",
+    "jurisdiction": "uk",
+    "path": "statute/uk/payment-surcharges-regs-2012/regulation-004.md",
+    "revision_id": "Thu, 15 Oct 2026 17:10:36 GMT",
+    "sha": "b79ddc2eae16c7bfede8f4c8e6db8af5a01f5b501a34434f3f0e8feb8518200a",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2012/3110/regulation/4/data.xht",
+    "summary": "A trader must not charge consumers, for the use of a given means of payment, fees that exceed the cost the trader bears for the use of that means.",
+    "title": "Consumer Rights (Payment Surcharges) Regulations 2012 regulation 4 - Fees a trader must not charge a consumer"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "consumer",
+      "payments",
+      "surcharges",
+      "health-services"
+    ],
+    "enforcement_status": "in_force",
+    "id": "payment-surcharges-regs-2012-reg-005",
+    "jurisdiction": "uk",
+    "path": "statute/uk/payment-surcharges-regs-2012/regulation-005.md",
+    "revision_id": "Thu, 15 Oct 2026 17:10:36 GMT",
+    "sha": "fa66447fb51b6b519ffd6d3f7562ee199c1b5f09d7dc42d9b124ebeb068851c6",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2012/3110/regulation/5/data.xht",
+    "summary": "Regulation 4 applies only where the means of payment is used to pay under a sales or service contract, or a contract for water, gas, electricity, district heating or digital content, that is not an excluded contract. Excluded contracts include social services, health services provided by health professionals to patients to assess, maintain or restore their state of health, gambling, financial services, certain property, accommodation and timeshare contracts, and certain doorstep, vending-machine, telephone and court-ordered sales.",
+    "title": "Consumer Rights (Payment Surcharges) Regulations 2012 regulation 5 - Contracts where regulation 4 applies"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "payments",
+      "surcharges",
+      "pricing",
+      "card-payments"
+    ],
+    "enforcement_status": "in_force",
+    "id": "payment-surcharges-regs-2012-reg-006a",
+    "jurisdiction": "uk",
+    "path": "statute/uk/payment-surcharges-regs-2012/regulation-006a.md",
+    "revision_id": "Thu, 15 Oct 2026 17:10:36 GMT",
+    "sha": "e84ffe530552c0a3d6c21fb74e25ac10f6fcc3058a69c92411db7ece9f95c27b",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2012/3110/regulation/6A/data.xht",
+    "summary": "A payee must not charge a payer any fee for payment by a consumer card-based payment instrument that is not a commercial card, by an equivalent non-card payment instrument that is not commercial, or by a payment service within Regulation (EU) 260/2012 (euro credit transfers and direct debits). For any other payment instrument the fee must not exceed the cost the payee bears for that specific instrument. The rule binds every payee and payer, not only traders and consumers, and has no exclusion for health services.",
+    "title": "Consumer Rights (Payment Surcharges) Regulations 2012 regulation 6A - Fees any payee must not charge any payer"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "payments",
+      "surcharges",
+      "territorial-scope"
+    ],
+    "enforcement_status": "in_force",
+    "id": "payment-surcharges-regs-2012-reg-006b",
+    "jurisdiction": "uk",
+    "path": "statute/uk/payment-surcharges-regs-2012/regulation-006b.md",
+    "revision_id": "Thu, 15 Oct 2026 17:10:36 GMT",
+    "sha": "68262f6eb71204df323d519820174ec8286d5b011f6332373af18d2d9eb3dde4",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2012/3110/regulation/6B/data.xht",
+    "summary": "Regulation 6A applies only where the payment service provider of the payer or of the payee is located in the United Kingdom. Where both are located there, the ban in regulation 6A(1) and the cost cap in regulation 6A(2) both apply; where only one is, only the cost cap applies.",
+    "title": "Consumer Rights (Payment Surcharges) Regulations 2012 regulation 6B - Application of regulation 6A"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "consumer",
+      "payments",
+      "surcharges",
+      "remedies"
+    ],
+    "enforcement_status": "in_force",
+    "id": "payment-surcharges-regs-2012-reg-010",
+    "jurisdiction": "uk",
+    "path": "statute/uk/payment-surcharges-regs-2012/regulation-010.md",
+    "revision_id": "Thu, 15 Oct 2026 17:10:36 GMT",
+    "sha": "ee76a1aafbf396ae8f76f9016d8f96fcc82db7cac0190909d07e9fa2b5407fce",
+    "source_uri": "https://www.legislation.gov.uk/uksi/2012/3110/regulation/10/data.xht",
+    "summary": "Where a fee is charged in breach of regulation 4 or 6A, a contract term requiring payment of the fee is unenforceable to the extent of the breach, and the contract is treated as providing for the fee to be repaid to that extent.",
+    "title": "Consumer Rights (Payment Surcharges) Regulations 2012 regulation 10 - Right of redress"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
       "direct-marketing",
       "consent",
       "electronic-mail"
@@ -6054,5 +6176,23 @@
     "source_uri": "https://www.legislation.gov.uk/eur/2016/679/article/89/data.xht",
     "summary": "Omitted on 5.2.2026 by DUAA 2025 s.86(4) (S.I. 2026/82 reg. 2(n)). The safeguards now sit in Chapter 8A, Articles 84A to 84D; cite those for current law. Kept so that citations of Article 89(1) in older guidance resolve to a record of the omission.",
     "title": "UK GDPR Article 89 - Safeguards and derogations relating to processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes"
+  },
+  {
+    "authority": "statute",
+    "domain_tags": [
+      "vat",
+      "tax",
+      "health-services",
+      "exemption"
+    ],
+    "enforcement_status": "in_force",
+    "id": "vata-1994-sch-009-grp-007",
+    "jurisdiction": "uk",
+    "path": "statute/uk/vata-1994/schedule-009-group-007.md",
+    "revision_id": "Thu, 15 Oct 2026 17:10:36 GMT",
+    "sha": "d54d35b7aa8011208a5f32ffe81c5223c5f6939010727f1f7f274d8d975ae443",
+    "source_uri": "https://www.legislation.gov.uk/ukpga/1994/23/schedule/9/part/II/chapter/7/data.xht",
+    "summary": "Exempts from VAT the supply of services consisting in the provision of medical care by a person registered or enrolled in a listed register, including the register of medical practitioners, the register kept under the Health Professions Order 2001, the osteopath and chiropractor registers and the nursing and midwifery register, and the equivalent supplies by dental professionals and pharmacists. Note 2 extends items 1 and 2 to services wholly performed or directly supervised by a registered person. Item 9 exempts welfare services, including care, treatment or instruction to promote the mental welfare of distressed persons, only when supplied by a charity, a state-regulated private welfare institution or agency, or a public body.",
+    "title": "Value Added Tax Act 1994 Schedule 9 Part II Group 7 - Health and welfare"
   }
 ]
