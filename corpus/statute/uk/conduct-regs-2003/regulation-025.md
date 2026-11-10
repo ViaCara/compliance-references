@@ -6,9 +6,9 @@ kind: legislation_regulation
 citation: Conduct Regulations 2003 reg. 25
 source_uri: "https://www.legislation.gov.uk/uksi/2003/3319/regulation/25/data.xht"
 source_format: xhtml
-revision_id: "Mon, 14 Sep 2026 16:04:15 GMT"
-content_sha256: f0cf591e17132bc5be29c87d0d87793230e5b2e5c8ee599f39e416b8795f61c5
-last_fetched: 2026-09-28
+revision_id: "Thu, 15 Oct 2026 17:10:36 GMT"
+content_sha256: c961b905978f262e7de9cd9aa05c55613b505633fd0b70869ead724010f323a7
+last_fetched: 2026-11-10
 language: en-GB
 enforcement_status: in_force
 ---
@@ -23,6 +23,12 @@ _Client accounts_
 “credit institution” means a credit institution as defined in Article 4(1)(1) of Regulation (EU) No. 575/2013 of the European Parliament and of the Council of 26 June 2013 on prudential requirements for credit institutions and investment firms and amending Regulation (EU) No. 648/2012, that is to say, an undertaking whose business is to receive deposits or other repayable funds from the public and to grant credits for its own account;
 
 “hirer’s deposit” means money held or received by an agency by way of an advance against payment to a work-seeker in respect of work to be done by that work-seeker, where the advance may, in accordance with the terms of any contract between the work-seeker and the hirer, be repayable to the hirer;
+
+an agency receives money on behalf of a work-seeker when the agency or any person connected with it receives money directly or indirectly from a hirer or any person connected with a hirer pursuant to the terms of any contract or arrangement between the work-seeker and the hirer, whether or not the agency has agreed with the work-seeker or the hirer that it will receive such money on the work-seeker’s behalf;
+
+references to receiving money on behalf of a work-seeker include the receipt of money by way of an advance against payment to a work-seeker in respect of work to be done by that work-seeker, where the terms of any contract between the work-seeker and the hirer stipulate that the advance is not repayable to the hirer in any circumstances;
+
+references to receiving money on behalf of a work-seeker do not include references to receiving a hirer’s deposit.
 
 (2) Save in a case falling within regulation 8(2)(b), an agency shall not request or directly or indirectly receive money on behalf of a work-seeker unless—
 

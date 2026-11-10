@@ -100,6 +100,9 @@ _LIST_TEXT_CLASS = "LegListTextStandard"
 _LIST_ITEM_CLASS = "LegListItem"
 _LIST_ITEM_NO_CLASS = "LegListItemNo"
 _LIST_LEVEL_RE = re.compile(r"^LegLevel(\d)$")
+_EU_TEXT_CLASS = "LegText"
+_DIVISION_CLASS = "LegDivision"
+_DIVISION_TAGS = frozenset({"h2", "h3", "h4", "h5", "h6"})
 _PARA_NUMBER_DASHES = "\u2014\u2013-"
 
 
@@ -220,6 +223,17 @@ class LegislationTransformer:
                 title = _inline_text(child)
         return " - ".join(part for part in (number, title) if part)
 
+    def _division_heading(self, element: ET.Element) -> str:
+        number = title = ""
+        for child in element.iter():
+            if "LegDivisionNo" in _classes(child):
+                number = _inline_text(child)
+            if "LegDivisionTitle" in _classes(child):
+                title = _inline_text(child)
+        if number or title:
+            return " ".join(part for part in (number, title) if part)
+        return _inline_text(element)
+
     def _find_chapter(self, root: ET.Element) -> str | None:
         for element in root.iter():
             if "LegEUChapter" in _classes(element):
@@ -251,6 +265,11 @@ class LegislationTransformer:
                 continue
             if cls & {"LegP2GroupTitle", "LegSP1GroupTitle", "LegSP1GroupTitleFirst"}:
                 heading = _inline_text(element)
+                if heading:
+                    yield f"**{heading}**"
+                continue
+            if _DIVISION_CLASS in cls and _localname(element.tag) in _DIVISION_TAGS:
+                heading = self._division_heading(element)
                 if heading:
                     yield f"**{heading}**"
                 continue
@@ -287,6 +306,12 @@ class LegislationTransformer:
                     indent = self._LEVELS.get(_list_level(cls) or 0, "")
                     number = list_numbers.get(id(element), "")
                     yield f"{indent}{number} {text}".strip()
+                continue
+            if _EU_TEXT_CLASS in cls:
+                text = _inline_text(element)
+                if text and not _is_repealed_marker(text):
+                    emitted_any = True
+                    yield text
                 continue
             if _list_level(cls) is not None:
                 text = _inline_text(element)

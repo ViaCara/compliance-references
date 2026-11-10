@@ -6,9 +6,9 @@ kind: legislation_regulation
 citation: S.I. 2022/1213 reg. 2
 source_uri: "https://www.legislation.gov.uk/uksi/2022/1213/regulation/2/data.xht"
 source_format: xhtml
-revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
-content_sha256: e8d63d7012a88740061ef4e3dd3a8f8995c40134a8e18adf478df2ccc585f009
-last_fetched: 2026-10-07
+revision_id: "Thu, 15 Oct 2026 17:10:36 GMT"
+content_sha256: 9e232193f033a8a8390095e5846ba179b2552684929f1a1a145c102ae95788ed
+last_fetched: 2026-11-10
 language: en-GB
 enforcement_status: in_force
 ---
@@ -19,3 +19,11 @@ _Adequate level of protection_
 (1) For the purposes of Part 2 of the Data Protection Act 2018(1) and the UK GDPR(2), the Secretary of State specifies the Republic of Korea as ensuring an adequate level of protection of personal data(3) for a transfer described in subsection (2).
 
 (2) A transfer described by this subsection is a transfer of personal data to a person in the Republic of Korea who is subject to the Personal Information Protection Act as that Act forms part of the law of the Republic of Korea and has effect from time to time(4).
+
+2018 c. 12.
+
+The “UK GDPR” is defined in section 3(10) of the Data Protection Act 2018 (“the 2018 Act”).
+
+“Personal data” is defined in Article 4(1) of the UK GDPR and has the same meaning in Part 2 of the 2018 Act by virtue of section 5 of that Act.
+
+Electronic copies of this legislation can be obtained from www.gov.uk/government/publications/uk-data-adequacy-for-the-republic-of-korea-supporting-documents in English or Korean. Hard copies can also be inspected during office hours and free of charge at the offices of the Department for Digital, Culture, Media and Sport, 100 Parliament Street, London SW1A 2BQ.

@@ -70,6 +70,19 @@ class LegislationTransformerTests(unittest.TestCase):
             markdown,
         )
 
+    def test_keeps_eu_text_paragraphs_and_numbered_division_headings(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<h5 class="LegClearFix LegDivision"><span class="LegDivisionNo">3.3.</span>'
+            '<span class="LegDivisionTitle">Rule 12'
+            '<span class="LegExtentRestriction" title="Applies to ">U.K.</span></span></h5>'
+            '<p class="LegText">All other active devices are in Class I.</p>'
+            "</div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Annex IX")
+
+        self.assertIn("**3.3. Rule 12**\n\nAll other active devices are in Class I.", markdown)
+
     def test_real_osa_section_022_scopes_category_1_duties(self):
         source = (FIXTURES / "osa_2023_section_022.xhtml").read_text(encoding="utf-8")
         markdown = LegislationTransformer().transform(source, citation="OSA 2023 s. 22")

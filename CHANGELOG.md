@@ -2,6 +2,127 @@
 
 Drift log. Newer entries first.
 
+## 2026-11-10
+- **corpus/statute/uk/conduct-regs-2003/regulation-025.md** hash f0cf591 -> c961b90
+  - source: https://www.legislation.gov.uk/uksi/2003/3319/regulation/25/data.xht
+  - prior_sha256: f0cf591e17132bc5be29c87d0d87793230e5b2e5c8ee599f39e416b8795f61c5
+  - new_sha256:   c961b905978f262e7de9cd9aa05c55613b505633fd0b70869ead724010f323a7
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/misuse-drugs-1971/schedule-002.md** hash 55a3892 -> 0afbadf
+  - source: https://www.legislation.gov.uk/ukpga/1971/38/schedule/2/data.xht
+  - prior_sha256: 55a3892e2c8bbd2e27670c189b11f947a39572fc3ffdd8e7185280a3931b54c1
+  - new_sha256:   0afbadf61bf950ac4a382473826f994c845136a7f026b4ddad5ad743ebb2f712
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/mdd-93-42/annex-ix.md** hash 14327a9 -> 9cdeee1
+  - source: https://www.legislation.gov.uk/eudr/1993/42/annex/IX/data.xht
+  - prior_sha256: 14327a941b32b34d9a798cda40a4c2f9d2498ca96cf8a25f199b8fc47455e765
+  - new_sha256:   9cdeee1fd3d6f7ba3f33aaa43d8b031cf98a2ae64ad242cbf4ead3304ad04c81
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/roa-exceptions-order-1975/schedule-001.md** hash de250ae -> b8b4c88
+  - source: https://www.legislation.gov.uk/uksi/1975/1023/schedule/1/data.xht
+  - prior_sha256: de250ae9e39e6d127144209f97c46126d917330fabe56b504fc0f8a7cdc0e11d
+  - new_sha256:   b8b4c886fc9f34628c52ca7b78ff361b358152b65beab9cc1eb3c530ec9e803e
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/roa-exceptions-order-1975/article-003.md** hash f3c932e -> e16a212
+  - source: https://www.legislation.gov.uk/uksi/1975/1023/article/3/data.xht
+  - prior_sha256: f3c932e75e0e24d1d0ac1621a8f39db00a2df49bd1817ef870b868ad10f046c9
+  - new_sha256:   e16a2126edb3a3f80c1964a7ca5c38127e031e551c5254891f5f1009a85917e5
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/conduct-regs-2003/schedule-003.md** hash 38c53d9 -> 57389ef
+  - source: https://www.legislation.gov.uk/uksi/2003/3319/schedule/3/data.xht
+  - prior_sha256: 38c53d9f0f404e2f7981bbad2122774a3a97cf88a5bc97bb7da58dcb64f65da2
+  - new_sha256:   57389efbe75197088fbcfb3b4e77d87e771a86ce1e5991e070dfa60e89154daa
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/adequacy-korea-regs-2022/regulation-003.md** hash 99fc5ff -> c7e951d
+  - source: https://www.legislation.gov.uk/uksi/2022/1213/regulation/3/data.xht
+  - prior_sha256: 99fc5ffe7546f11d63e4bebde46aaa8da4bdf58d42c2359e659ef21d4a3e5277
+  - new_sha256:   c7e951dabbb35eac2c1fadeda7f5ba8236e0b37f2be1811edda051212ba12480
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/adequacy-korea-regs-2022/regulation-002.md** hash e8d63d7 -> 9e23219
+  - source: https://www.legislation.gov.uk/uksi/2022/1213/regulation/2/data.xht
+  - prior_sha256: e8d63d7012a88740061ef4e3dd3a8f8995c40134a8e18adf478df2ccc585f009
+  - new_sha256:   9e232193f033a8a8390095e5846ba179b2552684929f1a1a145c102ae95788ed
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/adequacy-usa-regs-2023/regulation-004.md** hash 4ff40b6 -> c4a5cfd
+  - source: https://www.legislation.gov.uk/uksi/2023/1028/regulation/4/data.xht
+  - prior_sha256: 4ff40b638974355534c7409986b665b252dc9a56670b823fa1110db6e1dd3377
+  - new_sha256:   c4a5cfddb1917d81860cda8e96682650eba1ac484d083a58fd7f3ceaf602bd66
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/adequacy-usa-regs-2023/regulation-003.md** hash 5a23c46 -> fe37d09
+  - source: https://www.legislation.gov.uk/uksi/2023/1028/regulation/3/data.xht
+  - prior_sha256: 5a23c46de3a0289ca08435c285c662b798e40676ef9072dc56b47ba3d1ecb89d
+  - new_sha256:   fe37d09232b56bdfd6ba182d74b805fd809f7d32c341d20bf5b37aa0c59311d9
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/adequacy-usa-regs-2023/regulation-002.md** hash c2dd27a -> c92837b
+  - source: https://www.legislation.gov.uk/uksi/2023/1028/regulation/2/data.xht
+  - prior_sha256: c2dd27a6e6650609aa5337af18f0df634e6a52c687a4eabe254d3aecca3ae5d3
+  - new_sha256:   c92837bd661f64846e8a27839a3ada73041cce29130f2ec02f72cb5ab2bd5e9d
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/consumer-contracts-regs-2013/schedule-002.md** hash 857bc01 -> 5f71573
+  - source: https://www.legislation.gov.uk/uksi/2013/3134/schedule/2/data.xht
+  - prior_sha256: 857bc0116ce90af04066ba7f371dc1f983e836ac708540330ad5743349633fbf
+  - new_sha256:   5f71573f9e0f086bcb153149ab54ef0d29223d1ef2ddca5f329d80b58b0ce87b
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/consumer-contracts-regs-2013/schedule-001.md** hash a987678 -> 931c919
+  - source: https://www.legislation.gov.uk/uksi/2013/3134/schedule/1/data.xht
+  - prior_sha256: a9876783c2edc3d1f3ce72a5ffcd698c841563dcb19d0398d2ea9c36a07510e7
+  - new_sha256:   931c919f77ebe8a8a5037805800f06f3bad26bd15c01f50b2cdaf8cc29698027
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/fpo-2005/article-050a.md** hash d61d05c -> b90f2a8
+  - source: https://www.legislation.gov.uk/uksi/2005/1529/article/50A/data.xht
+  - prior_sha256: d61d05c8c01500867fd244626725076e2a8f11cc9dc2e680c581432bd565ccc2
+  - new_sha256:   b90f2a8cd5561765e0abfbb70cd9e370ecde861d9572eae99ba6c7b45a607b6a
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/fpo-2005/article-048.md** hash 65073d8 -> 6e567f2
+  - source: https://www.legislation.gov.uk/uksi/2005/1529/article/48/data.xht
+  - prior_sha256: 65073d830f9a697619897f109422d9c98bed939c08bd7eac9252e8a89ff9aaf5
+  - new_sha256:   6e567f24bb36ab5aa24dfdf2a8d9cfa8aabc1bc499f4b952696cf34bdb9fd0c3
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/duaa-2025/uksi-082-regulation-005.md** hash 5bb4b38 -> 8ebd78e
+  - source: https://www.legislation.gov.uk/uksi/2026/82/regulation/5/data.xht
+  - prior_sha256: 5bb4b386178dc748d5b2aa473d863eb7541ceb3710b1029ff9a16045d02b7c11
+  - new_sha256:   8ebd78ed7aa06b06d2a1739fe8d81fa86690827edbfc3bfc07ad0ea186f039cb
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/gdpr/article-004.md** hash 8ddb1f6 -> a829228
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/4/data.xht
+  - prior_sha256: 8ddb1f6f15948dd9a041377812736d7f6cb59f75b1e4e1fc57e8db0d7f4b70bc
+  - new_sha256:   a829228d1128d02298d6cd90d17ec8be8931dab33e7a1a33c9b7db5dac338b49
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/mdd-93-42/annex-ix.md** new file
+  - source: https://www.legislation.gov.uk/eudr/1993/42/annex/IX/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   14327a941b32b34d9a798cda40a4c2f9d2498ca96cf8a25f199b8fc47455e765
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/mdr-2002/regulation-007a.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2002/618/regulation/7A/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   85c5130d9f294ab0521f0fe757fef0dd6df2f172d671b6c4b6a515956b84837b
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
+- **corpus/statute/uk/mdr-2002/regulation-007.md** new file
+  - source: https://www.legislation.gov.uk/uksi/2002/618/regulation/7/data.xht
+  - prior_sha256: (new file)
+  - new_sha256:   b1aafe5f7a75a5830c9c86125d38f56a2df5794e9f090b3e20bd47f3c390c21c
+  - revision: Thu, 15 Oct 2026 17:10:36 GMT
+
 ## 2026-11-09
 - **corpus/statute/uk/vata-1994/schedule-009-group-007.md** new file
   - source: https://www.legislation.gov.uk/ukpga/1994/23/schedule/9/part/II/chapter/7/data.xht

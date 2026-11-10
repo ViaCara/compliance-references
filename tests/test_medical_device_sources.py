@@ -102,6 +102,52 @@ class MedicalDeviceSourceTests(unittest.TestCase):
         self.assertIn("including triaging and allocating\n> treatment pathways.", body)
         self.assertIn("regulated as a class IIa medical device.", body)
 
+    def test_mhra_mental_health_guidance_holds_the_easily_verifiable_test(self):
+        _, body = self._read("mhra-dmht-qualification-classification")
+
+        self.assertIn("> Presents progress, creates graphs", body)
+        self.assertIn("> D. Processes data / information with an easily verifiable calculation /\n> algorithm (Note 1)", body)
+        self.assertIn("> F. Processes data / information with a calculation / algorithm that is\n> not easily verifiable", body)
+        self.assertIn("detect whether a score is incorrect and check it, without additional\n> aids such as a calculator", body)
+        self.assertIn("only use this category if you are obtaining a UKCA certification", body)
+
+    def test_mhra_mental_health_guidance_holds_the_phq9_functions_and_examples(self):
+        _, body = self._read("mhra-dmht-qualification-classification")
+
+        self.assertIn("Function 13 – Nine-item patient health questionnaire (PHQ-9) which is\neasily verifiable. Rated Low:", body)
+        self.assertIn("Function 15 – Digital diary and presenting data graphically. Rated Low:", body)
+        self.assertIn("with a red flag for any results that fall above the\n> standard deviation of the average", body)
+        self.assertIn("### Example 11 – PHQ-9 that is easily verifiable", body)
+        self.assertIn("### Example 13 - Digital diary and presenting data graphically that is easily verifiable", body)
+
+    def test_regulation_7_classifies_by_annex_ix_in_great_britain(self):
+        fields, body = self._read("mdr-2002-reg-007")
+
+        self.assertEqual("in_force", fields["enforcement_status"])
+        great_britain = body.index("**Extent:** England, Wales and Scotland")
+        self.assertLess(great_britain, body.index("classification criteria set out in Annex IX of Directive 93/42"))
+        self.assertIn("between a manufacturer and an approved body", body)
+
+    def test_regulation_7a_requires_registration_before_placing_on_the_market(self):
+        fields, body = self._read("mdr-2002-reg-007a")
+
+        self.assertEqual("in_force", fields["enforcement_status"])
+        self.assertIn("No person may place a relevant device on the market in accordance with this Part unless that person—", body)
+        self.assertIn("(b) that person supplies the Secretary of State with a description of the relevant device; and", body)
+        self.assertIn("relevant fee in accordance with regulation 53", body)
+
+    def test_annex_ix_holds_the_software_and_active_device_rules(self):
+        source = self.sources["mdd-93-42-annex-ix"]
+        self.assertTrue(source["source_uri"].endswith("eudr/1993/42/annex/IX/data.xht"))
+
+        _fields, body = self._read("mdd-93-42-annex-ix")
+
+        self.assertIn("Stand alone software is considered to be an active medical device.", body)
+        self.assertIn("**2.1. Application of the classification rules shall be governed by the intended purpose of the devices.**", body)
+        self.assertIn("**3.2. Rule 10**\n\nActive devices intended for diagnosis are in Class IIa:", body)
+        self.assertIn("if they are intended to allow direct diagnosis or monitoring of vital physiological processes", body)
+        self.assertIn("**3.3. Rule 12**\n\nAll other active devices are in Class I.", body)
+
     def test_dmcc_section_247_names_mental_health_vulnerability(self):
         source = self.sources["dmcc-2024-s-247"]
         self.assertTrue(source["source_uri"].endswith("ukpga/2024/13/section/247/data.xht"))

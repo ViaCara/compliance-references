@@ -6,9 +6,9 @@ kind: legislation_article
 citation: ROA 1974 (Exceptions) Order 1975, art. 3
 source_uri: "https://www.legislation.gov.uk/uksi/1975/1023/article/3/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: f3c932e75e0e24d1d0ac1621a8f39db00a2df49bd1817ef870b868ad10f046c9
-last_fetched: 2026-09-03
+revision_id: "Thu, 15 Oct 2026 17:10:36 GMT"
+content_sha256: e16a2126edb3a3f80c1964a7ca5c38127e031e551c5254891f5f1009a85917e5
+last_fetched: 2026-11-10
 language: en-GB
 enforcement_status: in_force
 ---
@@ -81,6 +81,14 @@ and where the person to whom the question relates is informed at the time the qu
 (i) the person questioned is informed at the time the question is asked that, by virtue of this Order, spent convictions ... are to be disclosed; and
 
 (ii) the question is asked in order to assess the suitability of the individual to whom the question relates to have the status specified in the first column of that entry;
+
+Status
+
+Questioner
+
+(a) The Council of Lloyd’s.
+
+(b) The person with Part 4A permission specified in the first column (or a person applying for such permission).
 
 (h) any question asked by or on behalf of the Gambling Commission for the purpose of determining whether to grant or revoke a licence under Part I of the National Lottery etc. Act 1993 where the question relates to an individual—
 

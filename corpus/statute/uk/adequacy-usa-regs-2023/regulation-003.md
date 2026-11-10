@@ -6,9 +6,9 @@ kind: legislation_regulation
 citation: S.I. 2023/1028 reg. 3
 source_uri: "https://www.legislation.gov.uk/uksi/2023/1028/regulation/3/data.xht"
 source_format: xhtml
-revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
-content_sha256: 5a23c46de3a0289ca08435c285c662b798e40676ef9072dc56b47ba3d1ecb89d
-last_fetched: 2026-10-07
+revision_id: "Thu, 15 Oct 2026 17:10:36 GMT"
+content_sha256: fe37d09232b56bdfd6ba182d74b805fd809f7d32c341d20bf5b37aa0c59311d9
+last_fetched: 2026-11-10
 language: en-GB
 enforcement_status: in_force
 ---
@@ -23,3 +23,9 @@ _Adequate level of protection_
 (a) is to a person in the United States of America who is indicated on the Data Privacy Framework List as participating in the UK Extension to the EU-US Data Privacy Framework; and
 
 (b) will be subject to the EU-US Data Privacy Framework Principles on receipt by that person.
+
+2018 c. 12.
+
+The “UK GDPR” is defined in section 3(10) of the 2018 Act.
+
+“Personal data” is defined in Article 4(1) of the UK GDPR and has the same meaning in Part 2 of the 2018 Act by virtue of section 5 of that Act.

@@ -6,13 +6,15 @@ kind: legislation_schedule
 citation: Consumer Contracts Regulations 2013 Sch. 1
 source_uri: "https://www.legislation.gov.uk/uksi/2013/3134/schedule/1/data.xht"
 source_format: xhtml
-revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
-content_sha256: a9876783c2edc3d1f3ce72a5ffcd698c841563dcb19d0398d2ea9c36a07510e7
-last_fetched: 2026-08-24
+revision_id: "Thu, 15 Oct 2026 17:10:36 GMT"
+content_sha256: 931c919f77ebe8a8a5037805800f06f3bad26bd15c01f50b2cdaf8cc29698027
+last_fetched: 2026-11-10
 language: en-GB
 enforcement_status: in_force
 ---
 # Consumer Contracts Regulations 2013 Sch. 1
+
+The information referred to in regulation 9(1) is—
 
 (a) the main characteristics of the goods, services or digital content, to the extent appropriate to the medium of communication and to the goods, services or digital content;
 
