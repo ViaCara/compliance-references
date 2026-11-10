@@ -83,6 +83,24 @@ class LegislationTransformerTests(unittest.TestCase):
 
         self.assertIn("**3.3. Rule 12**\n\nAll other active devices are in Class I.", markdown)
 
+    def test_does_not_emit_part_of_a_table_from_its_eu_text_cells(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<p class="LegText">Before the table.</p>'
+            '<table class="LegTable"><thead><tr>'
+            '<th><p class="LegText">Status</p></th><th><p class="LegText">Questioner</p></th>'
+            '</tr></thead><tbody><tr>'
+            '<td class="LegTD">A person with Part 4A permission.</td>'
+            '<td class="LegTD"><p class="LegText">The FCA.</p></td>'
+            "</tr></tbody></table>"
+            "</div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Art. 3")
+
+        self.assertIn("Before the table.", markdown)
+        self.assertNotIn("Questioner", markdown)
+        self.assertNotIn("The FCA.", markdown)
+
     def test_real_osa_section_022_scopes_category_1_duties(self):
         source = (FIXTURES / "osa_2023_section_022.xhtml").read_text(encoding="utf-8")
         markdown = LegislationTransformer().transform(source, citation="OSA 2023 s. 22")

@@ -27,12 +27,6 @@ Drift log. Newer entries first.
   - new_sha256:   b8b4c886fc9f34628c52ca7b78ff361b358152b65beab9cc1eb3c530ec9e803e
   - revision: Thu, 15 Oct 2026 17:10:36 GMT
 
-- **corpus/statute/uk/roa-exceptions-order-1975/article-003.md** hash f3c932e -> e16a212
-  - source: https://www.legislation.gov.uk/uksi/1975/1023/article/3/data.xht
-  - prior_sha256: f3c932e75e0e24d1d0ac1621a8f39db00a2df49bd1817ef870b868ad10f046c9
-  - new_sha256:   e16a2126edb3a3f80c1964a7ca5c38127e031e551c5254891f5f1009a85917e5
-  - revision: Thu, 15 Oct 2026 17:10:36 GMT
-
 - **corpus/statute/uk/conduct-regs-2003/schedule-003.md** hash 38c53d9 -> 57389ef
   - source: https://www.legislation.gov.uk/uksi/2003/3319/schedule/3/data.xht
   - prior_sha256: 38c53d9f0f404e2f7981bbad2122774a3a97cf88a5bc97bb7da58dcb64f65da2

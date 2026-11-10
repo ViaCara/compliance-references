@@ -223,6 +223,16 @@ class LegislationTransformer:
                 title = _inline_text(child)
         return " - ".join(part for part in (number, title) if part)
 
+    def _table_descendants(self, root: ET.Element) -> set[int]:
+        """Cells mark only some of their text as LegText, so emitting it
+        would print part of a table without its row associations."""
+        return {
+            id(descendant)
+            for table in root.iter()
+            if _localname(table.tag) == "table"
+            for descendant in table.iter()
+        }
+
     def _division_heading(self, element: ET.Element) -> str:
         number = title = ""
         for child in element.iter():
@@ -252,6 +262,7 @@ class LegislationTransformer:
         emitted_any = False
         contained = self._contained_elements(root)
         list_numbers = self._list_item_numbers(root)
+        in_tables = self._table_descendants(root)
         extents = self._concurrent_extents(root)
         for element in root.iter():
             cls = _classes(element)
@@ -308,6 +319,8 @@ class LegislationTransformer:
                     yield f"{indent}{number} {text}".strip()
                 continue
             if _EU_TEXT_CLASS in cls:
+                if id(element) in in_tables:
+                    continue
                 text = _inline_text(element)
                 if text and not _is_repealed_marker(text):
                     emitted_any = True
