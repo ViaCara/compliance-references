@@ -6,13 +6,15 @@ kind: legislation_schedule
 citation: Consumer Contracts Regulations 2013 Sch. 2
 source_uri: "https://www.legislation.gov.uk/uksi/2013/3134/schedule/2/data.xht"
 source_format: xhtml
-revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
-content_sha256: 857bc0116ce90af04066ba7f371dc1f983e836ac708540330ad5743349633fbf
-last_fetched: 2026-08-24
+revision_id: "Thu, 15 Oct 2026 17:10:36 GMT"
+content_sha256: 5f71573f9e0f086bcb153149ab54ef0d29223d1ef2ddca5f329d80b58b0ce87b
+last_fetched: 2026-11-10
 language: en-GB
 enforcement_status: in_force
 ---
 # Consumer Contracts Regulations 2013 Sch. 2
+
+The information referred to in regulations 10(1) and 13(1) is (subject to the note at the end of this Schedule)—
 
 (a) the main characteristics of the goods, services or digital content, to the extent appropriate to the medium of communication and to the goods, services or digital content;
 
@@ -61,3 +63,5 @@ enforcement_status: in_force
 (w) where applicable, any relevant compatibility of digital content with hardware and software that the trader is aware of or can reasonably be expected to have been aware of;
 
 (x) where applicable, the possibility of having recourse to an out-of-court complaint and redress mechanism, to which the trader is subject, and the methods for having access to it.
+
+Note: In the case of a public auction, the information listed in paragraphs (b) to (e) may be replaced with the equivalent details for the auctioneer.

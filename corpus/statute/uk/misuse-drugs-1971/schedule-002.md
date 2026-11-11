@@ -6,9 +6,9 @@ kind: legislation_schedule
 citation: Misuse of Drugs Act 1971 Schedule 2
 source_uri: "https://www.legislation.gov.uk/ukpga/1971/38/schedule/2/data.xht"
 source_format: xhtml
-revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
-content_sha256: 55a3892e2c8bbd2e27670c189b11f947a39572fc3ffdd8e7185280a3931b54c1
-last_fetched: 2026-10-07
+revision_id: "Thu, 15 Oct 2026 17:10:36 GMT"
+content_sha256: 0afbadf61bf950ac4a382473826f994c845136a7f026b4ddad5ad743ebb2f712
+last_fetched: 2026-11-10
 language: en-GB
 enforcement_status: in_force
 ---
@@ -1065,6 +1065,8 @@ Zilpaterol.
 4 Any preparation or other product containing a substance for the time being specified in any of paragraphs 1 to 3 of this Part of this Schedule.
 
 **Part IV - Meaning of certain Expressions used in this Schedule**
+
+For the purposes of this Schedule the following expressions (which are not among those defined in section 37(1) of this Act) have the meanings hereby assigned to them respectively, that is to say—
 
 “cannabinol derivatives” means the following substances, except where contained in cannabis or cannabis resin, namely tetrahydro derivatives of cannabinol and 3-alkyl homologues of cannabinol or of its tetrahydro derivatives;
 

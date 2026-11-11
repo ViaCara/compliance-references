@@ -6,9 +6,9 @@ kind: legislation_schedule
 citation: ROA 1974 (Exceptions) Order 1975, Sch. 1
 source_uri: "https://www.legislation.gov.uk/uksi/1975/1023/schedule/1/data.xht"
 source_format: xhtml
-revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
-content_sha256: de250ae9e39e6d127144209f97c46126d917330fabe56b504fc0f8a7cdc0e11d
-last_fetched: 2026-10-07
+revision_id: "Thu, 15 Oct 2026 17:10:36 GMT"
+content_sha256: b8b4c886fc9f34628c52ca7b78ff361b358152b65beab9cc1eb3c530ec9e803e
+last_fetched: 2026-11-10
 language: en-GB
 enforcement_status: in_force
 ---
@@ -88,6 +88,8 @@ Traffic wardens appointed under section 81 of the Road Traffic Regulation Act 19
 
 (b) the representation of, or advocacy services for, vulnerable adults by a service that has been approved by the Secretary of State or created under any enactment;
 
+and which is of such a kind as to enable a person, in the course of his normal duties, to have access to vulnerable adults in receipt of such services.
+
 12A. Any work which is regulated activity relating to vulnerable adults within the meaning of Part 2 of Schedule 4 to the 2006 Act including that Part as it had effect immediately before the coming into force of section 66 of the Protection of Freedoms Act 2012.
 
 13. Any employment or other work which is concerned with the provision of health services and which is of such a kind as to enable the holder of that employment or the person engaged in that work to have access to persons in receipt of such services in the course of his normal duties.
@@ -97,6 +99,8 @@ Traffic wardens appointed under section 81 of the Road Traffic Regulation Act 19
 (a) the investigation of fraud, corruption or other unlawful activity affecting the national health service, or
 
 (b) security management in the national health service,
+
+where “the national health service” means, in respect of England, the health service continued under section 1(1) of the National Health Service Act 2006 and, in respect of Wales, that continued under section 1(1) of the National Health Service (Wales) Act 2006.
 
 14. Any work which is—
 
@@ -125,6 +129,8 @@ Traffic wardens appointed under section 81 of the Road Traffic Regulation Act 19
 (a) has contact with vulnerable adults; or
 
 (b) has access to sensitive or personal information about children or vulnerable
+
+adults.
 
 15. Any employment in the Royal Society for the Prevention of Cruelty to Animals where the person employed or working, as part of his duties, may carry out the humane killing of animals.
 
@@ -256,6 +262,8 @@ A head of legal practice of a licensed body.
 
 14. CILEx approved manager.
 
+In this Schedule—
+
 “actuary” means a member of the Institute and Faculty of Actuaries;
 
 “approved legal services body manager” means a person who must be approved by the Law Society under section 9A(2)(e) of the Administration of Justice Act 1985;
@@ -320,7 +328,7 @@ A head of legal practice of a licensed body.
 
 “home inspector” means a person who is a member of a certification scheme approved by the Secretary of State in accordance with section 164(3) of the Housing Act 2004;
 
-“judges of the Supreme Court” means the Lord Chief Justice, the Master of the Rolls, the President of the Queen’s Bench Division, the President of the Family Division, the Chancellor of the High Court, the Lords Justices of Appeal and the puisne judges of the High Court;
+“judges of the Supreme Court” means the Lord Chief Justice, the Master of the Rolls, the President of the Queen’s Bench Division, the President of the Family Division, the President of the Business and Property Division, the Lords Justices of Appeal and the puisne judges of the High Court;
 
 ...
 

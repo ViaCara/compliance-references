@@ -7,8 +7,8 @@ citation: UK GDPR Article 4
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/4/data.xht"
 source_format: xhtml
 revision_id: "Thu, 15 Oct 2026 17:10:36 GMT"
-content_sha256: 8ddb1f6f15948dd9a041377812736d7f6cb59f75b1e4e1fc57e8db0d7f4b70bc
-last_fetched: 2026-11-03
+content_sha256: a829228d1128d02298d6cd90d17ec8be8931dab33e7a1a33c9b7db5dac338b49
+last_fetched: 2026-11-10
 language: en-GB
 enforcement_status: in_force
 ---
@@ -121,3 +121,5 @@ _Definitions_
 (d) so far as the intended purposes of the processing allow, the data subject is given the opportunity to consent only to processing for part of the research.
 
 7. References in this Regulation to consent given for a specific purpose (however expressed) include consent described in paragraph 6.
+
+Directive (EU) 2015/1535 of the European Parliament and of the Council of 9 September 2015 laying down a procedure for the provision of information in the field of technical regulations and of rules on Information Society services (OJ L 241, 17.9.2015, p. 1).

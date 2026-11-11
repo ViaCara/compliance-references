@@ -6,9 +6,9 @@ kind: legislation_article
 citation: FPO 2005 art. 48
 source_uri: "https://www.legislation.gov.uk/uksi/2005/1529/article/48/data.xht"
 source_format: xhtml
-revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
-content_sha256: 65073d830f9a697619897f109422d9c98bed939c08bd7eac9252e8a89ff9aaf5
-last_fetched: 2026-10-08
+revision_id: "Thu, 15 Oct 2026 17:10:36 GMT"
+content_sha256: 6e567f24bb36ab5aa24dfdf2a8d9cfa8aabc1bc499f4b952696cf34bdb9fd0c3
+last_fetched: 2026-11-10
 language: en-GB
 enforcement_status: in_force
 ---
@@ -43,6 +43,8 @@ _... High net worth individuals_
 (5) The warning must be in the following terms—
 
 “The content of this promotion has not been approved by an authorised person within the meaning of the Financial Services and Markets Act 2000. Reliance on this promotion for the purpose of engaging in any investment activity may expose an individual to a significant risk of losing all of the property or other assets invested.”.
+
+But where a warning is sent pursuant to paragraph (4)(b), for the words “ this promotion ” in both places where they occur there must be substituted wording which clearly identifies the promotion which is the subject of the warning.
 
 (5A) The warning must be accompanied by the following information—
 
