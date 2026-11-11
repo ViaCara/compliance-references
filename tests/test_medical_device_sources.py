@@ -148,6 +148,16 @@ class MedicalDeviceSourceTests(unittest.TestCase):
         self.assertIn("if they are intended to allow direct diagnosis or monitoring of vital physiological processes", body)
         self.assertIn("**3.3. Rule 12**\n\nAll other active devices are in Class I.", body)
 
+    def test_annex_ix_rule_10_keeps_the_class_iib_exception(self):
+        _fields, body = self._read("mdd-93-42-annex-ix")
+
+        self.assertIn(
+            "unless they are specifically intended for monitoring of vital physiological parameters",
+            body,
+        )
+        self.assertIn("in which case they are in Class IIb.", body)
+        self.assertIn("Class IIb", self.sources["mdd-93-42-annex-ix"]["summary"])
+
     def test_dmcc_section_247_names_mental_health_vulnerability(self):
         source = self.sources["dmcc-2024-s-247"]
         self.assertTrue(source["source_uri"].endswith("ukpga/2024/13/section/247/data.xht"))
