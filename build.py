@@ -20,8 +20,8 @@ from lib.fetcher import FetchError, Fetcher, NotModified
 from lib.frontmatter import FrontmatterError, body_sha256, parse, render
 from lib.index import write_index
 from lib.manifest import EUR_LEX_KINDS, LEGISLATION_KINDS, OTHER_KINDS, load
-from lib.transformer_eur_lex import EurLexTransformer
-from lib.transformer_legislation import LegislationTransformer
+from lib.transformer_eur_lex import EurLexTransformer, EurLexTransformerError
+from lib.transformer_legislation import LegislationTransformer, TransformerError
 
 
 ROOT = Path(__file__).resolve().parent
@@ -111,21 +111,25 @@ def _process_entry(entry, target_path: Path, ctx: BuildContext) -> str:
     try:
         result = ctx.fetcher.fetch(entry["source_uri"], if_none_match=prior_etag)
     except NotModified:
-        return _retitle(entry, target_path, prior_fields) or "no-op"
+        return _resync_metadata(entry, target_path, prior_fields) or "no-op"
 
     transformer_kind = entry["kind"]
     citation = entry.get("citation") or entry.get("title") or entry["id"]
     if transformer_kind in LEGISLATION_KINDS:
-        body = ctx.legislation.transform(result.body.decode("utf-8"), citation=citation)
+        transformer = ctx.legislation
     elif transformer_kind in EUR_LEX_KINDS:
-        body = ctx.eur_lex.transform(result.body.decode("utf-8"), citation=citation)
+        transformer = ctx.eur_lex
     else:
         raise BuildError(f"no transformer for kind={transformer_kind!r}")
+    try:
+        body = transformer.transform(result.body.decode("utf-8"), citation=citation)
+    except (TransformerError, EurLexTransformerError) as exc:
+        raise BuildError(f"cannot transform {entry['source_uri']}: {exc}") from exc
 
     new_hash = body_sha256(body)
     enforcement_status = entry.get("enforcement_status", "in_force")
     if prior_sha == new_hash and prior_status == enforcement_status:
-        return _retitle(entry, target_path, prior_fields) or "unchanged"
+        return _resync_metadata(entry, target_path, prior_fields) or "unchanged"
 
     fields = {
         "id": entry["id"],
@@ -161,12 +165,19 @@ def _process_entry(entry, target_path: Path, ctx: BuildContext) -> str:
     return "written"
 
 
-def _retitle(entry, target_path: Path, prior_fields: dict | None) -> str | None:
-    title = entry.get("title") or entry.get("citation") or entry["id"]
-    if not prior_fields or prior_fields.get("title") == title:
+def _resync_metadata(entry, target_path: Path, prior_fields: dict | None) -> str | None:
+    """Carry a manifest title or source URI change into the frontmatter when
+    the body did not change. No changelog entry: the text is the same."""
+    if not prior_fields:
+        return None
+    wanted = {
+        "title": entry.get("title") or entry.get("citation") or entry["id"],
+        "source_uri": entry["source_uri"],
+    }
+    if all(prior_fields.get(key) == value for key, value in wanted.items()):
         return None
     _fields, body = parse(target_path.read_text(encoding="utf-8"))
-    target_path.write_text(render({**prior_fields, "title": title}, body), encoding="utf-8")
+    target_path.write_text(render({**prior_fields, **wanted}, body), encoding="utf-8")
     return "written"
 
 
