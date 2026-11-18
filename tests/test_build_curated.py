@@ -106,7 +106,7 @@ class ProcessEntryTest(unittest.TestCase):
 
             self.assertEqual("2026-07-24", changelog.entry.date)
 
-            self.assertEqual('"prior"', fetcher.if_none_match)
+            self.assertIsNone(fetcher.if_none_match)
 
     def test_rewrites_title_when_manifest_title_changes_without_body_drift(self):
         entry = {
@@ -196,13 +196,23 @@ class ProcessEntryTest(unittest.TestCase):
                 "id": entry["id"],
                 "title": entry["title"],
                 "source_uri": "https://example.europa.eu/old",
+                "revision_id": "",
                 "content_sha256": body_sha256(body),
+                "last_fetched": "2026-09-26",
                 "enforcement_status": "in_force",
+                "etag": '"old-address"',
             }
             path.write_text(render(fields, body), encoding="utf-8")
             changelog = _StaticChangelog()
+            fetcher = _StaticFetcher(
+                FetchResult(
+                    body=body.encode(),
+                    etag='"new-address"',
+                    last_modified="Wed, 05 Feb 2025 15:31:18 GMT",
+                )
+            )
             context = build.BuildContext(
-                fetcher=_StaticFetcher(FetchResult(body=body.encode(), etag=None, last_modified=None)),
+                fetcher=fetcher,
                 legislation=None,
                 eur_lex=_StaticTransformer(body),
                 changelog=changelog,
@@ -213,7 +223,18 @@ class ProcessEntryTest(unittest.TestCase):
 
             actual, actual_body = build.parse(path.read_text(encoding="utf-8"))
 
-            self.assertEqual({**fields, "source_uri": entry["source_uri"]}, actual)
+            self.assertIsNone(fetcher.if_none_match)
+
+            self.assertEqual(
+                {
+                    **fields,
+                    "source_uri": entry["source_uri"],
+                    "revision_id": "Wed, 05 Feb 2025 15:31:18 GMT",
+                    "last_fetched": "2026-11-18",
+                    "etag": '"new-address"',
+                },
+                actual,
+            )
 
             self.assertEqual(body, actual_body)
 
@@ -227,7 +248,7 @@ class ProcessEntryTest(unittest.TestCase):
         }
         with tempfile.TemporaryDirectory() as tmp:
             context = build.BuildContext(
-                fetcher=_StaticFetcher(FetchResult(body=b"<html></html>", etag=None, last_modified=None)),
+                fetcher=_StaticFetcher(FetchResult(body=b"\xff<html></html>", etag=None, last_modified=None)),
                 legislation=None,
                 eur_lex=build.EurLexTransformer(),
                 changelog=_StaticChangelog(),

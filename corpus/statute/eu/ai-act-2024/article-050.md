@@ -6,11 +6,12 @@ kind: eur_lex_article
 citation: Regulation (EU) 2024/1689 Article 50
 source_uri: "https://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1"
 source_format: html
-revision_id: ""
+revision_id: "Thu, 17 Oct 2024 11:39:20 GMT"
 content_sha256: c9b57e30fdd857dbb5ab28be5cad6fce3e9c3a580af1c298de19f284700b7877
-last_fetched: 2026-08-01
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
+etag: "\"Con-20241017133920000\""
 ---
 # Regulation (EU) 2024/1689 Article 50
 

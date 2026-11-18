@@ -105,13 +105,18 @@ def _process_entry(entry, target_path: Path, ctx: BuildContext) -> str:
         return _verify_curated(entry, target_path)
 
     prior_fields = _prior_fields(target_path)
-    prior_etag = prior_fields.get("etag") if prior_fields else None
     prior_sha = prior_fields.get("content_sha256") if prior_fields else None
     prior_status = prior_fields.get("enforcement_status", "in_force") if prior_fields else None
+    enforcement_status = entry.get("enforcement_status", "in_force")
+    moved = bool(prior_fields) and prior_fields.get("source_uri") not in (None, entry["source_uri"])
+    # An etag belongs to the address that issued it, and a 304 would hide a
+    # manifest status change, so only an unchanged entry asks conditionally.
+    conditional = prior_fields and not moved and prior_status == enforcement_status
+    prior_etag = prior_fields.get("etag") if conditional else None
     try:
         result = ctx.fetcher.fetch(entry["source_uri"], if_none_match=prior_etag)
     except NotModified:
-        return _resync_metadata(entry, target_path, prior_fields) or "no-op"
+        return _retitle(entry, target_path, prior_fields) or "no-op"
 
     transformer_kind = entry["kind"]
     citation = entry.get("citation") or entry.get("title") or entry["id"]
@@ -123,13 +128,14 @@ def _process_entry(entry, target_path: Path, ctx: BuildContext) -> str:
         raise BuildError(f"no transformer for kind={transformer_kind!r}")
     try:
         body = transformer.transform(result.body.decode("utf-8"), citation=citation)
-    except (TransformerError, EurLexTransformerError) as exc:
+    except (TransformerError, EurLexTransformerError, UnicodeDecodeError) as exc:
         raise BuildError(f"cannot transform {entry['source_uri']}: {exc}") from exc
 
     new_hash = body_sha256(body)
-    enforcement_status = entry.get("enforcement_status", "in_force")
     if prior_sha == new_hash and prior_status == enforcement_status:
-        return _resync_metadata(entry, target_path, prior_fields) or "unchanged"
+        if moved:
+            return _repoint(entry, target_path, prior_fields, result, ctx.today)
+        return _retitle(entry, target_path, prior_fields) or "unchanged"
 
     fields = {
         "id": entry["id"],
@@ -165,19 +171,30 @@ def _process_entry(entry, target_path: Path, ctx: BuildContext) -> str:
     return "written"
 
 
-def _resync_metadata(entry, target_path: Path, prior_fields: dict | None) -> str | None:
-    """Carry a manifest title or source URI change into the frontmatter when
-    the body did not change. No changelog entry: the text is the same."""
-    if not prior_fields:
-        return None
-    wanted = {
-        "title": entry.get("title") or entry.get("citation") or entry["id"],
-        "source_uri": entry["source_uri"],
-    }
-    if all(prior_fields.get(key) == value for key, value in wanted.items()):
+def _retitle(entry, target_path: Path, prior_fields: dict | None) -> str | None:
+    title = entry.get("title") or entry.get("citation") or entry["id"]
+    if not prior_fields or prior_fields.get("title") == title:
         return None
     _fields, body = parse(target_path.read_text(encoding="utf-8"))
-    target_path.write_text(render({**prior_fields, **wanted}, body), encoding="utf-8")
+    target_path.write_text(render({**prior_fields, "title": title}, body), encoding="utf-8")
+    return "written"
+
+
+def _repoint(entry, target_path: Path, prior_fields: dict, result, today: str) -> str:
+    """The manifest moved the source and the new address serves the same
+    text. Record the new address with its own revision and etag. No changelog
+    entry: the text is the same."""
+    fields = {
+        **{key: value for key, value in prior_fields.items() if key != "etag"},
+        "title": entry.get("title") or entry.get("citation") or entry["id"],
+        "source_uri": entry["source_uri"],
+        "revision_id": result.last_modified or "",
+        "last_fetched": today,
+    }
+    if result.etag:
+        fields["etag"] = result.etag
+    _fields, body = parse(target_path.read_text(encoding="utf-8"))
+    target_path.write_text(render(fields, body), encoding="utf-8")
     return "written"
 
 

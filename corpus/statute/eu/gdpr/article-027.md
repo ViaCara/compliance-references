@@ -6,11 +6,12 @@ kind: eur_lex_article
 citation: Regulation (EU) 2016/679 Article 27
 source_uri: "https://publications.europa.eu/resource/cellar/3e485e15-11bd-11e6-ba9a-01aa75ed71a1.0006.03/DOC_1"
 source_format: html
-revision_id: ""
+revision_id: "Wed, 05 Feb 2025 15:31:18 GMT"
 content_sha256: 6652dfa78d70bddc4486d5e61683d09624ddb31672d3a4d802872a1352c6e97a
-last_fetched: 2026-08-14
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
+etag: "\"Con-20250205163118000\""
 ---
 # Regulation (EU) 2016/679 Article 27
 
