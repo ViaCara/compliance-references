@@ -19,7 +19,11 @@ jobs:
         with:
           python-version: "3.12"
 
+      # A source that fails must not hold back the drift of the others, so
+      # the run opens its pull request first and fails at the end.
       - name: Run pipeline
+        id: pipeline
+        continue-on-error: true
         run: python3 build.py
 
       - name: Open PR on drift
@@ -41,3 +45,9 @@ jobs:
           fi
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Fail when a source failed
+        if: steps.pipeline.outcome == 'failure'
+        run: |
+          echo "::error::build.py reported a source error; see the Run pipeline step"
+          exit 1
