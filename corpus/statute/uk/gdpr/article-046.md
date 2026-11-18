@@ -6,9 +6,9 @@ kind: legislation_article
 citation: UK GDPR Article 46
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/46/data.xht"
 source_format: xhtml
-revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
-content_sha256: febf3cd61732869e69f0fefe643cd30944cde07e8ac28b351634b3b4f0e7bed1
-last_fetched: 2026-08-24
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: 98809df5fccc235d98bb696cccee24e7bbee904ecd0c898fe53c299634ce3980
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
@@ -34,7 +34,7 @@ _Transfers subject to appropriate safeguards_
 
 (ii) each public body that is a party to the instrument, acting reasonably and proportionately, considers that the data protection test is met in relation to the transfers, or types of transfer, intended to be made in reliance on the instrument (see paragraph 6).
 
-2. The ... safeguards referred to in paragraph 1A(a) may be provided for, without requiring any specific authorisation from the Commissioner, by:
+2. The ... safeguards referred to in paragraph 1A(a) may be provided for, without requiring any specific authorisation from the Commission, by:
 
 (a) a legally binding and enforceable instrument between a public body and another relevant person or persons;
 
@@ -42,13 +42,13 @@ _Transfers subject to appropriate safeguards_
 
 (c) standard data protection clauses specified in regulations made by the Secretary of State under Article 47A(1) and for the time being in force;
 
-(d) standard data protection clauses specified in a document issued (and not withdrawn) by the Commissioner for the purposes of this Article under section 119A of the 2018 Act and for the time being in force;
+(d) standard data protection clauses specified in a document issued (and not withdrawn) by the Commission for the purposes of this Article under section 119A of the 2018 Act and for the time being in force;
 
 (e) an approved code of conduct pursuant to Article 40 together with binding and enforceable commitments of the controller or processor in the third country to apply the safeguards provided by the code, including as regards data subjects' rights; or
 
 (f) an approved certification mechanism pursuant to Article 42 together with binding and enforceable commitments of the controller or processor in the third country to apply the safeguards provided by the mechanism, including as regards data subjects' rights.
 
-3. With authorisation from the Commissioner, the ... safeguards referred to in paragraph 1A(a) may also be provided for ... by:
+3. With authorisation from the Commission, the ... safeguards referred to in paragraph 1A(a) may also be provided for ... by:
 
 (a) contractual clauses between the controller or processor and the controller, processor or the recipient of the personal data in the third country or international organisation; or
 

@@ -6,9 +6,9 @@ kind: legislation_article
 citation: UK GDPR Article 15
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/15/data.xht"
 source_format: xhtml
-revision_id: "Wed, 22 Jul 2026 18:56:31 GMT"
-content_sha256: 37575e42b926ce1efd97356c0ad3b588f46d4e7edd4124f57d26ac14061ecfce
-last_fetched: 2026-07-24
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: 6753bd4da87393c2dc0e5caaff9337052f9536afa4fd7c93fa812964b753377d
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
@@ -32,7 +32,7 @@ _Right of access by the data subject_
 
 (ea) the right to make a complaint to the controller under section 164A of the 2018 Act;
 
-(f) the right to make a complaint to the Commissioner under section 165 of the 2018 Act;
+(f) the right to make a complaint to the Commission under section 165 of the 2018 Act;
 
 (g) where the personal data are not collected from the data subject, any available information as to their source;
 

@@ -6,9 +6,9 @@ kind: legislation_section
 citation: DPA 2018 s. 123
 source_uri: "https://www.legislation.gov.uk/ukpga/2018/12/section/123/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: 515ee37c2eb1ef1944b7175ada58ded560f66ccf60d8fe8ddb4419afe6be292c
-last_fetched: 2026-09-03
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: 252d7d95ed5f6148ae092b1fcfe9273e50a87b2600c5e3486afa978a921af57c
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
@@ -16,23 +16,23 @@ enforcement_status: in_force
 
 _Age-appropriate design code_
 
-(1) The Commissioner must prepare a code of practice which contains such guidance as the Commissioner considers appropriate on standards of age-appropriate design of relevant information society services which are likely to be accessed by children.
+(1) The Commission must prepare a code of practice which contains such guidance as the Commission considers appropriate on standards of age-appropriate design of relevant information society services which are likely to be accessed by children.
 
-(2) Where a code under this section is in force, the Commissioner may prepare amendments of the code or a replacement code.
+(2) Where a code under this section is in force, the Commission may prepare amendments of the code or a replacement code.
 
-(3) Before preparing a code or amendments under this section, the Commissioner must consult the Secretary of State and such other persons as the Commissioner considers appropriate, including—
+(3) Before preparing a code or amendments under this section, the Commission must consult the Secretary of State and such other persons as the Commission considers appropriate, including—
 
 (a) children,
 
 (b) parents,
 
-(c) persons who appear to the Commissioner to represent the interests of children,
+(c) persons who appear to the Commission to represent the interests of children,
 
 (d) child development experts, and
 
 (e) trade associations.
 
-(4) In preparing a code or amendments under this section, the Commissioner must have regard—
+(4) In preparing a code or amendments under this section, the Commission must have regard—
 
 (a) to the fact that children have different needs at different ages, and
 
@@ -50,7 +50,7 @@ _Age-appropriate design code_
 
 “relevant information society services” means information society services which involve the processing of personal data to which the UK GDPR applies;
 
-“standards of age-appropriate design of relevant information society services” means such standards of age-appropriate design of such services as appear to the Commissioner to be desirable having regard to the best interests of children;
+“standards of age-appropriate design of relevant information society services” means such standards of age-appropriate design of such services as appear to the Commission to be desirable having regard to the best interests of children;
 
 “trade association” includes a body representing controllers or processors;
 

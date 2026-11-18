@@ -6,9 +6,9 @@ kind: legislation_article
 citation: UK GDPR Article 47A
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/47A/data.xht"
 source_format: xhtml
-revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
-content_sha256: 2446fc7736885b1457214fc4510f34fc19d3cc1efa7ea0b52fb78a853e88ea19
-last_fetched: 2026-08-24
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: 438a18380840204303dec1d4845eda5eed08ea66ffc52bd632cd14bd36bd8b99
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
@@ -32,7 +32,7 @@ _Transfers subject to appropriate safeguards: further provision_
 
 (a) make provision by adopting safeguards prepared or published by another person;
 
-(b) make provision about ways of providing safeguards which require authorisation from the Commissioner.
+(b) make provision about ways of providing safeguards which require authorisation from the Commission.
 
 7. Regulations under paragraph 4 which amend Article 46 may do so only in the following ways—
 

@@ -6,9 +6,9 @@ kind: legislation_article
 citation: UK GDPR Article 35
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/35/data.xht"
 source_format: xhtml
-revision_id: "Wed, 13 May 2026 15:07:58 GMT"
-content_sha256: aea40f9dce04cbe68e319d4a79f3921a280f4a4ab476ecdb3a8df35d1075cb05
-last_fetched: 2026-05-15
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: 011d5932e310e1867f16296d26e64c8bc2dc450047ca380f02eb2b949b1d006c
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
@@ -30,9 +30,9 @@ _Data protection impact assessment_
 
 (c) a systematic monitoring of a publicly accessible area on a large scale.
 
-4. The Commissioner shall establish and make public a list of the kind of processing operations which are subject to the requirement for a data protection impact assessment pursuant to paragraph 1. ...
+4. The Commission shall establish and make public a list of the kind of processing operations which are subject to the requirement for a data protection impact assessment pursuant to paragraph 1. ...
 
-5. The Commissioner may also establish and make public a list of the kind of processing operations for which no data protection impact assessment is required. ...
+5. The Commission may also establish and make public a list of the kind of processing operations for which no data protection impact assessment is required. ...
 
 6. _(repealed)_
 

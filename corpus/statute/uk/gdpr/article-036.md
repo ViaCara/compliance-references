@@ -6,9 +6,9 @@ kind: legislation_article
 citation: UK GDPR Article 36
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/36/data.xht"
 source_format: xhtml
-revision_id: "Wed, 13 May 2026 15:07:58 GMT"
-content_sha256: a76daa78cab7bc062c03dff29169df00866dd2c9065538a60950143a6b81df71
-last_fetched: 2026-05-15
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: 2c2d8c21a6f9bd37a287682a6341c9dc235b6bb4ce79ecc7c0357c4f07774a12
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
@@ -18,11 +18,11 @@ _Prior consultation_
 
 **Chapter:** CHAPTER IV - Controller and processor
 
-1. The controller shall consult the Commissioner prior to processing where a data protection impact assessment under Article 35 indicates that the processing would result in a high risk in the absence of measures taken by the controller to mitigate the risk.
+1. The controller shall consult the Commission prior to processing where a data protection impact assessment under Article 35 indicates that the processing would result in a high risk in the absence of measures taken by the controller to mitigate the risk.
 
-2. Where the Commissioner is of the opinion that the intended processing referred to in paragraph 1 would infringe this Regulation, in particular where the controller has insufficiently identified or mitigated the risk, the Commissioner shall, within period of up to eight weeks of receipt of the request for consultation, provide written advice to the controller and, where applicable to the processor, and may use any of its powers referred to in Article 58. That period may be extended by six weeks, taking into account the complexity of the intended processing. The Commissioner shall inform the controller and, where applicable, the processor, of any such extension within one month of receipt of the request for consultation together with the reasons for the delay. Those periods may be suspended until the Commissioner has obtained information the Commissioner has requested for the purposes of the consultation.
+2. Where the Commission is of the opinion that the intended processing referred to in paragraph 1 would infringe this Regulation, in particular where the controller has insufficiently identified or mitigated the risk, the Commission shall, within period of up to eight weeks of receipt of the request for consultation, provide written advice to the controller and, where applicable to the processor, and may use any of its powers referred to in Article 58. That period may be extended by six weeks, taking into account the complexity of the intended processing. The Commission shall inform the controller and, where applicable, the processor, of any such extension within one month of receipt of the request for consultation together with the reasons for the delay. Those periods may be suspended until the Commission has obtained information the Commission has requested for the purposes of the consultation.
 
-3. When consulting the Commissioner pursuant to paragraph 1, the controller shall provide the Commissioner with:
+3. When consulting the Commission pursuant to paragraph 1, the controller shall provide the Commission with:
 
 (a) where applicable, the respective responsibilities of the controller, joint controllers and processors involved in the processing, in particular for processing within a group of undertakings;
 
@@ -34,9 +34,9 @@ _Prior consultation_
 
 (e) the data protection impact assessment provided for in Article 35; and
 
-(f) any other information requested by the Commissioner.
+(f) any other information requested by the Commission.
 
-4. The relevant authority must consult the Commissioner during the preparation of a proposal for a legislative measure to be adopted by Parliament, the National Assembly for Wales, the Scottish Parliament or the Northern Ireland Assembly, or of a regulatory measure based on such a legislative measure, which relates to processing.
+4. The relevant authority must consult the Commission during the preparation of a proposal for a legislative measure to be adopted by Parliament, the National Assembly for Wales, the Scottish Parliament or the Northern Ireland Assembly, or of a regulatory measure based on such a legislative measure, which relates to processing.
 
 4A. In paragraph 4, “the relevant authority” means—
 

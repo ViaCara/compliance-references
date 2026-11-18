@@ -106,7 +106,7 @@ class ProcessEntryTest(unittest.TestCase):
 
             self.assertEqual("2026-07-24", changelog.entry.date)
 
-            self.assertEqual('"prior"', fetcher.if_none_match)
+            self.assertIsNone(fetcher.if_none_match)
 
     def test_rewrites_title_when_manifest_title_changes_without_body_drift(self):
         entry = {
@@ -123,6 +123,7 @@ class ProcessEntryTest(unittest.TestCase):
             fields = {
                 "id": entry["id"],
                 "title": "PECR regulation 23 - Wrong title",
+                "source_uri": entry["source_uri"],
                 "revision_id": "Mon, 17 Aug 2026 16:40:13 GMT",
                 "content_sha256": body_sha256(body),
                 "last_fetched": "2026-08-20",
@@ -180,6 +181,105 @@ class ProcessEntryTest(unittest.TestCase):
             actual, _body = build.parse(path.read_text(encoding="utf-8"))
 
             self.assertEqual("PECR regulation 23 - Corrected title", actual["title"])
+
+    def test_rewrites_source_uri_when_manifest_source_moves_without_body_drift(self):
+        entry = {
+            "id": "eu-gdpr-art-003",
+            "title": "EU GDPR Article 3 - Territorial scope",
+            "kind": "eur_lex_article",
+            "source_uri": "https://example.europa.eu/new",
+        }
+        body = "# Regulation (EU) 2016/679 Article 3\n\nText.\n"
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "article-003.md"
+            fields = {
+                "id": entry["id"],
+                "title": entry["title"],
+                "source_uri": "https://example.europa.eu/old",
+                "revision_id": "",
+                "content_sha256": body_sha256(body),
+                "last_fetched": "2026-09-26",
+                "enforcement_status": "in_force",
+                "etag": '"old-address"',
+            }
+            path.write_text(render(fields, body), encoding="utf-8")
+            changelog = _StaticChangelog()
+            fetcher = _StaticFetcher(
+                FetchResult(
+                    body=body.encode(),
+                    etag='"new-address"',
+                    last_modified="Wed, 05 Feb 2025 15:31:18 GMT",
+                )
+            )
+            context = build.BuildContext(
+                fetcher=fetcher,
+                legislation=None,
+                eur_lex=_StaticTransformer(body),
+                changelog=changelog,
+                today="2026-11-18",
+            )
+
+            self.assertEqual("written", build._process_entry(entry, path, context))
+
+            actual, actual_body = build.parse(path.read_text(encoding="utf-8"))
+
+            self.assertIsNone(fetcher.if_none_match)
+
+            self.assertEqual(
+                {
+                    **fields,
+                    "source_uri": entry["source_uri"],
+                    "revision_id": "Wed, 05 Feb 2025 15:31:18 GMT",
+                    "last_fetched": "2026-11-18",
+                    "etag": '"new-address"',
+                },
+                actual,
+            )
+
+            self.assertEqual(body, actual_body)
+
+            self.assertFalse(hasattr(changelog, "entry"))
+
+    def test_reports_an_untransformable_source_as_a_build_error(self):
+        entry = {
+            "id": "eu-gdpr-art-003",
+            "kind": "eur_lex_article",
+            "source_uri": "https://example.europa.eu/article-003",
+        }
+        unusable = {
+            "no source container": b"<html><body><p>Challenge</p></body></html>",
+            "not UTF-8": b"\xff\xfe",
+        }
+        for label, payload in unusable.items():
+            with self.subTest(label), tempfile.TemporaryDirectory() as tmp:
+                context = build.BuildContext(
+                    fetcher=_StaticFetcher(FetchResult(body=payload, etag=None, last_modified=None)),
+                    legislation=None,
+                    eur_lex=build.EurLexTransformer(),
+                    changelog=_StaticChangelog(),
+                    today="2026-11-18",
+                )
+
+                with self.assertRaises(build.BuildError):
+                    build._process_entry(entry, Path(tmp) / "article-003.md", context)
+
+    def test_reports_malformed_legislation_xhtml_as_a_build_error(self):
+        entry = {
+            "id": "pecr-reg-023",
+            "kind": "legislation_regulation",
+            "source_uri": "https://example.gov.uk/regulation-023",
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            context = build.BuildContext(
+                fetcher=_StaticFetcher(FetchResult(body=b"<div><p>unclosed", etag=None, last_modified=None)),
+                legislation=build.LegislationTransformer(),
+                eur_lex=None,
+                changelog=_StaticChangelog(),
+                today="2026-11-18",
+            )
+
+            with self.assertRaises(build.BuildError):
+                build._process_entry(entry, Path(tmp) / "regulation-023.md", context)
 
     def test_records_status_change_with_content_drift(self):
         self.assertEqual(

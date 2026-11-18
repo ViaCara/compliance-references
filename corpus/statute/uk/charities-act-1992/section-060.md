@@ -6,9 +6,9 @@ kind: legislation_section
 citation: Charities Act 1992 s. 60
 source_uri: "https://www.legislation.gov.uk/ukpga/1992/41/section/60/data.xht"
 source_format: xhtml
-revision_id: "Mon, 14 Sep 2026 16:04:15 GMT"
-content_sha256: 3f2e40a87340f020513f3caba28a0893b352cd5d35b32e3f9be98c6b68e621ea
-last_fetched: 2026-09-28
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: a0ae1d7eebfc2845608f7a13be298a3d31559cf8f0ac639cf7981d02741bba40
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
@@ -58,7 +58,7 @@ _Professional fund-raisers etc. required to indicate institutions benefiting and
 
 (b) in association with an announcement to the effect that payment may be made, in response to the solicitation or representation, by means of a credit or debit card,
 
-the statement required by virtue of subsection (1), (2) or (3) (as the case may be) shall include full details of the right to have refunded under section 61(1) any payment of £100 or more which is so made.
+the statement required by virtue of subsection (1), (2) or (3) (as the case may be) shall include full details of the right to have refunded under section 61(1) any payment of £150 or more which is so made.
 
 (5) If any such solicitation or representation as is mentioned in any of subsections (1) to (3) is made orally but is not made—
 
@@ -66,11 +66,11 @@ the statement required by virtue of subsection (1), (2) or (3) (as the case may 
 
 (b) in the course of any radio or television programme,
 
-the professional fund-raiser or commercial participator concerned shall, within seven days of any payment of £100 or more being made to him in response to the solicitation or representation, give to the person making the payment a written statement—
+the professional fund-raiser or commercial participator concerned shall, within seven days of any payment of £150 or more being made to him in response to the solicitation or representation, give to the person making the payment a written statement—
 
 (i) of the matters specified in paragraphs (a) to (c) of that subsection; and
 
-(ii) including full details of the right to cancel under section 61(2) an agreement made in response to the solicitation or representation, and the right to have refunded under section 61(2) or (3) any payment of £100 or more made in response thereto.
+(ii) including full details of the right to cancel under section 61(2) an agreement made in response to the solicitation or representation, and the right to have refunded under section 61(2) or (3) any payment of £150 or more made in response thereto.
 
 (6) In subsection (5) above the reference to the making of a payment is a reference to the making of a payment of whatever nature and by whatever means, including a payment made by means of a credit card or a debit card; and for the purposes of that subsection—
 

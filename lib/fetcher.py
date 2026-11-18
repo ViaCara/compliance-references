@@ -9,7 +9,11 @@ from urllib.error import HTTPError, URLError
 
 
 class FetchError(RuntimeError):
-    """Raised on any non-success HTTP response or transport failure."""
+    """Raised on any non-success HTTP response or transport failure.
+
+    A 2xx other than 200, or an empty body, counts as a failure: a bot
+    challenge answers 202 with no content, which is not the source text.
+    """
 
 
 class TransportError(FetchError):
@@ -100,6 +104,9 @@ class Fetcher:
                 else None
             )
             status = getattr(response, "status", 200)
+
+        if status != 200 or not body:
+            raise FetchError(f"HTTP {status} with {len(body)} body bytes for {url}")
 
         return FetchResult(
             body=body,

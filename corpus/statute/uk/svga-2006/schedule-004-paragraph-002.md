@@ -6,13 +6,17 @@ kind: legislation_schedule
 citation: SVGA 2006, Sch. 4 para. 2
 source_uri: "https://www.legislation.gov.uk/ukpga/2006/47/schedule/4/paragraph/2/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: 8dd2a8aa0e84f4c765f8bd213c4c45acdf2c768b1a0b4effe14ced6700bd74ad
-last_fetched: 2026-09-03
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: 24be79690c31bb8247ceb9b706eaf5b7a53019e850ab14ceb7ed54d656101a1e
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
 # SVGA 2006, Sch. 4 para. 2
+
+_Regulated Activity_
+
+**Part 1 - Regulated activity relating to children**
 
 2(1) The activities referred to in paragraph 1(1) are—
 
@@ -44,15 +48,15 @@ enforcement_status: in_force
 
 (b) the activity is carried out by a person in respect of whom arrangements exist principally for that purpose.
 
-(3A) Sub-paragraph (1)(a) does not include any form of teaching, training or instruction of children which is, on a regular basis, subject to the day to day supervision of another person who is engaging in regulated activity relating to children.
+(3A) _(repealed)_
 
 (3B) Sub-paragraph (1)(b)—
 
-(a) does not include any health care provided otherwise than by (or under the direction or supervision of) a health care professional, and
+(a) does not include any health care provided otherwise than by (or under the direction or supervision of) a health care professional, ...
 
-(b) does not, except in the case of relevant personal care or of health care provided by (or under the direction or supervision of) a health care professional, include any form of care for or supervision of children which is, on a regular basis, subject to the day to day supervision of another person who is engaging in regulated activity relating to children.
+(b) _(repealed)_
 
-(3C) The references in subsections (3A) and (3B)(b) to day to day supervision are references to such day to day supervision as is reasonable in all the circumstances for the purpose of protecting any children concerned.
+(3C) _(repealed)_
 
 (3D) Sub-paragraph (1)(c) does not include any legal advice.
 

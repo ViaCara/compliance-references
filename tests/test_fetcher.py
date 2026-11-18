@@ -98,6 +98,14 @@ class FetcherTests(unittest.TestCase):
             with self.assertRaises(FetchError):
                 fetcher.fetch("https://example.gov.uk/x")
 
+    def test_raises_on_an_empty_202_bot_challenge(self):
+        fetcher = Fetcher(sleep_seconds=0.0)
+        fake = _FakeResponse(b"", status=202)
+
+        with patch("urllib.request.urlopen", return_value=fake):
+            with self.assertRaises(FetchError):
+                fetcher.fetch("https://example.europa.eu/x")
+
     def test_enforces_minimum_sleep_between_requests(self):
         fetcher = Fetcher(sleep_seconds=0.1)
         fake = _FakeResponse(b"x")

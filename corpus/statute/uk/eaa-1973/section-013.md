@@ -6,9 +6,9 @@ kind: legislation_section
 citation: Employment Agencies Act 1973, s. 13
 source_uri: "https://www.legislation.gov.uk/ukpga/1973/35/section/13/data.xht"
 source_format: xhtml
-revision_id: "Thu, 03 Sep 2026 16:52:26 GMT"
-content_sha256: eae9dac7a557e9f91bd9165436f6288e5bb83e8977b68aeece9ee6cf701bab31
-last_fetched: 2026-09-12
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: f2889fbe9b77b9e8db7357f09726a1f9218053d581649fb96fb507f5139e9c58
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
@@ -140,6 +140,8 @@ and “worker” and “employer” shall be construed accordingly;
 
 (i) any prescribed business or service, or prescribed class of business or service or business or service carried on or provided by prescribed persons or classes of person.
 
+Provided that paragraph (b) of this subsection shall not be taken as exempting from the provisions of this Act any other business carried on in conjunction with an agency for the supply of nurses.
+
 (8) Subsection (7)(c) of this section shall have effect in its application to Scotland as if at the end there were added the words “or mainly or substantially supported by voluntary subscriptions and providing patients with the services of a nurse whether or not the nurse takes up residence in the patient’s house”.
 
 **Extent:** Scotland
@@ -259,5 +261,7 @@ and “worker” and “employer” shall be construed accordingly;
 (ii) a central institution as defined in section 145 of the Education (Scotland) Act 1962 or a college of education as defined in the said section 145;
 
 (i) any prescribed business or service, or prescribed class of business or service or business or service carried on or provided by prescribed persons or classes of person.
+
+Provided that paragraph (b) of this subsection shall not be taken as exempting from the provisions of this Act any other business carried on in conjunction with an agency for the supply of nurses.
 
 (8) Subsection (7)(c) of this section shall have effect in its application to Scotland as if at the end there were added the words “or mainly or substantially supported by voluntary subscriptions and providing patients with the services of a nurse whether or not the nurse takes up residence in the patient’s house”.

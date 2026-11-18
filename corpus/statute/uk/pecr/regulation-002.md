@@ -6,9 +6,9 @@ kind: legislation_regulation
 citation: PECR regulation 2
 source_uri: "https://www.legislation.gov.uk/uksi/2003/2426/regulation/2/data.xht"
 source_format: xhtml
-revision_id: "Thu, 03 Sep 2026 16:52:26 GMT"
-content_sha256: a529da45d6d7e5f2aa0e8f081344202e11b2639dc6232254dc9ccb5eeac63bd0
-last_fetched: 2026-09-04
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: 91c72af451ce5bede7e7f1b14ca45745af1ca3fc50b5c84f5a797590e3e65967
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
@@ -54,7 +54,9 @@ _Interpretation_
 
 “individual” means a living individual and includes an unincorporated body of such individuals;
 
-“the Information Commissioner” and “the Commissioner” both mean the Commissioner appointed under the Data Protection Act 2018;
+“the Information Commission” and “the Commission” both mean the Information Commission established by the Data Protection Act 2018;
+
+...
 
 “information society service” has the meaning given in regulation 2(1) of the Electronic Commerce (EC Directive) Regulations 2002 ;
 
