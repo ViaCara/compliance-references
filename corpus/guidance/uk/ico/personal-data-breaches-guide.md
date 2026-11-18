@@ -8,7 +8,7 @@ source_uri: "https://ico.org.uk/for-organisations/report-a-breach/personal-data-
 source_format: html
 revision_id: 20 August 2025
 content_sha256: 11ef57786f6aa4abf4b2bb8d738985e1c91ba85ec7ce01c13793fda344eaa729
-last_fetched: 2026-07-28
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

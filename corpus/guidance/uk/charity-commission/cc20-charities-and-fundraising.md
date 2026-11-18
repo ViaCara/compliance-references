@@ -4,11 +4,11 @@ title: "Charity fundraising: a guide to trustee duties (CC20)"
 instrument: charity-commission-guidance
 kind: curated_quotes
 citation: "Charity Commission guidance CC20: Charity fundraising: a guide to trustee duties"
-source_uri: "https://www.gov.uk/government/publications/charities-and-fundraising-cc20/charities-and-fundraising"
+source_uri: "https://www.gov.uk/government/publications/charity-fundraising-a-guide-to-trustee-duties-cc20/charities-and-fundraising"
 source_format: html
 revision_id: Updated 3 February 2026, fetched 2026-09-28
 content_sha256: 6c3072affdcb0ffa8a40bbe2b8773cc9c1cd64aacb8365618ce6c7a24d5e0a1a
-last_fetched: 2026-09-28
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

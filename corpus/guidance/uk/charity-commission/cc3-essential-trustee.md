@@ -4,11 +4,11 @@ title: "The essential trustee: what you need to know, what you need to do (CC3)"
 instrument: charity-commission-guidance
 kind: curated_quotes
 citation: "Charity Commission guidance CC3: The essential trustee: what you need to know, what you need to do"
-source_uri: "https://www.gov.uk/government/publications/the-essential-trustee-what-you-need-to-know-cc3/the-essential-trustee-what-you-need-to-know-what-you-need-to-do"
+source_uri: "https://www.gov.uk/government/publications/the-essential-trustee-what-you-need-to-know-what-you-need-to-do-cc3/the-essential-trustee-what-you-need-to-know-what-you-need-to-do"
 source_format: html
 revision_id: Updated 16 September 2026, fetched 2026-09-28
 content_sha256: b881388680a4608004a3edc3a285d8507b022892abbe8fc6a75e54109b4546f5
-last_fetched: 2026-09-28
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

@@ -8,7 +8,7 @@ source_uri: "https://www.gov.uk/government/publications/public-benefit-running-a
 source_format: html
 revision_id: Published 16 September 2013, fetched 2026-09-28
 content_sha256: 6e8ab2edafe8de094d0fab026311e5b00216d89b49b11490c69037cf8e6fab50
-last_fetched: 2026-09-28
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

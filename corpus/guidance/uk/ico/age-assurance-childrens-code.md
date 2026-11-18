@@ -4,11 +4,11 @@ title: "Age assurance for the Children's code"
 instrument: ico-uk-gdpr-guidance
 kind: curated_quotes
 citation: "Age assurance for the Children's code"
-source_uri: "https://ico.org.uk/about-the-ico/what-we-do/information-commissioners-opinions/age-assurance-for-the-children-s-code/"
+source_uri: "https://ico.org.uk/about-the-ico/what-we-do/information-commissions-opinions/age-assurance-for-the-children-s-code/"
 source_format: html
 revision_id: 18 January 2024
 content_sha256: 93f9f367a683a5d4c5d432a977cd5d057dc7198ca74350e40cb30d81eef19f17
-last_fetched: 2026-09-03
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

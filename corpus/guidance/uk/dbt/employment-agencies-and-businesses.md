@@ -1,14 +1,14 @@
 ---
 id: gov-uk-employment-agencies-and-businesses
-title: "Employment agencies and businesses"
+title: Employment agencies and businesses
 instrument: fwa-agency-guidance
 kind: curated_quotes
-citation: "GOV.UK, Employment agencies and businesses (guide)"
+citation: GOV.UK, Employment agencies and businesses (guide)
 source_uri: "https://www.gov.uk/employment-agencies-and-businesses"
 source_format: html
 revision_id: "2015-01-05T00:01:10+00:00"
 content_sha256: b7db669b5611e50a16cfb3c2243619f199a29641662c1818925185f4cff336d4
-last_fetched: 2026-10-08
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

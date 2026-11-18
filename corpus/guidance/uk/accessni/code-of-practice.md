@@ -8,7 +8,7 @@ source_uri: "https://www.nidirect.gov.uk/publications/accessni-code-practice"
 source_format: pdf
 revision_id: October 2020
 content_sha256: 8cba71fdb68573579b9ecd8388fa81b371335b8ae41c584044c3bba4cf84f5c3
-last_fetched: 2026-09-03
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

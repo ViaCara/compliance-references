@@ -67,12 +67,13 @@ GUIDANCE = {
     "nhs-talking-therapies-manual": (
         "guidance/uk/nhs-england/talking-therapies-manual.md",
         (
+            "Services are delivered using a stepped/stratified care model",
             "Individuals who do not fully recover at this level should be stepped up to a course of high-intensity treatment.",
             "in which case patients are signposted to the relevant service.",
             "Developing a relapse prevention plan with patients before they are discharged.",
             "Patients should not be discharged during a course of treatment purely based on changes in geographical location",
             "Local discharge and onward referral policies need to be developed to support people as they recover.",
-            "Copyright National Collaborating Centre for Mental Health, 2024",
+            "Copyright National Collaborating Centre for Mental Health, 2026",
         ),
     ),
 }

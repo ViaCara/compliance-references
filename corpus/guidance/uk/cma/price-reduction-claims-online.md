@@ -8,7 +8,7 @@ source_uri: "https://www.gov.uk/government/publications/using-urgency-and-price-
 source_format: pdf
 revision_id: 29 March 2023
 content_sha256: 9b4039073d46bb64e5aa518ff4c6e6bb7bc889309af7e0a1c2c44fd6d9d7604a
-last_fetched: 2026-09-30
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

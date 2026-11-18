@@ -8,7 +8,7 @@ source_uri: "https://www.asa.org.uk/type/non_broadcast/code_folder/scope-of-the-
 source_format: html
 revision_id: 12th edition
 content_sha256: 504953ee458d7f5889be3ffd3edd7970b7d141caf2ae653cad5cd4f50cc24804
-last_fetched: 2026-09-11
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

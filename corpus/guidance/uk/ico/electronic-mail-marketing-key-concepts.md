@@ -8,7 +8,7 @@ source_uri: "https://ico.org.uk/for-organisations/direct-marketing-and-privacy-a
 source_format: html
 revision_id: 28 April 2026
 content_sha256: 9ced54931fa0b581c1fe6ba50bc104bd5a6793a1823615e01d5aadb813c88f4f
-last_fetched: 2026-09-04
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

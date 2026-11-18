@@ -8,7 +8,7 @@ source_uri: "https://www.nidirect.gov.uk/publications/guide-viewing-self-employe
 source_format: pdf
 revision_id: 13 February 2026
 content_sha256: 71de3a02cfcb9194540fbc89f1985c45ced6cd3ac30d472b5278ba09868a2e4f
-last_fetched: 2026-09-03
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

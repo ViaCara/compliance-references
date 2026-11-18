@@ -8,7 +8,7 @@ source_uri: "https://www.england.nhs.uk/long-read/managing-conflicts-of-interest
 source_format: html
 revision_id: Published 17 September 2024, fetched 2026-10-13
 content_sha256: a9fbc0cba2ce4fe90a41e212285c276d7a5aa706fd70627a7e9646bcd5203c0d
-last_fetched: 2026-10-13
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

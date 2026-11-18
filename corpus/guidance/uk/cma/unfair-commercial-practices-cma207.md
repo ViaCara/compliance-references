@@ -8,7 +8,7 @@ source_uri: "https://www.gov.uk/government/publications/unfair-commercial-practi
 source_format: html
 revision_id: 18 November 2025
 content_sha256: cbd0ee6847e0240fa7a1982fa48ec7e3e64684bd9491e84cb5e0057f392e556d
-last_fetched: 2026-09-28
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

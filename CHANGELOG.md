@@ -3,6 +3,15 @@
 Drift log. Newer entries first.
 
 ## 2026-11-18
+- **Curated sources checked against their live text**: every quotation in the 56 curated files was compared with its source on 2026-11-18, and `last_fetched` records that date. Human review of the changes below remains pending.
+- **corpus/guidance/uk/dbs/update-service-employer-guide.md** hash 142ac59 -> 529b426: the annual subscription is £15, not £16 (GOV.UK change note of 5 October 2026); the page was last updated on 13 November 2026.
+- **corpus/guidance/uk/nhs-england/talking-therapies-manual.md** hash 32215e2 -> d23db46: moved to Version 8 (updated October 2026). "stepped-care model" is now "stepped/stratified care model", and the page numbers changed.
+- **corpus/guidance/uk/cap/code-section-12-medicines-health-related-products.md** hash 1241e85 -> 03acef6: rule 12.6 is quoted in full; the earlier quotation stopped after its first limb.
+- **corpus/guidance/eu/edpb/guidelines-07-2020-controller-processor.md** hash 308a291 -> ee5b2b1: paragraph 117 keeps its closing cross-reference, and the source URI is the address the old one redirects to.
+- **corpus/guidance/uk/fwa/overview-of-the-conduct-regulations-2003.md** hash 061843e -> f26da69: the publication was last updated on 29 October 2026; the quoted passages did not change.
+- **corpus/statute/jersey/dpjl-2018/** (Articles 4, 24 and 36, Schedule 2 Part 2 paragraph 6): the source is the Official Consolidated Version of 2 October 2026, not the version that ended on 5 May 2023. The quoted provisions are the same in both. article-004.md hash b2dd230 -> ee6915b.
+- **Source URIs that moved**: the ICO age assurance opinion (the old address returns 404), Charity Commission CC3 and CC20, and FCA PERG 15.5. The quotations did not change.
+
 - **corpus/statute/uk/duaa-2025/section-087.md** enforcement status prospective -> in_force
   - source: https://www.legislation.gov.uk/ukpga/2025/18/section/87/data.xht
   - prior_sha256: a792ad58b8c0cb1dcc23bc0882a6f4107eb5cbb4508b0b6523fcba672c5e101d

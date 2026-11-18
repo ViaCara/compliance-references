@@ -4,11 +4,11 @@ title: EDPB Guidelines 07/2020 on the concepts of controller and processor in th
 instrument: edpb-guidance
 kind: curated_quotes
 citation: EDPB Guidelines 07/2020
-source_uri: "https://www.edpb.europa.eu/system/files/2023-10/EDPB_guidelines_202007_controllerprocessor_final_en.pdf"
+source_uri: "https://www.edpb.europa.eu/system/files/documents/2023-10/EDPB_guidelines_202007_controllerprocessor_final_en.pdf"
 source_format: pdf
 revision_id: Version 2.1, 20 September 2022
-content_sha256: 308a291605e7ec18c42b80ae77ceeedb8858efc46a04c2652c6a4e3574131b05
-last_fetched: 2026-09-28
+content_sha256: ee5b2b199c28fe1444739b81bc8cd2160baf4a53055d4085e19f31a571bfe58d
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---
@@ -84,7 +84,7 @@ _United Kingdom status: these guidelines interpret Regulation (EU) 2016/679, not
 
 > The need to specify this obligation stems from the fact that the processor processes data on behalf of the controller. Controllers must provide its processors with instructions related to each processing activity. Such instructions can include permissible and unacceptable handling of personal data, more detailed procedures, ways of securing data, etc. The processor shall not go beyond what is instructed by the controller. It is however possible for the processor to suggest elements that, if accepted by the controller, become part of the instructions given. (paragraph 116)
 
-> When a processor processes data outside or beyond the controller’s instructions, and this amounts to a decision determining the purposes and means of processing, the processor will be in breach of its obligations and will even be considered a controller in respect of that processing in accordance with Article 28(10). (paragraph 117)
+> When a processor processes data outside or beyond the controller’s instructions, and this amounts to a decision determining the purposes and means of processing, the processor will be in breach of its obligations and will even be considered a controller in respect of that processing in accordance with Article 28(10) (see sub-section 1.5 below). (paragraph 117)
 
 > The instructions issued by the controller must be documented. For these purposes, it is recommended to include a procedure and a template for giving further instructions in an annex to the contract or other legal act. Alternatively, the instructions can be provided in any written form (e.g. e-mail), as well as in any other documented form as long as it is possible to keep records of such instructions. In any event, to avoid any difficulties in demonstrating that the controller’s instructions have been duly documented, the EDPB recommends keeping such instructions together with the contract or other legal act. (paragraph 118)
 

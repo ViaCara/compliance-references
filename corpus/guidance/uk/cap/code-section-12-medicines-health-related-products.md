@@ -6,9 +6,9 @@ kind: curated_quotes
 citation: CAP Code s.12 Medicines, medical devices, health-related products and beauty products
 source_uri: "https://www.asa.org.uk/type/non_broadcast/code_section/12.html"
 source_format: html
-revision_id: live page, additions retrieved and approved 2026-09-12
-content_sha256: 1241e85cacc7a1231a3a8064b3ad363314616fe69053a8d301db88c47573e9c6
-last_fetched: 2026-09-12
+revision_id: live page, retrieved 2026-11-18
+content_sha256: 03acef688bcbf4d7b37257c7f0259c65387640eeb70b2405566b07b92b58f81b
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
@@ -18,7 +18,8 @@ _The UK Code of Non-broadcast Advertising and Direct & Promotional Marketing
 (the CAP Code), administered by the Committee of Advertising Practice (CAP)
 and enforced by the Advertising Standards Authority (ASA). Curated quotes
 only; the full section is at the source URI. Reviewed 2026-09-04 by
-kylewelsby._
+kylewelsby. Rule 12.6 completed to the full rule from the live page on
+2026-11-18; review of that change pending._
 
 ## Definition
 
@@ -40,7 +41,10 @@ Rule 12.2:
 Rule 12.6:
 
 > Marketers should not falsely claim that a product is able to prevent or
-> treat disease or a malformation.
+> treat disease or a malformation; restore, correct or modify a
+> physiological function; or modify a person’s appearance.* (This rule
+> reflects a prohibited practice from Schedule 20 of the DMCCA. See note in
+> Section 3 for more details).
 
 Rule 12.12:
 

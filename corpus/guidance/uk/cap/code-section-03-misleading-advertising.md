@@ -8,7 +8,7 @@ source_uri: "https://www.asa.org.uk/type/non_broadcast/code_section/03.html"
 source_format: html
 revision_id: live page, retrieved 2026-11-05
 content_sha256: 55b4daf27f953ac2fa0e18a7bf98768fb11d002b557a6261908e2069262a69de
-last_fetched: 2026-11-05
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---

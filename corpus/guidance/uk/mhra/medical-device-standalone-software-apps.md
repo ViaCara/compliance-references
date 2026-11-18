@@ -8,7 +8,7 @@ source_uri: "https://www.gov.uk/government/publications/medical-devices-software
 source_format: pdf
 revision_id: v1.10f, 1 Jul 2023
 content_sha256: c6f35c0f4b1b5533e7f5bed17ba808ede8914a1ac0ecad78fb63872932165eb9
-last_fetched: 2026-10-20
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

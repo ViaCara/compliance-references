@@ -4,10 +4,10 @@ title: Data Protection (Jersey) Law 2018 Schedule 2 Part 2 paragraph 6 - Consent
 instrument: jersey-dpjl-2018
 kind: curated_quotes
 citation: Jersey DPJL 2018 Sch.2 Part 2 para.6
-source_uri: "https://www.jerseylaw.je/laws/current/PDFs/L_3_2018_20230505.pdf"
+source_uri: "https://www.jerseylaw.je/laws/current/PDFs/L_3_2018.pdf"
 source_format: pdf
-revision_id: Official Consolidated Version 25 November 2020 - 5 May 2023
-last_fetched: 2026-09-18
+revision_id: Official Consolidated Version 2 October 2026 - Current
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 content_sha256: 62ecfef3071eca6d6b3abece7796f8497dfc697d37725705a17abec8ab842470
