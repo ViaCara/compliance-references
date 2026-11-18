@@ -6,11 +6,11 @@ kind: legislation_section
 citation: DUAA 2025 s. 1
 source_uri: "https://www.legislation.gov.uk/ukpga/2025/18/section/1/data.xht"
 source_format: xhtml
-revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
 content_sha256: 1c013fb0f3d934c26b776174b00b28bc7d63fd82a550923d6225066075e54063
-last_fetched: 2026-08-24
+last_fetched: 2026-11-18
 language: en-GB
-enforcement_status: prospective
+enforcement_status: in_force
 ---
 # DUAA 2025 s. 1
 

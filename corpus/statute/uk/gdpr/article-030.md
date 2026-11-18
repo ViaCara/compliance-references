@@ -6,9 +6,9 @@ kind: legislation_article
 citation: UK GDPR Article 30
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/30/data.xht"
 source_format: xhtml
-revision_id: "Wed, 13 May 2026 15:07:58 GMT"
-content_sha256: c8d17dc345d65dc21aa42d1f679bc51b7deae0571650376c6d33bb130bd390e3
-last_fetched: 2026-05-15
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: d4ce69eb83e4ee08a197eff8a06e9ea8399dd2971e629baf0bed398e541e0b9f
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
@@ -46,6 +46,6 @@ _Records of processing activities_
 
 3. The records referred to in paragraphs 1 and 2 shall be in writing, including in electronic form.
 
-4. The controller or the processor and, where applicable, the controller's or the processor's representative, shall make the record available to the Commissioner on request.
+4. The controller or the processor and, where applicable, the controller's or the processor's representative, shall make the record available to the Commission on request.
 
 5. The obligations referred to in paragraphs 1 and 2 shall not apply to an enterprise or an organisation employing fewer than 250 persons unless the processing it carries out is likely to result in a risk to the rights and freedoms of data subjects, the processing is not occasional, or the processing includes special categories of data as referred to in Article 9(1) or personal data relating to criminal convictions and offences referred to in Article 10.

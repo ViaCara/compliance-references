@@ -4,7 +4,7 @@ title: EU AI Act Article 50 - Transparency obligations for providers and deploye
 instrument: eu-ai-act-2024
 kind: eur_lex_article
 citation: Regulation (EU) 2024/1689 Article 50
-source_uri: "https://eur-lex.europa.eu/eli/reg/2024/1689/art_50/oj/eng"
+source_uri: "https://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1"
 source_format: html
 revision_id: ""
 content_sha256: c9b57e30fdd857dbb5ab28be5cad6fce3e9c3a580af1c298de19f284700b7877

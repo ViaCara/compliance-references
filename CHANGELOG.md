@@ -2,6 +2,199 @@
 
 Drift log. Newer entries first.
 
+## 2026-11-18
+- **corpus/statute/uk/duaa-2025/section-087.md** enforcement status prospective -> in_force
+  - source: https://www.legislation.gov.uk/ukpga/2025/18/section/87/data.xht
+  - prior_sha256: a792ad58b8c0cb1dcc23bc0882a6f4107eb5cbb4508b0b6523fcba672c5e101d
+  - new_sha256:   a792ad58b8c0cb1dcc23bc0882a6f4107eb5cbb4508b0b6523fcba672c5e101d
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/duaa-2025/section-001.md** enforcement status prospective -> in_force
+  - source: https://www.legislation.gov.uk/ukpga/2025/18/section/1/data.xht
+  - prior_sha256: 1c013fb0f3d934c26b776174b00b28bc7d63fd82a550923d6225066075e54063
+  - new_sha256:   1c013fb0f3d934c26b776174b00b28bc7d63fd82a550923d6225066075e54063
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/dpa-2018/section-121.md** hash a76c981 -> 4ac3846
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/section/121/data.xht
+  - prior_sha256: a76c9819403cda9d822f2309217a03bbf1d124db5e0d8d3f8cd6f71f659df46a
+  - new_sha256:   4ac38469362b5b80af4c9e7f29f921d96c0fa9055dd0266b485437c1bd522bd4
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/charities-act-1992/section-060.md** hash 3f2e40a -> a0ae1d7
+  - source: https://www.legislation.gov.uk/ukpga/1992/41/section/60/data.xht
+  - prior_sha256: 3f2e40a87340f020513f3caba28a0893b352cd5d35b32e3f9be98c6b68e621ea
+  - new_sha256:   a0ae1d7eebfc2845608f7a13be298a3d31559cf8f0ac639cf7981d02741bba40
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/charities-act-1992/section-058.md** hash cfcc894 -> 2cee49d
+  - source: https://www.legislation.gov.uk/ukpga/1992/41/section/58/data.xht
+  - prior_sha256: cfcc89401efd5343d4c256cf1eecfbd06cf6dd38874ac2341a8a437643e7511f
+  - new_sha256:   2cee49d7fa634d722c9f88e3a4e7cf7123d55f4d7c308d1d8f98f86fdfee8391
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/dpa-2018/section-122.md** hash 93a000c -> a7e78c5
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/section/122/data.xht
+  - prior_sha256: 93a000c1d9df74375f563e5782639a8135575472739f1cc23417b16f7e8011d6
+  - new_sha256:   a7e78c5bd70be643a2fa2e59c88c65ce8a4518d2e62cd972f122be181754a104
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/pecr/regulation-002.md** hash a529da4 -> 91c72af
+  - source: https://www.legislation.gov.uk/uksi/2003/2426/regulation/2/data.xht
+  - prior_sha256: a529da45d6d7e5f2aa0e8f081344202e11b2639dc6232254dc9ccb5eeac63bd0
+  - new_sha256:   91c72af451ce5bede7e7f1b14ca45745af1ca3fc50b5c84f5a797590e3e65967
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/svga-2006/schedule-004-paragraph-002.md** hash 8dd2a8a -> 24be796
+  - source: https://www.legislation.gov.uk/ukpga/2006/47/schedule/4/paragraph/2/data.xht
+  - prior_sha256: 8dd2a8aa0e84f4c765f8bd213c4c45acdf2c768b1a0b4effe14ced6700bd74ad
+  - new_sha256:   24be79690c31bb8247ceb9b706eaf5b7a53019e850ab14ceb7ed54d656101a1e
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/svga-2006/schedule-004-paragraph-001.md** hash c189812 -> a7ba271
+  - source: https://www.legislation.gov.uk/ukpga/2006/47/schedule/4/paragraph/1/data.xht
+  - prior_sha256: c1898125e2a68b373bc3ce103a342e1098fdf808a62bbbd8704b9fc17d799fdf
+  - new_sha256:   a7ba271c2e008da9609801551a5b5dbd1583bece72858cac44fbfb4a4665f34e
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-001-part-004-paragraph-040.md** hash 998da99 -> 9cd5be2
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/40/data.xht
+  - prior_sha256: 998da997a34ca31f05c9a3bb1825c47d4f7179a7bac4f5934b11f9c1cc1ad964
+  - new_sha256:   9cd5be286240579b949ad415b40873a679236e3de1adfe6b10903a876eeab0ea
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/gdpr/article-010.md** hash 2e7152b -> 244e654
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/10/data.xht
+  - prior_sha256: 2e7152b72f8eda24199b454d418f607670d27a2f790e71ab4b8f2b42ff76e39e
+  - new_sha256:   244e65492a289156ca899feab5d96f1152870a24ddeb05c988b3de9c47385d91
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/eaa-1973/section-013.md** hash eae9dac -> f2889fb
+  - source: https://www.legislation.gov.uk/ukpga/1973/35/section/13/data.xht
+  - prior_sha256: eae9dac7a557e9f91bd9165436f6288e5bb83e8977b68aeece9ee6cf701bab31
+  - new_sha256:   f2889fbe9b77b9e8db7357f09726a1f9218053d581649fb96fb507f5139e9c58
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/dpa-2018/section-127.md** hash a2aec17 -> ca021ac
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/section/127/data.xht
+  - prior_sha256: a2aec17829cf26dad11652f5961a6d898498616b79a951dd361dfb221975c3e4
+  - new_sha256:   ca021ac57f5f557a29895495a73049e151037744a6aa7ea5c11227fe4cc8674d
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/dpa-2018/section-123.md** hash 515ee37 -> 252d7d9
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/section/123/data.xht
+  - prior_sha256: 515ee37c2eb1ef1944b7175ada58ded560f66ccf60d8fe8ddb4419afe6be292c
+  - new_sha256:   252d7d95ed5f6148ae092b1fcfe9273e50a87b2600c5e3486afa978a921af57c
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/dpa-2018/section-042.md** hash c32acc5 -> aa88db9
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/section/42/data.xht
+  - prior_sha256: c32acc5c951afde835a587022467f391c39c54ed1cca1176bc7ed083ba38ce0f
+  - new_sha256:   aa88db93d2bc7d18fa074e5d8eb92e112841ae6317672b6a132b49b18b0bda73
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/dpa-2018/section-119a.md** hash d6b4194 -> 4f91248
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/section/119A/data.xht
+  - prior_sha256: d6b4194486ac35f6f273701fa21caf04930d49d5260ba94a6f03c699250cbd4d
+  - new_sha256:   4f91248a6b138101aa782d857ab00d129a62e243c1e0d88f0cd1df2a8d0ca9bb
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/gdpr/article-049.md** hash 56043a8 -> aceb038
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/49/data.xht
+  - prior_sha256: 56043a877518dadef63b6c500d29661f04528ab110cfabcf19f18ad67fccd208
+  - new_sha256:   aceb0382387bbf23808872bda6024a7d71678beedfda56c9370761bcbc2c1ad2
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/gdpr/article-047a.md** hash 2446fc7 -> 438a183
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/47A/data.xht
+  - prior_sha256: 2446fc7736885b1457214fc4510f34fc19d3cc1efa7ea0b52fb78a853e88ea19
+  - new_sha256:   438a18380840204303dec1d4845eda5eed08ea66ffc52bd632cd14bd36bd8b99
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/gdpr/article-047.md** hash 856c166 -> 62cd8dd
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/47/data.xht
+  - prior_sha256: 856c166cabddca57f58c465ea582e9637a5c11c0b6dea2f173803a2f95402deb
+  - new_sha256:   62cd8ddfef170586d689b0a7cd73ca284de25f380c0d638d3733721164fd14aa
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/gdpr/article-046.md** hash febf3cd -> 98809df
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/46/data.xht
+  - prior_sha256: febf3cd61732869e69f0fefe643cd30944cde07e8ac28b351634b3b4f0e7bed1
+  - new_sha256:   98809df5fccc235d98bb696cccee24e7bbee904ecd0c898fe53c299634ce3980
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/dpa-2018/schedule-021-paragraph-005.md** hash e7c30e0 -> 0c4b167
+  - source: https://www.legislation.gov.uk/ukpga/2018/12/schedule/21/paragraph/5/data.xht
+  - prior_sha256: e7c30e0ade3ca9a6dddf4013e1cf9f9ab2b5a3ae6cfeac4c2b0c5aea6b39bb98
+  - new_sha256:   0c4b1674cd7214f62f0c66da5a6c5a72522477afc2f29a5ea1c34067b54682cb
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/fpo-2005/article-050.md** hash 42abbf6 -> 07def12
+  - source: https://www.legislation.gov.uk/uksi/2005/1529/article/50/data.xht
+  - prior_sha256: 42abbf6873804c8e756a898fe0ad611c98584425b5f68a76cde8d80f64946f6f
+  - new_sha256:   07def12b263099042b6717b767d39185966d5dc8ea0222967cf5fa04b2ad153c
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/gdpr/article-028.md** hash 02539b9 -> ab326fa
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/28/data.xht
+  - prior_sha256: 02539b9b55e1b5f3a0b6e89fa95111ae6b02fe1a4924bbef5be391ed35e030b1
+  - new_sha256:   ab326fa8b0fb8cc1464edb0e76aec61244de5caf8b2298d4ed1cebb97b32a51d
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/gdpr/article-036.md** hash a76daa7 -> 2c2d8c2
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/36/data.xht
+  - prior_sha256: a76daa78cab7bc062c03dff29169df00866dd2c9065538a60950143a6b81df71
+  - new_sha256:   2c2d8c21a6f9bd37a287682a6341c9dc235b6bb4ce79ecc7c0357c4f07774a12
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/gdpr/article-035.md** hash aea40f9 -> 011d593
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/35/data.xht
+  - prior_sha256: aea40f9dce04cbe68e319d4a79f3921a280f4a4ab476ecdb3a8df35d1075cb05
+  - new_sha256:   011d5932e310e1867f16296d26e64c8bc2dc450047ca380f02eb2b949b1d006c
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/gdpr/article-034.md** hash 3bd1324 -> c8ec314
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/34/data.xht
+  - prior_sha256: 3bd13242b1c4ca28ab9c4a35cdbed43931c442f84cc793fdd68cacad50577aa4
+  - new_sha256:   c8ec31478b1b75924af91bc8c3c1e113718e937f9f9e4f86d2d9416c7ef33c4f
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/gdpr/article-033.md** hash 32ba06e -> 1b1e05f
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/33/data.xht
+  - prior_sha256: 32ba06ec781236e6b54f5dd54c8f81d00a14aa128b9e0125f862a01ad3790707
+  - new_sha256:   1b1e05f3795cd47c9669826ae40db91cab7f8861343431f82e6eebab11e44c3b
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/gdpr/article-030.md** hash c8d17dc -> d4ce69e
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/30/data.xht
+  - prior_sha256: c8d17dc345d65dc21aa42d1f679bc51b7deae0571650376c6d33bb130bd390e3
+  - new_sha256:   d4ce69eb83e4ee08a197eff8a06e9ea8399dd2971e629baf0bed398e541e0b9f
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/gdpr/article-015.md** hash 37575e4 -> 6753bd4
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/15/data.xht
+  - prior_sha256: 37575e42b926ce1efd97356c0ad3b588f46d4e7edd4124f57d26ac14061ecfce
+  - new_sha256:   6753bd4da87393c2dc0e5caaff9337052f9536afa4fd7c93fa812964b753377d
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/gdpr/article-014.md** hash 84bda37 -> 8505305
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/14/data.xht
+  - prior_sha256: 84bda37d7529e73ac3d0ebfbdc27ad86fd875b8e724d8519a43555182088edef
+  - new_sha256:   85053052a4c19e72cfca922d5b98c54c0df344c25a96a8129146d24f1162c359
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/gdpr/article-013.md** hash a8708df -> 8bc6ad6
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/13/data.xht
+  - prior_sha256: a8708dfb83c1e9bdcbc10ff7398988050377b10c3069035e150b43524bd0037e
+  - new_sha256:   8bc6ad692c29a44309b9fd53c7ba1174eea6a8e7c5cd78b0ac4c12ef2c3a8702
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
+- **corpus/statute/uk/gdpr/article-012.md** hash 49f4a47 -> 1b4268a
+  - source: https://www.legislation.gov.uk/eur/2016/679/article/12/data.xht
+  - prior_sha256: 49f4a47708d086c0e4d66d6527963b2f558a18d091d5a75c94e90b898a40982c
+  - new_sha256:   1b4268ad5f24bb75268d1fe5c7b8c9328e342c5e1a1012706f0d1efbb9275162
+  - revision: Thu, 12 Nov 2026 17:32:01 GMT
+
 ## 2026-11-10
 - **corpus/statute/uk/conduct-regs-2003/regulation-025.md** hash f0cf591 -> c961b90
   - source: https://www.legislation.gov.uk/uksi/2003/3319/regulation/25/data.xht

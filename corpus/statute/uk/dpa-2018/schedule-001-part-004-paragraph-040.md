@@ -6,13 +6,17 @@ kind: legislation_schedule
 citation: DPA 2018 Sch. 1 Part 4 para. 40
 source_uri: "https://www.legislation.gov.uk/ukpga/2018/12/schedule/1/paragraph/40/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: 998da997a34ca31f05c9a3bb1825c47d4f7179a7bac4f5934b11f9c1cc1ad964
-last_fetched: 2026-09-03
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: 9cd5be286240579b949ad415b40873a679236e3de1adfe6b10903a876eeab0ea
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
 # DPA 2018 Sch. 1 Part 4 para. 40
+
+_Special categories of personal data and criminal convictions etc data_
+
+**PART 4 - Appropriate policy document and additional safeguards**
 
 40(1) Where personal data is processed in reliance on a condition described in paragraph 38, the controller must during the relevant period—
 
@@ -20,7 +24,7 @@ enforcement_status: in_force
 
 (b) review and (if appropriate) update it from time to time, and
 
-(c) make it available to the Commissioner, on request, without charge.
+(c) make it available to the Commission, on request, without charge.
 
 (2) “Relevant period”, in relation to the processing of personal data in reliance on a condition described in paragraph 38, means a period which—
 

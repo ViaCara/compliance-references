@@ -55,7 +55,7 @@ class ProcessorContractSourceTests(unittest.TestCase):
             "uk-gdpr-art-045b": "the data protection test is met",
             "uk-gdpr-art-046": (
                 "standard data protection clauses specified in a document issued (and not "
-                "withdrawn) by the Commissioner for the purposes of this Article under "
+                "withdrawn) by the Commission for the purposes of this Article under "
                 "section 119A of the 2018 Act"
             ),
             "uk-gdpr-art-047": "binding corporate rules",
@@ -66,7 +66,7 @@ class ProcessorContractSourceTests(unittest.TestCase):
             "uk-gdpr-art-049": "the data subject has explicitly consented to the proposed transfer",
             "uk-gdpr-art-049a": "important reasons of public interest",
             "dpa-2018-s-119a": (
-                "The Commissioner may issue a document specifying standard data protection "
+                "The Commission may issue a document specifying standard data protection "
                 "clauses"
             ),
         }

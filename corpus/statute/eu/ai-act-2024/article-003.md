@@ -4,7 +4,7 @@ title: EU AI Act Article 3 - Definitions
 instrument: eu-ai-act-2024
 kind: eur_lex_article
 citation: Regulation (EU) 2024/1689 Article 3
-source_uri: "https://eur-lex.europa.eu/eli/reg/2024/1689/art_3/oj/eng"
+source_uri: "https://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1"
 source_format: html
 revision_id: ""
 content_sha256: 431adf737f7330ac316847b777eacc4d61a9ee3377e33c40380539de8b8deae4

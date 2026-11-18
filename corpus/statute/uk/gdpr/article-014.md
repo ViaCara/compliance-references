@@ -6,9 +6,9 @@ kind: legislation_article
 citation: UK GDPR Article 14
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/14/data.xht"
 source_format: xhtml
-revision_id: "Wed, 22 Jul 2026 18:56:31 GMT"
-content_sha256: 84bda37d7529e73ac3d0ebfbdc27ad86fd875b8e724d8519a43555182088edef
-last_fetched: 2026-07-24
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: 85053052a4c19e72cfca922d5b98c54c0df344c25a96a8129146d24f1162c359
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
@@ -44,7 +44,7 @@ _Information to be provided where personal data have not been obtained from the 
 
 (da) the right to make a complaint to the controller (see section 164A of the 2018 Act);
 
-(e) the right to make a complaint to the Commissioner under section 165 of the 2018 Act;
+(e) the right to make a complaint to the Commission under section 165 of the 2018 Act;
 
 (f) from which source the personal data originate, and if applicable, whether it came from publicly accessible sources;
 

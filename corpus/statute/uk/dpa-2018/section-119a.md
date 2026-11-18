@@ -6,9 +6,9 @@ kind: legislation_section
 citation: DPA 2018 s. 119A
 source_uri: "https://www.legislation.gov.uk/ukpga/2018/12/section/119A/data.xht"
 source_format: xhtml
-revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
-content_sha256: d6b4194486ac35f6f273701fa21caf04930d49d5260ba94a6f03c699250cbd4d
-last_fetched: 2026-08-24
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: 4f91248a6b138101aa782d857ab00d129a62e243c1e0d88f0cd1df2a8d0ca9bb
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
@@ -16,9 +16,9 @@ enforcement_status: in_force
 
 _Standard clauses for transfers to third countries etc_
 
-(1) The Commissioner may issue a document specifying standard data protection clauses which the Commissioner considers are capable of securing that the data protection test set out in Article 46 of the UK GDPR or section 75 of this Act (or both) is met in relation to transfers of personal data.
+(1) The Commission may issue a document specifying standard data protection clauses which the Commission considers are capable of securing that the data protection test set out in Article 46 of the UK GDPR or section 75 of this Act (or both) is met in relation to transfers of personal data.
 
-(2) The Commissioner may issue a document that amends or withdraws a document issued under subsection (1).
+(2) The Commission may issue a document that amends or withdraws a document issued under subsection (1).
 
 (3) A document issued under this section—
 
@@ -30,17 +30,17 @@ _Standard clauses for transfers to third countries etc_
 
 (c) may include transitional provision or savings.
 
-(4) Before issuing a document under this section, the Commissioner must consult the Secretary of State and such of the following as the Commissioner considers appropriate—
+(4) Before issuing a document under this section, the Commission must consult the Secretary of State and such of the following as the Commission considers appropriate—
 
 (a) trade associations;
 
 (b) data subjects;
 
-(c) persons who appear to the Commissioner to represent the interests of data subjects.
+(c) persons who appear to the Commission to represent the interests of data subjects.
 
 (5) After a document is issued under this section—
 
-(a) the Commissioner must send a copy to the Secretary of State, and
+(a) the Commission must send a copy to the Secretary of State, and
 
 (b) the Secretary of State must lay it before Parliament.
 
@@ -52,13 +52,13 @@ _Standard clauses for transfers to third countries etc_
 
 (b) prevents a further document being laid before Parliament.
 
-(8) The Commissioner must publish—
+(8) The Commission must publish—
 
 (a) a document issued under this section, and
 
 (b) a notice identifying any document which, under subsection (6), is treated as not having been issued under this section.
 
-(9) The Commissioner must keep under review the clauses specified in a document issued under this section for the time being in force.
+(9) The Commission must keep under review the clauses specified in a document issued under this section for the time being in force.
 
 (10) In this section, “the 40-day period” means—
 

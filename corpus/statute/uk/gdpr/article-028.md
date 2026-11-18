@@ -6,9 +6,9 @@ kind: legislation_article
 citation: UK GDPR Article 28
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/28/data.xht"
 source_format: xhtml
-revision_id: "Wed, 22 Jul 2026 18:56:31 GMT"
-content_sha256: 02539b9b55e1b5f3a0b6e89fa95111ae6b02fe1a4924bbef5be391ed35e030b1
-last_fetched: 2026-07-30
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: ab326fa8b0fb8cc1464edb0e76aec61244de5caf8b2298d4ed1cebb97b32a51d
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
@@ -50,7 +50,7 @@ With regard to point (h) of the first subparagraph, the processor shall immediat
 
 7. _(repealed)_
 
-8. The Commissioner may adopt standard contractual clauses for the matters referred to in paragraph 3 and 4 of this Article ... .
+8. The Commission may adopt standard contractual clauses for the matters referred to in paragraph 3 and 4 of this Article ... .
 
 9. The contract or the other legal act referred to in paragraphs 3 and 4 shall be in writing, including in electronic form.
 

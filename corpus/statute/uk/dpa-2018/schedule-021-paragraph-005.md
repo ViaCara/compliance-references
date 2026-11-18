@@ -6,13 +6,17 @@ kind: legislation_schedule
 citation: DPA 2018 Sch. 21 para. 5
 source_uri: "https://www.legislation.gov.uk/ukpga/2018/12/schedule/21/paragraph/5/data.xht"
 source_format: xhtml
-revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
-content_sha256: e7c30e0ade3ca9a6dddf4013e1cf9f9ab2b5a3ae6cfeac4c2b0c5aea6b39bb98
-last_fetched: 2026-10-07
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: 0c4b1674cd7214f62f0c66da5a6c5a72522477afc2f29a5ea1c34067b54682cb
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
 # DPA 2018 Sch. 21 para. 5
+
+_Further transitional provision etc_
+
+**Part 3 - Transfers to third countries and international organisations**
 
 5(1) The following are specified for the purposes of paragraph 4(1)—
 

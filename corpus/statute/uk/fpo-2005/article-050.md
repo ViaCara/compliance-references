@@ -6,9 +6,9 @@ kind: legislation_article
 citation: FPO 2005 art. 50
 source_uri: "https://www.legislation.gov.uk/uksi/2005/1529/article/50/data.xht"
 source_format: xhtml
-revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
-content_sha256: 42abbf6873804c8e756a898fe0ad611c98584425b5f68a76cde8d80f64946f6f
-last_fetched: 2026-10-07
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: 07def12b263099042b6717b767d39185966d5dc8ea0222967cf5fa04b2ad153c
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
@@ -23,6 +23,8 @@ _Sophisticated investors_
 (a) who has a current certificate in writing or other legible form signed by an authorised person to the effect that he is sufficiently knowledgeable to understand the risks associated with that description of investment; and
 
 (b) who has signed, within the period of twelve months ending with the day on which the communication is made, a statement in the following terms:
+
+“I make this statement so that I am able to receive promotions which are exempt from the restrictions on financial promotion in the Financial Services and Markets Act 2000. The exemption relates to certified sophisticated investors and I declare that I qualify as such in relation to investments of the following kind [list them]. I accept that the contents of promotions and other material that I receive may not have been approved by an authorised person and that their content may not therefore be subject to controls which would apply if the promotion were made or approved by an authorised person. I am aware that it is open to me to seek advice from someone who specialises in advising on this kind of investment.”.
 
 (1A) The validity of a statement signed in accordance with paragraph (1)(b) is not affected by a defect in the wording of the statement, provided that the defect does not alter the statement's meaning.
 

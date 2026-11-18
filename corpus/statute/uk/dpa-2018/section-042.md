@@ -6,9 +6,9 @@ kind: legislation_section
 citation: DPA 2018 s. 42
 source_uri: "https://www.legislation.gov.uk/ukpga/2018/12/section/42/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: c32acc5c951afde835a587022467f391c39c54ed1cca1176bc7ed083ba38ce0f
-last_fetched: 2026-09-03
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: aa88db93d2bc7d18fa074e5d8eb92e112841ae6317672b6a132b49b18b0bda73
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
@@ -30,7 +30,7 @@ _Safeguards: sensitive processing_
 
 (b) review and (if appropriate) update it from time to time, and
 
-(c) make it available to the Commissioner, on request, without charge.
+(c) make it available to the Commission, on request, without charge.
 
 (4) The record maintained by the controller under section 61(1) and, where the sensitive processing is carried out by a processor on behalf of the controller, the record maintained by the processor under section 61(3) must include the following information—
 

@@ -6,9 +6,9 @@ kind: legislation_article
 citation: UK GDPR Article 49
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/49/data.xht"
 source_format: xhtml
-revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
-content_sha256: 56043a877518dadef63b6c500d29661f04528ab110cfabcf19f18ad67fccd208
-last_fetched: 2026-08-24
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: aceb0382387bbf23808872bda6024a7d71678beedfda56c9370761bcbc2c1ad2
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
@@ -34,7 +34,7 @@ _Derogations for specific situations_
 
 (g) the transfer is made from a register which according to domestic law is intended to provide information to the public and which is open to consultation either by the public in general or by any person who can demonstrate a legitimate interest, but only to the extent that the conditions laid down by domestic law for consultation are fulfilled in the particular case.
 
-Where a transfer could not be based on Article 45A or 46, including the provisions on binding corporate rules, and none of the derogations for a specific situation referred to in the first subparagraph of this paragraph is applicable, a transfer to a third country or an international organisation may take place only if the transfer is not repetitive, concerns only a limited number of data subjects, is necessary for the purposes of compelling legitimate interests pursued by the controller which are not overridden by the interests or rights and freedoms of the data subject, and the controller has assessed all the circumstances surrounding the data transfer and has on the basis of that assessment provided suitable safeguards with regard to the protection of personal data. The controller shall inform the Commissioner of the transfer. The controller shall, in addition to providing the information referred to in Articles 13 and 14, inform the data subject of the transfer and on the compelling legitimate interests pursued.
+Where a transfer could not be based on Article 45A or 46, including the provisions on binding corporate rules, and none of the derogations for a specific situation referred to in the first subparagraph of this paragraph is applicable, a transfer to a third country or an international organisation may take place only if the transfer is not repetitive, concerns only a limited number of data subjects, is necessary for the purposes of compelling legitimate interests pursued by the controller which are not overridden by the interests or rights and freedoms of the data subject, and the controller has assessed all the circumstances surrounding the data transfer and has on the basis of that assessment provided suitable safeguards with regard to the protection of personal data. The controller shall inform the Commission of the transfer. The controller shall, in addition to providing the information referred to in Articles 13 and 14, inform the data subject of the transfer and on the compelling legitimate interests pursued.
 
 2. A transfer pursuant to point (g) of the first subparagraph of paragraph 1 shall not involve the entirety of the personal data or entire categories of the personal data contained in the register. Where the register is intended for consultation by persons having a legitimate interest, the transfer shall be made only at the request of those persons or if they are to be the recipients.
 

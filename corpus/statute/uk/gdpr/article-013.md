@@ -6,9 +6,9 @@ kind: legislation_article
 citation: UK GDPR Article 13
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/13/data.xht"
 source_format: xhtml
-revision_id: "Wed, 22 Jul 2026 18:56:31 GMT"
-content_sha256: a8708dfb83c1e9bdcbc10ff7398988050377b10c3069035e150b43524bd0037e
-last_fetched: 2026-07-24
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: 8bc6ad692c29a44309b9fd53c7ba1174eea6a8e7c5cd78b0ac4c12ef2c3a8702
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
@@ -42,7 +42,7 @@ _Information to be provided where personal data are collected from the data subj
 
 (ca) the right to make a complaint to the controller under section 164A of the 2018 Act;
 
-(d) the right to make a complaint to the Commissioner under section 165 of the 2018 Act;
+(d) the right to make a complaint to the Commission under section 165 of the 2018 Act;
 
 (e) whether the provision of personal data is a statutory or contractual requirement, or a requirement necessary to enter into a contract, as well as whether the data subject is obliged to provide the personal data and of the possible consequences of failure to provide such data;
 

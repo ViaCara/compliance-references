@@ -6,11 +6,11 @@ kind: legislation_section
 citation: DUAA 2025 s. 87
 source_uri: "https://www.legislation.gov.uk/ukpga/2025/18/section/87/data.xht"
 source_format: xhtml
-revision_id: "Wed, 13 May 2026 15:07:58 GMT"
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
 content_sha256: a792ad58b8c0cb1dcc23bc0882a6f4107eb5cbb4508b0b6523fcba672c5e101d
-last_fetched: 2026-05-16
+last_fetched: 2026-11-18
 language: en-GB
-enforcement_status: prospective
+enforcement_status: in_force
 ---
 # DUAA 2025 s. 87
 

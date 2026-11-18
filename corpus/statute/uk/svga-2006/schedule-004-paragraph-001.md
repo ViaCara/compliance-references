@@ -6,13 +6,17 @@ kind: legislation_schedule
 citation: SVGA 2006, Sch. 4 para. 1
 source_uri: "https://www.legislation.gov.uk/ukpga/2006/47/schedule/4/paragraph/1/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: c1898125e2a68b373bc3ce103a342e1098fdf808a62bbbd8704b9fc17d799fdf
-last_fetched: 2026-09-03
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: a7ba271c2e008da9609801551a5b5dbd1583bece72858cac44fbfb4a4665f34e
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
 # SVGA 2006, Sch. 4 para. 1
+
+_Regulated Activity_
+
+**Part 1 - Regulated activity relating to children**
 
 1(1) An activity is a regulated activity relating to children if—
 
@@ -82,7 +86,7 @@ enforcement_status: in_force
 
 (a) is undertaken in pursuance of a contract for the provision of occasional or temporary services, and
 
-(b) is not an activity mentioned in paragraph 2(1) (disregarding paragraph 2(3A) and (3B)(b)).
+(b) is not an activity mentioned in paragraph 2(1) ...).
 
 (2B) Work falls within this sub-paragraph if it is any form of work which is not for gain, other than—
 
@@ -90,11 +94,11 @@ enforcement_status: in_force
 
 (i) is carried out on a temporary or occasional basis, and
 
-(ii) is not an activity mentioned in paragraph 2(1) (disregarding paragraph 2(3A) and (3B)(b)), or
+(ii) is not an activity mentioned in paragraph 2(1) ...), ...
 
-(b) any such work which is, on a regular basis, subject to the day to day supervision of another person who is engaging in regulated activity relating to children.
+(b) _(repealed)_
 
-(2C) The reference in subsection (2B)(b) to day to day supervision is a reference to such day to day supervision as is reasonable in all the circumstances for the purpose of protecting any children concerned.
+(2C) _(repealed)_
 
 (3) Each of the following, if carried out in England, is a regulated activity relating to children—
 
@@ -170,15 +174,15 @@ is a regulated activity relating to children.
 
 (o) an inspection under section 55 of that Act (inspection of careers services in Wales);
 
-( p ) _(repealed)_
+(p) _(repealed)_
 
-( q ) _(repealed)_
+(q) _(repealed)_
 
-( r ) _(repealed)_
+(r) _(repealed)_
 
-( s ) _(repealed)_
+(s) _(repealed)_
 
-( t ) _(repealed)_
+(t) _(repealed)_
 
 (9C) The exercise of a function to which sub-paragraph (10) applies so far as the function—
 
@@ -234,4 +238,4 @@ and it provides any form of treatment or therapy for children.
 
 (14) Any activity which consists in or involves on a regular basis the day to day management or supervision of a person carrying out an activity mentioned in sub-paragraph (1), (2), (9A), (9C) or (11) is a regulated activity relating to children.
 
-(15) Any activity which consists in or involves on a regular basis the day to day management or supervision of a person who would be carrying out an activity mentioned in sub-paragraph (1) or (2) but for the exclusion for supervised activity in paragraph 2(3A) or (3B)(b) or sub-paragraph (2B)(b) above is a regulated activity relating to children.
+(15) _(repealed)_

@@ -23,7 +23,7 @@ class IdentityLifecycleSourceTests(unittest.TestCase):
         sources = self.sources
 
         expected_paths = {
-            "eu-gdpr-art-027": "eli/reg/2016/679/art_27/oj/eng",
+            "eu-gdpr-art-027": "cellar/3e485e15-11bd-11e6-ba9a-01aa75ed71a1.0006.03/DOC_1",
             "uk-gdpr-art-012a": "article/12A./data.xht",
             "uk-gdpr-art-026": "article/26/data.xht",
             "uk-gdpr-art-028": "article/28/data.xht",

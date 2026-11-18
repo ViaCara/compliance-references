@@ -4,7 +4,7 @@ title: EU GDPR Article 77 - Right to lodge a complaint with a supervisory author
 instrument: eu-gdpr
 kind: eur_lex_article
 citation: Regulation (EU) 2016/679 Article 77
-source_uri: "https://eur-lex.europa.eu/eli/reg/2016/679/art_77/oj/eng"
+source_uri: "https://publications.europa.eu/resource/cellar/3e485e15-11bd-11e6-ba9a-01aa75ed71a1.0006.03/DOC_1"
 source_format: html
 revision_id: ""
 content_sha256: bb7ac245b057a2b4f8059d900397c98e0d96c5740bbeb3eb517d9848827ee5a0

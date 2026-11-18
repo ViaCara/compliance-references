@@ -6,9 +6,9 @@ kind: legislation_section
 citation: Charities Act 1992 s. 58
 source_uri: "https://www.legislation.gov.uk/ukpga/1992/41/section/58/data.xht"
 source_format: xhtml
-revision_id: "Mon, 14 Sep 2026 16:04:15 GMT"
-content_sha256: cfcc89401efd5343d4c256cf1eecfbd06cf6dd38874ac2341a8a437643e7511f
-last_fetched: 2026-09-28
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: 2cee49d7fa634d722c9f88e3a4e7cf7123d55f4d7c308d1d8f98f86fdfee8391
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
@@ -86,13 +86,13 @@ and for this purpose “collector” and “public charitable collection” have
 
 (a) more than—
 
-(i) £10 per day, or
+(i) £15 per day, or
 
-(ii) £1,000 per year,
+(ii) £1,500 per year,
 
 by way of remuneration in connection with soliciting money or other property for the benefit of the charitable institution referred to in that paragraph; or
 
-(b) more than £1,000 by way of remuneration in connection with any fund-raising venture in the course of which he solicits money or other property for the benefit of that institution.
+(b) more than £1,500 by way of remuneration in connection with any fund-raising venture in the course of which he solicits money or other property for the benefit of that institution.
 
 (4) In this Part any reference to charitable purposes, where occurring in the context of a reference to charitable, benevolent or philanthropic purposes, is a reference to charitable purposes as defined by section 2(1) of the Charities Act 2011.
 

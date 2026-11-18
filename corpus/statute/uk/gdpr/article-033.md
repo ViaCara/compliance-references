@@ -6,19 +6,19 @@ kind: legislation_article
 citation: UK GDPR Article 33
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/33/data.xht"
 source_format: xhtml
-revision_id: "Wed, 13 May 2026 15:07:58 GMT"
-content_sha256: 32ba06ec781236e6b54f5dd54c8f81d00a14aa128b9e0125f862a01ad3790707
-last_fetched: 2026-05-15
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: 1b1e05f3795cd47c9669826ae40db91cab7f8861343431f82e6eebab11e44c3b
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
 # UK GDPR Article 33
 
-_Notification of a personal data breach to the Commissioner_
+_Notification of a personal data breach to the Commission_
 
 **Chapter:** CHAPTER IV - Controller and processor
 
-1. In the case of a personal data breach, the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the Commissioner, unless the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons. Where the notification under this paragraph is not made within 72 hours, it shall be accompanied by reasons for the delay.
+1. In the case of a personal data breach, the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the Commission, unless the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons. Where the notification under this paragraph is not made within 72 hours, it shall be accompanied by reasons for the delay.
 
 2. The processor shall notify the controller without undue delay after becoming aware of a personal data breach.
 
@@ -34,4 +34,4 @@ _Notification of a personal data breach to the Commissioner_
 
 4. Where, and in so far as, it is not possible to provide the information at the same time, the information may be provided in phases without undue further delay.
 
-5. The controller shall document any personal data breaches, comprising the facts relating to the personal data breach, its effects and the remedial action taken. That documentation shall enable the Commissioner to verify compliance with this Article.
+5. The controller shall document any personal data breaches, comprising the facts relating to the personal data breach, its effects and the remedial action taken. That documentation shall enable the Commission to verify compliance with this Article.

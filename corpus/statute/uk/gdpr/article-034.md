@@ -6,9 +6,9 @@ kind: legislation_article
 citation: UK GDPR Article 34
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/34/data.xht"
 source_format: xhtml
-revision_id: "Wed, 13 May 2026 15:07:58 GMT"
-content_sha256: 3bd13242b1c4ca28ab9c4a35cdbed43931c442f84cc793fdd68cacad50577aa4
-last_fetched: 2026-05-15
+revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
+content_sha256: c8ec31478b1b75924af91bc8c3c1e113718e937f9f9e4f86d2d9416c7ef33c4f
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---
@@ -30,4 +30,4 @@ _Communication of a personal data breach to the data subject_
 
 (c) it would involve disproportionate effort. In such a case, there shall instead be a public communication or similar measure whereby the data subjects are informed in an equally effective manner.
 
-4. If the controller has not already communicated the personal data breach to the data subject, the Commissioner, having considered the likelihood of the personal data breach resulting in a high risk, may require it to do so or may decide that any of the conditions referred to in paragraph 3 are met.
+4. If the controller has not already communicated the personal data breach to the data subject, the Commission, having considered the likelihood of the personal data breach resulting in a high risk, may require it to do so or may decide that any of the conditions referred to in paragraph 3 are met.

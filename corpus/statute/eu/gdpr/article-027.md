@@ -4,7 +4,7 @@ title: EU GDPR Article 27 - Representatives of controllers or processors not est
 instrument: eu-gdpr
 kind: eur_lex_article
 citation: Regulation (EU) 2016/679 Article 27
-source_uri: "https://eur-lex.europa.eu/eli/reg/2016/679/art_27/oj/eng"
+source_uri: "https://publications.europa.eu/resource/cellar/3e485e15-11bd-11e6-ba9a-01aa75ed71a1.0006.03/DOC_1"
 source_format: html
 revision_id: ""
 content_sha256: 6652dfa78d70bddc4486d5e61683d09624ddb31672d3a4d802872a1352c6e97a

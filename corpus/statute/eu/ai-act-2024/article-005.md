@@ -4,7 +4,7 @@ title: EU AI Act Article 5 - Prohibited AI practices
 instrument: eu-ai-act-2024
 kind: eur_lex_article
 citation: Regulation (EU) 2024/1689 Article 5
-source_uri: "https://eur-lex.europa.eu/eli/reg/2024/1689/art_5/oj/eng"
+source_uri: "https://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1"
 source_format: html
 revision_id: ""
 content_sha256: 94667dd2046b54ad9c75f061a7e1b8c2644865e4b348959ca682def9035d0076
