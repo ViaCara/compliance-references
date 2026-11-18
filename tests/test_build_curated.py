@@ -246,17 +246,40 @@ class ProcessEntryTest(unittest.TestCase):
             "kind": "eur_lex_article",
             "source_uri": "https://example.europa.eu/article-003",
         }
+        unusable = {
+            "no source container": b"<html><body><p>Challenge</p></body></html>",
+            "not UTF-8": b"\xff\xfe",
+        }
+        for label, payload in unusable.items():
+            with self.subTest(label), tempfile.TemporaryDirectory() as tmp:
+                context = build.BuildContext(
+                    fetcher=_StaticFetcher(FetchResult(body=payload, etag=None, last_modified=None)),
+                    legislation=None,
+                    eur_lex=build.EurLexTransformer(),
+                    changelog=_StaticChangelog(),
+                    today="2026-11-18",
+                )
+
+                with self.assertRaises(build.BuildError):
+                    build._process_entry(entry, Path(tmp) / "article-003.md", context)
+
+    def test_reports_malformed_legislation_xhtml_as_a_build_error(self):
+        entry = {
+            "id": "pecr-reg-023",
+            "kind": "legislation_regulation",
+            "source_uri": "https://example.gov.uk/regulation-023",
+        }
         with tempfile.TemporaryDirectory() as tmp:
             context = build.BuildContext(
-                fetcher=_StaticFetcher(FetchResult(body=b"\xff<html></html>", etag=None, last_modified=None)),
-                legislation=None,
-                eur_lex=build.EurLexTransformer(),
+                fetcher=_StaticFetcher(FetchResult(body=b"<div><p>unclosed", etag=None, last_modified=None)),
+                legislation=build.LegislationTransformer(),
+                eur_lex=None,
                 changelog=_StaticChangelog(),
                 today="2026-11-18",
             )
 
             with self.assertRaises(build.BuildError):
-                build._process_entry(entry, Path(tmp) / "article-003.md", context)
+                build._process_entry(entry, Path(tmp) / "regulation-023.md", context)
 
     def test_records_status_change_with_content_drift(self):
         self.assertEqual(
