@@ -3,12 +3,12 @@ id: cap-advice-mental-health-treatment-claims
 title: "Mental Health: Treatment claims"
 instrument: cap-code
 kind: curated_quotes
-citation: CAP AdviceOnline - Mental Health: Treatment claims
+citation: "CAP AdviceOnline - Mental Health: Treatment claims"
 source_uri: "https://www.asa.org.uk/advice-online/mental-health-treatment-claims.html"
 source_format: html
-revision_id: "15 Jul 2021"
+revision_id: 15 Jul 2021
 content_sha256: 84376ce7b10c25f605981d809c21bd9123eb94591e2184d53749149be5ca3ba2
-last_fetched: 2026-09-04
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

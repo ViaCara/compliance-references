@@ -8,7 +8,7 @@ source_uri: "https://www.gov.uk/government/publications/digital-mental-health-te
 source_format: pdf
 revision_id: Version 1.3, 29 Jul 2026
 content_sha256: 744588629f0b7ed20070c0fa9c81281cb5542d46198fdfb3e67bff60bd2a7085
-last_fetched: 2026-11-10
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

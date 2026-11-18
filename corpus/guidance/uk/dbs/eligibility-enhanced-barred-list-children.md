@@ -8,7 +8,7 @@ source_uri: "https://www.gov.uk/government/publications/eligibility-for-enhanced
 source_format: html
 revision_id: 1 September 2026
 content_sha256: bc2b4e4367504cfc9e2933300e21dc8bf93ae4b614c24176312711d2cafbd7ec
-last_fetched: 2026-09-03
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

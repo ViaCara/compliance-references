@@ -4,19 +4,21 @@ title: Data Protection (Jersey) Law 2018 Article 4 - Application (territorial sc
 instrument: jersey-dpjl-2018
 kind: curated_quotes
 citation: Jersey DPJL 2018 Art.4(2)(c), Art.4(3)
-source_uri: "https://www.jerseylaw.je/laws/current/PDFs/L_3_2018_20230505.pdf"
+source_uri: "https://www.jerseylaw.je/laws/current/PDFs/L_3_2018.pdf"
 source_format: pdf
-revision_id: Official Consolidated Version 25 November 2020 - 5 May 2023
-last_fetched: 2026-09-18
+revision_id: Official Consolidated Version 2 October 2026 - Current
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
-content_sha256: b2dd2307004f7f6d51f3b5a40e83af73e46926306c927a580965b65e55ee1ddb
+content_sha256: ee6915bba59ad557f4c5bed1b3b475acf77a5f7a56c9cbd51b6d05454c3a3d29
 ---
 # Jersey DPJL 2018 Article 4 - Application (curated quotes)
 
-_Data Protection (Jersey) Law 2018, Official Consolidated Version (25 Nov
-2020 - 5 May 2023). Official text at the source URI. Curated quotes only,
-paragraphs (1) and (4)-(7) omitted. Reviewed 2026-09-18 by kylewelsby._
+_Data Protection (Jersey) Law 2018, Official Consolidated Version (2 October
+2026 - Current). Official text at the source URI. Curated quotes only,
+paragraphs (1) and (4)-(7) omitted. Reviewed 2026-09-18 by kylewelsby.
+Checked against the official consolidated PDF on 2026-11-18; the quoted
+paragraphs are the same as in the version of 25 November 2020 to 5 May 2023._
 
 ## Article 4(2)-(3)
 

@@ -3,12 +3,12 @@ id: dbs-update-service-employer-guide
 title: DBS Update Service employer guide
 instrument: dbs-guidance
 kind: curated_quotes
-citation: DBS Update Service employer guide (28 August 2026)
+citation: DBS Update Service employer guide (13 November 2026)
 source_uri: "https://www.gov.uk/government/publications/dbs-update-service-employer-guide/dbs-update-service-employer-guide"
 source_format: html
-revision_id: 28 August 2026
-content_sha256: 142ac593af03cd995758930da4ace3e5c15cdac519c354b5e453ce7a4b8e5ce9
-last_fetched: 2026-09-03
+revision_id: 13 November 2026
+content_sha256: 529b4263964453494f5cd7fd4a57eb680ef31e8e0da332733abfc8d143c58463
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---
@@ -18,11 +18,13 @@ _DBS guidance for employers and organisations on the Update Service: who may
 run a free online status check on an existing Standard or Enhanced
 certificate, the conditions that must be met first, what each result means and
 how the subscription works. Published by the Disclosure and Barring Service on
-gov.uk; the live page shows Updated 28 August 2026. The status check is made
+gov.uk; the live page shows Updated 13 November 2026. The status check is made
 under section 116A of the Police Act 1997 and requires a legal declaration
 that the checker may ask an exempted question under section 113A or 113B.
 Curated quotes only; the full guidance is at the source URI. Reviewed
-2026-09-03 by kylewelsby._
+2026-09-03 by kylewelsby. Checked against the live page on 2026-11-18: the
+subscription fee changed from £16 to £15 (GOV.UK change note of 5 October
+2026); review of that change pending._
 
 ## About the Update Service
 
@@ -94,7 +96,7 @@ Organisations that are not registered bodies use an umbrella body:
 
 Subscription cost and portability:
 
-> For an annual subscription of £16 (free to volunteers) an individual can
+> For an annual subscription of £15 (free to volunteers) an individual can
 > take their certificate with them from role to role (if within the same
 > workforce, and where the same type and level of certificate is required).
 

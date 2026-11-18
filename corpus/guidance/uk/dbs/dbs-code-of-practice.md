@@ -8,7 +8,7 @@ source_uri: "https://www.gov.uk/government/publications/dbs-code-of-practice"
 source_format: pdf
 revision_id: 16 November 2015
 content_sha256: afbf105482bf83e7bd8a27641b2ba2024d45fbe63ae358812c36c47d313c5535
-last_fetched: 2026-09-03
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

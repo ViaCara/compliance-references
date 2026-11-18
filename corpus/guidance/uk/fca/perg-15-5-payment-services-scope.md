@@ -1,14 +1,14 @@
 ---
 id: fca-perg-15-5
-title: "PERG 15.5 Negative scope/exclusions"
+title: PERG 15.5 Negative scope/exclusions
 instrument: fca-handbook
 kind: curated_quotes
 citation: "FCA Handbook PERG 15.5: Negative scope/exclusions (Payment Services Regulations 2017)"
-source_uri: "https://www.handbook.fca.org.uk/handbook/PERG/15/5.html"
+source_uri: "https://handbook.fca.org.uk/handbook/perg15/perg15s5"
 source_format: html
 revision_id: last updated 30/11/2021, fetched 2026-09-28
 content_sha256: 1ccdb673eb6448be5d3ad75ce9b0cf5e4d7693c50bf4a925502e5448dbd01934
-last_fetched: 2026-09-28
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

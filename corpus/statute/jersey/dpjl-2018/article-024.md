@@ -4,10 +4,10 @@ title: Data Protection (Jersey) Law 2018 Article 24 - Appointment of data protec
 instrument: jersey-dpjl-2018
 kind: curated_quotes
 citation: Jersey DPJL 2018 Art.24(1)
-source_uri: "https://www.jerseylaw.je/laws/current/PDFs/L_3_2018_20230505.pdf"
+source_uri: "https://www.jerseylaw.je/laws/current/PDFs/L_3_2018.pdf"
 source_format: pdf
-revision_id: Official Consolidated Version 25 November 2020 - 5 May 2023
-last_fetched: 2026-09-18
+revision_id: Official Consolidated Version 2 October 2026 - Current
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 content_sha256: 5322638bf9ea6c2691447bb6f09d50a4b42e50f77c897928efd542ebc3c3d6de

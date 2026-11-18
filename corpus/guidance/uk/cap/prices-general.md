@@ -6,9 +6,9 @@ kind: curated_quotes
 citation: "CAP AdviceOnline - Prices: General"
 source_uri: "https://www.asa.org.uk/advice-online/prices-general.html"
 source_format: html
-revision_id: "live page dated 06 Oct 2026, retrieved 2026-10-08"
+revision_id: live page dated 06 Oct 2026, retrieved 2026-10-08
 content_sha256: a6b2ab390b8904604425a6877f972298a2663bdaaab600a638fc9ffb417f94c1
-last_fetched: 2026-10-08
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

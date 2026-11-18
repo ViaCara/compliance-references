@@ -8,7 +8,7 @@ source_uri: "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources
 source_format: html
 revision_id: DC.Date 19 November 2024, fetched 2026-09-28
 content_sha256: 154cfda14cec96c1d4581418b27fdf81a4af89ddf0fee20155c719659d7e97f8
-last_fetched: 2026-09-28
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

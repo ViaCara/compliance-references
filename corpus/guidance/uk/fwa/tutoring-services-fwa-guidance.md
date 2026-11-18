@@ -8,7 +8,7 @@ source_uri: "https://www.gov.uk/guidance/tutoring-services-guidance-for-complyin
 source_format: html
 revision_id: "2026-04-07T08:00:00+01:00"
 content_sha256: 72fb6afb9f1a08fb3d2599dec481c3a3e56c92c5d4dd4dc884ca2f2af3077de1
-last_fetched: 2026-10-08
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

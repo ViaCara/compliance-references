@@ -8,7 +8,7 @@ source_uri: "https://www.gov.uk/government/publications/handling-of-dbs-certific
 source_format: html
 revision_id: 4 July 2018
 content_sha256: 2072ef9c5a0c599246ca92aff6ce64de63a7ce1f7621d8147b48fc40656062fb
-last_fetched: 2026-09-03
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

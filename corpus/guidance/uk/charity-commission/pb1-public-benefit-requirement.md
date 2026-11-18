@@ -8,7 +8,7 @@ source_uri: "https://www.gov.uk/government/publications/public-benefit-the-publi
 source_format: html
 revision_id: Published 16 September 2013, fetched 2026-09-28
 content_sha256: 6d62f07c5e5da9ef8220614cf37fc7f0dbe6353922b453557d85b4be6e699de4
-last_fetched: 2026-09-28
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---

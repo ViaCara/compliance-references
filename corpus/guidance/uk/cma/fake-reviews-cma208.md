@@ -8,7 +8,7 @@ source_uri: "https://www.gov.uk/government/publications/fake-reviews"
 source_format: pdf
 revision_id: 4 April 2025
 content_sha256: 2b40ac42f38abe059016336dbb752428be0b8d3daeebfefe6b92b48a0239f82a
-last_fetched: 2026-07-02
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 ---

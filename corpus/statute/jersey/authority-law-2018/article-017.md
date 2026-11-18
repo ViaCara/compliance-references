@@ -7,7 +7,7 @@ citation: Jersey Data Protection Authority Law 2018 Art.17
 source_uri: "https://www.jerseylaw.je/laws/current/PDFs/L_4_2018.pdf"
 source_format: pdf
 revision_id: Official Consolidated Version 1 January 2019 - Current
-last_fetched: 2026-10-14
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 content_sha256: 9bbbc36207f251600d8e04c92863b0db5a1791b742a3db6a91db7cc7ff5e2162

@@ -7,7 +7,7 @@ citation: Guernsey DPL 2017 s.39
 source_uri: "https://gov.gg/CHttpHandler.ashx?id=110559&p=0"
 source_format: pdf
 revision_id: consolidated text as at 2026-09-18
-last_fetched: 2026-09-18
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: in_force
 content_sha256: 9183931804e5e0c90c2b3759392ea2cef6bae2b1df2aef8d824d2a0eb21bf396

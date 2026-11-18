@@ -1,14 +1,14 @@
 ---
 id: fwa-conduct-regulations-overview
-title: "Overview of the Conduct Regulations 2003"
+title: Overview of the Conduct Regulations 2003
 instrument: fwa-agency-guidance
 kind: curated_quotes
-citation: "GOV.UK, Overview of the Conduct Regulations 2003 (updated 22 June 2026)"
+citation: GOV.UK, Overview of the Conduct Regulations 2003 (updated 29 October 2026)
 source_uri: "https://www.gov.uk/government/publications/conduct-regulations-2003-guidance-for-employment-agencies-and-employment-businesses/overview-of-the-conduct-regulations-2003"
 source_format: html
-revision_id: "2026-06-22T15:32:42+01:00"
-content_sha256: 061843e5c8e35521eefee995e08732b81846d20fe6089c761b3ffafc22806d56
-last_fetched: 2026-10-08
+revision_id: "2026-10-29T09:21:56+00:00"
+content_sha256: f26da6953e34332884035ba700086eb250a9cbf9492dbbd012be97bcf5a5eca6
+last_fetched: 2026-11-18
 language: en-GB
 enforcement_status: guidance
 ---
@@ -80,7 +80,9 @@ kylewelsby pending._
 Quoted verbatim from the body of the GOV.UK publication at the source
 URI, read through the GOV.UK Content API
 (https://www.gov.uk/api/content/government/publications/conduct-regulations-2003-guidance-for-employment-agencies-and-employment-businesses/overview-of-the-conduct-regulations-2003)
-on 2026-10-08. The publication was last updated on 22 June 2026. The
+on 2026-10-08, and checked against the live page on 2026-11-18. The
+publication was last updated on 29 October 2026, when the contact details
+changed to the Fair Work Agency; the quoted passages did not change. The
 missing space in "commences.This" and the non-breaking hyphens in
 "Work‑seekers" are the source's own.
 
