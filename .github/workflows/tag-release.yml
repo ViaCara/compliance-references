@@ -7,6 +7,8 @@ on:
     branches: [main]
   workflow_dispatch: {}
 
+# Each run tags the newest commit on main, so a run that the group cancels
+# while it waits loses nothing: the run that replaced it tags the same commit.
 concurrency: tag-release
 
 jobs:
@@ -18,8 +20,9 @@ jobs:
     steps:
       - uses: actions/checkout@v7
         with:
+          ref: main
           fetch-depth: 0
-      - name: Tag the commit unless it already has a release tag
+      - name: Tag the newest commit unless it already has a release tag
         run: |
           TAG=$(python3 .github/scripts/release_tag.py)
           if [ -z "$TAG" ]; then

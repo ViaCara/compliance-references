@@ -2,7 +2,8 @@
 
 The first release of a day is `v<YYYY.MM.DD>`. Each later release on the same
 day adds a counter: `v<YYYY.MM.DD>.1`, `v<YYYY.MM.DD>.2`. A commit that
-already carries a release tag gets no second tag.
+already carries a release tag, dated or major-prefix (`v2.0.0-<date>`), gets
+no second tag.
 
 Usage: python3 .github/scripts/release_tag.py
 Prints the tag to create, or nothing when the commit is already tagged.
@@ -14,7 +15,7 @@ import re
 import subprocess
 from datetime import UTC, datetime
 
-RELEASE_TAG = re.compile(r"^v\d{4}\.\d{2}\.\d{2}(\.\d+)?$")
+RELEASE_TAG = re.compile(r"^v\d")
 
 
 def next_tag(date: str, existing: list[str], on_head: list[str]) -> str | None:

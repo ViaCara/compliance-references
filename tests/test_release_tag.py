@@ -27,8 +27,11 @@ class NextTagTests(unittest.TestCase):
     def test_commit_with_a_release_tag_gets_no_second_tag(self):
         self.assertIsNone(release_tag.next_tag(DATE, ["v2026.11.11.1"], ["v2026.11.11.1"]))
 
+    def test_commit_with_a_major_prefix_tag_gets_no_date_tag(self):
+        self.assertIsNone(release_tag.next_tag(DATE, ["v2.0.0-2026.11.18"], ["v2.0.0-2026.11.18"]))
+
     def test_other_tag_on_the_commit_does_not_stop_the_release(self):
-        self.assertEqual(release_tag.next_tag(DATE, ["v2.0.0-2026.11.18"], ["v2.0.0-2026.11.18"]), "v2026.11.18")
+        self.assertEqual(release_tag.next_tag(DATE, ["sync-base"], ["sync-base"]), "v2026.11.18")
 
 
 if __name__ == "__main__":
