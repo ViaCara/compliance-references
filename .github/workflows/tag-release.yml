@@ -7,6 +7,8 @@ on:
     branches: [main]
   workflow_dispatch: {}
 
+concurrency: tag-release
+
 jobs:
   tag:
     if: github.ref == 'refs/heads/main'
@@ -17,12 +19,11 @@ jobs:
       - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-      - name: Tag if changed since last tag
+      - name: Tag the commit unless it already has a release tag
         run: |
-          DATE=$(date -u +%Y.%m.%d)
-          TAG="v$DATE"
-          if git rev-parse "$TAG" >/dev/null 2>&1; then
-            echo "tag $TAG already exists; skipping"
+          TAG=$(python3 .github/scripts/release_tag.py)
+          if [ -z "$TAG" ]; then
+            echo "commit already has a release tag; skipping"
             exit 0
           fi
           git config user.name "compliance-references-bot"
