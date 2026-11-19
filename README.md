@@ -28,7 +28,7 @@ Re-running `build.py` against an unchanged source set produces zero file diffs (
 
 ## For consumers
 
-Pin a tag (`v<YYYY.MM.DD>`), not `main`. Tags are the contract surface. Additions are free; renames/removals ship as a major-prefix tag (`v2.0.0-<date>`).
+Pin a tag (`v<YYYY.MM.DD>`), not `main`. A second release on the same day adds a counter (`v<YYYY.MM.DD>.1`). Tags are the contract surface. Additions are free; renames/removals ship as a major-prefix tag (`v2.0.0-<date>`).
 
 A consumer reads `index.json` for search and the files under `corpus/` for the text, and checks each body against its `content_sha256`.
 

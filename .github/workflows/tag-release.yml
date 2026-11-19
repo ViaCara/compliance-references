@@ -7,6 +7,12 @@ on:
     branches: [main]
   workflow_dispatch: {}
 
+# Each run tags the newest commit on main, so a run that the group cancels
+# while it waits loses nothing: the run that replaced it tags the same commit.
+# The group holds the branch name, so a dispatch from another branch (which the
+# job condition skips) cannot cancel a waiting run for main.
+concurrency: tag-release-${{ github.ref }}
+
 jobs:
   tag:
     if: github.ref == 'refs/heads/main'
@@ -16,13 +22,13 @@ jobs:
     steps:
       - uses: actions/checkout@v7
         with:
+          ref: main
           fetch-depth: 0
-      - name: Tag if changed since last tag
+      - name: Tag the newest commit unless it already has a release tag
         run: |
-          DATE=$(date -u +%Y.%m.%d)
-          TAG="v$DATE"
-          if git rev-parse "$TAG" >/dev/null 2>&1; then
-            echo "tag $TAG already exists; skipping"
+          TAG=$(python3 .github/scripts/release_tag.py)
+          if [ -z "$TAG" ]; then
+            echo "commit already has a release tag; skipping"
             exit 0
           fi
           git config user.name "compliance-references-bot"
