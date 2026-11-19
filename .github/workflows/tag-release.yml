@@ -9,7 +9,9 @@ on:
 
 # Each run tags the newest commit on main, so a run that the group cancels
 # while it waits loses nothing: the run that replaced it tags the same commit.
-concurrency: tag-release
+# The group holds the branch name, so a dispatch from another branch (which the
+# job condition skips) cannot cancel a waiting run for main.
+concurrency: tag-release-${{ github.ref }}
 
 jobs:
   tag:

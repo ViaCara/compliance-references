@@ -15,7 +15,7 @@ import re
 import subprocess
 from datetime import UTC, datetime
 
-RELEASE_TAG = re.compile(r"^v\d")
+RELEASE_TAG = re.compile(r"^v(\d{4}\.\d{2}\.\d{2}(\.\d+)?|\d+\.\d+\.\d+-.+)$")
 
 
 def next_tag(date: str, existing: list[str], on_head: list[str]) -> str | None:
