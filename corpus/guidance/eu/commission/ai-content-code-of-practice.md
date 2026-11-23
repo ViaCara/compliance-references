@@ -7,7 +7,7 @@ citation: Commission Code of Practice on Transparency of AI-Generated Content
 source_uri: "https://ec.europa.eu/newsroom/dae/redirection/document/129555"
 source_format: pdf
 revision_id: Final, 10 June 2026
-content_sha256: 685efee3f2b59ff73ada0275c0a57f05815fd56673ddd4758b8ead88e344cb88
+content_sha256: 5ed0cf9872ff37867749f6279c1d6550523bf25d96739cfa4d29295ca8a68211
 last_fetched: 2026-11-23
 language: en-GB
 enforcement_status: guidance
@@ -134,7 +134,17 @@ _United Kingdom status: the AI Act is EU law and is not retained in the United K
 >
 > (b) provide public information to the Commission and relevant stakeholders on how to integrate and access detection solutions for the other type(s) of marking technique(s) that they have implemented in their AI system. To facilitate dissemination of such information, Signatories are encouraged to provide relevant information on their websites and to populate publicly available registries that may be created to streamline integrations. (Section 1, Measure 3.4)
 
-> (c) work towards a minimum level of interoperability among detection solutions for watermarking that reduce burden and costs for the Signatories, while ensuring a more seamless access for end-users. More specifically, Signatories will implement an interoperability solution for their detection mechanisms by 2 February 2027 by implementing one or more of the following: (Section 1, Measure 3.4, point (c))
+> (c) work towards a minimum level of interoperability among detection solutions for watermarking that reduce burden and costs for the Signatories, while ensuring a more seamless access for end-users. More specifically, Signatories will implement an interoperability solution for their detection mechanisms by 2 February 2027 by implementing one or more of the following:
+>
+> i) a publicly available interoperable industry standard access method that enables detection queries to be routed to relevant detection mechanisms, and detection results to be interpreted by shared or provider-agnostic detection solutions interacting with endpoints implementing such API, including detection solutions that support public signposts but do not necessarily require them. Signatories who implement this approach shall not create unnecessary traffic to other services where such traffic can be avoided by directly reading out a known interoperability solution (like a signpost);
+>
+> ii) a publicly readable signpost or other interoperable mechanism in the AI-generated or manipulated content that will signal to the public which detection solution to use without having to run all the detection solutions of providers of AI systems. Signatories will take reasonable steps to ensure that the detection mechanism(s) associated to their signpost marking technique(s) or other interoperability solution are made available to the Commission and relevant stakeholders so that they can be integrated in their detection workflows;
+>
+> iii) a shared provider detection solution by a consortium of Signatories that is accessible and inclusive for any other Signatory to join, including SMEs and SMCs, subject to appropriate safeguards for the protection of confidential technical information. Any such aggregated detection solution shall be agnostic to the Signatories participating in the consortium, capable of detecting outputs generated or manipulated by their generative AI systems, and able to work in an interoperable manner with other detection solutions;
+>
+> iv) another interoperability solution that achieves interoperability between Signatories comparable to the solutions above. (Section 1, Measure 3.4, point (c))
+
+> The interoperability solution will be implemented in a manner that is not detrimental to the robustness of other embedded watermarks and that includes safeguards against misuse risks creation. (Section 1, Measure 3.4, point (c))
 
 ## Deployers: scope of the labelling commitments
 
@@ -206,11 +216,15 @@ _United Kingdom status: the AI Act is EU law and is not retained in the United K
 
 > In order to cater for downstream use (e.g., clipped audio fragments) and for long-form or live exposure, Signatories will, where appropriate, supplement the initial audible disclaimer at the beginning of the content with reminders at regular intervals (e.g., disclaimers, tones or earcons) for the entire duration of the audio deep fake to ensure ongoing awareness, and at minimum after interruptions (e.g., by advertisements). (Section 2, Sub-measure 1.2.3)
 
-## Deployers: artistic works and human review of published text
+## Deployers: artistic, creative and similar works (Commitment 3)
 
 > In accordance with Article 50(4) AI Act, Signatories commit to implement measures to disclose deep fakes that form part of evidently artistic, creative, satirical, fictional or analogous work or programmes in a way that does not hamper the display or enjoyment of the work, including its normal exploitation and use, while maintaining the utility and quality of the work. (Section 2, Commitment 3)
 
 > Where deep fake content is made available in a digital or interactive manner (e.g., on websites, apps or other user interfaces), the icon or equivalent label may be placed outside but adjacent to the video or image frame, or adjacent to the audio content and integrated into user interface elements or overlays, under the control of the Signatory. Signatories commit to ensure that any such contextual disclosure solution is perceivable by the end-user without the need to perform dedicated actions or additional engagement. Examples of contextual disclosure include disclosures as part of the user interface (e.g., as part of websites or application interfaces of smart glasses or other digital devices), short notes, a non-obtrusive icon or label that by clicking or hovering over provides more information, disclaimers appearing adjacent to the content. (Section 2, Commitment 3)
+
+## Deployers: human review and editorial control for published text (Commitment 4)
+
+> Signatories who are media service providers within the meaning of Art. 2(2) of Regulation (EU) 2024/1083 and already subject to editorial standards and to regulatory, co-regulatory, or self-regulatory frameworks, as applicable to those media service providers under  EU and national media law and frameworks, may rely on the exception to the disclosure obligation in Article 50(4), subparagraph 2, AI Act by applying their existing review and editorial procedures and established professional standards, as applicable, to  comply with this Commitment. (Section 2, Commitment 4)
 
 > All other Signatories, including those without such review or editorial procedures, commit to establish, adapt, or maintain appropriate policies for human review or editorial control prior to publication and that a natural or legal person holds editorial responsibility for the publication. These internal policies may rely on existing processes, will be proportionate to the deployer’s size and resources, and will include at least the following elements:
 >
