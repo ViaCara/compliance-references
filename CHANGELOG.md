@@ -2,6 +2,9 @@
 
 Drift log. Newer entries first.
 
+## 2026-11-23
+- **corpus/guidance/eu/commission/ai-content-code-of-practice.md** new file: curated quotes from the final Code of Practice on Transparency of AI-Generated Content (European Commission, 10 June 2026). Section 1 marking and detection measures for providers under Article 50(2) and (5) of the AI Act, Section 2 labelling and EU icon measures for deployers under Article 50(4) and (5), and Annex 1. Human review pending.
+
 ## 2026-11-18
 - **Curated sources checked against their live text**: every quotation in the 56 curated files was compared with its source on 2026-11-18, and `last_fetched` records that date. Human review of the changes below remains pending.
 - **corpus/guidance/uk/dbs/update-service-employer-guide.md** hash 142ac59 -> 529b426: the annual subscription is £15, not £16 (GOV.UK change note of 5 October 2026); the page was last updated on 13 November 2026.

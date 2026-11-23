@@ -2655,6 +2655,25 @@
     "title": "Digital Omnibus on AI Article 4 - Entry into force and application"
   },
   {
+    "authority": "guidance",
+    "domain_tags": [
+      "ai-act",
+      "artificial-intelligence",
+      "transparency",
+      "ai-generated-content",
+      "accessibility"
+    ],
+    "enforcement_status": "guidance",
+    "id": "eu-commission-ai-content-cop-2026",
+    "jurisdiction": "eu",
+    "path": "guidance/eu/commission/ai-content-code-of-practice.md",
+    "revision_id": "Final, 10 June 2026",
+    "sha": "685efee3f2b59ff73ada0275c0a57f05815fd56673ddd4758b8ead88e344cb88",
+    "source_uri": "https://ec.europa.eu/newsroom/dae/redirection/document/129555",
+    "summary": "The final voluntary Code of Practice under AI Act Article 50(7), published 10 June 2026. Section 1 (providers, Article 50(2) and (5)): machine-readable marking of audio, image, video and text output with at least two layers, digitally signed metadata and an imperceptible watermark; free-form text needs only the watermark, and text shorter than 200 tokens is exempt from it; a single layer suffices for closed physical products; fingerprinting or logging alone is not enough; no removal of markings; a free detection solution with clear, accessible results and zero retention of submitted content; effectiveness, reliability, robustness and interoperability, with an interoperability solution by 2 February 2027. Section 2 (deployers, Article 50(4) and (5)): disclose deep fakes and text published on matters of public interest with the EU 'AI' icon or an equivalent label at first exposure, an audible disclaimer where visual disclosure is not possible, placement rules for images, video, audio and text, lighter disclosure for evident artistic works, and the human review and editorial responsibility route for published text. Adherence is not conclusive evidence of compliance. EU guidance with no legal effect in the United Kingdom.",
+    "title": "Code of Practice on Transparency of AI-Generated Content"
+  },
+  {
     "authority": "statute",
     "domain_tags": [
       "territorial-scope",
