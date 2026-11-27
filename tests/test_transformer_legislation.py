@@ -484,6 +484,16 @@ class LegislationTransformerTests(unittest.TestCase):
         self.assertIn("**Later heading**", markdown)
         self.assertNotIn("repealed", markdown)
 
+    def test_dot_only_paragraph_heading_still_reads_as_repealed(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<p class="LegP2GroupTitle"><span class="LegRepealed">. . . . . .</span></p>'
+            "<table><tbody><tr><td> </td></tr></tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Art. 1")
+
+        self.assertIn("_Provision repealed. See source for amendment history._", markdown)
+
     def test_table_only_nested_containers_keep_prose_and_one_table(self):
         source = (
             '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'

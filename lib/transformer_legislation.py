@@ -386,7 +386,8 @@ class LegislationTransformer:
                 continue
             if id(element) in headings:
                 # Already emitted as a heading, but it is still words.
-                if _localname(element.tag) == "p" and _inline_text(element):
+                heading_text = _inline_text(element) if _localname(element.tag) == "p" else ""
+                if heading_text and not _is_repealed_marker(heading_text):
                     saw_repealed_only = False
                 continue
             if _localname(element.tag) == "table":
