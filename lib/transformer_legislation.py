@@ -536,20 +536,24 @@ def _table_groups(table: ET.Element) -> list[list[list[ET.Element]]]:
     thead: list[list[list[ET.Element]]] = []
     body: list[list[list[ET.Element]]] = []
     tfoot: list[list[list[ET.Element]]] = []
-    loose: list[list[ET.Element]] = []
 
     def cells(row: ET.Element) -> list[ET.Element]:
         return [cell for cell in row if _localname(cell.tag) in _TABLE_CELLS]
 
+    loose: list[list[ET.Element]] | None = None
     for child in table:
         name = _localname(child.tag)
         if name == "tr":
+            # Rows directly under the table form a body group in place.
+            if loose is None:
+                loose = []
+                body.append(loose)
             loose.append(cells(child))
-        elif name in _TABLE_SECTIONS:
+            continue
+        loose = None
+        if name in _TABLE_SECTIONS:
             rows = [cells(row) for row in child if _localname(row.tag) == "tr"]
             {"thead": thead, "tbody": body, "tfoot": tfoot}[name].append(rows)
-    if loose:
-        body.insert(0, loose)
     return thead + body + tfoot
 
 
@@ -617,6 +621,9 @@ def _group_grid(rows: list[list[ET.Element]]) -> list[list[str]]:
             rowspan = remaining if cell.get("rowspan") == "0" else min(_span(cell, "rowspan"), remaining)
             colspan = _span(cell, "colspan")
             for offset in range(colspan):
+                # A cell that lands on a column a row span holds wins it, so
+                # overlapping spans in malformed markup cannot stall the row.
+                pending.pop((row_index, column + offset), None)
                 value = text if offset == 0 else ""
                 line.append(value)
                 for extra in range(1, rowspan):

@@ -334,6 +334,35 @@ class LegislationTransformerTests(unittest.TestCase):
 
         self.assertIn("| FCA<br>PRA<br>Bank of England |", markdown)
 
+    def test_overlapping_spans_finish(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<table><tbody><tr><td>A</td><td rowspan="2">B</td></tr>'
+            '<tr><td colspan="3">C</td></tr></tbody></table></div>'
+        )
+        markdown = LegislationTransformer().transform(source, citation="Sch. 1")
+
+        self.assertIn("| A | B |  |\n| C |  |  |", markdown)
+
+    def test_row_span_is_capped_at_its_group(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<table><tbody><tr><td rowspan="100000">Tall.</td></tr></tbody></table></div>'
+        )
+        markdown = LegislationTransformer().transform(source, citation="Sch. 1")
+
+        self.assertEqual(markdown.count("Tall."), 1)
+
+    def test_rows_directly_under_the_table_keep_document_order(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            "<table><tbody><tr><td>First.</td></tr></tbody>"
+            "<tr><td>Second.</td></tr></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Sch. 1")
+
+        self.assertIn("| First. |\n| Second. |", markdown)
+
     def test_real_equality_act_section_020_keeps_its_table(self):
         source = (FIXTURES / "equality_act_2010_section_020.xhtml").read_text(encoding="utf-8")
         markdown = LegislationTransformer().transform(source, citation="EqA 2010 s. 20")
