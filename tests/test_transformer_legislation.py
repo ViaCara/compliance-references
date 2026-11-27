@@ -600,6 +600,32 @@ class LegislationTransformerTests(unittest.TestCase):
 
         self.assertIn("| Status | Questioner |\n| --- | --- |\n| 1 A holder. | The FCA. |", markdown)
 
+    def test_sub_heading_carried_by_a_row_span_keeps_columns_apart(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            "<table><tbody>"
+            '<tr><th>Item</th><th colspan="2">Rate</th></tr>'
+            '<tr><td></td><th rowspan="2">Reduced</th><td></td></tr>'
+            "<tr><td></td><th>Standard</th></tr>"
+            "<tr><td>(1)</td><td>10</td><td>20</td></tr></tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="s. 24")
+
+        self.assertIn("| (1) | 10 | 20 |", markdown)
+
+    def test_one_group_folds_while_another_keeps_its_sub_headings(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            "<table><tbody>"
+            '<tr><th colspan="2">Status</th><th colspan="2">Rate</th></tr>'
+            "<tr><td></td><td></td><th>Reduced</th><th>Standard</th></tr>"
+            "<tr><td>1</td><td>A holder.</td><td>10</td><td>20</td></tr></tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="s. 24")
+
+        self.assertIn("| Status | Rate |  |\n| --- | --- | --- |", markdown)
+        self.assertIn("| 1 A holder. | 10 | 20 |", markdown)
+
     def test_container_keeps_closing_words_beside_its_table(self):
         source = (
             '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'

@@ -743,10 +743,11 @@ def _merge_header_groups(
     push the second named column to the fourth place. Each row's texts under
     one heading are joined with a space.
 
-    A group stays apart when a later row starts two or more heading cells
-    inside it: those are sub-headings naming columns a statute may cite on
-    their own. One heading cell there is a row label, such as an entry
-    number, and does not split the group."""
+    A group stays apart when heading cells in later rows start in two or
+    more of its columns, in one row or across rows: those are sub-headings
+    naming columns a statute may cite on their own. Heading cells that all
+    start in one column are row labels, such as entry numbers, and do not
+    split the group."""
     spans = [_span(cell, "colspan") for cell in header_cells]
     if all(span == 1 for span in spans) or sum(spans) != len(grid[0]):
         return grid
@@ -755,11 +756,8 @@ def _merge_header_groups(
     for span in spans:
         ranges.append(range(start, start + span))
         start += span
-    fold = [
-        len(group) > 1
-        and not any(len(starts & set(group)) > 1 for starts in later_headings)
-        for group in ranges
-    ]
+    heading_starts = set().union(*later_headings) if later_headings else set()
+    fold = [len(group) > 1 and len(heading_starts & set(group)) < 2 for group in ranges]
     merged: list[list[str]] = []
     for row_index, line in enumerate(grid):
         out: list[str] = []
