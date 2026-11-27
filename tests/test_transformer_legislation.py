@@ -576,6 +576,30 @@ class LegislationTransformerTests(unittest.TestCase):
 
         self.assertIn("|  | Reduced | Standard |\n| (1) | 10 | 20 |", markdown)
 
+    def test_columns_stay_apart_under_sub_headings_after_a_data_row(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            "<table><tbody>"
+            '<tr><th>Item</th><th colspan="2">Rate</th></tr>'
+            "<tr><td>Note</td><td></td><td></td></tr>"
+            '<tr><td></td><th scope="col">Reduced</th><th scope="col">Standard</th></tr>'
+            "<tr><td>(1)</td><td>10</td><td>20</td></tr></tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="s. 24")
+
+        self.assertIn("|  | Reduced | Standard |\n| (1) | 10 | 20 |", markdown)
+
+    def test_a_row_label_heading_still_folds_its_group(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<table><thead><tr><th colspan="2">Status</th><th>Questioner</th></tr></thead>'
+            '<tbody><tr><th scope="col">1</th><td>A holder.</td><td>The FCA.</td></tr></tbody>'
+            "</table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Art. 3")
+
+        self.assertIn("| Status | Questioner |\n| --- | --- |\n| 1 A holder. | The FCA. |", markdown)
+
     def test_container_keeps_closing_words_beside_its_table(self):
         source = (
             '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'

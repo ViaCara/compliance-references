@@ -641,12 +641,17 @@ def _cell_text(cell: ET.Element) -> str:
     return "<br>".join(escaped).replace("|", "\\|")
 
 
-def _group_grid(rows: list[list[ET.Element]]) -> list[list[str]]:
+def _group_grid(
+    rows: list[list[ET.Element]], heading_columns: list[set[int]] | None = None
+) -> list[list[str]]:
+    """The group's rows as text, spans resolved. When `heading_columns` is
+    given, it gains one set per row: the columns where a `th` cell starts."""
     grid: list[list[str]] = []
     # (row, column) -> (text, id of the spanning cell)
     pending: dict[tuple[int, int], tuple[str, int]] = {}
     for row_index, cells in enumerate(rows):
         line: list[str] = []
+        starts: set[int] = set()
         column = 0
         queue = list(cells)
         while queue or any(key[0] == row_index for key in pending):
@@ -665,6 +670,8 @@ def _group_grid(rows: list[list[ET.Element]]) -> list[list[str]]:
             rowspan = remaining if _is_zero(cell.get("rowspan")) else _span(cell, "rowspan")
             rowspan = min(rowspan, remaining, _MAX_TABLE_SPAN)
             colspan = _span(cell, "colspan")
+            if _localname(cell.tag) == "th":
+                starts.add(column)
             for offset in range(colspan):
                 # A cell that lands on a column a row span holds wins it and
                 # ends that span, so overlapping spans in malformed markup can
@@ -679,13 +686,16 @@ def _group_grid(rows: list[list[ET.Element]]) -> list[list[str]]:
                     pending[(row_index + extra, column + offset)] = (value, id(cell))
             column += colspan
         grid.append(line)
+        if heading_columns is not None:
+            heading_columns.append(starts)
     return grid
 
 
 def _table_markdown(table: ET.Element) -> str:
     """Render an XHTML table as a GFM table, or "" when it holds no text."""
     groups = _table_groups(table)
-    grid = [line for rows in groups for line in _group_grid(rows)]
+    heading_columns: list[set[int]] = []
+    grid = [line for rows in groups for line in _group_grid(rows, heading_columns)]
     caption = next(
         (_inline_text(child) for child in table if _localname(child.tag) == "caption"),
         "",
@@ -704,12 +714,10 @@ def _table_markdown(table: ET.Element) -> str:
     first_all_th = bool(first_row) and all(_localname(cell.tag) == "th" for cell in first_row)
     if has_thead or first_all_th:
         header_rows = len(groups[0]) if has_thead else 1
-        later_rows = [row for rows in groups for row in rows][1:]
-        later_heading = any(_localname(cell.tag) == "th" for row in later_rows for cell in row)
-        # Fold only under a single heading row: any later heading row or
-        # heading cell may name a column a statute cites on its own.
-        if header_rows == 1 and not later_heading:
-            grid = _merge_header_groups(grid, first_row)
+        # Fold only under a single heading row: a second thead row names the
+        # columns a statute may cite one by one.
+        if header_rows == 1:
+            grid = _merge_header_groups(grid, first_row, heading_columns[1:])
         width = len(grid[0])
         header, body = grid[0], grid[1:]
     else:
@@ -724,28 +732,45 @@ def _table_markdown(table: ET.Element) -> str:
     return f"**{caption}**\n\n{table_text}" if caption else table_text
 
 
-def _merge_header_groups(grid: list[list[str]], header_cells: list[ET.Element]) -> list[list[str]]:
+def _merge_header_groups(
+    grid: list[list[str]], header_cells: list[ET.Element], later_headings: list[set[int]]
+) -> list[list[str]]:
     """Fold the physical columns under one spanning heading into one column.
 
     A statute that names "the first column" means the heading's column:
     ROA Exceptions Order art. 3 sets a Status heading over three cells
     (entry number, sub-paragraph letter, wording). Keeping them apart would
     push the second named column to the fourth place. Each row's texts under
-    one heading are joined with a space."""
+    one heading are joined with a space.
+
+    A group stays apart when a later row starts two or more heading cells
+    inside it: those are sub-headings naming columns a statute may cite on
+    their own. One heading cell there is a row label, such as an entry
+    number, and does not split the group."""
     spans = [_span(cell, "colspan") for cell in header_cells]
     if all(span == 1 for span in spans) or sum(spans) != len(grid[0]):
         return grid
+    ranges: list[range] = []
+    start = 0
+    for span in spans:
+        ranges.append(range(start, start + span))
+        start += span
+    fold = [
+        len(group) > 1
+        and not any(len(starts & set(group)) > 1 for starts in later_headings)
+        for group in ranges
+    ]
     merged: list[list[str]] = []
     for row_index, line in enumerate(grid):
         out: list[str] = []
-        start = 0
-        for span in spans:
-            group = line[start : start + span]
-            start += span
-            if row_index == 0:
-                out.append(group[0])
+        for group, folded in zip(ranges, fold):
+            cells = line[group.start : group.stop]
+            if not folded:
+                out.extend(cells)
+            elif row_index == 0:
+                out.append(cells[0])
             else:
-                out.append(" ".join(text for text in group if text))
+                out.append(" ".join(text for text in cells if text))
         merged.append(out)
     return merged
 
