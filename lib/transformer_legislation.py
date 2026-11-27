@@ -643,14 +643,15 @@ def _cell_text(cell: ET.Element) -> str:
 
 def _group_grid(
     rows: list[list[ET.Element]],
-    heading_columns: list[set[int]] | None = None,
+    heading_columns: list[tuple[set[int], bool]] | None = None,
     *,
     header_group: bool = False,
 ) -> list[list[str]]:
     """The group's rows as text, spans resolved. When `heading_columns` is
-    given, it gains one set per row: the columns where a column heading
-    starts. In a thead every cell with text is a heading; elsewhere only a
-    `th` that is not scoped to its row or row group."""
+    given, it gains one entry per row: the columns where a column heading
+    starts, and whether the row is in a thead. A column heading has text
+    and is not scoped to its row or row group; in a thead any such cell is
+    one, elsewhere only a `th`."""
     grid: list[list[str]] = []
     # (row, column) -> (text, id of the spanning cell)
     pending: dict[tuple[int, int], tuple[str, int]] = {}
@@ -677,9 +678,7 @@ def _group_grid(
             colspan = _span(cell, "colspan")
             # A heading scoped to its row or row group labels rows, not a column.
             row_scoped = (cell.get("scope") or "").lower() in {"row", "rowgroup"}
-            if header_group and text:
-                starts.add(column)
-            elif _localname(cell.tag) == "th" and not row_scoped:
+            if text and not row_scoped and (header_group or _localname(cell.tag) == "th"):
                 starts.add(column)
             for offset in range(colspan):
                 # A cell that lands on a column a row span holds wins it and
@@ -696,14 +695,14 @@ def _group_grid(
             column += colspan
         grid.append(line)
         if heading_columns is not None:
-            heading_columns.append(starts)
+            heading_columns.append((starts, header_group))
     return grid
 
 
 def _table_markdown(table: ET.Element) -> str:
     """Render an XHTML table as a GFM table, or "" when it holds no text."""
     groups = _table_groups(table)
-    heading_columns: list[set[int]] = []
+    heading_columns: list[tuple[set[int], bool]] = []
     thead_groups = sum(1 for child in table if _localname(child.tag) == "thead")
     grid = [
         line
@@ -743,7 +742,9 @@ def _table_markdown(table: ET.Element) -> str:
 
 
 def _merge_header_groups(
-    grid: list[list[str]], header_cells: list[ET.Element], later_headings: list[set[int]]
+    grid: list[list[str]],
+    header_cells: list[ET.Element],
+    later_headings: list[tuple[set[int], bool]],
 ) -> list[list[str]]:
     """Fold the physical columns under one spanning heading into one column.
 
@@ -753,11 +754,11 @@ def _merge_header_groups(
     push the second named column to the fourth place. Each row's texts under
     one heading are joined with a space.
 
-    A group stays apart when heading cells in later rows start in two or
-    more of its columns, in one row or across rows: those are sub-headings
-    naming columns a statute may cite on their own. Heading cells that all
-    start in one column are row labels, such as entry numbers, and do not
-    split the group."""
+    A group stays apart when a later thead row holds a column heading in
+    it, or when body headings start in two or more of its columns, in one
+    row or across rows: those are sub-headings naming columns a statute may
+    cite on their own. Body headings that all start in one column are row
+    labels, such as entry numbers, and do not split the group."""
     spans = [_span(cell, "colspan") for cell in header_cells]
     if all(span == 1 for span in spans) or sum(spans) != len(grid[0]):
         return grid
@@ -766,8 +767,14 @@ def _merge_header_groups(
     for span in spans:
         ranges.append(range(start, start + span))
         start += span
-    heading_starts = set().union(*later_headings) if later_headings else set()
-    fold = [len(group) > 1 and len(heading_starts & set(group)) < 2 for group in ranges]
+    thead_starts: set[int] = set()
+    body_starts: set[int] = set()
+    for starts, in_thead in later_headings:
+        (thead_starts if in_thead else body_starts).update(starts)
+    fold = [
+        len(group) > 1 and not thead_starts & set(group) and len(body_starts & set(group)) < 2
+        for group in ranges
+    ]
     merged: list[list[str]] = []
     for row_index, line in enumerate(grid):
         out: list[str] = []

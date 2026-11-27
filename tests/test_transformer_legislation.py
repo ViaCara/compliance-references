@@ -667,6 +667,40 @@ class LegislationTransformerTests(unittest.TestCase):
 
         self.assertIn("| Status | Questioner |\n| --- | --- |", markdown)
 
+    def test_row_scoped_labels_in_a_thead_row_do_not_split(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<table><thead><tr><th colspan="2">Status</th><th>Rate</th></tr>'
+            '<tr><th scope="rowgroup">Entries</th><th scope="row">Description</th><th></th></tr></thead>'
+            "<tbody><tr><td>1</td><td>A holder.</td><td>10</td></tr></tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="s. 24")
+
+        self.assertIn("| 1 A holder. | 10 |", markdown)
+
+    def test_empty_thead_cells_do_not_split(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<table><thead><tr><th colspan="2">Status</th><th>Rate</th></tr>'
+            "<tr><th></th><th></th><th></th></tr></thead>"
+            "<tbody><tr><td>1</td><td>A holder.</td><td>10</td></tr></tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="s. 24")
+
+        self.assertIn("| Status | Rate |", markdown)
+        self.assertIn("| 1 A holder. | 10 |", markdown)
+
+    def test_one_thead_sub_heading_keeps_its_group_apart(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<table><thead><tr><th>Item</th><th colspan="2">Rate</th></tr>'
+            '<tr><td></td><th scope="col">Reduced</th><td></td></tr></thead>'
+            "<tbody><tr><td>1</td><td>10</td><td>20</td></tr></tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="s. 24")
+
+        self.assertIn("| 1 | 10 | 20 |", markdown)
+
     def test_container_keeps_closing_words_beside_its_table(self):
         source = (
             '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
