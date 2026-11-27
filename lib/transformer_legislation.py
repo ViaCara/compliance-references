@@ -642,10 +642,15 @@ def _cell_text(cell: ET.Element) -> str:
 
 
 def _group_grid(
-    rows: list[list[ET.Element]], heading_columns: list[set[int]] | None = None
+    rows: list[list[ET.Element]],
+    heading_columns: list[set[int]] | None = None,
+    *,
+    header_group: bool = False,
 ) -> list[list[str]]:
     """The group's rows as text, spans resolved. When `heading_columns` is
-    given, it gains one set per row: the columns where a `th` cell starts."""
+    given, it gains one set per row: the columns where a column heading
+    starts. In a thead every cell with text is a heading; elsewhere only a
+    `th` that is not scoped to its row or row group."""
     grid: list[list[str]] = []
     # (row, column) -> (text, id of the spanning cell)
     pending: dict[tuple[int, int], tuple[str, int]] = {}
@@ -670,8 +675,11 @@ def _group_grid(
             rowspan = remaining if _is_zero(cell.get("rowspan")) else _span(cell, "rowspan")
             rowspan = min(rowspan, remaining, _MAX_TABLE_SPAN)
             colspan = _span(cell, "colspan")
-            # A heading scoped to its row labels the row, not a column.
-            if _localname(cell.tag) == "th" and (cell.get("scope") or "").lower() != "row":
+            # A heading scoped to its row or row group labels rows, not a column.
+            row_scoped = (cell.get("scope") or "").lower() in {"row", "rowgroup"}
+            if header_group and text:
+                starts.add(column)
+            elif _localname(cell.tag) == "th" and not row_scoped:
                 starts.add(column)
             for offset in range(colspan):
                 # A cell that lands on a column a row span holds wins it and
@@ -696,7 +704,12 @@ def _table_markdown(table: ET.Element) -> str:
     """Render an XHTML table as a GFM table, or "" when it holds no text."""
     groups = _table_groups(table)
     heading_columns: list[set[int]] = []
-    grid = [line for rows in groups for line in _group_grid(rows, heading_columns)]
+    thead_groups = sum(1 for child in table if _localname(child.tag) == "thead")
+    grid = [
+        line
+        for index, rows in enumerate(groups)
+        for line in _group_grid(rows, heading_columns, header_group=index < thead_groups)
+    ]
     caption = next(
         (_inline_text(child) for child in table if _localname(child.tag) == "caption"),
         "",
@@ -714,11 +727,7 @@ def _table_markdown(table: ET.Element) -> str:
     )
     first_all_th = bool(first_row) and all(_localname(cell.tag) == "th" for cell in first_row)
     if has_thead or first_all_th:
-        header_rows = len(groups[0]) if has_thead else 1
-        # Fold only under a single heading row: a second thead row names the
-        # columns a statute may cite one by one.
-        if header_rows == 1:
-            grid = _merge_header_groups(grid, first_row, heading_columns[1:])
+        grid = _merge_header_groups(grid, first_row, heading_columns[1:])
         width = len(grid[0])
         header, body = grid[0], grid[1:]
     else:
