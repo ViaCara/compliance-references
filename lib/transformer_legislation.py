@@ -62,6 +62,13 @@ Class names used in selection (from the legislation.gov.uk DOM):
   (the first sub-item's own number), ... on the same leaf that carries
   `LegP{n}Text`, instead of a `LegP{n}No`/`LegSP{n}No` this transformer
   otherwise looks for.
+- `LegTabular`, `LegTable`: a provision that sets its wording in an XHTML
+  `<table>` (Equality Act 2010 s. 20, UK GDPR Art. 17). The table is
+  rendered whole as a GFM table at its place in the document, because
+  printing some cells and not others reads as a complete table. A cell that
+  spans rows repeats its text in each row it covers, so every row keeps its
+  associations; a cell that spans columns fills the first and leaves the
+  rest empty. Paragraphs within one cell are joined with `<br>`.
 """
 
 from __future__ import annotations
@@ -150,7 +157,7 @@ def _is_skipped(element: ET.Element) -> bool:
     cls = _classes(element)
     if cls & {"LegChangeDelimiter", "LegCommentaryLink", "LegExtentRestriction"}:
         return True
-    if _localname(element.tag) == "a" and not (element.text or "").strip():
+    if _localname(element.tag) == "a" and not "".join(element.itertext()).strip():
         return True
     return False
 
@@ -224,13 +231,15 @@ class LegislationTransformer:
         return " - ".join(part for part in (number, title) if part)
 
     def _table_descendants(self, root: ET.Element) -> set[int]:
-        """Cells mark only some of their text as LegText, so emitting it
-        would print part of a table without its row associations."""
+        """Ids of every element inside a table, the table itself excluded.
+        The table is rendered whole by `_table_markdown`, so no branch of the
+        walk may emit a cell's text a second time."""
         return {
             id(descendant)
             for table in root.iter()
             if _localname(table.tag) == "table"
             for descendant in table.iter()
+            if descendant is not table
         }
 
     def _division_heading(self, element: ET.Element) -> str:
@@ -265,6 +274,14 @@ class LegislationTransformer:
         in_tables = self._table_descendants(root)
         extents = self._concurrent_extents(root)
         for element in root.iter():
+            if id(element) in in_tables:
+                continue
+            if _localname(element.tag) == "table":
+                table = _table_markdown(element)
+                if table:
+                    emitted_any = True
+                    yield table
+                continue
             cls = _classes(element)
             if len(extents) > 1 and id(element) in extents:
                 yield f"**Extent:** {extents[id(element)]}"
@@ -319,8 +336,6 @@ class LegislationTransformer:
                     yield f"{indent}{number} {text}".strip()
                 continue
             if _EU_TEXT_CLASS in cls:
-                if id(element) in in_tables:
-                    continue
                 text = _inline_text(element)
                 if text and not _is_repealed_marker(text):
                     emitted_any = True
@@ -492,6 +507,134 @@ class LegislationTransformer:
         if number and full.startswith(number):
             return full[len(number) :].strip()
         return full
+
+
+_TABLE_SECTIONS = frozenset({"thead", "tbody", "tfoot"})
+_TABLE_CELLS = frozenset({"td", "th"})
+_BLOCK_IN_CELL = frozenset({"p", "div", "li"})
+# A malformed span must not make the grid grow without bound.
+_MAX_TABLE_SPAN = 100
+
+
+def _table_groups(table: ET.Element) -> list[list[list[ET.Element]]]:
+    """Row groups in the order HTML renders them: thead, then body rows, then
+    tfoot. A row span ends at the end of its own group. A nested table's rows
+    belong to its own cell, not to this table."""
+    thead: list[list[list[ET.Element]]] = []
+    body: list[list[list[ET.Element]]] = []
+    tfoot: list[list[list[ET.Element]]] = []
+    loose: list[list[ET.Element]] = []
+
+    def cells(row: ET.Element) -> list[ET.Element]:
+        return [cell for cell in row if _localname(cell.tag) in _TABLE_CELLS]
+
+    for child in table:
+        name = _localname(child.tag)
+        if name == "tr":
+            loose.append(cells(child))
+        elif name in _TABLE_SECTIONS:
+            rows = [cells(row) for row in child if _localname(row.tag) == "tr"]
+            {"thead": thead, "tbody": body, "tfoot": tfoot}[name].append(rows)
+    if loose:
+        body.insert(0, loose)
+    return thead + body + tfoot
+
+
+def _span(cell: ET.Element, attribute: str) -> int:
+    try:
+        value = int(cell.get(attribute) or 1)
+    except ValueError:
+        return 1
+    return max(1, min(value, _MAX_TABLE_SPAN))
+
+
+_BLOCK_BREAK = "\x00"
+
+
+def _collect_cell(element: ET.Element, parts: list[str]) -> None:
+    """Like `_collect_inline`, but marks where each block starts and ends so
+    loose text beside a paragraph stays its own segment."""
+    if _is_skipped(element):
+        if element.tail:
+            parts.append(element.tail)
+        return
+    block = _localname(element.tag) in _BLOCK_IN_CELL
+    if block:
+        parts.append(_BLOCK_BREAK)
+    if element.text:
+        parts.append(element.text)
+    for child in list(element):
+        _collect_cell(child, parts)
+    if block:
+        parts.append(_BLOCK_BREAK)
+    if element.tail:
+        parts.append(element.tail)
+
+
+def _cell_text(cell: ET.Element) -> str:
+    """A cell's text with its paragraphs and loose runs kept apart in
+    document order, pipes escaped so the text cannot end the cell early."""
+    parts: list[str] = [cell.text or ""]
+    for child in list(cell):
+        _collect_cell(child, parts)
+    segments = (" ".join(segment.split()) for segment in "".join(parts).split(_BLOCK_BREAK))
+    return "<br>".join(segment for segment in segments if segment).replace("|", "\\|")
+
+
+def _group_grid(rows: list[list[ET.Element]]) -> list[list[str]]:
+    grid: list[list[str]] = []
+    pending: dict[tuple[int, int], str] = {}
+    for row_index, cells in enumerate(rows):
+        line: list[str] = []
+        column = 0
+        queue = list(cells)
+        while queue or (row_index, column) in pending:
+            if (row_index, column) in pending:
+                line.append(pending.pop((row_index, column)))
+                column += 1
+                continue
+            cell = queue.pop(0)
+            text = _cell_text(cell)
+            rowspan = min(_span(cell, "rowspan"), len(rows) - row_index)
+            colspan = _span(cell, "colspan")
+            for offset in range(colspan):
+                value = text if offset == 0 else ""
+                line.append(value)
+                for extra in range(1, rowspan):
+                    pending[(row_index + extra, column + offset)] = value
+            column += colspan
+        grid.append(line)
+    return grid
+
+
+def _table_markdown(table: ET.Element) -> str:
+    """Render an XHTML table as a GFM table, or "" when it holds no text."""
+    groups = _table_groups(table)
+    grid = [line for rows in groups for line in _group_grid(rows)]
+    if not any(text for line in grid for text in line):
+        return ""
+    width = max(len(line) for line in grid)
+    grid = [line + [""] * (width - len(line)) for line in grid]
+
+    first_row = next((row for rows in groups for row in rows), [])
+    has_thead = any(_localname(child.tag) == "thead" for child in table)
+    first_all_th = bool(first_row) and all(_localname(cell.tag) == "th" for cell in first_row)
+    if has_thead or first_all_th:
+        header, body = grid[0], grid[1:]
+    else:
+        header, body = [""] * width, grid
+
+    def render(line: list[str]) -> str:
+        return "| " + " | ".join(line) + " |"
+
+    lines = [render(header), "| " + " | ".join(["---"] * width) + " |"]
+    lines.extend(render(line) for line in body)
+    caption = next(
+        (_inline_text(child) for child in table if _localname(child.tag) == "caption"),
+        "",
+    )
+    table_text = "\n".join(lines)
+    return f"**{caption}**\n\n{table_text}" if caption else table_text
 
 
 def _is_repealed_marker(text: str) -> bool:

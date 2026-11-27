@@ -83,23 +83,197 @@ class LegislationTransformerTests(unittest.TestCase):
 
         self.assertIn("**3.3. Rule 12**\n\nAll other active devices are in Class I.", markdown)
 
-    def test_does_not_emit_part_of_a_table_from_its_eu_text_cells(self):
+    def test_renders_a_table_whole_as_markdown_at_its_place(self):
         source = (
             '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
             '<p class="LegText">Before the table.</p>'
-            '<table class="LegTable"><thead><tr>'
+            '<div class="LegTabular"><table class="LegTable"><thead><tr>'
             '<th><p class="LegText">Status</p></th><th><p class="LegText">Questioner</p></th>'
             '</tr></thead><tbody><tr>'
             '<td class="LegTD">A person with Part 4A permission.</td>'
             '<td class="LegTD"><p class="LegText">The FCA.</p></td>'
-            "</tr></tbody></table>"
+            "</tr></tbody></table></div>"
+            '<p class="LegText">After the table.</p>'
             "</div>"
         )
         markdown = LegislationTransformer().transform(source, citation="Art. 3")
 
-        self.assertIn("Before the table.", markdown)
-        self.assertNotIn("Questioner", markdown)
-        self.assertNotIn("The FCA.", markdown)
+        self.assertIn(
+            "Before the table.\n\n"
+            "| Status | Questioner |\n"
+            "| --- | --- |\n"
+            "| A person with Part 4A permission. | The FCA. |\n\n"
+            "After the table.",
+            markdown,
+        )
+        self.assertEqual(markdown.count("The FCA."), 1)
+
+    def test_table_spans_keep_each_row_complete(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<table class="LegTable"><thead><tr>'
+            '<th colspan="2">Status</th><th>Questioner</th>'
+            "</tr></thead><tbody>"
+            '<tr><td>1</td><td>(a) A holder.</td><td rowspan="2">The FCA.</td></tr>'
+            "<tr><td></td><td>(b) An associate.</td></tr>"
+            '<tr><td>2</td><td colspan="2">A manager.</td></tr>'
+            "</tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Art. 3")
+
+        self.assertIn(
+            "| Status |  | Questioner |\n"
+            "| --- | --- | --- |\n"
+            "| 1 | (a) A holder. | The FCA. |\n"
+            "|  | (b) An associate. | The FCA. |\n"
+            "| 2 | A manager. |  |",
+            markdown,
+        )
+
+    def test_table_without_a_header_row_gets_an_empty_one(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            "<table><tbody><tr><td>Part 3</td><td>Schedule 2 | 3</td></tr></tbody></table>"
+            "</div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="s. 20")
+
+        self.assertIn("|  |  |\n| --- | --- |\n| Part 3 | Schedule 2 \\| 3 |", markdown)
+
+    def test_table_cell_keeps_its_paragraphs_apart(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            "<table><thead><tr><th>Entry</th></tr></thead><tbody><tr><td>"
+            '<p class="LegText">First words.</p><p class="LegText">Second words.</p>'
+            "</td></tr></tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Sch. 1")
+
+        self.assertIn("| First words.<br>Second words. |", markdown)
+
+    def test_table_with_no_text_emits_nothing(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<p class="LegText">Only words.</p>'
+            "<table><tbody><tr><td> </td></tr></tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Art. 1")
+
+        self.assertNotIn("|", markdown)
+        self.assertIn("Only words.", markdown)
+
+    def test_keeps_link_text_held_in_a_child_span(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<p class="LegText">The Order 1997 (<a class="LegCitation" href="#">'
+            "<span>S.I. 1997/1180</span></a>) applies.</p></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Art. 17")
+
+        self.assertIn("The Order 1997 (S.I. 1997/1180) applies.", markdown)
+
+    def test_table_cell_keeps_loose_text_beside_its_paragraphs(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            "<table><thead><tr><th>Entry</th></tr></thead><tbody><tr><td>"
+            "Lead words <p>first.</p><p>second.</p> closing words"
+            "</td></tr></tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Sch. 1")
+
+        self.assertIn("| Lead words<br>first.<br>second.<br>closing words |", markdown)
+
+    def test_table_orders_groups_and_ends_a_row_span_at_its_group(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            "<table><caption>Table 1</caption>"
+            "<tfoot><tr><td>Note</td><td>Footer.</td></tr></tfoot>"
+            "<thead><tr><th>No</th><th>Entry</th></tr></thead>"
+            '<tbody><tr><td>1</td><td rowspan="3">Spans.</td></tr></tbody>'
+            "</table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Sch. 1")
+
+        self.assertIn(
+            "**Table 1**\n\n"
+            "| No | Entry |\n"
+            "| --- | --- |\n"
+            "| 1 | Spans. |\n"
+            "| Note | Footer. |",
+            markdown,
+        )
+
+    def test_header_is_the_first_row_when_it_is_all_th(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            "<table><tbody><tr><th>Part</th><th>Schedule</th></tr>"
+            "<tr><td>Part 3</td><td>Schedule 2</td></tr></tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="s. 20")
+
+        self.assertIn("| Part | Schedule |\n| --- | --- |\n| Part 3 | Schedule 2 |", markdown)
+
+    def test_nested_table_rows_stay_in_their_cell(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            "<table><thead><tr><th>Outer</th></tr></thead><tbody><tr><td>"
+            "<table><tbody><tr><td>Inner.</td></tr></tbody></table>"
+            "</td></tr></tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Sch. 1")
+
+        self.assertIn("| Outer |\n| --- |\n| Inner. |", markdown)
+        self.assertEqual(markdown.count("Inner."), 1)
+
+    def test_column_span_is_capped(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<table><tbody><tr><td colspan="100000">Wide.</td></tr></tbody></table></div>'
+        )
+        markdown = LegislationTransformer().transform(source, citation="Sch. 1")
+
+        self.assertEqual(markdown.splitlines()[-1].count("|"), 101)
+
+    def test_real_roa_exceptions_order_article_003_keeps_each_questioner(self):
+        source = (FIXTURES / "roa_exceptions_order_1975_article_003.xhtml").read_text(
+            encoding="utf-8"
+        )
+        markdown = LegislationTransformer().transform(source, citation="ROA art. 3")
+
+        self.assertIn("| Status |  |  | Questioner |", markdown)
+        self.assertIn(
+            "| 1 | A person with Part 4A permission. |  | The FCA, the PRA or the Bank of England. |",
+            markdown,
+        )
+        rows = [line for line in markdown.splitlines() if line.startswith("|  | (b) | An associate")]
+        self.assertTrue(rows)
+        self.assertTrue(rows[0].endswith("in relation to the person mentioned in sub-paragraph (a) of the first column. |"))
+
+    def test_real_uk_gdpr_article_017_keeps_its_table_and_citation(self):
+        source = (FIXTURES / "uk_gdpr_article_017.xhtml").read_text(encoding="utf-8")
+        markdown = LegislationTransformer().transform(source, citation="UK GDPR Art. 17")
+
+        self.assertIn("|  | Offence | Data subject |", markdown)
+        self.assertIn("(S.I. 1997/1180 (N.I. 9)) (harassment offences: Northern Ireland)", markdown)
+        self.assertLess(
+            markdown.index("The table is as follows"), markdown.index("| Offence |")
+        )
+
+    def test_real_equality_act_section_020_keeps_its_table(self):
+        source = (FIXTURES / "equality_act_2010_section_020.xhtml").read_text(encoding="utf-8")
+        markdown = LegislationTransformer().transform(source, citation="EqA 2010 s. 20")
+
+        self.assertIn(
+            "| Part of this Act | Applicable Schedule |\n"
+            "| --- | --- |\n"
+            "| Part 3 (services and public functions) | Schedule 2 |",
+            markdown,
+        )
+        self.assertIn("| Each of the Parts mentioned above | Schedule 21 |", markdown)
+        self.assertLess(
+            markdown.index("(13) The applicable Schedule is"),
+            markdown.index("| Part of this Act |"),
+        )
 
     def test_real_osa_section_022_scopes_category_1_duties(self):
         source = (FIXTURES / "osa_2023_section_022.xhtml").read_text(encoding="utf-8")
