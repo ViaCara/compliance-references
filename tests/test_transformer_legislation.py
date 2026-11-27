@@ -122,11 +122,11 @@ class LegislationTransformerTests(unittest.TestCase):
         markdown = LegislationTransformer().transform(source, citation="Art. 3")
 
         self.assertIn(
-            "| Status |  | Questioner |\n"
-            "| --- | --- | --- |\n"
-            "| 1 | (a) A holder. | The FCA. |\n"
-            "|  | (b) An associate. | The FCA. |\n"
-            "| 2 | A manager. |  |",
+            "| Status | Questioner |\n"
+            "| --- | --- |\n"
+            "| 1 (a) A holder. | The FCA. |\n"
+            "| (b) An associate. | The FCA. |\n"
+            "| 2 A manager. |  |",
             markdown,
         )
 
@@ -240,16 +240,16 @@ class LegislationTransformerTests(unittest.TestCase):
         )
         markdown = LegislationTransformer().transform(source, citation="ROA art. 3")
 
-        self.assertIn("| Status |  |  | Questioner |", markdown)
+        self.assertIn("| Status | Questioner |\n| --- | --- |", markdown)
         self.assertIn(
-            "| 1 | A person with Part 4A permission. |  | The FCA, the PRA or the Bank of England. |",
+            "| 1 A person with Part 4A permission. | The FCA, the PRA or the Bank of England. |",
             markdown,
         )
         questioner = "in relation to the person mentioned in sub-paragraph (a) of the first column. |"
         lines = markdown.splitlines()
-        entry_2a = next(i for i, line in enumerate(lines) if line.startswith("| 2 | (a) |"))
+        entry_2a = next(i for i, line in enumerate(lines) if line.startswith("| 2 (a) A person"))
         self.assertTrue(lines[entry_2a].endswith(questioner))
-        self.assertTrue(lines[entry_2a + 1].startswith("|  | (b) | An associate"))
+        self.assertTrue(lines[entry_2a + 1].startswith("| (b) An associate"))
         self.assertTrue(lines[entry_2a + 1].endswith(questioner))
 
     def test_real_uk_gdpr_article_017_keeps_its_table_and_citation(self):
@@ -384,13 +384,11 @@ class LegislationTransformerTests(unittest.TestCase):
             '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
             '<div class="LegP2Container"><span class="LegP2No">(13)</span><span>Lead-in words.</span>'
             "<table><thead><tr><th>Part</th></tr></thead><tbody><tr><td>Part 3</td></tr></tbody></table>"
-            "<span>Closing words.</span></div></div>"
+            "</div></div>"
         )
         markdown = LegislationTransformer().transform(source, citation="s. 20")
 
-        self.assertIn(
-            "(13) Lead-in words.Closing words.\n\n| Part |\n| --- |\n| Part 3 |", markdown
-        )
+        self.assertIn("(13) Lead-in words.\n\n| Part |\n| --- |\n| Part 3 |", markdown)
         self.assertEqual(markdown.count("Part 3"), 1)
 
     def test_container_never_takes_a_cell_as_its_fragment_number(self):
@@ -507,6 +505,52 @@ class LegislationTransformerTests(unittest.TestCase):
         self.assertEqual(markdown.count("Table entry."), 1)
         self.assertLess(markdown.index("Before words."), markdown.index("| Table entry. |"))
         self.assertLess(markdown.index("| Table entry. |"), markdown.index("After words."))
+
+    def test_empty_thead_does_not_take_a_data_row_as_header(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            "<table><thead></thead><tbody><tr><td>Only row.</td></tr></tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Sch. 1")
+
+        self.assertIn("|  |\n| --- |\n| Only row. |", markdown)
+
+    def test_cell_escapes_literal_angle_brackets_and_ampersands(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            "<table><thead><tr><th>Entry</th></tr></thead><tbody><tr><td>"
+            "See &lt;annex-a&gt; &amp; notes<br/>Next</td></tr></tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Sch. 1")
+
+        self.assertIn("| See &lt;annex-a&gt; &amp; notes<br>Next |", markdown)
+
+    def test_tables_outside_the_snippet_are_left_out(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml">'
+            '<div class="LegSnippet"><p class="LegText">Provision words.</p>'
+            "<table><thead><tr><th>Law</th></tr></thead><tbody><tr><td>Inside.</td></tr></tbody></table></div>"
+            "<table><tbody><tr><td>Page furniture.</td></tr></tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Art. 1")
+
+        self.assertIn("| Inside. |", markdown)
+        self.assertNotIn("Page furniture.", markdown)
+
+    def test_columns_under_one_spanning_heading_fold_together(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<table><thead><tr><th colspan="2">Status</th><th>Questioner</th></tr></thead>'
+            "<tbody><tr><td>2</td><td>(a) A holder.</td><td>The FCA.</td></tr>"
+            "<tr><td></td><td>(b) An associate.</td><td>The PRA.</td></tr></tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Art. 3")
+
+        self.assertIn(
+            "| Status | Questioner |\n| --- | --- |\n"
+            "| 2 (a) A holder. | The FCA. |\n| (b) An associate. | The PRA. |",
+            markdown,
+        )
 
     def test_real_equality_act_section_020_keeps_its_table(self):
         source = (FIXTURES / "equality_act_2010_section_020.xhtml").read_text(encoding="utf-8")

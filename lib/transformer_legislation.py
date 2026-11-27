@@ -285,6 +285,8 @@ class LegislationTransformer:
         out: list[tuple[int, bool, str]] = []
         position = {id(element): index for index, element in enumerate(root.iter())}
         headings: set[int] = set()
+        # Tables beside the provision body (page furniture) are not the law.
+        in_snippet = {id(element) for element in self._snippet(root).iter()}
         contained = self._contained_elements(root)
         list_numbers = self._list_item_numbers(root)
         in_tables = self._table_descendants(root)
@@ -294,7 +296,7 @@ class LegislationTransformer:
                 continue
             pos = position[id(element)]
             if _localname(element.tag) == "table":
-                table = _table_markdown(element)
+                table = _table_markdown(element) if id(element) in in_snippet else ""
                 if table:
                     out.append((pos, True, table))
                 continue
@@ -629,7 +631,14 @@ def _cell_text(cell: ET.Element) -> str:
     for child in list(cell):
         _collect_cell(child, parts)
     segments = (" ".join(segment.split()) for segment in "".join(parts).split(_BLOCK_BREAK))
-    return "<br>".join(segment for segment in segments if segment).replace("|", "\\|")
+    # Literal angle brackets and ampersands in the source would read as HTML
+    # beside the <br> joins, so they are escaped.
+    escaped = (
+        segment.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        for segment in segments
+        if segment
+    )
+    return "<br>".join(escaped).replace("|", "\\|")
 
 
 def _group_grid(rows: list[list[ET.Element]]) -> list[list[str]]:
@@ -687,9 +696,15 @@ def _table_markdown(table: ET.Element) -> str:
     grid = [line + [""] * (width - len(line)) for line in grid]
 
     first_row = next((row for rows in groups for row in rows), [])
-    has_thead = any(_localname(child.tag) == "thead" for child in table)
+    has_thead = any(
+        _localname(child.tag) == "thead"
+        and any(_localname(row.tag) == "tr" for row in child)
+        for child in table
+    )
     first_all_th = bool(first_row) and all(_localname(cell.tag) == "th" for cell in first_row)
     if has_thead or first_all_th:
+        grid = _merge_header_groups(grid, first_row)
+        width = len(grid[0])
         header, body = grid[0], grid[1:]
     else:
         header, body = [""] * width, grid
@@ -701,6 +716,32 @@ def _table_markdown(table: ET.Element) -> str:
     lines.extend(render(line) for line in body)
     table_text = "\n".join(lines)
     return f"**{caption}**\n\n{table_text}" if caption else table_text
+
+
+def _merge_header_groups(grid: list[list[str]], header_cells: list[ET.Element]) -> list[list[str]]:
+    """Fold the physical columns under one spanning heading into one column.
+
+    A statute that names "the first column" means the heading's column:
+    ROA Exceptions Order art. 3 sets a Status heading over three cells
+    (entry number, sub-paragraph letter, wording). Keeping them apart would
+    push the second named column to the fourth place. Each row's texts under
+    one heading are joined with a space."""
+    spans = [_span(cell, "colspan") for cell in header_cells]
+    if all(span == 1 for span in spans) or sum(spans) != len(grid[0]):
+        return grid
+    merged: list[list[str]] = []
+    for row_index, line in enumerate(grid):
+        out: list[str] = []
+        start = 0
+        for span in spans:
+            group = line[start : start + span]
+            start += span
+            if row_index == 0:
+                out.append(group[0])
+            else:
+                out.append(" ".join(text for text in group if text))
+        merged.append(out)
+    return merged
 
 
 def _is_repealed_marker(text: str) -> bool:
