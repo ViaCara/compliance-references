@@ -376,7 +376,10 @@ class LegislationTransformerTests(unittest.TestCase):
         self.assertIn("(13) Lead-in words.\n\n| Part |\n| --- |\n| Cell words. |", markdown)
         self.assertEqual(markdown.count("Cell words."), 1)
 
-    def test_container_keeps_closing_prose_after_its_table(self):
+    def test_table_in_a_container_follows_the_container_line(self):
+        """No legislation.gov.uk source in the manifest nests a table in a
+        numbered container; if one does, the container's prose comes first
+        and the table follows it whole, never read as the container's text."""
         source = (
             '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
             '<div class="LegP2Container"><span class="LegP2No">(13)</span><span>Lead-in words.</span>'
@@ -386,8 +389,43 @@ class LegislationTransformerTests(unittest.TestCase):
         markdown = LegislationTransformer().transform(source, citation="s. 20")
 
         self.assertIn(
-            "(13) Lead-in words.\n\n| Part |\n| --- |\n| Part 3 |\n\nClosing words.", markdown
+            "(13) Lead-in words.Closing words.\n\n| Part |\n| --- |\n| Part 3 |", markdown
         )
+        self.assertEqual(markdown.count("Part 3"), 1)
+
+    def test_container_never_takes_a_cell_as_its_fragment_number(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<div class="LegSP2Container"><p class="LegSP2Text">Opening words.</p>'
+            "<table><thead><tr><th>No</th></tr></thead><tbody><tr><td>"
+            '<span class="LegSN1No">7</span></td></tr></tbody></table></div></div>'
+        )
+        markdown = LegislationTransformer().transform(source, citation="Sch. 1")
+
+        self.assertIn("\nOpening words.\n", markdown)
+        self.assertEqual(markdown.count("7"), 1)
+
+    def test_displaced_row_span_does_not_return(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<table><tbody><tr><td>A</td><td rowspan="3">B</td></tr>'
+            '<tr><td colspan="2">C</td></tr><tr><td>D</td></tr></tbody></table></div>'
+        )
+        markdown = LegislationTransformer().transform(source, citation="Sch. 1")
+
+        self.assertIn("| A | B |\n| C |  |\n| D |  |", markdown)
+        self.assertEqual(markdown.count("B"), 1)
+
+    def test_zero_row_span_with_very_many_digits(self):
+        zeros = "0" * 5000
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            f'<table><tbody><tr><td rowspan="{zeros}">Held.</td><td>1</td></tr>'
+            "<tr><td>2</td></tr></tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Sch. 1")
+
+        self.assertIn("| Held. | 2 |", markdown)
 
     def test_fallback_keeps_headings_in_document_order(self):
         source = (
@@ -402,6 +440,7 @@ class LegislationTransformerTests(unittest.TestCase):
         self.assertLess(markdown.index("First rule."), markdown.index("| Entry |"))
         self.assertLess(markdown.index("| One. |"), markdown.index("**Later heading**"))
         self.assertLess(markdown.index("**Later heading**"), markdown.index("Second rule."))
+        self.assertEqual(markdown.count("Later heading"), 1)
 
     def test_zero_row_span_reads_any_spelling_and_keeps_the_cap(self):
         rows = "".join(f"<tr><td>{n}</td></tr>" for n in range(2, 103))

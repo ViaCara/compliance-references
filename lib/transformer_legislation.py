@@ -68,7 +68,9 @@ Class names used in selection (from the legislation.gov.uk DOM):
   printing some cells and not others reads as a complete table. A cell that
   spans rows repeats its text in each row it covers, so every row keeps its
   associations; a cell that spans columns fills the first and leaves the
-  rest empty. Paragraphs within one cell are joined with `<br>`.
+  rest empty. Paragraphs within one cell are joined with `<br>`. Tables
+  sit under `LegTabular`, outside any numbered container; a container
+  never reads a cell as its own number or text.
 """
 
 from __future__ import annotations
@@ -169,33 +171,6 @@ def _iter_outside_tables(element: ET.Element) -> Iterable[ET.Element]:
     for child in element:
         if _localname(child.tag) != "table":
             yield from _iter_outside_tables(child)
-
-
-def _split_at_tables(element: ET.Element) -> list[str | ET.Element]:
-    """The element's inline text cut at each table it holds: text, table,
-    text, ... in document order, so prose after a table stays after it."""
-    parts: list[str | ET.Element] = []
-    buffer: list[str] = []
-
-    def walk(node: ET.Element, top: bool) -> None:
-        if not top and _is_skipped(node):
-            buffer.append(node.tail or "")
-            return
-        if _localname(node.tag) == "table":
-            parts.append(" ".join("".join(buffer).split()))
-            buffer.clear()
-            parts.append(node)
-            buffer.append(node.tail or "")
-            return
-        buffer.append(node.text or "")
-        for child in node:
-            walk(child, False)
-        if not top:
-            buffer.append(node.tail or "")
-
-    walk(element, True)
-    parts.append(" ".join("".join(buffer).split()))
-    return parts
 
 
 def _inline_text(element: ET.Element) -> str:
@@ -308,14 +283,14 @@ class LegislationTransformer:
         # (is_table, text) in document order; tables do not count as emitted
         # text, so a page whose prose is untagged still reaches the fallback.
         out: list[tuple[int, bool, str]] = []
-        emitted_tables: set[int] = set()
         position = {id(element): index for index, element in enumerate(root.iter())}
+        headings: set[int] = set()
         contained = self._contained_elements(root)
         list_numbers = self._list_item_numbers(root)
         in_tables = self._table_descendants(root)
         extents = self._concurrent_extents(root)
         for element in root.iter():
-            if id(element) in in_tables or id(element) in emitted_tables:
+            if id(element) in in_tables:
                 continue
             pos = position[id(element)]
             if _localname(element.tag) == "table":
@@ -325,21 +300,25 @@ class LegislationTransformer:
                 continue
             cls = _classes(element)
             if len(extents) > 1 and id(element) in extents:
+                headings.add(id(element))
                 out.append((pos, False, f"**Extent:** {extents[id(element)]}"))
                 continue
             if cls & {"LegSchedulePart", "LegSchedulePartFirst"}:
                 heading = self._schedule_part_heading(element)
                 if heading:
+                    headings.add(id(element))
                     out.append((pos, False, f"**{heading}**"))
                 continue
             if cls & {"LegP2GroupTitle", "LegSP1GroupTitle", "LegSP1GroupTitleFirst"}:
                 heading = _inline_text(element)
                 if heading:
+                    headings.add(id(element))
                     out.append((pos, False, f"**{heading}**"))
                 continue
             if _DIVISION_CLASS in cls and _localname(element.tag) in _DIVISION_TAGS:
                 heading = self._division_heading(element)
                 if heading:
+                    headings.add(id(element))
                     out.append((pos, False, f"**{heading}**"))
                 continue
             container_level = next(
@@ -347,20 +326,6 @@ class LegislationTransformer:
             )
             if container_level is not None:
                 number = self._number(element, level=container_level)
-                split = self._split_container(element, level=container_level, number=number)
-                if split is not None:
-                    emitted_any = True
-                    lead, rest = split
-                    out.append((pos, False, f"{self._LEVELS[container_level]}{number} {lead}".strip()))
-                    for item in rest:
-                        if isinstance(item, str):
-                            out.append((pos, False, item))
-                        else:
-                            emitted_tables.add(id(item))
-                            table = _table_markdown(item)
-                            if table:
-                                out.append((pos, True, table))
-                    continue
                 text = self._text(element, level=container_level)
                 if text:
                     emitted_any = True
@@ -417,7 +382,7 @@ class LegislationTransformer:
         merged: list[tuple[int, str]] = [(pos, text) for pos, is_table, text in out if not is_table]
         saw_repealed_only = True
         for element in self._snippet(root).iter():
-            if id(element) in in_tables:
+            if id(element) in in_tables or id(element) in headings:
                 continue
             if _localname(element.tag) == "table":
                 table = _table_markdown(element)
@@ -436,23 +401,6 @@ class LegislationTransformer:
         yield from (text for _, text in sorted(merged, key=lambda item: item[0]))
         if saw_repealed_only:
             yield "_Provision repealed. See source for amendment history._"
-
-    def _split_container(
-        self, element: ET.Element, *, level: int, number: str
-    ) -> tuple[str, list[str | ET.Element]] | None:
-        """A numbered container with no text span of its own but a table in
-        it: its lead-in, then each table and each later run of prose, in
-        document order. None when the container has a text span or no table."""
-        if any(_has_class(_classes(child), level, "Text") for child in _iter_outside_tables(element)):
-            return None
-        parts = _split_at_tables(element)
-        if len(parts) == 1:
-            return None
-        lead = str(parts[0])
-        if number and lead.startswith(number):
-            lead = lead[len(number) :].strip()
-        rest = [part for part in parts[1:] if not isinstance(part, str) or part]
-        return lead, rest
 
     def _snippet(self, root: ET.Element) -> ET.Element:
         """The provision body. legislation.gov.uk wraps it in LegSnippet and
@@ -553,7 +501,7 @@ class LegislationTransformer:
             found = next(
                 (
                     _inline_text(child)
-                    for child in element.iter()
+                    for child in _iter_outside_tables(element)
                     if f"LegSN{depth}No" in _classes(child)
                 ),
                 None,
@@ -630,11 +578,11 @@ def _table_groups(table: ET.Element) -> list[list[list[ET.Element]]]:
     return thead + body + tfoot
 
 
+_ZERO_RE = re.compile(r"\s*\+?0+\s*")
+
+
 def _is_zero(value: str | None) -> bool:
-    try:
-        return value is not None and int(value) == 0
-    except ValueError:
-        return False
+    return value is not None and _ZERO_RE.fullmatch(value) is not None
 
 
 def _span(cell: ET.Element, attribute: str) -> int:
@@ -680,14 +628,15 @@ def _cell_text(cell: ET.Element) -> str:
 
 def _group_grid(rows: list[list[ET.Element]]) -> list[list[str]]:
     grid: list[list[str]] = []
-    pending: dict[tuple[int, int], str] = {}
+    # (row, column) -> (text, id of the spanning cell)
+    pending: dict[tuple[int, int], tuple[str, int]] = {}
     for row_index, cells in enumerate(rows):
         line: list[str] = []
         column = 0
         queue = list(cells)
         while queue or any(key[0] == row_index for key in pending):
             if (row_index, column) in pending:
-                line.append(pending.pop((row_index, column)))
+                line.append(pending.pop((row_index, column))[0])
                 column += 1
                 continue
             if not queue:
@@ -702,13 +651,17 @@ def _group_grid(rows: list[list[ET.Element]]) -> list[list[str]]:
             rowspan = min(rowspan, remaining, _MAX_TABLE_SPAN)
             colspan = _span(cell, "colspan")
             for offset in range(colspan):
-                # A cell that lands on a column a row span holds wins it, so
-                # overlapping spans in malformed markup cannot stall the row.
-                pending.pop((row_index, column + offset), None)
+                # A cell that lands on a column a row span holds wins it and
+                # ends that span, so overlapping spans in malformed markup can
+                # neither stall the row nor reappear below it.
+                displaced = pending.pop((row_index, column + offset), None)
+                if displaced is not None:
+                    for key in [k for k, v in pending.items() if v[1] == displaced[1]]:
+                        del pending[key]
                 value = text if offset == 0 else ""
                 line.append(value)
                 for extra in range(1, rowspan):
-                    pending[(row_index + extra, column + offset)] = value
+                    pending[(row_index + extra, column + offset)] = (value, id(cell))
             column += colspan
         grid.append(line)
     return grid

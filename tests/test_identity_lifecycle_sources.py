@@ -92,6 +92,7 @@ class IdentityLifecycleSourceTests(unittest.TestCase):
                 self.assertEqual("repealed", fields["enforcement_status"])
 
                 # Rebuilt as repealed on 24 July 2026; a later rebuild keeps it.
+                self.assertRegex(fields["last_fetched"], r"^\d{4}-\d{2}-\d{2}$")
                 fetched = date.fromisoformat(fields["last_fetched"])
                 self.assertGreaterEqual(fetched, date(2026, 7, 24))
 
