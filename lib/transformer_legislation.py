@@ -162,6 +162,42 @@ def _is_skipped(element: ET.Element) -> bool:
     return False
 
 
+def _iter_outside_tables(element: ET.Element) -> Iterable[ET.Element]:
+    """The element and its descendants, without anything inside a table:
+    a table's cells belong to the table, never to the prose around it."""
+    yield element
+    for child in element:
+        if _localname(child.tag) != "table":
+            yield from _iter_outside_tables(child)
+
+
+def _split_at_tables(element: ET.Element) -> list[str | ET.Element]:
+    """The element's inline text cut at each table it holds: text, table,
+    text, ... in document order, so prose after a table stays after it."""
+    parts: list[str | ET.Element] = []
+    buffer: list[str] = []
+
+    def walk(node: ET.Element, top: bool) -> None:
+        if not top and _is_skipped(node):
+            buffer.append(node.tail or "")
+            return
+        if _localname(node.tag) == "table":
+            parts.append(" ".join("".join(buffer).split()))
+            buffer.clear()
+            parts.append(node)
+            buffer.append(node.tail or "")
+            return
+        buffer.append(node.text or "")
+        for child in node:
+            walk(child, False)
+        if not top:
+            buffer.append(node.tail or "")
+
+    walk(element, True)
+    parts.append(" ".join("".join(buffer).split()))
+    return parts
+
+
 def _inline_text(element: ET.Element) -> str:
     parts: list[str] = []
     _collect_inline(element, parts)
@@ -271,48 +307,65 @@ class LegislationTransformer:
         emitted_any = False
         # (is_table, text) in document order; tables do not count as emitted
         # text, so a page whose prose is untagged still reaches the fallback.
-        out: list[tuple[bool, str]] = []
+        out: list[tuple[int, bool, str]] = []
+        emitted_tables: set[int] = set()
+        position = {id(element): index for index, element in enumerate(root.iter())}
         contained = self._contained_elements(root)
         list_numbers = self._list_item_numbers(root)
         in_tables = self._table_descendants(root)
         extents = self._concurrent_extents(root)
         for element in root.iter():
-            if id(element) in in_tables:
+            if id(element) in in_tables or id(element) in emitted_tables:
                 continue
+            pos = position[id(element)]
             if _localname(element.tag) == "table":
                 table = _table_markdown(element)
                 if table:
-                    out.append((True, table))
+                    out.append((pos, True, table))
                 continue
             cls = _classes(element)
             if len(extents) > 1 and id(element) in extents:
-                out.append((False, f"**Extent:** {extents[id(element)]}"))
+                out.append((pos, False, f"**Extent:** {extents[id(element)]}"))
                 continue
             if cls & {"LegSchedulePart", "LegSchedulePartFirst"}:
                 heading = self._schedule_part_heading(element)
                 if heading:
-                    out.append((False, f"**{heading}**"))
+                    out.append((pos, False, f"**{heading}**"))
                 continue
             if cls & {"LegP2GroupTitle", "LegSP1GroupTitle", "LegSP1GroupTitleFirst"}:
                 heading = _inline_text(element)
                 if heading:
-                    out.append((False, f"**{heading}**"))
+                    out.append((pos, False, f"**{heading}**"))
                 continue
             if _DIVISION_CLASS in cls and _localname(element.tag) in _DIVISION_TAGS:
                 heading = self._division_heading(element)
                 if heading:
-                    out.append((False, f"**{heading}**"))
+                    out.append((pos, False, f"**{heading}**"))
                 continue
             container_level = next(
                 (lvl for lvl in self._LEVELS if _is_container(cls, lvl)), None
             )
             if container_level is not None:
                 number = self._number(element, level=container_level)
+                split = self._split_container(element, level=container_level, number=number)
+                if split is not None:
+                    emitted_any = True
+                    lead, rest = split
+                    out.append((pos, False, f"{self._LEVELS[container_level]}{number} {lead}".strip()))
+                    for item in rest:
+                        if isinstance(item, str):
+                            out.append((pos, False, item))
+                        else:
+                            emitted_tables.add(id(item))
+                            table = _table_markdown(item)
+                            if table:
+                                out.append((pos, True, table))
+                    continue
                 text = self._text(element, level=container_level)
                 if text:
                     emitted_any = True
                     body = "_(repealed)_" if _is_repealed_marker(text) else text
-                    out.append((False, f"{self._LEVELS[container_level]}{number} {body}".strip()))
+                    out.append((pos, False, f"{self._LEVELS[container_level]}{number} {body}".strip()))
                 continue
             if id(element) in contained or _localname(element.tag) != "p":
                 continue
@@ -321,13 +374,13 @@ class LegislationTransformer:
                 text = self._para_text(element, level=para_level)
                 if text and not _is_repealed_marker(text):
                     emitted_any = True
-                    out.append((False, text))
+                    out.append((pos, False, text))
                 continue
             if any(_AMEND_TEXT_RE.match(name) for name in cls):
                 text = _inline_text(element)
                 if text:
                     emitted_any = True
-                    out.append((False, text))
+                    out.append((pos, False, text))
                 continue
             if _LIST_TEXT_CLASS in cls:
                 text = _inline_text(element)
@@ -335,31 +388,33 @@ class LegislationTransformer:
                     emitted_any = True
                     indent = self._LEVELS.get(_list_level(cls) or 0, "")
                     number = list_numbers.get(id(element), "")
-                    out.append((False, f"{indent}{number} {text}".strip()))
+                    out.append((pos, False, f"{indent}{number} {text}".strip()))
                 continue
             if _EU_TEXT_CLASS in cls:
                 text = _inline_text(element)
                 if text and not _is_repealed_marker(text):
                     emitted_any = True
-                    out.append((False, text))
+                    out.append((pos, False, text))
                 continue
             if _list_level(cls) is not None:
                 text = _inline_text(element)
                 if text and not _is_repealed_marker(text):
                     emitted_any = True
-                    out.append((False, text))
+                    out.append((pos, False, text))
                 continue
             if not any(_has_class(cls, level, "Text") for level in self._LEVELS):
                 continue
             text = _inline_text(element)
             if text and not _is_repealed_marker(text):
                 emitted_any = True
-                out.append((False, text))
+                out.append((pos, False, text))
 
         if emitted_any:
-            yield from (text for _, text in out)
+            yield from (text for _, _, text in out)
             return
-        yield from (text for is_table, text in out if not is_table)
+        # Untagged prose: headings stay, and the fallback adds each paragraph
+        # and table, all in document order.
+        merged: list[tuple[int, str]] = [(pos, text) for pos, is_table, text in out if not is_table]
         saw_repealed_only = True
         for element in self._snippet(root).iter():
             if id(element) in in_tables:
@@ -368,7 +423,7 @@ class LegislationTransformer:
                 table = _table_markdown(element)
                 if table:
                     saw_repealed_only = False
-                    yield table
+                    merged.append((position[id(element)], table))
                 continue
             if _localname(element.tag) == "p":
                 text = _inline_text(element)
@@ -377,9 +432,27 @@ class LegislationTransformer:
                 if _is_repealed_marker(text):
                     continue
                 saw_repealed_only = False
-                yield text
+                merged.append((position[id(element)], text))
+        yield from (text for _, text in sorted(merged, key=lambda item: item[0]))
         if saw_repealed_only:
             yield "_Provision repealed. See source for amendment history._"
+
+    def _split_container(
+        self, element: ET.Element, *, level: int, number: str
+    ) -> tuple[str, list[str | ET.Element]] | None:
+        """A numbered container with no text span of its own but a table in
+        it: its lead-in, then each table and each later run of prose, in
+        document order. None when the container has a text span or no table."""
+        if any(_has_class(_classes(child), level, "Text") for child in _iter_outside_tables(element)):
+            return None
+        parts = _split_at_tables(element)
+        if len(parts) == 1:
+            return None
+        lead = str(parts[0])
+        if number and lead.startswith(number):
+            lead = lead[len(number) :].strip()
+        rest = [part for part in parts[1:] if not isinstance(part, str) or part]
+        return lead, rest
 
     def _snippet(self, root: ET.Element) -> ET.Element:
         """The provision body. legislation.gov.uk wraps it in LegSnippet and
@@ -463,7 +536,7 @@ class LegislationTransformer:
         return numbers
 
     def _number(self, element: ET.Element, *, level: int) -> str:
-        for child in element.iter():
+        for child in _iter_outside_tables(element):
             cls = _classes(child)
             if _has_class(cls, level, "No"):
                 return _inline_text(child)
@@ -511,7 +584,7 @@ class LegislationTransformer:
         return full
 
     def _text(self, element: ET.Element, *, level: int) -> str:
-        for child in element.iter():
+        for child in _iter_outside_tables(element):
             cls = _classes(child)
             if _has_class(cls, level, "Text"):
                 return _inline_text(child)
@@ -524,7 +597,7 @@ class LegislationTransformer:
 
 _TABLE_SECTIONS = frozenset({"thead", "tbody", "tfoot"})
 _TABLE_CELLS = frozenset({"td", "th"})
-_BLOCK_IN_CELL = frozenset({"p", "div", "li", "tr", "td", "th"})
+_BLOCK_IN_CELL = frozenset({"p", "div", "li", "tr", "td", "th", "br"})
 # A malformed span must not make the grid grow without bound.
 _MAX_TABLE_SPAN = 100
 
@@ -555,6 +628,13 @@ def _table_groups(table: ET.Element) -> list[list[list[ET.Element]]]:
             rows = [cells(row) for row in child if _localname(row.tag) == "tr"]
             {"thead": thead, "tbody": body, "tfoot": tfoot}[name].append(rows)
     return thead + body + tfoot
+
+
+def _is_zero(value: str | None) -> bool:
+    try:
+        return value is not None and int(value) == 0
+    except ValueError:
+        return False
 
 
 def _span(cell: ET.Element, attribute: str) -> int:
@@ -617,8 +697,9 @@ def _group_grid(rows: list[list[ET.Element]]) -> list[list[str]]:
             cell = queue.pop(0)
             text = _cell_text(cell)
             remaining = len(rows) - row_index
-            # rowspan="0" spans the rest of the row group (HTML Standard).
-            rowspan = remaining if cell.get("rowspan") == "0" else min(_span(cell, "rowspan"), remaining)
+            # A zero rowspan spans the rest of the row group (HTML Standard).
+            rowspan = remaining if _is_zero(cell.get("rowspan")) else _span(cell, "rowspan")
+            rowspan = min(rowspan, remaining, _MAX_TABLE_SPAN)
             colspan = _span(cell, "colspan")
             for offset in range(colspan):
                 # A cell that lands on a column a row span holds wins it, so
@@ -641,10 +722,8 @@ def _table_markdown(table: ET.Element) -> str:
         (_inline_text(child) for child in table if _localname(child.tag) == "caption"),
         "",
     )
-    if not caption and not any(text for line in grid for text in line):
-        return ""
-    if not grid:
-        return f"**{caption}**"
+    if not any(text for line in grid for text in line):
+        return f"**{caption}**" if caption else ""
     width = max(len(line) for line in grid)
     grid = [line + [""] * (width - len(line)) for line in grid]
 

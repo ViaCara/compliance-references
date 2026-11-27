@@ -2,6 +2,7 @@
 
 import json
 import unittest
+from datetime import date
 from pathlib import Path
 
 from lib.frontmatter import parse
@@ -91,7 +92,8 @@ class IdentityLifecycleSourceTests(unittest.TestCase):
                 self.assertEqual("repealed", fields["enforcement_status"])
 
                 # Rebuilt as repealed on 24 July 2026; a later rebuild keeps it.
-                self.assertGreaterEqual(fields["last_fetched"], "2026-07-24")
+                fetched = date.fromisoformat(fields["last_fetched"])
+                self.assertGreaterEqual(fetched, date(2026, 7, 24))
 
                 self.assertEqual(source["source_uri"], fields["source_uri"])
 

@@ -363,6 +363,77 @@ class LegislationTransformerTests(unittest.TestCase):
 
         self.assertIn("| First. |\n| Second. |", markdown)
 
+    def test_container_never_takes_a_cell_as_its_text(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<div class="LegP2Container"><span class="LegP2No">(13)</span><span>Lead-in words.</span>'
+            "<table><thead><tr><th>Part</th></tr></thead><tbody><tr><td>"
+            '<p class="LegP2Text">Cell words.</p></td></tr></tbody></table>'
+            "</div></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="s. 20")
+
+        self.assertIn("(13) Lead-in words.\n\n| Part |\n| --- |\n| Cell words. |", markdown)
+        self.assertEqual(markdown.count("Cell words."), 1)
+
+    def test_container_keeps_closing_prose_after_its_table(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<div class="LegP2Container"><span class="LegP2No">(13)</span><span>Lead-in words.</span>'
+            "<table><thead><tr><th>Part</th></tr></thead><tbody><tr><td>Part 3</td></tr></tbody></table>"
+            "<span>Closing words.</span></div></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="s. 20")
+
+        self.assertIn(
+            "(13) Lead-in words.\n\n| Part |\n| --- |\n| Part 3 |\n\nClosing words.", markdown
+        )
+
+    def test_fallback_keeps_headings_in_document_order(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            "<p>First rule.</p>"
+            "<table><thead><tr><th>Entry</th></tr></thead><tbody><tr><td>One.</td></tr></tbody></table>"
+            '<p class="LegP2GroupTitle">Later heading</p>'
+            "<p>Second rule.</p></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Art. 1")
+
+        self.assertLess(markdown.index("First rule."), markdown.index("| Entry |"))
+        self.assertLess(markdown.index("| One. |"), markdown.index("**Later heading**"))
+        self.assertLess(markdown.index("**Later heading**"), markdown.index("Second rule."))
+
+    def test_zero_row_span_reads_any_spelling_and_keeps_the_cap(self):
+        rows = "".join(f"<tr><td>{n}</td></tr>" for n in range(2, 103))
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<table><tbody><tr><td rowspan="00">Held.</td><td>1</td></tr>'
+            f"{rows}</tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Sch. 1")
+
+        self.assertEqual(markdown.count("Held."), 100)
+        self.assertIn("| Held. | 2 |", markdown)
+
+    def test_caption_only_table_with_empty_rows_is_just_the_caption(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            "<table><caption>Table 1</caption><tr></tr><tr><td></td></tr></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Sch. 1")
+
+        self.assertIn("**Table 1**", markdown)
+        self.assertNotIn("|", markdown)
+
+    def test_cell_line_break_keeps_words_apart(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            "<table><thead><tr><th>Entry</th></tr></thead><tbody><tr><td>First<br/>Second</td></tr></tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Sch. 1")
+
+        self.assertIn("| First<br>Second |", markdown)
+
     def test_real_equality_act_section_020_keeps_its_table(self):
         source = (FIXTURES / "equality_act_2010_section_020.xhtml").read_text(encoding="utf-8")
         markdown = LegislationTransformer().transform(source, citation="EqA 2010 s. 20")
