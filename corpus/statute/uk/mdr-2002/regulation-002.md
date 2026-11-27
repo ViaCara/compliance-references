@@ -6,9 +6,9 @@ kind: legislation_regulation
 citation: Medical Devices Regulations 2002 regulation 2
 source_uri: "https://www.legislation.gov.uk/uksi/2002/618/regulation/2/data.xht"
 source_format: xhtml
-revision_id: "Wed, 30 Sep 2026 16:18:53 GMT"
-content_sha256: b7d023f56fcaca16e34c14ca5e8fb4679581989a6d3faf201a0eb81072289fc4
-last_fetched: 2026-10-07
+revision_id: "Thu, 26 Nov 2026 17:05:01 GMT"
+content_sha256: f85756b3c1f00e6d87b19061771246a2255d77ee52942b271273c07a95f32170
+last_fetched: 2026-11-27
 language: en-GB
 enforcement_status: in_force
 ---
@@ -58,21 +58,21 @@ even if it is intended to administer a medicinal product or incorporates as an i
 
 “device for performance evaluation” means a product which is intended by its manufacturer to be subject to one or more performance evaluation studies in laboratories for medical analysis or in other appropriate environments outside his own premises;
 
-“Directive 90/385” means Council Directive of 20 June 1990 on the approximation of the laws of Member States relating to active implantable devices as it had effect immediately before IP completion day;
+“Directive 90/385” means Council Directive 90/385/EEC of 20 June 1990 on the approximation of the laws of Member States relating to active implantable devices as it had effect immediately before IP completion day;
 
-“Directive 93/42” means Council Directive of 14 June 1993 concerning medical devices as it had effect immediately before IP completion day;
+“Directive 93/42” means Council Directive 93/42/EEC of 14 June 1993 concerning medical devices as it had effect immediately before IP completion day;
 
-“Directive 98/79” means Directive of the European Parliament and of the Council of 27 October 1998 on in-vitro diagnostic medical devices as it had effect immediately before IP completion day;
-
-...
-
-“Directive 2003/12” means Commission Directive 2003/12 of 3rd February 2003 on the reclassification of breast implants in the framework of Directive concerning medical devices;
+“Directive 98/79” means Directive 98/79/EC of the European Parliament and of the Council of 27 October 1998 on in-vitro diagnostic medical devices as it had effect immediately before IP completion day;
 
 ...
 
-“Directive 2005/50” means Commission Directive of 11 August 2005 on the reclassification of hip, knee and shoulder joint replacements in the framework of Council Directive concerning medical devices;
+“Directive 2003/12” means Commission Directive 2003/12 of 3rd February 2003 on the reclassification of breast implants in the framework of Directive 93/42/EEC concerning medical devices;
 
-“Directive 2007/47” means Directive of the European Parliament and of the Council amending Council Directive on the approximation of the laws of the Member States relating to active implantable medical devices, Council Directive concerning medical devices and Directive concerning the placing of biocidal products on the market;
+...
+
+“Directive 2005/50” means Commission Directive 2005/50/EC of 11 August 2005 on the reclassification of hip, knee and shoulder joint replacements in the framework of Council Directive 93/42/EEC concerning medical devices;
+
+“Directive 2007/47” means Directive 2007/47/EC of the European Parliament and of the Council amending Council Directive 90/385/EEC on the approximation of the laws of the Member States relating to active implantable medical devices, Council Directive 93/42/EEC concerning medical devices and Directive 98/8/EC concerning the placing of biocidal products on the market;
 
 ...
 
@@ -172,13 +172,13 @@ and includes devices intended to administer a medicinal product or which incorpo
 
 (a) in Part 4A, has the meaning given in regulation 44ZC;
 
-(b) in all other Parts means of 8 August 2012 concerning particular requirements as regards the requirements laid down in Council Directives and with respect to active implantable medical devices and medical devices manufactured utilising tissues of animal origin (as retained under section 3 of the European Union (Withdrawal) Act 2018 and modified under section 8 of that Act);
+(b) in all other Parts means Commission Regulation (EU) No 722/2012 of 8 August 2012 concerning particular requirements as regards the requirements laid down in Council Directives 90/385/EEC and 93/42/EEC with respect to active implantable medical devices and medical devices manufactured utilising tissues of animal origin (as retained under section 3 of the European Union (Withdrawal) Act 2018 and modified under section 8 of that Act);
 
-“Regulation (EU) 2017/745” means Regulation (EU) 2017/745 of the European Parliament and of the Council of 5 April 2017 on medical devices, amending , Regulation and Regulation and repealing Council Directives and ;
+“Regulation (EU) 2017/745” means Regulation (EU) 2017/745 of the European Parliament and of the Council of 5 April 2017 on medical devices, amending Directive 2001/83/EC, Regulation (EC) No 178/2002 and Regulation (EC) No 1223/2009 and repealing Council Directives 90/385/EEC and 93/42/EEC;
 
-“Regulation (EU) 2017/746” means Regulation (EU) 2017/746 of the European Parliament and of the Council of 5 April 2017 on in vitro diagnostic medical devices and repealing and Commission ;
+“Regulation (EU) 2017/746” means Regulation (EU) 2017/746 of the European Parliament and of the Council of 5 April 2017 on in vitro diagnostic medical devices and repealing Directive 98/79/EC and Commission Decision 2010/227/EU;
 
-“Regulation (EU) 2022/1107” means Commission Implementing of 4 July 2022 laying down common specifications for certain class D in vitro diagnostic medical devices in accordance with of the European Parliament and of the Council;
+“Regulation (EU) 2022/1107” means Commission Implementing Regulation (EU) 2022/1107 of 4 July 2022 laying down common specifications for certain class D in vitro diagnostic medical devices in accordance with Regulation (EU) 2017/746 of the European Parliament and of the Council;
 
 “relevant essential requirements”—
 
@@ -206,7 +206,7 @@ and includes devices intended to administer a medicinal product or which incorpo
 
 ...
 
-“UK marking” has the meaning given in Article 2(22) of Regulation ;
+“UK marking” has the meaning given in Article 2(22) of Regulation (EC) No 765/2008;
 
 ...
 
@@ -266,23 +266,23 @@ even if it is intended to administer a medicinal product or incorporates as an i
 
 “device for performance evaluation” means a product which is intended by its manufacturer to be subject to one or more performance evaluation studies in laboratories for medical analysis or in other appropriate environments outside his own premises;
 
-“Directive 90/385” means Council Directive of 20 June 1990 on the approximation of the laws of Member States relating to active implantable devices;
+“Directive 90/385” means Council Directive 90/385/EEC of 20 June 1990 on the approximation of the laws of Member States relating to active implantable devices;
 
-“Directive 93/42” means Council Directive of 14 June 1993 concerning medical devices;
+“Directive 93/42” means Council Directive 93/42/EEC of 14 June 1993 concerning medical devices;
 
-“Directive 98/79” means Directive of the European Parliament and of the Council of 27 October 1998 on in-vitro diagnostic medical devices;
+“Directive 98/79” means Directive 98/79/EC of the European Parliament and of the Council of 27 October 1998 on in-vitro diagnostic medical devices;
 
-“Directive 2001/83” means Directive 2001/83/EC of the European Parliament and of the Council of 6th November 2001 on the Community Code relating to medicinal products for human use as amended by Directive of the European Parliament and of the Council setting standards of quality and safety for the collection, testing, processing, storage and distribution of human blood and blood components, Commission Directive amending Directive on the Community code relating to medicinal products for human use, Directive of the European Parliament and of the Council amending, as regards traditional herbal medicinal products, Directive on the Community code relating to medicinal products for human use and Directive of the European Parliament and of the Council amending Directive on the Community code relating to medicinal products for human use;
+“Directive 2001/83” means Directive 2001/83/EC of the European Parliament and of the Council of 6th November 2001 on the Community Code relating to medicinal products for human use as amended by Directive 2002/98/EC of the European Parliament and of the Council setting standards of quality and safety for the collection, testing, processing, storage and distribution of human blood and blood components, Commission Directive 2003/63/EC amending Directive 2001/83/EC on the Community code relating to medicinal products for human use, Directive 2004/24/EC of the European Parliament and of the Council amending, as regards traditional herbal medicinal products, Directive 2001/83/EC on the Community code relating to medicinal products for human use and Directive 2004/27/EC of the European Parliament and of the Council amending Directive 2001/83/EC on the Community code relating to medicinal products for human use;
 
-“Directive 2003/12” means Commission Directive 2003/12 of 3rd February 2003 on the reclassification of breast implants in the framework of Directive concerning medical devices;
+“Directive 2003/12” means Commission Directive 2003/12 of 3rd February 2003 on the reclassification of breast implants in the framework of Directive 93/42/EEC concerning medical devices;
 
 ...
 
-“Directive 2005/50” means Commission Directive of 11 August 2005 on the reclassification of hip, knee and shoulder joint replacements in the framework of Council Directive concerning medical devices;
+“Directive 2005/50” means Commission Directive 2005/50/EC of 11 August 2005 on the reclassification of hip, knee and shoulder joint replacements in the framework of Council Directive 93/42/EEC concerning medical devices;
 
-“Directive 2007/47” means Directive of the European Parliament and of the Council amending Council Directive on the approximation of the laws of the Member States relating to active implantable medical devices, Council Directive concerning medical devices and Directive concerning the placing of biocidal products on the market;
+“Directive 2007/47” means Directive 2007/47/EC of the European Parliament and of the Council amending Council Directive 90/385/EEC on the approximation of the laws of the Member States relating to active implantable medical devices, Council Directive 93/42/EEC concerning medical devices and Directive 98/8/EC concerning the placing of biocidal products on the market;
 
-“Directive ” means Directive of the European Parliament and of the Council on machinery;
+“Directive 2006/42/EC” means Directive 2006/42/EC of the European Parliament and of the Council on machinery;
 
 “... CAB” shall be construed in accordance with regulation 48(1);
 
@@ -364,13 +364,13 @@ and includes a specimen receptacle but not a product for general laboratory use,
 
 “Regulation (EU) No 207/2012” means Commission Regulation (EU) No 207/2012 of 9 March 2012 on electronic instructions for use of medical devices;
 
-“Regulation (EU) No 722/2012” means Commission Regulation (EU) No 722/2012 of 8 August 2012 concerning particular requirements as regards the requirements laid down in Council Directives and with respect to active implantable medical devices and medical devices manufactured utilising tissues of animal origin;
+“Regulation (EU) No 722/2012” means Commission Regulation (EU) No 722/2012 of 8 August 2012 concerning particular requirements as regards the requirements laid down in Council Directives 90/385/EEC and 93/42/EEC with respect to active implantable medical devices and medical devices manufactured utilising tissues of animal origin;
 
-“Regulation (EU) 2017/745” means Regulation (EU) 2017/745 of the European Parliament and of the Council of 5 April 2017 on medical devices, amending , Regulation and Regulation and repealing Council Directives and ;
+“Regulation (EU) 2017/745” means Regulation (EU) 2017/745 of the European Parliament and of the Council of 5 April 2017 on medical devices, amending Directive 2001/83/EC, Regulation (EC) No 178/2002 and Regulation (EC) No 1223/2009 and repealing Council Directives 90/385/EEC and 93/42/EEC;
 
-“Regulation (EU) 2017/746” means of the European Parliament and of the Council of 5 April 2017 on in vitro diagnostic medical devices and repealing and Commission ;
+“Regulation (EU) 2017/746” means Regulation (EU) 2017/746 of the European Parliament and of the Council of 5 April 2017 on in vitro diagnostic medical devices and repealing Directive 98/79/EC and Commission Decision 2010/227/EU;
 
-“Regulation (EU) 2022/1107” means Commission Implementing of 4 July 2022 laying down common specifications for certain class D in vitro diagnostic medical devices in accordance with of the European Parliament and of the Council;
+“Regulation (EU) 2022/1107” means Commission Implementing Regulation (EU) 2022/1107 of 4 July 2022 laying down common specifications for certain class D in vitro diagnostic medical devices in accordance with Regulation (EU) 2017/746 of the European Parliament and of the Council;
 
 “relevant essential requirements”, in relation to a medical device, means the essential requirements set out in Annex 1 of Directive 90/385, Annex I of Directive 93/42 or Annex I of Directive 98/79 which apply to it, but not including, in the case of a device intended for clinical investigation, such of those requirements, or aspects of them, as are the subject of the investigation;
 

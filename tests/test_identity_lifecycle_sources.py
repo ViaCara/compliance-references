@@ -90,7 +90,8 @@ class IdentityLifecycleSourceTests(unittest.TestCase):
 
                 self.assertEqual("repealed", fields["enforcement_status"])
 
-                self.assertEqual("2026-07-24", fields["last_fetched"])
+                # Rebuilt as repealed on 24 July 2026; a later rebuild keeps it.
+                self.assertGreaterEqual(fields["last_fetched"], "2026-07-24")
 
                 self.assertEqual(source["source_uri"], fields["source_uri"])
 

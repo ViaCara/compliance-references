@@ -6,9 +6,9 @@ kind: legislation_section
 citation: DPA 2018 s. 14
 source_uri: "https://www.legislation.gov.uk/ukpga/2018/12/section/14/data.xht"
 source_format: xhtml
-revision_id: "Wed, 22 Jul 2026 18:56:31 GMT"
-content_sha256: ba1bb262d8cae4c0a99828c4307eea0b3100c6b20e27d492ac943c6b7794a237
-last_fetched: 2026-07-24
+revision_id: "Thu, 26 Nov 2026 17:05:01 GMT"
+content_sha256: 40ab7d9c6e0d5eae95275ec32b64f983e4613e8fe4e4eb090b3935f33660bd9d
+last_fetched: 2026-11-27
 language: en-GB
 enforcement_status: repealed
 ---
@@ -18,8 +18,8 @@ _Automated decision-making authorised by law: safeguards_
 
 Textual Amendments
 
-F1Pt. 2 Ch. 2 heading substituted (31.12.2020) by The Data Protection, Privacy and Electronic Communications (Amendments etc) (EU Exit) Regulations 2019 (S.I. 2019/419), reg. 1(2), (with reg. 5); 2020 c. 1, Sch. 5 para. 1(1)
+F1Pt. 2 Ch. 2 heading substituted (31.12.2020) by The Data Protection, Privacy and Electronic Communications (Amendments etc) (EU Exit) Regulations 2019 (S.I. 2019/419), reg. 1(2), Sch. 2 para. 7 (with reg. 5); 2020 c. 1, Sch. 5 para. 1(1)
 
 Textual Amendments
 
-F2S. 14 omitted (5.2.2026) by virtue of Data (Use and Access) Act 2025 (c. 18), s. 142(1), ; S.I. 2026/82, (with reg. 5)
+F2S. 14 omitted (5.2.2026) by virtue of Data (Use and Access) Act 2025 (c. 18), s. 142(1), Sch. 6 para. 11; S.I. 2026/82, reg. 2(z8) (with reg. 5)

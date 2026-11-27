@@ -6,9 +6,9 @@ kind: legislation_regulation
 citation: PSRs 2017 reg. 2
 source_uri: "https://www.legislation.gov.uk/uksi/2017/752/regulation/2/data.xht"
 source_format: xhtml
-revision_id: "Mon, 14 Sep 2026 16:04:15 GMT"
-content_sha256: 5a88731039b17376919b23fc6c54362a1807e78cc949604f1c92d000760a4a74
-last_fetched: 2026-09-28
+revision_id: "Thu, 26 Nov 2026 17:05:01 GMT"
+content_sha256: 0b379ad6e0790780868cfd1d192d0063b23b34dacf0cb61f8d0a1c9343646098
+last_fetched: 2026-11-27
 language: en-GB
 enforcement_status: in_force
 ---
@@ -62,7 +62,7 @@ which forms a legally dependent part of such a payment service provider and whic
 
 ...
 
-“the capital requirements regulation” means of the European Parliament and of the Council of 26 June 2013 on prudential requirements for credit institutions and investment firms;
+“the capital requirements regulation” means Regulation (EU) No. 575/2013 of the European Parliament and of the Council of 26 June 2013 on prudential requirements for credit institutions and investment firms;
 
 “charity”, in Parts 6 (information requirements for payment services) and 7 (rights and obligations in relation to the provision of payment services), means a body whose annual income is less than £1 million and is—
 
@@ -234,7 +234,7 @@ and in Part 9 (the FCA) and Schedule 6 (application and modification of legislat
 
 “sensitive payment data” means information, including personalised security credentials, which could be used to carry out fraud; but in relation to account information services and payment initiation services does not include the name of an account holder or an account number;
 
-“the SEPA regulation” means Regulation (EU) No 260/2012 of the European Parliament and of the Council of 14 March 2012 establishing technical and business requirements for credit transfers and direct debits in euro and amending Regulation ;
+“the SEPA regulation” means Regulation (EU) No 260/2012 of the European Parliament and of the Council of 14 March 2012 establishing technical and business requirements for credit transfers and direct debits in euro and amending Regulation (EC) No 924/2009;
 
 “serious crime” means—
 
