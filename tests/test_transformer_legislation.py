@@ -552,6 +552,31 @@ class LegislationTransformerTests(unittest.TestCase):
             markdown,
         )
 
+    def test_columns_under_a_heading_with_subheadings_stay_apart(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            "<table><thead>"
+            '<tr><th rowspan="2">Item</th><th colspan="2">Rate</th></tr>'
+            "<tr><th>Reduced</th><th>Standard</th></tr></thead>"
+            "<tbody><tr><td>(1)</td><td>10</td><td>20</td></tr></tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="s. 24")
+
+        self.assertIn("| Item | Rate |  |\n| --- | --- | --- |\n| Item | Reduced | Standard |", markdown)
+        self.assertIn("| (1) | 10 | 20 |", markdown)
+
+    def test_container_keeps_closing_words_beside_its_table(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<div class="LegP2Container"><span class="LegP2No">(13)</span><span>Lead-in words.</span>'
+            "<table><thead><tr><th>Part</th></tr></thead><tbody><tr><td>Part 3</td></tr></tbody></table>"
+            "<span>Closing words.</span></div></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="s. 20")
+
+        self.assertEqual(markdown.count("Closing words."), 1)
+        self.assertEqual(markdown.count("Part 3"), 1)
+
     def test_real_equality_act_section_020_keeps_its_table(self):
         source = (FIXTURES / "equality_act_2010_section_020.xhtml").read_text(encoding="utf-8")
         markdown = LegislationTransformer().transform(source, citation="EqA 2010 s. 20")
