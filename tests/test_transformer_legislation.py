@@ -552,18 +552,29 @@ class LegislationTransformerTests(unittest.TestCase):
             markdown,
         )
 
-    def test_columns_under_a_heading_with_subheadings_stay_apart(self):
+    def test_columns_stay_apart_under_a_second_thead_row(self):
         source = (
             '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
             "<table><thead>"
-            '<tr><th rowspan="2">Item</th><th colspan="2">Rate</th></tr>'
-            "<tr><th>Reduced</th><th>Standard</th></tr></thead>"
+            '<tr><td>Item</td><td colspan="2">Rate</td></tr>'
+            "<tr><td></td><td>Reduced</td><td>Standard</td></tr></thead>"
             "<tbody><tr><td>(1)</td><td>10</td><td>20</td></tr></tbody></table></div>"
         )
         markdown = LegislationTransformer().transform(source, citation="s. 24")
 
-        self.assertIn("| Item | Rate |  |\n| --- | --- | --- |\n| Item | Reduced | Standard |", markdown)
-        self.assertIn("| (1) | 10 | 20 |", markdown)
+        self.assertIn("|  | Reduced | Standard |\n| (1) | 10 | 20 |", markdown)
+
+    def test_columns_stay_apart_under_a_later_heading_cell(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            "<table><tbody>"
+            '<tr><th>Item</th><th colspan="2">Rate</th></tr>'
+            '<tr><td></td><th scope="col">Reduced</th><th scope="col">Standard</th></tr>'
+            "<tr><td>(1)</td><td>10</td><td>20</td></tr></tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="s. 24")
+
+        self.assertIn("|  | Reduced | Standard |\n| (1) | 10 | 20 |", markdown)
 
     def test_container_keeps_closing_words_beside_its_table(self):
         source = (

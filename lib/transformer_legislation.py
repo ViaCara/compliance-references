@@ -703,14 +703,12 @@ def _table_markdown(table: ET.Element) -> str:
     )
     first_all_th = bool(first_row) and all(_localname(cell.tag) == "th" for cell in first_row)
     if has_thead or first_all_th:
-        header_rows = sum(len(rows) for rows in groups[:1]) if has_thead else 1
-        rows_in_order = [row for rows in groups for row in rows]
-        second_all_th = len(rows_in_order) > 1 and bool(rows_in_order[1]) and all(
-            _localname(cell.tag) == "th" for cell in rows_in_order[1]
-        )
-        # Fold only under a single heading row: a second heading row names
-        # the columns a statute may cite one by one.
-        if header_rows == 1 and not second_all_th:
+        header_rows = len(groups[0]) if has_thead else 1
+        later_rows = [row for rows in groups for row in rows][1:]
+        later_heading = any(_localname(cell.tag) == "th" for row in later_rows for cell in row)
+        # Fold only under a single heading row: any later heading row or
+        # heading cell may name a column a statute cites on its own.
+        if header_rows == 1 and not later_heading:
             grid = _merge_header_groups(grid, first_row)
         width = len(grid[0])
         header, body = grid[0], grid[1:]
