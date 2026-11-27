@@ -701,6 +701,17 @@ class LegislationTransformerTests(unittest.TestCase):
 
         self.assertIn("| 1 | 10 | 20 |", markdown)
 
+    def test_thead_sub_heading_spanning_into_a_group_keeps_it_apart(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<table><thead><tr><th>Item</th><th colspan="2">Rate</th></tr>'
+            '<tr><th colspan="2">Standard</th><th></th></tr></thead>'
+            "<tbody><tr><td>1</td><td>10</td><td>20</td></tr></tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="s. 24")
+
+        self.assertIn("| 1 | 10 | 20 |", markdown)
+
     def test_container_keeps_closing_words_beside_its_table(self):
         source = (
             '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'

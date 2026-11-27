@@ -648,8 +648,8 @@ def _group_grid(
     header_group: bool = False,
 ) -> list[list[str]]:
     """The group's rows as text, spans resolved. When `heading_columns` is
-    given, it gains one entry per row: the columns where a column heading
-    starts, and whether the row is in a thead. A column heading has text
+    given, it gains one entry per row: the columns a thead heading covers,
+    or where a body heading starts, and whether the row is in a thead. A column heading has text
     and is not scoped to its row or row group; in a thead any such cell is
     one, elsewhere only a `th`."""
     grid: list[list[str]] = []
@@ -678,7 +678,10 @@ def _group_grid(
             colspan = _span(cell, "colspan")
             # A heading scoped to its row or row group labels rows, not a column.
             row_scoped = (cell.get("scope") or "").lower() in {"row", "rowgroup"}
-            if text and not row_scoped and (header_group or _localname(cell.tag) == "th"):
+            if text and not row_scoped and header_group:
+                # A thead heading names every column it covers.
+                starts.update(range(column, column + colspan))
+            elif text and not row_scoped and _localname(cell.tag) == "th":
                 starts.add(column)
             for offset in range(colspan):
                 # A cell that lands on a column a row span holds wins it and
