@@ -670,7 +670,8 @@ def _group_grid(
             rowspan = remaining if _is_zero(cell.get("rowspan")) else _span(cell, "rowspan")
             rowspan = min(rowspan, remaining, _MAX_TABLE_SPAN)
             colspan = _span(cell, "colspan")
-            if _localname(cell.tag) == "th":
+            # A heading scoped to its row labels the row, not a column.
+            if _localname(cell.tag) == "th" and (cell.get("scope") or "").lower() != "row":
                 starts.add(column)
             for offset in range(colspan):
                 # A cell that lands on a column a row span holds wins it and

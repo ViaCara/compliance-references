@@ -626,6 +626,22 @@ class LegislationTransformerTests(unittest.TestCase):
         self.assertIn("| Status | Rate |  |\n| --- | --- | --- |", markdown)
         self.assertIn("| 1 A holder. | 10 | 20 |", markdown)
 
+    def test_row_scoped_labels_in_different_cells_still_fold(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<table><thead><tr><th colspan="3">Status</th><th>Questioner</th></tr></thead><tbody>'
+            '<tr><th scope="row">2</th><td></td><td>A holder.</td><td>The FCA.</td></tr>'
+            '<tr><td></td><th scope="row">(a)</th><td>An associate.</td><td>The PRA.</td></tr>'
+            "</tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Art. 3")
+
+        self.assertIn(
+            "| Status | Questioner |\n| --- | --- |\n"
+            "| 2 A holder. | The FCA. |\n| (a) An associate. | The PRA. |",
+            markdown,
+        )
+
     def test_container_keeps_closing_words_beside_its_table(self):
         source = (
             '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
