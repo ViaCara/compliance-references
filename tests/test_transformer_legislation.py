@@ -473,6 +473,31 @@ class LegislationTransformerTests(unittest.TestCase):
 
         self.assertIn("| First<br>Second |", markdown)
 
+    def test_paragraph_heading_alone_is_not_a_repeal(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            '<p class="LegP2GroupTitle">Later heading</p>'
+            "<table><tbody><tr><td> </td></tr></tbody></table></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Art. 1")
+
+        self.assertIn("**Later heading**", markdown)
+        self.assertNotIn("repealed", markdown)
+
+    def test_table_only_nested_containers_keep_prose_and_one_table(self):
+        source = (
+            '<div xmlns="http://www.w3.org/1999/xhtml" class="LegSnippet">'
+            "<p>Before words.</p>"
+            '<div class="LegP2Container"><div class="LegP3Container">'
+            "<table><thead><tr><th>Entry</th></tr></thead><tbody><tr><td>Table entry.</td></tr></tbody></table>"
+            "</div></div><p>After words.</p></div>"
+        )
+        markdown = LegislationTransformer().transform(source, citation="Art. 1")
+
+        self.assertEqual(markdown.count("Table entry."), 1)
+        self.assertLess(markdown.index("Before words."), markdown.index("| Table entry. |"))
+        self.assertLess(markdown.index("| Table entry. |"), markdown.index("After words."))
+
     def test_real_equality_act_section_020_keeps_its_table(self):
         source = (FIXTURES / "equality_act_2010_section_020.xhtml").read_text(encoding="utf-8")
         markdown = LegislationTransformer().transform(source, citation="EqA 2010 s. 20")

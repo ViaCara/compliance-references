@@ -382,7 +382,12 @@ class LegislationTransformer:
         merged: list[tuple[int, str]] = [(pos, text) for pos, is_table, text in out if not is_table]
         saw_repealed_only = True
         for element in self._snippet(root).iter():
-            if id(element) in in_tables or id(element) in headings:
+            if id(element) in in_tables:
+                continue
+            if id(element) in headings:
+                # Already emitted as a heading, but it is still words.
+                if _localname(element.tag) == "p" and _inline_text(element):
+                    saw_repealed_only = False
                 continue
             if _localname(element.tag) == "table":
                 table = _table_markdown(element)
