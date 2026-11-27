@@ -6,9 +6,9 @@ kind: legislation_section
 citation: Equality Act 2010 s. 20
 source_uri: "https://www.legislation.gov.uk/ukpga/2010/15/section/20/data.xht"
 source_format: xhtml
-revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
-content_sha256: 3d7ec157bef3b28688767c853ad8e304a6cc736fcaa8d56da5cd7b1317bec368
-last_fetched: 2026-08-20
+revision_id: "Thu, 26 Nov 2026 17:05:01 GMT"
+content_sha256: 379fc1f1aab1c1b8f98ca3da5e8e79752216f9d5e31e10a3063046daaad49e51
+last_fetched: 2026-11-27
 language: en-GB
 enforcement_status: in_force
 ---
@@ -55,3 +55,12 @@ _Duty to make adjustments_
 (12) A reference in this section or an applicable Schedule to chattels is to be read, in relation to Scotland, as a reference to moveable property.
 
 (13) The applicable Schedule is, in relation to the Part of this Act specified in the first column of the Table, the Schedule specified in the second column.
+
+| Part of this Act | Applicable Schedule |
+| --- | --- |
+| Part 3 (services and public functions) | Schedule 2 |
+| Part 4 (premises) | Schedule 4 |
+| Part 5 (work) | Schedule 8 |
+| Part 6 (education) | Schedule 13 |
+| Part 7 (associations) | Schedule 15 |
+| Each of the Parts mentioned above | Schedule 21 |

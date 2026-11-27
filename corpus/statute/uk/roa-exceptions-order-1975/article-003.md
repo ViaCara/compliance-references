@@ -6,9 +6,9 @@ kind: legislation_article
 citation: ROA 1974 (Exceptions) Order 1975, art. 3
 source_uri: "https://www.legislation.gov.uk/uksi/1975/1023/article/3/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: f3c932e75e0e24d1d0ac1621a8f39db00a2df49bd1817ef870b868ad10f046c9
-last_fetched: 2026-09-03
+revision_id: "Thu, 26 Nov 2026 17:05:01 GMT"
+content_sha256: 25ca365816c3b177709f504ca78f828e8093e55cc28c9469d612b93dd4379116
+last_fetched: 2026-11-27
 language: en-GB
 enforcement_status: in_force
 ---
@@ -81,6 +81,38 @@ and where the person to whom the question relates is informed at the time the qu
 (i) the person questioned is informed at the time the question is asked that, by virtue of this Order, spent convictions ... are to be disclosed; and
 
 (ii) the question is asked in order to assess the suitability of the individual to whom the question relates to have the status specified in the first column of that entry;
+
+| Status | Questioner |
+| --- | --- |
+| 1 A person with Part 4A permission. | The FCA, the PRA or the Bank of England. |
+| 2 (a) A person in relation to whom an approval is given under section 59 of the 2000 Act (approval for particular arrangements). | The FCA, the PRA or the authorised person (within the meaning of section 31(2) of the 2000 Act) or the applicant for Part 4A permission who made the application for the approval of the appropriate regulator (within the meaning of section 59(4) of the 2000 Act) under section 59 of the 2000 Act in relation to the person mentioned in sub-paragraph (a) of the first column. |
+| (b) An associate of the person (whether or not an individual) mentioned in sub-paragraph (a). | The FCA, the PRA or the authorised person (within the meaning of section 31(2) of the 2000 Act) or the applicant for Part 4A permission who made the application for the approval of the appropriate regulator (within the meaning of section 59(4) of the 2000 Act) under section 59 of the 2000 Act in relation to the person mentioned in sub-paragraph (a) of the first column. |
+| 3 (a) The manager or trustee of an authorised unit trust scheme (within the meaning of section 237 of the 2000 Act). | The FCA or the unit trust scheme mentioned in the first column. |
+| (b) An associate of the person (whether or not an individual) mentioned in sub-paragraph (a). | The FCA or the unit trust scheme mentioned in the first column. |
+| 3A (a) The operator or depositary of an authorised contractual scheme (within the meaning of section 237(3) of the 2000 Act). | The FCA. |
+| (b) An associate of the person (whether or not an individual) mentioned in sub-paragraph (a). |  |
+| 4 (a) A director of an open-ended investment company. | The FCA, the PRA or the open-ended investment company mentioned in the first column. |
+| (b) An associate of that person (whether or not an individual) mentioned in sub-paragraph (a). | The FCA, the PRA or the open-ended investment company mentioned in the first column. |
+| 5. An associate of the operator or trustee of a relevant collective investment scheme. | The FCA, the PRA or the collective investment scheme mentioned in the first column. |
+| 6. An associate of a UK recognised investment exchange , recognised clearing house or recognised CSD. | The FCA, the PRA, the Bank of England or the investment exchange , clearing house or CSD mentioned in the first column. |
+| 7. A controller of a person with Part 4A permission. | The FCA, the PRA or the person with Part 4A permission mentioned in the first column. |
+| 8. (a) A person who carries on a regulated activity (within the meaning of section 22 of the 2000 Act) but to whom the general prohibition does not apply by virtue of section 327 of the 2000 Act (exemption from the general prohibition for members of a designated professional body). | The FCA or the PRA. |
+| (b) An associate of the person (whether or not an individual) mentioned in sub-paragraph (a). | In the case of a person mentioned in sub-paragraph (b) of the first column, the person mentioned in sub-paragraph (a) of that column. |
+| 9. A key worker of the FCA, the PRA or the Bank of England. | The FCA, the PRA or the Bank of England. |
+| 10. An ombudsman (within the meaning of Schedule 17 to the 2000 Act) of the Financial Ombudsman Service. | The scheme operator (within the meaning of section 225 of the 2000 Act) of the Financial Ombudsman Service. |
+| 11. An associate of the issuer of securities which have been admitted to the official list maintained by the FCA for listing under section 74 of the 2000 Act. | The FCA. |
+| 12. A sponsor (within the meaning of section 88(2) of the 2000 Act). | The FCA. |
+| 13. (a) A Primary information provider (within the meaning of section 89P of the 2000 Act). | The FCA or the PRA. |
+| (b) An associate of the person (whether or not an individual) mentioned in sub-paragraph (a). | In the case of a person mentioned in sub-paragraph (2) of the first column, the person mentioned in sub-paragraph (1) of that column. |
+| 14. An associate of a person who has a Part 4A permission and who is admitted to Lloyd’s as an underwriting agent (within the meaning of section 2 of Lloyd’s Act 1982). | (a) The Council of Lloyd’s.<br>(b) The person with Part 4A permission specified in the first column (or a person applying for such permission). |
+| 15. An associate of the Council of Lloyd’s. | The Council of Lloyd’s. |
+| 16. (a) A member of a UK recognised investment exchange , recognised clearing house or recognised CSD. | The UK recognised investment exchange , recognised clearing house or recognised CSD specified in the first column. |
+| (b) An associate of the person (whether or not an individual) mentioned in sub-paragraph (a). | In the case of a person mentioned in sub-paragraph (b) of the first column, the person mentioned in sub-paragraph (a) of that column. |
+| 17 A director or person responsible for the management of the electronic money or payment services business of an electronic money institution. | The FCA. |
+| 18 A controller of an electronic money institution. | The FCA. |
+| 19 A director or a person responsible for the management of an authorised payment institution , a registered account information service provider or a small payment institution. | The FCA. |
+| 20 A person responsible for the management of payment services provided, or to be provided, by an authorised payment institution , a registered account information service provider or a small payment institution. | The FCA. |
+| 21 A controller of an authorised payment institution , a registered account information service provider or a small payment institution. | The FCA. |
 
 (h) any question asked by or on behalf of the Gambling Commission for the purpose of determining whether to grant or revoke a licence under Part I of the National Lottery etc. Act 1993 where the question relates to an individual—
 

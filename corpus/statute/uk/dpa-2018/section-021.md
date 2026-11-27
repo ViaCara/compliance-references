@@ -6,9 +6,9 @@ kind: legislation_section
 citation: DPA 2018 s. 21
 source_uri: "https://www.legislation.gov.uk/ukpga/2018/12/section/21/data.xht"
 source_format: xhtml
-revision_id: "Wed, 22 Jul 2026 18:56:31 GMT"
-content_sha256: 92cc6d2ac585eb779136b85fbbb03ece98c5e0c169b3a4b0f6ed28938614adc7
-last_fetched: 2026-07-25
+revision_id: "Thu, 26 Nov 2026 17:05:01 GMT"
+content_sha256: 9d0834d771f0801ddbf8488dae332ec6042417ffa86194fd5be95980a164dbae
+last_fetched: 2026-11-27
 language: en-GB
 enforcement_status: in_force
 ---
@@ -52,6 +52,6 @@ but such references do not include information held by an intelligence service (
 
 (i) section 3(2) of the Freedom of Information Act 2000 is to be read as if “public authority” included that Agency, and
 
-(ii) section 3(2) of the Freedom of Information (Scotland) Act is to be read as if “authority” included that Agency, and
+(ii) section 3(2) of the Freedom of Information (Scotland) Act 2002 (asp 13) is to be read as if “authority” included that Agency, and
 
 (b) subsection (7) does not apply.

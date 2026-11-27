@@ -6,9 +6,9 @@ kind: legislation_regulation
 citation: EMRs 2011 reg. 2
 source_uri: "https://www.legislation.gov.uk/uksi/2011/99/regulation/2/data.xht"
 source_format: xhtml
-revision_id: "Mon, 14 Sep 2026 16:04:15 GMT"
-content_sha256: c49bc4bb17d3df719453e9b5a6844c6acb0a71ef7fc9afe1ddc87c5a83a66862
-last_fetched: 2026-09-28
+revision_id: "Thu, 26 Nov 2026 17:05:01 GMT"
+content_sha256: 25a09aca758751f7c7f9dcafd753cdd65cb70da0c781b5ce6297fe4be10a3de5
+last_fetched: 2026-11-27
 language: en-GB
 enforcement_status: in_force
 ---
@@ -42,7 +42,7 @@ _Interpretation_
 
 ...
 
-“the capital requirements regulation” means of the European Parliament and of the Council of 26 June 2013 on prudential requirements for credit institutions and investment firms;
+“the capital requirements regulation” means Regulation (EU) No. 575/2013 of the European Parliament and of the Council of 26 June 2013 on prudential requirements for credit institutions and investment firms;
 
 “consumer” means an individual who is acting for purposes other than a trade, business or profession;
 

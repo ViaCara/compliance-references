@@ -6,9 +6,9 @@ kind: legislation_schedule
 citation: DPA 2018 Sch. 21 para. 5
 source_uri: "https://www.legislation.gov.uk/ukpga/2018/12/schedule/21/paragraph/5/data.xht"
 source_format: xhtml
-revision_id: "Thu, 12 Nov 2026 17:32:01 GMT"
-content_sha256: 0c4b1674cd7214f62f0c66da5a6c5a72522477afc2f29a5ea1c34067b54682cb
-last_fetched: 2026-11-18
+revision_id: "Thu, 26 Nov 2026 17:05:01 GMT"
+content_sha256: 2bbd7c0d1dbe42080ae38890b26b856477e55c6c487ff3373f0a6dabafb4cab4
+last_fetched: 2026-11-27
 language: en-GB
 enforcement_status: in_force
 ---
@@ -34,27 +34,27 @@ _Further transitional provision etc_
 
 (2) The decisions mentioned in sub-paragraph (1)(e) are the following—
 
-(a) Commission Decision of 26th July 2000 pursuant to Directive of the European Parliament and of the Council on the adequate protection of personal data provided in Switzerland;
+(a) Commission Decision 2000/518/EC of 26th July 2000 pursuant to Directive 95/46/EC of the European Parliament and of the Council on the adequate protection of personal data provided in Switzerland;
 
-(b) Commission Decision of 20th December 2001 pursuant to Directive of the European Parliament and of the Council on the adequate protection of personal data provided by the Canadian Personal Information Protection and Electronic Documents Act;
+(b) Commission Decision 2002/2/EC of 20th December 2001 pursuant to Directive 95/46/EC of the European Parliament and of the Council on the adequate protection of personal data provided by the Canadian Personal Information Protection and Electronic Documents Act;
 
-(c) Commission Decision of 30th June 2003 pursuant to Directive of the European Parliament and of the Council on the adequate protection of personal data in Argentina;
+(c) Commission Decision 2003/490/EC of 30th June 2003 pursuant to Directive 95/46/EC of the European Parliament and of the Council on the adequate protection of personal data in Argentina;
 
-(d) Commission Decision of 21st November 2003 on the adequate protection of personal data in Guernsey;
+(d) Commission Decision 2003/821/EC of 21st November 2003 on the adequate protection of personal data in Guernsey;
 
-(e) Commission Decision of 28th April 2004 on the adequate protection of personal data in the Isle of Man;
+(e) Commission Decision 2004/411/EC of 28th April 2004 on the adequate protection of personal data in the Isle of Man;
 
-(f) Commission Decision of 8th May 2008 pursuant to Directive of the European Parliament and of the Council on the adequate protection of personal data in Jersey;
+(f) Commission Decision 2008/393/EC of 8th May 2008 pursuant to Directive 95/46/EC of the European Parliament and of the Council on the adequate protection of personal data in Jersey;
 
-(g) Commission Decision 2010/146/EU of 5th March 2010 pursuant to Directive of the European Parliament and of the Council on the adequate protection provided by the Faeroese Act on processing of personal data;
+(g) Commission Decision 2010/146/EU of 5th March 2010 pursuant to Directive 95/46/EC of the European Parliament and of the Council on the adequate protection provided by the Faeroese Act on processing of personal data;
 
-(h) Commission Decision 2010/625/EU of 19th October 2010 pursuant to Directive of the European Parliament and of the Council on the adequate protection of personal data in Andorra;
+(h) Commission Decision 2010/625/EU of 19th October 2010 pursuant to Directive 95/46/EC of the European Parliament and of the Council on the adequate protection of personal data in Andorra;
 
-(i) Commission Decision 2011/61/EU of 31st January 2011 pursuant to Directive of the European Parliament and of the Council on the adequate protection of personal data by the State of Israel with regard to automated processing of personal data;
+(i) Commission Decision 2011/61/EU of 31st January 2011 pursuant to Directive 95/46/EC of the European Parliament and of the Council on the adequate protection of personal data by the State of Israel with regard to automated processing of personal data;
 
-(j) Commission Implementing Decision 2012/484/EU of 21st August 2012 pursuant to Directive of the European Parliament and of the Council on the adequate protection of personal data by the Eastern Republic of Uruguay with regard to automated processing of personal data;
+(j) Commission Implementing Decision 2012/484/EU of 21st August 2012 pursuant to Directive 95/46/EC of the European Parliament and of the Council on the adequate protection of personal data by the Eastern Republic of Uruguay with regard to automated processing of personal data;
 
-(k) Commission Implementing Decision 2013/65/EU of 19th December 2012 pursuant to Directive of the European Parliament and of the Council on the adequate protection of personal data by New Zealand;
+(k) Commission Implementing Decision 2013/65/EU of 19th December 2012 pursuant to Directive 95/46/EC of the European Parliament and of the Council on the adequate protection of personal data by New Zealand;
 
 (m) Commission Implementing Decision (EU) 2019/419 of 23rd January 2019 pursuant to Regulation (EU) 2016/679 of the European Parliament and of the Council on the adequate protection of personal data by Japan under the Act on the Protection of Personal Information.
 

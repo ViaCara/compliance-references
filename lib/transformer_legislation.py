@@ -62,6 +62,15 @@ Class names used in selection (from the legislation.gov.uk DOM):
   (the first sub-item's own number), ... on the same leaf that carries
   `LegP{n}Text`, instead of a `LegP{n}No`/`LegSP{n}No` this transformer
   otherwise looks for.
+- `LegTabular`, `LegTable`: a provision that sets its wording in an XHTML
+  `<table>` (Equality Act 2010 s. 20, UK GDPR Art. 17). The table is
+  rendered whole as a GFM table at its place in the document, because
+  printing some cells and not others reads as a complete table. A cell that
+  spans rows repeats its text in each row it covers, so every row keeps its
+  associations; a cell that spans columns fills the first and leaves the
+  rest empty. Paragraphs within one cell are joined with `<br>`. Tables
+  sit under `LegTabular`, outside any numbered container; a container
+  never reads a cell as its own number or text.
 """
 
 from __future__ import annotations
@@ -150,9 +159,18 @@ def _is_skipped(element: ET.Element) -> bool:
     cls = _classes(element)
     if cls & {"LegChangeDelimiter", "LegCommentaryLink", "LegExtentRestriction"}:
         return True
-    if _localname(element.tag) == "a" and not (element.text or "").strip():
+    if _localname(element.tag) == "a" and not "".join(element.itertext()).strip():
         return True
     return False
+
+
+def _iter_outside_tables(element: ET.Element) -> Iterable[ET.Element]:
+    """The element and its descendants, without anything inside a table:
+    a table's cells belong to the table, never to the prose around it."""
+    yield element
+    for child in element:
+        if _localname(child.tag) != "table":
+            yield from _iter_outside_tables(child)
 
 
 def _inline_text(element: ET.Element) -> str:
@@ -162,7 +180,7 @@ def _inline_text(element: ET.Element) -> str:
 
 
 def _collect_inline(element: ET.Element, parts: list[str]) -> None:
-    if _is_skipped(element):
+    if _is_skipped(element) or _localname(element.tag) == "table":
         if element.tail:
             parts.append(element.tail)
         return
@@ -224,13 +242,15 @@ class LegislationTransformer:
         return " - ".join(part for part in (number, title) if part)
 
     def _table_descendants(self, root: ET.Element) -> set[int]:
-        """Cells mark only some of their text as LegText, so emitting it
-        would print part of a table without its row associations."""
+        """Ids of every element inside a table, the table itself excluded.
+        The table is rendered whole by `_table_markdown`, so no branch of the
+        walk may emit a cell's text a second time."""
         return {
             id(descendant)
             for table in root.iter()
             if _localname(table.tag) == "table"
             for descendant in table.iter()
+            if descendant is not table
         }
 
     def _division_heading(self, element: ET.Element) -> str:
@@ -260,29 +280,48 @@ class LegislationTransformer:
 
     def _iter_paragraphs(self, root: ET.Element) -> Iterable[str]:
         emitted_any = False
+        # (is_table, text) in document order; tables do not count as emitted
+        # text, so a page whose prose is untagged still reaches the fallback.
+        out: list[tuple[int, bool, str]] = []
+        position = {id(element): index for index, element in enumerate(root.iter())}
+        headings: set[int] = set()
+        # Tables beside the provision body (page furniture) are not the law.
+        in_snippet = {id(element) for element in self._snippet(root).iter()}
         contained = self._contained_elements(root)
         list_numbers = self._list_item_numbers(root)
         in_tables = self._table_descendants(root)
         extents = self._concurrent_extents(root)
         for element in root.iter():
+            if id(element) in in_tables:
+                continue
+            pos = position[id(element)]
+            if _localname(element.tag) == "table":
+                table = _table_markdown(element) if id(element) in in_snippet else ""
+                if table:
+                    out.append((pos, True, table))
+                continue
             cls = _classes(element)
             if len(extents) > 1 and id(element) in extents:
-                yield f"**Extent:** {extents[id(element)]}"
+                headings.add(id(element))
+                out.append((pos, False, f"**Extent:** {extents[id(element)]}"))
                 continue
             if cls & {"LegSchedulePart", "LegSchedulePartFirst"}:
                 heading = self._schedule_part_heading(element)
                 if heading:
-                    yield f"**{heading}**"
+                    headings.add(id(element))
+                    out.append((pos, False, f"**{heading}**"))
                 continue
             if cls & {"LegP2GroupTitle", "LegSP1GroupTitle", "LegSP1GroupTitleFirst"}:
                 heading = _inline_text(element)
                 if heading:
-                    yield f"**{heading}**"
+                    headings.add(id(element))
+                    out.append((pos, False, f"**{heading}**"))
                 continue
             if _DIVISION_CLASS in cls and _localname(element.tag) in _DIVISION_TAGS:
                 heading = self._division_heading(element)
                 if heading:
-                    yield f"**{heading}**"
+                    headings.add(id(element))
+                    out.append((pos, False, f"**{heading}**"))
                 continue
             container_level = next(
                 (lvl for lvl in self._LEVELS if _is_container(cls, lvl)), None
@@ -293,7 +332,7 @@ class LegislationTransformer:
                 if text:
                     emitted_any = True
                     body = "_(repealed)_" if _is_repealed_marker(text) else text
-                    yield f"{self._LEVELS[container_level]}{number} {body}".strip()
+                    out.append((pos, False, f"{self._LEVELS[container_level]}{number} {body}".strip()))
                 continue
             if id(element) in contained or _localname(element.tag) != "p":
                 continue
@@ -302,13 +341,13 @@ class LegislationTransformer:
                 text = self._para_text(element, level=para_level)
                 if text and not _is_repealed_marker(text):
                     emitted_any = True
-                    yield text
+                    out.append((pos, False, text))
                 continue
             if any(_AMEND_TEXT_RE.match(name) for name in cls):
                 text = _inline_text(element)
                 if text:
                     emitted_any = True
-                    yield text
+                    out.append((pos, False, text))
                 continue
             if _LIST_TEXT_CLASS in cls:
                 text = _inline_text(element)
@@ -316,42 +355,60 @@ class LegislationTransformer:
                     emitted_any = True
                     indent = self._LEVELS.get(_list_level(cls) or 0, "")
                     number = list_numbers.get(id(element), "")
-                    yield f"{indent}{number} {text}".strip()
+                    out.append((pos, False, f"{indent}{number} {text}".strip()))
                 continue
             if _EU_TEXT_CLASS in cls:
-                if id(element) in in_tables:
-                    continue
                 text = _inline_text(element)
                 if text and not _is_repealed_marker(text):
                     emitted_any = True
-                    yield text
+                    out.append((pos, False, text))
                 continue
             if _list_level(cls) is not None:
                 text = _inline_text(element)
                 if text and not _is_repealed_marker(text):
                     emitted_any = True
-                    yield text
+                    out.append((pos, False, text))
                 continue
             if not any(_has_class(cls, level, "Text") for level in self._LEVELS):
                 continue
             text = _inline_text(element)
             if text and not _is_repealed_marker(text):
                 emitted_any = True
-                yield text
+                out.append((pos, False, text))
 
-        if not emitted_any:
-            saw_repealed_only = True
-            for element in self._snippet(root).iter():
-                if _localname(element.tag) == "p":
-                    text = _inline_text(element)
-                    if not text:
-                        continue
-                    if _is_repealed_marker(text):
-                        continue
+        if emitted_any:
+            yield from (text for _, _, text in out)
+            return
+        # Untagged prose: headings stay, and the fallback adds each paragraph
+        # and table, all in document order.
+        merged: list[tuple[int, str]] = [(pos, text) for pos, is_table, text in out if not is_table]
+        saw_repealed_only = True
+        for element in self._snippet(root).iter():
+            if id(element) in in_tables:
+                continue
+            if id(element) in headings:
+                # Already emitted as a heading, but it is still words.
+                heading_text = _inline_text(element) if _localname(element.tag) == "p" else ""
+                if heading_text and not _is_repealed_marker(heading_text):
                     saw_repealed_only = False
-                    yield text
-            if saw_repealed_only:
-                yield "_Provision repealed. See source for amendment history._"
+                continue
+            if _localname(element.tag) == "table":
+                table = _table_markdown(element)
+                if table:
+                    saw_repealed_only = False
+                    merged.append((position[id(element)], table))
+                continue
+            if _localname(element.tag) == "p":
+                text = _inline_text(element)
+                if not text:
+                    continue
+                if _is_repealed_marker(text):
+                    continue
+                saw_repealed_only = False
+                merged.append((position[id(element)], text))
+        yield from (text for _, text in sorted(merged, key=lambda item: item[0]))
+        if saw_repealed_only:
+            yield "_Provision repealed. See source for amendment history._"
 
     def _snippet(self, root: ET.Element) -> ET.Element:
         """The provision body. legislation.gov.uk wraps it in LegSnippet and
@@ -435,7 +492,7 @@ class LegislationTransformer:
         return numbers
 
     def _number(self, element: ET.Element, *, level: int) -> str:
-        for child in element.iter():
+        for child in _iter_outside_tables(element):
             cls = _classes(child)
             if _has_class(cls, level, "No"):
                 return _inline_text(child)
@@ -452,7 +509,7 @@ class LegislationTransformer:
             found = next(
                 (
                     _inline_text(child)
-                    for child in element.iter()
+                    for child in _iter_outside_tables(element)
                     if f"LegSN{depth}No" in _classes(child)
                 ),
                 None,
@@ -483,7 +540,7 @@ class LegislationTransformer:
         return full
 
     def _text(self, element: ET.Element, *, level: int) -> str:
-        for child in element.iter():
+        for child in _iter_outside_tables(element):
             cls = _classes(child)
             if _has_class(cls, level, "Text"):
                 return _inline_text(child)
@@ -492,6 +549,248 @@ class LegislationTransformer:
         if number and full.startswith(number):
             return full[len(number) :].strip()
         return full
+
+
+_TABLE_SECTIONS = frozenset({"thead", "tbody", "tfoot"})
+_TABLE_CELLS = frozenset({"td", "th"})
+_BLOCK_IN_CELL = frozenset({"p", "div", "li", "tr", "td", "th", "br"})
+# A malformed span must not make the grid grow without bound.
+_MAX_TABLE_SPAN = 100
+
+
+def _table_groups(table: ET.Element) -> list[list[list[ET.Element]]]:
+    """Row groups in the order HTML renders them: thead, then body rows, then
+    tfoot. A row span ends at the end of its own group. A nested table's rows
+    belong to its own cell, not to this table."""
+    thead: list[list[list[ET.Element]]] = []
+    body: list[list[list[ET.Element]]] = []
+    tfoot: list[list[list[ET.Element]]] = []
+
+    def cells(row: ET.Element) -> list[ET.Element]:
+        return [cell for cell in row if _localname(cell.tag) in _TABLE_CELLS]
+
+    loose: list[list[ET.Element]] | None = None
+    for child in table:
+        name = _localname(child.tag)
+        if name == "tr":
+            # Rows directly under the table form a body group in place.
+            if loose is None:
+                loose = []
+                body.append(loose)
+            loose.append(cells(child))
+            continue
+        loose = None
+        if name in _TABLE_SECTIONS:
+            rows = [cells(row) for row in child if _localname(row.tag) == "tr"]
+            {"thead": thead, "tbody": body, "tfoot": tfoot}[name].append(rows)
+    return thead + body + tfoot
+
+
+_ZERO_RE = re.compile(r"\s*\+?0+\s*")
+
+
+def _is_zero(value: str | None) -> bool:
+    return value is not None and _ZERO_RE.fullmatch(value) is not None
+
+
+def _span(cell: ET.Element, attribute: str) -> int:
+    try:
+        value = int(cell.get(attribute) or 1)
+    except ValueError:
+        return 1
+    return max(1, min(value, _MAX_TABLE_SPAN))
+
+
+_BLOCK_BREAK = "\x00"
+
+
+def _collect_cell(element: ET.Element, parts: list[str]) -> None:
+    """Like `_collect_inline`, but marks where each block starts and ends so
+    loose text beside a paragraph stays its own segment."""
+    if _is_skipped(element):
+        if element.tail:
+            parts.append(element.tail)
+        return
+    block = _localname(element.tag) in _BLOCK_IN_CELL
+    if block:
+        parts.append(_BLOCK_BREAK)
+    if element.text:
+        parts.append(element.text)
+    for child in list(element):
+        _collect_cell(child, parts)
+    if block:
+        parts.append(_BLOCK_BREAK)
+    if element.tail:
+        parts.append(element.tail)
+
+
+def _cell_text(cell: ET.Element) -> str:
+    """A cell's text with its paragraphs and loose runs kept apart in
+    document order, pipes escaped so the text cannot end the cell early."""
+    parts: list[str] = [cell.text or ""]
+    for child in list(cell):
+        _collect_cell(child, parts)
+    segments = (" ".join(segment.split()) for segment in "".join(parts).split(_BLOCK_BREAK))
+    # Literal angle brackets and ampersands in the source would read as HTML
+    # beside the <br> joins, so they are escaped.
+    escaped = (
+        segment.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        for segment in segments
+        if segment
+    )
+    return "<br>".join(escaped).replace("|", "\\|")
+
+
+def _group_grid(
+    rows: list[list[ET.Element]],
+    heading_columns: list[tuple[set[int], bool]] | None = None,
+    *,
+    header_group: bool = False,
+) -> list[list[str]]:
+    """The group's rows as text, spans resolved. When `heading_columns` is
+    given, it gains one entry per row: the columns a thead heading covers,
+    or where a body heading starts, and whether the row is in a thead. A column heading has text
+    and is not scoped to its row or row group; in a thead any such cell is
+    one, elsewhere only a `th`."""
+    grid: list[list[str]] = []
+    # (row, column) -> (text, id of the spanning cell)
+    pending: dict[tuple[int, int], tuple[str, int]] = {}
+    for row_index, cells in enumerate(rows):
+        line: list[str] = []
+        starts: set[int] = set()
+        column = 0
+        queue = list(cells)
+        while queue or any(key[0] == row_index for key in pending):
+            if (row_index, column) in pending:
+                line.append(pending.pop((row_index, column))[0])
+                column += 1
+                continue
+            if not queue:
+                line.append("")
+                column += 1
+                continue
+            cell = queue.pop(0)
+            text = _cell_text(cell)
+            remaining = len(rows) - row_index
+            # A zero rowspan spans the rest of the row group (HTML Standard).
+            rowspan = remaining if _is_zero(cell.get("rowspan")) else _span(cell, "rowspan")
+            rowspan = min(rowspan, remaining, _MAX_TABLE_SPAN)
+            colspan = _span(cell, "colspan")
+            # A heading scoped to its row or row group labels rows, not a column.
+            row_scoped = (cell.get("scope") or "").lower() in {"row", "rowgroup"}
+            if text and not row_scoped and header_group:
+                # A thead heading names every column it covers.
+                starts.update(range(column, column + colspan))
+            elif text and not row_scoped and _localname(cell.tag) == "th":
+                starts.add(column)
+            for offset in range(colspan):
+                # A cell that lands on a column a row span holds wins it and
+                # ends that span, so overlapping spans in malformed markup can
+                # neither stall the row nor reappear below it.
+                displaced = pending.pop((row_index, column + offset), None)
+                if displaced is not None:
+                    for key in [k for k, v in pending.items() if v[1] == displaced[1]]:
+                        del pending[key]
+                value = text if offset == 0 else ""
+                line.append(value)
+                for extra in range(1, rowspan):
+                    pending[(row_index + extra, column + offset)] = (value, id(cell))
+            column += colspan
+        grid.append(line)
+        if heading_columns is not None:
+            heading_columns.append((starts, header_group))
+    return grid
+
+
+def _table_markdown(table: ET.Element) -> str:
+    """Render an XHTML table as a GFM table, or "" when it holds no text."""
+    groups = _table_groups(table)
+    heading_columns: list[tuple[set[int], bool]] = []
+    thead_groups = sum(1 for child in table if _localname(child.tag) == "thead")
+    grid = [
+        line
+        for index, rows in enumerate(groups)
+        for line in _group_grid(rows, heading_columns, header_group=index < thead_groups)
+    ]
+    caption = next(
+        (_inline_text(child) for child in table if _localname(child.tag) == "caption"),
+        "",
+    )
+    if not any(text for line in grid for text in line):
+        return f"**{caption}**" if caption else ""
+    width = max(len(line) for line in grid)
+    grid = [line + [""] * (width - len(line)) for line in grid]
+
+    first_row = next((row for rows in groups for row in rows), [])
+    has_thead = any(
+        _localname(child.tag) == "thead"
+        and any(_localname(row.tag) == "tr" for row in child)
+        for child in table
+    )
+    first_all_th = bool(first_row) and all(_localname(cell.tag) == "th" for cell in first_row)
+    if has_thead or first_all_th:
+        grid = _merge_header_groups(grid, first_row, heading_columns[1:])
+        width = len(grid[0])
+        header, body = grid[0], grid[1:]
+    else:
+        header, body = [""] * width, grid
+
+    def render(line: list[str]) -> str:
+        return "| " + " | ".join(line) + " |"
+
+    lines = [render(header), "| " + " | ".join(["---"] * width) + " |"]
+    lines.extend(render(line) for line in body)
+    table_text = "\n".join(lines)
+    return f"**{caption}**\n\n{table_text}" if caption else table_text
+
+
+def _merge_header_groups(
+    grid: list[list[str]],
+    header_cells: list[ET.Element],
+    later_headings: list[tuple[set[int], bool]],
+) -> list[list[str]]:
+    """Fold the physical columns under one spanning heading into one column.
+
+    A statute that names "the first column" means the heading's column:
+    ROA Exceptions Order art. 3 sets a Status heading over three cells
+    (entry number, sub-paragraph letter, wording). Keeping them apart would
+    push the second named column to the fourth place. Each row's texts under
+    one heading are joined with a space.
+
+    A group stays apart when a later thead row holds a column heading in
+    it, or when body headings start in two or more of its columns, in one
+    row or across rows: those are sub-headings naming columns a statute may
+    cite on their own. Body headings that all start in one column are row
+    labels, such as entry numbers, and do not split the group."""
+    spans = [_span(cell, "colspan") for cell in header_cells]
+    if all(span == 1 for span in spans) or sum(spans) != len(grid[0]):
+        return grid
+    ranges: list[range] = []
+    start = 0
+    for span in spans:
+        ranges.append(range(start, start + span))
+        start += span
+    thead_starts: set[int] = set()
+    body_starts: set[int] = set()
+    for starts, in_thead in later_headings:
+        (thead_starts if in_thead else body_starts).update(starts)
+    fold = [
+        len(group) > 1 and not thead_starts & set(group) and len(body_starts & set(group)) < 2
+        for group in ranges
+    ]
+    merged: list[list[str]] = []
+    for row_index, line in enumerate(grid):
+        out: list[str] = []
+        for group, folded in zip(ranges, fold):
+            cells = line[group.start : group.stop]
+            if not folded:
+                out.extend(cells)
+            elif row_index == 0:
+                out.append(cells[0])
+            else:
+                out.append(" ".join(text for text in cells if text))
+        merged.append(out)
+    return merged
 
 
 def _is_repealed_marker(text: str) -> bool:

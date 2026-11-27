@@ -6,9 +6,9 @@ kind: legislation_section
 citation: "Children's Wellbeing and Schools Act 2026, s. 70"
 source_uri: "https://www.legislation.gov.uk/ukpga/2026/21/section/70/data.xht"
 source_format: xhtml
-revision_id: "Thu, 27 Aug 2026 16:10:40 GMT"
-content_sha256: 71f97f0d621eee087b6cc739a10b6f0acfa1d3b79e1cbace87c041b3cf94c745
-last_fetched: 2026-09-03
+revision_id: "Thu, 26 Nov 2026 17:05:01 GMT"
+content_sha256: 134f0abf04d17ffee6ee88af70879f15a99280413e5a21fdcc39004b91b18d25
+last_fetched: 2026-11-27
 language: en-GB
 enforcement_status: in_force
 ---
@@ -26,7 +26,7 @@ _Power to require providers of internet services to prevent or restrict access b
 
 (b)to restrict access by relevant children to specified internet services which they provide, or to specified functionalities or other features of such services.
 
-(2)“Relevant child” means a child who is of, or under, a specified age (and different ages may be specified for the purposes of paragraphs and of subsection ).
+(2)“Relevant child” means a child who is of, or under, a specified age (and different ages may be specified for the purposes of paragraphs (a) and (b) of subsection (1)).
 
 (3)The provision that may be made by regulations under this section includes provision—
 
@@ -36,7 +36,7 @@ _Power to require providers of internet services to prevent or restrict access b
 
 (c)about the enforcement of a requirement imposed by the regulations.
 
-(4)The provision that may be made by virtue of subsection includes, for example, provision requiring a provider of an internet service to—
+(4)The provision that may be made by virtue of subsection (1)(b) includes, for example, provision requiring a provider of an internet service to—
 
 (a)limit the amount of time per day, or over the course of a specified period, for which relevant children may access the service or a specified functionality or other feature of the service;
 
@@ -52,7 +52,7 @@ _Power to require providers of internet services to prevent or restrict access b
 
 (iv)a person who is not known to a user of the service could identify the actual or approximate location of the user.
 
-(5)The provision that may be made by virtue of subsection includes provision for a requirement to be an enforceable requirement for the purposes of Chapter 6 of Part 7.
+(5)The provision that may be made by virtue of subsection (3)(c) includes provision for a requirement to be an enforceable requirement for the purposes of Chapter 6 of Part 7.
 
 (6)In making regulations under this section, the Secretary of State must have regard to—
 
@@ -74,11 +74,11 @@ _Power to require providers of internet services to prevent or restrict access b
 
 (f)make consequential provision.
 
-(8)Regulations made by virtue of subsection may amend or repeal primary legislation.
+(8)Regulations made by virtue of subsection (7)(f) may amend or repeal primary legislation.
 
 (9)The Secretary of State—
 
-(a)must exercise the power under subsection so as to make such provision as the Secretary of State considers appropriate following the conclusion of the consultation entitled “Growing up in the online world: a national consultation” launched on 2 March 2026 (command paper numbered CP 1528), and
+(a)must exercise the power under subsection (1) so as to make such provision as the Secretary of State considers appropriate following the conclusion of the consultation entitled “Growing up in the online world: a national consultation” launched on 2 March 2026 (command paper numbered CP 1528), and
 
 (b)must, in exercising that power, have regard to the responses to the consultation.
 
@@ -88,7 +88,7 @@ _Power to require providers of internet services to prevent or restrict access b
 
 (b)do so by such time, or within such period, as the Secretary of State may specify in the request.
 
-(11)As soon as reasonably practicable after providing advice under subsection , OFCOM must publish the advice.
+(11)As soon as reasonably practicable after providing advice under subsection (10), OFCOM must publish the advice.
 
 (12)In this section—
 

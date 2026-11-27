@@ -6,9 +6,9 @@ kind: legislation_article
 citation: UK GDPR Article 44
 source_uri: "https://www.legislation.gov.uk/eur/2016/679/article/44/data.xht"
 source_format: xhtml
-revision_id: "Wed, 22 Jul 2026 18:56:31 GMT"
-content_sha256: c4d1dc39bc6302aececd7ea524b05e9cd980031b872565d81dc4476b31a6adea
-last_fetched: 2026-07-24
+revision_id: "Thu, 26 Nov 2026 17:05:01 GMT"
+content_sha256: 92100ac6a81e9c91f06e64e83a46230e553e3bd07dc31ed972f7c015fda844ca
+last_fetched: 2026-11-27
 language: en-GB
 enforcement_status: repealed
 ---
@@ -20,4 +20,4 @@ _General principle for transfers_
 
 Textual Amendments
 
-F1Art. 44 omitted (5.2.2026) by virtue of Data (Use and Access) Act 2025 (c. 18), s. 142(1), ; S.I. 2026/82, reg. 2(z9)
+F1Art. 44 omitted (5.2.2026) by virtue of Data (Use and Access) Act 2025 (c. 18), s. 142(1), Sch. 7 para. 2(1); S.I. 2026/82, reg. 2(z9)

@@ -6,9 +6,9 @@ kind: legislation_regulation
 citation: MLR 2017 reg. 3
 source_uri: "https://www.legislation.gov.uk/uksi/2017/692/regulation/3/data.xht"
 source_format: xhtml
-revision_id: "Mon, 17 Aug 2026 16:40:13 GMT"
-content_sha256: 5be2a3b42a7772a8b832e664eb74d6b56012e5ccef230dfcb006b3d4fbc6bc21
-last_fetched: 2026-08-24
+revision_id: "Thu, 26 Nov 2026 17:05:01 GMT"
+content_sha256: 70b522701d75e82bf05ae53e691fb0eeb8979c22839a651344490d3ce4c62b8d
+last_fetched: 2026-11-27
 language: en-GB
 enforcement_status: in_force
 ---
@@ -64,7 +64,7 @@ _General interpretation_
 
 ...
 
-“the capital requirements regulation” means of the European Parliament and of the Council of 26 June 2013 on prudential requirements for credit institutions and investment firms;
+“the capital requirements regulation” means Regulation (EU) No. 575/2013 of the European Parliament and of the Council of 26 June 2013 on prudential requirements for credit institutions and investment firms;
 
 “cash” means notes, coins or travellers' cheques, in any currency;
 
